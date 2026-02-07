@@ -1,0 +1,185 @@
+=== LOG STARTED FOR @empowercongdongthammy20 AT 2026-02-05 17:32:29.251058 ===
+🚀 [INIT] Khởi tạo Worker cho @empowercongdongthammy20
+📂 Profile: lleebleewgmailcom
+2026-02-06 02:09:18,837 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:09:18,840 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:09:20,462 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 02:10:34,935 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603305589204471060
+2026-02-06 02:12:14,621 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:12:14,621 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:12:16,532 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:12:16,533 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:12:17,944 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 02:13:47,981 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:13:47,981 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:13:49,437 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 02:14:45,847 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603305589204471060
+2026-02-06 02:21:35,254 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:21:35,255 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:21:37,140 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 02:22:15,753 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603305589204471060
+2026-02-06 02:23:20,066 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:23:20,067 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:23:22,152 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 02:23:54,885 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603305589204471060
+2026-02-06 02:24:19,922 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309734866816276
+2026-02-06 02:27:42,114 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:27:42,114 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:27:44,423 [INFO] 🚀 WORKER STARTED
+2026-02-06 02:27:44,423 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 02:27:45,914 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 03:10:34,626 [INFO] 🚀 WORKER STARTED
+2026-02-06 03:10:34,627 [INFO] 🔍 Crawling: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 03:10:36,166 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309872754609428
+2026-02-06 03:12:56,656 [INFO] ⏳ (Giả lập) Waiting for Sheet & TTS...
+2026-02-06 03:13:40,663 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603305589204471060
+2026-02-06 03:16:06,232 [INFO] ⏳ (Giả lập) Waiting for Sheet & TTS...
+2026-02-06 03:16:44,237 [INFO] ▶️ Processing: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603309734866816276
+2026-02-06 03:18:50,412 [INFO] ⏳ (Giả lập) Waiting for Sheet & TTS...
+2026-02-06 03:19:35,421 [INFO] 🔍 Crawling: https://www.tiktok.com/@vietnamhealthnews
+2026-02-06 03:19:36,825 [INFO] ▶️ Processing: https://www.tiktok.com/@vietnamhealthnews/video/7603466985728445717
+2026-02-06 03:21:59,731 [INFO] ⏳ (Giả lập) Waiting for Sheet & TTS...
+2026-02-06 03:33:27,347 [INFO] 🚀 WORKER STARTED: Chế độ xử lý Tuần tự (Blocking Mode)
+2026-02-06 03:33:27,347 [ERROR] ❌ Không tìm thấy 'google_sheet_url' trong user_settings.json
+2026-02-06 03:34:06,298 [INFO] 🚀 WORKER STARTED: Chế độ xử lý Tuần tự (Blocking Mode)
+2026-02-06 03:34:06,298 [ERROR] ❌ Không tìm thấy 'google_sheet_url' trong user_settings.json
+2026-02-06 03:43:31,171 [INFO] 🚀 WORKER STARTED: Chế độ xử lý Tuần tự (Blocking Mode)
+2026-02-06 03:43:31,172 [ERROR] ❌ Không tìm thấy 'google_sheet_url' trong user_settings.json
+2026-02-06 03:44:38,583 [INFO] 🚀 WORKER STARTED: Chế độ xử lý Tuần tự (Blocking Mode)
+2026-02-06 03:44:38,583 [ERROR] ❌ Không tìm thấy 'google_sheet_url' trong user_settings.json
+2026-02-06 03:47:59,072 [INFO] 🚀 WORKER STARTED: Chế độ xử lý Tuần tự (Blocking Mode)
+2026-02-06 03:47:59,072 [INFO]    📊 Sheet URL: ...SAmLk66Op4TQ9Y0/exec
+2026-02-06 03:47:59,073 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 03:48:00,662 [INFO] ▶️ Đang xử lý: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603304930857782549
+2026-02-06 03:48:04,568 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 03:50:31,764 [INFO]    ⏳ Đang chờ AI Studio trả về Voice & Script...
+2026-02-06 03:50:38,684 [INFO]       ... đang check sheet (1/40)
+2026-02-06 03:51:02,920 [INFO]       ... đang check sheet (3/40)
+2026-02-06 03:51:26,940 [INFO]       ... đang check sheet (5/40)
+2026-02-06 03:51:53,604 [INFO]       ... đang check sheet (7/40)
+2026-02-06 03:52:17,779 [INFO]       ... đang check sheet (9/40)
+2026-02-06 03:52:46,367 [INFO]       ... đang check sheet (11/40)
+2026-02-06 03:53:14,675 [INFO]       ... đang check sheet (13/40)
+2026-02-06 13:57:26,138 [INFO] 🚀 WORKER STARTED: Quy trình Full (Text -> TTS -> Remix)
+2026-02-06 13:57:26,139 [ERROR] ❌ Lỗi: Thiếu EverAI API Key.
+2026-02-06 14:01:14,374 [INFO] 🚀 WORKER STARTED: Quy trình Full (Text -> TTS -> Remix)
+2026-02-06 14:01:14,376 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 14:01:15,858 [INFO] ▶️ Đang xử lý: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603635585806519570
+2026-02-06 14:01:21,098 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 14:03:57,443 [INFO]    ⏳ Đang chờ Kịch bản Text từ AI Studio...
+2026-02-06 14:05:14,230 [INFO]       ... đang check text (1/60)
+2026-02-06 14:08:11,625 [INFO]       ... đang check text (3/60)
+2026-02-06 14:11:50,703 [INFO]       ... đang check text (5/60)
+2026-02-06 14:11:54,667 [INFO] 🚀 WORKER STARTED: Quy trình Full (Text -> TTS -> Remix)
+2026-02-06 14:11:54,668 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 14:11:56,413 [INFO] ▶️ Đang xử lý: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603646001768926484
+2026-02-06 14:14:23,420 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 14:15:09,193 [INFO]       ... đang check text (7/60)
+2026-02-06 14:16:47,353 [INFO]    ⏳ Đã Upload xong. Đang chờ 10s để đồng bộ Sheet...
+2026-02-06 14:16:57,354 [INFO]    📥 Đang lấy dữ liệu dòng mới nhất từ Sheet...
+2026-02-06 14:18:16,277 [INFO]       ... đang check text (9/60)
+2026-02-06 14:18:31,014 [WARNING]    ⚠️ Chưa thấy dữ liệu. Thử lại lần 2...
+2026-02-06 14:18:41,378 [ERROR]    ❌ Không tìm thấy dòng dữ liệu nào khớp ID (hoặc chưa có text). Bỏ qua.
+2026-02-06 14:18:41,378 [INFO] ▶️ Đang xử lý: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603635585806519570
+2026-02-06 14:21:45,204 [INFO]       ... đang check text (11/60)
+2026-02-06 14:24:40,496 [INFO] 🚀 WORKER STARTED: Chế độ Cuốn Chiếu (Sequential Blocking)
+2026-02-06 14:24:40,496 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 14:24:41,974 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603646001768926484
+2026-02-06 14:24:45,921 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 14:24:49,956 [INFO]       ... đang check text (13/60)
+2026-02-06 14:27:19,834 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 14:27:29,835 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 14:27:30,084 [INFO]       ... đang check text (15/60)
+2026-02-06 14:30:38,228 [INFO]       ... đang check text (17/60)
+2026-02-06 14:33:27,705 [INFO]       ... đang check text (19/60)
+2026-02-06 14:36:11,317 [INFO]       ... đang check text (21/60)
+2026-02-06 14:39:03,717 [INFO]       ... đang check text (23/60)
+2026-02-06 14:41:40,366 [INFO]       ... đang check text (25/60)
+2026-02-06 14:44:54,517 [INFO]       ... đang check text (27/60)
+2026-02-06 14:47:39,970 [INFO]       ... đang check text (29/60)
+2026-02-06 14:50:01,037 [INFO]       ... đang check text (31/60)
+2026-02-06 14:53:07,260 [INFO]       ... đang check text (33/60)
+2026-02-06 14:56:21,101 [INFO]       ... đang check text (35/60)
+2026-02-06 14:59:24,572 [INFO]       ... đang check text (37/60)
+2026-02-06 15:02:30,955 [INFO]       ... đang check text (39/60)
+2026-02-06 15:06:09,096 [INFO]       ... đang check text (41/60)
+2026-02-06 15:10:11,974 [INFO]       ... đang check text (43/60)
+2026-02-06 15:13:50,632 [INFO]       ... đang check text (45/60)
+2026-02-06 15:16:30,727 [INFO]       ... đang check text (47/60)
+2026-02-06 15:19:16,718 [INFO]       ... đang check text (49/60)
+2026-02-06 15:21:52,036 [INFO]       ... đang check text (51/60)
+2026-02-06 15:24:38,075 [INFO]       ... đang check text (53/60)
+2026-02-06 15:27:36,758 [INFO]       ... đang check text (55/60)
+2026-02-06 15:30:40,589 [INFO]       ... đang check text (57/60)
+2026-02-06 15:32:57,488 [INFO]       ... đang check text (59/60)
+2026-02-06 15:34:16,993 [ERROR]    ❌ Timeout: Không thấy Kịch bản trên Sheet.
+2026-02-06 15:34:16,995 [INFO] ▶️ Đang xử lý: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603611617300958465
+2026-02-06 15:56:53,103 [INFO] 🚀 WORKER STARTED: Chế độ Cuốn Chiếu (Sequential Blocking)
+2026-02-06 15:56:53,111 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 15:56:54,535 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603665824892652817
+2026-02-06 15:56:59,179 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 15:59:44,581 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 15:59:54,581 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 16:00:04,166 [INFO]    ✅ Đã lấy được Text (Dòng 78)
+2026-02-06 16:00:04,166 [INFO]    🗣️ Tạo Voice & Update Sheet...
+2026-02-06 16:00:32,441 [INFO]    🎬 Remixing Video...
+2026-02-06 16:00:32,631 [ERROR]    ❌ Lỗi Remix Video. Bỏ qua.
+2026-02-06 16:00:32,636 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603660229628185877
+2026-02-06 16:00:38,594 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 16:02:45,970 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 16:02:55,970 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 16:10:39,022 [INFO] 🚀 WORKER STARTED: Chế độ Cuốn Chiếu (Sequential Blocking)
+2026-02-06 16:10:39,022 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 16:10:40,403 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603663462983666961
+2026-02-06 16:10:43,766 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 16:10:43,768 [INFO]    blob: Đã tạo bản sao để upload: src_7603663462983666961_1770369040_upload_copy.mp4
+2026-02-06 16:12:39,577 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 16:12:49,578 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 16:12:55,295 [INFO]    ✅ Đã lấy được Text (Dòng 75)
+2026-02-06 16:12:55,295 [INFO]    🗣️ Tạo Voice & Update Sheet...
+2026-02-06 16:13:17,263 [INFO]    🎬 Remixing Video...
+2026-02-06 16:14:00,129 [INFO]    ☁️ Uploading Final Video to Drive...
+2026-02-06 16:14:24,496 [INFO]    ✅ HOÀN TẤT VIDEO NÀY! (Đã cập nhật Sheet)
+2026-02-06 16:14:24,501 [INFO]    🏁 Nghỉ 5s trước khi qua Video tiếp theo...
+2026-02-06 16:14:29,502 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603665824892652817
+2026-02-06 16:14:33,208 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 16:14:33,213 [INFO]    blob: Đã tạo bản sao để upload: src_7603665824892652817_1770369269_upload_copy.mp4
+2026-02-06 17:27:16,970 [INFO] 🚀 WORKER STARTED: Chế độ Cuốn Chiếu (Sequential Blocking)
+2026-02-06 17:27:16,971 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep
+2026-02-06 17:27:18,354 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603663854849035536
+2026-02-06 17:27:23,722 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 17:27:23,729 [INFO]    blob: Đã tạo bản sao để upload: src_7603663854849035536_1770373638_upload_copy.mp4
+2026-02-06 17:28:52,952 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 17:29:02,953 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 17:29:12,894 [INFO]    ✅ Đã lấy được Text (Dòng 77)
+2026-02-06 17:29:12,894 [INFO]    🗣️ Tạo Voice & Update Sheet...
+2026-02-06 17:29:35,643 [INFO]    🎬 Remixing Video...
+2026-02-06 17:29:51,849 [INFO]    ☁️ Uploading Final Video to Drive...
+2026-02-06 17:30:11,410 [INFO]    ✅ HOÀN TẤT VIDEO NÀY! (Đã cập nhật Sheet)
+2026-02-06 17:30:11,415 [INFO]    🏁 Nghỉ 5s trước khi qua Video tiếp theo...
+2026-02-06 17:30:16,416 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603666278598987025
+2026-02-06 17:30:21,618 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 17:30:21,624 [INFO]    blob: Đã tạo bản sao để upload: src_7603666278598987025_1770373816_upload_copy.mp4
+2026-02-06 17:32:41,684 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 17:32:51,685 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 17:33:04,669 [INFO]    ✅ Đã lấy được Text (Dòng 79)
+2026-02-06 17:33:04,669 [INFO]    🗣️ Tạo Voice & Update Sheet...
+2026-02-06 17:33:30,207 [INFO]    🎬 Remixing Video...
+2026-02-06 17:33:54,631 [INFO]    ☁️ Uploading Final Video to Drive...
+2026-02-06 17:34:16,971 [INFO]    ✅ HOÀN TẤT VIDEO NÀY! (Đã cập nhật Sheet)
+2026-02-06 17:34:16,978 [INFO]    🏁 Nghỉ 5s trước khi qua Video tiếp theo...
+2026-02-06 17:34:21,979 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7603665824892652817
+2026-02-06 17:34:28,597 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 17:34:28,612 [INFO]    blob: Đã tạo bản sao để upload: src_7603665824892652817_1770374061_upload_copy.mp4
+2026-02-06 17:36:58,868 [INFO]    ⏳ Upload thành công. Chờ 10s để hệ thống cập nhật Text...
+2026-02-06 17:37:08,870 [INFO]    📥 Đang lấy Text từ Sheet (Dòng mới nhất)...
+2026-02-06 17:37:21,530 [INFO]    ✅ Đã lấy được Text (Dòng 81)
+2026-02-06 17:37:21,531 [INFO]    🗣️ Tạo Voice & Update Sheet...
+2026-02-06 17:37:50,540 [INFO]    🎬 Remixing Video...
+2026-02-06 17:38:12,192 [INFO]    ☁️ Uploading Final Video to Drive...
+2026-02-06 17:38:52,867 [INFO]    ✅ HOÀN TẤT VIDEO NÀY! (Đã cập nhật Sheet)
+2026-02-06 17:38:52,874 [INFO]    🏁 Nghỉ 5s trước khi qua Video tiếp theo...
+2026-02-06 17:38:57,875 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews
+2026-02-06 17:38:59,521 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7603689905272737044
+2026-02-06 17:39:44,901 [INFO]    📤 Uploading to AI Studio...
+2026-02-06 17:39:44,906 [INFO]    blob: Đã tạo bản sao để upload: src_7603689905272737044_1770374339_upload_copy.mp4

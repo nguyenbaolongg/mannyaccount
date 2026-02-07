@@ -1,0 +1,5 @@
+2026/01/28-14:29:55.515 5494 Reusing MANIFEST D:\workspace\Python\App\fix 1\tiktok_data\test\Default\Local Storage\leveldb/MANIFEST-000001
+2026/01/28-14:29:55.520 5494 Recovering log #23
+2026/01/28-14:29:55.520 5494 Level-0 table #27: started
+2026/01/28-14:29:55.524 5494 Level-0 table #27: 22666 bytes OK
+2026/01/28-14:29:55.528 5494 Delete type=0 #23

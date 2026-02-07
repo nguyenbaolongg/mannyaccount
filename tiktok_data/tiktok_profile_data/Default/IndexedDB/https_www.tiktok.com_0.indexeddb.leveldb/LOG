@@ -1,0 +1,6 @@
+2026/01/28-18:55:18.779 4d54 Reusing MANIFEST D:\workspace\Python\App\fix 1\tiktok_data\tiktok_profile_data\Default\IndexedDB\https_www.tiktok.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/28-18:55:18.780 4d54 Recovering log #7
+2026/01/28-18:55:18.815 4d54 Reusing old log D:\workspace\Python\App\fix 1\tiktok_data\tiktok_profile_data\Default\IndexedDB\https_www.tiktok.com_0.indexeddb.leveldb/000007.log 
+2026/01/28-18:55:18.835 4d54 Level-0 table #12: started
+2026/01/28-18:55:18.852 4d54 Level-0 table #12: 1406684 bytes OK
+2026/01/28-18:55:18.854 4d54 Delete type=0 #7

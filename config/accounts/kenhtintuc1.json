@@ -1,0 +1,43 @@
+{
+    "id": "kenhtintuc1",
+    "tiktok_id": "@kenhtintuc",
+    "email": "tintuc@gmail.com",
+    "password": "123123",
+    "chrome_profile": "kenhtintuc",
+    "video_limit_per_run": 3,
+    "channels": [
+        {
+            "url": "",
+            "limit": 3,
+            "render_settings": {
+                "title_settings": {
+                    "source_start": 2.0,
+                    "source_end": 7.0,
+                    "zoom_factor": 1.0,
+                    "manual_y_offset": 250
+                },
+                "content_settings": {
+                    "source_start": 9.0,
+                    "source_end": "auto",
+                    "zoom_factor": 1.05,
+                    "manual_y_offset": 0
+                },
+                "text_overlay_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff"
+                },
+                "text_content_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff"
+                },
+                "assets": {
+                    "title_frame_filename": "",
+                    "content_frame_filename": "",
+                    "logo_filename": ""
+                }
+            }
+        }
+    ]
+}

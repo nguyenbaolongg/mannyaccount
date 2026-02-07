@@ -1,0 +1,135 @@
+{
+    "id": "nguyenbaolong826",
+    "tiktok_id": "@nguyenbaolong826",
+    "email": "cexat1122@gmail.com",
+    "chrome_profile": "YarleyVespery@vizatv.dpdns.org",
+    "video_limit_per_run": 3,
+    "channels": [
+        {
+            "url": "https://www.tiktok.com/@tamsudaokeo28",
+            "limit": 3,
+            "render_settings": {
+                "title_settings": {
+                    "source_start": 2.0,
+                    "source_end": 7.0,
+                    "zoom_factor": 1.0,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 0
+                },
+                "content_settings": {
+                    "source_start": 9.0,
+                    "source_end": "auto",
+                    "zoom_factor": 1.05,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 150
+                },
+                "text_overlay_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "text_content_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "assets": {
+                    "title_frame_filename": "logo em power final.png",
+                    "content_frame_filename": "logo em power final 2.png",
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "logo_filename": ""
+                }
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@d.v.t.g.3.6.9",
+            "limit": 3,
+            "render_settings": {
+                "title_settings": {
+                    "source_start": 2.0,
+                    "source_end": 5.0,
+                    "zoom_factor": 1.0,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 0
+                },
+                "content_settings": {
+                    "source_start": 7.0,
+                    "source_end": "auto",
+                    "zoom_factor": 1.0,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 100
+                },
+                "text_overlay_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "text_content_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "assets": {
+                    "title_frame_filename": "nfdkj.png",
+                    "content_frame_filename": "vdfbd.png",
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "logo_filename": ""
+                }
+            }
+        },
+        {
+            "url": "https://www.tiktok.com/@hanoinews.theanh28",
+            "limit": 3,
+            "render_settings": {
+                "title_settings": {
+                    "source_start": 2.0,
+                    "source_end": 5.0,
+                    "zoom_factor": 1.0,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 0
+                },
+                "content_settings": {
+                    "source_start": 7.0,
+                    "source_end": "auto",
+                    "zoom_factor": 1.0,
+                    "manual_x_offset": 0,
+                    "manual_y_offset": 200
+                },
+                "text_overlay_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "text_content_settings": {
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "font_size": 45,
+                    "text_color": "#ffffff",
+                    "box_width_percentage": 0.65,
+                    "box_y_start": 0.73,
+                    "box_y_end": 0.83
+                },
+                "assets": {
+                    "title_frame_filename": "logo em power final.png",
+                    "content_frame_filename": "logo em power final 2.png",
+                    "font_filename": "Inter_18pt-Bold.ttf",
+                    "logo_filename": ""
+                }
+            }
+        }
+    ]
+}

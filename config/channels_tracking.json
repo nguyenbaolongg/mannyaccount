@@ -1,0 +1,42 @@
+{
+    "channels": [
+        {
+            "channel_url": "https://www.tiktok.com/@blogtamsu.nghenghiep",
+            "last_video_url": "https://www.tiktok.com/@blogtamsu.nghenghiep/video/7602861043085217044",
+            "scan_limit": 4,
+            "video_index": 0,
+            "active": true
+        },
+        {
+            "channel_url": "https://www.tiktok.com/@tamsudaokeo28",
+            "last_video_url": "https://www.tiktok.com/@tamsudaokeo28/video/7602949706787851538",
+            "scan_limit": 5,
+            "video_index": 0,
+            "active": true
+        },
+        {
+            "channel_url": "https://www.tiktok.com/@vietnamhealthnews",
+            "last_video_url": "",
+            "scan_limit": 3,
+            "active": true
+        },
+        {
+            "channel_url": "https://www.tiktok.com/@tintucthammy24h",
+            "last_video_url": "",
+            "scan_limit": 3,
+            "active": true
+        },
+        {
+            "channel_url": "https://www.tiktok.com/@d.v.t.g.3.6.9",
+            "last_video_url": "",
+            "scan_limit": 3,
+            "active": true
+        },
+        {
+            "channel_url": "https://www.tiktok.com/@hanoinews.theanh28",
+            "last_video_url": "",
+            "scan_limit": 3,
+            "active": true
+        }
+    ]
+}

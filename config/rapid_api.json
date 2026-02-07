@@ -1,0 +1,9 @@
+{
+  "host": "tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com",
+  "endpoint": "https://tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com/vid/index",
+  "keys": [
+    "0baf2e0ed3msh22588f5b83923cep1bf6c8jsnfec5074bdb6e",
+    "KEY_DU_PHONG_1_CUA_BAN",
+    "KEY_DU_PHONG_2_CUA_BAN"
+  ]
+}

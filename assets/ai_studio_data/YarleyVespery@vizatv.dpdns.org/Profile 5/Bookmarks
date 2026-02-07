@@ -1,0 +1,37 @@
+{
+   "checksum": "ef780c35b3fb55e18411fed45ad2dabb",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13414664266295114",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Thanh dấu trang",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13414664266295114",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Dấu trang khác",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13414664266295114",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Dấu trang trên thiết bị di động",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CuABCr8BCIiBAhK4ASAAkgGjAQqgAQoOY2hyb21lX3N5bmNfYm0SBTUxIWJtGhIJoIyqpfpJBgARoIyqpfpJBgAiNAmp95ml+kkGABADGRQ0zlg5H6aOIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEiNAmp95ml+kkGABADGRQ0zlg5H6aOIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEpk0mrpfpJBgDqAQwIiu+LzAYQ2MP+lwESACoYeStNUXpTaVhFcFNoOWNreVZLTlRVQT09SAMSqwEIARKmAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRJOWjpBRHF0QVp5aVR3MTRiUmZGVDZIK0d0RWgzVmFqS0JoemJwT0hDNjM4Vmc2L0RRMFFIb3diSTFPTi9sSDBab2VKYmM1Zm9JYUlDY2NaGAAgACgAMOjozcOPv5IDOABAAEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASwwEIAhK+AQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRJmWjpBRHF0QVp5WFZpTFZ0d3lyMnkvQkQydlVZL2dzcUROSkVpZ0R2MDVzWjUxcUt3bzhDdUVGOXRhTjMvTHlBenJhVGpTaThlQUY3MGdIWFovVmw1UUpic2pOeDByZ1ZQeUdNUT09GAAgACgAMOjozcOPv5IDOABAAEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAASwwEIAxK+AQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRJmWjpBRHF0QVp6ejBjcWw4aVNNdTRyV3AzMjVxMFFYR0wwQysvSmgybG9BemVhdG5kaTl6U0hhbTkxMC9vMEJLREUwK3RjTTVsUFNXaHg1KzlLNjBveUg3bkRiODBFRjRuSnZCUT09GAAgACgAMOjozcOPv5IDOABAAEoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAAAwATgA",
+   "version": 1
+}
