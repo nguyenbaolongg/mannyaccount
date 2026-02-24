@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_title": "Open Auto Whisk"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "host_permissions": [ "https://labs.google/*", "https://aisandbox-pa.googleapis.com/*", "https://autowhisk.dangduc131.workers.dev/*" ],
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAilFotMZygN4GA8Ntw/hA1Sh6bs3/o965F/F7qZadP5/trG4W0awNYLl5qEvffDnwtxr51eDN7PXgcpmqkDEWXPpRGwisG5V7FvFwACwFecpARfT1mOa7hqT0PZnP8v8ehuHK/qOEZbrocdoe/aZYiU/1Ela3YDKI8lCPQclAkjajZaaXvAkXq9UBCWYL2kav9jo1i4PfI1m/AgbBahSfYX7sqNiY2VNrxH3o1n1ylQn5/COQNf8LpW0NwghbqeDHhWbn+MGbQAFEmEwQPQVl9d5dRN84OxoEO4LHOr8ltD3DERrWsD45tjnTO8Tj9RprATaq2eXK1PdsxrN5iR0UoQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "permissions": [ "sidePanel", "activeTab", "scripting", "storage", "tabs", "downloads" ],
+   "side_panel": {
+      "default_path": "gateway.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.3.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "images/*.png" ]
+   } ]
+}

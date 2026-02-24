@@ -6,6 +6,7 @@ import ffmpeg
 import random
 import logging
 import textwrap
+import uuid
 from datetime import datetime
 
 # ==============================================================================
@@ -85,7 +86,7 @@ def normalize_url(url):
     return str(url).lower().replace("https://", "").replace("http://", "").replace("www.", "").strip().rstrip('/')
 
 # ==============================================================================
-# LOGIC TÌM CONFIG
+# LOGIC TÌM CONFIG MẶC ĐỊNH (BASE CONFIG)
 # ==============================================================================
 def load_render_config(target_channel_url=None, target_tiktok_id=None):
     default_config = {
@@ -147,8 +148,8 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     print(f"   ⚙️ Rendering segment: {output_filename}")
 
     # 1. Lấy thông số thời gian
-    duration_audio = get_media_duration(audio_filename) # Thời lượng Audio (Cần đạt được)
-    total_video_duration = get_media_duration(video_filename) # Thời lượng Video gốc
+    duration_audio = get_media_duration(audio_filename)
+    total_video_duration = get_media_duration(video_filename)
 
     font_file_clean = "font.ttf"
     if not os.path.exists(font_file_clean): font_file_clean = "C\\:/Windows/Fonts/arial.ttf"
@@ -158,88 +159,73 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     zoom = float(settings.get("zoom_factor", 1.0))
 
     # [TÍNH NĂNG MỚI] Random các tham số biến đổi
-    # -----------------------------------------------------
-    # 1. Speed (Tốc độ): Tăng/Giảm ngẫu nhiên từ 0.95 (chậm) đến 1.05 (nhanh)
     video_speed = random.uniform(0.95, 1.05)
-
-    # 2. Volume (Âm lượng Biz): Thay đổi nhẹ âm lượng video gốc (nếu có dùng video gốc làm nền âm thanh)
-
-    # 3. Distort (Bóp méo): Dùng lenscorrection để làm cong nhẹ hình (1-2%)
-    k1_distort = random.uniform(-0.03, 0.03) # -2% đến +2%
+    k1_distort = random.uniform(-0.03, 0.03)
     k2_distort = random.uniform(-0.03, 0.03)
-
-    # 4. Filter màu (Color Grading nhẹ): Thay đổi contrast, brightness, saturation
-    contrast_val = random.uniform(1.0, 1.1)     # Tăng tương phản nhẹ
-    brightness_val = random.uniform(-0.02, 0.02) # Tăng giảm độ sáng nhẹ
-    saturation_val = random.uniform(0.9, 1.2)    # Tăng giảm độ bão hòa
-    # -----------------------------------------------------
+    contrast_val = random.uniform(1.0, 1.1)
+    brightness_val = random.uniform(-0.02, 0.02)
+    saturation_val = random.uniform(0.9, 1.2)
 
     v_in = ffmpeg.input(video_filename)
     a_in = ffmpeg.input(audio_filename)
 
-    # 2. Xử lý Logic Cắt Video (Hỗ trợ số âm)
+    # 2. Xử lý Logic Cắt Video
     real_end = None
-
     if raw_end != "auto" and raw_end is not None:
         val = float(raw_end)
-        # Nếu là số âm (VD: -8) -> Lấy tổng thời gian - 8
         if val < 0:
             real_end = total_video_duration + val
-            if real_end < s_start:
-                print(f"⚠️ Cảnh báo: Video quá ngắn để cắt đuôi {val}s. Lấy full.")
-                real_end = None
-            else:
-                print(f"   ✂️ Cắt đuôi {val}s -> Kết thúc cắt tại: {real_end}")
+            if real_end < s_start: real_end = None
         else:
             real_end = val
 
-    # 3. Áp dụng Filter Cắt (Trim) -> Tách đoạn video ra khỏi video gốc
     if real_end:
         v = v_in.filter('trim', start=s_start, end=real_end)
     else:
-        v = v_in.filter('trim', start=s_start) # Cắt từ start đến hết
+        v = v_in.filter('trim', start=s_start)
 
-    # 4. [QUAN TRỌNG] Reset Time & Loop
+    # 4. Reset Time & Loop
     v = v.filter('setpts', 'PTS-STARTPTS')
     v = v.filter('loop', loop=-1, size=32767, start=0)
 
-    # -----------------------------------------------------------------------
-    # 5. Xử lý HIỆU ỨNG (VISUAL EFFECTS) - Áp dụng các filter mới
-    # -----------------------------------------------------------------------
-
-    # A. Thay đổi Tốc độ Video (Speed)
-    # setpts < 1 là nhanh, > 1 là chậm. Ví dụ speed 1.05 -> setpts = 1/1.05
+    # 5. Hiệu ứng
     v = v.filter('setpts', f'PTS/{video_speed}')
 
-    # B. Zoom & Scale
     target_w = 1080
     scaled_w = int(target_w * zoom)
     if scaled_w % 2 != 0: scaled_w += 1
     v = v.filter('scale', width=scaled_w, height=-2)
 
-    # C. Bóp méo (Distort) - Lens Correction [MỚI]
-    # k1, k2: các hệ số bóp méo (quadratic correction). Giá trị nhỏ (0.01-0.05) tạo hiệu ứng nhẹ.
     v = v.filter('lenscorrection', k1=k1_distort, k2=k2_distort)
-
-    # D. Color Filter (Lớp phủ màu/ánh sáng) [MỚI]
-    # eq: chỉnh contrast, brightness, saturation
     v = v.filter('eq', contrast=contrast_val, brightness=brightness_val, saturation=saturation_val)
 
-    # Thêm nhiễu hạt siêu nhỏ (Noise) để thay đổi từng pixel (giúp lách bản quyền tốt hơn)
-    # v = v.filter('noise', alls=5, allf='t+u') # (Tùy chọn: Có thể bật nếu muốn, nhưng sẽ làm nặng render)
-
-    # Tạo nền đen khớp thời lượng Audio
+    # Tạo nền đen
     bg = ffmpeg.input(f'color=c=black:s=1080x1920:d={duration_audio}', f='lavfi')
 
+    # [QUAN TRỌNG] Xử lý tọa độ Overlay (Background Video Position)
     raw_x = settings.get("manual_x_offset", "center")
-    raw_y = settings.get("manual_y_offset", "center")
-    x_expr = '(W-w)/2' if str(raw_x) == 'center' else f'(W-w)/2 + {raw_x}'
-    y_expr = '(H-h)/2' if str(raw_y) == 'center' else f'(H-h)/2 + {raw_y}'
+    if str(raw_x).lower() == "center":
+        x_expr = '(W-w)/2'
+    else:
+        try:
+            val_x = float(raw_x)
+            x_expr = f'(W-w)/2 + ({val_x})'
+        except: x_expr = '(W-w)/2'
 
-    # Ghép video đã loop vào nền đen
+    raw_y = settings.get("manual_y_offset", "center")
+    if str(raw_y).lower() == "center":
+        y_expr = '(H-h)/2'
+    else:
+        try:
+            val_y = float(raw_y)
+            # Logic: val_y dương -> Dịch xuống (Cộng). val_y âm -> Dịch lên (Trừ/Cộng số âm)
+            y_expr = f'(H-h)/2 + ({val_y})'
+        except: y_expr = '(H-h)/2'
+
+    # Ghép video nền đã loop lên background đen
     v = ffmpeg.overlay(bg, v, x=x_expr, y=y_expr, shortest=1)
 
-    # Thêm Frame
+    # Thêm Frame (Khung ảnh)
     if frame_filename and os.path.exists(frame_filename):
         fr = ffmpeg.input(frame_filename).filter('scale', 1080, 1920)
         v = ffmpeg.overlay(v, fr)
@@ -268,12 +254,7 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
                 x='(w-text_w)/2', y=str(current_line_y), fix_bounds=True
             )
 
-    # -----------------------------------------------------------------------
-    # 6. Xử lý AUDIO (Chỉnh âm lượng + Tốc độ) [MỚI]
-    # -----------------------------------------------------------------------
-
-    # B. Tăng/Giảm Âm lượng (Volume Biz)
-    # Random volume từ 0.9 (90%) đến 1.3 (130%)
+    # Audio Volume
     audio_vol = random.uniform(0.9, 1.3)
     a_in = a_in.filter('volume', volume=audio_vol)
 
@@ -290,7 +271,7 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
         return False
 
 # ==============================================================================
-# 4. MAIN FLOW
+# 4. MAIN FLOW (ĐÃ SỬA LOGIC GHI ĐÈ CONFIG VÀ HỖ TRỢ ĐA LUỒNG)
 # ==============================================================================
 def create_video_from_source_video(
         audio_url, source_video_url, resolution_tuple=(1080, 1920),
@@ -301,39 +282,64 @@ def create_video_from_source_video(
         row_index=None,
         target_channel_url=None,
         tiktok_id=None,
+        override_config=None,
+        temp_dir=None,
         **kwargs
 ):
+    # Tạo ID duy nhất cho phiên làm việc này để tên file không bao giờ trùng
+    unique_session_id = str(uuid.uuid4())[:8]
     timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-    if not output_filename: output_filename = f"remix_{timestamp_str}.mp4"
 
-    temp_dir = os.path.join(TEMP_REMIX_DIR, f"task_{timestamp_str}")
-    os.makedirs(temp_dir, exist_ok=True)
+    if not output_filename: output_filename = f"remix_{timestamp_str}_{unique_session_id}.mp4"
+
+    # [SỬA LOGIC] Xác định thư mục làm việc (Working Dir)
+    if temp_dir:
+        # Nếu được truyền folder riêng (ví dụ data/acc1/temp), tạo sub-folder unique trong đó
+        working_dir = os.path.join(temp_dir, f"remix_{unique_session_id}")
+    else:
+        # Fallback về folder chung nếu không có temp_dir (Dành cho test lẻ)
+        working_dir = os.path.join(TEMP_REMIX_DIR, f"task_{timestamp_str}_{unique_session_id}")
+
+    os.makedirs(working_dir, exist_ok=True)
     original_cwd = os.getcwd()
 
-    print(f"\n📂 TEMP DIR: {temp_dir}")
+    print(f"\n📂 WORKING DIR: {working_dir}")
     print(f"🚀 [Pipeline] Row {row_index} | TikTok ID: {tiktok_id}")
     final_path = os.path.join(TARGET_VIDEO_FOLDER, output_filename)
 
     try:
         # B1. Download Resources
-        p_vid_name = "vid.mp4"
-        p_aud_main_name = "aud_main.mp3"
-        p_aud_title_name = "aud_title.mp3"
+        p_vid_name = f"vid_{unique_session_id}.mp4"
+        p_aud_main_name = f"aud_main_{unique_session_id}.mp3"
+        p_aud_title_name = f"aud_title_{unique_session_id}.mp3"
 
-        if not download_or_copy_file(source_video_url, os.path.join(temp_dir, p_vid_name)):
+        if not download_or_copy_file(source_video_url, os.path.join(working_dir, p_vid_name)):
             raise Exception("Không thể tải Video gốc.")
-
         if not audio_url: raise Exception("Link Audio Content bị rỗng.")
-        if not download_or_copy_file(audio_url, os.path.join(temp_dir, p_aud_main_name)):
+        if not download_or_copy_file(audio_url, os.path.join(working_dir, p_aud_main_name)):
             raise Exception("Không thể tải Audio Content.")
-
         has_intro = False
         if title_audio_url:
-            if download_or_copy_file(title_audio_url, os.path.join(temp_dir, p_aud_title_name)):
+            if download_or_copy_file(title_audio_url, os.path.join(working_dir, p_aud_title_name)):
                 has_intro = True
 
-        # B2. Load Config
+        # B2. Load Config & GHI ĐÈ (OVERRIDE)
+        # 1. Load config mặc định từ render_config.json
         cfg = load_render_config(target_channel_url, target_tiktok_id=tiktok_id)
+
+        # 2. [QUAN TRỌNG] GHI ĐÈ config từ file Account JSON (nếu có)
+        if override_config and isinstance(override_config, dict):
+            print(f"   ⚡ Đang GHI ĐÈ Config từ file Account...")
+            # Các section cần ghi đè
+            sections = ["title_settings", "content_settings", "text_overlay_settings", "text_content_settings", "assets"]
+            for section in sections:
+                if section in override_config:
+                    if section not in cfg: cfg[section] = {}
+                    # Update đè các giá trị mới vào
+                    cfg[section].update(override_config[section])
+                    print(f"      -> Updated: {section}")
+
+        # Lấy assets sau khi đã ghi đè
         assets = cfg.get("assets", {})
 
         def find_asset_src(arg, key, default_folder):
@@ -355,11 +361,11 @@ def create_video_from_source_video(
         src_font_name = cfg["text_content_settings"].get("font_filename", "arialbd.ttf")
 
         # B3. Copy Assets
-        local_t_frame_name = "frame_intro.png" if src_t_frame else None
-        if src_t_frame: shutil.copy2(src_t_frame, os.path.join(temp_dir, local_t_frame_name))
+        local_t_frame_name = f"frame_intro_{unique_session_id}.png" if src_t_frame else None
+        if src_t_frame: shutil.copy2(src_t_frame, os.path.join(working_dir, local_t_frame_name))
 
-        local_c_frame_name = "frame_content.png" if src_c_frame else None
-        if src_c_frame: shutil.copy2(src_c_frame, os.path.join(temp_dir, local_c_frame_name))
+        local_c_frame_name = f"frame_content_{unique_session_id}.png" if src_c_frame else None
+        if src_c_frame: shutil.copy2(src_c_frame, os.path.join(working_dir, local_c_frame_name))
 
         font_src_path = None
         possible_fonts = [
@@ -370,41 +376,62 @@ def create_video_from_source_video(
         ]
         for p in possible_fonts:
             if os.path.exists(p): font_src_path = p; break
-        if font_src_path: shutil.copy2(font_src_path, os.path.join(temp_dir, "font.ttf"))
+        if font_src_path: shutil.copy2(font_src_path, os.path.join(working_dir, "font.ttf"))
 
-        # B4. Render
-        os.chdir(temp_dir)
+        # B4. Render Segments
+        os.chdir(working_dir)
         segs = []
 
+        # RENDER TITLE SEGMENT (INTRO)
         if has_intro:
-            out = "seg1.mp4"
-            if render_segment_to_file(p_vid_name, p_aud_title_name, out, cfg["title_settings"], cfg["text_overlay_settings"], title_tiktok, local_t_frame_name, temp_dir):
+            out = f"seg1_{unique_session_id}.mp4"
+            print(f"   🎥 Rendering Title Segment... (Offset: {cfg['title_settings'].get('manual_y_offset', 'center')})")
+            if render_segment_to_file(p_vid_name, p_aud_title_name, out, cfg["title_settings"], cfg["text_overlay_settings"], title_tiktok, local_t_frame_name, working_dir):
                 segs.append(out)
 
-        out2 = "seg2.mp4"
+        # RENDER CONTENT SEGMENT (BODY)
+        out2 = f"seg2_{unique_session_id}.mp4"
         if not os.path.exists(p_aud_main_name): raise Exception("Mất file aud_main.mp3")
 
-        if render_segment_to_file(p_vid_name, p_aud_main_name, out2, cfg["content_settings"], cfg["text_content_settings"], content_text, local_c_frame_name, temp_dir):
+        print(f"   🎥 Rendering Content Segment... (Offset: {cfg['content_settings'].get('manual_y_offset', 'center')})")
+        if render_segment_to_file(p_vid_name, p_aud_main_name, out2, cfg["content_settings"], cfg["text_content_settings"], content_text, local_c_frame_name, working_dir):
             segs.append(out2)
         else:
             raise Exception("Render Content Failed")
 
-        with open("list.txt", "w", encoding="utf-8") as f:
+        # Concat segments (Dùng tên file unique)
+        concat_list_file = f"list_{unique_session_id}.txt"
+        concat_out_file = f"concat_{unique_session_id}.mp4"
+
+        with open(concat_list_file, "w", encoding="utf-8") as f:
             for s in segs: f.write(f"file '{s}'\n")
 
-        (ffmpeg.input("list.txt", format='concat', safe=0).output("concat.mp4", c='copy').overwrite_output().run(quiet=True))
+        try:
+            (
+                ffmpeg
+                .input(concat_list_file, format='concat', safe=0)
+                .output(concat_out_file, vcodec='libx264', acodec='aac')
+                .overwrite_output()
+                .run(capture_stdout=True, capture_stderr=True)
+            )
+        except ffmpeg.Error as e:
+            # In ra lỗi chi tiết từ FFmpeg để debug
+            print("❌ Lỗi khi ghép video (Concat Error):")
+            print(e.stderr.decode('utf8'))
+            raise Exception("Concat Failed")
 
-        local_logo_name = "logo.png" if src_logo else None
+        # Add Logo (Optional)
+        local_logo_name = f"logo_{unique_session_id}.png" if src_logo else None
         if src_logo: shutil.copy2(src_logo, local_logo_name)
 
         if local_logo_name and os.path.exists(local_logo_name):
             lw = int(assets.get("logo_width", 150))
-            (ffmpeg.input("concat.mp4")
+            (ffmpeg.input(concat_out_file)
              .overlay(ffmpeg.input(local_logo_name).filter('scale', lw, -1), x='main_w-overlay_w-30', y='30')
              .output(final_path, vcodec='libx264', acodec='copy', preset='ultrafast')
              .overwrite_output().run(capture_stdout=True, capture_stderr=True))
         else:
-            shutil.move("concat.mp4", final_path)
+            shutil.move(concat_out_file, final_path)
 
         if os.path.exists(final_path):
             print(f"✅ DONE: {final_path}")
@@ -415,77 +442,11 @@ def create_video_from_source_video(
         import traceback; traceback.print_exc()
     finally:
         os.chdir(original_cwd)
-        if os.path.exists(temp_dir): shutil.rmtree(temp_dir, ignore_errors=True)
+        # Nếu working_dir tồn tại thì xóa đi để dọn dẹp
+        if 'working_dir' in locals() and os.path.exists(working_dir):
+            try: shutil.rmtree(working_dir, ignore_errors=True)
+            except: pass
 
-# ==============================================================================
-# 5. TEST UNIT (CHẠY THỬ)
-# ==============================================================================
 if __name__ == "__main__":
-    print("🧪 --- BẮT ĐẦU TEST MODULE VIDEO REMIX ---")
-
-    # ---------------------------------------------------------
-    # BƯỚC 1: CẤU HÌNH INPUT GIẢ LẬP (SỬA ĐƯỜNG DẪN TẠI ĐÂY)
-    # ---------------------------------------------------------
-    # Hãy trỏ đến 1 file video và 1 file mp3 có thật trên máy tính của bạn để test
-    # Lưu ý: Dùng r"..." để tránh lỗi đường dẫn Windows
-
-    # Ví dụ: r"D:\Downloads\video_goc.mp4"
-    fake_video_source = r"D:\US\Lõm Hóp\Videos\Mọi người lưu ý nhé!.mp4"
-
-    # Ví dụ: r"D:\Downloads\audio_tts.mp3"
-    fake_audio_content = r"C:\Users\Acer\Downloads\tiktok_Mấy_bà_hay_than_thở_80fe982bba43.mp3"
-
-    # (Tùy chọn) Audio tiêu đề
-    fake_audio_title = r"C:\Users\Acer\Downloads\tiktok_Hướng_dẫn_chụp_ảnh_n_49825f9f84bd.mp3"
-
-    # ---------------------------------------------------------
-    # BƯỚC 2: TẠO FILE DUMMY NẾU CHƯA CÓ (CHỈ ĐỂ TRÁNH LỖI KHI CODE CHẠY)
-    # ---------------------------------------------------------
-    if not os.path.exists(fake_video_source):
-        print(f"⚠️ Không thấy file video test tại: {fake_video_source}")
-        print("👉 Vui lòng sửa biến 'fake_video_source' trỏ đến 1 file MP4 có thật.")
-
-    if not os.path.exists(fake_audio_content):
-        print(f"⚠️ Không thấy file audio test tại: {fake_audio_content}")
-        print("👉 Vui lòng sửa biến 'fake_audio_content' trỏ đến 1 file MP3 có thật.")
-
-    # ---------------------------------------------------------
-    # BƯỚC 3: CHẠY HÀM RENDER
-    # ---------------------------------------------------------
-    if os.path.exists(fake_video_source) and os.path.exists(fake_audio_content):
-        print("\n🚀 Đang chạy lệnh render...")
-
-        try:
-            result_path = create_video_from_source_video(
-                audio_url=fake_audio_content,           # Audio nội dung
-                source_video_url=fake_video_source,     # Video nền
-                title_audio_url=fake_audio_title,       # Audio tiêu đề (Intro)
-
-                # Nội dung Text
-                title_tiktok="TEST TITLE HEADER",
-                content_text="Day la noi dung test thu nghiem.\nVideo se duoc cat va lap lai.",
-
-                # Giả lập config
-                target_channel_url="https://www.tiktok.com/@tamsudaokeo28",
-                tiktok_id="@nguyenbaolong826",
-
-                # File output
-                output_filename="test_result_video.mp4",
-
-                # Debug row index
-                row_index=999
-            )
-
-            if result_path and os.path.exists(result_path):
-                print(f"\n✅ TEST THÀNH CÔNG!")
-                print(f"📂 File kết quả: {result_path}")
-                print(f"⏱️ Hãy mở file lên xem video có bị đen màn hình hay không.")
-            else:
-                print("\n❌ TEST THẤT BẠI: Hàm chạy xong nhưng không thấy file output.")
-
-        except Exception as e:
-            print(f"\n❌ TEST ERROR (CRASH): {e}")
-            import traceback
-            traceback.print_exc()
-    else:
-        print("\n⛔ DỪNG TEST: Thiếu file input.")
+    # Test Block
+    pass

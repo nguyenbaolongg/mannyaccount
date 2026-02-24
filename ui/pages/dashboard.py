@@ -7,7 +7,7 @@ import os
 import glob
 from ui.utils import (
     load_json, save_json, normalize_time_input,
-    TRACKING_FILE, SCHEDULE_FILE, SESSION_CONFIG_FILE, PROJECT_ROOT,
+    TRACKING_FILE, SCHEDULE_FILE, PROJECT_ROOT,
     ACCOUNTS_DIR
 )
 
@@ -48,25 +48,27 @@ def render_dashboard():
     # === CỘT TRÁI ===
     with col_left:
         st.subheader("1. Chọn Tài khoản")
-        st.info("💡 Click vào một dòng để xem chi tiết Kênh bên phải.")
+        st.info("💡 Click vào dòng để xem chi tiết.")
 
         if all_accounts:
             df_acc = pd.DataFrame(all_accounts)
 
-            # [FIX 1] Thay use_container_width=True thành width="stretch"
+            # [FIX UI] Chỉ hiển thị Active và TikTok ID
             selection = st.dataframe(
                 df_acc,
                 column_config={
                     "active": st.column_config.CheckboxColumn("Chạy?", width="small"),
-                    "tiktok_id": st.column_config.TextColumn("ID TikTok", width="medium"),
-                    "email": "Email",
+                    "tiktok_id": st.column_config.TextColumn("ID TikTok", width="large"),
+                    # Ẩn toàn bộ các cột không cần thiết
+                    "email": None,
+                    "password": None,
                     "id": None,
                     "chrome_profile": None,
                     "video_limit_per_run": None,
                     "channels": None,
                     "_filename": None
                 },
-                width="stretch", # <--- ĐÃ SỬA TẠI ĐÂY
+                width="stretch",
                 hide_index=True,
                 on_select="rerun",
                 selection_mode="single-row"
@@ -90,7 +92,8 @@ def render_dashboard():
             with st.container(border=True):
                 c_head1, c_head2 = st.columns([3, 1])
                 c_head1.markdown(f"#### 👤 {selected_account_data.get('tiktok_id', 'Unknown')}")
-                c_head1.caption(f"Email: {selected_account_data.get('email')}")
+                # Hiển thị email ở đây thay vì ở bảng bên trái
+                c_head1.caption(f"📧 Email: {selected_account_data.get('email')}")
 
                 is_active = c_head2.toggle("Kích hoạt chạy", value=selected_account_data.get("active", False))
 
@@ -106,14 +109,13 @@ def render_dashboard():
             if channels:
                 df_chn = pd.DataFrame(channels)
                 if "url" in df_chn.columns:
-                    # [FIX 1] Thay use_container_width=True thành width="stretch"
                     st.dataframe(
                         df_chn[["url", "limit"]],
                         column_config={
                             "url": st.column_config.LinkColumn("Link Kênh Nguồn"),
                             "limit": st.column_config.NumberColumn("Số video/lần"),
                         },
-                        width="stretch", # <--- ĐÃ SỬA TẠI ĐÂY
+                        width="stretch",
                         hide_index=True
                     )
                 else:
@@ -131,7 +133,6 @@ def render_dashboard():
     col_act1, col_act2 = st.columns([3, 1])
     col_act1.metric("Số tài khoản đang KÍCH HOẠT chạy:", f"{active_count} / {len(all_accounts)}")
 
-    # st.button vẫn dùng use_container_width được (theo document), nhưng nếu warning báo thì bỏ đi cũng được
     if col_act2.button("🚀 KHỞI ĐỘNG HỆ THỐNG", type="primary", use_container_width=True, disabled=(active_count==0)):
         script_path = os.path.join(PROJECT_ROOT, "scheduler_manager.py")
         if os.path.exists(script_path):

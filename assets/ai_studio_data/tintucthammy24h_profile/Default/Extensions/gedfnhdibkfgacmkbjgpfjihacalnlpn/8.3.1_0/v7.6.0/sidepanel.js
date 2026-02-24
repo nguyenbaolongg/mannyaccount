@@ -1,0 +1,1 @@
+import{queryDOMElements as o}from"./dom.js";import{loadSettings as t}from"./settings.js";import{fetchAndInjectAuthorInfo as m}from"./config.js";import{attachEventListeners as n}from"./handlers.js";document.addEventListener("DOMContentLoaded",function(){o(),m(),t(),n()});

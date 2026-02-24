@@ -3,10 +3,18 @@ import os
 import glob
 import json
 import time
-from ui.utils import ACCOUNTS_DIR, load_json, save_json, FRAME_DIR, save_frame_image, safe_show_image, CONFIG_DIR
+import shutil
 
-# Đường dẫn file tổng hợp
+# --- IMPORT CÁC HÀM TỪ UTILS ---
+from ui.utils import (
+    ACCOUNTS_DIR, CONFIG_DIR, AI_STUDIO_DIR, FRAME_DIR,
+    load_json, save_json, safe_show_image
+)
+
+# Đường dẫn file tổng hợp (QUAN TRỌNG)
 ACCOUNTS_LIST_FILE = os.path.join(CONFIG_DIR, "tiktok_accounts.json")
+
+# ================= CÁC HÀM HỖ TRỢ =================
 
 def get_account_files():
     """Lấy danh sách các file .json trong folder accounts"""
@@ -16,74 +24,118 @@ def get_account_files():
     return sorted([os.path.basename(f) for f in files])
 
 def load_account_data(filename):
-    """Load dữ liệu của 1 account cụ thể"""
     path = os.path.join(ACCOUNTS_DIR, filename)
     return load_json(path)
 
 def save_account_data(filename, data):
-    """Lưu dữ liệu vào file json riêng biệt"""
     path = os.path.join(ACCOUNTS_DIR, filename)
     save_json(path, data)
 
-def sync_to_main_accounts_file(email, password, profile, active=True):
-
+# --- [ĐÃ SỬA] Hàm đồng bộ file tổng ---
+def sync_to_main_accounts_file(email, password, profile, tiktok_id, active=True):
+    # Load file gốc hoặc tạo cấu trúc mới nếu chưa có
     if not os.path.exists(ACCOUNTS_LIST_FILE):
-        # Nếu chưa có file, tạo mới
-        main_data = {"current_index": 0, "accounts": []}
+        main_data = {"accounts": []}
     else:
         main_data = load_json(ACCOUNTS_LIST_FILE)
-        if "accounts" not in main_data: main_data["accounts"] = []
+        # Đảm bảo key "accounts" luôn tồn tại và là list
+        if "accounts" not in main_data or not isinstance(main_data["accounts"], list):
+            main_data["accounts"] = []
 
     accounts = main_data["accounts"]
-
-    # Kiểm tra xem email đã tồn tại chưa
     found = False
-    for acc in accounts:
-        if acc.get("email") == email:
-            # Cập nhật thông tin mới nhất
-            acc["password"] = password
-            acc["chrome_profile"] = profile
-            acc["active"] = active
-            found = True
-            break
 
-    if not found:
+    # Tìm xem email đã tồn tại chưa để cập nhật
+    # Ưu tiên tìm theo email, nếu không có thì tìm theo tiktok_id để tránh trùng lặp nếu đổi email
+    target_index = -1
+    for i, acc in enumerate(accounts):
+        if acc.get("email") == email:
+            target_index = i
+            break
+        # Fallback: tìm theo tiktok_id nếu email thay đổi nhưng id giữ nguyên (tùy logic business)
+        # Ở đây ta bám sát email làm khóa chính như code cũ
+
+    new_entry = {
+        "email": email,
+        "tiktok_id": tiktok_id,
+        "password": password,
+        "active": active,
+        "chrome_profile": profile
+    }
+
+    if target_index >= 0:
+        # Cập nhật entry cũ
+        accounts[target_index] = new_entry
+    else:
         # Thêm mới
-        accounts.append({
-            "email": email,
-            "password": password,
-            "active": active,
-            "chrome_profile": profile
-        })
+        accounts.append(new_entry)
 
     save_json(ACCOUNTS_LIST_FILE, main_data)
 
 def remove_from_main_accounts_file(email):
     """Xóa tài khoản khỏi file tổng"""
     if not os.path.exists(ACCOUNTS_LIST_FILE): return
-
     main_data = load_json(ACCOUNTS_LIST_FILE)
-    accounts = main_data.get("accounts", [])
+    if "accounts" not in main_data: return
 
-    # Lọc bỏ tài khoản có email tương ứng
+    accounts = main_data["accounts"]
     new_accounts = [acc for acc in accounts if acc.get("email") != email]
-
     main_data["accounts"] = new_accounts
     save_json(ACCOUNTS_LIST_FILE, main_data)
 
+def create_chrome_profile_folder(profile_name):
+    """Tự động tạo thư mục Profile rỗng"""
+    profile_path = os.path.join(AI_STUDIO_DIR, profile_name)
+    if not os.path.exists(profile_path):
+        os.makedirs(profile_path)
+        return True
+    return False
+
+def delete_chrome_profile_folder(profile_name):
+    if not profile_name: return False
+    profile_path = os.path.join(AI_STUDIO_DIR, profile_name)
+    if os.path.exists(profile_path):
+        try:
+            shutil.rmtree(profile_path)
+            return True
+        except Exception as e:
+            return False
+    return False
+
+def rename_chrome_profile_folder(old_name, new_name):
+    old_path = os.path.join(AI_STUDIO_DIR, old_name)
+    new_path = os.path.join(AI_STUDIO_DIR, new_name)
+
+    if os.path.exists(old_path):
+        if not os.path.exists(new_path):
+            try:
+                os.rename(old_path, new_path)
+                return True, "Success"
+            except Exception as e:
+                return False, str(e)
+        else:
+            return False, "Tên Profile mới đã tồn tại."
+    return False, "Profile cũ không tồn tại."
+
+# ================= RENDER UI =================
+
 def render_account_manager():
     st.markdown("## 👤 Quản lý Tài khoản & Kênh Clone (Matrix Mode)")
-    st.caption(f"Dữ liệu lưu tại: `{ACCOUNTS_DIR}`. Đồng bộ với: `{ACCOUNTS_LIST_FILE}`")
+    st.caption(f"Dữ liệu config chi tiết: `{ACCOUNTS_DIR}` | File tổng: `{ACCOUNTS_LIST_FILE}`")
 
-    # --- SIDEBAR: DANH SÁCH TÀI KHOẢN ---
     files = get_account_files()
 
-    with st.sidebar:
-        st.subheader("📂 Danh sách Tài khoản")
-        options = ["➕ Tạo Tài khoản Mới"] + files
-        selected_option = st.radio("Chọn file cấu hình:", options)
+    with st.container(border=True):
+        col_sel1, col_sel2 = st.columns([3, 1])
+        with col_sel1:
+            options = ["➕ Tạo Tài khoản Mới"] + files
+            selected_option = st.selectbox("👉 Chọn File Cấu hình Tài khoản:", options, index=0)
+        with col_sel2:
+            st.write("")
+            st.write("")
+            if st.button("🔄 Refresh", use_container_width=True):
+                st.rerun()
 
-    # --- LOGIC GIAO DIỆN ---
     if selected_option == "➕ Tạo Tài khoản Mới":
         render_create_new()
     else:
@@ -91,6 +143,8 @@ def render_account_manager():
 
 def render_create_new():
     st.subheader("🆕 Tạo File Cấu hình Mới")
+    st.info("Nhập thông tin bên dưới để tạo tài khoản. Hệ thống sẽ **TỰ ĐỘNG TẠO** Chrome Profile mới tương ứng.")
+
     with st.form("create_acc_form"):
         new_id = st.text_input("Nhập ID (Tên file config, viết liền không dấu):", placeholder="empowercongdongthammy20")
 
@@ -100,20 +154,29 @@ def render_create_new():
 
         c3, c4 = st.columns(2)
         password = c3.text_input("Mật khẩu Email (Để login tự động):", type="password")
-        profile = c4.text_input("Chrome Profile Folder Name:", placeholder="Profile_01")
+
+        profile_preview = ""
+        if new_id:
+            clean_id = "".join(x for x in new_id if x.isalnum() or x in "_-")
+            profile_preview = f"{clean_id}_profile"
+
+        c4.text_input("Chrome Profile (Tự động tạo):", value=profile_preview, disabled=True)
 
         if st.form_submit_button("🚀 Tạo ngay", type="primary"):
             if new_id and email:
                 clean_id = "".join(x for x in new_id if x.isalnum() or x in "_-")
                 filename = f"{clean_id}.json"
+                auto_profile_name = f"{clean_id}_profile"
 
-                # 1. Lưu file config chi tiết
+                is_created = create_chrome_profile_folder(auto_profile_name)
+
+                # Dữ liệu lưu vào file chi tiết (config/accounts/xyz.json)
                 default_data = {
                     "id": clean_id,
                     "tiktok_id": tiktok_id,
                     "email": email,
-                    "password": password, # Lưu pass vào đây để tiện hiển thị lại
-                    "chrome_profile": profile,
+                    "password": password,
+                    "chrome_profile": auto_profile_name,
                     "video_limit_per_run": 3,
                     "channels": []
                 }
@@ -122,56 +185,71 @@ def render_create_new():
                 if os.path.exists(full_path):
                     st.error("⚠️ File cấu hình ID này đã tồn tại!")
                 else:
+                    # 1. Lưu file config riêng
                     save_json(full_path, default_data)
 
-                    # 2. Đồng bộ sang file accounts.json tổng
-                    sync_to_main_accounts_file(email, password, profile)
+                    # 2. Đồng bộ vào file tổng tiktok_accounts.json
+                    sync_to_main_accounts_file(email, password, auto_profile_name, tiktok_id)
 
-                    st.success(f"Đã tạo: {filename} và đồng bộ vào danh sách tổng.")
-                    time.sleep(1); st.rerun()
+                    msg = f"✅ Đã tạo tài khoản: **{filename}**"
+                    if is_created:
+                        msg += f"\n✅ Đã tạo folder Chrome: **{auto_profile_name}**"
+                    msg += f"\n✅ Đã cập nhật vào file tổng: **tiktok_accounts.json**"
+
+                    st.success(msg)
+                    time.sleep(1.5); st.rerun()
             else:
                 st.warning("Vui lòng nhập ID và Email.")
 
 def render_edit_account(filename):
     data = load_account_data(filename)
+    old_id = data.get("id", filename.replace(".json", ""))
+    old_profile = data.get("chrome_profile", "")
 
     st.divider()
-    col_title, col_del = st.columns([4, 1])
+    col_title, col_del = st.columns([3, 1.5])
     with col_title:
         st.subheader(f"🛠️ Đang sửa: `{filename}`")
     with col_del:
-        if st.button("🗑️ Xóa File", key="del_file", type="primary"):
-            # Xóa file chi tiết
-            os.remove(os.path.join(ACCOUNTS_DIR, filename))
-            # Xóa khỏi file tổng
+        if st.button("🗑️ Xóa Tài khoản", key="del_acc_btn", type="primary", use_container_width=True):
+            profile_to_delete = data.get("chrome_profile", "")
+            try:
+                os.remove(os.path.join(ACCOUNTS_DIR, filename))
+            except: pass
+
             if "email" in data:
                 remove_from_main_accounts_file(data["email"])
 
-            st.success("Đã xóa file và đồng bộ lại danh sách tổng."); time.sleep(1); st.rerun()
+            if profile_to_delete:
+                delete_chrome_profile_folder(profile_to_delete)
 
-    # --- PHẦN 1: THÔNG TIN CƠ BẢN ---
-    with st.expander("ℹ️ Thông tin Tài khoản (Basic Info)", expanded=True):
+            st.success("✅ Đã xóa hoàn toàn.")
+            time.sleep(1); st.rerun()
+
+    # --- INFO ---
+    with st.expander("ℹ️ Thông tin Tài khoản", expanded=True):
+        c_id, c_prof = st.columns(2)
+        new_id_input = c_id.text_input("ID Định danh:", value=old_id)
+        new_profile_input = c_prof.text_input("Chrome Profile Folder:", value=old_profile)
+
         c1, c2 = st.columns(2)
-        data["tiktok_id"] = c1.text_input("TikTok Handle:", data.get("tiktok_id", ""))
-        data["email"] = c2.text_input("Email:", data.get("email", ""))
+        new_tiktok_id = c1.text_input("TikTok Handle:", value=data.get("tiktok_id", ""))
+        new_email = c2.text_input("Email:", value=data.get("email", ""))
 
         c3, c4 = st.columns(2)
-        data["password"] = c3.text_input("Password:", data.get("password", ""), type="password")
-        data["chrome_profile"] = c4.text_input("Chrome Profile:", data.get("chrome_profile", ""))
+        new_password = c3.text_input("Password:", value=data.get("password", ""), type="password")
+        new_limit = c4.number_input("Limit Video:", min_value=1, max_value=50, value=data.get("video_limit_per_run", 3))
 
-        data["video_limit_per_run"] = st.number_input("Số video clone mỗi lần chạy:", 1, 50, data.get("video_limit_per_run", 3))
-
-    # --- PHẦN 2: QUẢN LÝ KÊNH (CHANNELS) ---
+    # --- CHANNELS ---
     st.write("")
     st.subheader(f"📺 Danh sách Kênh Nguồn ({len(data.get('channels', []))})")
 
     if st.button("➕ Thêm Kênh Nguồn Mới"):
         new_channel_template = {
-            "url": "",
-            "limit": 3,
+            "url": "", "limit": 3,
             "render_settings": {
-                "title_settings": {"source_start": 2.0, "source_end": 7.0, "zoom_factor": 1.0, "manual_y_offset": 250},
-                "content_settings": {"source_start": 9.0, "source_end": "auto", "zoom_factor": 1.05, "manual_y_offset": 0},
+                "title_settings": {"source_start": 2.0, "source_end": 7.0, "zoom_factor": 1.0, "manual_x_offset": 0, "manual_y_offset": 250},
+                "content_settings": {"source_start": 9.0, "source_end": "auto", "zoom_factor": 1.05, "manual_x_offset": 0, "manual_y_offset": 0},
                 "text_overlay_settings": {"font_filename": "Inter_18pt-Bold.ttf", "font_size": 45, "text_color": "#ffffff"},
                 "text_content_settings": {"font_filename": "Inter_18pt-Bold.ttf", "font_size": 45, "text_color": "#ffffff"},
                 "assets": {"title_frame_filename": "", "content_frame_filename": "", "logo_filename": ""}
@@ -182,101 +260,74 @@ def render_edit_account(filename):
         st.rerun()
 
     channels = data.get("channels", [])
+    channels_to_remove = []
+
     for i, chn in enumerate(channels):
-        chn_url = chn.get("url", "Chưa nhập Link")
-        label = f"#{i+1}: {chn_url}"
+        channel_label = chn.get('url', f'Kênh #{i+1}')
+        if not channel_label: channel_label = f"Kênh Trống #{i+1}"
+        with st.expander(f"📡 {channel_label}", expanded=False):
+            c_url, c_lim, c_del = st.columns([3, 1, 0.5])
+            chn["url"] = c_url.text_input(f"Link TikTok #{i+1}", value=chn.get("url", ""))
+            chn["limit"] = c_lim.number_input(f"Số lượng #{i+1}", 1, 20, value=chn.get("limit", 3))
 
-        with st.expander(label, expanded=False):
-            c_url, c_lim, c_del_chn = st.columns([3, 1, 0.5])
-            chn["url"] = c_url.text_input(f"Link Kênh Nguồn #{i+1}", chn.get("url", ""))
-            chn["limit"] = c_lim.number_input(f"Limit #{i+1}", 1, 20, chn.get("limit", 3))
+            if c_del.button("❌", key=f"del_chn_{i}"): channels_to_remove.append(i)
 
-            if c_del_chn.button("❌", key=f"del_chn_{i}"):
-                channels.pop(i)
-                save_account_data(filename, data)
-                st.rerun()
+            st.caption("⚙️ Cấu hình Render (Dùng Menu 'Quản lý Kênh' để sửa chi tiết)")
+            chn["render_settings"] = chn.get("render_settings", {})
 
-            st.markdown("🎛️ **Cấu hình Render**")
-            rs = chn.get("render_settings", {})
-
-            t1, t2, t3, t4 = st.tabs(["Intro", "Content", "Text", "Assets"])
-
-            with t1:
-                ts = rs.get("title_settings", {})
-                tc1, tc2 = st.columns(2)
-                ts["source_start"] = tc1.number_input(f"In.Start #{i}", 0.0, 60.0, float(ts.get("source_start", 2.0)))
-                ts["source_end"] = tc1.number_input(f"In.End #{i}", 0.0, 60.0, float(ts.get("source_end", 7.0)))
-                ts["zoom_factor"] = tc2.number_input(f"In.Zoom #{i}", 1.0, 3.0, float(ts.get("zoom_factor", 1.0)))
-                ts["manual_y_offset"] = tc2.number_input(f"In.Y-Off #{i}", -500, 500, int(ts.get("manual_y_offset", 250)))
-                rs["title_settings"] = ts
-
-            with t2:
-                cs = rs.get("content_settings", {})
-                cc1, cc2 = st.columns(2)
-                cs["source_start"] = cc1.number_input(f"Co.Start #{i}", 0.0, 300.0, float(cs.get("source_start", 9.0)))
-                val_end = cs.get("source_end", "auto")
-                str_end = cc1.text_input(f"Co.End #{i}", str(val_end))
-                cs["source_end"] = float(str_end) if str_end.replace('.','',1).isdigit() else "auto"
-                cs["zoom_factor"] = cc2.number_input(f"Co.Zoom #{i}", 1.0, 3.0, float(cs.get("zoom_factor", 1.05)))
-                cs["manual_y_offset"] = cc2.number_input(f"Co.Y-Off #{i}", -500, 500, int(cs.get("manual_y_offset", 0)))
-                rs["content_settings"] = cs
-
-            with t3:
-                tx = rs.get("text_overlay_settings", {})
-                c_tx1, c_tx2 = st.columns(2)
-                tx["font_filename"] = c_tx1.text_input(f"Font #{i}", tx.get("font_filename", "Inter_18pt-Bold.ttf"))
-                tx["font_size"] = c_tx1.number_input(f"Size #{i}", 10, 100, int(tx.get("font_size", 45)))
-                tx["text_color"] = c_tx2.color_picker(f"Color #{i}", tx.get("text_color", "#ffffff"))
-                rs["text_overlay_settings"] = tx
-
-                txc = rs.get("text_content_settings", {})
-                txc["font_filename"] = tx["font_filename"]
-                txc["font_size"] = tx["font_size"]
-                txc["text_color"] = tx["text_color"]
-                rs["text_content_settings"] = txc
-
-            with t4:
-                ast = rs.get("assets", {})
-                ca1, ca2 = st.columns(2)
-                with ca1:
-                    cur_fri = ast.get("title_frame_filename", "")
-                    if cur_fri: safe_show_image(os.path.join(FRAME_DIR, cur_fri))
-                    up_fri = st.file_uploader("Up Intro", key=f"up_fri_{i}_{filename}")
-                    if up_fri:
-                        fname = save_frame_image(up_fri)
-                        if fname: ast["title_frame_filename"] = fname
-                    else: ast["title_frame_filename"] = st.text_input(f"File Intro #{i}", cur_fri)
-
-                with ca2:
-                    cur_frc = ast.get("content_frame_filename", "")
-                    if cur_frc: safe_show_image(os.path.join(FRAME_DIR, cur_frc))
-                    up_frc = st.file_uploader("Up Content", key=f"up_frc_{i}_{filename}")
-                    if up_frc:
-                        fname = save_frame_image(up_frc)
-                        if fname: ast["content_frame_filename"] = fname
-                    else: ast["content_frame_filename"] = st.text_input(f"File Content #{i}", cur_frc)
-
-                ast["logo_filename"] = st.text_input(f"Logo #{i}", ast.get("logo_filename", ""))
-                rs["assets"] = ast
-
-            chn["render_settings"] = rs
-            st.markdown("---")
+    if channels_to_remove:
+        for idx in sorted(channels_to_remove, reverse=True): channels.pop(idx)
+        save_account_data(filename, data)
+        st.rerun()
 
     st.divider()
-    if st.button("💾 LƯU TOÀN BỘ CẤU HÌNH TÀI KHOẢN", type="primary", use_container_width=True):
+
+    # --- SAVE BUTTON ---
+    if st.button("💾 Cập nhật Tài khoản", type="primary", use_container_width=True):
+        data["id"] = new_id_input
+        data["tiktok_id"] = new_tiktok_id
+        data["email"] = new_email
+        data["password"] = new_password
+        data["video_limit_per_run"] = new_limit
         data["channels"] = channels
 
-        # 1. Lưu file chi tiết
-        save_account_data(filename, data)
+        final_profile_name = old_profile
+        if new_profile_input and new_profile_input != old_profile:
+            success, msg = rename_chrome_profile_folder(old_profile, new_profile_input)
+            if success:
+                st.toast(f"✅ Đã đổi tên folder Chrome: {new_profile_input}")
+                final_profile_name = new_profile_input
+            else:
+                st.error(f"❌ Lỗi đổi tên Profile: {msg}"); return
 
-        # 2. Đồng bộ file tổng
-        if "email" in data and "password" in data:
+        data["chrome_profile"] = final_profile_name
+
+        final_filename = filename
+        if new_id_input and new_id_input != old_id:
+            new_filename = f"{new_id_input}.json"
+            new_path = os.path.join(ACCOUNTS_DIR, new_filename)
+            old_path = os.path.join(ACCOUNTS_DIR, filename)
+
+            if os.path.exists(new_path):
+                st.error(f"❌ ID '{new_id_input}' đã tồn tại!"); return
+            else:
+                try:
+                    os.rename(old_path, new_path)
+                    final_filename = new_filename
+                    st.toast(f"✅ Đã đổi tên File Config: {new_filename}")
+                except Exception as e:
+                    st.error(f"Lỗi đổi tên file: {e}"); return
+
+        save_account_data(final_filename, data)
+
+        if new_email:
+            # [QUAN TRỌNG] Đồng bộ file tổng mỗi khi cập nhật
             sync_to_main_accounts_file(
-                data["email"],
-                data["password"],
-                data.get("chrome_profile", ""),
-                active=True # Mặc định active khi vừa lưu
+                new_email,
+                new_password,
+                final_profile_name,
+                new_tiktok_id,
+                active=True
             )
 
-        st.success(f"✅ Đã lưu cấu hình vào: config/accounts/{filename} và đồng bộ file tổng.")
-        time.sleep(1)
+        st.success(f"✅ Đã cập nhật thành công!"); time.sleep(1.5); st.rerun()

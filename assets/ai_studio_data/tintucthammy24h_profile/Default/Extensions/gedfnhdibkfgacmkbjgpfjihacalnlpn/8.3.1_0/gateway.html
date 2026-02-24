@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Whisk Launcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="gateway.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="lang-switch">
+      <span class="material-symbols-outlined">language</span>
+      <select id="languageSelector">
+        <option value="vi">Tiếng Việt</option>
+        <option value="en">English</option>
+        <option value="hi">हिन्दी (India)</option>
+        <option value="th">ไทย (Thailand)</option>
+        <option value="ur">اردو (Pakistan)</option>
+        <option value="bn">বাংলা (Bangladesh)</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <h1>Auto Whisk</h1>
+      <p data-lang-key="subtitle">Trình quản lý tác vụ tự động cho Whisk AI</p>
+    </div>
+
+    <div class="versions">
+      <div class="version-card new" id="btn-v760">
+        <div class="badge" data-lang-key="badge_classic">CỔ ĐIỂN</div>
+        <div class="icon-area">
+          <span class="material-symbols-outlined">rocket_launch</span>
+        </div>
+        <div class="info">
+          <h3 data-lang-key="v760_title">Phiên bản 7.6.0 (API)</h3>
+          <p data-lang-key="v760_desc">
+            Tốc độ cao, chạy ngầm ổn định. <b>Không cần mở tab Whisk.</b> Hỗ trợ tính năng Ảnh tham chiếu và Tải ảnh tự động.
+          </p>
+        </div>
+        <span class="material-symbols-outlined arrow">chevron_right</span>
+      </div>
+
+      <div class="version-card classic" id="btn-v751">
+        <div class="badge-classic" data-lang-key="badge_classic">CỔ ĐIỂN</div>
+        <div class="icon-area">
+          <span class="material-symbols-outlined">mouse</span>
+        </div>
+        <div class="info">
+          <h3 data-lang-key="v751_title">Phiên bản 7.5.1 (DOM)</h3>
+          <p data-lang-key="v751_desc">
+            Mô phỏng thao tác chuột. <b>Yêu cầu giữ tab Whisk luôn mở.</b> Sử dụng khi bản API gặp sự cố.
+          </p>
+        </div>
+        <span class="material-symbols-outlined arrow">chevron_right</span>
+      </div>
+
+      <div class="version-card local" id="btn-local">
+        <div class="badge-local" data-lang-key="badge_recommended">KHUYÊN DÙNG</div>
+        <div class="icon-area">
+          <span class="material-symbols-outlined">desktop_windows</span>
+        </div>
+        <div class="info">
+          <h3 data-lang-key="local_title">G-Labs Automation</h3>
+          <p data-lang-key="local_desc">
+            Phần mềm chạy độc lập trên Windows (Portable). Sức mạnh của bản 7.6.0 nhưng <b>không cần mở trình duyệt</b>.
+          </p>
+        </div>
+        <span class="material-symbols-outlined arrow">open_in_new</span>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <a href="https://github.com/duckmartians/Auto-Whisk-Multi-Version" target="_blank" class="link-item">
+        <span class="material-symbols-outlined">menu_book</span> <span data-lang-key="link_guide">Hướng dẫn</span>
+      </a>
+      <a href="#" class="link-item" style="color: #fdd663;">
+        <span class="material-symbols-outlined">coffee</span> <span data-lang-key="link_donate">Mời tôi ly cà phê</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      Designed by duckmartians
+    </div>
+  </div>
+  <script src="gateway.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+export let state={isRunning:!1,isPaused:!1,stopRequested:!1,accessToken:null,promptList:[],imageCount:1,aspectRatio:"IMAGE_ASPECT_RATIO_SQUARE",fetchedToolsList:[],currentLang:"vi",referenceImages:[],serverConfig:null};

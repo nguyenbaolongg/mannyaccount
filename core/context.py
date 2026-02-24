@@ -6,6 +6,9 @@ import sys
 # Tìm về thư mục gốc dự án
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# [MỚI] Import API kết nối Supabase
+from services.supabase_api import SupabaseAPI
+
 class AccountContext:
     def __init__(self, account_id):
         self.acc_id = account_id
@@ -14,8 +17,9 @@ class AccountContext:
         self.root_data = os.path.join(PROJECT_ROOT, "data", account_id)
         self.temp_dir = os.path.join(self.root_data, "temp") # File tải về nằm ở đây
         self.state_file = os.path.join(self.root_data, "state.json")
-        self.config_file = os.path.join(PROJECT_ROOT, "config", "accounts", f"{account_id}.json")
         self.log_file = os.path.join(PROJECT_ROOT, "logs", f"{account_id}.log")
+
+        # [ĐÃ XÓA] self.config_file = os.path.join(...)
 
         # 2. Tạo folder nếu thiếu
         os.makedirs(self.temp_dir, exist_ok=True)
@@ -24,9 +28,11 @@ class AccountContext:
         # 3. Setup Logger
         self.logger = self._setup_logger()
 
-        # 4. Load Config
-        with open(self.config_file, "r", encoding="utf-8") as f:
-            self.config = json.load(f)
+        # 4. [SỬA] Load Config từ Supabase thay vì Local JSON
+        self.config = SupabaseAPI.get_account_by_id(account_id)
+        if not self.config:
+            self.logger.error(f"❌ Không tìm thấy cấu hình cho tài khoản '{account_id}' trên Supabase!")
+            self.config = {}
 
     def _setup_logger(self):
         logger = logging.getLogger(self.acc_id)

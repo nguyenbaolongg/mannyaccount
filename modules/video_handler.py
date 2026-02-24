@@ -4,8 +4,10 @@ import requests
 import yt_dlp
 import shutil
 import time
-import subprocess # Dùng để gọi FFmpeg nén video
+import subprocess
+import uuid  # <--- [MỚI] Thêm thư viện này để tạo tên file duy nhất
 import requests
+
 # Xác định đường dẫn gốc dự án
 MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(MODULE_DIR)
@@ -42,16 +44,16 @@ def compress_video_if_needed(input_path, limit_mb=20):
         # Tạo tên file nén
         dir_name = os.path.dirname(input_path)
         base_name = os.path.splitext(os.path.basename(input_path))[0]
+        # File nén cũng sẽ mang tính duy nhất vì base_name đã duy nhất (nhờ hàm download bên dưới)
         output_path = os.path.join(dir_name, f"{base_name}_small.mp4")
 
-        # Lệnh FFmpeg nén: Giảm độ phân giải về 720p, CRF 28 (giảm chất lượng nhẹ), Preset veryfast
-        # -fs 19M: Cố gắng giới hạn file ở mức 19MB (gần 20MB)
+        # Lệnh FFmpeg nén
         cmd = [
             'ffmpeg', '-y', '-i', input_path,
-            '-vf', 'scale=-2:720', # Resize về HD 720p để giảm nhẹ dung lượng
-            '-c:v', 'libx264', '-crf', '28', '-preset', 'veryfast', # Nén mạnh
-            '-c:a', 'aac', '-b:a', '64k', # Giảm bitrate audio
-            '-fs', f'{int(limit_mb * 1024 * 1024)}', # Cắt nếu vượt quá dung lượng (Hard limit)
+            '-vf', 'scale=-2:720',
+            '-c:v', 'libx264', '-crf', '28', '-preset', 'veryfast',
+            '-c:a', 'aac', '-b:a', '64k',
+            '-fs', f'{int(limit_mb * 1024 * 1024)}',
             output_path
         ]
 
@@ -176,6 +178,7 @@ def download_via_rapidapi(tiktok_url, save_path):
 def download_tiktok_video(url, temp_dir):
     """
     Hàm tải video.
+    temp_dir: Bắt buộc truyền vào thư mục tạm riêng của Account.
     Trả về Dict: {'original': path_goc, 'ai_studio': path_nho}
     """
     if not os.path.exists(temp_dir): os.makedirs(temp_dir)
@@ -186,7 +189,13 @@ def download_tiktok_video(url, temp_dir):
         video_id = str(int(time.time()))
 
     timestamp = int(time.time())
-    final_path = os.path.join(temp_dir, f"src_{video_id}_{timestamp}.mp4")
+
+    # [QUAN TRỌNG] Tạo suffix ngẫu nhiên để đảm bảo tên file không bao giờ trùng
+    # ngay cả khi chạy đa luồng cùng giây
+    unique_suffix = str(uuid.uuid4())[:8]
+
+    # Tên file sẽ có dạng: src_73823123_17154234_a1b2c3d4.mp4
+    final_path = os.path.join(temp_dir, f"src_{video_id}_{timestamp}_{unique_suffix}.mp4")
 
     print(f"   ⬇️ Downloading: {url}")
     downloaded = False

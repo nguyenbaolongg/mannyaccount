@@ -1,0 +1,37 @@
+{
+   "checksum": "1e54fbb25d92a354f7aeaf576726429e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13416096850892462",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13416096850892462",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13416096850892462",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "Ct8BCr4BCIiBAhK3ASAAkgGjAQqgAQoOY2hyb21lX3N5bmNfYm0SBTUxIWJtGhIJGMEmM0hLBgARGMEmM0hLBgAiNAlsoBczSEsGABADGQxFBpsIbALrIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEiNAlsoBczSEsGABADGQxFBpsIbALrIAEqHDUxIWJtL2ZkOjkxNjM3MjM1NTk0Njg4OTMxNjEpjtEmM0hLBgDqAQsIoKfjzAYQ4KnmRRIAKhhFY0ZFYUpCRnFnSGxZdC9BSmM3Z3l3PT1IAxLDAQgCEr4BChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EmZaOkFEcXRBWndIQk50WFRjMURGNVNzQVNGVlVOYUxYRFRrQVdvcTA0TnMzL1J4U3Q2M1hFb3gyeHdBa2xTV3dNcWw1V0FPZ2NlMmttbmJJeHUzQVphbTFZSGU3R2VBbStjRGt3PT0YACAAKAAwtIqCqP/okgM4AEAAShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKrAQgBEqYBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9Ek5aOkFEcXRBWnlDRXl5WFBka1BFTERqQXUyMUhFa2ZpKzNuZm1YcTd5bkdEYllwRlVtNFJFVFJCMmNGZ2NjR0JYVStPQURiaWFkSEs5L1cYACAAKAAwtIqCqP/okgM4AEAAShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAABLDAQgDEr4BChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EmZaOkFEcXRBWnpLS1JRYmNQeGNycTlmbVJmbzZkN1g2YXNHUU9YZFFYdEVGelQvaU9JYUVtNEpUeWtGbDB1RVVlbmllaHhYTzFMUldOcHpDR3pzTkFUUzZjOENPTnRGRnN3TzV3PT0YACAAKAAwtIqCqP/okgM4AEAAShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAADABOAA=",
+   "version": 1
+}

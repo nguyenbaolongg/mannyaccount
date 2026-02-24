@@ -1,14 +1,8 @@
 import requests
 import json
 
-# ==============================================================================
-# 1. CÁC HÀM GHI DỮ LIỆU (WRITE)
-# ==============================================================================
-
 def save_to_sheet(script_url, link, title, script, combined_hints, original_video, title_tiktok, tiktok_id, file_path=""):
-    """
-    [CŨ - CHO UI] Lưu dòng dữ liệu mới vào Sheet (Action: save)
-    """
+
     if not script_url: return None
 
     payload = {
@@ -45,9 +39,7 @@ def update_tiktok_info(script_url, row, file_path=None, link_tiktok=None, title_
     except: return False
 
 def update_final_result(script_url, row_idx, drive_link):
-    """
-    [MỚI] Cập nhật link Drive video thành phẩm (Dùng action update_file_path để set trạng thái)
-    """
+
     try:
         payload = {
             "action": "update_file_path",
@@ -59,9 +51,7 @@ def update_final_result(script_url, row_idx, drive_link):
     except: return False
 
 def update_voice_links(sheet_url, row, title_voice_link, content_voice_link):
-    """
-    [MỚI] Cập nhật link Voice vào cột D và F (Action: update_voice)
-    """
+
     try:
         payload = {
             "action": "update_voice",
@@ -76,9 +66,7 @@ def update_voice_links(sheet_url, row, title_voice_link, content_voice_link):
         return False
 
 def update_status_finish(script_url, row, link_tiktok):
-    """
-    [CŨ - CHO TOOL UPLOAD TIKTOK] Xác nhận đã đăng xong (Action: finish_upload)
-    """
+
     try:
         payload = {
             "action": "finish_upload",
@@ -94,9 +82,7 @@ def update_status_finish(script_url, row, link_tiktok):
 # ==============================================================================
 
 def get_data_from_sheet(script_url, row_number=None):
-    """
-    [CŨ/MỚI] Đọc 1 dòng cụ thể (Action: read)
-    """
+
     if not script_url: return None
 
     payload = {"action": "read"}
@@ -131,9 +117,7 @@ def get_data_from_sheet(script_url, row_number=None):
     except: return None
 
 def get_pending_tasks(script_url):
-    """
-    [CŨ - CHO TOOL UPLOAD TIKTOK] Lấy danh sách video chờ đăng (Action: read_pending)
-    """
+
     if not script_url: return []
     try:
         payload = {"action": "read_pending"}
@@ -144,17 +128,12 @@ def get_pending_tasks(script_url):
         return []
     except: return []
 
-# ==============================================================================
-# 3. CÁC HÀM QUÉT DỮ LIỆU THÔNG MINH (SCAN)
-# ==============================================================================
-
 def get_last_row_index(sheet_url):
     try:
         payload = {"action": "read", "row": ""}
         # Gửi request
         response = requests.post(sheet_url, json=payload, timeout=10)
 
-        # --- DEBUG: In ra phản hồi nếu không phải 200 OK ---
         if response.status_code != 200:
             print(f"❌ HTTP Error {response.status_code}: {response.text}")
             return 0

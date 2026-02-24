@@ -1,7 +1,4 @@
 {
-    "crawl_times": [
-        "17:27",
-        "17:25"
-    ],
-    "nurture_windows": []
+  "crawl_times": ["13:53", "15:00", "18:00"],
+  "nurture_windows": []
 }

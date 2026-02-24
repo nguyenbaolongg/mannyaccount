@@ -25,7 +25,6 @@ ACCOUNTS_FILE = os.path.join(CONFIG_DIR, "tiktok_accounts.json")
 RENDER_CONFIG_FILE = os.path.join(CONFIG_DIR, "render_config.json")
 USER_SETTINGS_FILE = os.path.join(PROJECT_ROOT, "user_settings.json")
 SCHEDULE_FILE = os.path.join(CONFIG_DIR, "schedule_config.json")
-SESSION_CONFIG_FILE = os.path.join(CONFIG_DIR, "session_config.json")
 ACCOUNTS_DIR = os.path.join(CONFIG_DIR, "accounts")
 if not os.path.exists(ACCOUNTS_DIR): os.makedirs(ACCOUNTS_DIR)
 # --- HELPER FUNCTIONS ---
@@ -65,3 +64,17 @@ def safe_show_image(path, width=100):
             st.image(image, width=width)
         except Exception:
             st.caption(f"Ảnh lỗi: {os.path.basename(path)}")
+
+# File: ui/utils.py
+
+def safe_show_image(image_path, width=None, caption=None):
+    if image_path and os.path.exists(image_path):
+        try:
+            # [FIX] Nếu width có giá trị cụ thể thì mới truyền vào
+            if width:
+                st.image(image_path, width=width, caption=caption)
+            else:
+                # Nếu width là None, gọi hàm không tham số width để Streamlit tự auto
+                st.image(image_path, caption=caption)
+        except Exception as e:
+            st.error(f"Không thể tải ảnh: {e}")
