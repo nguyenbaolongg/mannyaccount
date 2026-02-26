@@ -14,7 +14,6 @@ CURRENT_SCRIPT_PATH = os.path.abspath(__file__)
 MODULES_DIR = os.path.dirname(CURRENT_SCRIPT_PATH)
 PROJECT_ROOT = os.path.dirname(MODULES_DIR)
 
-SETTINGS_PATH = os.path.join(PROJECT_ROOT, "user_settings.json")
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")
 AI_STUDIO_DIR = os.path.join(ASSETS_DIR, "ai_studio_data")
 TEMP_DIR = os.path.join(ASSETS_DIR, "temp_downloads")
@@ -52,40 +51,49 @@ def kill_chrome_globally():
     except: pass
 
 def handle_google_login(page, email, password):
-    """Xử lý đăng nhập Google"""
-    print(f"[{email}] 🕵️ Kiểm tra đăng nhập Google...")
+    print(f"[{email}] 🕵️ Kiểm tra trạng thái đăng nhập...")
     try:
+        time.sleep(10)
+
+        # Nếu URL là Google Login hoặc xuất hiện ô nhập email
         if "accounts.google.com" in page.url or page.locator('input[type="email"]').count() > 0:
+            print(f"[{email}] ⚠️ Chưa đăng nhập! Bắt đầu tự động điền thông tin...")
             if not email or not password:
-                print(f"[{email}] ⚠️ Thiếu Email/Pass. Bỏ qua login tự động.")
+                print(f"[{email}] ❌ Thiếu Email hoặc Mật khẩu trong cấu hình của ID này. Không thể tự đăng nhập.")
                 return
 
-            email_input = page.locator('input[type="email"]')
-            if email_input.is_visible():
-                email_input.fill(email); time.sleep(1)
-                page.keyboard.press("Enter"); time.sleep(5)
+            # Điền Email
+            email_input = page.locator('input[type="email"]').first
+            email_input.wait_for(state="visible", timeout=10000)
+            email_input.fill(email)
+            time.sleep(1)
+            page.keyboard.press("Enter")
+            time.sleep(5) # Chờ Google load form password
 
-            pass_input = page.locator('input[type="password"]')
-            try: pass_input.wait_for(state="visible", timeout=10000)
-            except: pass
+            # Điền Password
+            pass_input = page.locator('input[type="password"]').first
+            pass_input.wait_for(state="visible", timeout=10000)
+            pass_input.click()
+            pass_input.fill(password)
+            time.sleep(1)
+            page.keyboard.press("Enter")
 
-            if pass_input.is_visible():
-                pass_input.click(); pass_input.fill(password)
-                time.sleep(1); page.keyboard.press("Enter")
+            print(f"[{email}] ✅ Đã điền thông tin. Chờ Google xác thực...")
 
-            print(f"[{email}] ✅ Đã Login."); page.wait_for_url("**/ai.studio/**", timeout=60000)
+            page.wait_for_url("**/ai.studio/**", timeout=60000)
+            print(f"[{email}] 🎉 Đăng nhập thành công, đã quay lại AI Studio!")
+            time.sleep(5)
         else:
-            print(f"[{email}] ✅ Đã đăng nhập sẵn.")
+            print(f"[{email}] ✅ Tài khoản đã được đăng nhập sẵn (Cookie còn hạn).")
     except Exception as e:
-        print(f"[{email}] ⚠️ Lỗi login (Bỏ qua): {e}")
+        print(f"[{email}] ⚠️ Lỗi trong lúc tự đăng nhập Google: {e}")
+        print(f"💡 Gợi ý: Google có thể đang đòi xác minh 2 bước. Hãy dùng chức năng 'Mở Chrome' để giải quyết thủ công 1 lần.")
 
 # ================= WORKER XỬ LÝ 1 TÀI KHOẢN (CHẠY TRONG 1 LUỒNG) =================
 
 def upload_worker(account_config):
 
 
-    # [QUAN TRỌNG] Kill chrome toàn cục nếu chưa chạy lần nào
-    # Điều này đảm bảo khi worker đầu tiên chạy, nó sẽ dọn dẹp môi trường
     kill_chrome_globally()
 
     # 1. Lấy thông tin từ config riêng của nick
@@ -117,11 +125,9 @@ def upload_worker(account_config):
     browser = None
     try:
         with sync_playwright() as p:
-            # 3. Khởi tạo Browser Context cho luồng này
-            # Lưu ý: Mỗi luồng trỏ vào một user_data_dir KHÁC NHAU -> Không xung đột
             browser = p.chromium.launch_persistent_context(
                 user_data_dir=current_user_data_dir,
-                headless=False, # Để False để thấy trình duyệt chạy (True chạy ngầm)
+                headless=False,
                 channel="chrome",
                 args=[
                     "--start-maximized",
@@ -135,24 +141,27 @@ def upload_worker(account_config):
                 ignore_default_args=["--enable-automation"]
             )
 
-            # Đảm bảo chỉ có 1 tab
             while len(browser.pages) > 1:
                 browser.pages[-1].close()
             page = browser.pages[0] if browser.pages else browser.new_page()
 
-            # --- BẮT ĐẦU LOGIC AUTOMATION ---
             print(f"🔗 [{tiktok_id}] Vào AI Studio...")
             page.goto(target_url, timeout=60000)
-            time.sleep(3)
+            time.sleep(5)
 
-            # 4. Login (Dùng email/pass riêng của nick này)
             try:
                 login_btn = page.locator('button:has-text("Log in"), button:has-text("Sign in")').first
-                if login_btn.is_visible(timeout=3000): login_btn.click()
-            except: pass
+                if login_btn.is_visible(timeout=3000):
+                    login_btn.click()
+                    time.sleep(2)
 
+                google_btn = page.locator('button:has-text("Continue with Google"), button:has-text("Sign in with Google")').first
+                if google_btn.is_visible(timeout=3000):
+                    google_btn.click()
+                    time.sleep(5)
+            except:
+                pass
             handle_google_login(page, gg_email, gg_pass)
-
             try: page.wait_for_load_state("networkidle", timeout=10000)
             except: pass
 
@@ -263,7 +272,6 @@ def upload_worker(account_config):
                     if clicked_save: break
                 if clicked_save: break
 
-                # Giữ tương tác
                 try:
                     vp = page.viewport_size or {'width':1280, 'height':720}
                     page.mouse.move(random.randint(10, vp['width']-10), random.randint(10, vp['height']-10))
@@ -292,7 +300,6 @@ def upload_worker(account_config):
         print(f"🔥 [{tiktok_id}] Lỗi Crash: {e}")
         return False
     finally:
-        # Quan trọng: Đóng browser của luồng này
         try: browser.close()
         except: pass
 
@@ -300,18 +307,7 @@ def upload_worker(account_config):
 # ================= HÀM CHẠY SONG SONG (DÀNH CHO WORKER CHÍNH GỌI) =================
 
 def run_parallel_uploads(list_accounts_to_run):
-    """
-    list_accounts_to_run: Danh sách các dict account cần chạy
-    [
-        {"tiktok_id": "acc1", "chrome_profile": "p1", "video_path": "v1.mp4", "email": "e1", "password": "p1"},
-        {"tiktok_id": "acc2", "chrome_profile": "p2", "video_path": "v2.mp4", "email": "e2", "password": "p2"}
-    ]
-    """
-
-    # 1. Kill Chrome toàn bộ trước khi bắt đầu (để sạch sẽ)
     kill_chrome_globally()
-
-    # 2. Xác định số luồng
     max_workers = len(list_accounts_to_run)
     if max_workers == 0:
         print("⚠️ Không có tài khoản nào để chạy.")
@@ -322,7 +318,6 @@ def run_parallel_uploads(list_accounts_to_run):
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit task
         future_to_acc = {executor.submit(upload_worker, acc): acc["tiktok_id"] for acc in list_accounts_to_run}
-
         # Chờ kết quả
         for future in concurrent.futures.as_completed(future_to_acc):
             tid = future_to_acc[future]
@@ -333,17 +328,8 @@ def run_parallel_uploads(list_accounts_to_run):
             except Exception as e:
                 print(f"💀 [Crash] {tid}: {e}")
 
-# ================= HÀM GIỮ TƯƠNG THÍCH VỚI CODE CŨ =================
-# Nếu code cũ gọi hàm này, ta chuyển nó thành chạy song song với 1 phần tử
 def run_ai_studio_uploader(local_video_path, specific_profile_name=None, tiktok_id=None):
-    """
-    Hàm Wrapper để giữ tương thích ngược.
-    Nó tạo 1 list chứa 1 account rồi gọi hàm song song.
-    """
-    # Vì hàm cũ không truyền email/pass, ta phải load lại từ file settings hoặc file account
-    # Ở đây load tạm từ user_settings chung làm default
-    _, _, def_email, def_pass = load_settings()
-
+    def_email, def_pass = load_settings()
     acc_config = {
         "tiktok_id": tiktok_id or "Unknown",
         "chrome_profile": specific_profile_name or "Default",
@@ -351,36 +337,7 @@ def run_ai_studio_uploader(local_video_path, specific_profile_name=None, tiktok_
         "email": def_email,
         "password": def_pass
     }
-
-    # Chạy single thread nhưng dùng kiến trúc mới
-    # Lưu ý: upload_worker trả về True/False, ta gọi trực tiếp
-    # Reset biến cờ kill chrome để nó chạy lại nếu cần thiết
     global _has_killed_chrome_globally
     _has_killed_chrome_globally = False
-
     return upload_worker(acc_config)
 
-# ================= TEST =================
-if __name__ == "__main__":
-    # Test giả lập 2 luồng
-    mock_accounts = [
-        {
-            "tiktok_id": "Acc_Test_1",
-            "chrome_profile": "24hvuiv8_profile", # Thay bằng tên folder profile thật
-            "video_path": r"D:\test_video_1.mp4",
-            "email": "email1@gmail.com",
-            "password": "pass1"
-        },
-        {
-            "tiktok_id": "Acc_Test_2",
-            "chrome_profile": "tintucthammy24h", # Thay bằng tên folder profile thật
-            "video_path": r"D:\test_video_2.mp4",
-            "email": "email2@gmail.com",
-            "password": "pass2"
-        }
-    ]
-
-    # run_parallel_uploads(mock_accounts)
-
-    # Hoặc test đơn lẻ tương thích ngược
-    # run_ai_studio_uploader(r"D:\video.mp4", "24hvuiv8_profile", "test_id")

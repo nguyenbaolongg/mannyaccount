@@ -1,41 +1,36 @@
 import os
 import sys
 import time
-import json
 import subprocess
 from datetime import datetime
-
+import json
 # Import API kết nối với Supabase
 from services.supabase_api import SupabaseAPI
 
-# ================= CẤU HÌNH HỆ THỐNG =================
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-CONFIG_DIR = os.path.join(PROJECT_ROOT, "config")
-SCHEDULE_FILE = os.path.join(CONFIG_DIR, "schedule_config.json")
-
-# [QUAN TRỌNG] Số lượng tài khoản chạy cùng một lúc
 MAX_CONCURRENT_WORKERS = 10
 
-def load_json(path):
-    if not os.path.exists(path): return {}
-    try:
-        with open(path, "r", encoding="utf-8") as f: return json.load(f)
-    except: return {}
-
 def get_active_accounts():
-    accounts = SupabaseAPI.get_all_active_accounts()
+    try:
+        local_machine_file = os.path.join(PROJECT_ROOT, "config", "local_machine.json")
+        try:
+            with open(local_machine_file, "r") as f:
+                local_machine_id = json.load(f).get("machine_id", "1")
+        except:
+            local_machine_id = "1"
 
-    active_ids = []
-    for acc in accounts:
-        if acc.get("active"):
-            acc_id = acc.get("tiktok_id")
-            if acc_id:
-                active_ids.append(acc_id)
-
-    return active_ids
+        accounts = SupabaseAPI.get_all_active_accounts()
+        active_ids = [
+            acc["tiktok_id"]
+            for acc in accounts
+            if acc.get("active") and str(acc.get("machine_id", "1")) == str(local_machine_id)
+        ]
+        return active_ids
+    except Exception as e:
+        print(f"❌ Lỗi khi lấy danh sách account: {e}")
+        return []
 
 def run_worker_batch(account_ids):
-    """Chạy một nhóm worker song song"""
     processes = []
     print(f"   🚀 Đang khởi động {len(account_ids)} luồng song song...")
 
@@ -51,24 +46,19 @@ def run_worker_batch(account_ids):
             print(f"      ❌ Lỗi kích hoạt {acc_id}: {e}")
 
     print(f"   ⏳ Đang chờ {len(processes)} luồng hoàn tất xử lý...")
-
     finished_count = 0
     total = len(processes)
 
     while finished_count < total:
         time.sleep(2)
-        finished_count = 0
-        for acc_id, p in processes:
-            if p.poll() is not None:
-                finished_count += 1
+        finished_count = sum(1 for _, p in processes if p.poll() is not None)
 
     print(f"   ✅ Đợt chạy này đã hoàn tất (100%).")
 
 def start_schedule_loop():
     print("="*60)
-    print(f"🤖 MATRIX SCHEDULER - SUPABASE MODE")
-    print(f"📂 Root: {PROJECT_ROOT}")
-    print(f"⚡ Max Concurrent: {MAX_CONCURRENT_WORKERS}")
+    print(f" MATRIX SCHEDULER - FULL CLOUD (SUPABASE)")
+    print(f"⚡ Max Concurrent Workers: {MAX_CONCURRENT_WORKERS}")
     print("="*60)
 
     last_run_time = ""
@@ -78,11 +68,12 @@ def start_schedule_loop():
             now = datetime.now()
             current_hhmm = now.strftime("%H:%M")
 
-            sch_config = load_json(SCHEDULE_FILE)
+            sch_config = SupabaseAPI.get_system_config("schedule_config") or {}
             crawl_times = sch_config.get("crawl_times", [])
 
             if current_hhmm in crawl_times and current_hhmm != last_run_time:
-                print(f"\n⏰ [TRIGGER] Đã đến giờ chạy: {current_hhmm}")
+                sys.stdout.write("\033[K")
+                print(f"\n⏰ [TRIGGER] Đã đến giờ chạy theo lịch Supabase: {current_hhmm}")
                 last_run_time = current_hhmm
 
                 active_ids = get_active_accounts()
@@ -96,26 +87,19 @@ def start_schedule_loop():
                     for i in range(0, total_accs, MAX_CONCURRENT_WORKERS):
                         batch = active_ids[i : i + MAX_CONCURRENT_WORKERS]
                         print(f"\n   📦 [BATCH] Chạy nhóm {i//MAX_CONCURRENT_WORKERS + 1}: {batch}")
-
                         run_worker_batch(batch)
-
                         if i + MAX_CONCURRENT_WORKERS < total_accs:
                             print("   💤 Nghỉ 10s trước khi chạy nhóm tiếp theo...")
                             time.sleep(10)
-
-                print(f"\n🏁 [SESSION DONE] Đã chạy xong lịch trình {current_hhmm}")
-
-            if now.second % 30 == 0:
-                print(f"⏳ [{current_hhmm}] Đang chờ lịch... {crawl_times}", end="\r")
-
+                print(f"\n🏁 [SESSION DONE] Đã chạy xong lịch trình {current_hhmm}\n")
+            if now.second % 10 == 0:
+                print(f"⏳ [{current_hhmm}] Đang chờ lịch (Lịch trên DB: {crawl_times})...", end="\r", flush=True)
             time.sleep(1)
-
         except KeyboardInterrupt:
             print("\n🛑 Đã dừng thủ công.")
             break
         except Exception as e:
             print(f"\n❌ Lỗi Scheduler Main Loop: {e}")
             time.sleep(5)
-
 if __name__ == "__main__":
     start_schedule_loop()
