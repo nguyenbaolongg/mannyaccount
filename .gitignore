@@ -1,2 +1,29 @@
-config/token.pickle
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# IntelliJ / PyCharm
+.idea/
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+
+# Chrome / Driver
 assets/ChromePortable/
+
+# Temp files
+assets/temp_voice/
+config/token.pickle
