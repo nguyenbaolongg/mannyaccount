@@ -77,7 +77,6 @@ class AccountManagerPage:
         profile_name = f"{clean_id}_profile"
 
         if self.editing_tiktok_id:
-            # --- CHẾ ĐỘ CẬP NHẬT ---
             existing_acc = SupabaseAPI.get_account_by_id(self.editing_tiktok_id)
             if existing_acc:
                 existing_acc["email"] = email
@@ -91,7 +90,6 @@ class AccountManagerPage:
                 else:
                     self.lbl_status.configure(text="❌ Lỗi khi cập nhật lên Supabase.", text_color="red")
         else:
-            # --- CHẾ ĐỘ THÊM MỚI ---
             account_data = {
                 "tiktok_id": tiktok_id,
                 "email": email,
@@ -133,15 +131,12 @@ class AccountManagerPage:
 
     def cancel_edit(self):
         self.editing_tiktok_id = None
-
         self.inp_tiktok_id.configure(state="normal")
         self.inp_tiktok_id.delete(0, 'end')
-
         self.inp_email.delete(0, 'end')
         self.inp_password.delete(0, 'end')
         self.inp_machine_id.delete(0, 'end')
         self.inp_machine_id.insert(0, "1")
-
         self.btn_save.configure(text="🚀 TẠO TÀI KHOẢN", fg_color="green", hover_color="darkgreen")
         self.btn_cancel.pack_forget()
         self.lbl_status.configure(text="")
@@ -149,7 +144,6 @@ class AccountManagerPage:
     def load_accounts(self):
         for widget in self.scroll_frame.winfo_children():
             widget.destroy()
-
         accounts = SupabaseAPI.get_all_accounts()
         if not accounts: return
 
@@ -161,13 +155,11 @@ class AccountManagerPage:
             row_frame = ctk.CTkFrame(self.scroll_frame)
             row_frame.pack(fill="x", pady=2)
 
-            # Đã tăng độ rộng cắt text để khớp với Streamlit
             display_id = truncate_text(acc.get("tiktok_id", ""), 20)
             display_email = truncate_text(acc.get("email", ""), 35)
             display_profile = truncate_text(f"Profile: {acc.get('chrome_profile', '')}", 30)
             display_machine = f"Máy: {acc.get('machine_id', '1')}"
 
-            # Tăng width của Label tương ứng
             ctk.CTkLabel(row_frame, text=display_id, width=150, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left", padx=10)
             ctk.CTkLabel(row_frame, text=display_email, width=280, anchor="w").pack(side="left", padx=10)
             ctk.CTkLabel(row_frame, text=display_profile, width=220, anchor="w").pack(side="left", padx=10)
@@ -175,17 +167,14 @@ class AccountManagerPage:
 
             btn_del = ctk.CTkButton(row_frame, text="Xóa", width=60, fg_color="red", hover_color="darkred", command=lambda a=acc: self.delete_account(a))
             btn_del.pack(side="right", padx=10, pady=5)
-
             btn_edit = ctk.CTkButton(row_frame, text="Sửa", width=60, fg_color="orange", hover_color="darkorange", command=lambda a=acc: self.edit_account(a))
             btn_edit.pack(side="right", padx=5, pady=5)
-
             btn_chrome = ctk.CTkButton(row_frame, text="Mở Chrome", width=100, fg_color="blue", hover_color="darkblue", command=lambda p=acc.get("chrome_profile"): self.open_chrome_profile(p))
             btn_chrome.pack(side="right", padx=5, pady=5)
 
     def delete_account(self, acc_data):
         tiktok_id = acc_data.get("tiktok_id")
         profile_name = acc_data.get("chrome_profile")
-
         if SupabaseAPI.delete_account(tiktok_id):
             profile_path = os.path.join(AI_STUDIO_DIR, profile_name)
             if os.path.exists(profile_path):
@@ -205,6 +194,9 @@ class AccountManagerPage:
         if not os.path.exists(profile_path):
             os.makedirs(profile_path)
 
+        # --- [QUAN TRỌNG] CẤU HÌNH ĐƯỜNG DẪN CHROME PORTABLE 145 ---
+        CHROME_BIN_PATH = os.path.join(PROJECT_ROOT, "assets", "ChromePortable", "GoogleChromePortable", "App", "Chrome-bin", "chrome.exe")
+
         options = uc.ChromeOptions()
         options.add_argument(f"--user-data-dir={profile_path}")
         options.add_argument("--no-first-run")
@@ -214,18 +206,28 @@ class AccountManagerPage:
 
         driver = None
         try:
-            driver = uc.Chrome(options=options, use_subprocess=True)
+            # Ép version_main=145 và trỏ trực tiếp vào file exe của Portable
+            driver = uc.Chrome(
+                options=options,
+                use_subprocess=True,
+                version_main=145,
+                browser_executable_path=CHROME_BIN_PATH
+            )
             driver.get("https://accounts.google.com/")
-            self.lbl_status.configure(text=f"🟢 Đang mở Chrome: {profile_name}. Đăng nhập Google xong hãy TẮT TRÌNH DUYỆT để lưu.", text_color="green")
+            self.lbl_status.configure(text=f"🟢 Đang mở Chrome: {profile_name}. Đăng nhập xong hãy TẮT trình duyệt để lưu.", text_color="green")
+
             while True:
-                if driver.service.process.poll() is not None:
+                try:
+                    if driver.service.process.poll() is not None:
+                        break
+                except:
                     break
                 time.sleep(1)
         except Exception as e:
             print(f"Lỗi khởi động Chrome: {e}")
-            self.lbl_status.configure(text=f"❌ Lỗi mở Chrome (Hãy cập nhật undetected-chromedriver hoặc tắt Chrome ẩn).", text_color="red")
+            self.lbl_status.configure(text=f"❌ Lỗi: Cần tắt hết Chrome ẩn hoặc xóa thư mục undetected_chromedriver trong AppData.", text_color="red")
         finally:
             if driver:
                 try: driver.quit()
                 except: pass
-            self.lbl_status.configure(text=f"✅ Đã đóng và lưu dữ liệu Profile {profile_name}.", text_color="green")
+            self.lbl_status.configure(text=f"✅ Đã đóng và lưu dữ liệu cho {profile_name}.", text_color="green")

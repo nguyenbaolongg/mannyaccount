@@ -92,10 +92,6 @@ def handle_google_login(page, email, password):
 # ================= WORKER XỬ LÝ 1 TÀI KHOẢN (CHẠY TRONG 1 LUỒNG) =================
 
 def upload_worker(account_config):
-
-
-    kill_chrome_globally()
-
     # 1. Lấy thông tin từ config riêng của nick
     profile_name = account_config.get("chrome_profile")
     tiktok_id = account_config.get("tiktok_id")

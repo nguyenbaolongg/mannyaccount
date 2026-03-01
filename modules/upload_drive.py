@@ -1,11 +1,12 @@
 import os
 import pickle
-import requests  # <--- THÊM THƯ VIỆN NÀY
+import requests
+import socket
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.http import MediaFileUpload
-
+socket.setdefaulttimeout(300)
 # ================= CẤU HÌNH ĐƯỜNG DẪN =================
 CURRENT_FILE_PATH = os.path.abspath(__file__)
 MODULES_DIR = os.path.dirname(CURRENT_FILE_PATH)
@@ -21,11 +22,7 @@ if not os.path.exists(CONFIG_DIR):
 
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
 
-# ======================================================
-# 1. HÀM XÁC THỰC GOOGLE DRIVE
-# ======================================================
 def authenticate_google_drive():
-    """Xử lý đăng nhập và lưu token"""
     creds = None
     if os.path.exists(TOKEN_FILE):
         with open(TOKEN_FILE, 'rb') as token:
@@ -103,7 +100,7 @@ def update_sheet_drive_link(script_url, row_index, drive_link, tiktok_id=None):
     }
 
     try:
-        response = requests.post(script_url, json=payload)
+        response = requests.post(script_url, json=payload, timeout=30)
         if response.status_code == 200:
             print("✅ Đã cập nhật Sheet thành công!")
         else:

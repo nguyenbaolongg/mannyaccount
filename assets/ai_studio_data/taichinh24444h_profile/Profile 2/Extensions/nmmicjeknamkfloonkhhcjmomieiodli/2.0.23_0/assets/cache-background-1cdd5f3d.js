@@ -1,0 +1,1 @@
+import{L as a}from"./index-cd77e154.js";const c=24*60*60*1e3,r=new a({max:100,ttl:24*60*60*1e3});function s(n){if(!n)return null;const t=r.get(n);if(typeof t!="string"||!t)return null;try{return JSON.parse(t)}catch{return null}}function u(n,t,e=c){!n||!t||r.set(n,JSON.stringify(t),{ttl:e})}export{c as D,u as a,s as g};

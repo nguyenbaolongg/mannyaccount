@@ -1,1 +1,0 @@
-export let state={isRunning:!1,isPaused:!1,stopRequested:!1,promptList:[],failedPromptsList:[],downloadedImageUrls:new Set,currentIndex:0,whiskTabId:null,currentLang:"vi",currentProjectId:null,sessionCounter:0,downloadInterval:null,sessionDownloadedCount:0,zoomResetTimerId:null,fetchedToolsList:[],selectors:{}};

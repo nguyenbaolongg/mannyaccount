@@ -45,8 +45,24 @@ class ApiSettingsPage:
         self.inp_sheet_url.pack(anchor="w", padx=10, pady=5)
         self.inp_sheet_url.insert(0, self.settings.get("sheet_url", ""))
 
+        # ================= [MỚI BỔ SUNG] CẤU HÌNH TELEGRAM =================
+        ctk.CTkLabel(self.form_frame, text="4. Bot Telegram Báo cáo (Tùy chọn):", font=ctk.CTkFont(weight="bold"), text_color="#00A8E8").pack(anchor="w", padx=10, pady=(20, 0))
+
+        tele_frame = ctk.CTkFrame(self.form_frame, fg_color="transparent")
+        tele_frame.pack(anchor="w", padx=10, pady=5)
+
+        ctk.CTkLabel(tele_frame, text="Bot Token:").pack(side="left")
+        self.inp_tele_token = ctk.CTkEntry(tele_frame, width=250, placeholder_text="7123...:AAH...")
+        self.inp_tele_token.pack(side="left", padx=(5, 15))
+        self.inp_tele_token.insert(0, self.settings.get("tele_token", ""))
+
+        ctk.CTkLabel(tele_frame, text="Chat ID:").pack(side="left")
+        self.inp_tele_chatid = ctk.CTkEntry(tele_frame, width=150, placeholder_text="-100... hoặc 123...")
+        self.inp_tele_chatid.pack(side="left", padx=5)
+        self.inp_tele_chatid.insert(0, self.settings.get("tele_chatid", ""))
+
         # ================= CẤU HÌNH CỤC BỘ (CHIA MÁY) =================
-        ctk.CTkLabel(self.form_frame, text="4. Cấu hình Phân Máy (Chỉ lưu ở máy này, không lên Cloud):", font=ctk.CTkFont(weight="bold"), text_color="orange").pack(anchor="w", padx=10, pady=(20, 0))
+        ctk.CTkLabel(self.form_frame, text="5. Cấu hình Phân Máy (Chỉ lưu ở máy này, không lên Cloud):", font=ctk.CTkFont(weight="bold"), text_color="orange").pack(anchor="w", padx=10, pady=(20, 0))
 
         frame_machine = ctk.CTkFrame(self.form_frame, fg_color="transparent")
         frame_machine.pack(anchor="w", padx=10, pady=5)
@@ -73,13 +89,13 @@ class ApiSettingsPage:
             "ai_studio_url": self.inp_ai_url.get().strip(),
             "api_key": self.inp_api_key.get().strip(),
             "voice_id": self.inp_voice_id.get().strip(),
-            "sheet_url": self.inp_sheet_url.get().strip()
+            "sheet_url": self.inp_sheet_url.get().strip(),
+            "tele_token": self.inp_tele_token.get().strip(),
+            "tele_chatid": self.inp_tele_chatid.get().strip()
         }
 
-        # Lưu Cloud
         cloud_success = SupabaseAPI.update_system_config("app_settings", new_data)
 
-        # Lưu Local
         local_data = {"machine_id": self.inp_machine_id.get().strip() or "1"}
         with open(LOCAL_MACHINE_FILE, "w") as f:
             json.dump(local_data, f)

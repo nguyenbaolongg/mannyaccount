@@ -1,5 +1,6 @@
 import requests
-import json
+import time
+import random
 
 def save_to_sheet(script_url, link, title, script, combined_hints, original_video, title_tiktok, tiktok_id, file_path=""):
 
@@ -39,16 +40,13 @@ def update_tiktok_info(script_url, row, file_path=None, link_tiktok=None, title_
     except: return False
 
 def update_final_result(script_url, row_idx, drive_link):
-
-    try:
-        payload = {
-            "action": "update_file_path",
-            "row": int(row_idx),
-            "file_path": str(drive_link)
-        }
-        requests.post(script_url, json=payload, timeout=20)
-        return True
-    except: return False
+    payload = {
+        "action": "update_file_path",
+        "row": int(row_idx),
+        "file_path": str(drive_link)
+    }
+    result = safe_post_json(script_url, payload)
+    return result.get("status") == "success" if result else False
 
 def update_voice_links(sheet_url, row, title_voice_link, content_voice_link):
 
@@ -153,30 +151,79 @@ def get_last_row_index(sheet_url):
         return 0
 
 def get_latest_row_by_id(sheet_url, tiktok_id):
-    if not sheet_url: return "SHeet không đúng"
-    def norm(x):
-        return str(x).replace("@","").strip().lower()
+    if not sheet_url: return None
+    payload = {"action": "read_bulk_optimized"}
+    try:
+        res = requests.post(sheet_url, json=payload, timeout=30)
+        if res.status_code != 200 or not res.text.strip():
+            print("⚠️ Google Sheet không phản hồi hoặc trả về nội dung rỗng.")
+            return None
 
+        data_json = res.json()
+        if data_json.get("status") != "success":
+            return None
+
+        all_rows = data_json.get("data", []) # Mảng 200 dòng cuối
+    except Exception as e:
+        print(f"🔥 Lỗi lấy dữ liệu từ Sheet: {e}")
+        return None
+
+    # Chuẩn hóa ID để so sánh chính xác
+    def norm(x): return str(x).replace("@","").strip().lower()
     target = norm(tiktok_id)
-    last_row = get_last_row_index(sheet_url)
-    scan_limit = 200
-    for r in range(last_row, max(1, last_row - scan_limit), -1):
-        data = get_data_from_sheet(sheet_url, r)
-        if not data:
-            continue
 
-        sheet_id = norm(data[8])
-        content = data[2]
-        title = data[1]
+    # Duyệt NGƯỢC danh sách trên RAM (Micro-giây)
+    for item in reversed(all_rows):
+        sheet_id = norm(item.get("tiktok_id", ""))
+        content = item.get("content_text", "")
+
         if target == sheet_id:
-            if content and len(content) > 5:
+            if content and len(str(content)) > 5:
                 return {
-                    "row": r,
-                    "title_text": title,
+                    "row": item.get("row"),
+                    "title_text": item.get("title_text", ""),
                     "content_text": content,
                     "tiktok_id_sheet": sheet_id
                 }
             else:
-                print(f"Row {r} match ID but no text yet, waiting...")
-                continue
+                print(f"📍 Dòng {item.get('row')} khớp ID {tiktok_id} nhưng Text chưa sẵn sàng.")
+                return None
     return None
+
+def safe_post_json(url, payload, timeout=30, max_retries=3):
+    """
+    Hàm gửi request an toàn: Tự động thử lại nếu Google trả về rỗng hoặc lỗi Lock.
+    """
+    for attempt in range(max_retries):
+        try:
+            res = requests.post(url, json=payload, timeout=timeout)
+
+            # 1. Kiểm tra mã lỗi HTTP
+            if res.status_code != 200:
+                print(f"⚠️ Lần {attempt+1}: HTTP {res.status_code}. Đang thử lại...")
+                time.sleep(random.uniform(2, 5))
+                continue
+
+            # 2. Kiểm tra nội dung rỗng (Lỗi char 0)
+            raw_text = res.text.strip()
+            if not raw_text:
+                print(f"⚠️ Lần {attempt+1}: Server trả về rỗng (char 0). Đang thử lại...")
+                time.sleep(random.uniform(2, 5))
+                continue
+
+            # 3. Thử đọc JSON
+            data = res.json()
+
+            # 4. Kiểm tra nếu Google báo lỗi "Could not acquire lock"
+            if data.get("status") == "error" and "lock" in data.get("message", "").lower():
+                print(f"⚠️ Lần {attempt+1}: Google đang bận (Lock). Đang đợi...")
+                time.sleep(random.uniform(3, 7))
+                continue
+
+            return data
+
+        except Exception as e:
+            print(f"🔥 Lần {attempt+1}: Lỗi kết nối: {e}")
+            time.sleep(2)
+
+    return {"status": "error", "message": "Exceeded max retries"}

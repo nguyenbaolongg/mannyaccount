@@ -4,7 +4,7 @@ import time
 import subprocess
 from datetime import datetime
 import json
-# Import API kết nối với Supabase
+from services.tele_reporter import TeleReporter
 from services.supabase_api import SupabaseAPI
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +57,7 @@ def run_worker_batch(account_ids):
 
 def start_schedule_loop():
     print("="*60)
-    print(f" MATRIX SCHEDULER - FULL CLOUD (SUPABASE)")
+    print(f"🤖 MATRIX SCHEDULER - FULL CLOUD (SUPABASE)")
     print(f"⚡ Max Concurrent Workers: {MAX_CONCURRENT_WORKERS}")
     print("="*60)
 
@@ -91,7 +91,12 @@ def start_schedule_loop():
                         if i + MAX_CONCURRENT_WORKERS < total_accs:
                             print("   💤 Nghỉ 10s trước khi chạy nhóm tiếp theo...")
                             time.sleep(10)
+
                 print(f"\n🏁 [SESSION DONE] Đã chạy xong lịch trình {current_hhmm}\n")
+                try:
+                    TeleReporter.send_summary_report(current_hhmm)
+                except Exception as e:
+                    print(f"   ⚠️ Lỗi khi gửi báo cáo Tele: {e}")
             if now.second % 10 == 0:
                 print(f"⏳ [{current_hhmm}] Đang chờ lịch (Lịch trên DB: {crawl_times})...", end="\r", flush=True)
             time.sleep(1)
@@ -101,5 +106,6 @@ def start_schedule_loop():
         except Exception as e:
             print(f"\n❌ Lỗi Scheduler Main Loop: {e}")
             time.sleep(5)
+
 if __name__ == "__main__":
     start_schedule_loop()

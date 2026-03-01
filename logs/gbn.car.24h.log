@@ -12,3 +12,254 @@
 2026-02-25 10:41:00,266 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
 2026-02-25 10:41:00,266 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
 2026-02-25 10:41:00,266 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0
+2026-02-26 09:51:48,418 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 09:51:48,615 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 09:51:50,051 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7609516808772619537
+2026-02-26 10:00:04,036 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 10:00:04,206 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 10:00:05,728 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7609881176756571413
+2026-02-26 10:00:17,843 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7609902220984864021
+2026-02-26 10:04:55,838 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 10:04:55,838 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 10:04:57,882 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 10:04:59,150 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 10:06:12,139 [ERROR]    🔥 Lỗi: Expecting value: line 1 column 1 (char 0)
+2026-02-26 10:06:17,155 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610256403525012737
+2026-02-26 12:45:23,913 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 12:45:24,087 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 12:45:25,627 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 12:47:57,745 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 12:47:57,911 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 12:48:00,149 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 12:49:39,606 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 12:49:39,782 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 12:49:41,369 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 12:50:36,943 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 12:50:36,943 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 12:50:41,943 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 12:50:41,943 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 12:50:46,944 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-26 12:50:46,944 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-02-26 12:50:46,944 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0
+2026-02-26 12:53:21,977 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 12:53:22,165 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 12:53:23,898 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 12:58:14,941 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 12:58:14,941 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 12:58:16,484 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 12:58:17,103 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 12:59:51,703 [ERROR]    🔥 Lỗi: Expecting value: line 1 column 1 (char 0)
+2026-02-26 12:59:56,708 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 13:04:31,966 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 13:04:31,966 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 13:04:32,964 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 13:04:33,607 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 13:05:55,714 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 13:06:00,717 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 13:06:00,717 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 13:06:05,717 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-26 13:06:05,717 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-02-26 13:06:05,717 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0
+2026-02-26 13:10:28,427 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 13:10:28,608 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 13:10:30,056 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 13:12:51,699 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 13:12:51,699 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 13:12:52,985 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 13:12:53,641 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 13:13:19,302 [ERROR]    🔥 Lỗi: Expecting value: line 1 column 1 (char 0)
+2026-02-26 13:13:24,305 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 13:27:10,293 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 13:27:10,457 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 13:27:11,746 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 13:31:40,849 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 13:31:40,849 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 13:31:42,393 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 13:31:43,663 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 13:32:05,299 [ERROR]    🔥 Lỗi: Expecting value: line 1 column 1 (char 0)
+2026-02-26 13:32:10,302 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 13:32:31,490 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 13:32:36,491 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 13:32:36,491 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-26 13:32:41,492 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-26 13:32:41,492 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-02-26 13:32:41,492 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0
+2026-02-26 14:41:54,765 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 14:41:54,965 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 14:41:56,470 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 14:46:00,362 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 14:46:00,362 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 14:46:02,544 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 14:46:03,210 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 14:46:43,729 [INFO]    ✅ HOÀN TẤT!
+2026-02-26 14:46:44,282 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7610820973016665345
+2026-02-26 14:46:49,290 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 14:51:28,335 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 14:51:28,335 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 14:51:29,661 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 14:51:30,277 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 14:52:19,288 [INFO]    ✅ HOÀN TẤT!
+2026-02-26 14:52:19,808 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7610974392348527893
+2026-02-26 14:52:24,812 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 14:56:48,301 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-26 14:56:49,310 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2
+2026-02-26 18:00:08,779 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-26 18:00:08,944 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-26 18:00:10,210 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 18:04:24,062 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 18:04:24,062 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 18:04:25,738 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 18:04:26,355 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 18:05:15,326 [INFO]    ✅ HOÀN TẤT!
+2026-02-26 18:05:15,909 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611001423349796097
+2026-02-26 18:05:20,913 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611009733318757652
+2026-02-26 18:09:26,651 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 18:09:26,651 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 18:09:27,549 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 18:09:28,420 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 18:10:30,141 [INFO]    ✅ HOÀN TẤT!
+2026-02-26 18:10:30,607 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611009733318757652
+2026-02-26 18:10:35,610 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611023123252563217
+2026-02-26 18:15:14,094 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-26 18:15:14,095 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-26 18:15:15,018 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-26 18:15:15,647 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-26 18:16:20,933 [INFO]    ✅ HOÀN TẤT!
+2026-02-26 18:16:21,381 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611023123252563217
+2026-02-26 18:16:26,387 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-26 18:16:27,549 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3
+2026-02-27 10:17:51,689 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-27 10:17:51,935 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-27 10:17:53,317 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611068084610190608
+2026-02-27 10:22:18,623 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611111957944405249
+2026-02-27 10:26:51,787 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 10:26:51,787 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-27 10:26:53,210 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-27 10:26:54,228 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-27 10:27:41,069 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 10:27:41,736 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611111957944405249
+2026-02-27 10:27:46,741 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611345328591097089
+2026-02-27 10:31:20,057 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-02-27 10:31:25,060 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-27 10:31:25,060 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-02-27 10:31:25,060 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1
+2026-02-27 11:18:33,913 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-27 11:18:34,174 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-27 11:18:35,430 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611345328591097089
+2026-02-27 11:22:41,734 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 11:22:41,734 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-27 11:22:43,563 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-27 11:22:44,450 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-27 11:23:28,213 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 11:23:28,895 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611345328591097089
+2026-02-27 11:23:33,905 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611374821259201793
+2026-02-27 11:28:11,318 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 11:28:11,318 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-27 11:28:13,133 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-27 11:28:14,047 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-27 11:28:47,283 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 11:28:47,882 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611374821259201793
+2026-02-27 11:28:52,885 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611377065811643664
+2026-02-27 11:33:23,544 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 11:33:23,545 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-27 11:33:25,266 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-27 11:33:26,170 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-27 11:34:06,429 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 11:34:07,468 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611377065811643664
+2026-02-27 11:34:12,471 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-27 11:34:13,478 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3
+2026-02-27 15:00:04,817 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-27 15:00:04,975 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn
+2026-02-27 15:00:08,909 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611403888159182081
+2026-02-27 15:05:03,704 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 15:05:03,705 [INFO]    🖼️ Đang đồng bộ Title Frame từ Supabase: FRAME CAR HUB.png
+2026-02-27 15:05:05,021 [INFO]    🖼️ Đang đồng bộ Content Frame từ Supabase: FRAME CAR HUB 1.png
+2026-02-27 15:05:05,769 [INFO]    🔤 Đang đồng bộ Font từ Supabase: Inter_18pt-Bold.ttf
+2026-02-27 15:06:39,466 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 15:06:39,934 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611403888159182081
+2026-02-27 15:06:44,939 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5
+2026-02-27 15:06:46,836 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1
+2026-02-27 18:16:59,116 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-27 18:16:59,279 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-02-27 18:17:00,773 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611453031602769153
+2026-02-27 18:21:37,415 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 18:21:37,415 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-27 18:21:37,415 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-27 18:21:37,415 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-27 18:23:33,656 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 18:23:34,080 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611453031602769153
+2026-02-27 18:23:39,085 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611459379602165008
+2026-02-27 18:28:17,991 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-27 18:28:17,992 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-27 18:28:17,992 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-27 18:28:17,992 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-27 18:29:49,966 [INFO]    ✅ HOÀN TẤT!
+2026-02-27 18:29:50,447 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611459379602165008
+2026-02-27 18:29:55,453 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-02-27 18:29:56,479 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-02-28 10:00:09,140 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-28 10:00:09,301 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-02-28 10:00:10,757 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611507198346267920
+2026-02-28 10:04:46,419 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 10:04:46,419 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 10:04:46,419 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 10:04:46,420 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 10:06:50,715 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 10:06:51,138 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611507198346267920
+2026-02-28 10:06:56,142 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611552172219665665
+2026-02-28 10:11:39,897 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 10:11:39,898 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 10:11:39,898 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 10:11:39,898 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 10:12:45,395 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 10:12:45,896 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611552172219665665
+2026-02-28 10:12:50,900 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611561396517473552
+2026-02-28 10:17:18,061 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 10:17:18,061 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 10:17:18,061 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 10:17:18,061 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 10:17:57,343 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 10:17:57,747 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611561396517473552
+2026-02-28 10:18:02,752 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-02-28 10:18:02,752 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-02-28 12:00:04,765 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-28 12:00:04,933 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-02-28 12:00:06,770 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611745030033755409
+2026-02-28 12:04:53,149 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 12:04:53,150 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 12:04:53,150 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 12:04:53,150 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 12:06:24,807 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 12:06:25,280 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611745030033755409
+2026-02-28 12:06:30,285 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611755544776281360
+2026-02-28 12:07:31,206 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-02-28 12:07:33,459 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/3
+2026-02-28 15:00:04,994 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-28 15:00:05,171 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-02-28 15:00:06,710 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611755544776281360
+2026-02-28 15:04:44,910 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 15:04:44,910 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 15:04:44,910 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 15:04:44,910 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 15:05:59,692 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 15:06:00,143 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611755544776281360
+2026-02-28 15:06:05,147 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611776632914726145
+2026-02-28 15:10:56,127 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 15:10:56,127 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 15:10:56,127 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 15:10:56,127 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 15:12:17,466 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 15:12:17,869 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611776632914726145
+2026-02-28 15:12:22,875 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-02-28 15:12:24,595 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-02-28 18:00:07,304 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-02-28 18:00:07,472 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-02-28 18:00:09,077 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7611773914108153104
+2026-02-28 18:04:42,276 [INFO]    🎬 Chuẩn bị Remixing...
+2026-02-28 18:04:42,277 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-02-28 18:04:42,277 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-02-28 18:04:42,277 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-02-28 18:06:09,785 [INFO]    ✅ HOÀN TẤT!
+2026-02-28 18:06:10,479 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7611773914108153104
+2026-02-28 18:06:15,482 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-02-28 18:06:16,617 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/3

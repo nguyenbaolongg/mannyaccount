@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "user-agent",
+          "operation": "set",
+          "value": "GoogleTranslate/ddict.me"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "translate.google.com/translate_",
+      "resourceTypes": ["xmlhttprequest", "media"]
+    }
+  }
+]

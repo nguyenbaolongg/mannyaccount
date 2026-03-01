@@ -1,6 +1,0 @@
-2026/02/21-04:41:49.864 4950 Creating DB C:\Users\Admin\Downloads\only-clone - fix 1 - Copy\only-clone - fix 1 - Copy\assets\ai_studio_data\24hvuiv8_profile\Default\IndexedDB\chrome-extension_nmmicjeknamkfloonkhhcjmomieiodli_0.indexeddb.leveldb since it was missing.
-2026/02/21-04:41:49.867 4950 Reusing MANIFEST C:\Users\Admin\Downloads\only-clone - fix 1 - Copy\only-clone - fix 1 - Copy\assets\ai_studio_data\24hvuiv8_profile\Default\IndexedDB\chrome-extension_nmmicjeknamkfloonkhhcjmomieiodli_0.indexeddb.leveldb/MANIFEST-000001
-2026/02/21-04:41:49.876 45e0 Level-0 table #5: started
-2026/02/21-04:41:49.877 45e0 Level-0 table #5: 1321 bytes OK
-2026/02/21-04:41:49.878 45e0 Delete type=0 #3
-2026/02/21-04:41:49.879 45e0 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

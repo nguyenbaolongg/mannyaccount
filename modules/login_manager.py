@@ -6,6 +6,8 @@ import time
 CURRENT_FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT_DIR = os.path.dirname(CURRENT_FILE_DIR)
 
+CHROME_BIN_PATH = os.path.join(PROJECT_ROOT_DIR, "assets", "ChromePortable", "GoogleChromePortable", "App", "Chrome-bin", "chrome.exe")
+
 # Tên thư mục chứa dữ liệu profile
 PROFILE_FOLDER_NAME = "assets/ai_studio_data/tintucthammy24h_profile"
 USER_DATA_DIR = os.path.join(PROJECT_ROOT_DIR, PROFILE_FOLDER_NAME)
@@ -25,17 +27,20 @@ def manual_login():
     print("🚀 Đang khởi động Chrome để đăng nhập...")
 
     options = uc.ChromeOptions()
-    # Dòng quan trọng nhất: Chỉ định thư mục lưu profile
     options.add_argument(f"--user-data-dir={USER_DATA_DIR}")
-
-    # Tắt các pop-up khôi phục lỗi, lưu password
     options.add_argument("--no-first-run")
     options.add_argument("--no-service-autorun")
     options.add_argument("--password-store=basic")
     options.add_argument("--start-maximized")
 
     try:
-        driver = uc.Chrome(options=options, version_main=144, headless=False)
+        # [ĐÃ SỬA] Ép cứng về bản 144
+        driver = uc.Chrome(
+            options=options,
+            use_subprocess=True,
+            version_main=145,
+            browser_executable_path=CHROME_BIN_PATH
+        )
     except Exception as e:
         print(f"❌ Lỗi khởi tạo: {e}")
         print("💡 GỢI Ý: Hãy tắt tất cả cửa sổ Chrome đang mở và thử lại.")
@@ -51,7 +56,6 @@ def manual_login():
     print("3. QUAY LẠI CỬA SỔ ĐEN NÀY VÀ NHẤN PHÍM 'ENTER' ĐỂ LƯU VÀ THOÁT.")
     print("="*50 + "\n")
 
-    # Treo tool ở đây chờ người dùng nhấn Enter
     input("👉 ĐÃ ĐĂNG NHẬP XONG? Nhấn [ENTER] để đóng tool và lưu cookie...")
 
     print("💾 Đang lưu dữ liệu và thoát...")
@@ -64,26 +68,20 @@ def open_browser_for_login(profile_id, proxy=None):
     """
     print(f"🚀 Đang khởi động Chrome cho Profile: [{profile_id}]...")
 
-    # 1. XÁC ĐỊNH ĐƯỜNG DẪN
     current_file_dir = os.path.dirname(os.path.abspath(__file__))
     project_root_dir = os.path.dirname(current_file_dir)
-
-    # Đường dẫn tới thư mục profile
     user_data_dir = os.path.join(project_root_dir, "assets", "ai_studio_data", profile_id)
 
-    # Tạo thư mục nếu chưa có
     if not os.path.exists(user_data_dir):
         os.makedirs(user_data_dir)
         print(f"📂 [Backend] Đã tạo thư mục data: {user_data_dir}")
 
-    # 2. CẤU HÌNH CHROME
     options = uc.ChromeOptions()
     options.add_argument(f"--user-data-dir={user_data_dir}")
     options.add_argument("--no-first-run")
     options.add_argument("--no-service-autorun")
     options.add_argument("--password-store=basic")
 
-    # Xử lý Proxy
     plugin_path = None
     if proxy and create_proxy_auth_extension:
         print(f"🌐 Đang cài đặt Proxy: {proxy}")
@@ -93,10 +91,13 @@ def open_browser_for_login(profile_id, proxy=None):
 
     driver = None
     try:
-        # 3. KHỞI TẠO DRIVER
-        driver = uc.Chrome(options=options, use_subprocess=True, version_main=144)
+        driver = uc.Chrome(
+            options=options,
+            use_subprocess=True,
+            version_main=145,
+            browser_executable_path=CHROME_BIN_PATH,
+        )
 
-        # [ĐÃ SỬA] Mở trang đăng nhập Google
         driver.get("https://accounts.google.com/")
 
         print("="*50)
@@ -104,7 +105,6 @@ def open_browser_for_login(profile_id, proxy=None):
         print("👉 Đăng nhập Google xong hãy đóng cửa sổ Chrome.")
         print("="*50)
 
-        # 4. GIỮ TRÌNH DUYỆT SỐNG
         while True:
             try:
                 if driver.service.process.poll() is not None:

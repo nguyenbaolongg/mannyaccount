@@ -1,2 +1,3 @@
-2026/02/25-10:40:27.277 5004 Creating DB D:\workspace\Python\App\only-clone - fix 1 - Copy\assets\ai_studio_data\gbncar24h_profile\Default\GCM Store since it was missing.
-2026/02/25-10:40:27.284 5004 Reusing MANIFEST D:\workspace\Python\App\only-clone - fix 1 - Copy\assets\ai_studio_data\gbncar24h_profile\Default\GCM Store/MANIFEST-000001
+2026/02/28-18:00:23.191 4984 Reusing MANIFEST C:\workspace\mannyAccount\assets\ai_studio_data\gbncar24h_profile\Default\GCM Store/MANIFEST-000001
+2026/02/28-18:00:23.192 4984 Recovering log #3
+2026/02/28-18:00:23.192 4984 Reusing old log C:\workspace\mannyAccount\assets\ai_studio_data\gbncar24h_profile\Default\GCM Store/000003.log 

@@ -11,12 +11,12 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 class DashboardPage:
     def __init__(self, parent_frame):
         self.parent = parent_frame
-
         self.bot_process = None
 
         self.title = ctk.CTkLabel(self.parent, text="Dashboard (Bảng điều khiển)", font=ctk.CTkFont(size=24, weight="bold"))
         self.title.pack(pady=(0, 10), anchor="w")
 
+        # ================= LOGIC QUẢN LÝ LỊCH CHẠY =================
         self.schedule_frame = ctk.CTkFrame(self.parent)
         self.schedule_frame.pack(fill="x", pady=(0, 15))
 
@@ -37,6 +37,7 @@ class DashboardPage:
 
         self.current_schedule = {"crawl_times": [], "nurture_windows": []}
 
+        # ================= NÚT ĐIỀU KHIỂN BOT =================
         self.action_frame = ctk.CTkFrame(self.parent, fg_color="transparent")
         self.action_frame.pack(fill="x", pady=(0, 20))
 
@@ -49,6 +50,7 @@ class DashboardPage:
         self.lbl_bot_status = ctk.CTkLabel(self.parent, text="⚪ Trạng thái: Đang chờ...", text_color="gray")
         self.lbl_bot_status.pack(anchor="w", pady=(0, 10))
 
+        # ================= DANH SÁCH TÀI KHOẢN =================
         ctk.CTkLabel(self.parent, text="📋 Danh sách tài khoản trên Supabase:", font=ctk.CTkFont(weight="bold")).pack(anchor="w")
 
         self.scroll_frame = ctk.CTkScrollableFrame(self.parent, width=800, height=400)
@@ -61,7 +63,7 @@ class DashboardPage:
         self.load_schedule()
         self.load_accounts()
 
-    # ================= LOGIC QUẢN LÝ LỊCH CHẠY =================
+    # ================= HÀM XỬ LÝ LỊCH CHẠY =================
     def load_schedule(self):
         config = SupabaseAPI.get_system_config("schedule_config") or {}
         self.current_schedule["crawl_times"] = config.get("crawl_times", [])
@@ -122,21 +124,27 @@ class DashboardPage:
         else:
             self.lbl_schedule_error.configure(text="❌ Lỗi khi lưu lịch lên Supabase!")
 
-    # ================= LOGIC TÀI KHOẢN =================
+    # ================= HÀM XỬ LÝ TÀI KHOẢN & LIMIT =================
     def load_accounts(self):
         accounts = SupabaseAPI.get_all_accounts()
+
+        for widget in self.scroll_frame.winfo_children():
+            widget.destroy()
+
         if not accounts:
             ctk.CTkLabel(self.scroll_frame, text="📭 Chưa có tài khoản nào trên Database.").pack(pady=20)
             return
 
+        # Tiêu đề các cột
         header_frame = ctk.CTkFrame(self.scroll_frame, fg_color="transparent")
         header_frame.pack(fill="x", pady=5)
 
-        self.chk_select_all = ctk.CTkCheckBox(header_frame, text="Chọn tất cả", variable=self.select_all_var, command=self.toggle_all_accounts, width=100, font=ctk.CTkFont(weight="bold"))
+        self.chk_select_all = ctk.CTkCheckBox(header_frame, text="Bật/Tắt", variable=self.select_all_var, command=self.toggle_all_accounts, width=80, font=ctk.CTkFont(weight="bold"))
         self.chk_select_all.pack(side="left", padx=10)
 
         ctk.CTkLabel(header_frame, text="TikTok ID", width=150, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left", padx=10)
-        ctk.CTkLabel(header_frame, text="Email", width=250, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left", padx=10)
+        ctk.CTkLabel(header_frame, text="Email", width=200, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left", padx=10)
+        ctk.CTkLabel(header_frame, text="Max Video/Lần", width=100, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left", padx=10)
 
         self.account_vars.clear()
         self.account_data_refs.clear()
@@ -147,6 +155,7 @@ class DashboardPage:
             if not text: return ""
             return text if len(text) <= max_len else text[:max_len-3] + "..."
 
+        # Hiển thị từng tài khoản
         for acc in accounts:
             row_frame = ctk.CTkFrame(self.scroll_frame)
             row_frame.pack(fill="x", pady=2)
@@ -158,17 +167,65 @@ class DashboardPage:
             self.account_vars.append(chk_var)
             self.account_data_refs.append(acc)
 
-            chk = ctk.CTkCheckBox(row_frame, text="", variable=chk_var, width=100)
+            chk = ctk.CTkCheckBox(row_frame, text="", variable=chk_var, width=80)
             chk.configure(command=lambda a=acc, v=chk_var: self.toggle_single_account(a, v))
             chk.pack(side="left", padx=10)
 
             display_id = truncate_text(acc.get("tiktok_id", "N/A"), 18)
-            display_email = truncate_text(acc.get("email", "N/A"), 25)
+            display_email = truncate_text(acc.get("email", "N/A"), 22)
 
             ctk.CTkLabel(row_frame, text=display_id, width=150, anchor="w").pack(side="left", padx=10)
-            ctk.CTkLabel(row_frame, text=display_email, width=250, anchor="w").pack(side="left", padx=10)
+            ctk.CTkLabel(row_frame, text=display_email, width=200, anchor="w").pack(side="left", padx=10)
+
+            # =========================================================
+            # ĐỌC BIẾN: Lấy giá trị video_limit_per_run từ acc_data
+            # =========================================================
+            current_limit = acc.get("video_limit_per_run", 3)
+            inp_limit = ctk.CTkEntry(row_frame, width=80, justify="center")
+            inp_limit.insert(0, str(current_limit))
+            inp_limit.pack(side="left", padx=10)
+
+            # Gắn sự kiện (Dùng lambda truyền đúng account data và widget hiện tại)
+            inp_limit.bind("<Return>", lambda e, a=acc, ent=inp_limit: self.update_account_limit(a, ent))
+            inp_limit.bind("<FocusOut>", lambda e, a=acc, ent=inp_limit: self.update_account_limit(a, ent))
 
         self.select_all_var.set(all_active)
+
+    def update_account_limit(self, acc_data, entry_widget):
+        """CẬP NHẬT BIẾN: Hàm xử lý lưu giới hạn video một cách an toàn"""
+        new_val_str = entry_widget.get().strip()
+        current_limit = acc_data.get("video_limit_per_run", 3)
+
+        # 1. Kiểm tra dữ liệu người dùng nhập có hợp lệ không
+        try:
+            new_limit = int(new_val_str)
+            if new_limit < 1:
+                new_limit = 1 # Chống nhập số âm
+        except ValueError:
+            # Nhập sai (vd gõ chữ), khôi phục lại giá trị cũ
+            entry_widget.delete(0, 'end')
+            entry_widget.insert(0, str(current_limit))
+            entry_widget.configure(border_color="red")
+            self.parent.after(1000, lambda: entry_widget.configure(border_color=["#979DA2", "#565B5E"]))
+            return
+
+        # 2. Format lại ô input cho gọn gàng (vd gõ ' 05 ' -> '5')
+        entry_widget.delete(0, 'end')
+        entry_widget.insert(0, str(new_limit))
+
+        # 3. Chỉ gọi API lưu khi có sự thay đổi thực sự
+        if new_limit != current_limit:
+            acc_data["video_limit_per_run"] = new_limit
+
+            if SupabaseAPI.save_account(acc_data):
+                # Thành công: Báo viền xanh
+                entry_widget.configure(border_color="green")
+                self.parent.after(1000, lambda: entry_widget.configure(border_color=["#979DA2", "#565B5E"]))
+            else:
+                # Thất bại: Báo viền đỏ và lùi lại biến cũ
+                acc_data["video_limit_per_run"] = current_limit
+                entry_widget.configure(border_color="red")
+                self.parent.after(1000, lambda: entry_widget.configure(border_color=["#979DA2", "#565B5E"]))
 
     def toggle_single_account(self, acc_data, chk_var):
         new_status = chk_var.get()
@@ -187,9 +244,10 @@ class DashboardPage:
                 acc_data["active"] = new_status
                 SupabaseAPI.save_account(acc_data)
 
+    # ================= HÀM XỬ LÝ KHỞI ĐỘNG BOT =================
     def start_bot(self):
         if self.bot_process is not None and self.bot_process.poll() is None:
-            return # Đang chạy rồi thì không khởi động lại
+            return
 
         self.btn_start_bot.configure(text="⏳ ĐANG CHẠY BOT...", fg_color="orange", state="disabled")
         self.btn_stop_bot.configure(fg_color="red", state="normal")
@@ -231,3 +289,4 @@ class DashboardPage:
     def _update_ui_elements_to_default(self):
         self.btn_start_bot.configure(text="🚀 KHỞI ĐỘNG HỆ THỐNG", fg_color="blue", state="normal")
         self.btn_stop_bot.configure(fg_color="gray", state="disabled")
+        self.lbl_bot_status.configure(text="⚪ Trạng thái: Đã dừng hoạt động.", text_color="gray")

@@ -3,17 +3,20 @@ import os
 import time
 import json
 import requests
-import random
-import shutil
+from services.tele_reporter import TeleReporter
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN =================
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMP_VOICE_DIR = os.path.join(PROJECT_ROOT, "assets", "temp_voice")
 CREDENTIALS_FILE = os.path.join(PROJECT_ROOT,"config",'credentials.json')
-FRAME_DIR = os.path.join(PROJECT_ROOT, "assets", "frame")
 
-if not os.path.exists(TEMP_VOICE_DIR): os.makedirs(TEMP_VOICE_DIR)
-if not os.path.exists(FRAME_DIR): os.makedirs(FRAME_DIR)
+# Đảm bảo các thư mục assets tồn tại
+FRAME_DIR = os.path.join(PROJECT_ROOT, "assets", "frame")
+LOGO_DIR = os.path.join(PROJECT_ROOT, "assets", "logo")
+FONT_DIR = os.path.join(PROJECT_ROOT, "assets", "font")
+
+for d in [TEMP_VOICE_DIR, FRAME_DIR, LOGO_DIR, FONT_DIR]:
+    if not os.path.exists(d): os.makedirs(d)
 
 sys.path.append(PROJECT_ROOT)
 
@@ -62,7 +65,6 @@ def handle_tts_and_update_sheet(api_key, text, voice_id, row_idx, sheet_url, is_
                 else: update_voice_links(sheet_url, row_idx, title_voice_link=None, content_voice_link=audio_url)
 
             actual_save_dir = save_dir if save_dir else TEMP_VOICE_DIR
-            if not os.path.exists(actual_save_dir): os.makedirs(actual_save_dir)
             local_path = os.path.join(actual_save_dir, f"tts_{row_idx}_{int(time.time())}_{'title' if is_title else 'content'}.mp3")
 
             try:
@@ -91,7 +93,6 @@ def run_worker_process(account_id):
     setting_folder = load_credentials()
     folder_id = setting_folder.get("id_folder")
 
-    # [ĐÃ SỬA] Lấy settings từ Supabase thay vì local
     settings = SupabaseAPI.get_system_config("app_settings") or {}
     sheet_url = settings.get("sheet_url") or settings.get("google_sheet_url")
     tts_api_key = settings.get("api_key") or settings.get("everai_api_key")
@@ -105,18 +106,23 @@ def run_worker_process(account_id):
     if "crawled_videos" not in state: state["crawled_videos"] = []
 
     processed_count = 0
+    acc_limit = cfg.get("video_limit_per_run", 3)
 
     for channel in cfg.get("channels", []):
+        if processed_count >= acc_limit:
+            ctx.logger.info(f"🛑 Đã đạt giới hạn tài khoản ({acc_limit} video). Dừng quét kênh tiếp theo.")
+            break
+
         if not channel.get("active", True): continue
 
         src_url = channel.get("url") or channel.get("channel_url")
         if not src_url: continue
 
-        limit = channel.get("scan_limit", 3)
+        limit = channel.get("limit", 3)
         render_settings = channel.get("render_settings", {})
         last_crawled_url = channel.get("last_video_url", "")
 
-        ctx.logger.info(f"🔍 Quét kênh: {src_url}")
+        ctx.logger.info(f"🔍 Quét kênh: {src_url} (Lấy tối đa {limit} video)")
 
         try: all_videos = get_channel_videos(src_url, limit=15)
         except Exception as e:
@@ -135,6 +141,10 @@ def run_worker_process(account_id):
         videos_to_process = new_videos_batch[:limit]
 
         for vid_url in videos_to_process:
+            if processed_count >= acc_limit:
+                ctx.logger.info(f"🛑 Đã đạt giới hạn tài khoản ({acc_limit} video). Ngừng xử lý các video còn lại trong kênh.")
+                break
+
             ctx.logger.info(f"▶️ BẮT ĐẦU VIDEO: {vid_url}")
             try:
                 paths = download_tiktok_video(vid_url, ctx.temp_dir)
@@ -169,38 +179,29 @@ def run_worker_process(account_id):
 
                 ctx.logger.info("   🎬 Chuẩn bị Remixing...")
 
-                # =======================================================
-                # [ĐÃ SỬA] ĐỊNH NGHĨA VÀ TẢI TÀI SẢN (ASSETS) CHÍNH XÁC
-                # =======================================================
                 assets_conf = render_settings.get("assets", {})
 
-                # 1. Lấy tên file từ config
                 t_frame_name = assets_conf.get("title_frame_filename")
                 c_frame_name = assets_conf.get("content_frame_filename")
                 logo_name = assets_conf.get("logo_filename")
                 font_name = render_settings.get("text_overlay_settings", {}).get("font_filename")
 
-                # 2. Tải Khung (Frame)
-                if t_frame_name:
-                    ctx.logger.info(f"   🖼️ Đang đồng bộ Title Frame từ Supabase: {t_frame_name}")
-                    SupabaseAPI.download_asset("assets", "frame", FRAME_DIR, t_frame_name)
-                if c_frame_name:
-                    ctx.logger.info(f"   🖼️ Đang đồng bộ Content Frame từ Supabase: {c_frame_name}")
-                    SupabaseAPI.download_asset("assets", "frame", FRAME_DIR, c_frame_name)
+                def download_if_missing(folder_type, local_dir, file_name):
+                    """Hàm kiểm tra tồn tại cục bộ trước khi tải từ Supabase"""
+                    if not file_name: return None
+                    full_path = os.path.join(local_dir, file_name)
+                    if not os.path.exists(full_path):
+                        ctx.logger.info(f"   📥 Không có file '{file_name}'. Đang tải từ Supabase...")
+                        SupabaseAPI.download_asset("assets", folder_type, local_dir, file_name)
+                    else:
+                        ctx.logger.info(f"   ✅ Đã có file '{file_name}' trong máy.")
+                    return full_path
 
-                # 3. Tải Logo (nếu có)
-                if logo_name:
-                    ctx.logger.info(f"   🌟 Đang đồng bộ Logo từ Supabase: {logo_name}")
-                    SupabaseAPI.download_asset("assets", "logo", os.path.join(PROJECT_ROOT, "assets", "logo"), logo_name)
-
-                # 4. Tải Font (nếu có)
-                if font_name:
-                    ctx.logger.info(f"   🔤 Đang đồng bộ Font từ Supabase: {font_name}")
-                    SupabaseAPI.download_asset("assets", "font", os.path.join(PROJECT_ROOT, "assets", "font"), font_name)
-
-                # 5. Xác định đường dẫn cuối cùng
-                title_frame_full_path = os.path.join(FRAME_DIR, t_frame_name) if t_frame_name else None
-                content_frame_full_path = os.path.join(FRAME_DIR, c_frame_name) if c_frame_name else None
+                # Áp dụng cơ chế kiểm tra cục bộ cho toàn bộ file
+                title_frame_full_path = download_if_missing("frame", FRAME_DIR, t_frame_name)
+                content_frame_full_path = download_if_missing("frame", FRAME_DIR, c_frame_name)
+                download_if_missing("logo", LOGO_DIR, logo_name)
+                download_if_missing("font", FONT_DIR, font_name)
 
                 final_path = create_video_from_source_video(
                     audio_url=local_content,
@@ -230,26 +231,28 @@ def run_worker_process(account_id):
                         ctx.save_state(state)
 
                     try:
-                        # Lưu mốc video lên Supabase thay vì local
                         new_index = channel.get("video_index", 0) + 1
                         SupabaseAPI.update_channel_tracking(tiktok_id, src_url, vid_url, new_index)
-
                         ctx.logger.info(f"   ☁️ Đã cập nhật Supabase: last_video_url = {vid_url}")
-
                         if os.path.exists(final_path): os.remove(final_path)
                     except Exception as e:
                         ctx.logger.error(f"   ⚠️ Lỗi cập nhật lên Supabase: {e}")
 
                     processed_count += 1
+
+                    try:
+                        TeleReporter.log_success_video(tiktok_id, src_url)
+                    except Exception as e:
+                        ctx.logger.error(f"   ⚠️ Lỗi ghi nháp Telegram: {e}")
+
             except Exception as e:
                 ctx.logger.error(f"   🔥 Lỗi: {e}")
             finally:
                 ctx.cleanup_temp()
                 time.sleep(5)
 
-    ctx.logger.info(f"🏁 WORKER FINISHED. Tổng video thành công: {processed_count}")
+    ctx.logger.info(f"🏁 WORKER FINISHED. Tổng video thành công: {processed_count}/{acc_limit}")
 
-# ================= HÀM TEST RIÊNG (CHỈ TEST TTS) =================
 def test_tts_flow(account_id):
     """Hàm test quy trình TTS độc lập"""
     print(f"\n🧪 --- TEST CHẾ ĐỘ: LẤY TEXT SHEET & TẠO VOICE ---")
@@ -263,7 +266,6 @@ def test_tts_flow(account_id):
 
     tiktok_id = cfg.get("tiktok_id")
 
-    # [ĐÃ SỬA] Lấy settings từ Supabase
     settings = SupabaseAPI.get_system_config("app_settings") or {}
     sheet_url = settings.get("sheet_url") or settings.get("google_sheet_url")
     tts_api_key = settings.get("api_key") or settings.get("everai_api_key")
@@ -304,7 +306,7 @@ def test_tts_flow(account_id):
 
     print("\n🏁 HOÀN TẤT TEST TTS.")
 
-# ================= MAIN ENTRY =================
+
 if __name__ == "__main__":
     import sys
     args = sys.argv[1:]
