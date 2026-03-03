@@ -254,10 +254,8 @@ def run_worker_process(account_id):
     ctx.logger.info(f"🏁 WORKER FINISHED. Tổng video thành công: {processed_count}/{acc_limit}")
 
 def test_tts_flow(account_id):
-    """Hàm test quy trình TTS độc lập"""
     print(f"\n🧪 --- TEST CHẾ ĐỘ: LẤY TEXT SHEET & TẠO VOICE ---")
     print(f"📌 Account ID: {account_id}")
-
     ctx = AccountContext(account_id)
     cfg = ctx.config
     if not cfg:

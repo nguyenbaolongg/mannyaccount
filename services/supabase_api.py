@@ -6,7 +6,6 @@ SUPABASE_KEY = "sb_publishable_xqDTA5Hv2qcXC9ACkKBcgg_W5FaD-yG"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 class SupabaseAPI:
-    # ================= CẤU HÌNH HỆ THỐNG (LỊCH CHẠY, API KEY) =================
     @staticmethod
     def get_system_config(config_name):
         try:
@@ -17,20 +16,16 @@ class SupabaseAPI:
 
     @staticmethod
     def update_system_config(config_name, config_value):
-        """Dành cho Desktop App: Cập nhật cấu hình hệ thống (Lịch chạy, API...)"""
         try:
             data = {"config_name": config_name, "config_value": config_value}
-            # Yêu cầu bảng system_configs phải có Unique constraints trên cột config_name
             supabase.table("system_configs").upsert(data).execute()
             return True
         except Exception as e:
             print(f"❌ Lỗi cập nhật config: {e}")
             return False
 
-    # ================= QUẢN LÝ TÀI KHOẢN (ACCOUNTS) =================
     @staticmethod
     def get_all_accounts():
-        """Lấy toàn bộ tài khoản (hiển thị trên Dashboard)"""
         res = supabase.table("accounts").select("*").execute()
         return res.data
 
@@ -49,7 +44,6 @@ class SupabaseAPI:
 
     @staticmethod
     def save_account(account_data):
-        """Thêm mới hoặc Cập nhật tài khoản"""
         try:
             supabase.table("accounts").upsert(account_data).execute()
             return True
@@ -59,11 +53,45 @@ class SupabaseAPI:
 
     @staticmethod
     def delete_account(tiktok_id):
-        """Xóa tài khoản"""
         try:
             supabase.table("accounts").delete().eq("tiktok_id", tiktok_id).execute()
             return True
         except:
+            return False
+
+    @staticmethod
+    def get_channel_videos_db(tiktok_id, channel_url):
+        try:
+            res = supabase.table("channel_videos").select("video_list").eq("tiktok_id", tiktok_id).eq("channel_url", channel_url).execute()
+            if res.data:
+                return res.data[0].get("video_list", [])
+            return []
+        except Exception as e:
+            print(f"Lỗi lấy video từ DB: {e}")
+            return []
+
+    @staticmethod
+    def update_channel_videos_db(tiktok_id, channel_url, video_list):
+        """Cập nhật hoặc Thêm mới danh sách video cho kênh"""
+        try:
+            payload = {
+                "tiktok_id": tiktok_id,
+                "channel_url": channel_url,
+                "video_list": video_list
+            }
+            supabase.table("channel_videos").upsert(payload, on_conflict="tiktok_id, channel_url").execute()
+            return True
+        except Exception as e:
+            print(f"Lỗi lưu video lên DB: {e}")
+            return False
+
+    @staticmethod
+    def delete_channel_videos_db(tiktok_id, channel_url):
+        try:
+            supabase.table("channel_videos").delete().eq("tiktok_id", tiktok_id).eq("channel_url", channel_url).execute()
+            return True
+        except Exception as e:
+            print(f"Lỗi xóa video trên DB: {e}")
             return False
 
     # ================= QUẢN LÝ TIẾN ĐỘ & FILE =================

@@ -21,13 +21,11 @@ TEMP_DIR = os.path.join(ASSETS_DIR, "temp_downloads")
 if not os.path.exists(ASSETS_DIR): os.makedirs(ASSETS_DIR)
 if not os.path.exists(TEMP_DIR): os.makedirs(TEMP_DIR)
 
-# Biến toàn cục để đánh dấu đã kill chrome lần đầu chưa
 _has_killed_chrome_globally = False
 
 # ================= CÁC HÀM HỖ TRỢ =================
 
 def load_settings():
-    """Đọc cấu hình chung từ Supabase thay vì user_settings.json"""
     try:
         settings = SupabaseAPI.get_system_config("app_settings") or {}
         target_url = settings.get("ai_studio_url")
@@ -37,11 +35,9 @@ def load_settings():
         return None, None, None, None
 
 def kill_chrome_globally():
-    """Chỉ gọi hàm này 1 lần duy nhất khi bắt đầu chương trình chính"""
     global _has_killed_chrome_globally
     if _has_killed_chrome_globally:
         return
-
     print("🧹 Dọn dẹp Chrome processes trước khi chạy song song (Lần đầu)...")
     try:
         if sys.platform == "win32":
@@ -54,8 +50,6 @@ def handle_google_login(page, email, password):
     print(f"[{email}] 🕵️ Kiểm tra trạng thái đăng nhập...")
     try:
         time.sleep(10)
-
-        # Nếu URL là Google Login hoặc xuất hiện ô nhập email
         if "accounts.google.com" in page.url or page.locator('input[type="email"]').count() > 0:
             print(f"[{email}] ⚠️ Chưa đăng nhập! Bắt đầu tự động điền thông tin...")
             if not email or not password:
@@ -89,8 +83,6 @@ def handle_google_login(page, email, password):
         print(f"[{email}] ⚠️ Lỗi trong lúc tự đăng nhập Google: {e}")
         print(f"💡 Gợi ý: Google có thể đang đòi xác minh 2 bước. Hãy dùng chức năng 'Mở Chrome' để giải quyết thủ công 1 lần.")
 
-# ================= WORKER XỬ LÝ 1 TÀI KHOẢN (CHẠY TRONG 1 LUỒNG) =================
-
 def upload_worker(account_config):
     # 1. Lấy thông tin từ config riêng của nick
     profile_name = account_config.get("chrome_profile")
@@ -98,8 +90,6 @@ def upload_worker(account_config):
     local_video_path = account_config.get("video_path")
     gg_email = account_config.get("email")
     gg_pass = account_config.get("password")
-
-    # 2. Load settings chung (chủ yếu lấy URL AI Studio)
     target_url, _, _, _ = load_settings()
 
     if not target_url:
@@ -124,7 +114,6 @@ def upload_worker(account_config):
             browser = p.chromium.launch_persistent_context(
                 user_data_dir=current_user_data_dir,
                 headless=False,
-                channel="chrome",
                 args=[
                     "--start-maximized",
                     "--disable-blink-features=AutomationControlled",
@@ -299,9 +288,6 @@ def upload_worker(account_config):
         try: browser.close()
         except: pass
 
-
-# ================= HÀM CHẠY SONG SONG (DÀNH CHO WORKER CHÍNH GỌI) =================
-
 def run_parallel_uploads(list_accounts_to_run):
     kill_chrome_globally()
     max_workers = len(list_accounts_to_run)
@@ -325,7 +311,7 @@ def run_parallel_uploads(list_accounts_to_run):
                 print(f"💀 [Crash] {tid}: {e}")
 
 def run_ai_studio_uploader(local_video_path, specific_profile_name=None, tiktok_id=None):
-    def_email, def_pass = load_settings()
+    _, def_email, def_pass, _ = load_settings()
     acc_config = {
         "tiktok_id": tiktok_id or "Unknown",
         "chrome_profile": specific_profile_name or "Default",

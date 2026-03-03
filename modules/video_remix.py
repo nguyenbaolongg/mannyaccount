@@ -138,9 +138,6 @@ def load_render_config(target_channel_url=None, target_tiktok_id=None):
 
     return default_config
 
-# ==============================================================================
-# 3. CORE RENDER SEGMENT (XỬ LÝ CẮT, LẶP, VÀ HIỆU ỨNG NÂNG CAO)
-# ==============================================================================
 def render_segment_to_file(video_filename, audio_filename, output_filename, settings, text_settings, text_content, frame_filename, temp_dir):
     if not os.path.exists(video_filename): return False
     if not os.path.exists(audio_filename): return False
@@ -158,7 +155,6 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     raw_end = settings.get("source_end", "auto")
     zoom = float(settings.get("zoom_factor", 1.0))
 
-    # [TÍNH NĂNG MỚI] Random các tham số biến đổi
     video_speed = random.uniform(0.95, 1.05)
     k1_distort = random.uniform(-0.03, 0.03)
     k2_distort = random.uniform(-0.03, 0.03)
@@ -169,7 +165,6 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     v_in = ffmpeg.input(video_filename)
     a_in = ffmpeg.input(audio_filename)
 
-    # 2. Xử lý Logic Cắt Video
     real_end = None
     if raw_end != "auto" and raw_end is not None:
         val = float(raw_end)
@@ -184,25 +179,19 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     else:
         v = v_in.filter('trim', start=s_start)
 
-    # 4. Reset Time & Loop
     v = v.filter('setpts', 'PTS-STARTPTS')
     v = v.filter('loop', loop=-1, size=32767, start=0)
 
-    # 5. Hiệu ứng
     v = v.filter('setpts', f'PTS/{video_speed}')
 
     target_w = 1080
     scaled_w = int(target_w * zoom)
     if scaled_w % 2 != 0: scaled_w += 1
     v = v.filter('scale', width=scaled_w, height=-2)
-
     v = v.filter('lenscorrection', k1=k1_distort, k2=k2_distort)
     v = v.filter('eq', contrast=contrast_val, brightness=brightness_val, saturation=saturation_val)
-
-    # Tạo nền đen
     bg = ffmpeg.input(f'color=c=black:s=1080x1920:d={duration_audio}', f='lavfi')
 
-    # [QUAN TRỌNG] Xử lý tọa độ Overlay (Background Video Position)
     raw_x = settings.get("manual_x_offset", "center")
     if str(raw_x).lower() == "center":
         x_expr = '(W-w)/2'
@@ -218,14 +207,11 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     else:
         try:
             val_y = float(raw_y)
-            # Logic: val_y dương -> Dịch xuống (Cộng). val_y âm -> Dịch lên (Trừ/Cộng số âm)
             y_expr = f'(H-h)/2 + ({val_y})'
         except: y_expr = '(H-h)/2'
 
-    # Ghép video nền đã loop lên background đen
     v = ffmpeg.overlay(bg, v, x=x_expr, y=y_expr, shortest=1)
 
-    # Thêm Frame (Khung ảnh)
     if frame_filename and os.path.exists(frame_filename):
         fr = ffmpeg.input(frame_filename).filter('scale', 1080, 1920)
         v = ffmpeg.overlay(v, fr)
@@ -237,7 +223,6 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
         border_w = int(text_settings.get("stroke_width", 2))
         box_w_pct = float(text_settings.get("box_width_percentage", 0.85))
         y_start_pct = float(text_settings.get("box_y_start", 0.7))
-
         max_text_width = int(1080 * box_w_pct)
         safe_text = str(text_content).replace("'", "").replace(":", "").replace("%", "").strip().upper()
         wrapped_lines = wrap_text_ffmpeg(safe_text, f_size, max_text_width)
@@ -253,11 +238,8 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
                 shadowcolor="black", shadowx=2, shadowy=2,
                 x='(w-text_w)/2', y=str(current_line_y), fix_bounds=True
             )
-
-    # Audio Volume
     audio_vol = random.uniform(0.9, 1.3)
     a_in = a_in.filter('volume', volume=audio_vol)
-
     try:
         (
             ffmpeg
@@ -270,9 +252,6 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
         print(f"❌ FFmpeg Log:\n{e.stderr.decode('utf8')}")
         return False
 
-# ==============================================================================
-# 4. MAIN FLOW (ĐÃ SỬA LOGIC GHI ĐÈ CONFIG VÀ HỖ TRỢ ĐA LUỒNG)
-# ==============================================================================
 def create_video_from_source_video(
         audio_url, source_video_url, resolution_tuple=(1080, 1920),
         output_filename=None,
@@ -286,29 +265,20 @@ def create_video_from_source_video(
         temp_dir=None,
         **kwargs
 ):
-    # Tạo ID duy nhất cho phiên làm việc này để tên file không bao giờ trùng
     unique_session_id = str(uuid.uuid4())[:8]
     timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     if not output_filename: output_filename = f"remix_{timestamp_str}_{unique_session_id}.mp4"
 
-    # [SỬA LOGIC] Xác định thư mục làm việc (Working Dir)
     if temp_dir:
-        # Nếu được truyền folder riêng (ví dụ data/acc1/temp), tạo sub-folder unique trong đó
         working_dir = os.path.join(temp_dir, f"remix_{unique_session_id}")
     else:
-        # Fallback về folder chung nếu không có temp_dir (Dành cho test lẻ)
         working_dir = os.path.join(TEMP_REMIX_DIR, f"task_{timestamp_str}_{unique_session_id}")
 
     os.makedirs(working_dir, exist_ok=True)
     original_cwd = os.getcwd()
-
-    print(f"\n📂 WORKING DIR: {working_dir}")
-    print(f"🚀 [Pipeline] Row {row_index} | TikTok ID: {tiktok_id}")
     final_path = os.path.join(TARGET_VIDEO_FOLDER, output_filename)
-
     try:
-        # B1. Download Resources
         p_vid_name = f"vid_{unique_session_id}.mp4"
         p_aud_main_name = f"aud_main_{unique_session_id}.mp3"
         p_aud_title_name = f"aud_title_{unique_session_id}.mp3"
@@ -322,24 +292,14 @@ def create_video_from_source_video(
         if title_audio_url:
             if download_or_copy_file(title_audio_url, os.path.join(working_dir, p_aud_title_name)):
                 has_intro = True
-
-        # B2. Load Config & GHI ĐÈ (OVERRIDE)
-        # 1. Load config mặc định từ render_config.json
         cfg = load_render_config(target_channel_url, target_tiktok_id=tiktok_id)
 
-        # 2. [QUAN TRỌNG] GHI ĐÈ config từ file Account JSON (nếu có)
         if override_config and isinstance(override_config, dict):
-            print(f"   ⚡ Đang GHI ĐÈ Config từ file Account...")
-            # Các section cần ghi đè
             sections = ["title_settings", "content_settings", "text_overlay_settings", "text_content_settings", "assets"]
             for section in sections:
                 if section in override_config:
                     if section not in cfg: cfg[section] = {}
-                    # Update đè các giá trị mới vào
                     cfg[section].update(override_config[section])
-                    print(f"      -> Updated: {section}")
-
-        # Lấy assets sau khi đã ghi đè
         assets = cfg.get("assets", {})
 
         def find_asset_src(arg, key, default_folder):
@@ -378,28 +338,19 @@ def create_video_from_source_video(
             if os.path.exists(p): font_src_path = p; break
         if font_src_path: shutil.copy2(font_src_path, os.path.join(working_dir, "font.ttf"))
 
-        # B4. Render Segments
         os.chdir(working_dir)
         segs = []
-
-        # RENDER TITLE SEGMENT (INTRO)
         if has_intro:
             out = f"seg1_{unique_session_id}.mp4"
-            print(f"   🎥 Rendering Title Segment... (Offset: {cfg['title_settings'].get('manual_y_offset', 'center')})")
             if render_segment_to_file(p_vid_name, p_aud_title_name, out, cfg["title_settings"], cfg["text_overlay_settings"], title_tiktok, local_t_frame_name, working_dir):
                 segs.append(out)
-
-        # RENDER CONTENT SEGMENT (BODY)
         out2 = f"seg2_{unique_session_id}.mp4"
         if not os.path.exists(p_aud_main_name): raise Exception("Mất file aud_main.mp3")
-
-        print(f"   🎥 Rendering Content Segment... (Offset: {cfg['content_settings'].get('manual_y_offset', 'center')})")
         if render_segment_to_file(p_vid_name, p_aud_main_name, out2, cfg["content_settings"], cfg["text_content_settings"], content_text, local_c_frame_name, working_dir):
             segs.append(out2)
         else:
             raise Exception("Render Content Failed")
 
-        # Concat segments (Dùng tên file unique)
         concat_list_file = f"list_{unique_session_id}.txt"
         concat_out_file = f"concat_{unique_session_id}.mp4"
 
@@ -415,12 +366,7 @@ def create_video_from_source_video(
                 .run(capture_stdout=True, capture_stderr=True)
             )
         except ffmpeg.Error as e:
-            # In ra lỗi chi tiết từ FFmpeg để debug
-            print("❌ Lỗi khi ghép video (Concat Error):")
-            print(e.stderr.decode('utf8'))
             raise Exception("Concat Failed")
-
-        # Add Logo (Optional)
         local_logo_name = f"logo_{unique_session_id}.png" if src_logo else None
         if src_logo: shutil.copy2(src_logo, local_logo_name)
 
@@ -442,11 +388,9 @@ def create_video_from_source_video(
         import traceback; traceback.print_exc()
     finally:
         os.chdir(original_cwd)
-        # Nếu working_dir tồn tại thì xóa đi để dọn dẹp
         if 'working_dir' in locals() and os.path.exists(working_dir):
             try: shutil.rmtree(working_dir, ignore_errors=True)
             except: pass
 
 if __name__ == "__main__":
-    # Test Block
     pass

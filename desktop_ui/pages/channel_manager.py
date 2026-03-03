@@ -9,8 +9,6 @@ class ChannelManagerPage:
         self.title = ctk.CTkLabel(self.parent, text="📺 Quản lý Kênh Clone & Render", font=ctk.CTkFont(size=24, weight="bold"))
         self.title.pack(pady=(0, 10), anchor="w")
 
-        # ================= 1. CHỌN TÀI KHOẢN =================
-        # Lấy tất cả tài khoản từ Supabase để hiển thị trong dropdown
         self.accounts = SupabaseAPI.get_all_accounts() or []
         self.acc_ids = [acc.get("tiktok_id") for acc in self.accounts if acc.get("tiktok_id")]
 
@@ -31,11 +29,9 @@ class ChannelManagerPage:
 
         self.current_account = None
 
-        # ================= 2. FORM THÊM / SỬA KÊNH =================
         self.form_frame = ctk.CTkFrame(self.parent)
         self.form_frame.pack(fill="x", pady=10)
 
-        # Hàng 1: URL & Limit riêng của từng kênh
         row1 = ctk.CTkFrame(self.form_frame, fg_color="transparent")
         row1.pack(fill="x", padx=10, pady=5)
         ctk.CTkLabel(row1, text="🔗 Link Nguồn:").pack(side="left", padx=5)
@@ -56,21 +52,18 @@ class ChannelManagerPage:
         self.tabs.add("Chữ Content")
         self.tabs.add("Assets")
 
-        # Tab Vid Intro: Cấu hình đoạn mở đầu video
         self.inp_intro_st = self._add_field(self.tabs.tab("Vid Intro"), "Start (s):", "2.0")
         self.inp_intro_en = self._add_field(self.tabs.tab("Vid Intro"), "End (s):", "5.0")
         self.inp_intro_zm = self._add_field(self.tabs.tab("Vid Intro"), "Zoom:", "1.0")
         self.inp_intro_x  = self._add_field(self.tabs.tab("Vid Intro"), "X Offset:", "0")
         self.inp_intro_y  = self._add_field(self.tabs.tab("Vid Intro"), "Y Offset:", "100")
 
-        # Tab Vid Content: Cấu hình đoạn nội dung chính
         self.inp_cont_st = self._add_field(self.tabs.tab("Vid Content"), "Start (s):", "10.0")
         self.inp_cont_en = self._add_field(self.tabs.tab("Vid Content"), "End (s):", "auto")
         self.inp_cont_zm = self._add_field(self.tabs.tab("Vid Content"), "Zoom:", "1.05")
         self.inp_cont_x  = self._add_field(self.tabs.tab("Vid Content"), "X Offset:", "0")
         self.inp_cont_y  = self._add_field(self.tabs.tab("Vid Content"), "Y Offset:", "-11")
 
-        # Tab Chữ Intro: Màu chữ (#Hex) và Viền (Stroke)
         self.inp_txt_in_y1   = self._add_field(self.tabs.tab("Chữ Intro"), "Y Start:", "0.73")
         self.inp_txt_in_y2   = self._add_field(self.tabs.tab("Chữ Intro"), "Y End:", "0.83")
         self.inp_txt_in_w    = self._add_field(self.tabs.tab("Chữ Intro"), "Width %:", "0.65")
@@ -78,7 +71,6 @@ class ChannelManagerPage:
         self.inp_txt_in_clr  = self._add_field(self.tabs.tab("Chữ Intro"), "Màu (Hex):", "#ffffff")
         self.inp_txt_in_strk = self._add_field(self.tabs.tab("Chữ Intro"), "Stroke:", "0")
 
-        # Tab Chữ Content: Tương tự intro
         self.inp_txt_co_y1   = self._add_field(self.tabs.tab("Chữ Content"), "Y Start:", "0.73")
         self.inp_txt_co_y2   = self._add_field(self.tabs.tab("Chữ Content"), "Y End:", "0.83")
         self.inp_txt_co_w    = self._add_field(self.tabs.tab("Chữ Content"), "Width %:", "0.65")
@@ -86,13 +78,11 @@ class ChannelManagerPage:
         self.inp_txt_co_clr  = self._add_field(self.tabs.tab("Chữ Content"), "Màu (Hex):", "#ffffff")
         self.inp_txt_co_strk = self._add_field(self.tabs.tab("Chữ Content"), "Stroke:", "0")
 
-        # Tab Assets: Đường dẫn file khung và font
         self.inp_frame_in = self._add_field(self.tabs.tab("Assets"), "Khung Intro:", "")
         self.inp_frame_co = self._add_field(self.tabs.tab("Assets"), "Khung Content:", "")
         self.inp_font     = self._add_field(self.tabs.tab("Assets"), "Tên Font:", "Inter_18pt-Bold.ttf")
         self.inp_logo     = self._add_field(self.tabs.tab("Assets"), "Tên Logo:", "")
 
-        # Khung chứa các nút hành động
         self.action_frame = ctk.CTkFrame(self.form_frame, fg_color="transparent")
         self.action_frame.pack(pady=10)
         self.btn_save_chn = ctk.CTkButton(self.action_frame, text="➕ THÊM KÊNH MỚI", command=self.save_channel, fg_color="green")
@@ -102,7 +92,6 @@ class ChannelManagerPage:
         self.lbl_status = ctk.CTkLabel(self.form_frame, text="")
         self.lbl_status.pack()
 
-        # ================= 3. DANH SÁCH & TỔNG DỰ KIẾN =================
         header_list = ctk.CTkFrame(self.parent, fg_color="transparent")
         header_list.pack(fill="x", pady=(10, 0))
 
@@ -127,11 +116,11 @@ class ChannelManagerPage:
         return inp
 
     def _set_val(self, inp_widget, val):
+        inp_widget.configure(state="normal") # Đảm bảo mở khóa trước khi ghi
         inp_widget.delete(0, 'end')
         inp_widget.insert(0, str(val))
 
     def on_account_select(self, selected_id):
-        """Cập nhật giao diện khi đổi tài khoản TikTok"""
         self.current_account = next((acc for acc in self.accounts if acc["tiktok_id"] == selected_id), None)
         if self.current_account:
             limit_run = self.current_account.get("video_limit_per_run", "N/A")
@@ -142,14 +131,13 @@ class ChannelManagerPage:
         self.load_channels()
 
     def load_channels(self):
-        """Tính toán và hiển thị danh sách kênh kèm tổng limit dự kiến"""
         for widget in self.scroll_frame.winfo_children():
             widget.destroy()
 
         if not self.current_account: return
         channels = self.current_account.get("channels", [])
 
-        total_limit = 0 # Biến cộng dồn limit
+        total_limit = 0
 
         if not channels:
             ctk.CTkLabel(self.scroll_frame, text="Chưa có kênh nào.").pack(pady=10)
@@ -158,7 +146,7 @@ class ChannelManagerPage:
 
         for i, chn in enumerate(channels):
             c_limit = chn.get('limit', 0)
-            total_limit += c_limit # Cộng dồn limit của kênh con vào tổng
+            total_limit += c_limit
 
             row_frame = ctk.CTkFrame(self.scroll_frame)
             row_frame.pack(fill="x", pady=2)
@@ -170,10 +158,8 @@ class ChannelManagerPage:
             btn_edit = ctk.CTkButton(row_frame, text="✏️", width=30, command=lambda idx=i, data=chn: self.edit_channel(idx, data))
             btn_edit.pack(side="right", padx=5)
 
-        # Cập nhật nhãn tổng dự kiến
         self.lbl_total_expected.configure(text=f"📊 Tổng video dự kiến: {total_limit}")
 
-        # Cảnh báo màu đỏ nếu tổng limit các kênh vượt quá giới hạn chạy của tài khoản
         acc_max = self.current_account.get("video_limit_per_run", 999)
         if total_limit > acc_max:
             self.lbl_total_expected.configure(text_color="red")
@@ -181,9 +167,8 @@ class ChannelManagerPage:
             self.lbl_total_expected.configure(text_color="cyan")
 
     def edit_channel(self, index, chn_data):
-        """Đổ dữ liệu kênh cũ lên form để sửa"""
         self.editing_index = index
-        self.lbl_status.configure(text="✏️ Chế độ Sửa", text_color="blue")
+        self.lbl_status.configure(text="✏️ Chế độ Sửa (Đã khóa chỉnh sửa Link)", text_color="orange")
         self.btn_cancel_edit.pack(side="left", padx=5)
         self.btn_save_chn.configure(text="💾 CẬP NHẬT KÊNH", fg_color="blue")
 
@@ -193,26 +178,46 @@ class ChannelManagerPage:
         ast = rs.get("assets", {})
 
         self._set_val(self.inp_url, chn_data.get("url", ""))
+        self.inp_url.configure(state="disabled")
         self._set_val(self.inp_limit, chn_data.get("limit", 3))
 
-        # Điền các thông số render cũ
         self._set_val(self.inp_intro_st, ts.get("source_start", 2.0))
         self._set_val(self.inp_intro_en, ts.get("source_end", 5.0))
         self._set_val(self.inp_intro_zm, ts.get("zoom_factor", 1.0))
+        self._set_val(self.inp_intro_x, ts.get("manual_x_offset", 0))
         self._set_val(self.inp_intro_y, ts.get("manual_y_offset", 100))
 
+        self._set_val(self.inp_cont_st, cs.get("source_start", 10.0))
+        self._set_val(self.inp_cont_en, cs.get("source_end", "auto"))
+        self._set_val(self.inp_cont_zm, cs.get("zoom_factor", 1.05))
+        self._set_val(self.inp_cont_x, cs.get("manual_x_offset", 0))
+        self._set_val(self.inp_cont_y, cs.get("manual_y_offset", -11))
+
+        self._set_val(self.inp_txt_in_y1, txt_in.get("box_y_start", 0.73))
+        self._set_val(self.inp_txt_in_y2, txt_in.get("box_y_end", 0.83))
+        self._set_val(self.inp_txt_in_w, txt_in.get("box_width_percentage", 0.65))
+        self._set_val(self.inp_txt_in_sz, txt_in.get("font_size", 45))
         self._set_val(self.inp_txt_in_clr, txt_in.get("text_color", "#ffffff"))
         self._set_val(self.inp_txt_in_strk, txt_in.get("stroke_width", 0))
 
+        self._set_val(self.inp_txt_co_y1, txt_co.get("box_y_start", 0.73))
+        self._set_val(self.inp_txt_co_y2, txt_co.get("box_y_end", 0.83))
+        self._set_val(self.inp_txt_co_w, txt_co.get("box_width_percentage", 0.65))
+        self._set_val(self.inp_txt_co_sz, txt_co.get("font_size", 45))
         self._set_val(self.inp_txt_co_clr, txt_co.get("text_color", "#ffffff"))
         self._set_val(self.inp_txt_co_strk, txt_co.get("stroke_width", 0))
 
+        self._set_val(self.inp_frame_in, ast.get("title_frame_filename", ""))
+        self._set_val(self.inp_frame_co, ast.get("content_frame_filename", ""))
+        self._set_val(self.inp_font, txt_in.get("font_filename", "Inter_18pt-Bold.ttf"))
+        self._set_val(self.inp_logo, ast.get("logo_filename", ""))
+
     def save_channel(self):
-        """Lưu hoặc cập nhật kênh mới vào mảng channels của tài khoản"""
+        self.inp_url.configure(state="normal")
         url = self.inp_url.get().strip()
+
         if not url or not self.current_account: return
 
-        # Tạo object cấu hình theo đúng format JSON của bạn
         new_chn = {
             "url": url,
             "limit": int(self.inp_limit.get() or 3),
@@ -258,20 +263,27 @@ class ChannelManagerPage:
         }
 
         channels = self.current_account.get("channels", [])
+        is_new_channel = False
+
         if self.editing_index is not None:
             channels[self.editing_index] = new_chn
         else:
-            # Nếu trùng URL thì cập nhật, không thì thêm mới
             found = False
             for i, chn in enumerate(channels):
                 if chn.get("url") == url:
                     channels[i] = new_chn
                     found = True
                     break
-            if not found: channels.append(new_chn)
+            if not found:
+                channels.append(new_chn)
+                is_new_channel = True
 
         self.current_account["channels"] = channels
-        # Lưu thay đổi lên Supabase
+        tiktok_id = self.current_account.get("tiktok_id")
+
+        if is_new_channel:
+            SupabaseAPI.update_channel_videos_db(tiktok_id, url, [])
+
         if SupabaseAPI.save_account(self.current_account):
             self.lbl_status.configure(text="✅ Lưu thành công!", text_color="green")
             self.cancel_edit()
@@ -281,11 +293,17 @@ class ChannelManagerPage:
         self.editing_index = None
         self.btn_cancel_edit.pack_forget()
         self.btn_save_chn.configure(text="➕ THÊM KÊNH MỚI", fg_color="green")
+        self.inp_url.configure(state="normal") # Mở khóa lại
         self._set_val(self.inp_url, "")
         self.lbl_status.configure(text="")
 
     def delete_channel(self, index):
         if self.current_account:
+            channel_to_delete = self.current_account["channels"][index]
+            tiktok_id = self.current_account.get("tiktok_id")
+            channel_url = channel_to_delete.get("url")
             self.current_account["channels"].pop(index)
+            if tiktok_id and channel_url:
+                SupabaseAPI.delete_channel_videos_db(tiktok_id, channel_url)
             if SupabaseAPI.save_account(self.current_account):
                 self.load_channels()

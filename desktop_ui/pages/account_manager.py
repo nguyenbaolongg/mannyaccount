@@ -3,7 +3,7 @@ import os
 import shutil
 import threading
 import time
-import undetected_chromedriver as uc
+from playwright.sync_api import sync_playwright  # Dùng Playwright thay cho undetected_chromedriver
 from services.supabase_api import SupabaseAPI
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -17,13 +17,11 @@ class AccountManagerPage:
         self.title = ctk.CTkLabel(self.parent, text="👤 Quản lý Tài khoản & Profile", font=ctk.CTkFont(size=24, weight="bold"))
         self.title.pack(pady=(0, 10), anchor="w")
 
-        # ================= FORM THÊM / SỬA TÀI KHOẢN =================
         self.form_frame = ctk.CTkFrame(self.parent)
         self.form_frame.pack(fill="x", pady=10)
 
         ctk.CTkLabel(self.form_frame, text="➕ Thêm / Sửa Tài khoản", font=ctk.CTkFont(weight="bold")).grid(row=0, column=0, padx=10, pady=10, sticky="w")
 
-        # --- ROW 1 ---
         ctk.CTkLabel(self.form_frame, text="TikTok Handle (@abc):").grid(row=1, column=0, padx=10, pady=5, sticky="w")
         self.inp_tiktok_id = ctk.CTkEntry(self.form_frame, width=200, placeholder_text="@...")
         self.inp_tiktok_id.grid(row=1, column=1, padx=10, pady=5)
@@ -32,7 +30,6 @@ class AccountManagerPage:
         self.inp_email = ctk.CTkEntry(self.form_frame, width=250, placeholder_text="email@gmail.com")
         self.inp_email.grid(row=1, column=3, padx=10, pady=5)
 
-        # --- ROW 2 ---
         ctk.CTkLabel(self.form_frame, text="Mật khẩu Email:").grid(row=2, column=0, padx=10, pady=5, sticky="w")
         self.inp_password = ctk.CTkEntry(self.form_frame, width=200, show="*")
         self.inp_password.grid(row=2, column=1, padx=10, pady=5)
@@ -42,7 +39,6 @@ class AccountManagerPage:
         self.inp_machine_id.grid(row=2, column=3, padx=10, pady=5, sticky="w")
         self.inp_machine_id.insert(0, "1")
 
-        # --- ROW 3: KHU VỰC NÚT BẤM ---
         self.action_frame = ctk.CTkFrame(self.form_frame, fg_color="transparent")
         self.action_frame.grid(row=3, column=0, columnspan=4, padx=10, pady=15, sticky="w")
 
@@ -51,18 +47,15 @@ class AccountManagerPage:
 
         self.btn_cancel = ctk.CTkButton(self.action_frame, text="❌ HỦY", command=self.cancel_edit, fg_color="gray", hover_color="darkgray")
 
-        # --- ROW 4: TRẠNG THÁI ---
         self.lbl_status = ctk.CTkLabel(self.form_frame, text="")
         self.lbl_status.grid(row=4, column=0, columnspan=4, padx=15, pady=(0, 10), sticky="w")
 
-        # ================= DANH SÁCH TÀI KHOẢN =================
         ctk.CTkLabel(self.parent, text="📋 Danh sách Tài khoản & Quản lý Profile:", font=ctk.CTkFont(weight="bold")).pack(anchor="w", pady=(10, 0))
         self.scroll_frame = ctk.CTkScrollableFrame(self.parent, width=1000, height=300)
         self.scroll_frame.pack(fill="both", expand=True, pady=5)
 
         self.load_accounts()
 
-    # ================= LOGIC FORM & DANH SÁCH =================
     def save_account(self):
         tiktok_id = self.inp_tiktok_id.get().strip()
         email = self.inp_email.get().strip()
@@ -144,12 +137,27 @@ class AccountManagerPage:
     def load_accounts(self):
         for widget in self.scroll_frame.winfo_children():
             widget.destroy()
-        accounts = SupabaseAPI.get_all_accounts()
-        if not accounts: return
 
         def truncate_text(text, max_len):
             if not text: return ""
             return text if len(text) <= max_len else text[:max_len-3] + "..."
+
+        manual_frame = ctk.CTkFrame(self.scroll_frame, fg_color="#2B2B2B")
+        manual_frame.pack(fill="x", pady=(0, 10))
+
+        ctk.CTkLabel(manual_frame, text="⚙️ HỆ THỐNG", width=150, anchor="w", font=ctk.CTkFont(weight="bold"), text_color="cyan").pack(side="left", padx=10)
+        ctk.CTkLabel(manual_frame, text="Dùng cho Trạm Remix Thủ Công", width=280, anchor="w").pack(side="left", padx=10)
+        ctk.CTkLabel(manual_frame, text="Profile: manual_shared_profile", width=220, anchor="w", text_color="yellow").pack(side="left", padx=10)
+        ctk.CTkLabel(manual_frame, text="Toàn bộ", width=60, anchor="w").pack(side="left", padx=10)
+
+        btn_del_manual = ctk.CTkButton(manual_frame, text="Clear Data", width=60, fg_color="red", hover_color="darkred", command=self.clear_manual_profile)
+        btn_del_manual.pack(side="right", padx=10, pady=5)
+
+        btn_chrome_manual = ctk.CTkButton(manual_frame, text="Mở Chrome", width=100, fg_color="blue", hover_color="darkblue", command=lambda: self.open_chrome_profile("manual_shared_profile"))
+        btn_chrome_manual.pack(side="right", padx=5, pady=5)
+
+        accounts = SupabaseAPI.get_all_accounts()
+        if not accounts: return
 
         for acc in accounts:
             row_frame = ctk.CTkFrame(self.scroll_frame)
@@ -184,9 +192,20 @@ class AccountManagerPage:
             self.cancel_edit()
             self.load_accounts()
 
+    def clear_manual_profile(self):
+        profile_path = os.path.join(AI_STUDIO_DIR, "manual_shared_profile")
+        if os.path.exists(profile_path):
+            try:
+                shutil.rmtree(profile_path)
+                self.lbl_status.configure(text="✅ Đã dọn dẹp dữ liệu của thư mục dùng chung (Sẽ cần đăng nhập lại Google).", text_color="green")
+            except Exception as e:
+                self.lbl_status.configure(text=f"❌ Lỗi: {e} (Hãy chắc chắn Chrome đã đóng)", text_color="red")
+        else:
+            self.lbl_status.configure(text="✅ Thư mục trống, không cần dọn dẹp.", text_color="green")
+
     def open_chrome_profile(self, profile_name):
         if not profile_name: return
-        self.lbl_status.configure(text=f"⏳ Đang khởi động Chrome cho {profile_name}...", text_color="blue")
+        self.lbl_status.configure(text=f"⏳ Đang khởi động Chromium cho {profile_name}...", text_color="blue")
         threading.Thread(target=self._launch_browser_thread, args=(profile_name,), daemon=True).start()
 
     def _launch_browser_thread(self, profile_name):
@@ -194,40 +213,35 @@ class AccountManagerPage:
         if not os.path.exists(profile_path):
             os.makedirs(profile_path)
 
-        # --- [QUAN TRỌNG] CẤU HÌNH ĐƯỜNG DẪN CHROME PORTABLE 145 ---
-        CHROME_BIN_PATH = os.path.join(PROJECT_ROOT, "assets", "ChromePortable", "GoogleChromePortable", "App", "Chrome-bin", "chrome.exe")
-
-        options = uc.ChromeOptions()
-        options.add_argument(f"--user-data-dir={profile_path}")
-        options.add_argument("--no-first-run")
-        options.add_argument("--no-service-autorun")
-        options.add_argument("--password-store=basic")
-        options.add_argument("--start-maximized")
-
-        driver = None
         try:
-            # Ép version_main=145 và trỏ trực tiếp vào file exe của Portable
-            driver = uc.Chrome(
-                options=options,
-                use_subprocess=True,
-                version_main=145,
-                browser_executable_path=CHROME_BIN_PATH
-            )
-            driver.get("https://accounts.google.com/")
-            self.lbl_status.configure(text=f"🟢 Đang mở Chrome: {profile_name}. Đăng nhập xong hãy TẮT trình duyệt để lưu.", text_color="green")
-
-            while True:
+            with sync_playwright() as p:
+                browser = p.chromium.launch_persistent_context(
+                    user_data_dir=profile_path,
+                    headless=False,
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                        "--start-maximized",
+                        "--no-sandbox",
+                        "--disable-infobars"
+                    ],
+                    ignore_default_args=["--enable-automation"]
+                )
+                page = browser.pages[0] if len(browser.pages) > 0 else browser.new_page()
+                page.goto("https://accounts.google.com/")
+                self.lbl_status.configure(text=f"🟢 Đang mở Chromium: {profile_name}. Đăng nhập xong hãy TẮT trình duyệt để lưu.", text_color="green")
                 try:
-                    if driver.service.process.poll() is not None:
-                        break
+                    page.wait_for_event("close", timeout=0)
                 except:
-                    break
-                time.sleep(1)
+                    pass
+                try:
+                    browser.close()
+                except:
+                    pass
+                self.parent.after(0, lambda: self.lbl_status.configure(
+                    text=f"✅ Đã đóng và lưu dữ liệu an toàn cho {profile_name}.",
+                    text_color="green"
+                ))
+
         except Exception as e:
-            print(f"Lỗi khởi động Chrome: {e}")
-            self.lbl_status.configure(text=f"❌ Lỗi: Cần tắt hết Chrome ẩn hoặc xóa thư mục undetected_chromedriver trong AppData.", text_color="red")
-        finally:
-            if driver:
-                try: driver.quit()
-                except: pass
-            self.lbl_status.configure(text=f"✅ Đã đóng và lưu dữ liệu cho {profile_name}.", text_color="green")
+            print(f"Lỗi khởi động Chromium: {e}")
+            self.lbl_status.configure(text=f"❌ Lỗi: Vui lòng đóng các Chromium đang chạy ngầm nếu có. ({e})", text_color="red")
