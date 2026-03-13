@@ -2,10 +2,14 @@ from supabase import create_client, Client
 import os
 
 SUPABASE_URL = "https://iynwmytfroatvzhbkodf.supabase.co"
-SUPABASE_KEY = "sb_publishable_xqDTA5Hv2qcXC9ACkKBcgg_W5FaD-yG"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml5bndteXRmcm9hdHZ6aGJrb2RmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MjkxNjYsImV4cCI6MjA4NzQwNTE2Nn0.o9u56KDzfHk26mtNlkVAWH3c-QHUMv4uidVNsbpXVyo"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 class SupabaseAPI:
+    SUPABASE_URL = "https://iynwmytfroatvzhbkodf.supabase.co"
+    SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml5bndteXRmcm9hdHZ6aGJrb2RmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MjkxNjYsImV4cCI6MjA4NzQwNTE2Nn0.o9u56KDzfHk26mtNlkVAWH3c-QHUMv4uidVNsbpXVyo"
+    client: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+    supabase: Client = client
     @staticmethod
     def get_system_config(config_name):
         try:
@@ -126,3 +130,21 @@ class SupabaseAPI:
         except Exception as e:
             print(f"   ⚠️ Lỗi kéo file {file_name} từ Supabase: {e}")
             return os.path.join(local_dir, file_name)
+
+    @classmethod
+    def get_list_storage_files(cls, bucket_name, folder_name):
+        try:
+            import sys
+            current_module = sys.modules[__name__]
+            db = getattr(cls, 'client', None) or getattr(cls, 'supabase', None) or getattr(cls, '_client', None)
+            if not db:
+                db = getattr(current_module, 'supabase', None) or getattr(current_module, 'client', None)
+
+            if db:
+                res = db.storage.from_(bucket_name).list(folder_name)
+                if isinstance(res, list):
+                    return [f.get('name') for f in res if isinstance(f, dict) and f.get('name') and f.get('name') != '.emptyFolderPlaceholder']
+            return []
+        except Exception as e:
+            print(f"Lỗi đọc Storage Supabase: {e}")
+            return []

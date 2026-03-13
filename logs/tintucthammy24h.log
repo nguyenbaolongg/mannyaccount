@@ -647,3 +647,323 @@
 2026-03-03 18:20:55,564 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeothammy/video/7612968614450236680
 2026-03-03 18:21:00,568 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
 2026-03-03 18:21:00,568 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 10:00:07,146 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-04 10:00:07,302 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-04 10:00:08,867 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-04 10:00:09,883 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-04 10:00:11,622 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 10:00:12,676 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612532820975553799
+2026-03-04 10:04:42,900 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:04:42,900 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 10:04:45,437 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 10:04:46,864 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:06:32,609 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:06:33,085 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612532820975553799
+2026-03-04 10:06:38,089 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612571500633148690
+2026-03-04 10:10:53,158 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:10:53,158 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 10:10:54,265 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 10:10:54,853 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:11:52,884 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:11:53,381 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612571500633148690
+2026-03-04 10:11:58,385 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612571784403045640
+2026-03-04 10:16:32,154 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:16:32,154 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 10:16:33,567 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 10:16:34,762 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:17:14,331 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:17:14,784 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612571784403045640
+2026-03-04 10:17:19,788 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 12:00:04,740 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-04 12:00:04,895 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-04 12:00:18,010 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613243393220594965
+2026-03-04 12:00:51,524 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613259691992403220
+2026-03-04 12:05:26,951 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:05:26,952 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-04 12:05:26,952 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-04 12:05:26,952 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:06:34,147 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:06:34,777 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613259691992403220
+2026-03-04 12:06:39,781 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-04 12:06:40,809 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeothammy/video/7613240252341308690
+2026-03-04 12:12:00,870 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:12:00,870 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-04 12:12:00,870 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-04 12:12:00,871 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:12:51,173 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:12:51,663 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeothammy/video/7613240252341308690
+2026-03-04 12:12:56,672 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-04 12:12:58,446 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 12:12:59,629 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612589920254823698
+2026-03-04 12:17:35,250 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:17:35,250 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 12:17:36,232 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 12:17:36,622 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:18:10,935 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:18:11,455 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612589920254823698
+2026-03-04 12:18:16,458 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-04 12:18:16,458 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 15:00:04,594 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-04 15:00:04,746 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-04 15:00:06,223 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-04 15:00:07,647 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-04 15:00:08,835 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 15:00:10,016 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612590166880029959
+2026-03-04 15:04:41,583 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:04:41,584 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 15:04:43,754 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 15:04:45,133 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:06:17,915 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:06:18,296 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612590166880029959
+2026-03-04 15:06:23,300 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612593030968675591
+2026-03-04 15:11:01,250 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:11:01,250 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 15:11:02,612 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 15:11:03,980 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:12:05,765 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:12:06,147 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612593030968675591
+2026-03-04 15:12:11,150 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612590629561830674
+2026-03-04 15:16:52,214 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:16:52,214 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 15:16:53,752 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 15:16:54,356 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:17:40,159 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:17:40,754 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612590629561830674
+2026-03-04 15:17:45,758 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 18:00:03,702 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-04 18:00:03,861 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-04 18:00:05,300 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613347803686882580
+2026-03-04 18:04:27,000 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:04:27,001 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-04 18:04:27,001 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-04 18:04:27,001 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:05:57,866 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:05:58,533 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613347803686882580
+2026-03-04 18:06:03,537 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-04 18:06:06,450 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-04 18:06:07,662 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 18:06:08,650 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612591927153773831
+2026-03-04 18:10:33,601 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:10:33,601 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 18:10:34,844 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 18:10:35,444 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:11:18,872 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:11:19,442 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612591927153773831
+2026-03-04 18:11:24,446 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612592232062897426
+2026-03-04 18:15:42,429 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:15:42,429 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-04 18:15:44,425 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-04 18:15:44,986 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:16:18,749 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:16:19,614 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612592232062897426
+2026-03-04 18:16:24,618 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-04 18:16:24,618 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 10:00:06,951 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 10:00:07,120 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 10:00:08,513 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613384222643965205
+2026-03-05 10:04:33,163 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:04:33,163 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-05 10:04:33,163 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-05 10:04:33,163 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:05:51,590 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:05:52,087 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613384222643965205
+2026-03-05 10:05:57,091 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613402798700432661
+2026-03-05 10:11:13,568 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613584408527768852
+2026-03-05 10:15:35,871 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:15:35,872 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-05 10:15:35,872 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-05 10:15:35,872 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:16:14,190 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:16:14,867 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613584408527768852
+2026-03-05 10:16:19,871 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-05 10:16:21,724 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-05 10:16:23,090 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 10:16:24,095 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612945300960857365
+2026-03-05 10:20:47,840 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:20:47,840 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 10:20:48,971 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 10:20:49,528 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:21:28,626 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:21:29,102 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612945300960857365
+2026-03-05 10:21:34,106 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-05 10:21:34,106 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 12:00:04,018 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 12:00:04,182 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 12:00:05,772 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613611918208535826
+2026-03-05 12:04:35,737 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:04:35,737 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-05 12:04:35,738 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-05 12:04:35,738 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:05:54,767 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:05:55,888 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613611918208535826
+2026-03-05 12:06:00,891 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-05 12:06:04,962 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-05 12:06:09,292 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 12:06:11,762 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613012575479123220
+2026-03-05 12:10:41,580 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:10:41,580 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 12:10:42,805 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 12:10:43,386 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:11:49,538 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:11:49,976 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613012575479123220
+2026-03-05 12:11:54,983 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613032231740755220
+2026-03-05 12:16:28,583 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613224363541679381
+2026-03-05 12:20:53,091 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:20:53,092 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 12:20:55,273 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 12:20:55,868 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:21:35,912 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:21:36,409 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613224363541679381
+2026-03-05 12:21:41,413 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 15:00:03,597 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 15:00:03,811 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 15:00:05,468 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613636691185700116
+2026-03-05 15:00:57,609 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613672232467844360
+2026-03-05 15:05:53,841 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-05 15:05:56,227 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-05 15:05:59,236 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 15:06:00,719 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613284262082661653
+2026-03-05 15:10:52,000 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 15:10:52,000 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 15:10:53,842 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 15:10:54,475 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 15:12:15,842 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 15:12:16,496 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613284262082661653
+2026-03-05 15:12:21,500 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613304542473506069
+2026-03-05 15:16:53,521 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 15:16:53,521 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 15:16:54,882 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 15:16:55,543 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 15:18:08,078 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 15:18:09,330 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613304542473506069
+2026-03-05 15:18:14,335 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613341273092574485
+2026-03-05 15:22:53,942 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 15:22:53,943 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 15:22:55,799 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 15:22:56,431 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 15:23:50,436 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 15:23:51,370 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613341273092574485
+2026-03-05 15:23:56,374 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 18:00:03,608 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 18:00:03,764 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 18:00:05,325 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613636691185700116
+2026-03-05 18:06:02,609 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:06:02,609 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-05 18:06:02,609 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-05 18:06:02,609 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:06:43,768 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:06:44,271 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613636691185700116
+2026-03-05 18:06:49,275 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613672232467844360
+2026-03-05 18:11:27,555 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613687079284804884
+2026-03-05 18:16:11,549 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:16:11,549 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-05 18:16:11,549 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-05 18:16:11,549 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:16:55,027 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:16:56,032 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613687079284804884
+2026-03-05 18:17:01,037 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-05 18:17:06,450 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-05 18:17:12,111 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 18:17:22,026 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613333807277624596
+2026-03-05 18:22:00,806 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:22:00,806 [INFO]    📥 Không có file '24h tham my fr 3.png'. Đang tải từ Supabase...
+2026-03-05 18:22:03,382 [INFO]    📥 Không có file '24h tham my fr 1.png'. Đang tải từ Supabase...
+2026-03-05 18:22:03,972 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:22:42,823 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:22:43,685 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613333807277624596
+2026-03-05 18:22:48,688 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-05 18:22:48,688 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 23:38:21,760 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 23:38:21,926 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 23:38:23,680 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714205828599048
+2026-03-05 23:39:03,209 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-05 23:39:03,415 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-05 23:39:04,839 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714205828599048
+2026-03-05 23:39:17,766 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-03-05 23:39:22,767 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714422514683144
+2026-03-05 23:39:22,767 [ERROR]    🔥 Lỗi: [Errno 22] Invalid argument
+2026-03-05 23:39:27,767 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-05 23:39:27,767 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-03-05 23:39:27,767 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-05 23:39:27,767 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-03-05 23:39:27,767 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 23:39:27,767 [ERROR]    ⚠️ Lỗi quét video: [Errno 22] Invalid argument
+2026-03-05 23:39:27,767 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-03-06 10:24:19,652 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 10:27:40,468 [ERROR] Task Lỗi: Lỗi ghép Render Video.
+2026-03-06 10:33:42,694 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 10:36:41,487 [ERROR] Task Lỗi: Lỗi Upload AI Studio.
+2026-03-06 10:55:18,137 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 11:00:02,698 [ERROR] Task Lỗi: Lỗi ghép Render Video.
+2026-03-06 11:24:27,894 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 11:33:52,252 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 11:45:44,702 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 11:46:27,094 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 11:46:53,806 [ERROR] Task Lỗi: Lỗi Upload AI Studio.
+2026-03-06 11:47:18,379 [ERROR] Task Lỗi: Lỗi Upload AI Studio.
+2026-03-06 11:59:57,708 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 12:00:19,511 [INFO] Bắt đầu Task Link: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 12:03:31,030 [ERROR] Task Lỗi: Lỗi Upload AI Studio.
+2026-03-06 12:27:50,101 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-06 12:27:50,266 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-06 12:28:11,817 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714205828599048
+2026-03-06 12:32:49,330 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-06 12:32:49,331 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-06 12:32:49,331 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-03-06 12:32:49,331 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-06 12:34:45,378 [INFO]    ✅ HOÀN TẤT!
+2026-03-06 12:34:46,217 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7613714205828599048
+2026-03-06 12:34:51,220 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714422514683144
+2026-03-06 12:39:31,682 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-06 12:39:36,102 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-06 12:39:37,599 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 12:39:39,502 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613032231740755220
+2026-03-06 12:43:17,870 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-06 12:43:17,870 [INFO]    ✅ Đã có file '24h  tham  my fr 3.png' trong máy.
+2026-03-06 12:43:17,870 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-06 12:43:17,870 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-06 12:44:22,765 [INFO]    ✅ HOÀN TẤT!
+2026-03-06 12:44:23,408 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613032231740755220
+2026-03-06 12:44:28,414 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613335586966883605
+2026-03-06 12:49:08,712 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-06 12:49:08,712 [INFO]    ✅ Đã có file '24h  tham  my fr 3.png' trong máy.
+2026-03-06 12:49:08,712 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-03-06 12:49:08,712 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-06 12:49:49,127 [INFO]    ✅ HOÀN TẤT!
+2026-03-06 12:49:49,584 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613335586966883605
+2026-03-06 12:49:54,586 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-06 12:49:54,586 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-06 15:00:03,937 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-06 15:00:04,103 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-06 15:00:05,855 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714422514683144
+2026-03-06 15:04:48,131 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7614044802761411861
+2026-03-06 15:09:14,192 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-06 15:09:16,188 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-06 15:09:17,523 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 15:09:18,619 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613685263444741396
+2026-03-06 15:13:49,584 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613699951410957589
+2026-03-06 15:18:21,094 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 15:24:14,904 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-03-06 18:00:04,674 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-06 18:00:04,814 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-06 18:00:06,606 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714422514683144
+2026-03-06 18:04:25,212 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7614044802761411861
+2026-03-06 18:08:39,724 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7614061573912513813
+2026-03-06 18:13:18,744 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-06 18:13:20,805 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-06 18:13:22,138 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 18:13:23,394 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613685263444741396
+2026-03-06 18:17:57,850 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613699951410957589
+2026-03-06 18:22:25,708 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 18:26:43,543 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-03-07 10:00:07,070 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-03-07 10:00:07,304 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-03-07 10:00:09,037 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7613714422514683144
+2026-03-07 10:05:32,781 [ERROR]    ❌ LỖI AI: Content trả về là tiếng Việt không dấu (hoặc bị rỗng). BỎ QUA video này!
+2026-03-07 10:05:42,459 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7614044802761411861
+2026-03-07 10:10:09,539 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7614061573912513813
+2026-03-07 10:15:17,693 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-03-07 10:15:19,584 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@yteplus (Lấy tối đa 3 video)
+2026-03-07 10:15:21,045 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-07 10:15:22,296 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613685263444741396
+2026-03-07 10:19:45,178 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613699951410957589

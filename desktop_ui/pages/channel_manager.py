@@ -1,5 +1,18 @@
 import customtkinter as ctk
+import os
+import requests
+import re
 from services.supabase_api import SupabaseAPI
+
+# =====================================================================
+# 🛠 CƠ CHẾ DÒ TÌM ĐƯỜNG DẪN GỐC CHUẨN XÁC 100%
+# =====================================================================
+_current_dir = os.path.abspath(os.path.dirname(__file__))
+while _current_dir and not os.path.exists(os.path.join(_current_dir, 'assets')):
+    _parent = os.path.dirname(_current_dir)
+    if _parent == _current_dir: break
+    _current_dir = _parent
+PROJECT_ROOT = _current_dir if os.path.exists(os.path.join(_current_dir, 'assets')) else os.getcwd()
 
 class ChannelManagerPage:
     def __init__(self, parent_frame):
@@ -23,7 +36,6 @@ class ChannelManagerPage:
         self.acc_dropdown = ctk.CTkOptionMenu(self.sel_frame, values=self.acc_ids, command=self.on_account_select)
         self.acc_dropdown.pack(side="left", padx=10)
 
-        # Hiển thị giới hạn tổng của tài khoản (video_limit_per_run)
         self.lbl_acc_limit = ctk.CTkLabel(self.sel_frame, text="Giới hạn tối đa/lần chạy: --", text_color="orange")
         self.lbl_acc_limit.pack(side="left", padx=20)
 
@@ -43,7 +55,6 @@ class ChannelManagerPage:
         self.inp_limit.pack(side="left", padx=5)
         self.inp_limit.insert(0, "3")
 
-        # Tabs cấu hình Render chi tiết
         self.tabs = ctk.CTkTabview(self.form_frame, height=150)
         self.tabs.pack(fill="x", padx=10, pady=5)
         self.tabs.add("Vid Intro")
@@ -52,6 +63,7 @@ class ChannelManagerPage:
         self.tabs.add("Chữ Content")
         self.tabs.add("Assets")
 
+        # ================= KHÔI PHỤC CÁC Ô ĐIỀU CHỈNH =================
         self.inp_intro_st = self._add_field(self.tabs.tab("Vid Intro"), "Start (s):", "2.0")
         self.inp_intro_en = self._add_field(self.tabs.tab("Vid Intro"), "End (s):", "5.0")
         self.inp_intro_zm = self._add_field(self.tabs.tab("Vid Intro"), "Zoom:", "1.0")
@@ -78,10 +90,18 @@ class ChannelManagerPage:
         self.inp_txt_co_clr  = self._add_field(self.tabs.tab("Chữ Content"), "Màu (Hex):", "#ffffff")
         self.inp_txt_co_strk = self._add_field(self.tabs.tab("Chữ Content"), "Stroke:", "0")
 
-        self.inp_frame_in = self._add_field(self.tabs.tab("Assets"), "Khung Intro:", "")
-        self.inp_frame_co = self._add_field(self.tabs.tab("Assets"), "Khung Content:", "")
-        self.inp_font     = self._add_field(self.tabs.tab("Assets"), "Tên Font:", "Inter_18pt-Bold.ttf")
-        self.inp_logo     = self._add_field(self.tabs.tab("Assets"), "Tên Logo:", "")
+        # ================= DROPDOWN TỪ ASSETS =================
+        self.frame_list = self._load_local_only("frame")
+        self.font_list = self._load_local_only("font")
+        self.logo_list = self._load_local_only("logo")
+
+        self.inp_frame_in = self._add_dropdown(self.tabs.tab("Assets"), "Khung Intro:", self.frame_list)
+        self.inp_frame_co = self._add_dropdown(self.tabs.tab("Assets"), "Khung Content:", self.frame_list)
+        self.inp_font     = self._add_dropdown(self.tabs.tab("Assets"), "Tên Font:", self.font_list, default="Inter_18pt-Bold.ttf")
+        self.inp_logo     = self._add_dropdown(self.tabs.tab("Assets"), "Tên Logo:", self.logo_list)
+
+        self.btn_refresh = ctk.CTkButton(self.tabs.tab("Assets"), text="🔃 ĐỒNG BỘ CLOUD", width=120, fg_color="#D97706", hover_color="#B45309", command=self.refresh_files)
+        self.btn_refresh.pack(side="left", padx=15, pady=5)
 
         self.action_frame = ctk.CTkFrame(self.form_frame, fg_color="transparent")
         self.action_frame.pack(pady=10)
@@ -96,8 +116,6 @@ class ChannelManagerPage:
         header_list.pack(fill="x", pady=(10, 0))
 
         ctk.CTkLabel(header_list, text="📋 Danh sách Kênh đang theo dõi:", font=ctk.CTkFont(weight="bold")).pack(side="left")
-
-        # Hiển thị Tổng video dự kiến (tổng limit của các kênh con)
         self.lbl_total_expected = ctk.CTkLabel(header_list, text="📊 Tổng video dự kiến: 0", font=ctk.CTkFont(weight="bold"), text_color="cyan")
         self.lbl_total_expected.pack(side="right", padx=10)
 
@@ -106,6 +124,84 @@ class ChannelManagerPage:
 
         self.on_account_select(self.acc_ids[0])
 
+    # ================= LOGIC ĐỒNG BỘ CLOUD =================
+    def refresh_files(self):
+        print("\n" + "="*50)
+        print("🚀 BẮT ĐẦU ĐỒNG BỘ FILE TỪ SUPABASE STORAGE")
+        print("="*50)
+        self.btn_refresh.configure(state="disabled", text="⏳ Đang quét...")
+        self.lbl_status.configure(text="🔄 Đang tải danh sách file từ Supabase...", text_color="blue")
+        self.parent.update()
+
+        api_file = os.path.join(PROJECT_ROOT, "services", "supabase_api.py")
+        supa_url, supa_key = None, None
+        try:
+            with open(api_file, "r", encoding="utf-8") as f:
+                content = f.read()
+                supa_url = re.search(r'SUPABASE_URL\s*=\s*["\']([^"\']+)["\']', content).group(1)
+                supa_key = re.search(r'SUPABASE_KEY\s*=\s*["\']([^"\']+)["\']', content).group(1)
+        except: pass
+
+        def sync_folder(folder_name):
+            cloud_files = set()
+            local_dir = os.path.join(PROJECT_ROOT, "assets", folder_name)
+            os.makedirs(local_dir, exist_ok=True)
+
+            if not supa_url or not supa_key: return set()
+
+            try:
+                api_url = f"{supa_url}/storage/v1/object/list/assets"
+                headers = {"apikey": supa_key, "Authorization": f"Bearer {supa_key}", "Content-Type": "application/json"}
+                payload = {"prefix": f"{folder_name}/", "limit": 100}
+                res = requests.post(api_url, headers=headers, json=payload)
+                if res.status_code == 200:
+                    data = res.json()
+                    for item in data:
+                        name = item.get('name', '')
+                        clean_name = name.split('/')[-1] if '/' in name else name
+                        if clean_name and clean_name != '.emptyFolderPlaceholder' and clean_name != folder_name:
+                            cloud_files.add(clean_name)
+                else: return set()
+            except Exception as e: return set()
+
+            if not cloud_files: return set(os.listdir(local_dir))
+
+            local_files = set(os.listdir(local_dir))
+
+            for f in cloud_files - local_files:
+                try: SupabaseAPI.download_asset("assets", folder_name, local_dir, f)
+                except: pass
+
+            for f in local_files - cloud_files:
+                if not f.startswith('.'):
+                    try: os.remove(os.path.join(local_dir, f))
+                    except: pass
+
+            return cloud_files
+
+        new_frames = sync_folder("frame")
+        new_fonts = sync_folder("font")
+        new_logos = sync_folder("logo")
+
+        self.frame_list = [""] + sorted(list(new_frames), key=lambda x: x.lower())
+        self.font_list = [""] + sorted(list(new_fonts), key=lambda x: x.lower())
+        self.logo_list = [""] + sorted(list(new_logos), key=lambda x: x.lower())
+
+        self.inp_frame_in.configure(values=self.frame_list)
+        self.inp_frame_co.configure(values=self.frame_list)
+        self.inp_font.configure(values=self.font_list)
+        self.inp_logo.configure(values=self.logo_list)
+
+        self.lbl_status.configure(text=f"✅ Đã đồng bộ xong! Kiểm tra danh sách trong Terminal.", text_color="green")
+        self.btn_refresh.configure(state="normal", text="🔃 ĐỒNG BỘ CLOUD")
+
+    def _load_local_only(self, folder_name):
+        local_dir = os.path.join(PROJECT_ROOT, "assets", folder_name)
+        if not os.path.exists(local_dir): return [""]
+        files = [f for f in os.listdir(local_dir) if os.path.isfile(os.path.join(local_dir, f)) and not f.startswith('.')]
+        return [""] + sorted(files, key=lambda x: x.lower())
+
+    # ================= HÀM HỖ TRỢ GIAO DIỆN =================
     def _add_field(self, parent, label_text, default_val):
         frame = ctk.CTkFrame(parent, fg_color="transparent")
         frame.pack(side="left", padx=8, pady=5)
@@ -115,10 +211,25 @@ class ChannelManagerPage:
         inp.insert(0, default_val)
         return inp
 
-    def _set_val(self, inp_widget, val):
-        inp_widget.configure(state="normal") # Đảm bảo mở khóa trước khi ghi
-        inp_widget.delete(0, 'end')
-        inp_widget.insert(0, str(val))
+    def _add_dropdown(self, parent, label, values, default=""):
+        f = ctk.CTkFrame(parent, fg_color="transparent"); f.pack(side="left", padx=8, pady=5)
+        ctk.CTkLabel(f, text=label).pack(anchor="w")
+        inp = ctk.CTkOptionMenu(f, width=150, values=values); inp.pack()
+        if default in values: inp.set(default)
+        return inp
+
+    def _set_val(self, widget, val):
+        s = str(val) if val is not None else ""
+        if isinstance(widget, ctk.CTkEntry):
+            widget.configure(state="normal")
+            widget.delete(0, 'end')
+            widget.insert(0, s)
+        elif isinstance(widget, ctk.CTkOptionMenu):
+            v = list(widget.cget("values"))
+            if s and s not in v:
+                v.append(s)
+                widget.configure(values=v)
+            widget.set(s)
 
     def on_account_select(self, selected_id):
         self.current_account = next((acc for acc in self.accounts if acc["tiktok_id"] == selected_id), None)
@@ -136,7 +247,6 @@ class ChannelManagerPage:
 
         if not self.current_account: return
         channels = self.current_account.get("channels", [])
-
         total_limit = 0
 
         if not channels:
@@ -159,13 +269,10 @@ class ChannelManagerPage:
             btn_edit.pack(side="right", padx=5)
 
         self.lbl_total_expected.configure(text=f"📊 Tổng video dự kiến: {total_limit}")
-
         acc_max = self.current_account.get("video_limit_per_run", 999)
-        if total_limit > acc_max:
-            self.lbl_total_expected.configure(text_color="red")
-        else:
-            self.lbl_total_expected.configure(text_color="cyan")
+        self.lbl_total_expected.configure(text_color="red" if total_limit > acc_max else "cyan")
 
+    # ================= KHÔI PHỤC HÀM EDIT HOÀN CHỈNH =================
     def edit_channel(self, index, chn_data):
         self.editing_index = index
         self.lbl_status.configure(text="✏️ Chế độ Sửa (Đã khóa chỉnh sửa Link)", text_color="orange")
@@ -212,56 +319,114 @@ class ChannelManagerPage:
         self._set_val(self.inp_font, txt_in.get("font_filename", "Inter_18pt-Bold.ttf"))
         self._set_val(self.inp_logo, ast.get("logo_filename", ""))
 
+    # ================= KHÔI PHỤC HÀM SAVE HOÀN CHỈNH =================
+    # ================= KHÔI PHỤC HÀM SAVE CHUẨN CÓ AUTO-FILL =================
     def save_channel(self):
         self.inp_url.configure(state="normal")
         url = self.inp_url.get().strip()
 
-        if not url or not self.current_account: return
+        if not url or not self.current_account:
+            self.lbl_status.configure(text="❌ Phải điền Link nguồn!", text_color="red")
+            return
 
+        # ---------------------------------------------------------------------
+        # CÁC HÀM "BẢO KÊ": NẾU RỖNG HOẶC LỖI -> TỰ ĐỘNG ĐIỀN SỐ CỨNG VÀO Ô
+        # ---------------------------------------------------------------------
+        def get_int(widget, default_val):
+            val = widget.get().strip()
+            if not val: # Nếu để trống
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+            try: return int(val)
+            except: # Nếu nhập linh tinh
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+
+        def get_float(widget, default_val):
+            val = widget.get().strip()
+            if not val:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+            try: return float(val)
+            except:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+
+        def get_offset(widget, default_val):
+            val = widget.get().strip()
+            if not val:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+            if val.lower() == "center": return "center" # Hỗ trợ chữ center
+            try: return int(val)
+            except:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+
+        def get_end_time(widget, default_val):
+            val = widget.get().strip()
+            if not val:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+            if val.lower() == "auto": return "auto"
+            try: return float(val)
+            except:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+
+        def get_color(widget, default_val):
+            val = widget.get().strip()
+            if not val or not val.startswith("#"):
+                widget.delete(0, 'end'); widget.insert(0, default_val)
+                return default_val
+            return val
+
+        # BẮT ĐẦU ĐỌC DỮ LIỆU (CÓ ĐIỀN CỨNG MẶC ĐỊNH NẾU RỖNG)
         new_chn = {
             "url": url,
-            "limit": int(self.inp_limit.get() or 3),
+            "limit": get_int(self.inp_limit, 3),
             "render_settings": {
                 "title_settings": {
-                    "source_start": float(self.inp_intro_st.get()),
-                    "source_end": float(self.inp_intro_en.get()),
-                    "zoom_factor": float(self.inp_intro_zm.get()),
-                    "manual_x_offset": int(self.inp_intro_x.get()),
-                    "manual_y_offset": int(self.inp_intro_y.get())
-                },
-                "text_overlay_settings": {
-                    "text_color": self.inp_txt_in_clr.get().strip(),
-                    "stroke_width": int(self.inp_txt_in_strk.get() or 0),
-                    "font_size": int(self.inp_txt_in_sz.get() or 45),
-                    "box_y_start": float(self.inp_txt_in_y1.get()),
-                    "box_y_end": float(self.inp_txt_in_y2.get()),
-                    "box_width_percentage": float(self.inp_txt_in_w.get()),
-                    "font_filename": self.inp_font.get().strip()
-                },
-                "text_content_settings": {
-                    "text_color": self.inp_txt_co_clr.get().strip(),
-                    "stroke_width": int(self.inp_txt_co_strk.get() or 0),
-                    "font_size": int(self.inp_txt_co_sz.get() or 45),
-                    "box_y_start": float(self.inp_txt_co_y1.get()),
-                    "box_y_end": float(self.inp_txt_co_y2.get()),
-                    "box_width_percentage": float(self.inp_txt_co_w.get()),
-                    "font_filename": self.inp_font.get().strip()
-                },
-                "assets": {
-                    "title_frame_filename": self.inp_frame_in.get().strip(),
-                    "content_frame_filename": self.inp_frame_co.get().strip(),
-                    "logo_filename": self.inp_logo.get().strip()
+                    "source_start": get_float(self.inp_intro_st, 2.0),
+                    "source_end": get_end_time(self.inp_intro_en, 5.0),
+                    "zoom_factor": get_float(self.inp_intro_zm, 1.0),
+                    "manual_x_offset": get_offset(self.inp_intro_x, 0),
+                    "manual_y_offset": get_offset(self.inp_intro_y, 100)
                 },
                 "content_settings": {
-                    "source_start": float(self.inp_cont_st.get()),
-                    "source_end": self.inp_cont_en.get(),
-                    "zoom_factor": float(self.inp_cont_zm.get()),
-                    "manual_x_offset": int(self.inp_cont_x.get()),
-                    "manual_y_offset": int(self.inp_cont_y.get())
+                    "source_start": get_float(self.inp_cont_st, 10.0),
+                    "source_end": get_end_time(self.inp_cont_en, "auto"),
+                    "zoom_factor": get_float(self.inp_cont_zm, 1.05),
+                    "manual_x_offset": get_offset(self.inp_cont_x, 0),
+                    "manual_y_offset": get_offset(self.inp_cont_y, -11)
+                },
+                "text_overlay_settings": {
+                    "text_color": get_color(self.inp_txt_in_clr, "#ffffff"),
+                    "stroke_width": get_int(self.inp_txt_in_strk, 0),
+                    "font_size": get_int(self.inp_txt_in_sz, 45),
+                    "box_y_start": get_float(self.inp_txt_in_y1, 0.73),
+                    "box_y_end": get_float(self.inp_txt_in_y2, 0.83),
+                    "box_width_percentage": get_float(self.inp_txt_in_w, 0.65),
+                    "font_filename": self.inp_font.get() or "Inter_18pt-Bold.ttf" # Cứng font
+                },
+                "text_content_settings": {
+                    "text_color": get_color(self.inp_txt_co_clr, "#ffffff"),
+                    "stroke_width": get_int(self.inp_txt_co_strk, 0),
+                    "font_size": get_int(self.inp_txt_co_sz, 45),
+                    "box_y_start": get_float(self.inp_txt_co_y1, 0.73),
+                    "box_y_end": get_float(self.inp_txt_co_y2, 0.83),
+                    "box_width_percentage": get_float(self.inp_txt_co_w, 0.65),
+                    "font_filename": self.inp_font.get() or "Inter_18pt-Bold.ttf" # Cứng font
+                },
+                "assets": {
+                    "title_frame_filename": self.inp_frame_in.get(),
+                    "content_frame_filename": self.inp_frame_co.get(),
+                    "logo_filename": self.inp_logo.get()
                 }
             }
         }
 
+        # Lưu vào Database
         channels = self.current_account.get("channels", [])
         is_new_channel = False
 
@@ -293,7 +458,7 @@ class ChannelManagerPage:
         self.editing_index = None
         self.btn_cancel_edit.pack_forget()
         self.btn_save_chn.configure(text="➕ THÊM KÊNH MỚI", fg_color="green")
-        self.inp_url.configure(state="normal") # Mở khóa lại
+        self.inp_url.configure(state="normal")
         self._set_val(self.inp_url, "")
         self.lbl_status.configure(text="")
 

@@ -1,2 +1,3 @@
-2026/03/02-12:28:09.357 1de8 Creating DB C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\Local Storage\leveldb since it was missing.
-2026/03/02-12:28:09.364 1de8 Reusing MANIFEST C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/06-11:46:43.910 2ccc Reusing MANIFEST C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/06-11:46:43.913 2ccc Recovering log #3
+2026/03/06-11:46:43.914 2ccc Reusing old log C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\Local Storage\leveldb/000003.log 

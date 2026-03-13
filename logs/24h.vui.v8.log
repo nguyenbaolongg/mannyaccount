@@ -640,3 +640,249 @@
 2026-03-03 18:21:21,317 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612577075144281364
 2026-03-03 18:21:26,320 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
 2026-03-03 18:21:26,320 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 10:00:07,105 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-04 10:00:07,277 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 10:00:08,942 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7612945300960857365
+2026-03-04 10:04:44,913 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:04:44,914 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 10:04:44,914 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 10:04:44,914 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:06:27,853 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:06:28,644 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7612945300960857365
+2026-03-04 10:06:33,647 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613012575479123220
+2026-03-04 10:10:57,074 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:10:57,074 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 10:10:57,074 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 10:10:57,075 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:12:24,165 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:12:24,625 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613012575479123220
+2026-03-04 10:12:29,630 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613032231740755220
+2026-03-04 10:17:00,302 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 10:17:00,302 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 10:17:00,302 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 10:17:00,302 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 10:17:43,680 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 10:17:44,111 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613032231740755220
+2026-03-04 10:17:49,114 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-03-04 10:17:49,114 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 12:00:04,728 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-04 12:00:04,888 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 12:00:15,542 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613046292465388821
+2026-03-04 12:04:48,969 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:04:48,969 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 12:04:48,969 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 12:04:48,969 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:05:49,135 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:05:49,653 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613046292465388821
+2026-03-04 12:05:54,660 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613224363541679381
+2026-03-04 12:10:44,932 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:10:44,932 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 12:10:44,932 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 12:10:44,933 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:11:22,859 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:11:23,378 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613224363541679381
+2026-03-04 12:11:28,381 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-04 12:11:29,962 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612888147378195733
+2026-03-04 12:16:02,522 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 12:16:02,522 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 12:16:02,522 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-04 12:16:02,522 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 12:17:07,516 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 12:17:07,994 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612888147378195733
+2026-03-04 12:17:12,998 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-04 12:17:12,998 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 15:00:04,467 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-04 15:00:04,643 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 15:00:06,012 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613284262082661653
+2026-03-04 15:04:34,966 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:04:34,967 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 15:04:34,967 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 15:04:34,967 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:06:08,871 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:06:09,406 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613284262082661653
+2026-03-04 15:06:14,409 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613304542473506069
+2026-03-04 15:10:44,694 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:10:44,694 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 15:10:44,694 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 15:10:44,694 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:11:51,267 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:11:51,652 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613304542473506069
+2026-03-04 15:11:56,655 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-04 15:11:57,685 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612936556738776341
+2026-03-04 15:16:27,292 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 15:16:27,293 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 15:16:27,293 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-04 15:16:27,293 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 15:17:21,648 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 15:17:22,558 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612936556738776341
+2026-03-04 15:17:27,562 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-04 15:17:27,562 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-04 18:00:04,100 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-04 18:00:04,256 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-04 18:00:05,945 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613341273092574485
+2026-03-04 18:04:36,497 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:04:36,498 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 18:04:36,498 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 18:04:36,498 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:06:21,985 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:06:22,357 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613341273092574485
+2026-03-04 18:06:27,362 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613333807277624596
+2026-03-04 18:10:41,919 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:10:41,919 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 18:10:41,919 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-04 18:10:41,919 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:11:35,588 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:11:36,114 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613333807277624596
+2026-03-04 18:11:41,118 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-04 18:11:42,121 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612938339674623253
+2026-03-04 18:16:05,470 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-04 18:16:05,471 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-04 18:16:05,471 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-04 18:16:05,471 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-04 18:17:01,934 [INFO]    ✅ HOÀN TẤT!
+2026-03-04 18:17:02,379 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7612938339674623253
+2026-03-04 18:17:07,382 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-04 18:17:07,382 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 10:00:06,792 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-05 10:00:06,946 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 10:00:08,723 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613335586966883605
+2026-03-05 10:04:43,914 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:04:43,914 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 10:04:43,915 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-05 10:04:43,915 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:06:21,675 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:06:22,239 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613335586966883605
+2026-03-05 10:06:27,242 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-05 10:06:28,227 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613230330572541204
+2026-03-05 10:10:48,373 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:10:48,373 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 10:10:48,373 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 10:10:48,373 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:11:42,413 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:11:42,920 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613230330572541204
+2026-03-05 10:11:47,924 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613248228506668309
+2026-03-05 10:16:30,187 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 10:16:30,187 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 10:16:30,188 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 10:16:30,188 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 10:17:45,545 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 10:17:46,046 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613248228506668309
+2026-03-05 10:17:51,051 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-05 10:17:51,051 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 12:00:04,027 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-05 12:00:04,231 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 12:00:05,890 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-05 12:00:06,807 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613261528074079509
+2026-03-05 12:04:37,027 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:04:37,027 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 12:04:37,027 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 12:04:37,027 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:06:56,938 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:06:57,335 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613261528074079509
+2026-03-05 12:07:02,340 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613290320666578196
+2026-03-05 12:11:27,280 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:11:27,281 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 12:11:27,281 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 12:11:27,281 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:12:42,119 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:12:43,124 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613290320666578196
+2026-03-05 12:12:48,128 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613306991099858196
+2026-03-05 12:17:20,542 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 12:17:20,543 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 12:17:20,543 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 12:17:20,543 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 12:18:24,431 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 12:18:24,879 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613306991099858196
+2026-03-05 12:18:29,883 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-05 15:00:03,501 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-05 15:00:03,659 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 15:00:05,297 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-05 15:00:06,393 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613319542923595028
+2026-03-05 15:04:29,277 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 15:04:29,277 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 15:04:29,277 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 15:04:29,277 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 15:05:39,916 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 15:05:41,345 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613319542923595028
+2026-03-05 15:05:46,347 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613322449467313429
+2026-03-05 15:10:19,929 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613324075913481490
+2026-03-05 15:14:42,677 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 15:14:42,677 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 15:14:42,677 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 15:14:42,677 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 15:15:33,812 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 15:15:34,826 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613324075913481490
+2026-03-05 15:15:39,831 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-03-05 18:00:03,355 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-05 18:00:03,517 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-05 18:00:05,083 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613685263444741396
+2026-03-05 18:04:43,110 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:04:43,110 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 18:04:43,110 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-05 18:04:43,110 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:06:07,523 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:06:08,429 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613685263444741396
+2026-03-05 18:06:13,436 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613699951410957589
+2026-03-05 18:11:36,884 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:11:36,885 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 18:11:36,885 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-05 18:11:36,885 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:12:29,221 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:12:29,769 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613699951410957589
+2026-03-05 18:12:34,772 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-05 18:12:36,022 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613333329017916693
+2026-03-05 18:17:48,795 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-05 18:17:48,795 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-05 18:17:48,795 [INFO]    ✅ Đã có file 'vdfbd.png' trong máy.
+2026-03-05 18:17:48,795 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-05 18:18:36,216 [INFO]    ✅ HOÀN TẤT!
+2026-03-05 18:18:36,600 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613333329017916693
+2026-03-05 18:18:41,604 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-03-05 18:18:41,604 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-03-06 12:27:50,174 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-06 12:27:50,332 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 12:28:02,785 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613746814994484501
+2026-03-06 12:33:46,152 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613787735945448724
+2026-03-06 12:38:55,337 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-06 12:38:55,338 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-06 12:38:55,338 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-06 12:38:55,338 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-06 12:40:41,090 [INFO]    ✅ HOÀN TẤT!
+2026-03-06 12:40:41,507 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613787735945448724
+2026-03-06 12:40:46,511 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 12:45:41,463 [INFO]    🎬 Chuẩn bị Remixing...
+2026-03-06 12:45:41,463 [INFO]    ✅ Đã có file 'nfdkj.png' trong máy.
+2026-03-06 12:45:41,463 [INFO]    ✅ Đã có file 'vietnamhealth.png' trong máy.
+2026-03-06 12:45:41,463 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-03-06 12:46:40,463 [INFO]    ✅ HOÀN TẤT!
+2026-03-06 12:46:40,966 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7613809755630423313
+2026-03-06 12:46:45,969 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-06 12:46:47,168 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613631146613624085
+2026-03-06 12:51:14,679 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613662515846876437
+2026-03-06 12:56:07,488 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613678503409585429
+2026-03-06 13:00:49,064 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-03-06 15:00:04,158 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-06 15:00:04,337 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 15:00:05,936 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-06 15:00:06,940 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613662515846876437
+2026-03-06 15:04:56,307 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613678503409585429
+2026-03-06 15:09:15,565 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613679726644972821
+2026-03-06 15:13:49,592 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-03-06 18:00:04,878 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-06 18:00:05,024 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-06 18:00:06,820 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7614082147233565972
+2026-03-06 18:04:59,088 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7614093400391961877
+2026-03-06 18:09:09,851 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-06 18:09:10,991 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613682621423291655
+2026-03-06 18:13:35,955 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613687291281820935
+2026-03-06 18:17:54,812 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613715355281739028
+2026-03-06 18:22:28,735 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-03-07 10:00:06,363 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-03-07 10:00:06,524 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-03-07 10:00:08,550 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7614082147233565972
+2026-03-07 10:05:35,176 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7614093400391961877
+2026-03-07 10:10:17,717 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7614118686684744980
+2026-03-07 10:15:05,460 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@blogtamsu.nghenghiep (Lấy tối đa 3 video)
+2026-03-07 10:15:06,691 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613973998115802375
+2026-03-07 10:19:22,977 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7613989765834083604
+2026-03-07 10:23:48,835 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@blogtamsu.nghenghiep/video/7614003313524083988

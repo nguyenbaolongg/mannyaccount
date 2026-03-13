@@ -1,2 +1,3 @@
-2026/03/02-12:28:09.409 1894 Creating DB C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\shared_proto_db\metadata since it was missing.
-2026/03/02-12:28:09.414 1894 Reusing MANIFEST C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/03/06-11:46:43.969 1994 Reusing MANIFEST C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/03/06-11:46:43.969 1994 Recovering log #3
+2026/03/06-11:46:43.969 1994 Reusing old log C:\workspace\mannyAccount\assets\ai_studio_data\manual_shared_profile\Default\shared_proto_db\metadata/000003.log 

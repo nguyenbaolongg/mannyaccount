@@ -3,6 +3,7 @@ import os
 import time
 import json
 import requests
+import re  # <-- IMPORT THÊM THƯ VIỆN RE ĐỂ XỬ LÝ TEXT
 from services.tele_reporter import TeleReporter
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN =================
@@ -34,7 +35,12 @@ except ImportError as e:
     print(f"❌ Lỗi Import thư viện: {e}")
     sys.exit(1)
 
-# ================= HÀM HỖ TRỢ =================
+
+def is_valid_vietnamese(text):
+    if not text: return False
+    vn_chars_pattern = re.compile(r'[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]', re.IGNORECASE)
+    return bool(vn_chars_pattern.search(text))
+
 def load_credentials():
     if not os.path.exists(CREDENTIALS_FILE): return {}
     try:
@@ -89,10 +95,8 @@ def run_worker_process(account_id):
     profile_name = cfg.get("chrome_profile")
     acc_email = cfg.get("email")
     acc_password = cfg.get("password")
-
     setting_folder = load_credentials()
     folder_id = setting_folder.get("id_folder")
-
     settings = SupabaseAPI.get_system_config("app_settings") or {}
     sheet_url = settings.get("sheet_url") or settings.get("google_sheet_url")
     tts_api_key = settings.get("api_key") or settings.get("everai_api_key")
@@ -171,7 +175,13 @@ def run_worker_process(account_id):
                     time.sleep(3)
                 if not row_data: continue
 
-                link_ct, local_content = handle_tts_and_update_sheet(tts_api_key, row_data["content_text"], tts_voice_id, row_data['row'], sheet_url, False, save_dir=ctx.temp_dir)
+                raw_content = row_data.get("content_text", "")
+
+                if not is_valid_vietnamese(raw_content):
+                    ctx.logger.error("   ❌ LỖI AI: Content trả về là tiếng Việt không dấu (hoặc bị rỗng). BỎ QUA video này!")
+                    update_final_result(sheet_url, row_data['row'], "LỖI: AI TRẢ TEXT KHÔNG DẤU")
+                    continue
+                link_ct, local_content = handle_tts_and_update_sheet(tts_api_key, raw_content, tts_voice_id, row_data['row'], sheet_url, False, save_dir=ctx.temp_dir)
                 local_title = None
                 if row_data.get("title_text"):
                     _, local_title = handle_tts_and_update_sheet(tts_api_key, row_data["title_text"], tts_voice_id, row_data['row'], sheet_url, True, save_dir=ctx.temp_dir)
@@ -187,7 +197,6 @@ def run_worker_process(account_id):
                 font_name = render_settings.get("text_overlay_settings", {}).get("font_filename")
 
                 def download_if_missing(folder_type, local_dir, file_name):
-                    """Hàm kiểm tra tồn tại cục bộ trước khi tải từ Supabase"""
                     if not file_name: return None
                     full_path = os.path.join(local_dir, file_name)
                     if not os.path.exists(full_path):
@@ -197,7 +206,6 @@ def run_worker_process(account_id):
                         ctx.logger.info(f"   ✅ Đã có file '{file_name}' trong máy.")
                     return full_path
 
-                # Áp dụng cơ chế kiểm tra cục bộ cho toàn bộ file
                 title_frame_full_path = download_if_missing("frame", FRAME_DIR, t_frame_name)
                 content_frame_full_path = download_if_missing("frame", FRAME_DIR, c_frame_name)
                 download_if_missing("logo", LOGO_DIR, logo_name)
@@ -208,7 +216,7 @@ def run_worker_process(account_id):
                     source_video_url=paths['original'],
                     title_audio_url=local_title,
                     title_tiktok=row_data.get("title_text", "Video Viral"),
-                    content_text=row_data.get("title_text", ""),
+                    content_text=row_data.get("title_text", "Video Viral"),
                     script_url=sheet_url,
                     row_index=row_data['row'],
                     tiktok_id=clean_tid,
@@ -253,80 +261,23 @@ def run_worker_process(account_id):
 
     ctx.logger.info(f"🏁 WORKER FINISHED. Tổng video thành công: {processed_count}/{acc_limit}")
 
-def test_tts_flow(account_id):
-    print(f"\n🧪 --- TEST CHẾ ĐỘ: LẤY TEXT SHEET & TẠO VOICE ---")
-    print(f"📌 Account ID: {account_id}")
-    ctx = AccountContext(account_id)
-    cfg = ctx.config
-    if not cfg:
-        print("❌ Không tìm thấy thông tin trên Supabase.")
-        return
-
-    tiktok_id = cfg.get("tiktok_id")
-
-    settings = SupabaseAPI.get_system_config("app_settings") or {}
-    sheet_url = settings.get("sheet_url") or settings.get("google_sheet_url")
-    tts_api_key = settings.get("api_key") or settings.get("everai_api_key")
-    tts_voice_id = settings.get("voice_id") or settings.get("everai_voice_id", "1")
-
-    if not sheet_url or not tts_api_key:
-        print("❌ Lỗi: Thiếu Sheet URL hoặc API Key.")
-        return
-
-    print(f"🔎 Đang tìm dữ liệu trên Sheet cho ID: {tiktok_id}")
-    row_data = get_latest_row_by_id(sheet_url, tiktok_id)
-
-    if not row_data:
-        print("❌ KHÔNG TÌM THẤY DỮ LIỆU KHỚP!")
-        return
-
-    print(f"✅ TÌM THẤY: {row_data.get('content_text', '')[:30]}...")
-
-    print("🗣️ Test tạo Voice NỘI DUNG...")
-    link, path = handle_tts_and_update_sheet(
-        tts_api_key, row_data["content_text"], tts_voice_id,
-        row_data['row'], sheet_url, False, save_dir=ctx.temp_dir
-    )
-
-    if path:
-        print(f"   ✅ Content Voice OK: {path}")
-    else:
-        print("   ❌ Lỗi tạo Content Voice")
-
-    if row_data.get("title_text"):
-        print("🗣️ Test tạo Voice TIÊU ĐỀ...")
-        link_t, path_t = handle_tts_and_update_sheet(
-            tts_api_key, row_data["title_text"], tts_voice_id,
-            row_data['row'], sheet_url, True, save_dir=ctx.temp_dir
-        )
-        if path_t:
-            print(f"   ✅ Title Voice OK: {path_t}")
-
-    print("\n🏁 HOÀN TẤT TEST TTS.")
-
 
 if __name__ == "__main__":
     import sys
     args = sys.argv[1:]
     account_id = None
-    is_test_mode = False
 
     for arg in args:
         arg = arg.strip()
-        if arg == "--test-tts":
-            is_test_mode = True
-        elif not arg.startswith("--"):
+        if not arg.startswith("--"):
             account_id = arg
 
     if not account_id:
         print("\n❌ LỖI: Thiếu ID tài khoản! (Ví dụ: @tai_khoan)")
     else:
-        if is_test_mode:
-            test_tts_flow(account_id)
-        else:
-            try:
-                run_worker_process(account_id)
-            except Exception as e:
-                print(f"🔥 WORKER CRASHED: {e}")
-                import traceback
-                traceback.print_exc()
+        try:
+            run_worker_process(account_id)
+        except Exception as e:
+            print(f"🔥 WORKER CRASHED: {e}")
+            import traceback
+            traceback.print_exc()
