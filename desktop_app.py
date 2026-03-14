@@ -81,7 +81,6 @@ class MatrixBotApp(ctk.CTk):
         # Mặc định bật trang dashboard lên đầu tiên
         self.show_frame("dashboard")
 
-    # ================= LOGIC MỚI: ẨN/HIỆN TRANG (THAY THẾ CHODESTROY CŨ) =================
     def hide_all_frames(self):
         """Hàm này chỉ làm ẩn các Frame đi, giữ nguyên mọi trạng thái bên trong"""
         for frame in self.frames.values():

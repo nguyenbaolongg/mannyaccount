@@ -3,33 +3,36 @@ import os
 import time
 import json
 import requests
-import re  # <-- IMPORT THÊM THƯ VIỆN RE ĐỂ XỬ LÝ TEXT
-from services.tele_reporter import TeleReporter
+import re
 
-# ================= CẤU HÌNH ĐƯỜNG DẪN =================
+# =========================================================================
+# 1. THIẾT LẬP ĐƯỜNG DẪN HỆ THỐNG TRƯỚC TIÊN (Để chống lỗi ModuleNotFoundError)
+# =========================================================================
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMP_VOICE_DIR = os.path.join(PROJECT_ROOT, "assets", "temp_voice")
-CREDENTIALS_FILE = os.path.join(PROJECT_ROOT,"config",'credentials.json')
+sys.path.append(PROJECT_ROOT)
 
 # Đảm bảo các thư mục assets tồn tại
+TEMP_VOICE_DIR = os.path.join(PROJECT_ROOT, "assets", "temp_voice")
 FRAME_DIR = os.path.join(PROJECT_ROOT, "assets", "frame")
 LOGO_DIR = os.path.join(PROJECT_ROOT, "assets", "logo")
 FONT_DIR = os.path.join(PROJECT_ROOT, "assets", "font")
+CREDENTIALS_FILE = os.path.join(PROJECT_ROOT,"config",'credentials.json')
 
 for d in [TEMP_VOICE_DIR, FRAME_DIR, LOGO_DIR, FONT_DIR]:
     if not os.path.exists(d): os.makedirs(d)
 
-sys.path.append(PROJECT_ROOT)
-
+# =========================================================================
+# 2. BÂY GIỜ MỚI IMPORT CÁC MODULE NỘI BỘ
+# =========================================================================
 try:
+    from services.tele_reporter import TeleReporter
     from core.context import AccountContext
     from modules.video_handler import download_tiktok_video, get_channel_videos
     from modules.ai_studio_uploader import upload_worker
     from modules.video_remix import create_video_from_source_video
     from modules.upload_drive import upload_video_to_drive
     from services.sheet_api import get_latest_row_by_id, update_final_result, update_voice_links
-    from services.tts_api import generate_voice, check_request_status
-    # Import Supabase API để update mốc thời gian và tải file
+    from services.tts_api import create_voice_default, create_voice_clone
     from services.supabase_api import SupabaseAPI
 except ImportError as e:
     print(f"❌ Lỗi Import thư viện: {e}")
@@ -49,39 +52,52 @@ def load_credentials():
 
 def handle_tts_and_update_sheet(api_key, text, voice_id, row_idx, sheet_url, is_title=False, save_dir=None):
     if not text: return None, None
+
     label = "Tiêu đề" if is_title else "Nội dung"
-    print(f"   🔊 Đang tạo Voice {label}...")
+    actual_save_dir = save_dir if save_dir else TEMP_VOICE_DIR
+    file_name = f"tts_{row_idx}_{int(time.time())}_{'title' if is_title else 'content'}.wav"
+
+    print(f"   🔊 Đang xử lý TTS {label} (Gọi qua VieNeu Server)...")
+
     try:
-        req_id = generate_voice(api_key, text, voice_id, 1.0, 1.0)
-        if not req_id: return None, None
+        USE_CLONE = True
+        REF_AUDIO = os.path.join(PROJECT_ROOT, "assets","temp_voice", "example_ngoc_huyen.wav")
+        REF_TEXT = "Xin chào, tôi tên là Manny, hôm nay thời tiết rất đẹp."
 
-        audio_url = None
-        for _ in range(60):
-            time.sleep(1)
-            res = check_request_status(api_key, req_id)
-            if res:
-                if isinstance(res, dict) and res.get("audio_link"): audio_url = res["audio_link"]
-                elif isinstance(res, str) and res.startswith("http"): audio_url = res
-                if audio_url: break
+        local_path = None
 
-        if audio_url:
-            print(f"   ✅ TTS Thành công: {audio_url}")
+        if USE_CLONE and os.path.exists(REF_AUDIO):
+            local_path = create_voice_clone(
+                text=text,
+                ref_audio_path=REF_AUDIO,
+                ref_text=REF_TEXT,
+                save_dir=actual_save_dir,
+                filename=file_name
+            )
+        else:
+            if USE_CLONE:
+                print(f"   ⚠️ Không tìm thấy file mẫu tại {REF_AUDIO}. Chuyển về giọng mặc định.")
+            local_path = create_voice_default(
+                text=text,
+                save_dir=actual_save_dir,
+                filename=file_name
+            )
+
+        if local_path and os.path.exists(local_path):
+            print(f"   ✅ TTS Server Thành công: {local_path}")
+
             if sheet_url and row_idx:
-                if is_title: update_voice_links(sheet_url, row_idx, title_voice_link=audio_url, content_voice_link=None)
-                else: update_voice_links(sheet_url, row_idx, title_voice_link=None, content_voice_link=audio_url)
+                if is_title: update_voice_links(sheet_url, row_idx, title_voice_link="local_file", content_voice_link=None)
+                else: update_voice_links(sheet_url, row_idx, title_voice_link=None, content_voice_link="local_file")
 
-            actual_save_dir = save_dir if save_dir else TEMP_VOICE_DIR
-            local_path = os.path.join(actual_save_dir, f"tts_{row_idx}_{int(time.time())}_{'title' if is_title else 'content'}.mp3")
+            return "local_file", local_path
 
-            try:
-                with open(local_path, 'wb') as f: f.write(requests.get(audio_url).content)
-                return audio_url, local_path
-            except: return audio_url, None
         return None, None
-    except: return None, None
 
+    except Exception as e:
+        print(f"   ❌ Lỗi tạo TTS Local: {e}")
+        return None, None
 
-# ================= WORKER CHÍNH =================
 def run_worker_process(account_id):
     ctx = AccountContext(account_id)
     ctx.logger.info(f"🚀 WORKER STARTED: {account_id}")
@@ -176,8 +192,8 @@ def run_worker_process(account_id):
                 if not row_data: continue
 
                 raw_content = row_data.get("content_text", "")
-
-                if not is_valid_vietnamese(raw_content):
+                raw_title = row_data.get("title_text", "")
+                if not is_valid_vietnamese(raw_content) and is_valid_vietnamese(raw_title):
                     ctx.logger.error("   ❌ LỖI AI: Content trả về là tiếng Việt không dấu (hoặc bị rỗng). BỎ QUA video này!")
                     update_final_result(sheet_url, row_data['row'], "LỖI: AI TRẢ TEXT KHÔNG DẤU")
                     continue

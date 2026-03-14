@@ -76,7 +76,6 @@ class SupabaseAPI:
 
     @staticmethod
     def update_channel_videos_db(tiktok_id, channel_url, video_list):
-        """Cập nhật hoặc Thêm mới danh sách video cho kênh"""
         try:
             payload = {
                 "tiktok_id": tiktok_id,
