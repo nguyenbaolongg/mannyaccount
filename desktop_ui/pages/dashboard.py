@@ -259,7 +259,7 @@ class DashboardPage:
                 if sys.platform == "win32":
                     self.bot_process = subprocess.Popen([sys.executable, script_path], cwd=PROJECT_ROOT, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
                 else:
-                    self.bot_process = subprocess.Popen([sys.executable, script_path], cwd=PROJECT_ROOT)
+                    self.bot_process = subprocess.Popen([sys.executable, script_path], cwd=PROJECT_ROOT, preexec_fn=os.setsid)
 
                 self.bot_process.wait()
             except Exception as e:
@@ -276,7 +276,9 @@ class DashboardPage:
                 if sys.platform == "win32":
                     subprocess.run(['taskkill', '/F', '/T', '/PID', str(self.bot_process.pid)], capture_output=True)
                 else:
-                    self.bot_process.kill()
+                    # Gửi tín hiệu SIGKILL cho toàn bộ nhóm tiến trình (process group)
+                    import signal
+                    os.killpg(os.getpgid(self.bot_process.pid), signal.SIGKILL)
             except Exception as e:
                 print(f"Lỗi khi dừng: {e}")
             finally:

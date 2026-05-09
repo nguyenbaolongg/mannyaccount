@@ -60,28 +60,15 @@ def handle_tts_and_update_sheet(api_key, text, voice_id, row_idx, sheet_url, is_
     print(f"   🔊 Đang xử lý TTS {label} (Gọi qua VieNeu Server)...")
 
     try:
-        USE_CLONE = True
-        REF_AUDIO = os.path.join(PROJECT_ROOT, "assets","temp_voice", "example_ngoc_huyen.wav")
-        REF_TEXT = "Xin chào, tôi tên là Manny, hôm nay thời tiết rất đẹp."
-
-        local_path = None
-
-        if USE_CLONE and os.path.exists(REF_AUDIO):
-            local_path = create_voice_clone(
-                text=text,
-                ref_audio_path=REF_AUDIO,
-                ref_text=REF_TEXT,
-                save_dir=actual_save_dir,
-                filename=file_name
-            )
-        else:
-            if USE_CLONE:
-                print(f"   ⚠️ Không tìm thấy file mẫu tại {REF_AUDIO}. Chuyển về giọng mặc định.")
-            local_path = create_voice_default(
-                text=text,
-                save_dir=actual_save_dir,
-                filename=file_name
-            )
+        local_path = create_voice_full_pipeline(
+            text=text,
+            save_dir=actual_save_dir,
+            filename=file_name,
+            profile_id="viterbox",
+            rvc_model=voice_id if ".pth" in str(voice_id) else "models/my_voice.pth",
+            rvc_pitch=0,
+            emotion="binh_thuong"
+        )
 
         if local_path and os.path.exists(local_path):
             print(f"   ✅ TTS Server Thành công: {local_path}")

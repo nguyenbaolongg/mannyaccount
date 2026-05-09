@@ -149,7 +149,20 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
     total_video_duration = get_media_duration(video_filename)
 
     font_file_clean = "font.ttf"
-    if not os.path.exists(font_file_clean): font_file_clean = "C\\:/Windows/Fonts/arial.ttf"
+    if not os.path.exists(font_file_clean):
+        if sys.platform == "win32":
+            font_file_clean = "C\\:/Windows/Fonts/arial.ttf"
+        else:
+            # Linux common font paths
+            linux_fonts = [
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+                "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf"
+            ]
+            for f in linux_fonts:
+                if os.path.exists(f):
+                    font_file_clean = f
+                    break
 
     s_start = float(settings.get("source_start", 0))
     raw_end = settings.get("source_end", "auto")
@@ -331,9 +344,19 @@ def create_video_from_source_video(
         possible_fonts = [
             os.path.join(FONT_DIR, src_font_name),
             os.path.join(PROJECT_ROOT, "config", src_font_name),
-            os.path.join("C:\\Windows\\Fonts", src_font_name),
-            os.path.join("C:\\Windows\\Fonts", "arial.ttf")
+            os.path.join(working_dir, "font.ttf")
         ]
+        if sys.platform == "win32":
+            possible_fonts.extend([
+                os.path.join("C:\\Windows\\Fonts", src_font_name),
+                os.path.join("C:\\Windows\\Fonts", "arial.ttf")
+            ])
+        else:
+            possible_fonts.extend([
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+            ])
+
         for p in possible_fonts:
             if os.path.exists(p): font_src_path = p; break
         if font_src_path: shutil.copy2(font_src_path, os.path.join(working_dir, "font.ttf"))

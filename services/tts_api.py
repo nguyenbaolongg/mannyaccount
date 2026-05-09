@@ -1,50 +1,74 @@
 import os
 import requests
 
-SERVER_URL = "http://127.0.0.1:8000/v1/generate"
+SERVER_URL = "http://127.0.0.1:8080/generate/full-pipeline"
 
-def create_voice_default(text, save_dir, filename):
+def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", rvc_model="models/my_voice.pth", rvc_pitch=0, emotion="binh_thuong"):
     save_path = os.path.join(save_dir, filename)
     payload = {
         "text": text,
-        "save_path": save_path
+        "profile_id": profile_id,
+        "run_rvc": True,
+        "rvc_model_path": rvc_model,
+        "rvc_pitch": rvc_pitch,
+        "emotion": emotion,
+        "language": "vi",
+        "run_enhance": False
     }
 
     try:
-        print(f"   ⏳ Đang gửi yêu cầu đọc giọng mặc định...")
-        # Tăng timeout lên 600s (10 phút) vì giờ Server xử lý nguyên 1 bài báo
-        res = requests.post(SERVER_URL, json=payload, timeout=600)
-        if res.status_code == 200 and res.json().get("status") == "success":
+        print(f"   🚀 Đang gửi yêu cầu Full Pipeline (TTS + RVC) cho: '{text[:30]}...'")
+        # Timeout 300s vì RVC và TTS cộng lại có thể lâu
+        res = requests.post(SERVER_URL, json=payload, timeout=300)
+        
+        if res.status_code == 200:
+            with open(save_path, "wb") as f:
+                f.write(res.content)
+            print(f"   ✅ Thành công! File lưu tại: {save_path}")
             return save_path
         else:
-            print(f"   ❌ Server báo lỗi: {res.json().get('message')}")
+            try:
+                err_msg = res.json().get('message', res.text)
+            except:
+                err_msg = res.text
+            print(f"   ❌ Server báo lỗi ({res.status_code}): {err_msg}")
+    except Exception as e:
+        print(f"   ❌ Lỗi kết nối Voicebox Server: {e}")
+    return None
+
+def create_voice_default(text, save_dir, filename):
+    """Giữ nguyên tên hàm cũ nhưng chuyển sang gọi API mới với RVC=False nếu muốn tiết kiệm tài nguyên"""
+    save_path = os.path.join(save_dir, filename)
+    payload = {
+        "text": text,
+        "profile_id": "viterbox",
+        "run_rvc": False, # Chỉ lấy TTS thô
+        "rvc_model_path": "",
+        "language": "vi",
+        "rvc_index_path": "",
+        "rvc_f0_method": "rmvpe",
+        "run_enhance": False
+    }
+
+    try:
+        print(f"   ⏳ Đang gửi yêu cầu đọc giọng TTS mặc định...")
+        res = requests.post(SERVER_URL, json=payload, timeout=200)
+        if res.status_code == 200:
+            with open(save_path, "wb") as f:
+                f.write(res.content)
+            return save_path
+        else:
+            print(f"   ❌ Server báo lỗi: {res.status_code}")
     except Exception as e:
         print(f"   ❌ Lỗi kết nối TTS Server: {e}")
     return None
 
 def create_voice_clone(text, ref_audio_path, ref_text, save_dir, filename):
-    save_path = os.path.join(save_dir, filename)
-    payload = {
-        "text": text,
-        "ref_audio_path": ref_audio_path,
-        "ref_text": ref_text,
-        "save_path": save_path
-    }
-
-    try:
-        print(f"   🚀 Đang gửi nguyên bài báo sang Server để Clone giọng...")
-        # Tăng timeout để tránh lỗi đứt kết nối khi bài quá dài
-        res = requests.post(SERVER_URL, json=payload, timeout=600)
-        data = res.json()
-
-        if res.status_code == 200 and data.get("status") == "success":
-            print("   🔗 Đã nhận file Audio hoàn hảo từ Server!")
-            return save_path
-        else:
-            print(f"   ❌ Lỗi từ Server: {data.get('message')}")
-    except Exception as e:
-        print(f"   ❌ Lỗi kết nối TTS Server: {e}")
-    return None
+    """
+    Hàm này trước đây dùng để Clone kiểu cũ. 
+    Bây giờ chuyển sang dùng Full Pipeline với model RVC mặc định.
+    """
+    return create_voice_full_pipeline(text, save_dir, filename)
 
 if __name__ == "__main__":
     # Xác định đường dẫn gốc
@@ -55,39 +79,23 @@ if __name__ == "__main__":
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     # --- CẤU HÌNH BÀI TEST ---
-    # 1. Đường dẫn file giọng mẫu (Bắt buộc phải có file này trong thư mục temp_voice)
-    file_mau = os.path.join(OUTPUT_DIR, "example_ngoc_huyen.wav")
+    noi_dung_can_doc = "Chào bạn, đây là bài kiểm tra kết nối hệ thống Voicebox Studio mới nhất. Hệ thống đang chạy Full Pipeline bao gồm cả TTS và RVC."
+    ten_file_xuat = "test_voicebox.wav"
 
-    # 2. Text mẫu (Bắt buộc PHẢI KHỚP 100% với những gì bạn đọc trong file_mau)
-    text_mau = "Tác phẩm dự thi bảo đảm tính khoa học, tính đảng, tính chiến đấu, tính định hướng."
+    print("=== BẮT ĐẦU KIỂM TRA MÁY KHÁCH GỌI MÁY CHỦ VOICEBOX STUDIO ===")
+    print(f"📝 Nội dung cần đọc: {noi_dung_can_doc}\n")
 
-    # 3. Nội dung cần AI đọc (Cố tình cho dài một chút để test độ mượt)
-    noi_dung_can_doc = "Xin chào, đây là bài kiểm tra hệ thống đọc tự động. Hệ thống đã được nâng cấp lên phiên bản bất tử, tự động băm nhỏ văn bản và ghép nối mượt mà không bao giờ sợ lỗi."
+    # Gọi hàm mới
+    kq = create_voice_full_pipeline(
+        text=noi_dung_can_doc,
+        save_dir=OUTPUT_DIR,
+        filename=ten_file_xuat,
+        profile_id="viterbox",
+        rvc_model="models/my_voice.pth", # Thay bằng model thực tế trên server của bạn
+        rvc_pitch=0
+    )
 
-    ten_file_xuat = "a.wav"
-
-    print("=== BẮT ĐẦU KIỂM TRA MÁY KHÁCH GỌI MÁY CHỦ ===")
-
-    # Kiểm tra an toàn trước khi gọi
-    if not os.path.exists(file_mau):
-        print(f"⚠️ CẢNH BÁO: Không tìm thấy file giọng mẫu tại: {file_mau}")
-        print("💡 Hãy copy file voice.wav của bạn vào thư mục trên rồi chạy lại nhé!")
+    if kq:
+        print(f"\n🎉 THÀNH CÔNG! File đã được lưu tại:\n👉 {kq}")
     else:
-        print(f"✅ Đã tìm thấy file mẫu: {file_mau}")
-        print(f"📖 Text mẫu: {text_mau}")
-        print(f"📝 Nội dung cần đọc: {noi_dung_can_doc}\n")
-
-        # Gọi hàm
-        kq = create_voice_clone(
-            text=noi_dung_can_doc,
-            ref_audio_path=file_mau,
-            ref_text=text_mau,
-            save_dir=OUTPUT_DIR,
-            filename=ten_file_xuat
-        )
-
-        if kq:
-            print(f"\n🎉 QUÁ ĐỈNH! Máy chủ đã trả file về thành công tại:\n👉 {kq}")
-            print("Bạn có thể mở file này lên để nghe thử chất lượng ngay lập tức!")
-        else:
-            print("\n❌ TEST THẤT BẠI! Vui lòng mở cửa sổ Terminal đang chạy tts_server.py lên xem nó in ra dòng chữ màu đỏ gì nhé.")
+        print("\n❌ THẤT BẠI! Vui lòng kiểm tra Server Voicebox Studio đang chạy ở cổng 8080.")

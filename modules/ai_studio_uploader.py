@@ -42,7 +42,10 @@ def kill_chrome_globally():
     try:
         if sys.platform == "win32":
             subprocess.run("taskkill /f /im chrome.exe", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
-            time.sleep(2)
+        else:
+            # Linux/Mac
+            subprocess.run("pkill -f chrome", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+        time.sleep(2)
         _has_killed_chrome_globally = True
     except: pass
 

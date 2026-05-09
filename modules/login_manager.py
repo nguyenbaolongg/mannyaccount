@@ -1,12 +1,28 @@
 import undetected_chromedriver as uc
 import os
 import time
+import sys
 
 # ================= CẤU HÌNH ĐƯỜNG DẪN PROFILE =================
 CURRENT_FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT_DIR = os.path.dirname(CURRENT_FILE_DIR)
 
-CHROME_BIN_PATH = os.path.join(PROJECT_ROOT_DIR, "assets", "ChromePortable", "GoogleChromePortable", "App", "Chrome-bin", "chrome.exe")
+if sys.platform == "win32":
+    CHROME_BIN_PATH = os.path.join(PROJECT_ROOT_DIR, "assets", "ChromePortable", "GoogleChromePortable", "App", "Chrome-bin", "chrome.exe")
+else:
+    # Linux search paths
+    CHROME_BIN_PATH = None
+    possible_paths = [
+        "/usr/bin/google-chrome",
+        "/usr/bin/chromium-browser",
+        "/usr/bin/chromium",
+        "/snap/bin/chromium",
+        "/usr/bin/google-chrome-stable"
+    ]
+    for p in possible_paths:
+        if os.path.exists(p):
+            CHROME_BIN_PATH = p
+            break
 
 # Tên thư mục chứa dữ liệu profile
 PROFILE_FOLDER_NAME = "assets/ai_studio_data/tintucthammy24h_profile"
