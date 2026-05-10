@@ -32,7 +32,7 @@ try:
     from modules.video_remix import create_video_from_source_video
     from modules.upload_drive import upload_video_to_drive
     from services.sheet_api import get_latest_row_by_id, update_final_result, update_voice_links
-    from services.tts_api import create_voice_default, create_voice_clone
+    from services.tts_api import create_voice_default, create_voice_clone, create_voice_full_pipeline
     from services.supabase_api import SupabaseAPI
 except ImportError as e:
     print(f"❌ Lỗi Import thư viện: {e}")
@@ -82,7 +82,7 @@ def handle_tts_and_update_sheet(api_key, text, voice_id, row_idx, sheet_url, is_
         return None, None
 
     except Exception as e:
-        print(f"   ❌ Lỗi tạo TTS Local: {e}")
+        print(f"   ❌ Lỗi tạo TTS Local: {e}", flush=True)
         return None, None
 
 def run_worker_process(account_id):
@@ -188,7 +188,10 @@ def run_worker_process(account_id):
                 local_title = None
                 if row_data.get("title_text"):
                     _, local_title = handle_tts_and_update_sheet(tts_api_key, row_data["title_text"], tts_voice_id, row_data['row'], sheet_url, True, save_dir=ctx.temp_dir)
-                if not local_content: continue
+                
+                if not local_content:
+                    ctx.logger.error(f"   ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)")
+                    continue
 
                 ctx.logger.info("   🎬 Chuẩn bị Remixing...")
 

@@ -971,3 +971,76 @@
 2026-03-14 05:12:28,479 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
 2026-03-14 05:12:30,042 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7615850005420674324
 2026-03-14 05:16:44,990 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7615911718362959125
+2026-05-10 11:55:31,996 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-05-10 11:55:32,129 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-10 11:55:34,863 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7636683426363362567
+2026-05-10 12:03:24,505 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 12:03:24,509 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 12:03:24,509 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 12:03:24,509 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 12:05:07,912 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 12:05:08,397 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7636683426363362567
+2026-05-10 12:05:13,402 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7636713842608852245
+2026-05-10 12:12:23,691 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 12:12:23,692 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 12:12:23,692 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 12:12:23,693 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 12:13:42,671 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 12:13:43,092 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7636713842608852245
+2026-05-10 12:13:48,095 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7636720589214223637
+2026-05-10 12:24:51,949 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 12:24:51,949 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 12:24:51,950 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 12:24:51,950 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 12:25:49,815 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 12:25:50,908 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7636720589214223637
+2026-05-10 12:25:55,915 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-10 12:25:55,916 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-10 15:38:21,751 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-05-10 15:38:21,899 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-10 15:38:28,171 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7636721829087956244
+2026-05-10 15:45:10,457 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 15:45:10,459 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 15:45:10,459 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 15:45:10,459 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 15:46:23,224 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 15:46:23,716 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7636721829087956244
+2026-05-10 15:46:28,722 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-10 15:46:28,723 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-10 15:46:28,723 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-10 15:50:27,622 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-05-10 15:50:27,974 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-10 15:50:30,282 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7636985356931468564
+2026-05-10 15:58:47,949 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 15:58:47,950 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 15:58:47,950 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 15:58:47,950 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 16:00:18,026 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 16:00:18,851 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7636985356931468564
+2026-05-10 16:00:23,855 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-10 16:00:23,856 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-10 16:00:23,856 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-10 17:12:21,543 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-05-10 17:12:21,943 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-10 17:12:24,000 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637001621058227474
+2026-05-10 17:18:44,293 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 17:18:44,294 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 17:18:44,295 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 17:18:44,295 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 17:19:36,727 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 17:19:37,173 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637001621058227474
+2026-05-10 17:19:42,182 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-10 17:19:42,183 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-10 17:19:42,183 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-10 17:42:49,838 [INFO] 🚀 WORKER STARTED: tintucthammy24h
+2026-05-10 17:42:49,996 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-10 17:42:51,581 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637041056936152338
+2026-05-10 17:49:20,035 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-10 17:49:20,036 [INFO]    ✅ Đã có file '24h  tham  my fr.png' trong máy.
+2026-05-10 17:49:20,036 [INFO]    ✅ Đã có file '24h  tham  my fr 1.png' trong máy.
+2026-05-10 17:49:20,037 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-10 17:50:48,367 [INFO]    ✅ HOÀN TẤT!
+2026-05-10 17:50:48,753 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637041056936152338
+2026-05-10 17:50:53,758 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-10 17:50:53,758 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-10 17:50:53,758 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1

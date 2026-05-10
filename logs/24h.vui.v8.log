@@ -966,3 +966,18 @@
 2026-03-14 13:49:00,852 [INFO]    ✅ HOÀN TẤT!
 2026-03-14 13:49:02,251 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@vietnamhealthnews/video/7616380049754983700
 2026-03-14 13:49:07,255 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@vietnamhealthnews/video/7616389401517591829
+2026-05-10 11:55:32,070 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-05-10 11:55:32,219 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-05-10 11:55:34,446 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-10 15:38:21,513 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-05-10 15:38:21,666 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-05-10 15:38:28,783 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/1
+2026-05-10 15:50:27,859 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-05-10 15:50:28,003 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-05-10 15:50:30,090 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/1
+2026-05-10 17:12:21,924 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-05-10 17:12:22,087 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-05-10 17:12:24,262 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/1
+2026-05-10 17:42:49,773 [INFO] 🚀 WORKER STARTED: 24h.vui.v8
+2026-05-10 17:42:49,911 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@vietnamhealthnews (Lấy tối đa 3 video)
+2026-05-10 17:42:52,231 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/1

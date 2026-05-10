@@ -17,23 +17,24 @@ def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", 
     }
 
     try:
-        print(f"   🚀 Đang gửi yêu cầu Full Pipeline (TTS + RVC) cho: '{text[:30]}...'")
-        # Timeout 300s vì RVC và TTS cộng lại có thể lâu
-        res = requests.post(SERVER_URL, json=payload, timeout=300)
+        mode_str = "TTS + RVC" if payload["run_rvc"] else "TTS Only"
+        print(f"   🚀 Đang gửi yêu cầu {mode_str} cho: '{text[:30]}...'", flush=True)
+        # Timeout 1800s vì RVC và TTS cộng lại có thể rất lâu trên GPU/CPU hiện tại
+        res = requests.post(SERVER_URL, json=payload, timeout=1800)
         
         if res.status_code == 200:
             with open(save_path, "wb") as f:
                 f.write(res.content)
-            print(f"   ✅ Thành công! File lưu tại: {save_path}")
+            print(f"   ✅ Thành công! File lưu tại: {save_path}", flush=True)
             return save_path
         else:
             try:
                 err_msg = res.json().get('message', res.text)
             except:
                 err_msg = res.text
-            print(f"   ❌ Server báo lỗi ({res.status_code}): {err_msg}")
+            print(f"   ❌ Server báo lỗi ({res.status_code}): {err_msg}", flush=True)
     except Exception as e:
-        print(f"   ❌ Lỗi kết nối Voicebox Server: {e}")
+        print(f"   ❌ Lỗi kết nối Voicebox Server: {e}", flush=True)
     return None
 
 def create_voice_default(text, save_dir, filename):
@@ -52,7 +53,7 @@ def create_voice_default(text, save_dir, filename):
 
     try:
         print(f"   ⏳ Đang gửi yêu cầu đọc giọng TTS mặc định...")
-        res = requests.post(SERVER_URL, json=payload, timeout=200)
+        res = requests.post(SERVER_URL, json=payload, timeout=1800)
         if res.status_code == 200:
             with open(save_path, "wb") as f:
                 f.write(res.content)

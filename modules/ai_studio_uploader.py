@@ -43,8 +43,8 @@ def kill_chrome_globally():
         if sys.platform == "win32":
             subprocess.run("taskkill /f /im chrome.exe", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
         else:
-            # Linux/Mac
-            subprocess.run("pkill -f chrome", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+            # Linux/Mac: Chỉ kill chrome của playwright, không kill trình duyệt gốc của người dùng
+            subprocess.run("pkill -f ms-playwright", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
         time.sleep(2)
         _has_killed_chrome_globally = True
     except: pass
@@ -110,6 +110,16 @@ def upload_worker(account_config):
     if not os.path.exists(local_video_path):
         print(f"❌ [{tiktok_id}] Lỗi: Không tìm thấy file video {local_video_path}")
         return False
+
+    # Dọn dẹp tiến trình Chrome cũ (chỉ kill các process dùng chung profile này để tránh crash Playwright & không ảnh hưởng Chrome gốc)
+    try:
+        if sys.platform == "win32":
+            # wmic process where "name='chrome.exe' and commandline like '%profile_name%'" call terminate
+            subprocess.run(f'wmic process where "name=\'chrome.exe\' and commandline like \'%{profile_name}%\'" call terminate', shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+        else:
+            subprocess.run(f"pkill -f '{current_user_data_dir}'", shell=True, stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+        time.sleep(1)
+    except: pass
 
     browser = None
     try:
