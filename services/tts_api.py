@@ -3,7 +3,7 @@ import requests
 
 SERVER_URL = "http://127.0.0.1:8080/generate/full-pipeline"
 
-def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", rvc_model="models/my_voice.pth", rvc_pitch=0, emotion="binh_thuong"):
+def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", rvc_model="models/my_voice.pth", rvc_pitch=0, emotion="binh_thuong", speed=1.15):
     save_path = os.path.join(save_dir, filename)
     payload = {
         "text": text,
@@ -13,7 +13,8 @@ def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", 
         "rvc_pitch": rvc_pitch,
         "emotion": emotion,
         "language": "vi",
-        "run_enhance": False
+        "run_enhance": False,
+        "speed": speed
     }
 
     try:
@@ -93,7 +94,8 @@ if __name__ == "__main__":
         filename=ten_file_xuat,
         profile_id="viterbox",
         rvc_model="models/my_voice.pth", # Thay bằng model thực tế trên server của bạn
-        rvc_pitch=0
+        rvc_pitch=0,
+        speed=1.15
     )
 
     if kq:

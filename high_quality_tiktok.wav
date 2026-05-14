@@ -1,0 +1,1 @@
+{"detail":[{"type":"value_error","loc":["body"],"msg":"Value error, rvc_model_path is required when run_rvc is True","input":{"profile_id":"Giong_nu_tiktok","text":"Chào mừng bạn đến với kênh Tiktok của tôi! Đây là giọng nữ Tik Tok vừa mới được huấn luyện thành công.","run_rvc":true,"run_enhance":true},"ctx":{"error":{}}}]}

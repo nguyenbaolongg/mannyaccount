@@ -15,7 +15,7 @@ fi
 
 # 2. Bật Voicebox (Chạy ngầm để chờ lệnh)
 echo "[2/3] Đang bật Tool Voice chạy ngầm chờ lệnh (Background)..."
-cd /home/giang-adsup/Documents/voice/voiceHA_Long_Hung
+cd /home/giang-adsup/Documents/voiceHA_Long_Hung
 # Chạy script start_viterbox.sh ngầm và đẩy log vào server_output.log
 nohup ./start_viterbox.sh > server_output.log 2>&1 &
 VOICE_PID=$!

@@ -608,3 +608,223 @@
 2026-05-10 17:50:37,614 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
 2026-05-10 17:50:37,614 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
 2026-05-10 17:50:37,614 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-11 09:23:04,624 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-11 09:23:04,780 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-11 09:23:07,575 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637066318813941010
+2026-05-11 12:58:08,276 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-11 12:58:13,277 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637091661532712210
+2026-05-11 12:58:13,278 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-11 12:58:18,278 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637091892135513351
+2026-05-11 12:58:18,278 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-11 12:58:23,279 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-11 12:58:23,279 [ERROR]    ⚠️ Lỗi quét video: [Errno 5] Input/output error
+2026-05-11 12:58:23,279 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/1
+2026-05-11 13:00:59,267 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-11 13:00:59,410 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-11 13:01:02,691 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637066318813941010
+2026-05-11 13:07:30,586 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 13:07:30,587 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 13:07:30,587 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 13:07:30,587 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 13:08:49,634 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 13:08:50,056 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637066318813941010
+2026-05-11 13:08:55,060 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637091661532712210
+2026-05-11 13:14:42,978 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 13:14:42,978 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 13:14:42,978 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 13:14:42,978 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 13:15:15,911 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 13:15:16,388 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637091661532712210
+2026-05-11 13:15:21,400 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637091892135513351
+2026-05-11 13:22:22,814 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 13:22:22,815 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 13:22:22,815 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 13:22:22,815 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 13:23:43,233 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 13:23:43,720 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637091892135513351
+2026-05-11 13:23:48,725 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-11 13:23:48,725 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-11 15:00:03,524 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-11 15:00:03,661 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-11 15:00:06,886 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637374204861533448
+2026-05-11 15:07:08,807 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 15:07:08,809 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 15:07:08,809 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 15:07:08,809 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 15:08:22,876 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 15:08:23,320 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637374204861533448
+2026-05-11 15:08:28,325 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637382994314972423
+2026-05-11 15:15:27,676 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 15:15:27,677 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 15:15:27,677 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 15:15:27,677 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 15:16:48,223 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 15:16:48,728 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637382994314972423
+2026-05-11 15:16:53,734 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637449318550703381
+2026-05-11 15:24:13,833 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 15:24:13,834 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 15:24:13,834 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 15:24:13,834 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 15:25:08,715 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 15:25:09,405 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7637449318550703381
+2026-05-11 15:25:14,409 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-11 15:25:14,410 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-11 18:00:03,564 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-11 18:00:03,709 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-11 18:00:06,584 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637780858258099476
+2026-05-11 18:04:26,519 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638264129957989653
+2026-05-11 18:15:02,840 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 18:15:02,840 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 18:15:02,841 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 18:15:02,841 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 18:16:29,669 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 18:16:30,025 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638264129957989653
+2026-05-11 18:16:35,034 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638464513217547538
+2026-05-11 18:23:32,504 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-11 18:23:32,505 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-11 18:23:32,505 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-11 18:23:32,505 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-11 18:24:23,988 [INFO]    ✅ HOÀN TẤT!
+2026-05-11 18:24:24,388 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638464513217547538
+2026-05-11 18:24:29,391 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-11 18:24:30,788 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-12 10:00:04,421 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-12 10:00:04,565 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-12 10:00:07,703 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638495784761183495
+2026-05-12 10:08:39,118 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 10:08:39,121 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 10:08:39,121 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 10:08:39,121 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 10:09:52,343 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 10:09:52,882 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638495784761183495
+2026-05-12 10:09:57,887 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638499517993717010
+2026-05-12 10:18:46,853 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 10:18:46,853 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 10:18:46,853 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 10:18:46,853 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 10:20:10,911 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 10:20:11,414 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638499517993717010
+2026-05-12 10:20:16,419 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638542854306024725
+2026-05-12 10:30:02,163 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 10:30:02,164 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 10:30:02,164 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 10:30:02,164 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 10:31:36,354 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 10:31:36,727 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638542854306024725
+2026-05-12 10:31:41,739 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-12 10:31:41,739 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-12 13:00:03,596 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-12 13:00:03,750 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-12 13:00:06,693 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7637780858258099476
+2026-05-12 13:04:26,593 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638570295464398087
+2026-05-12 13:09:59,902 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 13:09:59,903 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 13:09:59,903 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 13:09:59,903 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 13:10:59,069 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 13:10:59,545 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638570295464398087
+2026-05-12 13:11:04,548 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638579358503816455
+2026-05-12 13:20:39,590 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 13:20:39,591 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 13:20:39,591 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 13:20:39,591 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 13:21:44,368 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 13:21:44,815 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638579358503816455
+2026-05-12 13:21:49,818 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-12 13:21:51,257 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-12 15:00:04,133 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-12 15:00:04,287 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-12 15:00:06,947 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638840521552858388
+2026-05-12 15:10:36,519 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 15:10:36,520 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 15:10:36,520 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 15:10:36,520 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 15:11:50,068 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 15:11:50,693 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638840521552858388
+2026-05-12 15:11:55,705 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638861824858918162
+2026-05-12 15:22:14,995 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 15:22:14,997 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 15:22:14,997 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 15:22:14,998 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 15:23:03,920 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 15:23:04,646 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638861824858918162
+2026-05-12 15:23:09,653 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638871024250981653
+2026-05-12 15:38:36,834 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 15:38:36,834 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 15:38:36,834 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 15:38:36,835 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 15:39:38,896 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 15:39:39,521 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638871024250981653
+2026-05-12 15:39:44,546 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-12 15:39:44,546 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-12 18:00:04,211 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-12 18:00:04,350 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-12 18:00:06,199 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638908334187253013
+2026-05-12 18:14:55,956 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 18:14:55,958 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 18:14:55,959 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 18:14:55,959 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 18:16:16,362 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 18:16:16,854 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638908334187253013
+2026-05-12 18:16:21,859 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638951975379275016
+2026-05-12 18:29:19,457 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-12 18:29:19,457 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-12 18:29:19,457 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-12 18:29:19,458 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-12 18:30:25,613 [INFO]    ✅ HOÀN TẤT!
+2026-05-12 18:30:26,067 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638951975379275016
+2026-05-12 18:30:31,071 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-12 18:30:32,339 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-13 10:00:04,269 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-13 10:00:04,451 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-13 10:00:06,097 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-13 10:00:06,936 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-13 13:00:04,435 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-13 13:00:04,612 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-13 13:00:07,099 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638952281123212552
+2026-05-13 13:06:02,522 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 13:06:07,524 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-13 13:06:08,757 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-13 15:00:04,364 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-13 15:00:04,551 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-13 15:00:06,986 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638952281123212552
+2026-05-13 15:02:24,871 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 15:02:29,874 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7639278706329963783
+2026-05-13 15:04:39,191 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 15:04:44,191 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-13 15:04:45,455 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-13 18:00:04,547 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-13 18:00:04,711 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-13 18:00:06,379 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638952281123212552
+2026-05-13 18:03:00,874 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 18:03:05,875 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7639278706329963783
+2026-05-13 18:05:40,533 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 18:05:45,534 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7639291990953233672
+2026-05-13 18:07:53,875 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-13 18:07:58,876 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeothammy (Lấy tối đa 3 video)
+2026-05-13 18:08:00,344 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-14 17:00:04,107 [INFO] 🚀 WORKER STARTED: phongmokechuyen01
+2026-05-14 17:00:04,269 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@tamsudaokeo28 (Lấy tối đa 3 video)
+2026-05-14 17:00:07,069 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7638952281123212552
+2026-05-14 17:08:31,460 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-14 17:08:31,462 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-14 17:08:31,462 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-14 17:08:31,462 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-14 17:09:49,425 [INFO]    ✅ HOÀN TẤT!
+2026-05-14 17:09:49,956 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7638952281123212552
+2026-05-14 17:09:54,961 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7639278706329963783
+2026-05-14 17:16:54,589 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-14 17:16:54,590 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-14 17:16:54,590 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-14 17:16:54,590 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-14 17:17:39,438 [INFO]    ✅ HOÀN TẤT!
+2026-05-14 17:17:40,130 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7639278706329963783
+2026-05-14 17:17:45,135 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@tamsudaokeo28/video/7639291990953233672
+2026-05-14 17:26:10,843 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-14 17:26:10,843 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ.png' trong máy.
+2026-05-14 17:26:10,843 [INFO]    ✅ Đã có file 'Fr tiktok - TM KEERE CHUYEENJ 1.png' trong máy.
+2026-05-14 17:26:10,844 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-14 17:26:50,283 [INFO]    ✅ HOÀN TẤT!
+2026-05-14 17:26:51,463 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@tamsudaokeo28/video/7639291990953233672
+2026-05-14 17:26:56,469 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-14 17:26:56,469 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
