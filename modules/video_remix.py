@@ -96,7 +96,10 @@ def load_render_config(target_channel_url=None, target_tiktok_id=None):
         "content_settings": {"source_start": 5.0, "zoom_factor": 1.1, "manual_x_offset": 0, "manual_y_offset": 0},
         "text_overlay_settings": {"font_filename": "arialbd.ttf", "font_size": 60, "text_color": "#FFFFFF", "stroke_width": 2, "box_width_percentage": 0.85, "box_y_start": 0.70},
         "text_content_settings": {"font_filename": "arialbd.ttf", "font_size": 35, "text_color": "#FFFFFF", "stroke_width": 2, "box_width_percentage": 0.85, "box_y_start": 0.15},
-        "assets": {"logo_width": 150}
+        "assets": {
+            "title_logo_width_percentage": 0.14, "title_logo_x": "main_w-overlay_w-30", "title_logo_y": "30",
+            "content_logo_width_percentage": 0.14, "content_logo_x": "main_w-overlay_w-30", "content_logo_y": "30"
+        }
     }
 
     if os.path.exists(RENDER_CONFIG_PATH):
@@ -139,7 +142,7 @@ def load_render_config(target_channel_url=None, target_tiktok_id=None):
 
     return default_config
 
-def render_segment_to_file(video_filename, audio_filename, output_filename, settings, text_settings, text_content, frame_filename, temp_dir):
+def render_segment_to_file(video_filename, audio_filename, output_filename, settings, text_settings, text_content, frame_filename, logo_filename, logo_settings, temp_dir):
     if not os.path.exists(video_filename): return False
     if not os.path.exists(audio_filename): return False
 
@@ -166,6 +169,14 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
                     break
 
     s_start = float(settings.get("source_start", 0))
+    if s_start < 0 and total_video_duration > 0:
+        s_start = total_video_duration + s_start
+        if s_start < 0: s_start = 0.0
+        
+    if total_video_duration > 0 and s_start >= total_video_duration:
+        print(f"⚠️ Cảnh báo: Thời gian bắt đầu ({s_start}s) lớn hơn tổng độ dài video ({total_video_duration}s). Tự động trả về 0s.")
+        s_start = 0.0
+
     raw_end = settings.get("source_end", "auto")
     zoom = float(settings.get("zoom_factor", 1.0))
 
@@ -184,9 +195,11 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
         val = float(raw_end)
         if val < 0:
             real_end = total_video_duration + val
-            if real_end < s_start: real_end = None
         else:
             real_end = val
+            
+        if real_end <= s_start: 
+            real_end = None
 
     if real_end:
         v = v_in.filter('trim', start=s_start, end=real_end)
@@ -230,6 +243,16 @@ def render_segment_to_file(video_filename, audio_filename, output_filename, sett
         fr = ffmpeg.input(frame_filename).filter('scale', 1080, 1920)
         v = ffmpeg.overlay(v, fr)
 
+    if logo_filename and os.path.exists(logo_filename):
+        pct = float(logo_settings.get("width_percentage", 0.14))
+        lx = str(logo_settings.get("x", "main_w-overlay_w-30"))
+        ly = str(logo_settings.get("y", "30"))
+        logo = ffmpeg.input(logo_filename)
+        if pct > 0:
+            lw = int(1080 * pct)
+            logo = logo.filter('scale', lw, -1)
+        v = ffmpeg.overlay(v, logo, x=lx, y=ly)
+
     # Thêm Text
     if text_content:
         t_color = text_settings.get("text_color", "#FFFFFF").replace("#", "0x")
@@ -271,7 +294,7 @@ def create_video_from_source_video(
         output_filename=None,
         title_frame_path=None, content_frame_path=None,
         title_tiktok=None, content_text=None,
-        logo_path=None, title_audio_url=None, script_url=None,
+        title_logo_path=None, content_logo_path=None, title_audio_url=None, script_url=None,
         row_index=None,
         target_channel_url=None,
         tiktok_id=None,
@@ -331,7 +354,8 @@ def create_video_from_source_video(
 
         src_t_frame = find_asset_src(title_frame_path, "title_frame_filename", FRAME_DIR)
         src_c_frame = find_asset_src(content_frame_path, "content_frame_filename", FRAME_DIR)
-        src_logo = find_asset_src(logo_path, "logo_filename", LOGO_DIR)
+        src_t_logo = find_asset_src(title_logo_path, "title_logo_filename", LOGO_DIR)
+        src_c_logo = find_asset_src(content_logo_path, "content_logo_filename", LOGO_DIR)
         src_font_name = cfg["text_content_settings"].get("font_filename", "arialbd.ttf")
 
         # B3. Copy Assets
@@ -340,6 +364,12 @@ def create_video_from_source_video(
 
         local_c_frame_name = f"frame_content_{unique_session_id}.png" if src_c_frame else None
         if src_c_frame: shutil.copy2(src_c_frame, os.path.join(working_dir, local_c_frame_name))
+
+        local_t_logo_name = f"logo_intro_{unique_session_id}.png" if src_t_logo else None
+        if src_t_logo: shutil.copy2(src_t_logo, os.path.join(working_dir, local_t_logo_name))
+
+        local_c_logo_name = f"logo_content_{unique_session_id}.png" if src_c_logo else None
+        if src_c_logo: shutil.copy2(src_c_logo, os.path.join(working_dir, local_c_logo_name))
 
         font_src_path = None
         possible_fonts = [
@@ -363,14 +393,26 @@ def create_video_from_source_video(
         if font_src_path: shutil.copy2(font_src_path, os.path.join(working_dir, "font.ttf"))
 
         os.chdir(working_dir)
+        
+        title_logo_settings = {
+            "width_percentage": assets.get("title_logo_width_percentage", assets.get("logo_width_percentage", 0.14)),
+            "x": assets.get("title_logo_x", "main_w-overlay_w-30"),
+            "y": assets.get("title_logo_y", "30")
+        }
+        content_logo_settings = {
+            "width_percentage": assets.get("content_logo_width_percentage", assets.get("logo_width_percentage", 0.14)),
+            "x": assets.get("content_logo_x", "main_w-overlay_w-30"),
+            "y": assets.get("content_logo_y", "30")
+        }
+
         segs = []
         if has_intro:
             out = f"seg1_{unique_session_id}.mp4"
-            if render_segment_to_file(p_vid_name, p_aud_title_name, out, cfg["title_settings"], cfg["text_overlay_settings"], title_tiktok, local_t_frame_name, working_dir):
+            if render_segment_to_file(p_vid_name, p_aud_title_name, out, cfg["title_settings"], cfg["text_overlay_settings"], title_tiktok, local_t_frame_name, local_t_logo_name, title_logo_settings, working_dir):
                 segs.append(out)
         out2 = f"seg2_{unique_session_id}.mp4"
         if not os.path.exists(p_aud_main_name): raise Exception("Mất file aud_main.mp3")
-        if render_segment_to_file(p_vid_name, p_aud_main_name, out2, cfg["content_settings"], cfg["text_content_settings"], content_text, local_c_frame_name, working_dir):
+        if render_segment_to_file(p_vid_name, p_aud_main_name, out2, cfg["content_settings"], cfg["text_content_settings"], content_text, local_c_frame_name, local_c_logo_name, content_logo_settings, working_dir):
             segs.append(out2)
         else:
             raise Exception("Render Content Failed")
@@ -391,17 +433,8 @@ def create_video_from_source_video(
             )
         except ffmpeg.Error as e:
             raise Exception("Concat Failed")
-        local_logo_name = f"logo_{unique_session_id}.png" if src_logo else None
-        if src_logo: shutil.copy2(src_logo, local_logo_name)
 
-        if local_logo_name and os.path.exists(local_logo_name):
-            lw = int(assets.get("logo_width", 150))
-            (ffmpeg.input(concat_out_file)
-             .overlay(ffmpeg.input(local_logo_name).filter('scale', lw, -1), x='main_w-overlay_w-30', y='30')
-             .output(final_path, vcodec='libx264', acodec='copy', preset='ultrafast')
-             .overwrite_output().run(capture_stdout=True, capture_stderr=True))
-        else:
-            shutil.move(concat_out_file, final_path)
+        shutil.move(concat_out_file, final_path)
 
         if os.path.exists(final_path):
             print(f"✅ DONE: {final_path}")

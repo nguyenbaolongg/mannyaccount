@@ -50,6 +50,24 @@ class DashboardPage:
         self.lbl_bot_status = ctk.CTkLabel(self.parent, text="⚪ Trạng thái: Đang chờ...", text_color="gray")
         self.lbl_bot_status.pack(anchor="w", pady=(0, 10))
 
+        # ================= CẤU HÌNH VOICE ID =================
+        self.voice_frame = ctk.CTkFrame(self.parent)
+        self.voice_frame.pack(fill="x", pady=(0, 15))
+        
+        ctk.CTkLabel(self.voice_frame, text="Mã Voice ID (Hệ thống):", font=ctk.CTkFont(weight="bold")).grid(row=0, column=0, padx=10, pady=10, sticky="w")
+        
+        self.inp_voice_id = ctk.CTkEntry(self.voice_frame, width=350, placeholder_text="Nhập Voice ID từ hệ thống...")
+        self.inp_voice_id.grid(row=0, column=1, padx=10, pady=10)
+        
+        settings = SupabaseAPI.get_system_config("app_settings") or {}
+        self.inp_voice_id.insert(0, settings.get("voice_id", ""))
+        
+        self.btn_save_voice = ctk.CTkButton(self.voice_frame, text="💾 Cập nhật Voice", width=120, fg_color="green", hover_color="darkgreen", command=self.save_voice_id)
+        self.btn_save_voice.grid(row=0, column=2, padx=10, pady=10)
+        
+        self.lbl_voice_status = ctk.CTkLabel(self.voice_frame, text="", text_color="green")
+        self.lbl_voice_status.grid(row=0, column=3, padx=10)
+
         # ================= DANH SÁCH TÀI KHOẢN =================
         ctk.CTkLabel(self.parent, text="📋 Danh sách tài khoản trên Supabase:", font=ctk.CTkFont(weight="bold")).pack(anchor="w")
 
@@ -123,6 +141,17 @@ class DashboardPage:
             self._render_time_list()
         else:
             self.lbl_schedule_error.configure(text="❌ Lỗi khi lưu lịch lên Supabase!")
+
+    def save_voice_id(self):
+        new_voice_id = self.inp_voice_id.get().strip()
+        settings = SupabaseAPI.get_system_config("app_settings") or {}
+        settings["voice_id"] = new_voice_id
+        if SupabaseAPI.update_system_config("app_settings", settings):
+            self.lbl_voice_status.configure(text="✅ Đã cập nhật và lưu Cloud!", text_color="green")
+            self.parent.after(3000, lambda: self.lbl_voice_status.configure(text=""))
+        else:
+            self.lbl_voice_status.configure(text="❌ Lỗi khi lưu!", text_color="red")
+            self.parent.after(3000, lambda: self.lbl_voice_status.configure(text=""))
 
     # ================= HÀM XỬ LÝ TÀI KHOẢN & LIMIT =================
     def load_accounts(self):

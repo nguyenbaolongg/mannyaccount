@@ -158,7 +158,7 @@ Fully extract the videos of a playlist (default)
 .TP
 --live-from-start
 Download livestreams from the start.
-Currently experimental and only supported for YouTube and Twitch
+Currently experimental and only supported for YouTube, Twitch, and TVer
 .TP
 --no-live-from-start
 Download livestreams from the current time (default)
@@ -2713,30 +2713,31 @@ respectively
 \f[V]player_client\f[R]: Clients to extract video data from.
 The currently available clients are \f[V]web\f[R], \f[V]web_safari\f[R],
 \f[V]web_embedded\f[R], \f[V]web_music\f[R], \f[V]web_creator\f[R],
-\f[V]mweb\f[R], \f[V]ios\f[R], \f[V]ios_downgraded\f[R],
-\f[V]android\f[R], \f[V]android_vr\f[R], \f[V]tv\f[R],
-\f[V]tv_simply\f[R], \f[V]tv_downgraded\f[R], and \f[V]tv_embedded\f[R].
-By default, \f[V]android_vr,ios_downgraded,web,web_safari\f[R] is used.
-If no JavaScript runtime/engine is available, then
-\f[V]android_vr,ios_downgraded\f[R] is used.
+\f[V]mweb\f[R], \f[V]ios\f[R], \f[V]android\f[R], \f[V]android_vr\f[R],
+\f[V]tv\f[R], \f[V]tv_downgraded\f[R], and \f[V]tv_simply\f[R].
+By default, \f[V]android_vr,web_safari\f[R] is used.
+If no JavaScript runtime/engine is available, then only
+\f[V]android_vr\f[R] is used.
 If logged-in cookies are passed to yt-dlp, then
-\f[V]tv_downgraded,web,web_safari\f[R] is used for free accounts and
-\f[V]tv_downgraded,web_creator,web\f[R] is used for premium accounts.
+\f[V]tv_downgraded,web_safari\f[R] is used for free accounts and
+\f[V]tv_downgraded,web_creator\f[R] is used for premium accounts.
 The \f[V]web_music\f[R] client is added for \f[V]music.youtube.com\f[R]
 URLs when logged-in cookies are used.
 The \f[V]web_embedded\f[R] client is added for age-restricted videos but
-only works if the video is embeddable.
-The \f[V]tv_embedded\f[R] and \f[V]web_creator\f[R] clients are added
-for age-restricted videos if account age-verification is required.
-Some clients, such as \f[V]web\f[R] and \f[V]web_music\f[R], require a
-\f[V]po_token\f[R] for their formats to be downloadable.
+only successfully works around the age-restriction sometimes (e.g.
+if the video is embeddable), and may be added as a fallback if
+\f[V]android_vr\f[R] is unable to access a video.
+The \f[V]web_creator\f[R] client is added for age-restricted videos if
+account age-verification is required.
+Some clients, such as \f[V]web_creator\f[R] and \f[V]web_music\f[R],
+require a \f[V]po_token\f[R] for their formats to be downloadable.
 Some clients, such as \f[V]web_creator\f[R], will only work with
 authentication.
 Not all clients support authentication via cookies.
 You can use \f[V]default\f[R] for the default clients, or you can use
 \f[V]all\f[R] for all clients (not recommended).
 You can prefix a client with \f[V]-\f[R] to exclude it, e.g.
-\f[V]youtube:player_client=default,-ios\f[R]
+\f[V]youtube:player_client=default,-web_safari\f[R]
 .IP \[bu] 2
 \f[V]player_skip\f[R]: Skip some network requests that are generally
 needed for robust extraction.
@@ -2752,7 +2753,13 @@ See #860 (https://github.com/yt-dlp/yt-dlp/pull/860) and
 \f[V]webpage_skip\f[R]: Skip extraction of embedded webpage data.
 One or both of \f[V]player_response\f[R], \f[V]initial_data\f[R].
 These options are for testing purposes and don\[aq]t skip any network
-requests
+requests.
+Neither is skipped by default; however, if a \f[V]player_js_version\f[R]
+value other than \f[V]actual\f[R] is used, then
+\f[V]webpage_skip=player_response\f[R] is implied
+.IP \[bu] 2
+\f[V]webpage_client\f[R]: Client to use for the video webpage request.
+One of \f[V]web\f[R] or \f[V]web_safari\f[R] (default)
 .IP \[bu] 2
 \f[V]player_params\f[R]: YouTube player parameters to use for player
 requests.
@@ -2761,8 +2768,8 @@ Will overwrite any default ones set by yt-dlp.
 \f[V]player_js_variant\f[R]: The player javascript variant to use for
 n/sig deciphering.
 The known variants are: \f[V]main\f[R], \f[V]tcc\f[R], \f[V]tce\f[R],
-\f[V]es5\f[R], \f[V]es6\f[R], \f[V]tv\f[R], \f[V]tv_es6\f[R],
-\f[V]phone\f[R], \f[V]tablet\f[R].
+\f[V]es5\f[R], \f[V]es6\f[R], \f[V]es6_tcc\f[R], \f[V]es6_tce\f[R],
+\f[V]tv\f[R], \f[V]tv_es6\f[R], \f[V]phone\f[R], \f[V]house\f[R].
 The default is \f[V]main\f[R], and the others are for debugging
 purposes.
 You can use \f[V]actual\f[R] to go with what is prescribed by the site
@@ -2772,7 +2779,8 @@ n/sig deciphering, in the format of
 \f[V]signature_timestamp\[at]hash\f[R] (e.g.
 \f[V]20348\[at]0004de42\f[R]).
 The default is to use what is prescribed by the site, and can be
-selected with \f[V]actual\f[R]
+selected with \f[V]actual\f[R].
+Using any other value will imply \f[V]webpage_skip=player_response\f[R]
 .IP \[bu] 2
 \f[V]comment_sort\f[R]: \f[V]top\f[R] or \f[V]new\f[R] (default) -
 choose comment sorting mode (on YouTube\[aq]s side)
@@ -2798,9 +2806,9 @@ maximum of 100 replies total
 \f[V]formats\f[R]: Change the types of formats to return.
 \f[V]dashy\f[R] (convert HTTP to DASH), \f[V]duplicate\f[R] (identical
 content but different URLs or protocol; includes \f[V]dashy\f[R]),
-\f[V]incomplete\f[R] (cannot be downloaded completely - live dash and
-post-live m3u8), \f[V]missing_pot\f[R] (include formats that require a
-PO Token but are missing one)
+\f[V]incomplete\f[R] (cannot be downloaded completely - live dash, live
+adaptive https, and post-live m3u8), \f[V]missing_pot\f[R] (include
+formats that require a PO Token but are missing one)
 .IP \[bu] 2
 \f[V]innertube_host\f[R]: Innertube API host to use for all API
 requests; e.g.
@@ -2852,8 +2860,8 @@ Either \f[V]true\f[R] or \f[V]false\f[R] (default)
 mandatory wait period before download.
 Do NOT use this when passing premium account cookies to yt-dlp, as it
 will result in a loss of premium formats.
-Only effective with the \f[V]web\f[R], \f[V]web_safari\f[R],
-\f[V]web_music\f[R] and \f[V]mweb\f[R] player clients.
+Only effective with the \f[V]mweb\f[R] and \f[V]web_music\f[R] player
+clients.
 Either \f[V]true\f[R] or \f[V]false\f[R] (default)
 .SS youtube-ejs
 .IP \[bu] 2
@@ -3823,10 +3831,9 @@ See #31 (https://github.com/yt-dlp/yt-dlp/pull/31) for details.
 .IP \[bu] 2
 Supports Clips, Stories (\f[V]ytstories:<channel UCID>\f[R]), Search
 (including filters)\f[B]*\f[R], YouTube Music Search, Channel-specific
-search, Search prefixes (\f[V]ytsearch:\f[R],
-\f[V]ytsearchdate:\f[R])\f[B]*\f[R], Mixes, and Feeds (\f[V]:ytfav\f[R],
-\f[V]:ytwatchlater\f[R], \f[V]:ytsubs\f[R], \f[V]:ythistory\f[R],
-\f[V]:ytrec\f[R], \f[V]:ytnotif\f[R])
+search, Search prefix (\f[V]ytsearch:\f[R])\f[B]*\f[R], Mixes, and Feeds
+(\f[V]:ytfav\f[R], \f[V]:ytwatchlater\f[R], \f[V]:ytsubs\f[R],
+\f[V]:ythistory\f[R], \f[V]:ytrec\f[R], \f[V]:ytnotif\f[R])
 .IP \[bu] 2
 Fix for n-sig based
 throttling (https://github.com/ytdl-org/youtube-dl/issues/29326)

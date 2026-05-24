@@ -212,24 +212,98 @@ def upload_worker(account_config):
 
             # 7. Upload Video
             print(f"📤 [{tiktok_id}] Upload Video...")
-            upload_selector = 'input[type="file"][accept="video/*"]'
-            file_input = None
+            upload_btn_selectors = ['button:has-text("Chọn Video")', 'button:has-text("Choose Video")', 'div.border-dashed']
+            
+            target_frame = None
+            target_btn = None
+            
+            start_search = time.time()
+            while time.time() - start_search < 15:
+                for frame in [page.main_frame] + page.frames:
+                    for sel in upload_btn_selectors:
+                        try:
+                            btn = frame.locator(sel).first
+                            if btn.is_visible(timeout=500):
+                                target_frame = frame
+                                target_btn = btn
+                                break
+                        except: continue
+                    if target_btn: break
+                if target_btn: break
+                time.sleep(1)
 
-            all_frames = [page.main_frame] + page.frames
-            for frame in all_frames:
+            upload_success = False
+            if target_btn and target_frame:
+                print(f"🎯 [{tiktok_id}] Thấy nút 'Chọn Video'. Thử mở File Chooser mô phỏng người dùng...")
                 try:
-                    locator = frame.locator(upload_selector).first
-                    if locator.count() > 0: file_input = locator; break
-                except: continue
+                    with page.expect_file_chooser(timeout=10000) as fc_info:
+                        target_btn.click(force=True)
+                    file_chooser = fc_info.value
+                    file_chooser.set_files(local_video_path)
+                    print(f"⏳ [{tiktok_id}] Đã chọn file qua File Chooser. Đang chờ tải lên...")
+                    upload_success = True
+                except Exception as e:
+                    print(f"⚠️ [{tiktok_id}] Lỗi File Chooser ({e}). Chuyển sang set_input_files trực tiếp...")
 
-            if file_input:
-                file_input.wait_for(state="attached", timeout=15000)
-                file_input.set_input_files(local_video_path)
-                print(f"✅ [{tiktok_id}] Upload OK!")
-                time.sleep(10)
-            else:
-                print(f"❌ [{tiktok_id}] Lỗi: Không thấy ô Upload.")
-                return False
+            if not upload_success:
+                upload_selectors = ['input[type="file"][accept="video/*"]', 'input[type="file"]']
+                file_input = None
+                for frame in [page.main_frame] + page.frames:
+                    for sel in upload_selectors:
+                        try:
+                            loc = frame.locator(sel).first
+                            if loc.count() > 0:
+                                file_input = loc
+                                break
+                        except: continue
+                    if file_input: break
+
+                if file_input:
+                    try:
+                        file_input.wait_for(state="attached", timeout=10000)
+                        file_input.set_input_files(local_video_path)
+                        print(f"⏳ [{tiktok_id}] Đã chọn file qua set_input_files. Đang chờ tải lên...")
+                        upload_success = True
+                    except Exception as e:
+                        print(f"❌ [{tiktok_id}] Lỗi set_input_files: {e}")
+                        return False
+                else:
+                    print(f"❌ [{tiktok_id}] Lỗi: Không tìm thấy ô Upload hay nút Chọn Video.")
+                    return False
+
+            if upload_success:
+                uploading_keywords = ['Uploading', 'uploading', 'Đang tải', 'đang tải', 'Loading', 'loading']
+                for wait_sec in range(60):
+                    is_uploading = False
+                    for frame in [page.main_frame] + page.frames:
+                        for kw in uploading_keywords:
+                            try:
+                                if frame.locator(f'text="{kw}"').first.is_visible(timeout=200):
+                                    is_uploading = True
+                                    break
+                            except: pass
+                        if is_uploading: break
+                    
+                    has_video_preview = False
+                    for frame in [page.main_frame] + page.frames:
+                        try:
+                            if frame.locator('video').first.is_visible(timeout=200):
+                                has_video_preview = True
+                                break
+                        except: pass
+
+                    if has_video_preview and not is_uploading and wait_sec > 5:
+                        print(f"🎥 [{tiktok_id}] Thấy video preview, tải lên hoàn tất!")
+                        break
+                    elif not is_uploading and wait_sec > 15:
+                        break
+                    
+                    if wait_sec % 5 == 0:
+                        print(f"   ... [{tiktok_id}] Đang tải file lên ({wait_sec}/60s)...")
+                    time.sleep(1)
+
+                print(f"✅ [{tiktok_id}] Upload OK (File đã tải lên server)!")
+                time.sleep(5)
 
             # 8. Click Start
             print(f"▶️ [{tiktok_id}] Click 'Bắt đầu Clone Viral'...")

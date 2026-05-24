@@ -64,8 +64,8 @@ def handle_tts_and_update_sheet(api_key, text, voice_id, row_idx, sheet_url, is_
             text=text,
             save_dir=actual_save_dir,
             filename=file_name,
-            profile_id="viterbox",
-            rvc_model=voice_id if ".pth" in str(voice_id) else "models/my_voice.pth",
+            profile_id=voice_id,
+            rvc_model=voice_id,
             rvc_pitch=0,
             emotion="binh_thuong"
         )
@@ -214,7 +214,12 @@ def run_worker_process(account_id):
 
                 title_frame_full_path = download_if_missing("frame", FRAME_DIR, t_frame_name)
                 content_frame_full_path = download_if_missing("frame", FRAME_DIR, c_frame_name)
-                download_if_missing("logo", LOGO_DIR, logo_name)
+                
+                t_logo_name = assets_conf.get("title_logo_filename", assets_conf.get("logo_filename"))
+                c_logo_name = assets_conf.get("content_logo_filename", assets_conf.get("logo_filename"))
+                title_logo_full_path = download_if_missing("logo", LOGO_DIR, t_logo_name)
+                content_logo_full_path = download_if_missing("logo", LOGO_DIR, c_logo_name)
+                
                 download_if_missing("font", FONT_DIR, font_name)
 
                 final_path = create_video_from_source_video(
@@ -231,6 +236,8 @@ def run_worker_process(account_id):
                     temp_dir=ctx.temp_dir,
                     title_frame_path=title_frame_full_path,
                     content_frame_path=content_frame_full_path,
+                    title_logo_path=title_logo_full_path,
+                    content_logo_path=content_logo_full_path,
                     target_channel_url=src_url
                 )
                 if not final_path: continue

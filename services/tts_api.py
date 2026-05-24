@@ -1,26 +1,33 @@
 import os
 import requests
 
-SERVER_URL = "http://127.0.0.1:8080/generate/full-pipeline"
+# Sử dụng chuẩn API mới từ xa
+SERVER_URL = "http://127.0.0.1:8080/api/external/tts"
 
-def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", rvc_model="models/my_voice.pth", rvc_pitch=0, emotion="binh_thuong", speed=1.15):
+def create_voice_full_pipeline(text, save_dir, filename, profile_id="00529487-0a22-48b3-8617-26d3539f250f", rvc_model=None, rvc_pitch=0, emotion="binh_thuong", speed=1.15):
+    """
+    Hàm gọi API Voicebox mới (External API).
+    """
     save_path = os.path.join(save_dir, filename)
+    
+    # Ưu tiên lấy voice_id từ rvc_model nếu nó là một UUID (không phải đường dẫn .pth mặc định và không phải mã cũ voice-xxx)
+    voice_id_to_use = profile_id
+    if rvc_model and ".pth" not in str(rvc_model) and rvc_model not in ["models/my_voice.pth", "1", "vi_female_kieunhi_mn"] and not str(rvc_model).startswith("voice-"):
+        voice_id_to_use = str(rvc_model).strip()
+        
+    # Nếu voice_id_to_use đang là viterbox (hoặc tên tiktok, theanh28) do kịch bản cũ truyền vào, tự động ưu tiên dùng UUID của giọng mới
+    if voice_id_to_use in ["viterbox", "tiktok", "theanh28"]:
+        voice_id_to_use = "00529487-0a22-48b3-8617-26d3539f250f"
+    
     payload = {
         "text": text,
-        "profile_id": profile_id,
-        "run_rvc": True,
-        "rvc_model_path": rvc_model,
-        "rvc_pitch": rvc_pitch,
-        "emotion": emotion,
+        "voice_id": voice_id_to_use,
         "language": "vi",
-        "run_enhance": False,
         "speed": speed
     }
 
     try:
-        mode_str = "TTS + RVC" if payload["run_rvc"] else "TTS Only"
-        print(f"   🚀 Đang gửi yêu cầu {mode_str} cho: '{text[:30]}...'", flush=True)
-        # Timeout 1800s vì RVC và TTS cộng lại có thể rất lâu trên GPU/CPU hiện tại
+        print(f"   🚀 Đang gửi yêu cầu sinh giọng (Voice ID: {voice_id_to_use}) cho: '{text[:30]}...'", flush=True)
         res = requests.post(SERVER_URL, json=payload, timeout=1800)
         
         if res.status_code == 200:
@@ -29,73 +36,46 @@ def create_voice_full_pipeline(text, save_dir, filename, profile_id="viterbox", 
             print(f"   ✅ Thành công! File lưu tại: {save_path}", flush=True)
             return save_path
         else:
-            try:
-                err_msg = res.json().get('message', res.text)
-            except:
-                err_msg = res.text
-            print(f"   ❌ Server báo lỗi ({res.status_code}): {err_msg}", flush=True)
+            print(f"   ❌ Server báo lỗi ({res.status_code}): {res.text}", flush=True)
+            # TỰ ĐỘNG FALLBACK VỀ UUID TIKTOK / VITERBOX NẾU VOICE ID KHÔNG TỒN TẠI
+            if "not found" in res.text.lower() or res.status_code in (400, 404, 500):
+                fallback_voice = "00529487-0a22-48b3-8617-26d3539f250f" if voice_id_to_use != "00529487-0a22-48b3-8617-26d3539f250f" else "viterbox"
+                print(f"   ⚠️ Voice ID '{voice_id_to_use}' không tồn tại trên Server. Tự động chuyển sang giọng chuẩn '{fallback_voice}'...", flush=True)
+                payload["voice_id"] = fallback_voice
+                res_fb = requests.post(SERVER_URL, json=payload, timeout=1800)
+                if res_fb.status_code == 200:
+                    with open(save_path, "wb") as f:
+                        f.write(res_fb.content)
+                    print(f"   ✅ Thành công (Fallback {fallback_voice})! File lưu tại: {save_path}", flush=True)
+                    return save_path
+                else:
+                    print(f"   ❌ Lỗi sau khi fallback ({res_fb.status_code}): {res_fb.text}", flush=True)
     except Exception as e:
         print(f"   ❌ Lỗi kết nối Voicebox Server: {e}", flush=True)
     return None
 
 def create_voice_default(text, save_dir, filename):
-    """Giữ nguyên tên hàm cũ nhưng chuyển sang gọi API mới với RVC=False nếu muốn tiết kiệm tài nguyên"""
-    save_path = os.path.join(save_dir, filename)
-    payload = {
-        "text": text,
-        "profile_id": "viterbox",
-        "run_rvc": False, # Chỉ lấy TTS thô
-        "rvc_model_path": "",
-        "language": "vi",
-        "rvc_index_path": "",
-        "rvc_f0_method": "rmvpe",
-        "run_enhance": False
-    }
-
-    try:
-        print(f"   ⏳ Đang gửi yêu cầu đọc giọng TTS mặc định...")
-        res = requests.post(SERVER_URL, json=payload, timeout=1800)
-        if res.status_code == 200:
-            with open(save_path, "wb") as f:
-                f.write(res.content)
-            return save_path
-        else:
-            print(f"   ❌ Server báo lỗi: {res.status_code}")
-    except Exception as e:
-        print(f"   ❌ Lỗi kết nối TTS Server: {e}")
-    return None
+    return create_voice_full_pipeline(text, save_dir, filename, profile_id="00529487-0a22-48b3-8617-26d3539f250f")
 
 def create_voice_clone(text, ref_audio_path, ref_text, save_dir, filename):
-    """
-    Hàm này trước đây dùng để Clone kiểu cũ. 
-    Bây giờ chuyển sang dùng Full Pipeline với model RVC mặc định.
-    """
-    return create_voice_full_pipeline(text, save_dir, filename)
+    return create_voice_full_pipeline(text, save_dir, filename, profile_id="75b59968-5d03-4f45-ad03-45dc7d01e95e")
 
 if __name__ == "__main__":
-    # Xác định đường dẫn gốc
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     OUTPUT_DIR = os.path.join(BASE_DIR, 'assets', 'temp_voice')
-
-    # Tạo thư mục chứa nếu chưa tồn tại
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # --- CẤU HÌNH BÀI TEST ---
-    noi_dung_can_doc = "Chào bạn, đây là bài kiểm tra kết nối hệ thống Voicebox Studio mới nhất. Hệ thống đang chạy Full Pipeline bao gồm cả TTS và RVC."
+    noi_dung_can_doc = "Chào bạn, đây là bài kiểm tra kết nối API hệ thống Voicebox Studio mới nhất."
     ten_file_xuat = "test_voicebox.wav"
 
     print("=== BẮT ĐẦU KIỂM TRA MÁY KHÁCH GỌI MÁY CHỦ VOICEBOX STUDIO ===")
     print(f"📝 Nội dung cần đọc: {noi_dung_can_doc}\n")
 
-    # Gọi hàm mới
     kq = create_voice_full_pipeline(
         text=noi_dung_can_doc,
         save_dir=OUTPUT_DIR,
         filename=ten_file_xuat,
-        profile_id="viterbox",
-        rvc_model="models/my_voice.pth", # Thay bằng model thực tế trên server của bạn
-        rvc_pitch=0,
-        speed=1.15
+        profile_id="75b59968-5d03-4f45-ad03-45dc7d01e95e"
     )
 
     if kq:

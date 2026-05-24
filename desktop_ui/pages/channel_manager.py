@@ -55,7 +55,7 @@ class ChannelManagerPage:
         self.inp_limit.pack(side="left", padx=5)
         self.inp_limit.insert(0, "3")
 
-        self.tabs = ctk.CTkTabview(self.form_frame, height=150)
+        self.tabs = ctk.CTkTabview(self.form_frame, height=220)
         self.tabs.pack(fill="x", padx=10, pady=5)
         self.tabs.add("Vid Intro")
         self.tabs.add("Vid Content")
@@ -64,17 +64,31 @@ class ChannelManagerPage:
         self.tabs.add("Assets")
 
         # ================= KHÔI PHỤC CÁC Ô ĐIỀU CHỈNH =================
-        self.inp_intro_st = self._add_field(self.tabs.tab("Vid Intro"), "Start (s):", "2.0")
-        self.inp_intro_en = self._add_field(self.tabs.tab("Vid Intro"), "End (s):", "5.0")
-        self.inp_intro_zm = self._add_field(self.tabs.tab("Vid Intro"), "Zoom:", "1.0")
-        self.inp_intro_x  = self._add_field(self.tabs.tab("Vid Intro"), "X Offset:", "0")
-        self.inp_intro_y  = self._add_field(self.tabs.tab("Vid Intro"), "Y Offset:", "100")
+        row1_intro = ctk.CTkFrame(self.tabs.tab("Vid Intro"), fg_color="transparent"); row1_intro.pack(fill="x")
+        row2_intro = ctk.CTkFrame(self.tabs.tab("Vid Intro"), fg_color="transparent"); row2_intro.pack(fill="x", pady=(5,0))
+        
+        self.inp_intro_st = self._add_field(row1_intro, "Start (s):", "2.0")
+        self.inp_intro_en = self._add_field(row1_intro, "End (s):", "5.0")
+        self.inp_intro_zm = self._add_field(row1_intro, "Zoom:", "1.0")
+        self.inp_intro_x  = self._add_field(row1_intro, "X Offset:", "0")
+        self.inp_intro_y  = self._add_field(row1_intro, "Y Offset:", "100")
+        
+        self.inp_intro_logo_w = self._add_field(row2_intro, "Logo W %:", "0.14")
+        self.inp_intro_logo_x = self._add_field(row2_intro, "Logo X:", "main_w-overlay_w-30")
+        self.inp_intro_logo_y = self._add_field(row2_intro, "Logo Y:", "30")
 
-        self.inp_cont_st = self._add_field(self.tabs.tab("Vid Content"), "Start (s):", "10.0")
-        self.inp_cont_en = self._add_field(self.tabs.tab("Vid Content"), "End (s):", "auto")
-        self.inp_cont_zm = self._add_field(self.tabs.tab("Vid Content"), "Zoom:", "1.05")
-        self.inp_cont_x  = self._add_field(self.tabs.tab("Vid Content"), "X Offset:", "0")
-        self.inp_cont_y  = self._add_field(self.tabs.tab("Vid Content"), "Y Offset:", "-11")
+        row1_cont = ctk.CTkFrame(self.tabs.tab("Vid Content"), fg_color="transparent"); row1_cont.pack(fill="x")
+        row2_cont = ctk.CTkFrame(self.tabs.tab("Vid Content"), fg_color="transparent"); row2_cont.pack(fill="x", pady=(5,0))
+
+        self.inp_cont_st = self._add_field(row1_cont, "Start (s):", "10.0")
+        self.inp_cont_en = self._add_field(row1_cont, "End (s):", "auto")
+        self.inp_cont_zm = self._add_field(row1_cont, "Zoom:", "1.05")
+        self.inp_cont_x  = self._add_field(row1_cont, "X Offset:", "0")
+        self.inp_cont_y  = self._add_field(row1_cont, "Y Offset:", "-11")
+
+        self.inp_cont_logo_w = self._add_field(row2_cont, "Logo W %:", "0.14")
+        self.inp_cont_logo_x = self._add_field(row2_cont, "Logo X:", "main_w-overlay_w-30")
+        self.inp_cont_logo_y = self._add_field(row2_cont, "Logo Y:", "30")
 
         self.inp_txt_in_y1   = self._add_field(self.tabs.tab("Chữ Intro"), "Y Start:", "0.73")
         self.inp_txt_in_y2   = self._add_field(self.tabs.tab("Chữ Intro"), "Y End:", "0.83")
@@ -95,12 +109,19 @@ class ChannelManagerPage:
         self.font_list = self._load_local_only("font")
         self.logo_list = self._load_local_only("logo")
 
-        self.inp_frame_in = self._add_dropdown(self.tabs.tab("Assets"), "Khung Intro:", self.frame_list)
-        self.inp_frame_co = self._add_dropdown(self.tabs.tab("Assets"), "Khung Content:", self.frame_list)
-        self.inp_font     = self._add_dropdown(self.tabs.tab("Assets"), "Tên Font:", self.font_list, default="Inter_18pt-Bold.ttf")
-        self.inp_logo     = self._add_dropdown(self.tabs.tab("Assets"), "Tên Logo:", self.logo_list)
-
-        self.btn_refresh = ctk.CTkButton(self.tabs.tab("Assets"), text="🔃 ĐỒNG BỘ CLOUD", width=120, fg_color="#D97706", hover_color="#B45309", command=self.refresh_files)
+        row1_assets = ctk.CTkFrame(self.tabs.tab("Assets"), fg_color="transparent")
+        row1_assets.pack(fill="x", pady=2)
+        row2_assets = ctk.CTkFrame(self.tabs.tab("Assets"), fg_color="transparent")
+        row2_assets.pack(fill="x", pady=2)
+        
+        self.inp_frame_in = self._add_dropdown(row1_assets, "Khung Intro:", self.frame_list)
+        self.inp_frame_co = self._add_dropdown(row1_assets, "Khung Content:", self.frame_list)
+        self.inp_font     = self._add_dropdown(row1_assets, "Tên Font:", self.font_list, default="Inter_18pt-Bold.ttf")
+        
+        self.inp_logo_in  = self._add_dropdown(row2_assets, "Logo Intro:", self.logo_list)
+        self.inp_logo_co  = self._add_dropdown(row2_assets, "Logo Content:", self.logo_list)
+        
+        self.btn_refresh = ctk.CTkButton(row2_assets, text="🔃 ĐỒNG BỘ CLOUD", width=120, fg_color="#D97706", hover_color="#B45309", command=self.refresh_files)
         self.btn_refresh.pack(side="left", padx=15, pady=5)
 
         self.action_frame = ctk.CTkFrame(self.form_frame, fg_color="transparent")
@@ -190,7 +211,8 @@ class ChannelManagerPage:
         self.inp_frame_in.configure(values=self.frame_list)
         self.inp_frame_co.configure(values=self.frame_list)
         self.inp_font.configure(values=self.font_list)
-        self.inp_logo.configure(values=self.logo_list)
+        self.inp_logo_in.configure(values=self.logo_list)
+        self.inp_logo_co.configure(values=self.logo_list)
 
         self.lbl_status.configure(text=f"✅ Đã đồng bộ xong! Kiểm tra danh sách trong Terminal.", text_color="green")
         self.btn_refresh.configure(state="normal", text="🔃 ĐỒNG BỘ CLOUD")
@@ -317,7 +339,18 @@ class ChannelManagerPage:
         self._set_val(self.inp_frame_in, ast.get("title_frame_filename", ""))
         self._set_val(self.inp_frame_co, ast.get("content_frame_filename", ""))
         self._set_val(self.inp_font, txt_in.get("font_filename", "Inter_18pt-Bold.ttf"))
-        self._set_val(self.inp_logo, ast.get("logo_filename", ""))
+        
+        old_logo = ast.get("logo_filename", "")
+        self._set_val(self.inp_logo_in, ast.get("title_logo_filename", old_logo))
+        self._set_val(self.inp_logo_co, ast.get("content_logo_filename", old_logo))
+        
+        self._set_val(self.inp_intro_logo_w, ast.get("title_logo_width_percentage", 0.14))
+        self._set_val(self.inp_intro_logo_x, ast.get("title_logo_x", "main_w-overlay_w-30"))
+        self._set_val(self.inp_intro_logo_y, ast.get("title_logo_y", "30"))
+
+        self._set_val(self.inp_cont_logo_w, ast.get("content_logo_width_percentage", 0.14))
+        self._set_val(self.inp_cont_logo_x, ast.get("content_logo_x", "main_w-overlay_w-30"))
+        self._set_val(self.inp_cont_logo_y, ast.get("content_logo_y", "30"))
 
     # ================= KHÔI PHỤC HÀM SAVE HOÀN CHỈNH =================
     # ================= KHÔI PHỤC HÀM SAVE CHUẨN CÓ AUTO-FILL =================
@@ -380,6 +413,13 @@ class ChannelManagerPage:
                 widget.delete(0, 'end'); widget.insert(0, default_val)
                 return default_val
             return val
+            
+        def get_expression(widget, default_val):
+            val = widget.get().strip()
+            if not val:
+                widget.delete(0, 'end'); widget.insert(0, str(default_val))
+                return default_val
+            return val
 
         # BẮT ĐẦU ĐỌC DỮ LIỆU (CÓ ĐIỀN CỨNG MẶC ĐỊNH NẾU RỖNG)
         new_chn = {
@@ -421,7 +461,14 @@ class ChannelManagerPage:
                 "assets": {
                     "title_frame_filename": self.inp_frame_in.get(),
                     "content_frame_filename": self.inp_frame_co.get(),
-                    "logo_filename": self.inp_logo.get()
+                    "title_logo_filename": self.inp_logo_in.get(),
+                    "content_logo_filename": self.inp_logo_co.get(),
+                    "title_logo_width_percentage": get_float(self.inp_intro_logo_w, 0.14),
+                    "title_logo_x": get_expression(self.inp_intro_logo_x, "main_w-overlay_w-30"),
+                    "title_logo_y": get_expression(self.inp_intro_logo_y, "30"),
+                    "content_logo_width_percentage": get_float(self.inp_cont_logo_w, 0.14),
+                    "content_logo_x": get_expression(self.inp_cont_logo_x, "main_w-overlay_w-30"),
+                    "content_logo_y": get_expression(self.inp_cont_logo_y, "30")
                 }
             }
         }

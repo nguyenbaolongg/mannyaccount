@@ -1,3 +1,14 @@
-2026/05/14-17:10:19.277 8b115 Reusing MANIFEST /home/giang-adsup/mannyAccount/assets/ai_studio_data/showbiz124h_profile/Default/Session Storage/MANIFEST-000001
-2026/05/14-17:10:19.277 8b115 Recovering log #7
-2026/05/14-17:10:19.278 8b115 Reusing old log /home/giang-adsup/mannyAccount/assets/ai_studio_data/showbiz124h_profile/Default/Session Storage/000007.log 
+2026/05/24-17:22:09.357 2f8b0 Reusing MANIFEST /home/giang-adsup/mannyAccount/assets/ai_studio_data/showbiz124h_profile/Default/Session Storage/MANIFEST-000001
+2026/05/24-17:22:09.358 2f8b0 Recovering log #13
+2026/05/24-17:22:09.360 2f8b0 Reusing old log /home/giang-adsup/mannyAccount/assets/ai_studio_data/showbiz124h_profile/Default/Session Storage/000013.log 
+2026/05/24-17:22:13.902 2f8b5 Level-0 table #17: started
+2026/05/24-17:22:13.907 2f8b5 Level-0 table #17: 13726 bytes OK
+2026/05/24-17:22:13.910 2f8b5 Delete type=0 #13
+2026/05/24-17:22:13.910 2f8b5 Compacting 4@0 + 0@1 files
+2026/05/24-17:22:13.913 2f8b5 Generated table #18@0: 898 keys, 21951 bytes
+2026/05/24-17:22:13.914 2f8b5 Compacted 4@0 + 0@1 files => 21951 bytes
+2026/05/24-17:22:13.915 2f8b5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/24-17:22:13.916 2f8b5 Delete type=2 #7
+2026/05/24-17:22:13.916 2f8b5 Delete type=2 #11
+2026/05/24-17:22:13.916 2f8b5 Delete type=2 #17
+2026/05/24-17:22:13.917 2f8b5 Delete type=2 #14

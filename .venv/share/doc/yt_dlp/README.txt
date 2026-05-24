@@ -501,7 +501,7 @@ General Options:
                                     (default)
     --live-from-start               Download livestreams from the start.
                                     Currently experimental and only supported
-                                    for YouTube and Twitch
+                                    for YouTube, Twitch, and TVer
     --no-live-from-start            Download livestreams from the current time
                                     (default)
     --wait-for-video MIN[-MAX]      Wait for scheduled streams to become
@@ -2312,24 +2312,25 @@ youtube
     respectively
 -   player_client: Clients to extract video data from. The currently
     available clients are web, web_safari, web_embedded, web_music,
-    web_creator, mweb, ios, ios_downgraded, android, android_vr, tv,
-    tv_simply, tv_downgraded, and tv_embedded. By default,
-    android_vr,ios_downgraded,web,web_safari is used. If no JavaScript
-    runtime/engine is available, then android_vr,ios_downgraded is used.
-    If logged-in cookies are passed to yt-dlp, then
-    tv_downgraded,web,web_safari is used for free accounts and
-    tv_downgraded,web_creator,web is used for premium accounts. The
+    web_creator, mweb, ios, android, android_vr, tv, tv_downgraded, and
+    tv_simply. By default, android_vr,web_safari is used. If no
+    JavaScript runtime/engine is available, then only android_vr is
+    used. If logged-in cookies are passed to yt-dlp, then
+    tv_downgraded,web_safari is used for free accounts and
+    tv_downgraded,web_creator is used for premium accounts. The
     web_music client is added for music.youtube.com URLs when logged-in
     cookies are used. The web_embedded client is added for
-    age-restricted videos but only works if the video is embeddable. The
-    tv_embedded and web_creator clients are added for age-restricted
-    videos if account age-verification is required. Some clients, such
-    as web and web_music, require a po_token for their formats to be
-    downloadable. Some clients, such as web_creator, will only work with
+    age-restricted videos but only successfully works around the
+    age-restriction sometimes (e.g. if the video is embeddable), and may
+    be added as a fallback if android_vr is unable to access a video.
+    The web_creator client is added for age-restricted videos if account
+    age-verification is required. Some clients, such as web_creator and
+    web_music, require a po_token for their formats to be downloadable.
+    Some clients, such as web_creator, will only work with
     authentication. Not all clients support authentication via cookies.
     You can use default for the default clients, or you can use all for
     all clients (not recommended). You can prefix a client with - to
-    exclude it, e.g. youtube:player_client=default,-ios
+    exclude it, e.g. youtube:player_client=default,-web_safari
 -   player_skip: Skip some network requests that are generally needed
     for robust extraction. One or more of configs (skip client configs),
     webpage (skip initial webpage), js (skip js player), initial_data
@@ -2339,18 +2340,23 @@ youtube
     #860 and #12826 for more details
 -   webpage_skip: Skip extraction of embedded webpage data. One or both
     of player_response, initial_data. These options are for testing
-    purposes and don't skip any network requests
+    purposes and don't skip any network requests. Neither is skipped by
+    default; however, if a player_js_version value other than actual is
+    used, then webpage_skip=player_response is implied
+-   webpage_client: Client to use for the video webpage request. One of
+    web or web_safari (default)
 -   player_params: YouTube player parameters to use for player requests.
     Will overwrite any default ones set by yt-dlp.
 -   player_js_variant: The player javascript variant to use for n/sig
-    deciphering. The known variants are: main, tcc, tce, es5, es6, tv,
-    tv_es6, phone, tablet. The default is main, and the others are for
-    debugging purposes. You can use actual to go with what is prescribed
-    by the site
+    deciphering. The known variants are: main, tcc, tce, es5, es6,
+    es6_tcc, es6_tce, tv, tv_es6, phone, house. The default is main, and
+    the others are for debugging purposes. You can use actual to go with
+    what is prescribed by the site
 -   player_js_version: The player javascript version to use for n/sig
     deciphering, in the format of signature_timestamp@hash (e.g.
     20348@0004de42). The default is to use what is prescribed by the
-    site, and can be selected with actual
+    site, and can be selected with actual. Using any other value will
+    imply webpage_skip=player_response
 -   comment_sort: top or new (default) - choose comment sorting mode (on
     YouTube's side)
 -   max_comments: Limit the amount of comments to gather.
@@ -2367,8 +2373,9 @@ youtube
 -   formats: Change the types of formats to return. dashy (convert HTTP
     to DASH), duplicate (identical content but different URLs or
     protocol; includes dashy), incomplete (cannot be downloaded
-    completely - live dash and post-live m3u8), missing_pot (include
-    formats that require a PO Token but are missing one)
+    completely - live dash, live adaptive https, and post-live m3u8),
+    missing_pot (include formats that require a PO Token but are missing
+    one)
 -   innertube_host: Innertube API host to use for all API requests; e.g.
     studio.youtube.com, youtubei.googleapis.com. Note that cookies
     exported from one subdomain will not work on others
@@ -2401,8 +2408,8 @@ youtube
 -   use_ad_playback_context: Skip preroll ads to eliminate the mandatory
     wait period before download. Do NOT use this when passing premium
     account cookies to yt-dlp, as it will result in a loss of premium
-    formats. Only effective with the web, web_safari, web_music and mweb
-    player clients. Either true or false (default)
+    formats. Only effective with the mweb and web_music player clients.
+    Either true or false (default)
 
 youtube-ejs
 
@@ -2922,9 +2929,8 @@ New features
 
     -   Supports Clips, Stories (ytstories:<channel UCID>), Search
         (including filters)*, YouTube Music Search, Channel-specific
-        search, Search prefixes (ytsearch:, ytsearchdate:)*, Mixes, and
-        Feeds (:ytfav, :ytwatchlater, :ytsubs, :ythistory, :ytrec,
-        :ytnotif)
+        search, Search prefix (ytsearch:)*, Mixes, and Feeds (:ytfav,
+        :ytwatchlater, :ytsubs, :ythistory, :ytrec, :ytnotif)
     -   Fix for n-sig based throttling *
     -   Download livestreams from the start using --live-from-start
         (experimental)
