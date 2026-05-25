@@ -48,6 +48,18 @@ def update_final_result(script_url, row_idx, drive_link):
     result = safe_post_json(script_url, payload)
     return result.get("status") == "success" if result else False
 
+def update_source_link(script_url, row_idx, link):
+    """
+    Cập nhật link gốc Tiktok vào Cột A của dòng đã có.
+    """
+    payload = {
+        "action": "update_link", 
+        "row": int(row_idx),
+        "link": str(link)
+    }
+    result = safe_post_json(script_url, payload)
+    return result.get("status") == "success" if result else False
+
 def update_voice_links(sheet_url, row, title_voice_link, content_voice_link):
 
     try:
@@ -159,7 +171,12 @@ def get_latest_row_by_id(sheet_url, tiktok_id):
             print("⚠️ Google Sheet không phản hồi hoặc trả về nội dung rỗng.")
             return None
 
-        data_json = res.json()
+        try:
+            data_json = res.json()
+        except Exception as e:
+            print(f"🔥 Lỗi đọc JSON (API Script có thể bị lỗi cú pháp hoặc sai quyền): {res.text[:500]}")
+            return None
+
         if data_json.get("status") != "success":
             return None
 

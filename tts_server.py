@@ -1,15 +1,13 @@
 import os
+import requests
 import threading
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
-from vieneu import Vieneu
-from vieneu_utils.core_utils import split_text_into_chunks, join_audio_chunks
 
 app = FastAPI()
 
-print("⏳ Đang khởi động TTS Server (Bản Bất Tử)...")
-tts = Vieneu()
+print("⏳ Đang khởi động TTS Server Proxy (Chuyển tiếp qua Voicebox Studio)...")
 print("✅ TTS Server đã sẵn sàng nhận lệnh tại cổng 8000!")
 
 tts_lock = threading.Lock()
@@ -19,6 +17,15 @@ class TTSRequest(BaseModel):
     ref_audio_path: str = None
     ref_text: str = None
     save_path: str
+    
+    # Cấu hình mặc định theo yêu cầu RVC mới
+    profile_id: str = "53b4b81a-959c-4fc0-b6d0-bdfc9f685cf5"
+    engine: str = "viterbox"
+    run_rvc: bool = True
+    rvc_model_path: str = "voices/847040/model.pth"
+    rvc_index_path: str = ""
+    rvc_pitch: int = 0
+    rvc_f0_method: str = "rmvpe"
 
 @app.post("/v1/generate")
 def generate_audio(req: TTSRequest):
@@ -27,52 +34,33 @@ def generate_audio(req: TTSRequest):
             print(f"📥 Đang nhận bài: '{req.text[:40]}...'")
             os.makedirs(os.path.dirname(req.save_path), exist_ok=True)
 
-            # 1. Dùng bộ lọc chuẩn hóa xịn của Web
-            clean_text = tts.normalizer.normalize(req.text)
+            # Chuyển tiếp payload sang Voicebox Studio API (cổng 8081)
+            payload = {
+                "text": req.text,
+                "profile_id": req.profile_id,
+                "engine": req.engine,
+                "run_rvc": req.run_rvc,
+                "rvc_model_path": req.rvc_model_path,
+                "rvc_index_path": req.rvc_index_path,
+                "rvc_pitch": req.rvc_pitch,
+                "rvc_f0_method": req.rvc_f0_method,
+                "normalize": True,       # Ép chuẩn hóa âm lượng TRƯỚC khi đưa vào RVC (giống main.py)
+                "run_enhance": False     # Tắt bộ lọc Enhance kép vì broadcast_mastering đã làm quá tốt, bật lên sẽ làm tiếng bị nghẹt
+            }
 
-            # 2. Băm nhỏ bằng thuật toán của Web
-            chunks = split_text_into_chunks(clean_text, max_chars=120)
-            print(f"🔪 Đã tự băm thành {len(chunks)} đoạn ngắn để tránh ngộp AI.")
-
-            all_wavs = []
-
-            for i, chunk in enumerate(chunks):
-                chunk_wav = None
-
-                # 3. CƠ CHẾ BẢO HIỂM: Thử lại 3 lần cho mỗi câu
-                for attempt in range(3):
-                    tweak_chunk = chunk
-                    if attempt == 1: tweak_chunk = chunk + ","
-                    if attempt == 2: tweak_chunk = chunk + " ."
-
-                    try:
-                        # max_chars=500 để tắt tính năng tự băm ngầm của hàm infer
-                        wav = tts.infer(
-                            text=tweak_chunk,
-                            ref_audio=req.ref_audio_path,
-                            ref_text=req.ref_text,
-                            max_chars=500,
-                            temperature=0.8 # Khóa nhiệt độ để tránh AI ảo giác
-                        )
-                        chunk_wav = wav
-                        print(f"   ✅ Đọc xong đoạn {i+1}/{len(chunks)}")
-                        break # Thành công thì thoát vòng lặp Retry
-                    except Exception as e:
-                        if attempt == 2:
-                            print(f"   ⚠️ Lỗi dị biệt ở đoạn {i+1}. Bỏ qua để giữ 1 giọng!")
-
-                if chunk_wav is not None and len(chunk_wav) > 0:
-                    all_wavs.append(chunk_wav)
-
-            if not all_wavs:
-                raise Exception("AI bó tay toàn tập. Hãy kiểm tra lại File giọng mẫu (voice.wav)!")
-
-            # 4. Khâu lại bằng thuật toán mượt mà của Web
-            final_wav = join_audio_chunks(all_wavs, tts.sample_rate, silence_p=0.2, crossfade_p=0.0)
-
-            tts.save(final_wav, req.save_path)
-            print(f"   🎉 Đã xuất file hoàn chỉnh: {os.path.basename(req.save_path)}\n")
-            return {"status": "success", "file": req.save_path}
+            SERVER_URL = "http://127.0.0.1:8081/generate/full-pipeline"
+            
+            print(f"🚀 Đang gửi yêu cầu sinh giọng RVC cho: '{req.text[:30]}...'")
+            res = requests.post(SERVER_URL, json=payload, timeout=1800)
+            
+            if res.status_code == 200:
+                with open(req.save_path, "wb") as f:
+                    f.write(res.content)
+                print(f"   🎉 Đã xuất file hoàn chỉnh: {os.path.basename(req.save_path)}\n")
+                return {"status": "success", "file": req.save_path}
+            else:
+                print(f"   ❌ Voicebox Server báo lỗi ({res.status_code}): {res.text}\n")
+                return {"status": "error", "message": f"Server error {res.status_code}: {res.text}"}
 
         except Exception as e:
             print(f"   ❌ Lỗi Server: {e}\n")

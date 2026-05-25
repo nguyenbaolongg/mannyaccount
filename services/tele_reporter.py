@@ -55,12 +55,12 @@ class TeleReporter:
 
         # ================= TẠO NỘI DUNG TIN NHẮN =================
         total_videos = 0
-        msg = f"🟢 **BÁO CÁO MÁY {machine_id} (Đợt {schedule_time})**\n"
+        msg = f"🟢 <b>BÁO CÁO MÁY {machine_id} (Đợt {schedule_time})</b>\n"
         msg += f"Thời gian: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n"
         msg += "-"*30 + "\n"
 
         for tiktok_id, channels in stats.items():
-            msg += f"👤 **{tiktok_id}**\n"
+            msg += f"👤 <b>{tiktok_id}</b>\n"
             for url, count in channels.items():
                 short_url = url.split('@')[-1] if '@' in url else url
                 msg += f" ├ 📺 @{short_url}: {count} video\n"
@@ -68,7 +68,7 @@ class TeleReporter:
             msg += "\n"
 
         msg += "-"*30 + "\n"
-        msg += f"🎉 **TỔNG CỘNG: {total_videos} VIDEO**"
+        msg += f"🎉 <b>TỔNG CỘNG: {total_videos} VIDEO</b>"
 
         url = f"https://api.telegram.org/bot{token}/sendMessage"
 
@@ -80,7 +80,7 @@ class TeleReporter:
             payload = {
                 "chat_id": cid,
                 "text": msg,
-                "parse_mode": "Markdown"
+                "parse_mode": "HTML"
             }
             try:
                 res = requests.post(url, json=payload)
@@ -118,8 +118,8 @@ def test_telegram_connection(bot_token, chat_ids):
     for cid in list_chat_ids:
         payload = {
             "chat_id": cid,
-            "text": "🟢 **TEST KẾT NỐI THÀNH CÔNG!**\nHệ thống MATRIX BOT đã liên kết chuẩn xác với Telegram của bạn 🚀",
-            "parse_mode": "Markdown"
+            "text": "🟢 <b>TEST KẾT NỐI THÀNH CÔNG!</b>\nHệ thống MATRIX BOT đã liên kết chuẩn xác với Telegram của bạn 🚀",
+            "parse_mode": "HTML"
         }
 
         try:

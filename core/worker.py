@@ -31,7 +31,7 @@ try:
     from modules.ai_studio_uploader import upload_worker
     from modules.video_remix import create_video_from_source_video
     from modules.upload_drive import upload_video_to_drive
-    from services.sheet_api import get_latest_row_by_id, update_final_result, update_voice_links
+    from services.sheet_api import get_latest_row_by_id, update_final_result, update_voice_links, update_source_link
     from services.tts_api import create_voice_default, create_voice_clone, create_voice_full_pipeline
     from services.supabase_api import SupabaseAPI
 except ImportError as e:
@@ -153,9 +153,15 @@ def run_worker_process(account_id):
                 break
 
             ctx.logger.info(f"▶️ BẮT ĐẦU VIDEO: {vid_url}")
+            clean_tid = tiktok_id.replace("@", "").strip()
+            
+
+
             try:
                 paths = download_tiktok_video(vid_url, ctx.temp_dir)
                 if not paths: continue
+
+                # (Đã di chuyển phần update link lên Google Sheet xuống phía dưới, sau khi AI Studio chạy xong)
 
                 clean_tid = tiktok_id.replace("@", "").strip()
                 up_path = paths['ai_studio']

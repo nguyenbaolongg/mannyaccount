@@ -1,0 +1,240 @@
+[32mINFO[0m:     CUDA_HOME set to /usr, binary path updated.
+[32mINFO[0m:     Frontend: serving SPA from /home/giang-adsup/Documents/voice/voiceHA_Long_Hung/frontend/dist
+[32mINFO[0m:     CUDA detected: Using stable non-cuDNN path with TF32 enabled.
+VietnameseNormalizer: Loaded 7184 syllables.
+INFO:     Started server process [1751605]
+INFO:     Waiting for application startup.
+[32mINFO[0m:     Voicebox v0.3.1 starting up
+[32mINFO[0m:     Python 3.12.3 on Linux 6.17.0-29-generic (x86_64)
+[32mINFO[0m:     Database: /home/giang-adsup/Documents/voice/voiceHA_Long_Hung/data/voicebox.db
+[32mINFO[0m:     Data directory: /home/giang-adsup/Documents/voice/voiceHA_Long_Hung/data
+[32mINFO[0m:     Profiles: 13, Generations: 231
+[33mWARNING[0m:     Could not clean up stale generations: (sqlite3.IntegrityError) UNIQUE constraint failed: profiles.name
+[SQL: UPDATE profiles SET name=?, description=?, voice_type=?, preset_engine=?, preset_voice_id=?, updated_at=? WHERE profiles.id = ?]
+[parameters: ('Giọng Nữ TikTok', 'Giọng nữ TikTok hệ thống', 'preset', 'viterbox', 'Giong_nu_tiktok', '2026-05-25 03:15:42.458180', 'cd9a528f-1cd7-403b-915d-8ef1e3613211')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[32mINFO[0m:     Backend: PYTORCH
+[32mINFO[0m:     GPU: CUDA (NVIDIA GeForce RTX 3090)
+[32mINFO[0m:     Model cache: /home/giang-adsup/.cache/huggingface/hub
+[32mINFO[0m:     Ready
+[32mINFO[0m:     Pre-loading default TTS engine (ViterboxTTSBackend)...
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files: 100%|██████████| 3/3 [00:00<00:00, 11826.05it/s]
+[32mINFO[0m:     Loading Viterbox model on cuda...
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 58092.85it/s]
+/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+[32mINFO[0m:     input frame rate=25
+[32mINFO[0m:     Viterbox model loaded successfully.
+[32mINFO[0m:     Default TTS engine pre-loaded.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+[32mINFO[0m:     Pipeline: normalized text -> Xin chào. Đây là đoạn âm thanh thử nghiệm để kiểm tra xem hệ thống đã gọi thành công tới máy chủ Voicebox cổng 8082 hay chưa.
+[32mINFO[0m:     Chunks: 2
+LlamaModel is using LlamaSdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+DEBUG: [Chunk 0] Xin chào.
+DEBUG: [Chunk 1] Đây là đoạn âm thanh thử nghiệm để kiểm tra xem hệ thống đã gọi thành công tới máy chủ Voicebox cổng 8082 hay chưa.
+SYNTHESIZING: [Chunk 0] (9 chars) -> 'Xin chào....'
+  [1/1] Xin chào....
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+Sampling:   0%|          | 1/1000 [00:00<02:12,  7.55it/s]Sampling:   0%|          | 3/1000 [00:00<01:20, 12.31it/s]Sampling:   1%|          | 6/1000 [00:00<00:58, 17.13it/s]Sampling:   1%|          | 9/1000 [00:00<00:52, 19.01it/s]Sampling:   1%|          | 12/1000 [00:00<00:48, 20.57it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:45, 21.43it/s]Sampling:   2%|▏         | 18/1000 [00:00<00:44, 21.95it/s]Sampling:   2%|▏         | 21/1000 [00:01<00:44, 22.19it/s]Sampling:   2%|▏         | 22/1000 [00:01<00:48, 20.11it/s]
+COMPLETE: [Chunk 0] Final samples: 19680
+SYNTHESIZING: [Chunk 1] (115 chars) -> 'Đây là đoạn âm thanh thử nghiệ...'
+  [1/1] Đây là đoạn âm thanh thử nghiệm để kiểm tra xem hệ...
+Sampling:   0%|          | 0/1000 [00:00<?, ?it/s]Sampling:   0%|          | 3/1000 [00:00<00:42, 23.25it/s]Sampling:   1%|          | 6/1000 [00:00<00:42, 23.27it/s]Sampling:   1%|          | 9/1000 [00:00<00:43, 22.97it/s]Sampling:   1%|          | 12/1000 [00:00<00:42, 23.26it/s]Sampling:   2%|▏         | 15/1000 [00:00<00:41, 23.47it/s]Sampling:   2%|▏         | 18/1000 [00:00<00:42, 23.19it/s]Sampling:   2%|▏         | 21/1000 [00:00<00:42, 23.16it/s]Sampling:   2%|▏         | 24/1000 [00:01<00:42, 22.94it/s]Sampling:   3%|▎         | 27/1000 [00:01<00:42, 23.00it/s]Sampling:   3%|▎         | 30/1000 [00:01<00:41, 23.26it/s]Sampling:   3%|▎         | 33/1000 [00:01<00:42, 23.01it/s]Sampling:   4%|▎         | 36/1000 [00:01<00:41, 22.98it/s]Sampling:   4%|▍         | 39/1000 [00:01<00:41, 23.07it/s]Sampling:   4%|▍         | 42/1000 [00:01<00:41, 23.24it/s]Sampling:   4%|▍         | 45/1000 [00:01<00:41, 23.14it/s]Sampling:   5%|▍         | 48/1000 [00:02<00:41, 23.01it/s]Sampling:   5%|▌         | 51/1000 [00:02<00:41, 22.79it/s]Sampling:   5%|▌         | 54/1000 [00:02<00:41, 22.82it/s]Sampling:   6%|▌         | 57/1000 [00:02<00:41, 22.82it/s]Sampling:   6%|▌         | 60/1000 [00:02<00:41, 22.90it/s]Sampling:   6%|▋         | 63/1000 [00:02<00:41, 22.75it/s]Sampling:   7%|▋         | 66/1000 [00:02<00:41, 22.70it/s]Sampling:   7%|▋         | 69/1000 [00:02<00:40, 22.87it/s]Sampling:   7%|▋         | 72/1000 [00:03<00:40, 23.00it/s]Sampling:   8%|▊         | 75/1000 [00:03<00:40, 23.02it/s]Sampling:   8%|▊         | 78/1000 [00:03<00:40, 22.69it/s]Sampling:   8%|▊         | 81/1000 [00:03<00:40, 22.64it/s]Sampling:   8%|▊         | 84/1000 [00:03<00:40, 22.78it/s]Sampling:   9%|▊         | 87/1000 [00:03<00:39, 23.16it/s]Sampling:   9%|▉         | 90/1000 [00:03<00:39, 23.30it/s]Sampling:   9%|▉         | 93/1000 [00:04<00:39, 23.05it/s]Sampling:  10%|▉         | 96/1000 [00:04<00:39, 22.98it/s]Sampling:  10%|▉         | 99/1000 [00:04<00:38, 23.13it/s]Sampling:  10%|█         | 102/1000 [00:04<00:38, 23.27it/s]Sampling:  10%|█         | 105/1000 [00:04<00:38, 23.38it/s]Sampling:  11%|█         | 108/1000 [00:04<00:38, 23.17it/s]Sampling:  11%|█         | 111/1000 [00:04<00:38, 23.13it/s]Sampling:  11%|█▏        | 114/1000 [00:04<00:38, 23.22it/s]Sampling:  12%|█▏        | 117/1000 [00:05<00:37, 23.34it/s]Sampling:  12%|█▏        | 120/1000 [00:05<00:37, 23.32it/s]Sampling:  12%|█▏        | 123/1000 [00:05<00:37, 23.21it/s]Sampling:  13%|█▎        | 126/1000 [00:05<00:37, 23.13it/s]Sampling:  13%|█▎        | 129/1000 [00:05<00:37, 23.22it/s]Sampling:  13%|█▎        | 132/1000 [00:05<00:36, 23.48it/s]Sampling:  14%|█▎        | 135/1000 [00:05<00:36, 23.61it/s]Sampling:  14%|█▍        | 138/1000 [00:05<00:36, 23.46it/s]Sampling:  14%|█▍        | 141/1000 [00:06<00:36, 23.30it/s]Sampling:  14%|█▍        | 144/1000 [00:06<00:36, 23.27it/s]Sampling:  15%|█▍        | 147/1000 [00:06<00:36, 23.42it/s]Sampling:  15%|█▍        | 149/1000 [00:06<00:36, 23.13it/s]
+[32mINFO[0m:     RVC: running VOICEBOX_RVC_SHELL
+[32mINFO[0m:     RVC Shell Output: Using HiFi-GAN vocoder
+Converting audio '/tmp/tmpzq4x4wbd.wav'...
+Conversion completed at '/tmp/rvc_raw_0x0s1jqx.wav' in 4.22 seconds.
+
+[33mWARNING[0m:     RVC Shell Error: 
+Loading weights:   0%|          | 0/213 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 213/213 [00:00<00:00, 20458.61it/s]
+
+[32mINFO[0m:     RVC: Preserving full audio length.
+[32mINFO[0m:     RVC Minimal Mastering (EQ + De-hum + Trim) Applied.
+/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/pyloudnorm/normalize.py:62: UserWarning: Possible clipped samples in output.
+  warnings.warn("Possible clipped samples in output.")
+[32mINFO[0m:     Pipeline: Applied Terminal-grade Mastering (Dry/Wet 0.20 + Clarity Boost).
+COMPLETE: [Chunk 1] Final samples: 141600
+INFO:     127.0.0.1:55360 - "POST /generate/full-pipeline HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 56, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 87, in __call__
+    await self.app(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/routes/generations.py", line 396, in full_pipeline_speech
+    tmp_out_path, meta = await pipeline_service.run_full_pipeline(db, data)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/services/pipeline_service.py", line 276, in run_full_pipeline
+    em = await asyncio.to_thread(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/services/enhancer_service.py", line 154, in run_enhance_pipeline
+    run_resemble_enhance(
+  File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/services/audio_extras.py", line 42, in run_resemble_enhance
+    from resemble_enhance.enhancer.inference import denoise, enhance
+ModuleNotFoundError: No module named 'resemble_enhance'
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32mINFO[0m:     Voicebox server shutting down...
+[32mINFO[0m:     CRITICAL TELEMETRY: tts.unload_tts_model() called. Stack trace:
+[32mINFO[0m:     File "<frozen runpy>", line 198, in _run_module_as_main
+[32mINFO[0m:     File "<frozen runpy>", line 88, in _run_code
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/main.py", line 45, in <module>
+    uvicorn.run(
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/main.py", line 617, in run
+    server.run()
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+[32mINFO[0m:     File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+[32mINFO[0m:     File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py", line 86, in main
+    await app(scope, self.receive, self.send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 29, in __call__
+    return await self.app(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 79, in __call__
+    await self.app(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 49, in __call__
+    await self.app(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 725, in app
+    await self.lifespan(scope, receive, send)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/starlette/routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/usr/lib/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 244, in __aexit__
+    await self._router._shutdown()
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 4900, in _shutdown
+    await handler()
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/app.py", line 419, in shutdown_event
+    tts.unload_tts_model()
+[32mINFO[0m:     File "/home/giang-adsup/Documents/voice/voiceHA_Long_Hung/backend/services/tts.py", line 29, in unload_tts_model
+    for line in traceback.format_stack():
+[32mINFO[0m:     CUDA detected: Using stable non-cuDNN path with TF32 enabled.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1751605]

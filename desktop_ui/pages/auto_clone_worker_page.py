@@ -28,7 +28,7 @@ try:
     from modules.ai_studio_uploader import upload_worker
     from modules.video_remix import create_video_from_source_video
     from modules.upload_drive import upload_video_to_drive
-    from services.sheet_api import get_latest_row_by_id, update_final_result
+    from services.sheet_api import get_latest_row_by_id, update_final_result, update_source_link, save_to_sheet
     from services.tele_reporter import TeleReporter
 except ImportError as e:
     print(f"⚠️ Lỗi Import thư viện: {e}")
@@ -191,8 +191,13 @@ class AutoCloneWorkerPage:
 
             # 3. Tải Video gốc vào thư mục CÁCH LY (task_temp_dir)
             self.log(f"📥 [2/6] Đang tải TikTok: {vid_url}")
+            
+
+
             paths = download_tiktok_video(vid_url, task_temp_dir)
             if not paths: raise Exception("Lỗi tải video TikTok.")
+            
+            # (Đã di chuyển phần update link lên Google Sheet xuống phía dưới, sau khi AI Studio chạy xong)
 
             self.log("🤖 [3/6] Đang Upload AI Studio (manual_shared_profile)...")
             acc_payload = {

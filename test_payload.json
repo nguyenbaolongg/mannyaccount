@@ -1,0 +1,8 @@
+{
+  "text": "Nội dung cần đọc...",
+  "profile_id": "847040",
+  "engine": "viterbox",
+  "run_rvc": true,
+  "rvc_model_path": "voices/847040/model.pth",
+  "rvc_index_path": "voices/847040/model.index"
+}
