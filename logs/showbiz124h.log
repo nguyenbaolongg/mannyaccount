@@ -2528,3 +2528,852 @@
 2026-05-25 12:12:19,964 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643606124830199061
 2026-05-25 12:12:24,967 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
 2026-05-25 12:12:24,967 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 14:00:04,874 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-25 14:00:05,076 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-25 14:00:07,826 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643612719802846485
+2026-05-25 14:04:30,238 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643640401798139154
+2026-05-25 14:08:58,326 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:08:58,327 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 14:08:58,328 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 14:08:58,328 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:09:27,144 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:09:27,665 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643640401798139154
+2026-05-25 14:09:32,669 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643644751010499860
+2026-05-25 14:15:09,204 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:15:09,205 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 14:15:09,205 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 14:15:09,205 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:15:40,090 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:15:41,123 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643644751010499860
+2026-05-25 14:15:46,132 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-25 14:15:48,164 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7642656682111143175
+2026-05-25 14:20:19,301 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:20:19,302 [INFO]    ✅ Đã có file 'SHOWBIZ.png' trong máy.
+2026-05-25 14:20:19,302 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 14:20:19,302 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:20:49,775 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:20:50,657 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28.showbiz/video/7642656682111143175
+2026-05-25 14:20:55,660 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-25 14:20:55,660 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 14:20:55,660 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 15:00:03,242 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-25 15:00:03,413 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-25 15:00:06,213 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643646499645164818
+2026-05-25 15:07:29,956 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:07:29,956 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 15:07:29,957 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 15:07:29,957 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:08:04,570 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:08:05,171 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643646499645164818
+2026-05-25 15:08:10,176 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643653360779889927
+2026-05-25 15:13:08,372 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:13:08,373 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 15:13:08,373 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 15:13:08,374 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:13:35,302 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:13:35,875 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643653360779889927
+2026-05-25 15:13:40,879 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643659477933133063
+2026-05-25 15:17:16,782 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:17:16,783 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 15:17:16,783 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 15:17:16,783 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:17:44,164 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:17:44,755 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643659477933133063
+2026-05-25 15:17:49,757 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 15:17:49,758 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 20:00:03,795 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-25 20:00:03,977 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-25 20:00:06,483 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643685936722758933
+2026-05-25 20:07:00,288 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:07:00,289 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 20:07:00,290 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 20:07:00,290 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:07:31,248 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:07:31,910 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643685936722758933
+2026-05-25 20:07:36,915 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643687411519638792
+2026-05-25 20:14:01,439 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:14:01,441 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 20:14:01,442 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 20:14:01,442 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:14:32,495 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:14:33,737 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643687411519638792
+2026-05-25 20:14:38,742 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643688374548712711
+2026-05-25 20:20:46,707 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:20:46,707 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 20:20:46,708 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 20:20:46,708 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:21:17,365 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:21:18,490 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643688374548712711
+2026-05-25 20:21:23,494 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 20:21:23,495 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 22:00:04,008 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-25 22:00:04,178 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-25 22:00:07,612 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643755765932559636
+2026-05-25 22:07:50,978 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:07:50,980 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 22:07:50,980 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 22:07:50,980 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:08:22,243 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:08:22,727 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643755765932559636
+2026-05-25 22:08:27,730 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643758545330113800
+2026-05-25 22:14:06,667 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:14:06,668 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 22:14:06,668 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 22:14:06,669 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:14:32,354 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:14:32,968 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643758545330113800
+2026-05-25 22:14:37,972 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643761000897989895
+2026-05-25 22:20:58,471 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:20:58,472 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-25 22:20:58,472 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-25 22:20:58,473 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:21:32,295 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:21:32,825 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643761000897989895
+2026-05-25 22:21:37,829 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 22:21:37,830 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 07:00:04,462 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 07:00:04,630 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 07:00:06,516 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643805341783821588
+2026-05-26 07:02:17,936 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:02:22,938 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643805459341790485
+2026-05-26 07:04:35,509 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:04:40,512 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643812472406740240
+2026-05-26 07:06:46,938 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:06:51,940 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-26 07:06:53,146 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643013442382662929
+2026-05-26 07:09:03,178 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:09:08,180 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643067538909285653
+2026-05-26 07:11:19,086 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:11:24,088 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643071429982063880
+2026-05-26 07:13:44,206 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:13:49,209 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@123heronews (Lấy tối đa 3 video)
+2026-05-26 07:13:50,269 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:00:04,447 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 09:00:04,626 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 09:00:06,174 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643812472406740240
+2026-05-26 09:02:14,712 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:02:19,713 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643813498245401873
+2026-05-26 09:05:03,422 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:05:08,425 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643818244058533121
+2026-05-26 09:07:19,241 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:07:24,242 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-26 09:07:25,523 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643013442382662929
+2026-05-26 09:09:33,337 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:09:38,339 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643067538909285653
+2026-05-26 09:17:23,266 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 09:17:23,452 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 09:17:25,063 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643818244058533121
+2026-05-26 09:20:58,550 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:20:58,550 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 09:20:58,550 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 09:20:58,551 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:21:24,000 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:21:24,792 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643818244058533121
+2026-05-26 09:21:29,798 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643760497480781064
+2026-05-26 09:25:41,259 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:25:41,260 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 09:25:41,260 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 09:25:41,260 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:26:14,224 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:26:15,467 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643760497480781064
+2026-05-26 09:26:20,472 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643803592633175304
+2026-05-26 09:30:26,710 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:30:26,711 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 09:30:26,711 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 09:30:26,711 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:30:56,720 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:30:57,663 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643803592633175304
+2026-05-26 09:31:02,667 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 09:31:02,667 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 12:53:57,853 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 12:53:58,041 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 12:53:59,643 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643976295713410325
+2026-05-26 12:56:35,181 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 12:56:40,182 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643979789832899860
+2026-05-26 13:01:23,648 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 13:01:23,816 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 13:01:25,809 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643976295713410325
+2026-05-26 13:03:12,761 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 13:03:17,763 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643979789832899860
+2026-05-26 13:22:21,862 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 13:22:22,018 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 13:22:23,588 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643976295713410325
+2026-05-26 13:24:56,842 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:01,859 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7642656682111143175
+2026-05-26 13:25:01,864 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:06,866 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7642662671770340615
+2026-05-26 13:25:06,866 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:11,870 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@123heronews (Lấy tối đa 3 video)
+2026-05-26 13:25:11,871 [ERROR]    ⚠️ Lỗi quét video: [Errno 5] Input/output error
+2026-05-26 13:25:11,872 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-26 13:29:08,885 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:29:08,887 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 13:29:08,887 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 13:29:08,887 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:29:13,889 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643979789832899860
+2026-05-26 13:30:46,912 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643990429993831701
+2026-05-26 13:35:10,480 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-26 13:35:11,704 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643013442382662929
+2026-05-26 14:11:49,516 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 14:11:49,679 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 14:11:51,476 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643979789832899860
+2026-05-26 14:17:28,824 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:17:28,825 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 14:17:28,825 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 14:17:28,825 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:18:04,211 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:18:04,704 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7643979789832899860
+2026-05-26 14:18:09,708 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7643990429993831701
+2026-05-26 14:22:33,563 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644001477081435413
+2026-05-26 14:27:38,958 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:27:38,959 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 14:27:38,959 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 14:27:38,959 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:28:06,480 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:28:07,160 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644001477081435413
+2026-05-26 14:28:12,165 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-26 14:28:13,756 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643067538909285653
+2026-05-26 14:29:57,139 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7643071429982063880
+2026-05-26 14:33:36,303 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:33:36,305 [INFO]    ✅ Đã có file 'SHOWBIZ.png' trong máy.
+2026-05-26 14:33:36,305 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 14:33:36,305 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:34:13,529 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:34:15,049 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28.showbiz/video/7643071429982063880
+2026-05-26 14:34:20,053 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-26 14:34:20,053 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 14:34:20,054 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 15:00:03,955 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 15:00:04,132 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 15:00:05,896 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644017798955502868
+2026-05-26 15:06:43,826 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:06:43,827 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 15:06:43,827 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 15:06:43,828 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:07:19,421 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:07:19,905 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644017798955502868
+2026-05-26 15:07:24,910 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644020078987545877
+2026-05-26 15:14:07,910 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:14:07,911 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 15:14:07,911 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 15:14:07,911 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:14:46,712 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:14:47,263 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644020078987545877
+2026-05-26 15:14:52,271 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644021170257448199
+2026-05-26 15:21:49,054 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:21:49,056 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 15:21:49,056 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 15:21:49,056 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:22:27,439 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:22:27,936 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644021170257448199
+2026-05-26 15:22:32,940 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 15:22:32,941 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 20:00:04,470 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 20:00:04,647 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 20:00:06,348 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644095638459714837
+2026-05-26 20:06:33,094 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:06:33,095 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 20:06:33,095 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 20:06:33,095 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:07:00,254 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:07:00,788 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644095638459714837
+2026-05-26 20:07:05,791 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644096886944566546
+2026-05-26 20:13:19,123 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:13:19,124 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 20:13:19,124 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 20:13:19,124 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:13:43,242 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:13:44,199 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644096886944566546
+2026-05-26 20:13:49,204 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644098493706997010
+2026-05-26 20:22:21,678 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:22:21,678 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 20:22:21,678 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 20:22:21,679 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:22:45,339 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:22:45,936 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644098493706997010
+2026-05-26 20:22:50,940 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 20:22:50,940 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 22:00:04,250 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-26 22:00:04,421 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-26 22:00:12,673 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7483544026046532882
+2026-05-26 22:08:14,022 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:08:14,023 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 22:08:14,023 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 22:08:14,024 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:08:47,895 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:08:48,464 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7483544026046532882
+2026-05-26 22:08:53,469 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7613668084301286677
+2026-05-26 22:16:52,222 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:16:52,224 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 22:16:52,224 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 22:16:52,224 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:17:31,701 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:17:32,224 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7613668084301286677
+2026-05-26 22:17:37,228 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7635207759197211924
+2026-05-26 22:24:51,694 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:24:51,698 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-26 22:24:51,698 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-26 22:24:51,698 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:25:23,701 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:25:24,324 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7635207759197211924
+2026-05-26 22:25:29,327 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 22:25:29,327 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 07:00:04,319 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 07:00:04,490 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 07:00:06,141 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644138946556874002
+2026-05-27 07:06:26,165 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:06:26,167 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 07:06:26,167 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 07:06:26,167 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:06:49,398 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:06:49,987 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644138946556874002
+2026-05-27 07:06:54,993 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644172634694929672
+2026-05-27 07:12:31,186 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:12:31,188 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 07:12:31,188 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 07:12:31,188 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:13:08,544 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:13:09,370 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644172634694929672
+2026-05-27 07:13:14,376 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644173813009157383
+2026-05-27 07:17:32,668 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:17:32,669 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 07:17:32,670 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 07:17:32,670 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:18:01,022 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:18:01,934 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644173813009157383
+2026-05-27 07:18:06,939 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 07:18:06,939 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 09:00:04,569 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 09:00:04,743 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 09:00:06,529 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644180032373493013
+2026-05-27 09:06:35,135 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:06:35,135 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 09:06:35,135 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 09:06:35,136 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:07:17,189 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:07:18,332 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644180032373493013
+2026-05-27 09:07:23,336 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644183947076816149
+2026-05-27 09:13:55,669 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:13:55,671 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 09:13:55,671 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 09:13:55,671 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:14:51,186 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:14:52,779 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644183947076816149
+2026-05-27 09:14:57,781 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644185429163445522
+2026-05-27 09:21:07,078 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:21:07,080 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 09:21:07,080 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 09:21:07,080 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:21:32,790 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:21:33,754 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644185429163445522
+2026-05-27 09:21:38,760 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 09:21:38,760 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 12:00:04,345 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 12:00:04,526 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 12:00:06,104 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644342725210377493
+2026-05-27 13:37:47,982 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 13:37:48,168 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 13:37:49,873 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644355934709435669
+2026-05-27 13:45:25,474 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:45:25,475 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 13:45:25,475 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 13:45:25,475 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:45:51,435 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:45:52,150 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644355934709435669
+2026-05-27 13:45:57,156 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644361667056356628
+2026-05-27 13:51:35,710 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:51:35,710 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 13:51:35,710 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 13:51:35,710 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:51:59,609 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:52:01,098 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644361667056356628
+2026-05-27 13:52:06,103 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644362437881302293
+2026-05-27 13:57:19,924 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:57:19,925 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 13:57:19,925 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 13:57:19,926 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:57:47,903 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:57:48,701 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644362437881302293
+2026-05-27 13:57:53,706 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 13:57:53,706 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 15:00:04,185 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 15:00:04,354 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 15:00:06,105 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644409674942516498
+2026-05-27 15:08:35,068 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:08:35,069 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 15:08:35,069 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 15:08:35,069 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:08:59,739 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:09:00,364 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644409674942516498
+2026-05-27 15:09:05,367 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644416487221906695
+2026-05-27 15:17:10,713 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:17:10,715 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 15:17:10,715 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 15:17:10,715 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:17:33,955 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:17:34,521 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644416487221906695
+2026-05-27 15:17:39,526 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644417818972179720
+2026-05-27 15:23:35,501 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:23:35,502 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 15:23:35,502 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 15:23:35,502 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:24:04,085 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:24:05,088 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644417818972179720
+2026-05-27 15:24:10,094 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 15:24:10,094 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 18:03:10,088 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 18:03:10,260 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 18:03:11,907 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644423096648191239
+2026-05-27 18:06:10,243 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:06:10,243 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 18:06:10,244 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 18:06:10,244 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:06:42,351 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:06:43,579 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644423096648191239
+2026-05-27 18:06:48,581 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644427007165615381
+2026-05-27 18:17:02,989 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 18:17:03,172 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 18:17:05,008 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644427007165615381
+2026-05-27 18:22:38,824 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:22:38,824 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 18:22:38,825 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 18:22:38,825 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:23:08,948 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:23:09,434 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644427007165615381
+2026-05-27 18:23:14,439 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644436581583179016
+2026-05-27 18:30:53,389 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:30:53,391 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 18:30:53,391 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 18:30:53,391 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:31:21,824 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:31:22,823 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644436581583179016
+2026-05-27 18:31:27,827 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644440185521933575
+2026-05-27 18:36:22,446 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:36:22,448 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 18:36:22,449 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 18:36:22,449 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:36:49,567 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:36:50,384 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644440185521933575
+2026-05-27 18:36:55,388 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 18:36:55,388 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 20:00:03,895 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 20:00:04,055 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 20:00:05,736 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644462020741336338
+2026-05-27 20:07:09,644 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:07:09,646 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 20:07:09,646 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 20:07:09,646 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:07:40,563 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:07:41,130 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644462020741336338
+2026-05-27 20:07:46,137 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644464982700117255
+2026-05-27 20:14:23,526 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:14:23,527 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 20:14:23,527 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 20:14:23,527 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:14:51,035 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:14:51,816 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644464982700117255
+2026-05-27 20:14:56,819 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644466285425724680
+2026-05-27 20:20:42,530 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:20:42,530 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 20:20:42,530 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 20:20:42,531 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:21:09,863 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:21:10,792 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644466285425724680
+2026-05-27 20:21:15,797 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 20:21:15,797 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 22:00:03,525 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-27 22:00:03,697 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-27 22:00:05,441 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644466859118529799
+2026-05-27 22:07:53,118 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:07:53,120 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 22:07:53,120 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 22:07:53,120 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:08:24,648 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:08:26,000 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644466859118529799
+2026-05-27 22:08:31,003 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644466923480075527
+2026-05-27 22:13:47,118 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:13:47,120 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 22:13:47,121 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 22:13:47,121 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:14:20,694 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:14:21,759 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644466923480075527
+2026-05-27 22:14:26,763 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644475139786034439
+2026-05-27 22:18:25,886 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:18:25,888 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-27 22:18:25,888 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-27 22:18:25,888 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:18:51,972 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:18:52,843 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644475139786034439
+2026-05-27 22:18:57,846 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 22:18:57,847 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 07:00:03,740 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 07:00:03,913 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 07:00:05,539 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644480754172448008
+2026-05-28 07:07:21,873 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:07:21,875 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 07:07:21,875 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 07:07:21,875 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:07:47,070 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:07:47,698 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644480754172448008
+2026-05-28 07:07:52,702 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644480870346247442
+2026-05-28 07:14:52,494 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:14:52,495 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 07:14:52,495 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 07:14:52,495 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:15:23,609 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:15:24,128 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644480870346247442
+2026-05-28 07:15:29,133 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644485868769578248
+2026-05-28 07:21:20,977 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:21:20,979 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 07:21:20,979 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 07:21:20,979 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:21:46,415 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:21:46,998 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644485868769578248
+2026-05-28 07:21:52,001 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 07:21:52,002 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 09:00:03,899 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 09:00:04,071 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 09:00:05,918 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644486268805483784
+2026-05-28 09:06:31,262 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:06:31,263 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 09:06:31,263 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 09:06:31,263 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:06:59,521 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:07:00,903 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644486268805483784
+2026-05-28 09:07:05,906 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644499189317111047
+2026-05-28 09:14:00,423 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:14:00,425 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 09:14:00,425 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 09:14:00,425 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:14:32,957 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:14:34,328 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644499189317111047
+2026-05-28 09:14:39,331 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644514232356130069
+2026-05-28 09:20:04,923 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:20:04,924 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 09:20:04,924 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 09:20:04,924 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:20:34,821 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:20:35,897 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644514232356130069
+2026-05-28 09:20:40,899 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 09:20:40,899 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 11:10:04,293 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 11:10:04,467 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 11:10:06,324 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644716580961635604
+2026-05-28 13:37:55,385 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 13:37:55,576 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 13:37:57,609 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644758348407115026
+2026-05-28 13:44:19,334 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:44:19,336 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 13:44:19,336 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 13:44:19,336 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:44:43,130 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:44:44,812 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644758348407115026
+2026-05-28 13:44:49,820 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644760717534530836
+2026-05-28 13:49:16,594 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:49:16,595 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 13:49:16,595 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 13:49:16,595 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:49:51,502 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:49:52,295 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644760717534530836
+2026-05-28 13:49:57,298 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644764304704687378
+2026-05-28 13:53:56,732 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:53:56,733 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 13:53:56,733 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 13:53:56,734 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:54:25,721 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:54:26,715 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644764304704687378
+2026-05-28 13:54:31,718 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 13:54:31,719 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 15:00:04,361 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 15:00:04,530 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 15:00:06,281 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644773260466375956
+2026-05-28 15:00:14,346 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644773879075900692
+2026-05-2026-05-28 22:11:56,891 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 22:11:57,052 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 22:11:57,307 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 22:11:57,475 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 22:11:58,709 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644837082413796616
+2026-05-28 22:11:59,445 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644837082413796616
+2026-05-28 22:12:12,056 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644839827006852372
+2026-05-28 22:13:19,492 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644839827006852372
+2026-05-28 22:16:30,324 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644841461254458645
+2026-05-28 22:20:13,804 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:20:13,805 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 22:20:13,805 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 22:20:13,805 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:20:18,808 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644841461254458645
+2026-05-28 22:25:07,214 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:25:07,216 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 22:25:07,216 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 22:25:07,216 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:25:12,220 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-28 22:25:14,395 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7644565499589758216
+2026-05-28 22:28:50,407 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:28:55,409 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7644587142886329607
+2026-05-28 22:28:55,409 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:29:00,410 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7644587399716048135
+2026-05-28 22:29:00,410 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:29:05,411 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@123heronews (Lấy tối đa 3 video)
+2026-05-28 22:29:05,411 [ERROR]    ⚠️ Lỗi quét video: [Errno 5] Input/output error
+2026-05-28 22:29:05,411 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 22:35:22,945 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-28 22:35:23,121 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-28 22:35:24,834 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644837082413796616
+2026-05-28 22:42:59,349 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:42:59,350 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 22:42:59,350 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 22:42:59,351 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:43:40,178 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:43:40,823 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644837082413796616
+2026-05-28 22:43:45,826 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644839827006852372
+2026-05-28 22:49:02,878 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:49:02,878 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 22:49:02,878 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 22:49:02,878 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:49:25,082 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:49:25,961 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644839827006852372
+2026-05-28 22:49:30,964 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644841461254458645
+2026-05-28 22:55:33,838 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:55:33,839 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-28 22:55:33,839 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-28 22:55:33,839 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:56:02,171 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:56:03,311 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644841461254458645
+2026-05-28 22:56:08,315 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 22:56:08,316 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 07:00:03,510 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 07:00:03,684 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 07:00:05,226 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644849932515560722
+2026-05-29 07:07:40,639 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:07:40,640 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 07:07:40,640 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 07:07:40,640 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:08:11,210 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:08:11,953 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644849932515560722
+2026-05-29 07:08:16,959 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644850862527089927
+2026-05-29 07:14:11,541 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:14:11,541 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 07:14:11,541 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 07:14:11,542 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:14:43,860 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:14:45,264 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644850862527089927
+2026-05-29 07:14:50,269 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644859201298484501
+2026-05-29 07:20:25,031 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:20:25,032 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 07:20:25,033 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 07:20:25,033 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:20:50,486 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:20:51,403 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644859201298484501
+2026-05-29 07:20:56,407 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 07:20:56,407 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 09:00:04,586 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 09:00:04,751 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 09:00:06,438 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644878075288882453
+2026-05-29 09:05:26,376 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 09:05:26,377 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 09:05:26,377 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 09:05:26,377 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 09:05:55,559 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 09:05:56,051 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644878075288882453
+2026-05-29 09:06:01,056 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644885265282043144
+2026-05-29 09:09:26,883 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 09:09:26,884 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 09:09:26,884 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 09:09:26,884 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 09:09:49,179 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 09:09:49,921 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644885265282043144
+2026-05-29 09:09:54,924 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7644924173189696788
+2026-05-29 09:13:51,111 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 09:13:51,111 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 09:13:51,111 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 09:13:51,112 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 09:14:22,898 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 09:14:23,985 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7644924173189696788
+2026-05-29 09:14:28,988 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 09:14:28,989 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 12:00:03,763 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 12:00:03,938 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 12:00:05,822 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645081387510287634
+2026-05-29 12:02:20,569 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-29 12:02:25,571 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645081515763813650
+2026-05-29 12:57:24,241 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 12:57:24,413 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 12:57:26,111 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645081387510287634
+2026-05-29 13:04:12,619 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:04:12,620 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 13:04:12,621 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 13:04:12,621 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:04:40,337 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:04:40,888 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645081387510287634
+2026-05-29 13:04:45,896 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645081515763813650
+2026-05-29 13:10:11,887 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:10:11,887 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 13:10:11,887 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 13:10:11,888 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:10:37,445 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:10:38,021 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645081515763813650
+2026-05-29 13:10:43,023 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645086006470823175
+2026-05-29 13:15:26,033 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:15:26,034 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 13:15:26,034 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 13:15:26,034 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:15:52,852 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:15:53,729 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645086006470823175
+2026-05-29 13:15:58,735 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 13:15:58,735 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 15:00:03,692 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 15:00:03,897 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 15:00:05,585 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645129970158750997
+2026-05-29 15:04:43,256 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:04:43,257 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 15:04:43,257 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 15:04:43,257 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:05:16,152 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:05:17,966 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645129970158750997
+2026-05-29 15:05:22,969 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645132423830736146
+2026-05-29 15:10:53,880 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:10:53,882 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 15:10:53,882 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 15:10:53,882 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:11:23,147 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:11:23,951 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645132423830736146
+2026-05-29 15:11:28,956 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645137224601718036
+2026-05-29 15:15:50,577 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:15:50,578 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 15:15:50,578 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 15:15:50,578 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:16:18,687 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:16:19,211 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645137224601718036
+2026-05-29 15:16:24,215 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 15:16:24,215 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 18:00:03,908 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 18:00:04,080 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 18:00:05,682 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645138426106301703
+2026-05-29 18:07:04,971 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:07:04,971 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 18:07:04,971 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 18:07:04,971 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:07:32,979 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:07:33,522 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645138426106301703
+2026-05-29 18:07:38,526 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645139255039200533
+2026-05-29 18:13:17,334 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:13:17,334 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 18:13:17,335 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 18:13:17,335 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:13:39,090 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:13:39,863 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645139255039200533
+2026-05-29 18:13:44,865 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645141434676301077
+2026-05-29 18:18:05,558 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:18:05,559 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 18:18:05,559 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 18:18:05,559 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:18:31,703 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:18:32,292 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645141434676301077
+2026-05-29 18:18:37,297 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 18:18:37,297 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 20:00:03,933 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 20:00:04,129 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 20:00:05,690 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645153340657011986
+2026-05-29 20:04:27,393 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645149034751003912
+2026-05-29 20:08:29,486 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:08:29,488 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 20:08:29,488 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 20:08:29,488 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:08:59,118 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:09:00,291 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645149034751003912
+2026-05-29 20:09:05,295 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645166171079167250
+2026-05-29 20:19:03,105 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:19:03,106 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 20:19:03,106 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 20:19:03,106 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:19:30,696 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:19:31,533 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645166171079167250
+2026-05-29 20:19:36,536 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-29 20:19:37,928 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7644865696043683090
+2026-05-29 20:23:06,284 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:23:06,285 [INFO]    ✅ Đã có file 'SHOWBIZ.png' trong máy.
+2026-05-29 20:23:06,285 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 20:23:06,285 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:23:33,803 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:23:34,740 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28.showbiz/video/7644865696043683090
+2026-05-29 20:23:39,742 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-29 20:23:39,742 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 20:23:39,743 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 22:35:03,962 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-29 22:35:04,143 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-29 22:35:05,883 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645171278910983431
+2026-05-29 22:39:56,816 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:39:56,816 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 22:39:56,817 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 22:39:56,817 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:40:25,106 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:40:26,034 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645171278910983431
+2026-05-29 22:40:31,037 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645171712383831317
+2026-05-29 22:45:35,509 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:45:35,511 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 22:45:35,511 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 22:45:35,511 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:46:01,241 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:46:02,781 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645171712383831317
+2026-05-29 22:46:07,785 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645201906163289365
+2026-05-29 22:51:03,343 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:51:03,344 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-29 22:51:03,344 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-29 22:51:03,345 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:51:30,563 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:51:31,617 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645201906163289365
+2026-05-29 22:51:36,620 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 22:51:36,620 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-30 07:00:03,882 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-30 07:00:04,043 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-30 07:00:06,314 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645206566022450450
+2026-05-30 07:04:59,221 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645213033807088904
+2026-05-30 07:09:54,498 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:09:54,498 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-30 07:09:54,499 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 07:09:54,499 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:10:22,831 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:10:23,353 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645213033807088904
+2026-05-30 07:10:28,355 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645220349117844754
+2026-05-30 07:15:33,500 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:15:33,501 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-30 07:15:33,501 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 07:15:33,501 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:16:02,060 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:16:02,573 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645220349117844754
+2026-05-30 07:16:07,576 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28.showbiz (Lấy tối đa 3 video)
+2026-05-30 07:16:08,754 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28.showbiz/video/7644876502282210580
+2026-05-30 07:20:04,035 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:20:04,035 [INFO]    ✅ Đã có file 'SHOWBIZ.png' trong máy.
+2026-05-30 07:20:04,036 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 07:20:04,036 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:20:35,394 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:20:36,182 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28.showbiz/video/7644876502282210580
+2026-05-30 07:20:41,185 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-30 07:20:41,185 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-30 07:20:41,185 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-30 09:00:03,472 [INFO] 🚀 WORKER STARTED: showbiz124h
+2026-05-30 09:00:03,646 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@theanh28entertainment (Lấy tối đa 3 video)
+2026-05-30 09:00:05,368 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645230506535111956
+2026-05-30 09:04:54,854 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:04:54,855 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-30 09:04:54,855 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 09:04:54,855 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:05:25,020 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:05:26,172 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645230506535111956
+2026-05-30 09:05:31,175 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645294364201176340
+2026-05-30 09:10:51,487 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:10:51,488 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-30 09:10:51,489 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 09:10:51,489 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:11:23,622 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:11:24,437 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645294364201176340
+2026-05-30 09:11:29,442 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@theanh28entertainment/video/7645298441937030420
+2026-05-30 09:16:39,102 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:16:39,103 [INFO]    ✅ Đã có file 'showbiz theanh 28 title.png' trong máy.
+2026-05-30 09:16:39,103 [INFO]    ✅ Đã có file 'SHOWBIZ 1.png' trong máy.
+2026-05-30 09:16:39,103 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:17:05,451 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:17:06,323 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@theanh28entertainment/video/7645298441937030420
+2026-05-30 09:17:11,329 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-30 09:17:11,330 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
