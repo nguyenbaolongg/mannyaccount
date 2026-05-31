@@ -185,7 +185,7 @@ class FBNewsPipeline:
     # ═══════════════════════════════════════════════════
     #  XỬ LÝ 1 VIDEO
     # ═══════════════════════════════════════════════════
-    def _process_one_video(self, video: dict, source: dict) -> bool:
+    def _process_one_video(self, video: dict, source: dict, on_success=None) -> bool:
         job_id = uuid.uuid4().hex[:8]
         work_dir = os.path.join(TEMP_DIR, f"job_{job_id}")
         os.makedirs(work_dir, exist_ok=True)
@@ -215,7 +215,7 @@ class FBNewsPipeline:
                     caption = real_title
                 print(f"      📝 Tìm thấy Caption xịn: \"{caption[:60]}...\"")
 
-            record_id = self._insert_video_record(source["id"], video, dl)
+            record_id = self._insert_video_record(source.get("id"), video, dl)
 
             # ── [2/6] ChatGPT phân tích ──
             print(f"      🤖 [2/6] ChatGPT phân tích video...")
@@ -337,6 +337,13 @@ class FBNewsPipeline:
             if drive_link:
                 print(f"      🔗 Link Drive: {drive_link}")
                 
+            if on_success:
+                try:
+                    on_success(drive_link, final_path)
+                except Exception as e:
+                    print(f"      ⚠️ Lỗi callback on_success: {e}")
+                
+            if drive_link:
                 # Giải phóng bộ nhớ sau khi upload thành công
                 print(f"      🧹 Đang dọn dẹp bộ nhớ tạm...")
                 try:
@@ -380,9 +387,17 @@ class FBNewsPipeline:
         has_frame = os.path.exists(FRAME_PATH)
 
         # ── XÂY DỰNG FFMPEG COMMAND (1 PASS) ──
+        inputs = []
+        input_idx = 0
+        
+        has_ai_audio = (script_voice_path and os.path.exists(script_voice_path)) or (hook_voice_path and os.path.exists(hook_voice_path))
+        
         # Dùng -stream_loop -1 để lặp lại video gốc nếu nó ngắn hơn voice
-        inputs = ["-stream_loop", "-1", "-i", source_video]
-        input_idx = 1
+        if has_ai_audio:
+            inputs += ["-stream_loop", "-1"]
+            
+        inputs += ["-i", source_video]
+        input_idx += 1
         
         if script_voice_path and os.path.exists(script_voice_path):
             inputs += ["-i", script_voice_path]
@@ -590,10 +605,10 @@ class FBNewsPipeline:
                 filters.append(f"[0:a]volume=0:enable='between(t,0,{hook_duration})'[orig_mute]")
                 filters.append(f"[orig_mute][{audio_idx}:a]amix=inputs=2:duration=first:dropout_transition=0[aout]")
             else:
-                filters.append(f"[{audio_idx}:a]copy[aout]")
+                filters.append(f"[{audio_idx}:a]acopy[aout]")
         else:
             if has_audio:
-                filters.append(f"[0:a]copy[aout]")
+                filters.append(f"[0:a]acopy[aout]")
 
         cmd = ["ffmpeg", "-y"] + inputs
         cmd += ["-filter_complex", ";".join(filters), "-map", "[vout]"]

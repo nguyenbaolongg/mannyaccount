@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Bà vừa ngồi tuyển cháu mà cả xóm nhỏ xếp hàng nộp đơn",
+  "hook": "Tưởng mấy đứa nhỏ chỉ chạy ra chơi, ai ngờ lại mang giấy tới xin làm cháu của bà.",
+  "script_voice": "Tưởng đây chỉ là một buổi tụ tập bình thường trước sân nhà. Nhưng nhìn kỹ mới thấy, từng em nhỏ lần lượt cầm giấy bước tới chỗ bà, đứng chờ rất nghiêm túc như đang đi phỏng vấn thật. Bà ngồi đó, vừa xem từng tờ giấy, vừa hỏi han từng bé bằng vẻ mặt cực kỳ tập trung. Đứa thì hồi hộp, đứa thì cười ngại, đứa khác lại đứng chờ tới lượt như sợ mất suất. Càng xem càng thấy đáng yêu, vì mọi thứ giống như một cuộc tuyển chọn cháu nội, cháu ngoại phiên bản đời thực. Một khoảnh khắc rất đơn giản thôi, nhưng lại khiến ai xem cũng bật cười vì sự hồn nhiên của tụi nhỏ và sự nhập vai quá dễ thương của bà.",
+  "main_idea": "Video ghi lại cảnh một bà lớn tuổi ngồi xem giấy tờ, trong khi nhiều em nhỏ lần lượt cầm giấy đến trước mặt bà, tạo cảm giác như các bé đang nộp hồ sơ xin làm cháu một cách hài hước và đáng yêu.",
+  "viral_angle": "Khai thác sự hài hước và đáng yêu từ tình huống đời thường được nhìn như một buổi phỏng vấn tuyển cháu.",
+  "viewer_emotion": "Vui vẻ, thích thú và cảm thấy ấm áp trước sự hồn nhiên của trẻ nhỏ cùng cách bà tương tác rất dễ thương.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng mấy đứa nhỏ chỉ chạy ra chơi, ai ngờ lại mang giấy tới xin làm cháu của bà.",
+      "visual_description": "Khung cảnh trước sân nhà, một bà lớn tuổi ngồi bên bàn, xung quanh có nhiều người lớn và trẻ nhỏ đang đứng gần đó."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Từng em lần lượt cầm giấy bước tới, đứng rất nghiêm túc như đang chờ tới lượt phỏng vấn.",
+      "visual_description": "Một bé gái cầm tờ giấy đứng trước mặt bà, bà nhìn vào tờ giấy và trò chuyện với bé."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Bà thì xem từng tờ một, hỏi han rất tập trung, còn tụi nhỏ đứa nào cũng có vẻ vừa hồi hộp vừa háo hức.",
+      "visual_description": "Các em nhỏ thay nhau tiến lại gần, có bé đứng chờ phía sau, có bé cầm giấy trên tay."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Càng xem càng thấy giống một buổi tuyển chọn cháu nội, cháu ngoại phiên bản đời thực.",
+      "visual_description": "Nhiều bé trai và bé gái đi qua trước ống kính, tạo cảm giác như đang lần lượt nộp hồ sơ cho bà."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một khoảnh khắc rất đơn giản thôi, nhưng đủ khiến ai xem cũng bật cười vì quá hồn nhiên và dễ thương.",
+      "visual_description": "Bà vẫn ngồi xem giấy, các em nhỏ tiếp tục đứng quanh chờ tới lượt trong không khí vui vẻ, gần gũi."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Vòng tròn đen lơ lửng trên bầu trời TP.HCM khiến ai cũng phải ngước nhìn",
+  "hook": "Một vòng tròn đen bất ngờ xuất hiện giữa bầu trời TP.HCM, nhìn qua cứ tưởng hiệu ứng nhưng càng xem lại càng khó hiểu.",
+  "script_voice": "Giữa ban ngày ở TP.HCM, nhiều người bất ngờ nhìn thấy một vòng tròn màu đen lơ lửng trên bầu trời. Ban đầu, ai cũng nghĩ đó chỉ là một đám khói bình thường. Nhưng điều lạ là nó không tan ngay, mà vẫn giữ hình dạng như một chiếc vòng lớn giữa nền mây. Người bên dưới liên tục ngước nhìn, vừa tò mò vừa khó hiểu, không biết hiện tượng này đến từ đâu. Có thể chỉ là khói tạo thành vòng do luồng khí, nhưng khoảnh khắc ấy vẫn đủ khiến cả khu vực phải dừng lại quan sát. Một cảnh tượng hiếm gặp giữa thành phố đông đúc, nhìn đơn giản mà lại khiến ai xem cũng muốn hỏi: rốt cuộc chuyện gì vừa xảy ra trên bầu trời vậy?",
+  "main_idea": "Video ghi lại một vòng tròn màu đen lạ xuất hiện và lơ lửng trên bầu trời TP.HCM, khiến những người xung quanh tò mò, ngước nhìn và đặt câu hỏi về nguyên nhân.",
+  "viral_angle": "Góc khai thác chính là sự bất ngờ và tò mò trước một hiện tượng lạ trên bầu trời, tạo cảm giác vừa khó hiểu vừa muốn xem đến cuối để quan sát rõ hơn.",
+  "viewer_emotion": "Tò mò, bất ngờ và hơi hồi hộp trước một khoảnh khắc lạ mắt ngoài đời thực.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một vòng tròn đen bất ngờ xuất hiện giữa bầu trời TP.HCM, nhìn qua cứ tưởng hiệu ứng nhưng càng xem lại càng khó hiểu.",
+      "visual_description": "Máy quay hướng lên bầu trời nhiều mây, phía xa xuất hiện một vòng tròn màu đen lơ lửng phía trên mái nhà."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa ban ngày, nhiều người bên dưới phải ngước lên quan sát vì hình dạng của nó quá rõ và quá lạ.",
+      "visual_description": "Khung hình có người đứng dưới sân hoặc khu vực ngoài trời, ánh mắt hướng lên bầu trời nơi vòng tròn đang xuất hiện."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, ai cũng có thể nghĩ đó chỉ là một làn khói bình thường, nhưng nó lại không tan ngay như mọi người tưởng.",
+      "visual_description": "Máy quay phóng gần hơn vào vòng tròn đen, phần viền khói vẫn giữ dáng tròn giữa nền mây xám nhạt."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Chiếc vòng ấy cứ lơ lửng, chậm rãi biến đổi hình dạng, khiến người xem càng nhìn càng thắc mắc nó đến từ đâu.",
+      "visual_description": "Vòng tròn trên trời có phần méo nhẹ theo gió, viền khói mờ dần nhưng vẫn còn nhìn thấy rõ."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có thể đây chỉ là khói bị luồng khí cuốn thành vòng, nhưng khoảnh khắc này vẫn khiến cả khu vực phải chú ý.",
+      "visual_description": "Góc quay rộng hơn cho thấy mái nhà, bầu trời và người bên dưới đang tiếp tục quan sát hiện tượng lạ."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một cảnh tượng hiếm gặp giữa thành phố đông đúc, nhìn đơn giản mà lại khiến ai xem cũng muốn hỏi: rốt cuộc chuyện gì vừa xảy ra trên bầu trời vậy?",
+      "visual_description": "Máy quay giữ lại hình ảnh vòng khói đang mờ dần giữa bầu trời, tạo cảm giác bí ẩn và tò mò."
+    }
+  ]
+}

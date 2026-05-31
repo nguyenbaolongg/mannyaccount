@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Đà Nẵng đêm qua đẹp đến mức ai xem cũng muốn đứng lặng vài giây",
+  "hook": "Có những khoảnh khắc chỉ cần nhìn một lần, nhưng lại khiến người ta nhớ mãi không quên.",
+  "script_voice": "Đêm qua ở Đà Nẵng, bầu trời như được thắp sáng bằng một màn trình diễn khiến rất nhiều người phải đứng lại thật lâu. Từng chùm pháo hoa bung lên giữa nền trời đen, rồi rơi xuống mặt nước thành những dải màu rực rỡ. Ban đầu chỉ là vài tia sáng quen thuộc, nhưng càng về sau, cả không gian như bùng nổ trong sắc đỏ, xanh, vàng và tím. Điều làm người xem lụy nhất không chỉ là pháo hoa đẹp, mà là cảm giác cả thành phố trong khoảnh khắc ấy trở nên thật yên bình, rực rỡ và đáng nhớ. Có lẽ vì vậy mà dù màn trình diễn đã kết thúc, nhiều người vẫn muốn xem lại thêm một lần nữa.",
+  "main_idea": "Video ghi lại màn pháo hoa rực rỡ vào buổi tối tại Đà Nẵng, với những chùm sáng nhiều màu phản chiếu trên mặt nước, tạo nên khung cảnh đẹp và đáng nhớ.",
+  "viral_angle": "Góc khai thác cảm xúc choáng ngợp và tiếc nuối trước một khoảnh khắc đẹp chỉ xuất hiện trong thời gian ngắn.",
+  "viewer_emotion": "Bất ngờ, choáng ngợp và lưu luyến",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những khoảnh khắc chỉ cần nhìn một lần, nhưng lại khiến người ta nhớ mãi không quên.",
+      "visual_description": "Toàn cảnh bầu trời đêm tại Đà Nẵng, pháo hoa bắt đầu bung sáng phía trên mặt nước."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Đêm qua ở Đà Nẵng, bầu trời như được thắp sáng bằng một màn trình diễn khiến rất nhiều người phải đứng lại thật lâu.",
+      "visual_description": "Những chùm pháo hoa lớn nở trên cao, phía dưới là mặt nước phản chiếu ánh sáng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Từng chùm pháo hoa bung lên giữa nền trời đen, rồi rơi xuống mặt nước thành những dải màu rực rỡ.",
+      "visual_description": "Pháo hoa nhiều màu đỏ, xanh, vàng và tím tỏa rộng, ánh sáng lan xuống mặt sông."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Ban đầu chỉ là vài tia sáng quen thuộc, nhưng càng về sau, cả không gian như bùng nổ trong sắc màu.",
+      "visual_description": "Màn pháo hoa dày hơn, sáng hơn, tạo cảm giác cao trào khi nhiều cụm sáng cùng xuất hiện."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều làm người xem lụy nhất không chỉ là pháo hoa đẹp, mà là cảm giác cả thành phố trong khoảnh khắc ấy trở nên thật yên bình, rực rỡ và đáng nhớ.",
+      "visual_description": "Khung cảnh pháo hoa phủ kín một phần bầu trời, ánh sáng mềm phản chiếu trên mặt nước và các công trình xung quanh."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có lẽ vì vậy mà dù màn trình diễn đã kết thúc, nhiều người vẫn muốn xem lại thêm một lần nữa.",
+      "visual_description": "Những chùm pháo hoa cuối cùng tỏa sáng rồi tan dần trong nền trời đêm."
+    }
+  ]
+}

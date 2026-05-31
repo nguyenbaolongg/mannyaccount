@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Ở Đà Nẵng, chỉ cần ra biển là lòng nhẹ lại",
+  "hook": "Có những ngày chẳng cần đi đâu xa, chỉ cần bước ra biển Đà Nẵng là thấy lòng mình dịu xuống.",
+  "script_voice": "Có một điều rất lạ ở Đà Nẵng. Vui cũng ra biển, buồn cũng ra biển, mệt mỏi cũng tìm đến biển. Chỉ cần đứng trước những con sóng, nhìn thành phố ở phía xa và nghe tiếng gió thổi qua, mọi chuyện trong lòng như được đặt xuống từng chút một. Người lớn, trẻ nhỏ, người đi dạo, người ngồi lặng im bên bờ cát, ai cũng có một lý do riêng để đến đây. Nhưng khi sóng vỗ vào bờ, cảm giác ấy lại giống nhau đến kỳ lạ. Dù hôm nay bạn lành lặn hay đang đầy những vết xước trong lòng, biển vẫn ở đó, rộng rãi và bình yên, kéo mọi thứ trở về nhẹ tênh.",
+  "main_idea": "Video ghi lại khung cảnh biển Đà Nẵng với người dân vui chơi, đi dạo và thư giãn bên bờ biển, gợi cảm giác bình yên, chữa lành và thân thuộc.",
+  "viral_angle": "Khai thác cảm xúc chữa lành và sự gắn bó đặc biệt của người Đà Nẵng với biển, biến một khung cảnh đời thường thành khoảnh khắc khiến người xem muốn được đến đó để thả lỏng lòng mình.",
+  "viewer_emotion": "Bình yên, hoài niệm và được xoa dịu",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những ngày chẳng cần đi đâu xa, chỉ cần bước ra biển Đà Nẵng là thấy lòng mình dịu xuống.",
+      "visual_description": "Toàn cảnh bãi biển Đà Nẵng với nền trời xanh, sóng biển nhẹ và dãy nhà cao tầng phía xa."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Vui cũng ra biển, buồn cũng ra biển, mệt mỏi cũng tìm đến biển.",
+      "visual_description": "Người dân đi dạo trên bờ cát, vài người đứng gần mép nước, trẻ nhỏ chơi đùa cùng sóng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Chỉ cần đứng trước những con sóng, nhìn thành phố ở phía xa và nghe tiếng gió thổi qua, mọi chuyện trong lòng như được đặt xuống từng chút một.",
+      "visual_description": "Máy quay giữ góc rộng, sóng biển lăn tăn tiến vào bờ, phía xa là đường chân trời thành phố."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Người lớn, trẻ nhỏ, người đi dạo, người ngồi lặng im bên bờ cát, ai cũng có một lý do riêng để đến đây.",
+      "visual_description": "Các nhóm người xuất hiện rải rác trên bãi biển, có người tắm biển, có người cúi xuống nghịch nước, có người đi chậm bên mép sóng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nhưng khi sóng vỗ vào bờ, cảm giác ấy lại giống nhau đến kỳ lạ.",
+      "visual_description": "Cận cảnh hơn vào những đợt sóng trắng xô nhẹ vào bãi cát, tạo cảm giác chậm rãi và thư giãn."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Dù hôm nay bạn lành lặn hay đang đầy những vết xước trong lòng, biển vẫn ở đó, rộng rãi và bình yên, kéo mọi thứ trở về nhẹ tênh.",
+      "visual_description": "Khung hình mở rộng ra toàn cảnh biển, nắng chiều phủ lên mặt nước và bờ cát, tạo cảm giác yên bình để kết video."
+    }
+  ]
+}

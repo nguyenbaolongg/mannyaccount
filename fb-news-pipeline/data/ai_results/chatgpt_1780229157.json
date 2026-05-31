@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Tưởng con đang chơi ngoan, nhìn camera mới thấy cả bể cá thành khu nghỉ hè",
+  "hook": "Nghỉ hè mới bắt đầu mà các cháu đã nghĩ ra trò khiến người lớn chỉ biết đứng hình.",
+  "script_voice": "Nghỉ hè mới bắt đầu mà các cháu đã nghĩ ra trò khiến người lớn chỉ biết đứng hình. Trong lúc cả nhà tưởng mọi thứ vẫn bình thường, một cậu bé lại âm thầm leo hẳn lên bể cá trong phòng khách. Ban đầu chỉ là ngồi thử cho vui, nhưng vài giây sau, cậu bé đã biến chiếc bể thành hồ bơi mini của riêng mình. Vừa chống tay, vừa bước qua lớp đá, dáng vẻ rất tự tin như thể đây là khu vui chơi được chuẩn bị sẵn. Cao trào là lúc cậu bé đứng hẳn trong bể, loay hoay một hồi rồi mới trèo xuống như chưa có chuyện gì xảy ra. Xem xong chỉ biết cười bất lực, đúng là nghỉ hè đến rồi, sức sáng tạo của trẻ con không ai theo kịp.",
+  "main_idea": "Video ghi lại cảnh một cậu bé trong phòng khách leo vào bể cá và chơi bên trong như một khu vui chơi mini, tạo tình huống vừa hài hước vừa bất ngờ.",
+  "viral_angle": "Hài hước và bất ngờ, khai thác sự nghịch ngợm khó đỡ của trẻ con khi nghỉ hè.",
+  "viewer_emotion": "Buồn cười, bất lực và thích thú trước sự sáng tạo nghịch ngợm của trẻ nhỏ.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nghỉ hè mới bắt đầu mà các cháu đã nghĩ ra trò khiến người lớn chỉ biết đứng hình.",
+      "visual_description": "Góc camera an ninh trong phòng khách, cậu bé xuất hiện gần bể cá lớn đặt sát tường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Trong lúc cả nhà tưởng mọi thứ vẫn bình thường, một cậu bé lại âm thầm leo hẳn lên bể cá trong phòng khách.",
+      "visual_description": "Cậu bé trèo lên mép bể cá, chống tay và đưa chân vào bên trong."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu chỉ là ngồi thử cho vui, nhưng vài giây sau, cậu bé đã biến chiếc bể thành hồ bơi mini của riêng mình.",
+      "visual_description": "Cậu bé ngồi và di chuyển trong bể cá, xung quanh là đá trang trí và nước trong bể."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Vừa chống tay, vừa bước qua lớp đá, dáng vẻ rất tự tin như thể đây là khu vui chơi được chuẩn bị sẵn.",
+      "visual_description": "Cậu bé bò và đứng trong bể, di chuyển qua lại một cách tự nhiên."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Cao trào là lúc cậu bé đứng hẳn trong bể, loay hoay một hồi rồi mới trèo xuống như chưa có chuyện gì xảy ra.",
+      "visual_description": "Cậu bé đứng trong bể cá, sau đó tìm cách trèo ra ngoài."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Xem xong chỉ biết cười bất lực, đúng là nghỉ hè đến rồi, sức sáng tạo của trẻ con không ai theo kịp.",
+      "visual_description": "Khung hình phòng khách trở lại yên tĩnh, bể cá vẫn ở vị trí cũ sau màn nghịch ngợm."
+    }
+  ]
+}

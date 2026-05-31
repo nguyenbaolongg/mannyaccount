@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Pha bóng hỏng biến thành màn căng thẳng trên sân Pickleball",
+  "hook": "Chỉ một pha bóng tưởng như rất bình thường, nhưng vài giây sau, cả sân Pickleball bất ngờ đổi không khí.",
+  "script_voice": "Chỉ một pha bóng tưởng như rất bình thường, nhưng vài giây sau, cả sân Pickleball bất ngờ đổi không khí. Ban đầu, mọi người vẫn đang thi đấu như một trận chơi thể thao quen thuộc. Bóng qua lại, người chơi di chuyển, không có dấu hiệu gì quá căng thẳng. Nhưng sau một pha đánh lỗi, một người bất ngờ tiến lại gần đối thủ. Không còn là tranh luận hay nhắc nhở bình thường, tình huống nhanh chóng trở nên mất kiểm soát khi có hành động được cho là ra tay ngay trên sân. Những người xung quanh lập tức chú ý, trận đấu bị gián đoạn. Chưa rõ trước đó hai bên có mâu thuẫn gì hay không, nhưng khoảnh khắc này khiến nhiều người phải giật mình. Thể thao là để rèn luyện, giải trí và kết nối, chứ không nên biến thành nơi trút nóng giận.",
+  "main_idea": "Video ghi lại một trận Pickleball tại Móng Cái, trong đó sau một pha đánh bóng hỏng, một người chơi bất ngờ có hành động căng thẳng với đối thủ, khiến trận đấu bị gián đoạn.",
+  "viral_angle": "Góc khai thác kịch tính và cảnh tỉnh, từ một pha thể thao bình thường chuyển thành tình huống bất ngờ gây tranh luận.",
+  "viewer_emotion": "Bất ngờ, căng thẳng và suy ngẫm về cách giữ bình tĩnh khi chơi thể thao.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Chỉ một pha bóng tưởng như rất bình thường, nhưng vài giây sau, cả sân Pickleball bất ngờ đổi không khí.",
+      "visual_description": "Toàn cảnh sân Pickleball từ camera giám sát, các người chơi đang đứng ở hai bên sân và chuẩn bị tiếp tục trận đấu."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi người vẫn đang thi đấu như một trận chơi thể thao quen thuộc. Bóng qua lại, người chơi di chuyển, không có dấu hiệu gì quá căng thẳng.",
+      "visual_description": "Các người chơi di chuyển trên sân, một người ở gần lưới và một người đứng phía cuối sân, không khí ban đầu vẫn bình thường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng sau một pha đánh lỗi, một người bất ngờ tiến lại gần đối thủ.",
+      "visual_description": "Một người chơi ở phía bên phải sân di chuyển lại gần khu vực đối thủ sau tình huống bóng hỏng."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Không còn là tranh luận hay nhắc nhở bình thường, tình huống nhanh chóng trở nên mất kiểm soát khi có hành động được cho là ra tay ngay trên sân.",
+      "visual_description": "Hai người chơi đứng gần nhau ở khu vực sát mép sân, tình huống trở nên căng thẳng và thu hút sự chú ý của những người xung quanh."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chưa rõ trước đó hai bên có mâu thuẫn gì hay không, nhưng khoảnh khắc này khiến nhiều người phải giật mình.",
+      "visual_description": "Những người chơi khác nhìn về phía xảy ra sự việc, trận đấu bị gián đoạn trong vài giây."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Thể thao là để rèn luyện, giải trí và kết nối, chứ không nên biến thành nơi trút nóng giận.",
+      "visual_description": "Toàn cảnh sân Pickleball sau sự việc, các người chơi tản ra và không khí trận đấu không còn tự nhiên như ban đầu."
+    }
+  ]
+}
