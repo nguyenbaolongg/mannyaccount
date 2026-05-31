@@ -133,13 +133,17 @@ class FBNewsApp(ctk.CTk):
         self.input_max_age.insert(0, "48")
         self.input_max_age.grid(row=1, column=5, padx=5, pady=8)
 
+        ctk.CTkLabel(add_frame, text="Delogo:", font=ctk.CTkFont(size=13)).grid(row=1, column=6, padx=(15, 5), pady=8)
+        self.input_delogo = ctk.CTkEntry(add_frame, width=150, placeholder_text="VD: x=683:y=231:w=280:h=85", height=35)
+        self.input_delogo.grid(row=1, column=7, padx=5, pady=8)
+
         self.btn_add = ctk.CTkButton(
-            add_frame, text="✅ Thêm", width=100, height=35,
+            add_frame, text="✅ Thêm", width=80, height=35,
             fg_color=COLORS["info"], hover_color=COLORS["info_hover"],
             font=ctk.CTkFont(weight="bold"),
             command=self._add_source,
         )
-        self.btn_add.grid(row=1, column=6, padx=(10, 15), pady=8)
+        self.btn_add.grid(row=1, column=8, padx=(10, 15), pady=8)
 
         # ── DANH SÁCH NGUỒN ──
         list_frame = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
@@ -252,6 +256,7 @@ class FBNewsApp(ctk.CTk):
         name = self.input_name.get().strip()
         url = self.input_url.get().strip()
         max_age_str = self.input_max_age.get().strip()
+        delogo_val = self.input_delogo.get().strip()
 
         if not name or not url:
             self.log("❌ Vui lòng điền đầy đủ Tên và URL.")
@@ -281,12 +286,14 @@ class FBNewsApp(ctk.CTk):
                 "is_active": True,
                 "max_video_age_hours": max_age,
                 "scan_interval_min": 30,
+                "delogo": delogo_val
             }).execute()
 
             if result.data:
                 self.log(f"✅ Đã thêm: {name} → {url}")
                 self.input_name.delete(0, "end")
                 self.input_url.delete(0, "end")
+                self.input_delogo.delete(0, "end")
                 self._load_sources()
             else:
                 self.log("❌ Thêm nguồn thất bại!")
@@ -315,9 +322,9 @@ class FBNewsApp(ctk.CTk):
             if not sources:
                 self.source_list.insert("end", "  📭 Chưa có nguồn nào. Thêm nguồn Facebook ở phía trên.\n")
             else:
-                header = f"  {'#':<4} {'Tên nguồn':<22} {'URL':<48} {'On':<5} {'Max h':<7} {'Quét cuối'}\n"
+                header = f"  {'#':<4} {'Tên nguồn':<22} {'URL':<38} {'On':<5} {'Max h':<7} {'Delogo':<22} {'Quét cuối'}\n"
                 self.source_list.insert("end", header)
-                self.source_list.insert("end", "  " + "─" * 100 + "\n")
+                self.source_list.insert("end", "  " + "─" * 125 + "\n")
 
                 for i, s in enumerate(sources, 1):
                     active = "✅" if s.get("is_active") else "❌"
@@ -330,8 +337,11 @@ class FBNewsApp(ctk.CTk):
                             last_scan = str(last_scan)[:16]
 
                     name = (s.get("source_name") or "")[:21]
-                    url = (s.get("source_url") or "")[:47]
-                    line = f"  {i:<4} {name:<22} {url:<48} {active:<5} {s.get('max_video_age_hours', 48):<7} {last_scan}\n"
+                    url = (s.get("source_url") or "")[:37]
+                    delogo_text = (s.get("delogo") or "")[:21]
+                    if not delogo_text:
+                        delogo_text = "Không"
+                    line = f"  {i:<4} {name:<22} {url:<38} {active:<5} {s.get('max_video_age_hours', 48):<7} {delogo_text:<22} {last_scan}\n"
                     self.source_list.insert("end", line)
 
             self.source_list.configure(state="disabled")
@@ -447,7 +457,7 @@ class FBNewsApp(ctk.CTk):
         try:
             # Dùng cùng Python interpreter đang chạy GUI
             python_exe = sys.executable
-            cmd = [python_exe, "fb_pipeline.py", mode]
+            cmd = [python_exe, "-u", "fb_pipeline.py", mode]
             self.log(f"🖥️ Lệnh: {' '.join(cmd)}")
 
             self.process = subprocess.Popen(
@@ -466,8 +476,10 @@ class FBNewsApp(ctk.CTk):
                 if line:
                     self.log(line)
 
-            self.process.wait()
-            code = self.process.returncode
+            code = 0
+            if self.process:
+                self.process.wait()
+                code = self.process.returncode
 
             if code == 0:
                 self.log("\n✅ Pipeline hoàn thành!")

@@ -1,0 +1,46 @@
+{
+  "title_tiktok": "Người mẹ đẩy hai con nhỏ đi giữa nắng gắt khiến ai nhìn cũng lo",
+  "hook": "Giữa cái nắng như đổ lửa, một người mẹ vẫn lặng lẽ đẩy xe đưa hai con nhỏ đi dọc đường quốc lộ.",
+  "script_voice": "Giữa trưa nắng gay gắt, nhiều người đi đường bất ngờ nhìn thấy một người phụ nữ đẩy xe, bên cạnh là hai đứa trẻ còn rất nhỏ. Điều khiến ai cũng xót xa là chị được cho là đã đi bộ một quãng đường rất xa, từ Hải Phòng vào tận phía Nam, chỉ với vài món đồ và hai con bên cạnh. Người dân dọc đường thấy vậy liền dừng lại hỏi han, mang đồ ăn, nước uống ra giúp. Nhưng chị chỉ nhận thức ăn, còn tiền thì từ chối. Càng nhìn hai em bé mới vài tháng tuổi và khoảng hai tuổi phải theo mẹ dưới nắng nóng, mọi người càng lo lắng. Sau đó, lực lượng chức năng địa phương đã có mặt, khuyên ngăn và nhờ y tế kiểm tra sức khỏe cho các bé. Hiện ba mẹ con đã được hỗ trợ nghỉ tạm để chờ người thân đến đón. Một hành trình khiến nhiều người không khỏi nghẹn lòng.",
+  "main_idea": "Video ghi lại hình ảnh một người phụ nữ đẩy xe đưa hai con nhỏ đi bộ đường dài giữa thời tiết nắng nóng, khiến người dân và lực lượng chức năng lo lắng, hỗ trợ kiểm tra sức khỏe và sắp xếp nơi nghỉ tạm cho ba mẹ con.",
+  "viral_angle": "Góc khai thác nhân văn và xót xa, bắt đầu từ hình ảnh tưởng chỉ là một người mẹ đi đường nhưng càng xem càng thấy lo lắng cho hai đứa trẻ còn quá nhỏ.",
+  "viewer_emotion": "Xót xa, lo lắng và thương cảm",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Giữa cái nắng như đổ lửa, một người mẹ vẫn lặng lẽ đẩy xe đưa hai con nhỏ đi dọc đường quốc lộ.",
+      "visual_description": "Cảnh quay từ trong ô tô nhìn ra đường, phía xa có một người phụ nữ đang đẩy xe dưới trời nắng gắt."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, nhiều người chỉ nghĩ đó là một người đi đường bình thường. Nhưng khi biết chị đã đi bộ một quãng rất xa, ai cũng bắt đầu thấy bất an.",
+      "visual_description": "Máy quay tiến gần hơn, thấy người phụ nữ đi bên lề đường với xe đẩy và đồ đạc mang theo."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Bên cạnh chị là hai đứa trẻ còn quá nhỏ, một bé nằm trong xe, một bé được mẹ địu sát người giữa cái nắng gay gắt.",
+      "visual_description": "Cận cảnh người mẹ đứng cạnh xe đẩy, trên người địu một em bé, xe đẩy phía trước được che chắn sơ sài."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Người dân dọc đường thương tình mang đồ ăn, nước uống ra giúp. Chị nhận đồ ăn cho các con, nhưng lại từ chối nhận tiền.",
+      "visual_description": "Cảnh người đi đường dừng xe hỏi han, đưa đồ hỗ trợ cho ba mẹ con bên đường."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều khiến mọi người lo nhất không phải là quãng đường xa, mà là sức khỏe của hai em bé khi phải theo mẹ trong thời tiết khắc nghiệt như vậy.",
+      "visual_description": "Hình ảnh hai em bé và người mẹ dưới trời nắng, xung quanh là đường lớn và cánh đồng ven đường."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Sau đó, lực lượng chức năng đã gặp gỡ, khuyên ngăn và nhờ y tế kiểm tra sức khỏe cho các bé.",
+      "visual_description": "Mô tả cảnh người dân và lực lượng chức năng tiếp cận, hỏi thăm tình hình của ba mẹ con."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Hiện ba mẹ con đã được hỗ trợ nghỉ tạm để chờ người thân liên hệ đến đón. Một hành trình khiến ai xem cũng không khỏi nghẹn lòng.",
+      "visual_description": "Cảnh kết lắng lại với hình ảnh người mẹ và hai con được hỗ trợ rời khỏi đường nắng, chuyển sang nơi an toàn hơn."
+    }
+  ]
+}

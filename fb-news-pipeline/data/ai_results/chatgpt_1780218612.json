@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Tưởng đi chơi, ai ngờ cả nhóm vào phòng đèn màu để ôn bài",
+  "hook": "Nhìn khung cảnh cứ tưởng đang giải trí, nhưng màn hình bật lên mới khiến ai cũng bất ngờ.",
+  "script_voice": "Cứ tưởng nhóm bạn này rủ nhau đi chơi cho xả stress, vì xung quanh toàn ánh đèn màu, ghế ngồi và cả micro đặt sẵn. Nhưng chỉ vài giây sau, sự thật mới lộ ra. Không phải nhạc, không phải tiệc tùng, thứ xuất hiện trên màn hình lại là bài giảng Toán. Cả nhóm ngồi nghiêm túc theo dõi từng đáp án, như biến cả căn phòng thành lớp học đặc biệt. Có lẽ với những người thật sự mê học, chỉ cần có màn hình lớn và tinh thần tập trung, ở đâu cũng có thể thành nơi ôn bài.",
+  "main_idea": "Video ghi lại cảnh một nhóm bạn trẻ ngồi trong không gian giống phòng giải trí với ánh đèn màu, nhưng thay vì hát hay chơi, họ lại bật bài giảng Toán trên màn hình lớn để học cùng nhau.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Nhìn qua cứ tưởng đây là một buổi đi chơi bình thường của nhóm bạn.",
+      "visual_description": "Khung hình mở đầu với ánh sáng màu xanh và không gian trong phòng giải trí, tạo cảm giác như chuẩn bị hát hoặc vui chơi."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Đèn màu đã bật, micro cũng có sẵn, mọi thứ nhìn rất giống một cuộc vui.",
+      "visual_description": "Máy quay lia qua chiếc micro và khu vực ghế ngồi trong phòng, ánh sáng đỏ xanh chiếu lên không gian xung quanh."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Nhưng khi nhìn sang nhóm bạn đang ngồi phía trước, câu chuyện bắt đầu rẽ hướng.",
+      "visual_description": "Ba bạn nam ngồi cạnh nhau trên ghế, tập trung nhìn về phía màn hình lớn ở phía trước."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Không ai cầm micro để hát, cũng chẳng ai đứng dậy nhảy theo nhạc.",
+      "visual_description": "Nhóm bạn vẫn ngồi yên, biểu cảm chăm chú, bối cảnh phía sau có tường màu đỏ và ánh đèn phòng."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Thứ xuất hiện trên màn hình lại là bài giảng Toán với biểu đồ và đáp án.",
+      "visual_description": "Màn hình lớn hiển thị nội dung bài học Toán, có các đồ thị, câu hỏi trắc nghiệm và phần giảng giải."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Đúng là khi đã có tinh thần học, phòng nào cũng có thể thành lớp học.",
+      "visual_description": "Máy quay giữ vào màn hình bài giảng trong không gian ánh đèn màu, tạo điểm kết hài hước và bất ngờ."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

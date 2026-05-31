@@ -1,0 +1,8 @@
+2026/05/31-18:59:07.993 4acd6 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/31-18:59:07.999 4acd6 Recovering log #133
+2026/05/31-18:59:07.999 4acd6 Level-0 table #137: started
+2026/05/31-18:59:08.004 4acd6 Level-0 table #137: 13613 bytes OK
+2026/05/31-18:59:08.006 4acd6 Delete type=0 #133
+2026/05/31-19:00:08.009 4acd6 Level-0 table #140: started
+2026/05/31-19:00:08.013 4acd6 Level-0 table #140: 24300 bytes OK
+2026/05/31-19:00:08.016 4acd6 Delete type=0 #138

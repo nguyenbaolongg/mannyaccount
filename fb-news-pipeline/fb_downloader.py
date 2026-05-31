@@ -46,7 +46,9 @@ def _download_ytdlp(video_url: str, video_id: str) -> dict | None:
             "yt-dlp",
             "--no-warnings",
             "--no-check-certificates",
+            "--no-simulate",
             *cookie_arg,
+            "--print", "%(title)s",
             "-f", "best[ext=mp4]/best",
             "--merge-output-format", "mp4",
             "--socket-timeout", "30",
@@ -55,7 +57,13 @@ def _download_ytdlp(video_url: str, video_id: str) -> dict | None:
             video_url,
         ]
 
-        subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        
+        title_extracted = ""
+        if res.stdout:
+            lines = [l for l in res.stdout.strip().split('\n') if l.strip()]
+            if lines:
+                title_extracted = lines[0].strip()
 
         if not os.path.exists(output_path):
             return None
@@ -64,7 +72,7 @@ def _download_ytdlp(video_url: str, video_id: str) -> dict | None:
         file_hash = _compute_hash(output_path)
 
         print(f"   ✅ Downloaded: {size / 1024 / 1024:.1f}MB")
-        return {"path": output_path, "hash": file_hash, "size": size}
+        return {"path": output_path, "hash": file_hash, "size": size, "title": title_extracted}
 
     except Exception as e:
         print(f"   yt-dlp lỗi: {str(e)[:200]}")

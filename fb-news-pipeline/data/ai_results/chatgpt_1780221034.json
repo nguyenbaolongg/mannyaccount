@@ -1,0 +1,42 @@
+{
+  "title_tiktok": "Cô gái chỉ cần xinh đẹp còn mọi chuyện đã có anh phía sau",
+  "hook": "Có người yêu chiều như thế này thì đi giày cao gót cũng không còn sợ đau chân",
+  "script_voice": "Giữa nơi đông người, cô gái vẫn tự tin diện đôi giày cao gót để giữ dáng thật xinh. Nhưng phía sau những bước đi ấy là một người âm thầm quan sát, sẵn sàng đỡ lấy cô bất cứ lúc nào. Không cần nói lời ngọt ngào, chỉ một hành động nhỏ cũng đủ khiến người xem bật cười rồi thấy ấm lòng. Cô cứ việc đẹp theo cách mình muốn, còn mệt mỏi, vấp ngã hay khó bước tiếp thì đã có anh ở phía sau lo hết.",
+  "main_idea": "Video ghi lại khoảnh khắc một cô gái đi giày cao gót trong lúc di chuyển, phía sau có chàng trai luôn theo sát để hỗ trợ và chăm sóc, tạo cảm giác vừa hài hước vừa ngọt ngào.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có người yêu chiều như thế này thì đi giày cao gót cũng không còn sợ đau chân",
+      "visual_description": "Khung hình mở đầu ở nơi đông người, cô gái đứng phía trước với đôi giày cao gót, xung quanh có nhiều người qua lại"
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa nơi đông người, cô gái vẫn tự tin diện đôi giày cao gót để giữ dáng thật xinh",
+      "visual_description": "Máy quay góc thấp tập trung vào chân cô gái và đôi giày, thể hiện việc di chuyển không quá thoải mái"
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng phía sau những bước đi ấy là một người âm thầm quan sát, sẵn sàng đỡ lấy cô bất cứ lúc nào",
+      "visual_description": "Chàng trai xuất hiện phía sau, đưa tay hỗ trợ và theo sát cô gái trong lúc cô đứng hoặc bước đi"
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Không cần nói lời ngọt ngào, chỉ một hành động nhỏ cũng đủ khiến người xem bật cười rồi thấy ấm lòng",
+      "visual_description": "Cảnh chàng trai tiếp tục ở phía sau, tạo cảm giác vừa hài hước vừa quan tâm trong không gian đông đúc"
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Cô cứ việc đẹp theo cách mình muốn, còn mệt mỏi, vấp ngã hay khó bước tiếp thì đã có anh ở phía sau lo hết",
+      "visual_description": "Khung hình kết lại với cô gái đứng phía trước và người phía sau vẫn âm thầm hỗ trợ, nhấn mạnh sự chăm sóc nhẹ nhàng"
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

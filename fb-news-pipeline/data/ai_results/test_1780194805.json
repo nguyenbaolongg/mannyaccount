@@ -1,0 +1,45 @@
+{
+  "title_tiktok": "Chú rể vừa xuất hiện đã khiến cả đám cưới phải ngoái nhìn",
+  "hook": "Ngày vui chưa kịp bắt đầu, chú rể đã có màn xuất hiện khiến ai cũng bất ngờ.",
+  "script_voice": "Trong ngày trọng đại, ai cũng nghĩ cô dâu chú rể sẽ bước ra thật nhẹ nhàng và chỉn chu. Nhưng ngay từ lúc xuất hiện bên xe hoa, chú rể đã thu hút toàn bộ sự chú ý bằng những hành động đầy phấn khích. Từ ngoài cổng cưới đến lúc đi cạnh cô dâu, mọi ánh mắt đều dõi theo từng bước chân của anh. Có người bật cười, có người ngỡ ngàng, còn cô dâu vẫn cố giữ bình tĩnh trong bộ váy cưới trắng. Chỉ vài giây ngắn ngủi nhưng khoảnh khắc này đã khiến đám cưới trở nên đáng nhớ hơn bao giờ hết.",
+  "estimated_duration_seconds": 30,
+  "main_idea": "Video ghi lại khoảnh khắc chú rể có những hành động phấn khích trong ngày cưới, khiến người xung quanh chú ý và tạo nên tình huống bất ngờ tại lễ cưới.",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Ngày cưới vốn là lúc ai cũng mong mọi thứ thật hoàn hảo và chỉn chu.",
+      "visual_description": "Chú rể mặc vest đen đứng cạnh xe hoa màu trắng trước khu vực tổ chức đám cưới."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Nhưng chỉ vừa xuất hiện, chú rể đã nhanh chóng trở thành tâm điểm của mọi ánh nhìn.",
+      "visual_description": "Chú rể di chuyển nhanh trên đường, xung quanh có người đứng quan sát."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Những động tác đầy phấn khích khiến không khí buổi lễ bỗng thay đổi hẳn.",
+      "visual_description": "Chú rể đứng gần khu vực thảm cưới, giơ tay và thể hiện sự hào hứng."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Trong khi đó, xe hoa và không gian cưới vẫn được chuẩn bị trang trọng phía sau.",
+      "visual_description": "Cận cảnh xe hoa màu trắng được trang trí hoa trắng ở phần đầu xe."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Cô dâu xuất hiện trong bộ váy trắng, còn chú rể tiếp tục khiến mọi người chú ý.",
+      "visual_description": "Cô dâu mặc váy cưới trắng đứng cạnh chú rể trước xe hoa."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Một khoảnh khắc ngắn thôi, nhưng đủ để đám cưới này được nhắc lại mãi về sau.",
+      "visual_description": "Chú rể dìu cô dâu đi vào khu vực rạp cưới, người xung quanh nhìn theo."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Một Cây Gậy Có Thể Giúp Cả Nhà Tránh Tai Họa Từ Trần Nhà",
+  "hook": "Chỉ một tiếng gõ lạ trên trần nhà cũng có thể là dấu hiệu không được xem nhẹ.",
+  "script_voice": "Sau sự việc đau lòng tại Nghệ An, nhiều gia đình bắt đầu nhìn lại chính trần nhà của mình. Trong video, người quay dùng một cây gậy dài gõ thử lên phần trần có dấu hiệu bong tróc. Chỉ sau vài lần chạm, những mảng vữa yếu đã rơi xuống, để lộ nguy cơ tiềm ẩn ngay trong căn phòng tưởng như an toàn. Điều đáng sợ là những vết nứt nhỏ thường bị bỏ qua mỗi ngày. Nhưng nếu không kiểm tra kịp thời, chúng có thể trở thành hiểm họa bất ngờ. Đây không phải là hành động làm cho vui, mà là lời nhắc mỗi gia đình nên chủ động kiểm tra trần nhà, tường nhà và những khu vực đã xuống cấp. An toàn đôi khi bắt đầu từ một việc rất nhỏ.",
+  "main_idea": "Video cảnh báo nguy cơ trần nhà xuống cấp, bong vữa và khuyến khích các gia đình chủ động kiểm tra bằng cách quan sát, gõ thử những vị trí có dấu hiệu nứt để phòng tránh tai nạn đáng tiếc.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Chỉ một vết nứt nhỏ trên trần nhà cũng có thể che giấu nguy hiểm rất lớn.",
+      "visual_description": "Máy quay hướng lên trần nhà trong một căn phòng, xuất hiện các vùng trần có dấu hiệu cũ và không đều màu."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Sau một sự việc đau lòng, nhiều người bắt đầu kiểm tra lại nơi mình đang sống.",
+      "visual_description": "Khung hình lia chậm quanh trần và tường, cho thấy không gian trong nhà với cửa sổ và ánh sáng tự nhiên."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Người trong video dùng một cây gậy dài gõ nhẹ vào phần trần có dấu hiệu bong tróc.",
+      "visual_description": "Một cây gậy được đưa lên cao, chạm vào vị trí trần có vết nứt và mảng vữa yếu."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Chỉ vài lần kiểm tra, những mảng vữa lỏng đã bắt đầu rơi xuống nền nhà.",
+      "visual_description": "Các mảnh vữa nhỏ rơi khỏi trần, camera rung nhẹ khi người quay tiếp tục quan sát vị trí nguy hiểm."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Điều đáng sợ là trước đó, căn phòng này vẫn trông bình thường như bao căn phòng khác.",
+      "visual_description": "Máy quay lùi ra xa hơn, nhìn thấy cửa sổ, tường nhà và một số mảnh vỡ nằm dưới sàn."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Nếu nhà bạn có trần cũ, vết nứt hoặc vữa phồng rộp, hãy kiểm tra ngay trước khi quá muộn.",
+      "visual_description": "Khung hình tập trung lại vào vùng trần bị bong, nhấn mạnh dấu hiệu xuống cấp cần được sửa chữa kịp thời."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

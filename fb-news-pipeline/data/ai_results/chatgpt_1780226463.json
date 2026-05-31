@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Con chim quý bất ngờ xuất hiện trên nóc nhà khiến ai cũng phải nhìn kỹ",
+  "hook": "Nhìn thoáng qua tưởng chỉ là một con chim đậu trên mái nhà, nhưng điểm lạ nằm ở chính cái tên của nó.",
+  "script_voice": "Giữa một khu nhà cao tầng, mọi thứ tưởng như rất bình thường cho đến khi một con chim lớn bất ngờ xuất hiện trên nóc mái. Nó đứng im lặng, dáng vẻ nổi bật với chiếc mỏ đặc trưng khiến người đi ngang cũng phải ngước nhìn. Điều khiến đoạn video này gây chú ý không chỉ là khoảnh khắc hiếm gặp, mà còn là cách dân mạng gọi vui: một loài chim quý, thường được nhắc đến trong Sách đỏ, lại đang đậu ngay trên nóc một căn nhà được ví như Sổ đỏ. Một câu nói đùa thôi, nhưng lại khiến khoảnh khắc này trở nên vừa thú vị, vừa đáng nhớ. Có những cảnh chỉ diễn ra vài giây, nhưng đủ để cả khu phố phải dừng lại nhìn.",
+  "main_idea": "Video ghi lại khoảnh khắc một con chim quý, có ngoại hình giống chim mỏ sừng, đậu trên nóc một căn nhà cao tầng và tạo nên cách gọi hài hước là Sách đỏ đậu trên Sổ đỏ.",
+  "viral_angle": "Khai thác sự bất ngờ và cách chơi chữ thú vị giữa loài chim quý trong Sách đỏ với căn nhà được ví như Sổ đỏ.",
+  "viewer_emotion": "Bất ngờ, tò mò và thích thú",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn thoáng qua tưởng chỉ là một con chim đậu trên mái nhà, nhưng điểm lạ nằm ở chính cái tên của nó.",
+      "visual_description": "Cảnh quay từ dưới lên, một căn nhà cao tầng hiện ra trong khung hình, trên mép mái có một con chim lớn đang đứng."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa một khu nhà cao tầng, mọi thứ tưởng như rất bình thường cho đến khi con chim này bất ngờ xuất hiện.",
+      "visual_description": "Máy quay hướng lên phần nóc nhà, con chim đứng yên ở vị trí cao, xung quanh là bầu trời và cây cối."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Dáng vẻ nổi bật cùng chiếc mỏ đặc trưng khiến ai đi ngang cũng phải ngước nhìn thêm lần nữa.",
+      "visual_description": "Khung hình tiến gần hơn, làm rõ hình dáng con chim với chiếc mỏ lớn và màu sắc nổi bật."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều khiến đoạn video này viral chính là cách gọi vui: Sách đỏ lại đang đậu trên Sổ đỏ.",
+      "visual_description": "Cận cảnh con chim đứng trên mép mái nhà, tạo cảm giác vừa lạ mắt vừa hài hước theo đúng nội dung tiêu đề."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một câu nói đùa thôi, nhưng biến khoảnh khắc hiếm gặp này thành cảnh ai xem cũng nhớ.",
+      "visual_description": "Con chim tiếp tục đứng trên nóc nhà, khung hình giữ lại khoảnh khắc độc đáo trước khi video kết thúc."
+    }
+  ]
+}

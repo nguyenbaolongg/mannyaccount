@@ -1,0 +1,31 @@
+{
+  "title_tiktok": "Cây mai này khiến cả nhà tưởng Tết đến sớm",
+  "hook": "Mới đầu tháng 6 thôi mà cây mai này đã làm ai nhìn cũng phải khựng lại.",
+  "script_voice": "Mới đầu tháng 6 thôi mà cây mai này đã làm ai nhìn cũng phải khựng lại. Tưởng chỉ là một góc vườn bình thường, nhưng khi máy quay tiến lại gần, cả chậu mai vàng đang nở rực như đang báo Tết. Nhìn cảnh này đúng là vừa buồn cười vừa bất ngờ, vì bình thường phải chờ cuối năm mới thấy mai khoe sắc như vậy. Không biết do thời tiết lạ, do cây quá nôn nao, hay do chủ nhà chăm khéo quá, nhưng khoảnh khắc này khiến ai cũng muốn hỏi một câu: Mai ơi, mới tháng 6 mà đã vội chơi Tết rồi sao?",
+  "main_idea": "Video ghi lại cảnh một cây mai vàng trong vườn bất ngờ nở hoa rực rỡ dù mới đầu tháng 6, tạo cảm giác hài hước và bất ngờ như Tết đến sớm.",
+  "viral_angle": "Bất ngờ hài hước từ một hiện tượng đời thường: cây mai nở sai mùa khiến người xem liên tưởng đến Tết.",
+  "viewer_emotion": "Bất ngờ, thích thú và vui vẻ",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Mới đầu tháng 6 thôi mà cây mai này đã làm ai nhìn cũng phải khựng lại.",
+      "visual_description": "Máy quay bắt đầu từ góc vườn có nhiều cây xanh, nền đất tự nhiên và dòng chữ trên video tạo cảm giác tò mò."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Tưởng chỉ là một góc vườn bình thường, nhưng khi máy quay tiến lại gần, cả chậu mai vàng đang nở rực như đang báo Tết.",
+      "visual_description": "Máy quay di chuyển dần đến chậu mai, những bông hoa vàng bắt đầu hiện rõ trong khung hình."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhìn cảnh này đúng là vừa buồn cười vừa bất ngờ, vì bình thường phải chờ cuối năm mới thấy mai khoe sắc như vậy.",
+      "visual_description": "Cận cảnh cây mai trong chậu với nhiều bông hoa vàng nở đều, phía sau là khu vườn yên tĩnh."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Không biết do thời tiết lạ, do cây quá nôn nao, hay do chủ nhà chăm khéo quá, nhưng khoảnh khắc này khiến ai cũng muốn hỏi một câu: Mai ơi, mới tháng 6 mà đã vội chơi Tết rồi sao?",
+      "visual_description": "Khung hình giữ lâu ở cây mai vàng đang nở rực, tạo điểm chốt hài hước và đáng nhớ cho video."
+    }
+  ]
+}

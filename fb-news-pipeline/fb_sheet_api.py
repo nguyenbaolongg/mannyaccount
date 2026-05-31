@@ -7,13 +7,13 @@
   Cột trên sheet "facebook":
   A: link gốc Facebook
   B: hook
-  C: title_tiktok
+  C: script_voice
   D: main_idea
-  E: content_style
-  F: estimated_duration_seconds
+  E: hook (duplicate)
+  F: have_frame (true/false)
   G: scenes (JSON string)
   H: source_name
-  I: script_voice
+  I: title_tiktok
   J: voice_link
   K: drive_link
   L: status
@@ -32,34 +32,30 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, PROJECT_ROOT)
 from services.sheet_api import safe_post_json
 
-SHEET_URL = "https://script.google.com/macros/s/AKfycbwFf388vFhruw_eKOra_uGKltu6SdJQnSiA2dkovmkC6tWPFsSJsAYgLPmnre7vY-lK/exec"
+SHEET_URL = "https://script.google.com/macros/s/AKfycbzze8wbf3s9o6OtH180Qp-ofKj_ZuL3S-o4-GoahxvJ2IhE-jPD9YQLTQnvMkrEgRyg/exec"
 
 
 def save_fb_to_sheet(ai_result: dict, video_url: str, source_name: str = "") -> dict | None:
     """
     Lưu kết quả AI phân tích lên Google Sheet tab "facebook".
-
-    ai_result: JSON từ Gemini AI (hook, script_voice, title_tiktok...)
-    video_url: URL video gốc Facebook
-    source_name: Tên nguồn (VD: Theanh28)
-
-    Trả về: {"status": "success", "row": 5} hoặc None
+    Mapping: B=hook, C=script_voice, E=hook, I=title_tiktok
     """
     payload = {
         "action": "save_facebook",
         "sheet_name": "facebook",
-        "link": video_url,
-        "hook": ai_result.get("hook", ""),
-        "title_tiktok": ai_result.get("title_tiktok", ""),
-        "main_idea": ai_result.get("main_idea", ""),
-        "content_style": ai_result.get("content_style", ""),
+        "link": video_url,                                          # A
+        "hook": ai_result.get("hook", ""),                          # B + E
+        "script_voice": ai_result.get("script_voice", ""),          # C
+        "main_idea": ai_result.get("main_idea", ""),                # D
         "estimated_duration": ai_result.get("estimated_duration_seconds", 30),
-        "scenes": json.dumps(ai_result.get("scenes", []), ensure_ascii=False),
-        "source_name": source_name,
-        "script_voice": ai_result.get("script_voice", ""),
+        "have_frame": ai_result.get("have_frame", False),            # F
+        "scenes": json.dumps(ai_result.get("scenes", []), ensure_ascii=False),  # G
+        "source_name": source_name,                                 # H
+        "title_tiktok": ai_result.get("title_tiktok", ""),          # I
+        "have_frame": ai_result.get("have_frame", False),
     }
 
-    print(f"      📊 Ghi Sheet: hook → B, script_voice → I")
+    print(f"      📊 Ghi Sheet: hook→B+E, script_voice→C, title_tiktok→I")
 
     result = safe_post_json(SHEET_URL, payload)
 

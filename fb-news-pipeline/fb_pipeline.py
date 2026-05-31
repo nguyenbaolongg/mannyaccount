@@ -2,17 +2,17 @@
 """
 ═══════════════════════════════════════════════════════
   Facebook News Auto Remix — Pipeline chính
-  
-  FLOW MỚI:
+
+  FLOW:
   1. Cào 10 video (reels) từ Facebook page
   2. Lọc video mới (so sánh last_video_id)
   3. Với mỗi video mới:
      a. Download video
-     b. Gửi video + caption cho Gemini AI → nhận JSON
-     c. Ghi JSON lên Google Sheet (hook→B, script_voice→I)
-     d. Lấy hook → tạo voice
-     e. Dựng video: intro (video gốc + frame + logo + voice hook)
-                   + video gốc (giữ audio gốc)
+     b. Gửi video + caption cho ChatGPT → nhận JSON
+     c. Ghi JSON lên Google Sheet (hook→B+E, script_voice→C, title→I)
+     d. Tạo voice hook (cột E)
+     e. Nếu CÓ FRAME → tạo thêm voice script (cột C) → edit giống TikTok
+        Nếu KHÔNG FRAME → hook intro (mute+voice) + body (audio gốc) + logo xuyên suốt
      f. Cập nhật last_video_id
 ═══════════════════════════════════════════════════════
 """
@@ -52,13 +52,38 @@ def _env(key, default=""):
                 line = line.strip()
                 if line.startswith(key + "="):
                     return line.split("=", 1)[1].strip()
-    return default
-
 VOICE_PROFILE_ID = _env("VOICEBOX_PROFILE_ID", "cb6f4c6a-2617-4eeb-a148-909f0084d8c8")
+GDRIVE_FOLDER_ID = _env("DRIVE_FOLDER_ID", _env("GDRIVE_FOLDER_ID", "1VgkkbUJ82kxzWXJH8cfn7UFMMFBKQkzS"))
 
 # Logo/frame paths
 LOGO_PATH = os.path.join(APP_DIR, "assets", "logo.png")
 FRAME_PATH = os.path.join(APP_DIR, "assets", "frame.png")
+
+
+def _get_duration(file_path: str) -> float:
+    """Lấy duration file media bằng ffprobe"""
+    try:
+        result = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+             "-of", "csv=p=0", file_path],
+            capture_output=True, text=True, timeout=10
+        )
+        return float(result.stdout.strip())
+    except:
+        return 0.0
+
+def _is_horizontal(file_path: str) -> bool:
+    """Kiểm tra xem video có phải là video ngang không (width > height)"""
+    try:
+        result = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-select_streams", "v:0", 
+             "-show_entries", "stream=width,height", "-of", "csv=s=x:p=0", file_path],
+            capture_output=True, text=True, timeout=10
+        )
+        w, h = map(int, result.stdout.strip().split('x'))
+        return w > h
+    except:
+        return False
 
 
 class FBNewsPipeline:
@@ -158,7 +183,7 @@ class FBNewsPipeline:
             print(f"   ☁️ last_video_id = {latest_done_id}")
 
     # ═══════════════════════════════════════════════════
-    #  XỬ LÝ 1 VIDEO — Flow mới
+    #  XỬ LÝ 1 VIDEO
     # ═══════════════════════════════════════════════════
     def _process_one_video(self, video: dict, source: dict) -> bool:
         job_id = uuid.uuid4().hex[:8]
@@ -174,44 +199,53 @@ class FBNewsPipeline:
             if not dl:
                 raise Exception("Download thất bại")
 
-            # Check trùng hash
             if self._check_hash_exists(dl["hash"]):
                 print(f"      ⏭️ Trùng file hash → skip")
                 return False
 
-            # Lưu record vào DB
+            # Ghi đè caption từ crawler (thường là "34K") bằng title xịn từ yt-dlp
+            if dl.get("title") and len(dl["title"]) > 5:
+                real_title = dl["title"]
+                parts = real_title.split(" | ")
+                if len(parts) >= 2 and ("views" in parts[0].lower() or "lượt xem" in parts[0].lower()):
+                    caption = parts[1].strip()
+                elif len(parts) >= 1:
+                    caption = parts[0].strip()
+                else:
+                    caption = real_title
+                print(f"      📝 Tìm thấy Caption xịn: \"{caption[:60]}...\"")
+
             record_id = self._insert_video_record(source["id"], video, dl)
 
-            # ── [2/6] Gửi video + caption cho ChatGPT qua web ──
+            # ── [2/6] ChatGPT phân tích ──
             print(f"      🤖 [2/6] ChatGPT phân tích video...")
             ai_result = analyze_video_with_chatgpt(dl["path"], caption)
 
             if not ai_result:
-                # Fallback: tạo JSON cơ bản từ caption
                 print(f"      ℹ️ AI không khả dụng — dùng caption gốc")
                 ai_result = {
                     "title_tiktok": caption[:100],
                     "hook": caption[:80],
                     "script_voice": caption[:200],
                     "main_idea": caption[:150],
-                    "estimated_duration_seconds": 30,
+                    "have_frame": False,
                     "scenes": [],
-                    "content_style": "Tin tức viral",
                 }
 
             hook = ai_result.get("hook", "")
             script_voice = ai_result.get("script_voice", "")
             title = ai_result.get("title_tiktok", "")
+            have_frame = ai_result.get("have_frame", False)
 
-            # Cập nhật DB
+            print(f"      📋 have_frame = {have_frame}")
+
             if record_id:
                 supabase.table("facebook_videos").update({
-                    "ai_title": title,
-                    "ai_script": script_voice,
+                    "ai_title": title, "ai_script": script_voice,
                     "status": "generating_script",
                 }).eq("id", record_id).execute()
 
-            # ── [3/6] Ghi lên Google Sheet ──
+            # ── [3/6] Ghi Google Sheet ──
             print(f"      📊 [3/6] Ghi Google Sheet...")
             sheet_result = save_fb_to_sheet(
                 ai_result=ai_result,
@@ -220,229 +254,372 @@ class FBNewsPipeline:
             )
             sheet_row = sheet_result.get("row") if sheet_result else None
 
-            # ── [4/6] Tạo voice từ hook ──
+            # ── [4/6] Tạo voice ──
+            # Luôn tạo voice cho hook (cột E)
             print(f"      🗣️ [4/6] Tạo voice hook: \"{hook[:50]}...\"")
-            voice_path = None
+            hook_voice_path = None
+            script_voice_path = None
 
             if hook:
                 try:
-                    voice_path = create_voice_full_pipeline(
-                        text=hook,
-                        save_dir=work_dir,
+                    hook_voice_path = create_voice_full_pipeline(
+                        text=hook, save_dir=work_dir,
                         filename=f"hook_{job_id}.wav",
                         profile_id=VOICE_PROFILE_ID,
                     )
-                    if voice_path and os.path.exists(voice_path):
-                        print(f"      ✅ Voice OK: {os.path.getsize(voice_path) / 1024:.0f}KB")
+                    if hook_voice_path and os.path.exists(hook_voice_path):
+                        print(f"      ✅ Hook voice OK: {os.path.getsize(hook_voice_path) / 1024:.0f}KB")
                     else:
-                        print(f"      ⚠️ Voice trả về nhưng file không tồn tại")
-                        voice_path = None
+                        hook_voice_path = None
                 except Exception as e:
-                    print(f"      ⚠️ Voice lỗi: {e} — bỏ qua voice")
+                    print(f"      ⚠️ Hook voice lỗi: {e}")
 
-            # ── [5/6] Dựng video: intro (hook voice + frame) + video gốc ──
-            print(f"      🎬 [5/6] Dựng video...")
-            final_path = self._edit_video(
-                source_video=dl["path"],
-                voice_path=voice_path,
-                title=hook or title,
-                work_dir=work_dir,
-                job_id=job_id,
-            )
+            # Nếu CÓ FRAME → tạo thêm voice cho script_voice (cột C)
+            if have_frame and script_voice:
+                print(f"      🗣️ Tạo voice script (cột C): \"{script_voice[:50]}...\"")
+                try:
+                    script_voice_path = create_voice_full_pipeline(
+                        text=script_voice, save_dir=work_dir,
+                        filename=f"script_{job_id}.wav",
+                        profile_id=VOICE_PROFILE_ID,
+                    )
+                    if script_voice_path and os.path.exists(script_voice_path):
+                        print(f"      ✅ Script voice OK: {os.path.getsize(script_voice_path) / 1024:.0f}KB")
+                    else:
+                        script_voice_path = None
+                except Exception as e:
+                    print(f"      ⚠️ Script voice lỗi: {e}")
 
-            # ── [6/6] Hoàn tất ──
+            # ── [5/6] Dựng video ──
+            mode_name = "CÓ FRAME" if have_frame else "KHÔNG FRAME"
+            print(f"      🎬 [5/6] Dựng video (mode: {mode_name})...")
+
+            if have_frame:
+                final_path = self._edit_video_with_frame(
+                    source_video=dl["path"],
+                    hook_voice_path=hook_voice_path,
+                    script_voice_path=script_voice_path,
+                    title=title, hook_text=hook,
+                    work_dir=work_dir, job_id=job_id,
+                    source=source,
+                )
+            else:
+                final_path = self._edit_video_no_frame(
+                    source_video=dl["path"],
+                    hook_voice_path=hook_voice_path,
+                    hook_text=hook or title,
+                    work_dir=work_dir, job_id=job_id,
+                    source=source,
+                )
+
+            # ── [6/6] Hoàn tất & Upload Google Drive ──
+            drive_link = None
+            if os.path.exists(final_path):
+                print(f"      ☁️ Đang upload video lên Google Drive...")
+                from modules.upload_drive import upload_video_to_drive
+                drive_link = upload_video_to_drive(final_path, GDRIVE_FOLDER_ID)
+
             if record_id:
                 supabase.table("facebook_videos").update({
-                    "status": "completed",
-                    "processed_path": final_path,
+                    "status": "completed", 
+                    "processed_path": final_path
                 }).eq("id", record_id).execute()
-
+                
             if sheet_row:
                 update_fb_status(sheet_row, "completed")
+                if drive_link:
+                    # Ghi đè vào cột J (cột voice) theo yêu cầu
+                    update_fb_voice_link(sheet_row, drive_link)
+                    print(f"      ✅ Đã đẩy link Drive vào cột J")
 
             print(f"      🎉 [6/6] XONG!")
             print(f"      📁 Video: {final_path}")
-
+            if drive_link:
+                print(f"      🔗 Link Drive: {drive_link}")
+                
+                # Giải phóng bộ nhớ sau khi upload thành công
+                print(f"      🧹 Đang dọn dẹp bộ nhớ tạm...")
+                try:
+                    import shutil
+                    if os.path.exists(work_dir):
+                        shutil.rmtree(work_dir)
+                    if dl and dl.get("path") and os.path.exists(dl["path"]):
+                        os.remove(dl["path"])
+                    print(f"      ✅ Đã giải phóng bộ nhớ cho job {job_id}")
+                except Exception as e:
+                    print(f"      ⚠️ Lỗi khi dọn dẹp: {e}")
+                    
             return True
 
         except Exception as e:
             print(f"      ❌ Lỗi: {e}")
+            import traceback
+            traceback.print_exc()
             return False
-        finally:
-            pass  # Giữ temp files để debug, dọn sau
 
     # ═══════════════════════════════════════════════════
-    #  VIDEO EDITOR — FFmpeg
-    #
-    #  Đoạn đầu: video gốc + frame + logo + voice hook
-    #  Đoạn sau:  video gốc (giữ voice gốc)
+    #  MODE 1: CÓ FRAME
+    #  → Giống TikTok: dùng video_remix.create_video_from_source_video
+    #  → Intro: hook voice (cột E) + frame + logo + text
+    #  → Body:  script voice (cột C) + frame + logo
     # ═══════════════════════════════════════════════════
-    def _edit_video(self, source_video: str, voice_path: str | None,
-                    title: str, work_dir: str, job_id: str) -> str:
-        """
-        Dựng video 2 phần:
-        - Intro: lấy đoạn đầu video gốc + overlay frame/logo + voice hook (mute audio gốc)
-        - Body: phần còn lại video gốc (giữ nguyên audio gốc)
-        """
+    def _edit_video_with_frame(self, source_video, hook_voice_path, script_voice_path,
+                                title, hook_text, work_dir, job_id, source):
+        # NATIVE FFmpeg implementation cho chế độ CÓ FRAME
+        # Sử dụng 1 pass duy nhất: Loop video gốc + chèn full script_voice
+        
         final_path = os.path.join(work_dir, f"final_{job_id}.mp4")
 
-        # Lấy duration voice hook
-        hook_duration = 5.0  # mặc định 5 giây nếu không có voice
-        if voice_path and os.path.exists(voice_path):
-            try:
-                result = subprocess.run(
-                    ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
-                     "-of", "csv=p=0", voice_path],
-                    capture_output=True, text=True, timeout=10
-                )
-                hook_duration = float(result.stdout.strip()) + 0.5
-            except:
-                hook_duration = 5.0
+        hook_duration = 5.0
+        if hook_voice_path and os.path.exists(hook_voice_path):
+            d = _get_duration(hook_voice_path)
+            if d > 0:
+                hook_duration = d + 0.5
 
-        # Lấy duration video gốc
-        try:
-            result = subprocess.run(
-                ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
-                 "-of", "csv=p=0", source_video],
-                capture_output=True, text=True, timeout=10
-            )
-            total_duration = float(result.stdout.strip())
-        except:
-            total_duration = 30.0
+        has_logo = os.path.exists(LOGO_PATH)
+        has_frame = os.path.exists(FRAME_PATH)
 
-        # Phần 1: Intro — video gốc (đoạn đầu) + voice hook + frame/logo
-        intro_path = os.path.join(work_dir, f"intro_{job_id}.mp4")
-
-        # Xây FFmpeg filter cho intro
-        filter_parts = []
-        inputs = ["-ss", "0", "-t", str(hook_duration), "-i", source_video]
+        # ── XÂY DỰNG FFMPEG COMMAND (1 PASS) ──
+        # Dùng -stream_loop -1 để lặp lại video gốc nếu nó ngắn hơn voice
+        inputs = ["-stream_loop", "-1", "-i", source_video]
         input_idx = 1
-
-        # Thêm voice hook
-        if voice_path and os.path.exists(voice_path):
-            inputs += ["-i", voice_path]
-            audio_map = f"[{input_idx}:a]"
+        
+        if script_voice_path and os.path.exists(script_voice_path):
+            inputs += ["-i", script_voice_path]
+            audio_idx = input_idx
             input_idx += 1
         else:
-            audio_map = None
-
-        # Thêm logo overlay nếu có
-        has_logo = os.path.exists(LOGO_PATH)
-        if has_logo:
-            inputs += ["-i", LOGO_PATH]
-            logo_idx = input_idx
-            input_idx += 1
-
-        # Thêm frame overlay nếu có
-        has_frame = os.path.exists(FRAME_PATH)
+            audio_idx = None
+            
         if has_frame:
             inputs += ["-i", FRAME_PATH]
             frame_idx = input_idx
             input_idx += 1
 
-        # Build filter complex
-        filters = []
+        if has_logo:
+            inputs += ["-i", LOGO_PATH]
+            logo_idx = input_idx
+            input_idx += 1
+
+        is_horiz = _is_horizontal(source_video)
+        delogo_config = source.get("delogo", "").strip()
+        delogo_filter = f",delogo={delogo_config}" if delogo_config else ""
+
+        if is_horiz:
+            filters = [
+                "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=20:5[bg_blur]",
+                "[0:v]scale=1080:1920:force_original_aspect_ratio=decrease[fg]",
+                f"[bg_blur][fg]overlay=(W-w)/2:(H-h)/2-150{delogo_filter}[bg]"
+            ]
+        else:
+            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:0{delogo_filter}[bg]"]
         
-        # Định dạng video gốc về 1080x1920 (giữ nguyên tỷ lệ, thêm viền đen nếu cần)
-        filters.append("[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2[bg]")
         current = "[bg]"
 
         if has_frame:
-            # Scale frame đúng 1080x1920
             filters.append(f"[{frame_idx}:v]scale=1080:1920[frame]")
             filters.append(f"{current}[frame]overlay=0:0[with_frame]")
             current = "[with_frame]"
 
         if has_logo:
-            filters.append(f"[{logo_idx}:v]scale=80:80[logo]")
-            filters.append(f"{current}[logo]overlay=W-90:10[with_logo]")
+            filters.append(f"[{logo_idx}:v]scale=1080:1920[logo]")
+            filters.append(f"{current}[logo]overlay=0:0[with_logo]")
             current = "[with_logo]"
 
-        # Thêm text title
-        safe_title = title.replace("'", "").replace('"', '').replace(':', ' ')[:60]
-        filters.append(
-            f"{current}drawtext=text='{safe_title}'"
-            f":fontsize=28:fontcolor=white:borderw=2:bordercolor=black"
-            f":x=(w-text_w)/2:y=h-60[vout]"
-        )
+        import textwrap
+        font_path = os.path.join(APP_DIR, "assets", "font", "RobotoCondensed-Bold.ttf")
+        has_font = os.path.exists(font_path)
+        
+        wrapped_lines = []
+        font_size = 50
+        start_y = 1920 - 690 
+        line_spacing = int(font_size * 1.2)
+        
+        if has_font and hook_text:
+            safe_text = str(hook_text).replace("'", "").replace(":", "\\:").replace("%", "\\%").strip().upper()
+            max_width_px = 950
+            avg_char_width = font_size * 0.55
+            max_chars = int(max_width_px / avg_char_width)
+            wrapped_lines = textwrap.wrap(safe_text, width=max_chars)
+            
+            for i, line in enumerate(wrapped_lines):
+                y_pos = start_y + (i * line_spacing)
+                # Text hiển thị xuyên suốt video
+                draw_filter = (
+                    f"drawtext=fontfile='{font_path}':text='{line}':"
+                    f"fontsize={font_size}:fontcolor=white:bordercolor=black:borderw=2:"
+                    f"shadowcolor=black:shadowx=2:shadowy=2:x=65:y={y_pos}"
+                )
+                filters.append(f"{current}{draw_filter}[vout{i}]")
+                current = f"[vout{i}]"
 
-        if filters:
-            filter_str = ";".join(filters)
-        else:
-            filter_str = f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2[vout]"
+        filters.append(f"{current}copy[vout]")
 
-        # Build intro command
-        intro_cmd = ["ffmpeg", "-y"] + inputs
-        intro_cmd += ["-filter_complex", filter_str, "-map", "[vout]"]
+        cmd = ["ffmpeg", "-y"] + inputs
+        cmd += ["-filter_complex", ";".join(filters), "-map", "[vout]"]
+        cmd += ["-map", f"{audio_idx}:a"] if audio_idx is not None else ["-map", "0:a?"]
+        
+        # Dùng -shortest để cắt đúng lúc AI Voice kết thúc (vì video loop vô hạn)
+        cmd += ["-c:v", "libx264", "-preset", "fast", "-crf", "23",
+                "-c:a", "aac", "-b:a", "128k", "-shortest", final_path]
 
-        if audio_map:
-            intro_cmd += ["-map", audio_map]
-        else:
-            intro_cmd += ["-an"]
-
-        intro_cmd += [
-            "-c:v", "libx264", "-preset", "fast", "-crf", "23",
-            "-c:a", "aac", "-b:a", "128k",
-            "-shortest",
-            intro_path
-        ]
-
-        print(f"         Tạo intro ({hook_duration:.1f}s)...")
+        print(f"         Tạo video CÓ FRAME (1 pass: Voice full + loop video)...")
         try:
-            subprocess.run(intro_cmd, capture_output=True, text=True, timeout=120)
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+            if res.returncode != 0:
+                print(f"         ⚠️ FFmpeg lỗi: {res.stderr}")
         except Exception as e:
-            print(f"         ⚠️ FFmpeg intro lỗi: {e}")
+            print(f"         ⚠️ FFmpeg lỗi exception: {e}")
 
-        # Phần 2: Body — phần còn lại video gốc (giữ audio gốc)
-        body_path = os.path.join(work_dir, f"body_{job_id}.mp4")
-        body_cmd = [
-            "ffmpeg", "-y",
-            "-ss", str(hook_duration),
-            "-i", source_video,
-            "-vf", "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2",
-            "-c:v", "libx264", "-preset", "fast", "-crf", "23",
-            "-c:a", "aac", "-b:a", "128k",
-            body_path
-        ]
+        if not os.path.exists(final_path):
+            import shutil
+            shutil.copy2(source_video, final_path)
+            print(f"         ℹ️ Dùng video gốc (FFmpeg thất bại)")
 
-        body_duration = total_duration - hook_duration
-        if body_duration > 1:
-            print(f"         Tạo body ({body_duration:.1f}s, giữ audio gốc)...")
-            try:
-                subprocess.run(body_cmd, capture_output=True, text=True, timeout=120)
-            except Exception as e:
-                print(f"         ⚠️ FFmpeg body lỗi: {e}")
+        if os.path.exists(final_path):
+            size_mb = os.path.getsize(final_path) / 1024 / 1024
+            print(f"         ✅ Video CÓ FRAME: {size_mb:.1f}MB")
 
-        # Ghép intro + body
-        if os.path.exists(intro_path) and os.path.exists(body_path) and body_duration > 1:
-            concat_list = os.path.join(work_dir, "concat.txt")
-            with open(concat_list, "w") as f:
-                f.write(f"file '{intro_path}'\n")
-                f.write(f"file '{body_path}'\n")
+        return final_path
 
-            concat_cmd = [
-                "ffmpeg", "-y",
-                "-f", "concat", "-safe", "0",
-                "-i", concat_list,
-                "-c", "copy",
-                final_path
+    # ═══════════════════════════════════════════════════
+    #  MODE 2: KHÔNG FRAME (trong video_remix)
+    #  → Đoạn đầu: video gốc (mute) + hook voice + frame + logo
+    #  → Đoạn sau: video gốc (giữ audio gốc) + logo
+    #  → Logo xuyên suốt toàn bộ video
+    # ═══════════════════════════════════════════════════
+    def _edit_video_no_frame(self, source_video, hook_voice_path, hook_text,
+                              work_dir, job_id, source):
+        # 1 PASS: Xử lý lại hình ảnh (Frame, Logo, Text) + Đè Voice đoạn đầu
+        final_path = os.path.join(work_dir, f"final_{job_id}.mp4")
+
+        hook_duration = 5.0
+        if hook_voice_path and os.path.exists(hook_voice_path):
+            d = _get_duration(hook_voice_path)
+            if d > 0:
+                hook_duration = d + 0.5
+
+        has_logo = os.path.exists(LOGO_PATH)
+        has_frame = os.path.exists(FRAME_PATH)
+
+        inputs = ["-i", source_video]
+        input_idx = 1
+
+        if hook_voice_path and os.path.exists(hook_voice_path):
+            inputs += ["-i", hook_voice_path]
+            audio_idx = input_idx
+            input_idx += 1
+        else:
+            audio_idx = None
+
+        if has_frame:
+            inputs += ["-i", FRAME_PATH]
+            frame_idx = input_idx
+            input_idx += 1
+
+        if has_logo:
+            inputs += ["-i", LOGO_PATH]
+            logo_idx = input_idx
+            input_idx += 1
+
+        is_horiz = _is_horizontal(source_video)
+        delogo_config = source.get("delogo", "").strip()
+        delogo_filter = f",delogo={delogo_config}" if delogo_config else ""
+
+        if is_horiz:
+            filters = [
+                "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=20:5[bg_blur]",
+                "[0:v]scale=1080:1920:force_original_aspect_ratio=decrease[fg]",
+                f"[bg_blur][fg]overlay=(W-w)/2:(H-h)/2-150{delogo_filter}[bg]"
             ]
-            print(f"         Ghép intro + body...")
-            try:
-                subprocess.run(concat_cmd, capture_output=True, text=True, timeout=60)
-            except:
-                pass
+        else:
+            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:0{delogo_filter}[bg]"]
+        
+        current = "[bg]"
+
+        if has_frame:
+            filters.append(f"[{frame_idx}:v]scale=1080:1920[frame]")
+            filters.append(f"{current}[frame]overlay=0:0[with_frame]")
+            current = "[with_frame]"
+
+        if has_logo:
+            filters.append(f"[{logo_idx}:v]scale=1080:1920[logo]")
+            filters.append(f"{current}[logo]overlay=0:0[with_logo]")
+            current = "[with_logo]"
+
+        import textwrap
+        font_path = os.path.join(APP_DIR, "assets", "font", "RobotoCondensed-Bold.ttf")
+        has_font = os.path.exists(font_path)
+        
+        if has_font and hook_text:
+            safe_text = str(hook_text).replace("'", "").replace(":", "\\:").replace("%", "\\%").strip().upper()
+            font_size = 50
+            max_width_px = 950
+            avg_char_width = font_size * 0.55
+            max_chars = int(max_width_px / avg_char_width)
+            wrapped_lines = textwrap.wrap(safe_text, width=max_chars)
+            
+            start_y = 1920 - 690  
+            line_spacing = int(font_size * 1.2)
+            
+            for i, line in enumerate(wrapped_lines):
+                y_pos = start_y + (i * line_spacing)
+                # Text hiển thị xuyên suốt video
+                draw_filter = (
+                    f"drawtext=fontfile='{font_path}':text='{line}':"
+                    f"fontsize={font_size}:fontcolor=white:bordercolor=black:borderw=2:"
+                    f"shadowcolor=black:shadowx=2:shadowy=2:"
+                    f"x=65:y={y_pos}"
+                )
+                filters.append(f"{current}{draw_filter}[vout{i}]")
+                current = f"[vout{i}]"
+
+        filters.append(f"{current}copy[vout]")
+
+        # Kiểm tra video gốc có audio không
+        has_audio = False
+        try:
+            probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=codec_name", "-of", "default=noprint_wrappers=1:nokey=1", source_video], capture_output=True, text=True)
+            has_audio = bool(probe.stdout.strip())
+        except:
+            pass
+
+        if audio_idx is not None:
+            if has_audio:
+                # Mute audio gốc đoạn đầu, mix với hook voice, độ dài bằng audio gốc
+                filters.append(f"[0:a]volume=0:enable='between(t,0,{hook_duration})'[orig_mute]")
+                filters.append(f"[orig_mute][{audio_idx}:a]amix=inputs=2:duration=first:dropout_transition=0[aout]")
+            else:
+                filters.append(f"[{audio_idx}:a]copy[aout]")
+        else:
+            if has_audio:
+                filters.append(f"[0:a]copy[aout]")
+
+        cmd = ["ffmpeg", "-y"] + inputs
+        cmd += ["-filter_complex", ";".join(filters), "-map", "[vout]"]
+        
+        if (audio_idx is not None) or has_audio:
+            cmd += ["-map", "[aout]"]
+            
+        cmd += ["-c:v", "libx264", "-preset", "fast", "-crf", "23",
+                "-c:a", "aac", "-b:a", "128k", final_path]
+
+        print(f"         Tạo video KHÔNG FRAME (1 pass: Voice hook mix audio gốc, có chỉnh sửa frame/text/logo)...")
+        try:
+            subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        except Exception as e:
+            print(f"         ⚠️ FFmpeg lỗi: {e}")
 
         # Fallback
         if not os.path.exists(final_path):
-            if os.path.exists(intro_path):
-                shutil.copy2(intro_path, final_path)
-            else:
-                shutil.copy2(source_video, final_path)
-                print(f"         ℹ️ Dùng video gốc (FFmpeg thất bại)")
+            import shutil
+            shutil.copy2(source_video, final_path)
+            print(f"         ℹ️ Dùng video gốc (FFmpeg thất bại)")
 
-        size_mb = os.path.getsize(final_path) / 1024 / 1024
-        print(f"         ✅ Video final: {size_mb:.1f}MB")
+        if os.path.exists(final_path):
+            size_mb = os.path.getsize(final_path) / 1024 / 1024
+            print(f"         ✅ Video NO FRAME: {size_mb:.1f}MB")
+            
         return final_path
 
     # ═══════════════════════════════════════════════════

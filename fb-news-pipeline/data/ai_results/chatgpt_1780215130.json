@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Cô Gái Đau Chân Và Cách Anh Âm Thầm Chăm Sóc Khiến Ai Cũng Mềm Lòng",
+  "hook": "Có những cách yêu không cần nói lớn, chỉ cần nhìn hành động là đủ hiểu.",
+  "script_voice": "Giữa con phố đông người, cô gái dừng lại vì đôi chân đã mỏi sau khi đi cả ngày. Nhưng điều khiến người xem chú ý không phải là khoảnh khắc ấy, mà là chàng trai luôn đứng ngay phía sau. Anh không vội, không than phiền, chỉ lặng lẽ chờ cô, cầm đồ giúp cô và để cô được thoải mái nhất. Có thể với người khác, đó chỉ là một hành động nhỏ. Nhưng với một cô gái, cảm giác được quan tâm đúng lúc lại là điều rất đáng quý. Tình yêu đôi khi không nằm ở lời hứa thật lớn, mà nằm ở việc khi em mệt, anh vẫn ở đó và lo cho em.",
+  "main_idea": "Video ghi lại khoảnh khắc một chàng trai âm thầm chăm sóc bạn gái giữa phố đông, thể hiện sự quan tâm nhẹ nhàng nhưng rất ấm áp.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Giữa con phố đông người, một cô gái bất ngờ dừng lại vì đôi chân đã bắt đầu mỏi.",
+      "visual_description": "Cảnh phố đông người qua lại, cô gái đứng gần quầy đồ ăn, phía dưới có khung chữ giới thiệu nội dung video."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Cô không cần phải nói nhiều, vì người đi cùng đã nhận ra cô đang không thoải mái.",
+      "visual_description": "Chàng trai đứng cạnh cô gái, quan sát và chờ đợi trong khi xung quanh có nhiều người đi ngang."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Anh lặng lẽ đứng phía sau, cầm đồ giúp cô và để cô có thời gian nghỉ một chút.",
+      "visual_description": "Cận cảnh chàng trai đứng gần cô gái, tay cầm túi đồ, dáng vẻ kiên nhẫn và bình tĩnh."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Trong lúc dòng người vẫn vội vã bước qua, anh vẫn chỉ tập trung vào người con gái của mình.",
+      "visual_description": "Nhiều người đi ngang che một phần khung hình, cặp đôi vẫn đứng gần nhau trước quầy hàng."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Một hành động rất nhỏ, nhưng lại khiến người xem cảm nhận được sự quan tâm rất thật.",
+      "visual_description": "Máy quay giữ góc thấp, cô gái đứng yên còn chàng trai ở bên cạnh như đang bảo vệ và chăm sóc."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Tình yêu đôi khi không cần phô trương, chỉ cần khi em mệt, anh vẫn ở đó và lo cho em.",
+      "visual_description": "Khung hình kết lại với cặp đôi đứng cạnh nhau giữa phố đông, tạo cảm giác ấm áp và gần gũi."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

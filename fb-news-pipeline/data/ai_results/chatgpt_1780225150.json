@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Rằm tháng Tư về, chỉ mong lòng người được bình an",
+  "hook": "Có những khoảnh khắc không ồn ào, nhưng lại khiến lòng mình nhẹ đi rất nhiều.",
+  "script_voice": "Giữa những ngày rằm tháng Tư, khung cảnh nơi cửa Phật hiện lên thật bình yên. Từng mái chùa, từng lá cờ, từng dòng người lặng lẽ bước qua như nhắc chúng ta sống chậm lại một chút. Có người đến để cầu may mắn, có người chỉ mong gia đình được an yên, cũng có người tìm lại chút thanh thản sau những ngày mỏi mệt. Và có lẽ, điều đẹp nhất không nằm ở lời cầu thật lớn, mà nằm ở giây phút lòng mình biết buông xuống, biết tin rằng mọi chuyện rồi sẽ nhẹ nhàng hơn. Mong cho những điều tốt lành sẽ đến đúng lúc, vạn sự hanh thông, tâm luôn sáng và đời luôn bình an.",
+  "main_idea": "Video ghi lại không khí rằm tháng Tư tại chùa với hình ảnh trang nghiêm, yên bình, dòng người lễ Phật và lời cầu chúc cho mọi điều tốt đẹp, may mắn, hạnh phúc, bình an.",
+  "viral_angle": "Khai thác cảm xúc bình an, nhân văn và chữa lành qua không khí ngày rằm, hình ảnh chùa chiền, lễ Phật và lời chúc nhẹ nhàng dành cho người xem.",
+  "viewer_emotion": "Bình yên, xúc động nhẹ, lắng lòng và hy vọng",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những khoảnh khắc không ồn ào, nhưng lại khiến lòng mình nhẹ đi rất nhiều.",
+      "visual_description": "Toàn cảnh khuôn viên chùa với mái chùa phía xa, cây xanh, hoa và phần chữ mở đầu được đặt trong khung bố cục dựng sẵn."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa những ngày rằm tháng Tư, khung cảnh nơi cửa Phật hiện lên thật bình yên.",
+      "visual_description": "Cảnh bên trong chánh điện sáng đèn, tượng Phật trang nghiêm, không gian vàng ấm và linh thiêng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Từng mái chùa, từng lá cờ, từng dòng người lặng lẽ bước qua như nhắc chúng ta sống chậm lại một chút.",
+      "visual_description": "Các góc quay ngoài sân chùa, cờ tung bay, hoa hướng dương và lối đi dẫn vào khu lễ."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Có người đến để cầu may mắn, có người chỉ mong gia đình được an yên, cũng có người tìm lại chút thanh thản sau những ngày mỏi mệt.",
+      "visual_description": "Dòng người tham dự buổi lễ, nhiều người đứng trước khu vực lễ Phật trong không khí trang nghiêm."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Và có lẽ, điều đẹp nhất không nằm ở lời cầu thật lớn, mà nằm ở giây phút lòng mình biết buông xuống.",
+      "visual_description": "Cảnh mọi người chắp tay, hướng về chánh điện, không gian yên tĩnh và thành kính."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Mong cho những điều tốt lành sẽ đến đúng lúc, vạn sự hanh thông, tâm luôn sáng và đời luôn bình an.",
+      "visual_description": "Khung hình kết lại với cảnh chánh điện và đoàn người phía dưới, tạo cảm giác ấm áp, an lành và trọn vẹn."
+    }
+  ]
+}

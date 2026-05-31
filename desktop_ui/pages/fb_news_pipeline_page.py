@@ -75,12 +75,16 @@ class FBNewsPipelinePage:
         self.input_max_age.insert(0, "48")
         self.input_max_age.grid(row=2, column=1, padx=5, pady=5, sticky="w")
 
+        ctk.CTkLabel(add_frame, text="Delogo:").grid(row=3, column=0, padx=(10, 5), pady=5)
+        self.input_delogo = ctk.CTkEntry(add_frame, width=180, placeholder_text="VD: x=683:y=231:w=280:h=85")
+        self.input_delogo.grid(row=3, column=1, padx=5, pady=5, sticky="w")
+
         self.btn_add = ctk.CTkButton(
             add_frame, text="✅ Thêm nguồn", width=140,
             fg_color="#2563eb", hover_color="#1d4ed8",
             command=self._add_source
         )
-        self.btn_add.grid(row=2, column=3, padx=10, pady=5, sticky="e")
+        self.btn_add.grid(row=3, column=3, padx=10, pady=5, sticky="e")
 
         # ── Danh sách nguồn ──
         list_frame = ctk.CTkFrame(self.parent)
@@ -167,6 +171,7 @@ class FBNewsPipelinePage:
         name = self.input_name.get().strip()
         url = self.input_url.get().strip()
         max_age_str = self.input_max_age.get().strip()
+        delogo_val = self.input_delogo.get().strip()
 
         if not name or not url:
             self.log("❌ Vui lòng điền đầy đủ Tên và URL nguồn Facebook.")
@@ -193,13 +198,15 @@ class FBNewsPipelinePage:
                     "platform": "facebook",
                     "is_active": True,
                     "max_video_age_hours": max_age,
-                    "scan_interval_min": 30
+                    "scan_interval_min": 30,
+                    "delogo": delogo_val
                 }).execute()
 
                 if result.data:
                     self.log(f"✅ Đã thêm nguồn: {name} ({url})")
                     self.input_name.delete(0, "end")
                     self.input_url.delete(0, "end")
+                    self.input_delogo.delete(0, "end")
                     self._load_sources()
                 else:
                     self.log(f"❌ Lỗi thêm nguồn: Không có data trả về")
@@ -232,9 +239,9 @@ class FBNewsPipelinePage:
             if not sources:
                 self.source_list.insert("end", "  📭 Chưa có nguồn nào. Hãy thêm nguồn Facebook ở trên.\n")
             else:
-                header = f"  {'STT':<5} {'Tên nguồn':<25} {'URL':<45} {'Active':<8} {'Max giờ':<10} {'Quét cuối'}\n"
+                header = f"  {'STT':<5} {'Tên nguồn':<25} {'URL':<35} {'Active':<8} {'Max giờ':<10} {'Delogo':<25} {'Quét cuối'}\n"
                 self.source_list.insert("end", header)
-                self.source_list.insert("end", "  " + "─" * 120 + "\n")
+                self.source_list.insert("end", "  " + "─" * 135 + "\n")
 
                 for i, s in enumerate(sources, 1):
                     active = "✅" if s.get("is_active") else "❌"
@@ -247,8 +254,11 @@ class FBNewsPipelinePage:
                             last_scan = str(last_scan)[:16]
 
                     name = s.get("source_name", "")[:24]
-                    url = s.get("source_url", "")[:44]
-                    line = f"  {i:<5} {name:<25} {url:<45} {active:<8} {s.get('max_video_age_hours', 48):<10} {last_scan}\n"
+                    url = s.get("source_url", "")[:34]
+                    delogo_text = s.get("delogo", "")[:24]
+                    if not delogo_text:
+                        delogo_text = "Không"
+                    line = f"  {i:<5} {name:<25} {url:<35} {active:<8} {s.get('max_video_age_hours', 48):<10} {delogo_text:<25} {last_scan}\n"
                     self.source_list.insert("end", line)
 
             self.source_list.configure(state="disabled")
@@ -380,8 +390,10 @@ class FBNewsPipelinePage:
                 if line:
                     self.log(line)
 
-            self.process.wait()
-            exit_code = self.process.returncode
+            exit_code = 0
+            if self.process:
+                self.process.wait()
+                exit_code = self.process.returncode
 
             if exit_code == 0:
                 self.log("\n✅ Pipeline kết thúc thành công!")

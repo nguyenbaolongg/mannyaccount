@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Tưởng rủ nhau đi chơi, ai ngờ cả nhóm vào đây để học",
+  "hook": "Nhìn căn phòng này ai cũng nghĩ là đi giải trí, nhưng thứ hiện trên màn hình mới khiến người xem bất ngờ.",
+  "script_voice": "Ban đầu nhìn qua, ai cũng tưởng nhóm bạn này đang rủ nhau vào phòng giải trí để xả stress sau giờ học. Đèn màu nhấp nháy, ghế ngồi đủ cả, không khí chẳng khác gì một buổi đi chơi bình thường. Nhưng khi máy quay lia sang màn hình lớn, mọi chuyện lập tức đổi hướng. Không phải bài hát, cũng không phải video vui, mà là một bài toán hình học đang được chiếu rõ ràng trước mặt. Bốn người ngồi nghiêm túc, vừa nhìn đề vừa bàn bạc như đang trong một lớp học đặc biệt. Cao trào nằm ở khoảnh khắc người xem nhận ra: hóa ra nơi tưởng để vui chơi lại biến thành góc học nhóm. Đúng là học giỏi không chỉ nằm ở sách vở, mà còn ở cách biến mọi nơi thành chỗ để cùng nhau tiến bộ.",
+  "main_idea": "Video ghi lại cảnh bốn bạn trẻ ngồi trong một phòng có ánh đèn giải trí, nhưng thay vì vui chơi, họ lại cùng nhau xem và trao đổi bài học trên màn hình lớn.",
+  "viral_angle": "Tạo sự bất ngờ bằng cách dẫn người xem từ suy nghĩ đây là một buổi đi chơi bình thường sang tình huống cả nhóm đang học tập nghiêm túc trong không gian không ai ngờ tới.",
+  "viewer_emotion": "Bất ngờ, thích thú và nể phục tinh thần học tập của nhóm bạn.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn căn phòng này, chắc nhiều người nghĩ cả nhóm đang rủ nhau đi chơi cho khuây khỏa.",
+      "visual_description": "Máy quay tiến vào một căn phòng có ánh đèn màu, không gian giống phòng giải trí hoặc phòng hát."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Đèn nhấp nháy, ghế ngồi sẵn, không khí nhìn qua rất giống một buổi tụ tập bình thường.",
+      "visual_description": "Khung hình lia qua ghế ngồi, tường màu đỏ và ánh sáng xanh đỏ phản chiếu trong phòng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng khi thấy bốn bạn trẻ ngồi ngay ngắn phía trong, câu chuyện bắt đầu khiến người xem tò mò.",
+      "visual_description": "Bốn bạn trẻ ngồi cạnh nhau trên ghế, một người đội mũ sinh nhật, cả nhóm hướng mắt về phía trước."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều bất ngờ là trên màn hình không phải bài hát hay trò giải trí, mà là một bài toán đang được chiếu lên.",
+      "visual_description": "Máy quay chuyển sang màn hình lớn, hiển thị nội dung bài học và hình vẽ toán học."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Khoảnh khắc ấy mới thấy, với những người thật sự muốn học, ở đâu cũng có thể biến thành lớp học.",
+      "visual_description": "Màn hình tiếp tục hiển thị bài toán, phía dưới có hình một người đang theo dõi và xử lý nội dung."
+    }
+  ]
+}
