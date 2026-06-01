@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Con gái đọc thư tình cũ, bố mẹ ngại đỏ mặt trước cả nhà",
+  "hook": "Một bức thư tình từ năm 2000 bỗng bị con gái mang ra đọc giữa bữa cơm gia đình.",
+  "script_voice": "Một bữa cơm tưởng như rất bình thường, cho đến khi cô con gái cầm trên tay một bức thư cũ. Đó không phải giấy tờ gì quan trọng, mà là lá thư tình ngày xưa bố từng viết cho mẹ. Càng đọc, cả nhà càng không nhịn được cười, còn bố thì chỉ biết cúi mặt ăn cho đỡ ngại. Những câu chữ vụng về của thời trẻ bỗng khiến cả căn phòng ấm lên. Điều buồn cười nhất là người đang đọc lá thư ấy chính là kết quả ngọt ngào của chuyện tình năm đó. Một màn công khai quá khứ vừa hài hước, vừa khiến ai xem cũng thấy thương gia đình này hơn.",
+  "main_idea": "Con gái bất ngờ đọc lại bức thư tình bố viết cho mẹ từ năm 2000 trong bữa cơm gia đình, tạo nên khoảnh khắc vừa hài hước vừa ấm áp.",
+  "viral_angle": "Khai thác sự bất ngờ và đáng yêu khi con gái công khai quá khứ lãng mạn của bố mẹ, khiến người xem vừa cười vừa xúc động.",
+  "viewer_emotion": "Hài hước, ấm áp và xúc động nhẹ",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một bữa cơm tưởng như rất bình thường, cho đến khi cô con gái cầm trên tay một bức thư cũ.",
+      "visual_description": "Cảnh gia đình đang ngồi bên mâm cơm, cô gái cầm tờ giấy và chuẩn bị đọc, không khí tự nhiên như video quay thật."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Đó không phải giấy tờ gì quan trọng, mà là lá thư tình ngày xưa bố từng viết cho mẹ.",
+      "visual_description": "Cận cảnh cô gái nhìn vào bức thư, vừa đọc vừa cười, người bố ngồi bên cạnh tỏ vẻ ngại ngùng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Càng đọc, cả nhà càng không nhịn được cười, còn bố thì chỉ biết cúi mặt ăn cho đỡ ngại.",
+      "visual_description": "Cảnh bố cúi xuống ăn, tránh nhìn vào máy quay, trong khi cô gái tiếp tục đọc với vẻ thích thú."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Những câu chữ vụng về của thời trẻ bỗng khiến cả căn phòng ấm lên.",
+      "visual_description": "Cảnh cô gái cười lớn khi đọc đến đoạn thú vị, không khí gia đình trở nên vui vẻ và gần gũi."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều buồn cười nhất là người đang đọc lá thư ấy chính là kết quả ngọt ngào của chuyện tình năm đó.",
+      "visual_description": "Cảnh toàn bộ bàn ăn, cô gái vẫn cầm thư, bố mẹ và người thân trong khung hình tạo cảm giác đời thường, thân mật."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một màn công khai quá khứ vừa hài hước, vừa khiến ai xem cũng thấy thương gia đình này hơn.",
+      "visual_description": "Cảnh kết với nụ cười của cô gái và không khí ấm áp trong nhà, tạo điểm chốt cảm xúc nhẹ nhàng."
+    }
+  ]
+}

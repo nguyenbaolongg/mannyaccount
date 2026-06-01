@@ -1,0 +1,11 @@
+2026/06/01-13:49:18.512 18eb28 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/01-13:49:18.518 18eb28 Recovering log #3
+2026/06/01-13:49:18.519 18eb28 Level-0 table #3: started
+2026/06/01-13:49:18.521 18eb28 Level-0 table #3: 28408 bytes OK
+2026/06/01-13:49:18.521 18eb28 Recovering log #4
+2026/06/01-13:49:18.522 18eb28 Reusing old log /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/000004.log 
+2026/06/01-13:49:18.524 18eb28 Delete type=2 #5
+2026/06/01-13:49:18.524 18eb28 Delete type=0 #3
+2026/06/01-13:49:55.350 18eb2b Level-0 table #6: started
+2026/06/01-13:49:55.353 18eb2b Level-0 table #6: 20096 bytes OK
+2026/06/01-13:49:55.355 18eb2b Delete type=0 #4

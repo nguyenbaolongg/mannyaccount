@@ -383,7 +383,7 @@ class FBNewsPipeline:
             if d > 0:
                 hook_duration = d + 0.5
 
-        has_logo = os.path.exists(LOGO_PATH)
+        has_logo = False # os.path.exists(LOGO_PATH) # Tạm tắt logo
         has_frame = os.path.exists(FRAME_PATH)
 
         # ── XÂY DỰNG FFMPEG COMMAND (1 PASS) ──
@@ -427,7 +427,7 @@ class FBNewsPipeline:
                 f"[bg_blur][fg]overlay=(W-w)/2:(H-h)/2-150{delogo_filter}[bg]"
             ]
         else:
-            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:0{delogo_filter}[bg]"]
+            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:100{delogo_filter}[bg]"]
         
         current = "[bg]"
 
@@ -514,7 +514,7 @@ class FBNewsPipeline:
             if d > 0:
                 hook_duration = d + 0.5
 
-        has_logo = os.path.exists(LOGO_PATH)
+        has_logo = False # os.path.exists(LOGO_PATH) # Tạm tắt logo
         has_frame = os.path.exists(FRAME_PATH)
 
         inputs = ["-i", source_video]
@@ -548,7 +548,7 @@ class FBNewsPipeline:
                 f"[bg_blur][fg]overlay=(W-w)/2:(H-h)/2-150{delogo_filter}[bg]"
             ]
         else:
-            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:0{delogo_filter}[bg]"]
+            filters = [f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:100{delogo_filter}[bg]"]
         
         current = "[bg]"
 

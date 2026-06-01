@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Chiếc chảo bên lề đường và pha phản xạ khiến ai cũng bật cười",
+  "hook": "Một chiếc chảo được đặt sát lề đường, tưởng chỉ là trò thử thách đơn giản, nhưng 5 phút sau lại có một pha xử lý không ai ngờ tới.",
+  "script_voice": "Một người đặt chiếc chảo nhỏ có trứng bên trong ngay sát lề đường, rồi lặng lẽ rời đi như đang chờ điều gì đó xảy ra. Ban đầu nhìn qua, ai cũng nghĩ đây chỉ là một trò thử thách vui thôi. Nhưng vài phút sau, một cô đạp xe chở đồ đi ngang qua đúng vị trí đó. Chiếc chảo nằm ngay sát bánh xe, chỉ cần lệch một chút là mọi thứ có thể đổ tung ra đường. Vậy mà trong khoảnh khắc rất nhanh, cô phát hiện ra, dừng lại và xử lý gọn đến mức người xem không kịp chớp mắt. Một pha phản xạ vừa nhanh, vừa buồn cười, nhưng cũng khiến ai xem xong phải thầm nghĩ: lần sau đừng thử thách người đi đường kiểu này nữa.",
+  "main_idea": "Video ghi lại một thử thách đặt chiếc chảo có trứng gần lề đường và khoảnh khắc một người đi xe đạp chở đồ phản xạ rất nhanh khi đi ngang qua.",
+  "viral_angle": "Bất ngờ và hài hước từ một tình huống tưởng bình thường nhưng lại có pha phản xạ nhanh ngoài dự đoán.",
+  "viewer_emotion": "Bất ngờ, bật cười và hơi hồi hộp khi chờ xem chiếc chảo có bị đổ hay không.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một chiếc chảo nhỏ được đặt sát lề đường, nhìn qua tưởng chẳng có gì đặc biệt.",
+      "visual_description": "Cảnh một người đội nón lá ngồi bên vỉa hè, đặt chiếc chảo nhỏ có trứng xuống nền gạch gần mép đường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Người đặt chảo rời đi, còn camera thì giữ nguyên như đang chờ một chuyện bất ngờ xảy ra.",
+      "visual_description": "Cảnh chiếc chảo nằm một mình sát lề đường, xung quanh là vỉa hè và mặt đường nắng gắt."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Vài phút sau, một cô đạp xe chở đồ đi ngang qua đúng vị trí đó.",
+      "visual_description": "Cảnh camera an ninh ghi lại một người phụ nữ đội nón lá, đạp xe chở nhiều đồ tiến lại gần chiếc chảo."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Chiếc chảo nằm ngay sát bánh xe, chỉ cần sơ ý một chút là mọi thứ có thể đổ tung.",
+      "visual_description": "Cảnh xe đạp dừng sát chiếc chảo, người đi xe cúi xuống quan sát và chuẩn bị xử lý tình huống."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nhưng pha phản xạ của cô mới là điều khiến người xem bật cười vì quá nhanh và quá gọn.",
+      "visual_description": "Cảnh người phụ nữ nhanh chóng xử lý chiếc chảo bên đường rồi tiếp tục di chuyển, tạo cảm giác hài hước và bất ngờ."
+    }
+  ]
+}

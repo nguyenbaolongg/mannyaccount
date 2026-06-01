@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Một màn phát biểu khiến nhà chồng nghe xong chỉ biết cười thương",
+  "hook": "Có những cô dâu không cần nói nhiều, chỉ vài câu trên sân khấu cũng đủ khiến cả nhà chồng thấy ấm lòng.",
+  "script_voice": "Trong ngày cưới, ai cũng nghĩ cô dâu sẽ chỉ nói vài lời cảm ơn quen thuộc rồi kết thúc. Nhưng cô gái này lại khiến cả hội trường chú ý bằng cách nói rất duyên. Không ồn ào, không làm quá, từng câu đều vừa lễ phép, vừa tinh tế, khiến người lớn hai bên nghe mà mỉm cười. Đặc biệt là cách cô hướng về gia đình nhà chồng, nói bằng sự trân trọng và khéo léo, làm không khí buổi tiệc bỗng trở nên gần gũi hơn hẳn. Một cô dâu biết giữ thể diện cho hai bên, biết nói lời đẹp trong ngày trọng đại như thế này, bảo sao nhà chồng không thương cho được.",
+  "main_idea": "Video ghi lại khoảnh khắc cô dâu phát biểu trong đám cưới với cách nói khéo léo, lễ phép và tinh tế, tạo thiện cảm với nhà chồng và quan khách.",
+  "viral_angle": "Góc khai thác nằm ở sự tinh tế và khéo léo của cô dâu trong ngày cưới, khiến người xem tò mò cô đã nói gì mà được khen nhiều như vậy.",
+  "viewer_emotion": "Ấm áp, thiện cảm và thích thú trước cách ứng xử khéo léo của cô dâu",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những cô dâu không cần nói nhiều, chỉ vài câu trên sân khấu cũng đủ khiến cả nhà chồng thấy ấm lòng.",
+      "visual_description": "Toàn cảnh sân khấu đám cưới với cô dâu chú rể đứng trước phông hoa đỏ trắng, cô dâu cầm micro chuẩn bị phát biểu."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Trong ngày cưới, ai cũng nghĩ cô dâu sẽ chỉ nói vài lời cảm ơn quen thuộc rồi kết thúc.",
+      "visual_description": "Máy quay từ phía bàn tiệc hướng lên sân khấu, khách mời ngồi phía dưới đang theo dõi cô dâu chú rể."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng cô gái này lại khiến cả hội trường chú ý bằng cách nói rất duyên.",
+      "visual_description": "Cô dâu đứng cạnh chú rể, nói vào micro với thái độ bình tĩnh, tự nhiên và lễ phép."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Không ồn ào, không làm quá, từng câu đều vừa lễ phép, vừa tinh tế, khiến người lớn hai bên nghe mà mỉm cười.",
+      "visual_description": "Cận cảnh các vị khách lớn tuổi ngồi bên dưới, có người chăm chú lắng nghe, có người mỉm cười trước lời phát biểu."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đặc biệt là cách cô hướng về gia đình nhà chồng, nói bằng sự trân trọng và khéo léo, làm không khí buổi tiệc bỗng trở nên gần gũi hơn hẳn.",
+      "visual_description": "Góc quay chuyển sang khu vực bàn khách và gia đình hai bên, không khí buổi tiệc nhẹ nhàng, thân mật."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một cô dâu biết giữ thể diện cho hai bên, biết nói lời đẹp trong ngày trọng đại như thế này, bảo sao nhà chồng không thương cho được.",
+      "visual_description": "Quay lại sân khấu với cô dâu chú rể đứng bên nhau trong không gian cưới trang trí trang trọng, tạo cảm giác ấm áp và đáng nhớ."
+    }
+  ]
+}

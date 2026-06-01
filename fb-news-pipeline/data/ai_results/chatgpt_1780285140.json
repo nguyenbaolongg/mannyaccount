@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Đang chạy rất bình thường, cú trượt này lại thành cảnh viral",
+  "hook": "Có những khoảnh khắc không cần diễn, chỉ cần camera quay đúng lúc là đủ thành content.",
+  "script_voice": "Có những khoảnh khắc thật sự không ai chuẩn bị trước. Cậu bé chỉ đang chạy qua sân như một ngày bình thường, nhưng nền nhà trơn đã khiến mọi thứ đổi hướng trong một giây. Từ một bước chạy tự tin, cậu trượt dài rồi ngã xuống khiến người xem vừa giật mình vừa không nhịn được cười. Điều buồn cười nhất là sau cú ngã đó, chiếc dép mới là thứ chiếm trọn spotlight. Camera quay lại cận cảnh, còn cậu bé thì chỉ biết ngồi dậy trong sự ngượng ngùng. Đôi khi content không cần đi tìm, vì nó tự xuất hiện vào đúng khoảnh khắc không ai ngờ nhất.",
+  "main_idea": "Video ghi lại khoảnh khắc một cậu bé chạy trên nền sân trơn rồi bất ngờ bị trượt ngã, tạo nên tình huống hài hước tự nhiên và rất dễ viral.",
+  "viral_angle": "Hài hước bất ngờ từ một tình huống đời thường, đặc biệt là cú trượt ngã và chi tiết chiếc dép trở thành điểm nhấn gây cười.",
+  "viewer_emotion": "Bất ngờ, buồn cười và thích thú vì khoảnh khắc quá tự nhiên",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những khoảnh khắc không cần diễn, chỉ cần camera quay đúng lúc là đủ thành content.",
+      "visual_description": "Góc camera giám sát nhìn từ trên cao, cậu bé mặc áo trắng chạy nhanh qua khu sân."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Cậu bé chỉ đang chạy qua sân như một ngày bình thường, nhưng nền nhà trơn đã khiến mọi thứ đổi hướng trong một giây.",
+      "visual_description": "Cậu bé bắt đầu mất thăng bằng khi đang chạy, chân trượt trên mặt sân ướt."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Từ một bước chạy tự tin, cậu trượt dài rồi ngã xuống khiến người xem vừa giật mình vừa không nhịn được cười.",
+      "visual_description": "Cậu bé ngã ra nền sân, cơ thể xoay theo quán tính trong khoảnh khắc bất ngờ."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều buồn cười nhất là sau cú ngã đó, chiếc dép mới là thứ chiếm trọn spotlight.",
+      "visual_description": "Camera chuyển sang góc gần hơn, tập trung vào chiếc dép trắng và bàn chân sau cú trượt."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Camera quay lại cận cảnh, còn cậu bé thì chỉ biết ngồi dậy trong sự ngượng ngùng.",
+      "visual_description": "Cậu bé ngồi trên nền sân, cố lấy lại bình tĩnh sau cú ngã."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đôi khi content không cần đi tìm, vì nó tự xuất hiện vào đúng khoảnh khắc không ai ngờ nhất.",
+      "visual_description": "Cậu bé đứng dậy và bước đi, khép lại tình huống hài hước đời thường."
+    }
+  ]
+}

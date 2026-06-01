@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Câu nói của em bé 5 tuổi khiến người lớn phải lặng lại",
+  "hook": "Người lớn cứ nghĩ trẻ con cần điện thoại để vui, nhưng câu trả lời của em bé này lại khác hẳn.",
+  "script_voice": "Khi được hỏi con thích điều gì nhất, các em bé không nhắc đến màn hình, cũng chẳng nói đến món đồ chơi đắt tiền. Có bé chỉ muốn được đạp xe, có bé thích trượt patin, có bé lại vui vì được chạy nhảy, la hét và khám phá những điều mới lạ. Nghe qua tưởng rất bình thường, nhưng càng nghe càng thấy người lớn chúng ta đôi khi quên mất một điều. Tuổi thơ đẹp nhất không nằm trong chiếc điện thoại, mà nằm ở những ngày con được chơi thật, cười thật và nhớ thật lâu. Có lẽ điều trẻ con cần nhất không phải là thêm một màn hình, mà là thêm thời gian để được lớn lên đúng nghĩa.",
+  "main_idea": "Video ghi lại những câu trả lời hồn nhiên của trẻ nhỏ khi nói về niềm vui mùa hè, từ đó nhắc người lớn rằng tuổi thơ của trẻ cần những trải nghiệm thật thay vì chỉ gắn với màn hình.",
+  "viral_angle": "Góc khai thác cảm động và nhân văn, tạo sự bất ngờ từ câu trả lời đơn giản của trẻ nhỏ nhưng khiến người lớn phải suy ngẫm.",
+  "viewer_emotion": "Xúc động, ấm áp và suy ngẫm về cách người lớn đang dành thời gian cho trẻ em.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Người lớn cứ nghĩ trẻ con cần điện thoại để vui, nhưng câu trả lời của em bé này lại khác hẳn.",
+      "visual_description": "Cận cảnh các em bé trong khu vui chơi, ánh mắt háo hức và không gian nhiều màu sắc tạo cảm giác trong trẻo."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Khi được hỏi con thích điều gì nhất, các em bé không nhắc đến màn hình, cũng chẳng nói đến món đồ chơi đắt tiền.",
+      "visual_description": "Các bé lần lượt trả lời phỏng vấn, phía sau là khu trò chơi trong nhà với cầu trượt, xe đạp và sân vận động nhỏ."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Có bé chỉ muốn được đạp xe, có bé thích trượt patin, có bé lại vui vì được chạy nhảy, la hét và khám phá những điều mới lạ.",
+      "visual_description": "Những phân cảnh trẻ em đạp xe, trượt patin, chơi nhà bóng, nhảy trampoline và cười đùa cùng bạn bè."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nghe qua tưởng rất bình thường, nhưng càng nghe càng thấy người lớn chúng ta đôi khi quên mất một điều.",
+      "visual_description": "Chuyển sang các khoảnh khắc trẻ chơi cùng bố mẹ, người lớn đứng bên cạnh quan sát và hỗ trợ con."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Tuổi thơ đẹp nhất không nằm trong chiếc điện thoại, mà nằm ở những ngày con được chơi thật, cười thật và nhớ thật lâu.",
+      "visual_description": "Các em bé vui chơi trong không gian rộng, chạy trượt trên tuyết nhân tạo và nở nụ cười rạng rỡ."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có lẽ điều trẻ con cần nhất không phải là thêm một màn hình, mà là thêm thời gian để được lớn lên đúng nghĩa.",
+      "visual_description": "Kết bằng cảnh gia đình và trẻ nhỏ cùng chơi, tạo cảm giác ấm áp, gần gũi và gợi suy ngẫm."
+    }
+  ]
+}

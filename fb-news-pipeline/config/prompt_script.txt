@@ -44,6 +44,7 @@ Kịch bản phải có nhịp cảm xúc: mở đầu gây chú ý, giữa vide
 Giọng văn gần gũi, tự nhiên, phù hợp để đọc voice TikTok.
 Không thổi phồng sai sự thật.
 Không bịa thêm tình tiết làm thay đổi ý nghĩa video gốc.
+CHỉ viết hoa chữ cái đầu cho các tên riêng và câu đầu tiên, còn lại viết chữ thường cho tôi
 
 ĐỊNH DẠNG ĐẦU RA BẮT BUỘC:
 Chỉ trả về JSON thuần.
@@ -56,7 +57,7 @@ Cấu trúc JSON bắt buộc như sau:
 
 {
 "title_tiktok": "Tiêu đề TikTok mới bằng tiếng Việt có dấu đầy đủ, hấp dẫn hơn bản gốc",
-"hook": "Câu mở đầu gây chú ý, ngắn gọn và lôi cuốn, phân bổ chữ nói khoảng 5 đến 7 giây",
+"hook": "Câu mở đầu gây chú ý, ngắn gọn và lôi cuốn, phân bổ chữ nói khoảng 7 đến 10 giây, trong đó vẫn phải nêu khái quát vấn đề chính",
 "script_voice": "Kịch bản đọc hoàn chỉnh khoảng 30 đến 45 giây, viết lại hoàn toàn so với bản gốc, có dấu đầy đủ",
 "main_idea": "Tóm tắt ý chính của video bằng tiếng Việt có dấu",
 "viral_angle": "Góc khai thác giúp video dễ thu hút người xem, ví dụ bất ngờ, cảm động, hài hước, nhân văn hoặc kịch tính",

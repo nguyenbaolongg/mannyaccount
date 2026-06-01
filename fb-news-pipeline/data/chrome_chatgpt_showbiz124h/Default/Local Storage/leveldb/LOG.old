@@ -1,0 +1,5 @@
+2026/06/01-13:42:40.128 18b5f5 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/01-13:42:40.133 18b5f5 Recovering log #3
+2026/06/01-13:42:40.133 18b5f5 Reusing old log /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/000003.log 
+2026/06/01-13:43:11.671 18b5f5 Level-0 table #5: started
+2026/06/01-13:43:11.673 18b5f5 Level-0 table #5: 28408 bytes OK

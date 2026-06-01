@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Con trai về phụ bố mẹ chở lúa, ai ngờ để lại cả một vệt dài trên sân",
+  "hook": "Tưởng lần này về quê sẽ giúp bố mẹ nhẹ việc hơn, nhưng vừa chạy xe được vài mét thì mọi chuyện bắt đầu sai sai.",
+  "script_voice": "Một người con từ thành phố về quê, thấy bố mẹ vất vả nên xung phong chở lúa giúp. Nhìn ban đầu thì rất tự tin, xe đã nổ máy, bao lúa cũng được đặt lên gọn gàng. Nhưng chỉ vài giây sau, phía sau chiếc xe bỗng xuất hiện một vệt vàng kéo dài trên nền sân. Hóa ra bao lúa bị hở, càng chạy thì lúa càng rơi ra nhiều hơn. Người chở vẫn điềm nhiên tiến về phía trước, còn thành quả phía sau thì cứ thế trải thành một con đường lúa. Một pha phụ giúp rất có tâm, nhưng cái kết chắc khiến bố mẹ vừa thương vừa không biết nên cười hay nên khóc.",
+  "main_idea": "Video ghi lại cảnh một người con về quê phụ bố mẹ chở lúa, nhưng do bao lúa bị rơi hoặc bị hở nên lúa đổ ra thành vệt dài phía sau xe.",
+  "viral_angle": "Tình huống đời thường nhưng có cú chuyển bất ngờ, ban đầu tưởng là cảnh con cái hiếu thảo phụ giúp bố mẹ, cuối cùng lại trở thành pha xử lý vụng về gây cười.",
+  "viewer_emotion": "Bất ngờ, buồn cười và có chút thương bố mẹ vì công sức thu gom lúa bị rơi vãi.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng lần này về quê sẽ giúp bố mẹ nhẹ việc hơn, nhưng vừa chạy xe được vài mét thì mọi chuyện bắt đầu sai sai.",
+      "visual_description": "Góc camera từ trên cao nhìn xuống sân nhà, cổng mở, khung hình giống camera giám sát."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Người con ngồi trên xe máy, phía sau chất bao lúa và chuẩn bị chở đi như một việc rất đơn giản.",
+      "visual_description": "Một người mặc áo trùm đầu điều khiển xe máy trong sân, phía sau xe có bao lúa màu hồng được đặt ngang."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng khi xe bắt đầu di chuyển, phía sau bỗng xuất hiện một vệt vàng kéo dài trên nền gạch.",
+      "visual_description": "Chiếc xe chạy chậm qua sân, phía sau bắt đầu có lúa rơi thành đường dài rõ rệt."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Hóa ra bao lúa bị hở, càng chạy thì lúa càng đổ ra nhiều, còn người chở vẫn chưa nhận ra điều gì.",
+      "visual_description": "Vệt lúa rơi ngày càng dài hơn, kéo từ khu vực cổng vào sâu trong sân."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một pha phụ giúp rất có lòng, nhưng cái kết chắc khiến bố mẹ vừa thương con, vừa phải thở dài vì lại thêm một việc để dọn.",
+      "visual_description": "Xe dừng gần góc sân, phía sau là đường lúa rơi vãi nổi bật trên nền gạch."
+    }
+  ]
+}

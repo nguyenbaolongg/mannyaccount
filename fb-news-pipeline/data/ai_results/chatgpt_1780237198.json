@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Tối nay Lê Văn Lương bất ngờ biến thành sân khấu cosplay ngoài trời",
+  "hook": "Ai đi qua Lê Văn Lương tối nay chắc phải ngoái lại nhìn lần hai.",
+  "script_voice": "Ai đi qua Lê Văn Lương tối nay chắc phải ngoái lại nhìn lần hai. Ngay giữa phố đông người, hàng loạt cosplayer bất ngờ xuất hiện với tạo hình cực kỳ nổi bật. Có người mặc trang phục nhân vật game, có người hóa thân thành nhân vật anime, đứng tạo dáng ngay trên vỉa hè khiến ai đi ngang cũng tò mò. Ban đầu nhìn cứ tưởng là một buổi chụp ảnh nhỏ, nhưng càng về sau càng thấy đông hơn, nhiều nhân vật hơn và không khí giống hẳn một sự kiện đang chuẩn bị diễn ra. Giữa ánh đèn thành phố, những bộ trang phục rực rỡ khiến cả góc phố Lê Văn Lương trở nên khác lạ. Một buổi tối bình thường bỗng biến thành nơi check in đầy màu sắc, khiến nhiều người không biết chuyện gì đang xảy ra cũng phải dừng lại xem.",
+  "main_idea": "Video ghi lại cảnh nhiều cosplayer xuất hiện tại khu vực Lê Văn Lương, Hà Nội vào buổi tối, tạo nên không khí lạ mắt và thu hút sự chú ý của người đi đường.",
+  "viral_angle": "Bất ngờ và tò mò vì một con phố quen thuộc bỗng xuất hiện nhiều nhân vật cosplay nổi bật như đang có sự kiện đặc biệt.",
+  "viewer_emotion": "Tò mò, thích thú và bất ngờ",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Ai đi qua Lê Văn Lương tối nay chắc phải ngoái lại nhìn lần hai.",
+      "visual_description": "Cảnh mở đầu tại khu vực Lê Văn Lương vào buổi tối, có lớp đồ họa tin tức và một cosplayer nổi bật trong khung hình."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ngay giữa phố đông người, hàng loạt cosplayer bất ngờ xuất hiện với tạo hình cực kỳ nổi bật.",
+      "visual_description": "Các cosplayer đứng trên vỉa hè, xung quanh là đèn đường, tòa nhà và người đi lại."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Có người mặc trang phục nhân vật game, có người hóa thân thành nhân vật anime, đứng tạo dáng ngay trên vỉa hè khiến ai đi ngang cũng tò mò.",
+      "visual_description": "Cận cảnh nhiều nhân vật cosplay với tóc giả màu sắc, trang phục cầu kỳ và dáng tạo hình khác nhau."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Ban đầu nhìn cứ tưởng là một buổi chụp ảnh nhỏ, nhưng càng về sau càng thấy đông hơn, nhiều nhân vật hơn và không khí giống hẳn một sự kiện đang chuẩn bị diễn ra.",
+      "visual_description": "Góc quay rộng hơn cho thấy nhiều người tụ tập, một số người đứng quan sát, một số cosplayer đang chuẩn bị tạo dáng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Giữa ánh đèn thành phố, những bộ trang phục rực rỡ khiến cả góc phố Lê Văn Lương trở nên khác lạ.",
+      "visual_description": "Các nhân vật cosplay xuất hiện xen giữa không gian đô thị về đêm, tạo cảm giác nổi bật giữa phố."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một buổi tối bình thường bỗng biến thành nơi check in đầy màu sắc, khiến nhiều người không biết chuyện gì đang xảy ra cũng phải dừng lại xem.",
+      "visual_description": "Kết video bằng cảnh nhóm cosplayer và người xung quanh ở khu vực vỉa hè, nhấn vào sự tò mò của người xem."
+    }
+  ]
+}

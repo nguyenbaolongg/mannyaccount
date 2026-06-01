@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Bộ ảnh cưới khiến ai xem cũng tưởng lạc về thập niên 90",
+  "hook": "Vừa nhìn vài giây đầu, nhiều người đã tưởng đây là một phóng sự cưới được quay từ gần ba mươi năm trước.",
+  "script_voice": "Vừa nhìn vài giây đầu, nhiều người đã tưởng đây là một phóng sự cưới được quay từ gần ba mươi năm trước. Nhưng điều bất ngờ là bộ ảnh này lại được thực hiện ở năm 2026. Từ màu phim cũ, hiệu ứng hoa lá, góc quay trong rừng cho đến cách tạo dáng rất đặc trưng, tất cả đều khiến người xem có cảm giác như đang mở lại một cuộn băng cưới ngày xưa. Cô dâu liên tục thay váy, lúc dịu dàng bên gốc cây, lúc rực rỡ giữa khung cảnh được dựng như cổ tích. Chú rể thì xuất hiện với phong thái nghiêm túc, đúng chất những thước phim cưới hoài niệm. Càng xem càng thấy thú vị, vì cái hay không nằm ở sự hiện đại, mà nằm ở việc cả hai dám biến ngày cưới thành một màn trở về ký ức rất riêng.",
+  "main_idea": "Video ghi lại một bộ ảnh cưới được dàn dựng theo phong cách phóng sự cưới cũ, với màu sắc, hiệu ứng và cách tạo dáng gợi cảm giác như những video cưới thập niên 90.",
+  "viral_angle": "Sự đối lập thú vị giữa thời điểm hiện đại và phong cách quay dựng hoài cổ khiến người xem tò mò, thích thú và muốn xem đến cuối để thấy bộ ảnh được tái hiện ra sao.",
+  "viewer_emotion": "Bất ngờ, hoài niệm và thích thú",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Vừa nhìn vài giây đầu, nhiều người đã tưởng đây là một phóng sự cưới được quay từ gần ba mươi năm trước.",
+      "visual_description": "Cảnh mở đầu cô dâu chú rể tạo dáng trong khung cảnh thiên nhiên, màu hình được xử lý mờ ảo, có logo và hiệu ứng giống phóng sự cũ."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Nhưng điều bất ngờ là bộ ảnh này lại được thực hiện ở năm 2026.",
+      "visual_description": "Cô dâu xuất hiện với váy màu nổi bật, tạo dáng bên cây và trong khu rừng, khung hình mang cảm giác hoài cổ nhưng vẫn có nét hài hước."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Từ màu phim cũ, hiệu ứng hoa lá, góc quay trong rừng cho đến cách tạo dáng rất đặc trưng, tất cả đều khiến người xem như đang mở lại một cuộn băng cưới ngày xưa.",
+      "visual_description": "Các phân cảnh chuyển nhanh giữa cô dâu mặc nhiều bộ váy khác nhau, hiệu ứng hoa, lá và khung trang trí xuất hiện trên màn hình."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cô dâu liên tục thay váy, lúc dịu dàng bên gốc cây, lúc rực rỡ giữa khung cảnh được dựng như cổ tích.",
+      "visual_description": "Cận cảnh cô dâu trong váy vàng, váy xanh và váy đỏ, tạo dáng bên hoa, cây xanh và các cảnh ghép mang màu sắc cổ tích."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chú rể thì xuất hiện với phong thái nghiêm túc, đúng chất những thước phim cưới hoài niệm.",
+      "visual_description": "Chú rể mặc vest tạo dáng trong rừng, đứng bên cô dâu hoặc bế cô dâu trong các cảnh quay được dựng theo phong cách xưa."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Càng xem càng thấy thú vị, vì cái hay không nằm ở sự hiện đại, mà nằm ở việc cả hai dám biến ngày cưới thành một màn trở về ký ức rất riêng.",
+      "visual_description": "Kết thúc bằng những khung hình cô dâu chú rể bên nhau, hiệu ứng hoa lá và màu phim cũ tạo cảm giác vừa vui nhộn vừa đáng nhớ."
+    }
+  ]
+}
