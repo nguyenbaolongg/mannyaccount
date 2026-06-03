@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Sân đang nắng đẹp, nhưng công nghệ lại báo chuyện không ổn",
+  "hook": "Giữa trưa nắng chang chang, mẹ vẫn phơi đầy sân, còn con thì vội chạy ra chỉ vì một cảnh báo từ công nghệ.",
+  "script_voice": "Giữa lúc sân nhà đang nắng đẹp, mẹ vẫn yên tâm phơi lúa như mọi ngày. Nhưng người con vừa xem cảnh báo đã lập tức chạy ra sân, cố nói với mẹ rằng thời tiết có thể đổi rất nhanh. Mẹ nhìn trời, thấy nắng vẫn gắt nên chẳng mấy tin. Thế là một bên tin vào kinh nghiệm, một bên tin vào công nghệ. Cảnh buồn cười là người con cứ sốt ruột nhắc, còn mẹ vẫn bình thản làm tiếp. Đến lúc cả hai bắt đầu đứng giữa sân nhìn nhau, ai xem cũng chỉ chờ xem lần này mẹ đúng, hay công nghệ thắng.",
+  "main_idea": "Video ghi lại cảnh người con dùng công nghệ để cảnh báo trước cho mẹ khi mẹ đang phơi lúa ngoài sân, nhưng mẹ chưa tin vì thời tiết lúc đó vẫn đang nắng đẹp.",
+  "viral_angle": "Tình huống đối lập giữa kinh nghiệm của mẹ và cảnh báo công nghệ tạo sự tò mò, gần gũi và có chút hài hước.",
+  "viewer_emotion": "Bất ngờ, tò mò và thích thú vì tình huống đời thường nhưng rất dễ đồng cảm.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Giữa trưa nắng chang chang, mẹ vẫn phơi đầy sân, còn con thì vội chạy ra chỉ vì một cảnh báo từ công nghệ.",
+      "visual_description": "Toàn cảnh sân nhà rộng, mặt sân phủ đầy lúa đang phơi dưới nắng, một người mẹ đang đi lại kiểm tra."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Mẹ vẫn yên tâm làm như mọi ngày, vì nhìn lên trời thì chẳng thấy dấu hiệu gì bất thường.",
+      "visual_description": "Người mẹ đội nón, cúi xuống đảo lúa trên sân, xung quanh trời vẫn sáng và nắng mạnh."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng người con vừa xem cảnh báo đã lập tức đi ra, cố giải thích rằng thời tiết có thể thay đổi rất nhanh.",
+      "visual_description": "Một người trẻ mặc áo đen bước vào sân, tiến về phía mẹ và ra hiệu như đang nhắc nhở."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Mẹ nghe xong vẫn chưa tin, vì trước mắt bà, mọi thứ vẫn đang rất bình thường.",
+      "visual_description": "Hai người đứng gần nhau giữa sân, người con tiếp tục nói còn mẹ vẫn bình thản nhìn quanh."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một bên tin vào kinh nghiệm, một bên tin vào công nghệ, và chính khoảnh khắc đó khiến ai xem cũng muốn biết kết quả cuối cùng.",
+      "visual_description": "Người con đứng chờ giữa sân, mẹ tiếp tục đi kiểm tra lúa, tạo cảm giác vừa căng thẳng vừa hài hước."
+    }
+  ]
+}

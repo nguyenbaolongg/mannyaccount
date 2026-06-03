@@ -86,9 +86,10 @@ class FBNewsApp(ctk.CTk):
     #  GIAO DIỆN CHÍNH
     # ═══════════════════════════════════════════════════════
     def _build_ui(self):
-        # Grid layout: 1 cột, nhiều hàng
+        # Grid layout
         self.grid_columnconfigure(0, weight=1)
-        self.grid_rowconfigure(5, weight=1)  # Log area expands
+        self.grid_rowconfigure(1, weight=3)  # Tabview co giãn
+        self.grid_rowconfigure(2, weight=2)  # Log co giãn
 
         # ── HEADER ──
         header = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
@@ -110,9 +111,23 @@ class FBNewsApp(ctk.CTk):
         )
         self.status_badge.pack(side="right", padx=20, pady=15)
 
+        # ── TABVIEW CHÍNH ──
+        self.tabview = ctk.CTkTabview(self)
+        self.tabview.grid(row=1, column=0, sticky="nsew", padx=15, pady=5)
+        
+        self.tabview.add("📰 Chạy Pipeline")
+        self.tabview.add("🖼️ Quản lý Frame & Logo")
+        
+        tab_pipeline = self.tabview.tab("📰 Chạy Pipeline")
+        tab_assets = self.tabview.tab("🖼️ Quản lý Frame & Logo")
+
+        # ═══════════════════════════════════════════════════════
+        #  TAB 1: PIPELINE RUNNER
+        # ═══════════════════════════════════════════════════════
+        
         # ── THÊM NGUỒN ──
-        add_frame = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
-        add_frame.grid(row=1, column=0, sticky="ew", padx=15, pady=5)
+        add_frame = ctk.CTkFrame(tab_pipeline, fg_color=COLORS["bg_card"], corner_radius=12)
+        add_frame.pack(fill="x", padx=15, pady=5)
 
         ctk.CTkLabel(
             add_frame,
@@ -137,9 +152,8 @@ class FBNewsApp(ctk.CTk):
         self.btn_add.grid(row=1, column=4, padx=(10, 15), pady=8)
 
         # ── DANH SÁCH NGUỒN ──
-        list_frame = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
-        list_frame.grid(row=2, column=0, sticky="ew", padx=15, pady=5)
-        list_frame.grid_columnconfigure(0, weight=1)
+        list_frame = ctk.CTkFrame(tab_pipeline, fg_color=COLORS["bg_card"], corner_radius=12)
+        list_frame.pack(fill="x", padx=15, pady=5)
 
         list_header = ctk.CTkFrame(list_frame, fg_color="transparent")
         list_header.pack(fill="x", padx=15, pady=(12, 5))
@@ -179,8 +193,8 @@ class FBNewsApp(ctk.CTk):
         self.source_dropdown.pack(padx=15, pady=(0, 12))
 
         # ── QUẢN LÝ CHROME CHATGPT ──
-        chrome_frame = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
-        chrome_frame.grid(row=3, column=0, sticky="ew", padx=15, pady=5)
+        chrome_frame = ctk.CTkFrame(tab_pipeline, fg_color=COLORS["bg_card"], corner_radius=12)
+        chrome_frame.pack(fill="x", padx=15, pady=5)
         
         ctk.CTkLabel(
             chrome_frame,
@@ -204,10 +218,8 @@ class FBNewsApp(ctk.CTk):
         self.btn_login.grid(row=1, column=1, padx=5, pady=(0, 12), sticky="w")
 
         # ── NÚT ĐIỀU KHIỂN ──
-        ctrl_frame = ctk.CTkFrame(self, fg_color="transparent")
-        ctrl_frame.grid(row=4, column=0, sticky="ew", padx=15, pady=5)
-        ctrl_frame.grid_columnconfigure(0, weight=3)
-        ctrl_frame.grid_columnconfigure(1, weight=1)
+        ctrl_frame = ctk.CTkFrame(tab_pipeline, fg_color="transparent")
+        ctrl_frame.pack(fill="x", padx=15, pady=5)
 
         self.btn_start = ctk.CTkButton(
             ctrl_frame,
@@ -218,7 +230,7 @@ class FBNewsApp(ctk.CTk):
             corner_radius=12,
             command=self._toggle_pipeline,
         )
-        self.btn_start.grid(row=0, column=0, sticky="ew", padx=(0, 5))
+        self.btn_start.pack(side="left", expand=True, fill="x", padx=(0, 5))
 
         self.btn_run_once = ctk.CTkButton(
             ctrl_frame,
@@ -226,14 +238,137 @@ class FBNewsApp(ctk.CTk):
             font=ctk.CTkFont(size=14, weight="bold"),
             fg_color=COLORS["primary"], hover_color=COLORS["primary_hover"],
             height=55,
+            width=150,
             corner_radius=12,
             command=self._run_once,
         )
-        self.btn_run_once.grid(row=0, column=1, sticky="ew", padx=(5, 0))
+        self.btn_run_once.pack(side="right", padx=(5, 0))
 
-        # ── LOG ──
+
+        # ═══════════════════════════════════════════════════════
+        #  TAB 2: FRAME & LOGO MANAGER
+        # ═══════════════════════════════════════════════════════
+        tab_assets.grid_columnconfigure(0, weight=1)
+        tab_assets.grid_columnconfigure(1, weight=1)
+        tab_assets.grid_rowconfigure(0, weight=1)
+
+        # Cột trái: Chọn kênh & Upload files
+        left_frame = ctk.CTkFrame(tab_assets, fg_color=COLORS["bg_card"], corner_radius=12)
+        left_frame.grid(row=0, column=0, sticky="nsew", padx=(15, 10), pady=15)
+        
+        ctk.CTkLabel(
+            left_frame,
+            text="🖼️ Quản lý tài nguyên (PNG)",
+            font=ctk.CTkFont(size=16, weight="bold"),
+        ).pack(anchor="w", padx=20, pady=(15, 10))
+
+        # Dropdown chọn kênh
+        ctk.CTkLabel(left_frame, text="Chọn kênh TikTok:", font=ctk.CTkFont(size=13)).pack(anchor="w", padx=20, pady=(5, 2))
+        
+        self.asset_channel_var = ctk.StringVar(value="-- Chọn kênh --")
+        self.asset_channel_dropdown = ctk.CTkOptionMenu(
+            left_frame,
+            variable=self.asset_channel_var,
+            values=["-- Chọn kênh --"],
+            command=self._on_asset_channel_select,
+            fg_color="#374151",
+            button_color=COLORS["muted"],
+            width=250,
+        )
+        self.asset_channel_dropdown.pack(anchor="w", padx=20, pady=(0, 15))
+
+        # Status & Upload cho Frame
+        frame_box = ctk.CTkFrame(left_frame, fg_color="transparent")
+        frame_box.pack(fill="x", padx=20, pady=5)
+        
+        ctk.CTkLabel(frame_box, text="Khung viền (Frame.png):", font=ctk.CTkFont(weight="bold")).pack(anchor="w")
+        self.lbl_frame_status = ctk.CTkLabel(frame_box, text="Chưa chọn kênh", text_color=COLORS["text_dim"])
+        self.lbl_frame_status.pack(anchor="w", pady=(0, 5))
+        
+        btn_frame_row = ctk.CTkFrame(frame_box, fg_color="transparent")
+        btn_frame_row.pack(anchor="w")
+        
+        self.btn_up_frame = ctk.CTkButton(
+            btn_frame_row, text="📤 Tải lên Frame", width=120, height=32,
+            fg_color=COLORS["primary"], hover_color=COLORS["primary_hover"],
+            command=self._upload_frame
+        )
+        self.btn_up_frame.pack(side="left", padx=(0, 5))
+        
+        self.btn_del_frame = ctk.CTkButton(
+            btn_frame_row, text="🗑️ Xóa", width=70, height=32,
+            fg_color=COLORS["danger"], hover_color=COLORS["danger_hover"],
+            command=self._delete_frame,
+            state="disabled"
+        )
+        self.btn_del_frame.pack(side="left")
+
+        # Status & Upload cho Logo
+        logo_box = ctk.CTkFrame(left_frame, fg_color="transparent")
+        logo_box.pack(fill="x", padx=20, pady=15)
+        
+        ctk.CTkLabel(logo_box, text="Logo (Logo.png):", font=ctk.CTkFont(weight="bold")).pack(anchor="w")
+        self.lbl_logo_status = ctk.CTkLabel(logo_box, text="Chưa chọn kênh", text_color=COLORS["text_dim"])
+        self.lbl_logo_status.pack(anchor="w", pady=(0, 5))
+        
+        btn_logo_row = ctk.CTkFrame(logo_box, fg_color="transparent")
+        btn_logo_row.pack(anchor="w")
+        
+        self.btn_up_logo = ctk.CTkButton(
+            btn_logo_row, text="📤 Tải lên Logo", width=120, height=32,
+            fg_color=COLORS["primary"], hover_color=COLORS["primary_hover"],
+            command=self._upload_logo
+        )
+        self.btn_up_logo.pack(side="left", padx=(0, 5))
+        
+        self.btn_del_logo = ctk.CTkButton(
+            btn_logo_row, text="🗑️ Xóa", width=70, height=32,
+            fg_color=COLORS["danger"], hover_color=COLORS["danger_hover"],
+            command=self._delete_logo,
+            state="disabled"
+        )
+        self.btn_del_logo.pack(side="left")
+
+        # Cột phải: Cấu hình toạ độ Logo
+        right_frame = ctk.CTkFrame(tab_assets, fg_color=COLORS["bg_card"], corner_radius=12)
+        right_frame.grid(row=0, column=1, sticky="nsew", padx=(10, 15), pady=15)
+        
+        ctk.CTkLabel(
+            right_frame,
+            text="⚙️ Tọa độ & Tỷ lệ Logo",
+            font=ctk.CTkFont(size=16, weight="bold"),
+        ).pack(anchor="w", padx=20, pady=(15, 10))
+
+        # Tọa độ X
+        ctk.CTkLabel(right_frame, text="Tọa độ X (Cách lề trái - px):", font=ctk.CTkFont(size=13)).pack(anchor="w", padx=20, pady=(5, 2))
+        self.input_logo_x = ctk.CTkEntry(right_frame, width=120, height=32)
+        self.input_logo_x.pack(anchor="w", padx=20, pady=(0, 10))
+        
+        # Tọa độ Y
+        ctk.CTkLabel(right_frame, text="Tọa độ Y (Cách lề trên - px):", font=ctk.CTkFont(size=13)).pack(anchor="w", padx=20, pady=(5, 2))
+        self.input_logo_y = ctk.CTkEntry(right_frame, width=120, height=32)
+        self.input_logo_y.pack(anchor="w", padx=20, pady=(0, 10))
+        
+        # Tỷ lệ scale
+        ctk.CTkLabel(right_frame, text="Kích thước Logo (Chiều rộng - px):", font=ctk.CTkFont(size=13)).pack(anchor="w", padx=20, pady=(5, 2))
+        self.input_logo_scale = ctk.CTkEntry(right_frame, width=120, height=32)
+        self.input_logo_scale.pack(anchor="w", padx=20, pady=(0, 20))
+
+        # Nút Lưu Cấu Hình
+        self.btn_save_config = ctk.CTkButton(
+            right_frame, text="💾 Lưu cấu hình Logo", width=180, height=38,
+            fg_color=COLORS["success"], hover_color=COLORS["success_hover"],
+            font=ctk.CTkFont(weight="bold"),
+            command=self._save_asset_config
+        )
+        self.btn_save_config.pack(anchor="w", padx=20, pady=10)
+
+
+        # ═══════════════════════════════════════════════════════
+        #  LOG AREA (BÊN NGOÀI TABVIEW - LUÔN HIỂN THỊ)
+        # ═══════════════════════════════════════════════════════
         log_frame = ctk.CTkFrame(self, fg_color=COLORS["bg_card"], corner_radius=12)
-        log_frame.grid(row=5, column=0, sticky="nsew", padx=15, pady=(5, 15))
+        log_frame.grid(row=2, column=0, sticky="nsew", padx=15, pady=(5, 15))
         log_frame.grid_rowconfigure(1, weight=1)
         log_frame.grid_columnconfigure(0, weight=1)
 
@@ -264,6 +399,274 @@ class FBNewsApp(ctk.CTk):
             self.log("✅ Đã kết nối Supabase thành công.")
         else:
             self.log("❌ Chưa kết nối Supabase! Kiểm tra file .env")
+
+    # ═══════════════════════════════════════════════════════
+    #  CÁC HÀM QUẢN LÝ ASSETS (FRAME/LOGO)
+    # ═══════════════════════════════════════════════════════
+    # ═══════════════════════════════════════════════════════
+    #  CÁC HÀM QUẢN LÝ ASSETS (FRAME/LOGO)
+    # ═══════════════════════════════════════════════════════
+    def _on_asset_channel_select(self, selected_channel):
+        if not selected_channel or selected_channel.startswith("--"):
+            self.lbl_frame_status.configure(text="Chưa chọn kênh", text_color=COLORS["text_dim"])
+            self.lbl_logo_status.configure(text="Chưa chọn kênh", text_color=COLORS["text_dim"])
+            self.input_logo_x.delete(0, "end")
+            self.input_logo_y.delete(0, "end")
+            self.input_logo_scale.delete(0, "end")
+            return
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", selected_channel)
+        os.makedirs(channel_dir, exist_ok=True)
+        
+        frame_path = os.path.join(channel_dir, "frame.png")
+        logo_path = os.path.join(channel_dir, "logo.png")
+        config_path = os.path.join(channel_dir, "config.json")
+        
+        # 1. Kiểm tra trạng thái trên Supabase Storage & Đồng bộ về local
+        has_cloud_frame = False
+        has_cloud_logo = False
+        has_cloud_config = False
+        
+        if supabase_client:
+            try:
+                res = supabase_client.storage.from_("assets").list(f"channels/{selected_channel}")
+                if isinstance(res, list):
+                    cloud_files = [f.get("name") for f in res if isinstance(f, dict) and f.get("name")]
+                    
+                    if "frame.png" in cloud_files:
+                        has_cloud_frame = True
+                        try:
+                            data = supabase_client.storage.from_("assets").download(f"channels/{selected_channel}/frame.png")
+                            with open(frame_path, "wb") as f:
+                                f.write(data)
+                        except Exception as e:
+                            self.log(f"⚠️ Lỗi đồng bộ Frame từ Cloud: {e}")
+                            
+                    if "logo.png" in cloud_files:
+                        has_cloud_logo = True
+                        try:
+                            data = supabase_client.storage.from_("assets").download(f"channels/{selected_channel}/logo.png")
+                            with open(logo_path, "wb") as f:
+                                f.write(data)
+                        except Exception as e:
+                            self.log(f"⚠️ Lỗi đồng bộ Logo từ Cloud: {e}")
+                            
+                    if "config.json" in cloud_files:
+                        has_cloud_config = True
+                        try:
+                            data = supabase_client.storage.from_("assets").download(f"channels/{selected_channel}/config.json")
+                            with open(config_path, "wb") as f:
+                                f.write(data)
+                        except Exception as e:
+                            self.log(f"⚠️ Lỗi đồng bộ cấu hình từ Cloud: {e}")
+            except Exception as e:
+                self.log(f"⚠️ Không kiểm tra được storage Cloud: {e}")
+                
+        # 2. Cập nhật UI dựa trên sự hiện diện của file (ưu tiên Cloud, nếu ko có thì check local)
+        frame_exists = has_cloud_frame or os.path.exists(frame_path)
+        if frame_exists:
+            self.lbl_frame_status.configure(text="✅ Đã có file frame.png (Từ Cloud)", text_color=COLORS["success"])
+            self.btn_del_frame.configure(state="normal")
+        else:
+            self.lbl_frame_status.configure(text="❌ Chưa có file frame.png (Dùng mặc định)", text_color="orange")
+            self.btn_del_frame.configure(state="disabled")
+            
+        logo_exists = has_cloud_logo or os.path.exists(logo_path)
+        if logo_exists:
+            self.lbl_logo_status.configure(text="✅ Đã có file logo.png (Từ Cloud)", text_color=COLORS["success"])
+            self.btn_del_logo.configure(state="normal")
+        else:
+            self.lbl_logo_status.configure(text="❌ Chưa có file logo.png (Dùng mặc định)", text_color="orange")
+            self.btn_del_logo.configure(state="disabled")
+            
+        # Đọc cấu hình config.json (đã được đồng bộ ở trên)
+        cfg = {"logo_x": 50, "logo_y": 50, "logo_scale": 150}
+        if os.path.exists(config_path):
+            try:
+                with open(config_path, "r", encoding="utf-8") as f:
+                    cfg.update(json.load(f))
+            except:
+                pass
+                
+        self.input_logo_x.delete(0, "end")
+        self.input_logo_x.insert(0, str(cfg.get("logo_x", 50)))
+        
+        self.input_logo_y.delete(0, "end")
+        self.input_logo_y.insert(0, str(cfg.get("logo_y", 50)))
+        
+        self.input_logo_scale.delete(0, "end")
+        self.input_logo_scale.insert(0, str(cfg.get("logo_scale", 150)))
+
+    def _upload_frame(self):
+        channel = self.asset_channel_var.get()
+        if not channel or channel.startswith("--"):
+            self.log("⚠️ Hãy chọn 1 kênh trước khi tải lên Frame.")
+            return
+            
+        if not supabase_client:
+            self.log("❌ Lỗi: Chưa kết nối Supabase, không thể upload lên Storage.")
+            return
+            
+        from tkinter import filedialog
+        import shutil
+        
+        file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png")])
+        if not file_path:
+            return
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", channel)
+        os.makedirs(channel_dir, exist_ok=True)
+        dest = os.path.join(channel_dir, "frame.png")
+        
+        try:
+            # Lưu local trước
+            shutil.copy(file_path, dest)
+            
+            # Upload lên Supabase Storage
+            storage_path = f"channels/{channel}/frame.png"
+            with open(dest, "rb") as f:
+                try:
+                    supabase_client.storage.from_("assets").upload(storage_path, f, file_options={"upsert": True})
+                except Exception:
+                    supabase_client.storage.from_("assets").update(storage_path, f)
+                    
+            self.log(f"✅ Đã tải lên Frame mới cho kênh {channel} lên Supabase Storage.")
+            self._on_asset_channel_select(channel)
+        except Exception as e:
+            self.log(f"❌ Lỗi khi upload Frame lên Supabase: {e}")
+
+    def _upload_logo(self):
+        channel = self.asset_channel_var.get()
+        if not channel or channel.startswith("--"):
+            self.log("⚠️ Hãy chọn 1 kênh trước khi tải lên Logo.")
+            return
+            
+        if not supabase_client:
+            self.log("❌ Lỗi: Chưa kết nối Supabase, không thể upload lên Storage.")
+            return
+            
+        from tkinter import filedialog
+        import shutil
+        
+        file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png")])
+        if not file_path:
+            return
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", channel)
+        os.makedirs(channel_dir, exist_ok=True)
+        dest = os.path.join(channel_dir, "logo.png")
+        
+        try:
+            # Lưu local trước
+            shutil.copy(file_path, dest)
+            
+            # Upload lên Supabase Storage
+            storage_path = f"channels/{channel}/logo.png"
+            with open(dest, "rb") as f:
+                try:
+                    supabase_client.storage.from_("assets").upload(storage_path, f, file_options={"upsert": True})
+                except Exception:
+                    supabase_client.storage.from_("assets").update(storage_path, f)
+                    
+            self.log(f"✅ Đã tải lên Logo mới cho kênh {channel} lên Supabase Storage.")
+            self._on_asset_channel_select(channel)
+        except Exception as e:
+            self.log(f"❌ Lỗi khi upload Logo lên Supabase: {e}")
+
+    def _delete_frame(self):
+        channel = self.asset_channel_var.get()
+        if not channel or channel.startswith("--"):
+            return
+            
+        if not supabase_client:
+            return
+            
+        storage_path = f"channels/{channel}/frame.png"
+        try:
+            supabase_client.storage.from_("assets").remove([storage_path])
+        except Exception as e:
+            self.log(f"⚠️ Lỗi xóa Frame trên Cloud: {e}")
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", channel)
+        frame_path = os.path.join(channel_dir, "frame.png")
+        if os.path.exists(frame_path):
+            try:
+                os.remove(frame_path)
+            except Exception as e:
+                pass
+                
+        self.log(f"🗑️ Đã xóa file Frame của kênh {channel}")
+        self._on_asset_channel_select(channel)
+
+    def _delete_logo(self):
+        channel = self.asset_channel_var.get()
+        if not channel or channel.startswith("--"):
+            return
+            
+        if not supabase_client:
+            return
+            
+        storage_path = f"channels/{channel}/logo.png"
+        try:
+            supabase_client.storage.from_("assets").remove([storage_path])
+        except Exception as e:
+            self.log(f"⚠️ Lỗi xóa Logo trên Cloud: {e}")
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", channel)
+        logo_path = os.path.join(channel_dir, "logo.png")
+        if os.path.exists(logo_path):
+            try:
+                os.remove(logo_path)
+            except Exception as e:
+                pass
+                
+        self.log(f"🗑️ Đã xóa file Logo của kênh {channel}")
+        self._on_asset_channel_select(channel)
+
+    def _save_asset_config(self):
+        channel = self.asset_channel_var.get()
+        if not channel or channel.startswith("--"):
+            self.log("⚠️ Hãy chọn 1 kênh trước khi lưu cấu hình.")
+            return
+            
+        if not supabase_client:
+            self.log("❌ Lỗi: Chưa kết nối Supabase, không thể lưu cấu hình lên Cloud.")
+            return
+            
+        try:
+            lx = int(self.input_logo_x.get().strip() or "50")
+            ly = int(self.input_logo_y.get().strip() or "50")
+            lscale = int(self.input_logo_scale.get().strip() or "150")
+        except ValueError:
+            self.log("❌ Các thông số X, Y, Tỷ lệ phải là số nguyên!")
+            return
+            
+        channel_dir = os.path.join(APP_DIR, "assets", "channels", channel)
+        os.makedirs(channel_dir, exist_ok=True)
+        config_path = os.path.join(channel_dir, "config.json")
+        
+        cfg = {
+            "logo_x": lx,
+            "logo_y": ly,
+            "logo_scale": lscale
+        }
+        
+        try:
+            # Lưu local trước
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(cfg, f, ensure_ascii=False, indent=2)
+                
+            # Upload lên Supabase Storage
+            storage_path = f"channels/{channel}/config.json"
+            with open(config_path, "rb") as f:
+                try:
+                    supabase_client.storage.from_("assets").upload(storage_path, f, file_options={"upsert": True})
+                except Exception:
+                    supabase_client.storage.from_("assets").update(storage_path, f)
+                    
+            self.log(f"💾 Đã lưu cấu hình Logo cho kênh {channel} lên Supabase Storage (X: {lx}, Y: {ly}, Rộng: {lscale}px)")
+        except Exception as e:
+            self.log(f"❌ Lỗi lưu cấu hình lên Cloud: {e}")
 
     # ═══════════════════════════════════════════════════════
     #  THÊM NGUỒN
@@ -338,16 +741,31 @@ class FBNewsApp(ctk.CTk):
             # Cập nhật dropdown xóa và chrome
             dropdown_vals = ["-- Chọn nguồn để xóa --"]
             chrome_vals = ["-- Chọn kênh để đăng nhập ChatGPT --"]
+            asset_vals = []
+            
             for s in sources:
                 label = f"{s.get('id_tiktok', '')} | {s.get('category_url', '')}"
                 dropdown_vals.append(label)
                 chrome_vals.append(s.get('id_tiktok', ''))
+                if s.get('id_tiktok'):
+                    asset_vals.append(s.get('id_tiktok'))
                 
             self.source_dropdown.configure(values=dropdown_vals)
             self.selected_source_var.set(dropdown_vals[0])
             
             self.chrome_dropdown.configure(values=chrome_vals)
             self.selected_chrome_var.set(chrome_vals[0])
+
+            # Cập nhật dropdown quản lý assets
+            if not asset_vals:
+                asset_vals = ["-- Chọn kênh --"]
+            self.asset_channel_dropdown.configure(values=asset_vals)
+            
+            # Cập nhật chọn kênh assets mặc định nếu kênh cũ bị xóa hoặc chưa chọn gì
+            current_asset_sel = self.asset_channel_var.get()
+            if current_asset_sel not in asset_vals:
+                self.asset_channel_var.set(asset_vals[0])
+                self._on_asset_channel_select(asset_vals[0])
 
         except Exception as e:
             self.log(f"❌ Lỗi load nguồn: {e}")
@@ -486,7 +904,7 @@ class FBNewsApp(ctk.CTk):
                 cwd=APP_DIR,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
-                text=True,
+                encoding="utf-8",
                 bufsize=1,
             )
 

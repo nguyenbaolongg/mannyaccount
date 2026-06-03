@@ -34,6 +34,7 @@ def load_env():
 ENV = load_env()
 SUPABASE_URL = ENV.get("SUPABASE_URL", "")
 SUPABASE_KEY = ENV.get("SUPABASE_KEY", "")
+VOICE_PROFILE_ID = ENV.get("VOICEBOX_PROFILE_ID", "cb6f4c6a-2617-4eeb-a148-909f0084d8c8")
 
 try:
     from supabase import create_client
@@ -92,42 +93,44 @@ class ArticlePipelineCore:
             job_dir = os.path.join(self.temp_dir, f"article_{int(time.time())}")
             article_data = self.art_crawler.crawl(newest_link, job_dir)
             
-            if not article_data or not article_data["content"]:
-                print("   ❌ Cào bài báo thất bại hoặc bài quá ngắn.")
+            if not article_data or not article_data.get("images"):
+                print("   ❌ Không tìm thấy hoặc không tải được ảnh nào từ bài báo.")
                 continue
                 
             # 4. Gửi nội dung cho AI phân tích qua ChatGPT (Giao diện Chrome)
-            ai_result = analyze_article_with_chatgpt(article_data["content"], id_tiktok)
+            ai_result = analyze_article_with_chatgpt(newest_link, id_tiktok)
             
             if not ai_result:
                 print("   ❌ AI phân tích thất bại.")
                 continue
                 
-            # 5. Cào thêm ảnh mạng nếu thiếu (Dựa vào scenes -> visual_description)
-            scenes = ai_result.get("scenes", [])
-            prompts = [scene.get("visual_description", "") for scene in scenes if scene.get("visual_description")]
+            # Chỉ sử dụng ảnh cụ thể của bài báo đó, không tìm kiếm thêm trên mạng
             downloaded_imgs = article_data["images"]
+            print(f"   📸 Tổng cộng có {len(downloaded_imgs)} ảnh gốc từ bài báo để làm video.")
             
-            if prompts:
-                # Nếu thiếu ảnh, tự động search thêm
-                extra_imgs = self.img_searcher.download_missing_images(prompts, job_dir)
-                downloaded_imgs.extend(extra_imgs)
-                
-            print(f"   📸 Tổng cộng có {len(downloaded_imgs)} ảnh để làm video.")
-            
-            # 6. Ghi Google Sheet (Sheet 'tổng')
-            save_article_to_sheet(ai_result, newest_link, id_tiktok)
-            
-            # 7. Khởi tạo Voice (âm thanh)
-            print("   🗣️ Bắt đầu tổng hợp Voice cho bài báo...")
+            # 6. Khởi tạo Voice (âm thanh)
+            print(f"   🗣️ Bắt đầu tổng hợp Voice cho bài báo (Kênh: {id_tiktok})...")
             full_text = f"{ai_result.get('hook', '')}. {ai_result.get('script_voice', '')}"
             voice_path = None
+            
+            # Đọc voice profile riêng của kênh từ config.json nếu có
+            channel_voice_id = VOICE_PROFILE_ID
+            try:
+                cfg_path = os.path.join(PROJECT_ROOT, "assets", "channels", id_tiktok, "config.json")
+                if os.path.exists(cfg_path):
+                    with open(cfg_path, "r", encoding="utf-8") as f:
+                        cfg = json.load(f)
+                        if "voice_profile_id" in cfg:
+                            channel_voice_id = cfg["voice_profile_id"]
+            except Exception as e:
+                pass
+
             try:
                 voice_path = create_voice_full_pipeline(
                     text=full_text,
                     save_dir=job_dir,
                     filename="full_voice.wav",
-                    profile_id="theanh28" # TODO: Lấy từ config/DB nếu cần đổi giọng
+                    profile_id=channel_voice_id
                 )
                 if voice_path and os.path.exists(voice_path):
                     print(f"      ✅ Sinh Voice thành công: {os.path.getsize(voice_path) / 1024:.0f}KB")
@@ -137,20 +140,57 @@ class ArticlePipelineCore:
             except Exception as e:
                 print(f"      ⚠️ Sinh Voice lỗi: {e}")
 
-            # 8. Dựng Video bằng FFmpeg
+            # 7. Dựng Video bằng FFmpeg & Upload Google Drive
+            drive_link = None
             if downloaded_imgs and voice_path:
-                print("   🎬 [TRẠM DỪNG TẠM THỜI] Chuyển qua bước Dựng Video FFmpeg...")
+                print("   🎬 Chuyển qua bước Dựng Video FFmpeg...")
                 output_video_path = os.path.join(job_dir, f"final_{id_tiktok}_{int(time.time())}.mp4")
                 create_article_video(id_tiktok, downloaded_imgs, voice_path, output_video_path)
+                
+                if os.path.exists(output_video_path):
+                    print("   ☁️ Đang upload video lên Google Drive...")
+                    try:
+                        from modules.upload_drive import upload_video_to_drive
+                        gdrive_folder_id = ENV.get("DRIVE_FOLDER_ID", ENV.get("GDRIVE_FOLDER_ID", "1VgkkbUJ82kxzWXJH8cfn7UFMMFBKQkzS"))
+                        drive_link = upload_video_to_drive(output_video_path, gdrive_folder_id)
+                        print(f"   ✅ Upload Google Drive thành công: {drive_link}")
+                    except Exception as e:
+                        print(f"   ⚠️ Lỗi upload Google Drive: {e}")
             else:
                 print("   ⚠️ Thiếu ảnh hoặc Voice, không thể dựng video.")
 
-            # Cập nhật last_article_url vào Supabase
+            # Chỉ lưu khi đã hoàn tất mọi bước và upload thành công
+            if drive_link:
+                # 8. Ghi Google Sheet (Sheet 'tổng')
+                print(f"   📊 Lưu kết quả lên Google Sheet...")
+                sheet_result = save_article_to_sheet(ai_result, newest_link, id_tiktok)
+                sheet_row = sheet_result.get("row") if sheet_result else None
+                
+                if sheet_row:
+                    from article_sheet_api import update_article_drive_link
+                    try:
+                        update_article_drive_link(sheet_row, drive_link)
+                        print(f"   ✅ Đã cập nhật link Drive lên Google Sheet dòng {sheet_row}")
+                    except Exception as e:
+                        print(f"   ⚠️ Lỗi cập nhật link Drive lên Sheet: {e}")
+
+                # Cập nhật last_article_url vào Supabase để đánh dấu đã làm xong
+                try:
+                    supabase_client.table("article_sources").update({"last_article_url": newest_link}).eq("id", sid).execute()
+                    print("   ✅ Đã đánh dấu bài báo này là 'Đã Xử Lý' trong Database.")
+                except Exception as e:
+                    print(f"   ⚠️ Lỗi cập nhật last_article_url: {e}")
+            else:
+                print("   ⚠️ Không có link Drive thành phẩm, bỏ qua việc cập nhật Sheet & Database.")
+
+            # 9. Dọn dẹp bộ nhớ tạm
+            print("   🧹 Đang dọn dẹp bộ nhớ tạm...")
             try:
-                supabase_client.table("article_sources").update({"last_article_url": newest_link}).eq("id", sid).execute()
-                print("   ✅ Đã đánh dấu bài báo này là 'Đã Xử Lý' trong Database.")
+                import shutil
+                shutil.rmtree(job_dir)
+                print(f"   ✅ Đã giải phóng bộ nhớ cho job {os.path.basename(job_dir)}")
             except Exception as e:
-                print(f"   ⚠️ Lỗi cập nhật last_article_url: {e}")
+                print(f"   ⚠️ Lỗi dọn dẹp: {e}")
                 
             break # Chạy 1 bài báo trước để test
 

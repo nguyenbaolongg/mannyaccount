@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Cú ngã chưa kịp đau, đôi dép đã thành nhân vật chính",
+  "hook": "Cứ tưởng cú trượt trên nền ướt mới là điều đáng chú ý, nhưng nhìn xuống đôi dép thì ai cũng phải bật cười.",
+  "script_voice": "Cứ tưởng cú trượt trên nền ướt mới là điều đáng chú ý, nhưng nhìn xuống đôi dép thì ai cũng phải bật cười. Một thanh niên vừa bước đi thì bất ngờ mất thăng bằng, cả người gần như tiếp đất trong tư thế không ai ngờ tới. Nhưng thay vì tập trung vào cú ngã, dân mạng lại đổ dồn ánh mắt vào đôi dép trắng dưới chân. Sau pha va chạm, chiếc dép như bị ép đến mức biến dạng, còn bàn chân thì mắc kẹt trong dáng nhìn vừa thương vừa buồn cười. Anh chàng cố gượng dậy, còn đôi dép thì như vừa trải qua một trận chiến thật sự. Có những khoảnh khắc hài hước không cần dàn dựng, chỉ một cú trượt và một đôi dép chịu trận cũng đủ khiến người xem nhớ mãi.",
+  "main_idea": "Video ghi lại khoảnh khắc một thanh niên bị trượt ngã trên nền ướt, nhưng chi tiết khiến người xem chú ý nhất lại là đôi dép bị biến dạng sau cú ngã.",
+  "viral_angle": "Hài hước và bất ngờ, khai thác sự trái ngược giữa cú ngã của người trong video và chi tiết đôi dép trở thành tâm điểm chú ý.",
+  "viewer_emotion": "Bất ngờ, buồn cười và có chút thương cho tình huống trớ trêu",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cứ tưởng cú trượt trên nền ướt mới là điều đáng chú ý, nhưng nhìn xuống đôi dép thì ai cũng phải bật cười.",
+      "visual_description": "Toàn cảnh thanh niên ngồi trên nền sân ướt sau cú trượt ngã, phần khung tin tức và chữ mô tả xuất hiện phía dưới màn hình."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Một thanh niên vừa bước đi thì bất ngờ mất thăng bằng, cả người gần như tiếp đất trong tư thế không ai ngờ tới.",
+      "visual_description": "Hình ảnh thanh niên chống tay dưới nền, chân duỗi ra, cơ thể bị lệch sau cú ngã bất ngờ."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng thay vì tập trung vào cú ngã, dân mạng lại đổ dồn ánh mắt vào đôi dép trắng dưới chân.",
+      "visual_description": "Máy quay chuyển sang cận cảnh đôi dép trắng đang nằm sát mặt đất, thu hút sự chú ý hơn cả nhân vật chính."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Sau pha va chạm, chiếc dép như bị ép đến mức biến dạng, còn bàn chân thì mắc kẹt trong dáng nhìn vừa thương vừa buồn cười.",
+      "visual_description": "Cận cảnh bàn chân trong chiếc dép trắng, phần dép bị méo và các ngón chân lộ ra khiến tình huống trở nên hài hước."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Anh chàng cố gượng dậy, còn đôi dép thì như vừa trải qua một trận chiến thật sự.",
+      "visual_description": "Thanh niên cúi người kiểm tra chân và dép, cố đứng dậy sau cú ngã trên nền ướt."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có những khoảnh khắc hài hước không cần dàn dựng, chỉ một cú trượt và một đôi dép chịu trận cũng đủ khiến người xem nhớ mãi.",
+      "visual_description": "Khung hình kết lại ở cảnh thanh niên ngồi dậy, đôi dép vẫn là chi tiết nổi bật trong toàn bộ tình huống."
+    }
+  ]
+}

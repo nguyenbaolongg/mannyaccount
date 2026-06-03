@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Muốn chia tay nhưng chọn cách khó hiểu nhất",
+  "hook": "Một chàng trai muốn biến mất khỏi mối quan hệ, nhưng thay vì nói thẳng, anh lại dựng lên một câu chuyện khiến ai đọc cũng phải đứng hình.",
+  "script_voice": "Một cuộc chia tay vốn đã khó nói, nhưng cách chàng trai này chọn còn khó hiểu hơn nhiều. Anh nhắn cho bạn gái bằng thân phận em gái của chính mình, báo rằng mình vừa gặp chuyện không may và không qua khỏi. Tưởng mọi thứ sẽ khiến cô gái hoang mang, ai ngờ chỉ vài phút sau, cô phát hiện một chi tiết rất sai. Tài khoản của anh vừa đăng ảnh đi đá bóng, nên cô lập tức hỏi ngược lại. Chưa dừng ở đó, người nhắn còn cố làm câu chuyện căng hơn, nói rằng đây không phải chuyện đem ra đùa. Nhưng càng giải thích, mọi thứ càng lộ rõ sự vụng về. Đỉnh điểm là khi cô gái muốn qua tận nơi, người kia lại tìm cách ngăn lại. Một màn chia tay tưởng bi kịch, cuối cùng lại thành pha xử lý khiến dân mạng chỉ biết lắc đầu.",
+  "main_idea": "Video kể về một chàng trai muốn chia tay nhưng không dám nói thẳng, nên giả làm em gái mình để báo tin mình đã mất, cuối cùng bị bạn gái nghi ngờ vì những chi tiết vô lý.",
+  "viral_angle": "Tình huống yêu đương kịch tính nhưng hài hước vì cách né tránh chia tay quá vụng về và phi lý.",
+  "viewer_emotion": "Bất ngờ, buồn cười và khó hiểu trước cách xử lý tình cảm thiếu trưởng thành.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một chàng trai muốn biến mất khỏi mối quan hệ, nhưng cách anh chọn lại khiến người xem phải đứng hình.",
+      "visual_description": "Hiển thị đoạn tin nhắn đầu tiên, nền video dạng bản tin với khung đồ họa và logo."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Anh giả làm em gái của chính mình, nhắn cho bạn gái rằng mình vừa gặp chuyện không may và không qua khỏi.",
+      "visual_description": "Cận cảnh màn hình tin nhắn có nội dung người gửi tự nhận là em gái và báo tin dữ."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng cô gái nhanh chóng nhận ra điều bất thường, vì tài khoản của anh vừa đăng ảnh đi đá bóng trước đó.",
+      "visual_description": "Chuyển sang hình ảnh bài đăng hoặc đoạn tin nhắn cô gái hỏi lại về việc vừa thấy anh đăng ảnh."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Càng bị hỏi, người nhắn càng cố làm câu chuyện nghiêm trọng hơn, nhưng lời giải thích lại càng khiến mọi thứ khó tin.",
+      "visual_description": "Hiển thị các đoạn tin nhắn tiếp theo, phần nền được làm mờ để tập trung vào nội dung hội thoại."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đến khi cô gái nói muốn qua tận nơi, người kia lại tìm cách cản lại, khiến màn chia tay giả bi kịch biến thành pha xử lý khó đỡ.",
+      "visual_description": "Hiển thị đoạn tin nhắn cô gái muốn qua gặp và hình ảnh minh họa liên quan đến câu chuyện."
+    }
+  ]
+}

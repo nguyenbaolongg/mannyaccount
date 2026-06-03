@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Dàn phụ dâu gymer khiến cả rạp cưới ở An Giang phải ngoái nhìn",
+  "hook": "Một đám cưới ở An Giang đang khiến dân mạng chú ý, không phải vì cô dâu chú rể, mà vì dàn phụ dâu quá khác biệt.",
+  "script_voice": "Một đám cưới ở An Giang bỗng trở thành tâm điểm chỉ vì dàn phụ dâu xuất hiện quá ấn tượng. Thay vì hình ảnh nhẹ nhàng quen thuộc, họ bước vào trong trang phục trắng, tay bưng mâm lễ, dáng đi tự tin và thần thái không thể lẫn vào đâu được. Điều khiến mọi người bật cười thích thú là vóc dáng khỏe khoắn của các phụ dâu, nhìn qua đã thấy đúng chất gymer. Cả hai bên gia đình đứng hai hàng chứng kiến, còn người xem thì liên tục hướng mắt về khoảnh khắc đặc biệt này. Chỉ vài giây ngắn ngủi, dàn phụ dâu đã biến màn rước lễ thành điểm nhấn khó quên của đám cưới.",
+  "main_idea": "Video ghi lại cảnh dàn phụ dâu có vóc dáng khỏe khoắn, phong thái tự tin trong một đám cưới ở An Giang, tạo nên khoảnh khắc hài hước và gây chú ý trên mạng xã hội.",
+  "viral_angle": "Bất ngờ và hài hước vì hình ảnh phụ dâu khác với khuôn mẫu quen thuộc, vừa duyên dáng vừa mạnh mẽ.",
+  "viewer_emotion": "Thích thú, bất ngờ và vui vẻ trước khoảnh khắc đám cưới độc đáo.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một đám cưới ở An Giang bỗng trở thành tâm điểm chỉ vì dàn phụ dâu xuất hiện quá ấn tượng.",
+      "visual_description": "Toàn cảnh rạp cưới, hai bên gia đình đứng thành hàng, dàn phụ dâu mặc váy trắng chuẩn bị bước vào."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Thay vì hình ảnh nhẹ nhàng quen thuộc, họ bước vào trong trang phục trắng, tay bưng mâm lễ, dáng đi tự tin và thần thái không thể lẫn vào đâu được.",
+      "visual_description": "Các phụ dâu lần lượt bưng mâm lễ đi qua lối giữa rạp cưới, mọi người xung quanh nhìn theo."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều khiến mọi người bật cười thích thú là vóc dáng khỏe khoắn của các phụ dâu, nhìn qua đã thấy đúng chất gymer.",
+      "visual_description": "Máy quay lia gần vào một phụ dâu đang bưng mâm, nổi bật với vóc dáng rắn rỏi và phong thái tự tin."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cả hai bên gia đình đứng hai hàng chứng kiến, còn người xem thì liên tục hướng mắt về khoảnh khắc đặc biệt này.",
+      "visual_description": "Không khí trong rạp cưới náo nhiệt, các khách mời và người nhà đứng quan sát màn rước lễ."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ vài giây ngắn ngủi, dàn phụ dâu đã biến màn rước lễ thành điểm nhấn khó quên của đám cưới.",
+      "visual_description": "Dàn phụ dâu tiếp tục di chuyển qua khu vực sân khấu, tạo nên khoảnh khắc vui vẻ và đáng nhớ."
+    }
+  ]
+}

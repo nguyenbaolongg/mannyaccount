@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Căn nhà đi một vòng tưởng không có lối ra, ai ngờ mở cửa là sang hẳn mặt phố khác",
+  "hook": "Tưởng chỉ là một căn nhà bình thường trong ngõ, nhưng càng đi vào trong mới thấy nó dài đến mức người lạ bước vào có khi không nhớ đường quay ra.",
+  "script_voice": "Tưởng chỉ là một căn nhà bình thường trong ngõ, nhưng càng đi vào trong mới thấy nó dài đến mức người lạ bước vào có khi không nhớ đường quay ra. Từ ngoài đường, người quay bước qua từng khu sinh hoạt, đi hết phòng này lại tới hành lang khác. Bên trong không hề nhỏ như vẻ ngoài, mà nối tiếp nhau bằng những lối đi dài, phòng khách, bếp, khu để xe rồi lại thêm một đoạn hành lang nữa. Càng xem càng có cảm giác như đang đi xuyên qua cả một dãy nhà. Đến đoạn cuối, điều bất ngờ nhất mới xuất hiện: căn nhà không chỉ có một lối ra, mà còn mở thẳng sang một mặt đường khác. Một mặt phố, một mặt ngõ, dài tới mức đúng là trộm vào chưa chắc đã tìm được đường ra.",
+  "main_idea": "Video ghi lại cảnh một người đi xuyên qua căn nhà rất dài, có nhiều khu vực nối tiếp nhau và cuối cùng phát hiện căn nhà có hai mặt tiền, một mặt phố và một mặt ngõ.",
+  "viral_angle": "Góc khai thác gây tò mò và bất ngờ, biến một chuyến đi tham quan nhà bình thường thành trải nghiệm như đi trong mê cung.",
+  "viewer_emotion": "Bất ngờ, tò mò và thích thú",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng chỉ là một căn nhà bình thường trong ngõ, nhưng càng đi vào trong mới thấy nó dài đến mức người lạ bước vào có khi không nhớ đường quay ra.",
+      "visual_description": "Cảnh quay ban đêm bên ngoài căn nhà, phía trước có đường và xe cộ, máy quay chuẩn bị đi vào bên trong."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Từ ngoài đường, người quay bước qua từng khu sinh hoạt, đi hết phòng này lại tới hành lang khác.",
+      "visual_description": "Người quay đi qua khu sinh hoạt bên trong nhà, có bàn ghế, phòng khách và không gian gia đình."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Bên trong không hề nhỏ như vẻ ngoài, mà nối tiếp nhau bằng những lối đi dài, phòng khách, bếp, khu để xe rồi lại thêm một đoạn hành lang nữa.",
+      "visual_description": "Cảnh di chuyển qua cầu thang, khu bếp, khoảng để xe và những hành lang dài trong nhà."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Càng xem càng có cảm giác như đang đi xuyên qua cả một dãy nhà.",
+      "visual_description": "Máy quay tiếp tục đi sâu qua nhiều đoạn hành lang hẹp, ánh sáng thay đổi liên tục giữa các khu vực."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đến đoạn cuối, điều bất ngờ nhất mới xuất hiện: căn nhà không chỉ có một lối ra, mà còn mở thẳng sang một mặt đường khác.",
+      "visual_description": "Người quay đi tới cuối nhà, mở ra khu vực phía trước khác với mái che và không gian như một mặt tiền mới."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một mặt phố, một mặt ngõ, dài tới mức đúng là trộm vào chưa chắc đã tìm được đường ra.",
+      "visual_description": "Cảnh kết ở ngoài đường, cho thấy người quay đã đi xuyên qua căn nhà và ra một phía khác."
+    }
+  ]
+}

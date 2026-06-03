@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Mua cà phê thôi mà có thể được hoàn tiền nửa ly",
+  "hook": "Đừng vội trả tiền ly cà phê như mọi ngày, vì chỉ cần đổi đúng cách thanh toán, bạn có thể nhận lại tới 50 phần trăm.",
+  "script_voice": "Đừng vội trả tiền ly cà phê như mọi ngày, vì chỉ cần đổi đúng cách thanh toán, bạn có thể nhận lại tới 50 phần trăm. Từ ngày 1/6 đến 30/6, nhiều điểm bán đồ ăn, nước uống và cả cửa hàng tiện lợi đang có chương trình hoàn tiền khi thanh toán bằng ví trả sau. Điều đáng chú ý là không chỉ cà phê, những món quen thuộc như trà sữa, bánh, đồ ăn vặt hay thậm chí lúc ghé cây xăng cũng có thể áp dụng. Cao trào nằm ở ngày 6/6, khi mức hoàn tiền có thể lên tới 99 phần trăm, tối đa 50 nghìn đồng. Nói đơn giản, thay vì trả tiền theo thói quen cũ, bạn chỉ cần kiểm tra ưu đãi trước khi quét mã. Một thao tác nhỏ, nhưng có thể giúp ly nước hôm nay rẻ hơn rất nhiều.",
+  "main_idea": "Video giới thiệu chương trình ưu đãi hoàn tiền khi thanh toán bằng ví trả sau tại nhiều điểm bán, đặc biệt có mức hoàn tiền cao trong dịp 6/6.",
+  "viral_angle": "Góc khai thác dễ viral là lợi ích bất ngờ từ một thói quen rất quen thuộc: mua cà phê, đồ ăn hoặc đổ xăng nhưng có thể được hoàn tiền đáng kể nếu biết cách thanh toán.",
+  "viewer_emotion": "Tò mò, hào hứng và muốn thử ngay vì cảm giác có thể tiết kiệm tiền từ những khoản chi hằng ngày.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Đừng vội trả tiền ly cà phê như mọi ngày, vì chỉ cần đổi đúng cách thanh toán, bạn có thể nhận lại tới 50 phần trăm.",
+      "visual_description": "Cảnh ly cà phê trên bàn, người xem thấy không khí quán quen thuộc, phía dưới có lớp đồ họa giới thiệu ưu đãi."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Từ ngày 1/6 đến 30/6, nhiều điểm bán đồ ăn, nước uống và cả cửa hàng tiện lợi đang có chương trình hoàn tiền khi thanh toán bằng ví trả sau.",
+      "visual_description": "Màn hình điện thoại hiển thị ứng dụng thanh toán, chuyển sang cảnh người dùng quét mã tại quầy bán đồ ăn và nước uống."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều đáng chú ý là không chỉ cà phê, những món quen thuộc như trà sữa, bánh, đồ ăn vặt hay thậm chí lúc ghé cây xăng cũng có thể áp dụng.",
+      "visual_description": "Các cảnh cắt nhanh qua quầy đồ ăn vặt, cửa hàng nước uống, bàn ăn và khu vực cây xăng có biển ưu đãi."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cao trào nằm ở ngày 6/6, khi mức hoàn tiền có thể lên tới 99 phần trăm, tối đa 50 nghìn đồng.",
+      "visual_description": "Màn hình nhấn mạnh ưu đãi ngày 6/6, các dòng chữ hoàn tiền xuất hiện nổi bật trên nền cảnh thanh toán thực tế."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nói đơn giản, thay vì trả tiền theo thói quen cũ, bạn chỉ cần kiểm tra ưu đãi trước khi quét mã.",
+      "visual_description": "Cận cảnh điện thoại đang mở phần ưu đãi và thao tác quét mã thanh toán tại điểm bán."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một thao tác nhỏ, nhưng có thể giúp ly nước hôm nay rẻ hơn rất nhiều.",
+      "visual_description": "Kết lại bằng hình ảnh hóa đơn hoặc giao diện hoàn tiền, tạo cảm giác người xem vừa phát hiện một mẹo tiết kiệm hữu ích."
+    }
+  ]
+}

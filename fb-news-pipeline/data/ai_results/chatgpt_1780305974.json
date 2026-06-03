@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Bốn góc camera và một nhịp thở rất Hà Nội",
+  "hook": "Nhìn qua tưởng chỉ là vài camera giao thông bình thường, nhưng càng nhìn kỹ, bạn sẽ thấy cả một thành phố đang chuyển động cùng lúc.",
+  "script_voice": "Nhìn qua tưởng chỉ là vài camera giao thông bình thường, nhưng càng nhìn kỹ, bạn sẽ thấy cả một thành phố đang chuyển động cùng lúc. Ở mỗi khung hình là một nút giao khác nhau, xe máy, ô tô, xe buýt liên tục đan vào nhau nhưng vẫn cố giữ nhịp. Có đoạn nhìn rất thoáng, có đoạn lại khiến người xem phải nín thở vì dòng xe đổi hướng liên tục. Điều cuốn nhất không phải là một pha va chạm, mà là cảm giác hỗn loạn nhưng quen thuộc của đường phố giờ gần tan tầm. Chỉ vài giây camera thôi, nhưng đủ để thấy nhịp sống Hà Nội lúc nào cũng vội, đông và rất thật.",
+  "main_idea": "Video ghi lại nhiều góc camera giao thông tại các tuyến đường đô thị, cho thấy dòng xe di chuyển liên tục và nhịp sống đông đúc của thành phố.",
+  "viral_angle": "Góc khai thác gây tò mò từ hình ảnh nhiều camera cùng lúc, tạo cảm giác người xem đang quan sát toàn cảnh nhịp giao thông đô thị trong một khoảnh khắc rất đời thường.",
+  "viewer_emotion": "Tò mò, hồi hộp nhẹ và cảm giác quen thuộc với nhịp sống thành phố",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn qua tưởng chỉ là vài camera giao thông bình thường, nhưng càng nhìn kỹ, bạn sẽ thấy cả một thành phố đang chuyển động cùng lúc.",
+      "visual_description": "Toàn cảnh màn hình chia thành nhiều khung camera giao thông, mỗi khung ghi lại một tuyến đường khác nhau."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ở mỗi khung hình là một nút giao khác nhau, xe máy, ô tô, xe buýt liên tục đan vào nhau nhưng vẫn cố giữ nhịp.",
+      "visual_description": "Các phương tiện di chuyển qua nhiều hướng, có xe máy, ô tô và xe buýt xuất hiện trên các làn đường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Có đoạn nhìn rất thoáng, có đoạn lại khiến người xem phải nín thở vì dòng xe đổi hướng liên tục.",
+      "visual_description": "Máy quay cho thấy một số đoạn đường rộng, trong khi các nút giao khác có nhiều xe cùng rẽ và nhập làn."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều cuốn nhất không phải là một pha va chạm, mà là cảm giác hỗn loạn nhưng quen thuộc của đường phố giờ gần tan tầm.",
+      "visual_description": "Dòng xe tiếp tục chuyển động đều trong các khung hình, tạo cảm giác đông đúc nhưng không xảy ra sự cố rõ ràng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ vài giây camera thôi, nhưng đủ để thấy nhịp sống Hà Nội lúc nào cũng vội, đông và rất thật.",
+      "visual_description": "Toàn bộ bốn khung camera hiển thị cùng lúc, nhấn mạnh nhịp giao thông liên tục của thành phố."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Dành dụm cả năm đi bar, ai ngờ cái kết khiến ai cũng đứng hình",
+  "hook": "Tưởng bước vào bar là sẽ gặp nhạc cực căng, đèn cực cháy và không khí bùng nổ. Nhưng chỉ vài giây sau, anh chàng này nhận ra mọi thứ không hề giống tưởng tượng.",
+  "script_voice": "Tưởng sau cả năm làm việc vất vả, cuối cùng cũng có một đêm xả stress đúng nghĩa. Anh chàng chọn đi bar, chuẩn bị tinh thần cho một buổi tối thật cháy. Nhưng khi vừa ngồi xuống, thứ xuất hiện trước mắt lại không phải dàn dj hay những bản nhạc sôi động. Trên sân khấu là các cô mặc áo dài, tiếng hát vang lên giữa ánh đèn xanh đỏ, còn bên dưới là gương mặt không biết nên vui, nên cười hay nên suy nghĩ lại cuộc đời. Cái hài không nằm ở nơi anh đến, mà nằm ở sự lệch pha quá mạnh giữa kỳ vọng và thực tế. Đi bar để bung xõa, ai ngờ lại được chữa lành bằng một đêm nhạc đậm chất quê hương.",
+  "main_idea": "Video ghi lại cảnh một người đàn ông đi bar nhưng không khí bên trong lại khác xa tưởng tượng, khi sân khấu đang biểu diễn nhạc truyền thống với ca sĩ áo dài và nhạc cụ dân tộc.",
+  "viral_angle": "Tình huống hài hước đến từ sự đối lập giữa kỳ vọng đi bar sôi động và thực tế lại giống một đêm nhạc truyền thống trang trọng.",
+  "viewer_emotion": "Bất ngờ, buồn cười và thích thú vì cú bẻ lái quá trái ngược với mong đợi ban đầu.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng bước vào bar là sẽ gặp nhạc cực căng, đèn cực cháy và không khí bùng nổ.",
+      "visual_description": "Toàn cảnh sân khấu trong quán bar với ánh đèn xanh vàng, nhiều màn hình led và không gian náo nhiệt."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Nhưng chỉ vài giây sau, anh chàng này nhận ra mọi thứ không hề giống tưởng tượng.",
+      "visual_description": "Máy quay hướng vào người đàn ông ngồi phía trước sân khấu, gương mặt khá nghiêm và có phần bối rối."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Trên sân khấu không phải dj hay nhạc điện tử, mà là các cô mặc áo dài đang hát giữa ánh đèn bar.",
+      "visual_description": "Các ca sĩ mặc áo dài biểu diễn trên sân khấu, phía sau có nhạc công và màn hình led sáng rực."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Khung cảnh vừa sang, vừa lạ, vừa khiến người xem không nhịn được cười vì quá lệch pha.",
+      "visual_description": "Máy quay lia qua khán giả bên dưới, nhiều người ngồi xem trong không gian giống quán bar nhưng âm nhạc lại rất truyền thống."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đi bar để bung xõa, ai ngờ lại được chữa lành bằng một đêm nhạc đậm chất quê hương.",
+      "visual_description": "Máy quay quay lại sân khấu và người đàn ông phía trước, tạo cảm giác hài hước khi anh ngồi lặng giữa màn biểu diễn."
+    }
+  ]
+}

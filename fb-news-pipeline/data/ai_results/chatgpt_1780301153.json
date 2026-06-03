@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Chú rể hát live trong đám cưới và cái kết khiến cô dâu chỉ biết đứng cười",
+  "hook": "Ai cũng tưởng đây sẽ là một màn hát tặng cô dâu thật ngọt ngào, cho đến khi chú rể cất giọng và cả sân khấu bắt đầu có chút sóng gió.",
+  "script_voice": "Ai cũng tưởng chú rể sẽ có một màn hát tặng cô dâu thật lãng mạn trong ngày cưới. Sân khấu đã sẵn sàng, cô dâu đứng bên cạnh trong chiếc váy trắng, còn chú rể thì cầm micro rất tự tin. Nhưng chỉ vài câu đầu vang lên, không khí bỗng chuyển sang một hướng rất khó đoán. Giọng hát có thể chưa thật hoàn hảo, có đoạn còn khiến người nghe bật cười, nhưng điều đáng yêu nhất lại nằm ở chỗ đó. Anh vẫn hát hết mình, vẫn nắm tay cô dâu và vẫn biến khoảnh khắc ấy thành một kỷ niệm không thể quên. Có lẽ trong ngày cưới, hát hay chưa chắc quan trọng bằng việc dám hát thật lòng cho người mình thương.",
+  "main_idea": "Video ghi lại cảnh chú rể hát live tặng cô dâu trong lễ cưới. Dù giọng hát chưa hoàn hảo và có phần hài hước, khoảnh khắc này vẫn tạo cảm giác đáng yêu, chân thật và đáng nhớ.",
+  "viral_angle": "Góc khai thác hài hước xen lẫn cảm động, lấy sự lệch giữa kỳ vọng về một màn hát lãng mạn và thực tế đáng yêu trên sân khấu làm điểm giữ chân người xem.",
+  "viewer_emotion": "Bất ngờ, vui vẻ và thấy ấm lòng vì sự chân thành của chú rể",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Ai cũng tưởng chú rể sẽ có một màn hát tặng cô dâu thật lãng mạn trong ngày cưới.",
+      "visual_description": "Toàn cảnh sân khấu lễ cưới, chú rể đứng cầm micro bên cạnh cô dâu trong váy cưới trắng, phía sau là phông nền trang trí hoa và tên cô dâu chú rể."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Sân khấu đã sẵn sàng, cô dâu đứng bên cạnh, còn chú rể thì bước vào phần trình diễn với vẻ rất tự tin.",
+      "visual_description": "Máy quay tập trung vào chú rể đang hát, tay cầm micro, cô dâu đứng gần bên cạnh và nhìn theo."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng chỉ vài câu đầu vang lên, không khí bỗng chuyển sang một hướng rất khó đoán.",
+      "visual_description": "Chú rể tiếp tục hát live trên sân khấu, cô dâu đứng nghe trong ánh đèn tím hồng, tạo cảm giác vừa lãng mạn vừa hài hước."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Giọng hát có thể chưa thật hoàn hảo, có đoạn còn khiến người nghe bật cười, nhưng điều đáng yêu nhất lại nằm ở chỗ đó.",
+      "visual_description": "Khoảnh khắc chú rể vẫn hát hết mình, cô dâu đứng bên cạnh với dáng vẻ nhẹ nhàng và vui vẻ."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Anh vẫn nắm tay cô dâu và biến khoảnh khắc ấy thành một kỷ niệm không thể quên.",
+      "visual_description": "Chú rể và cô dâu nắm tay nhau trên sân khấu, ánh đèn chiếu vào váy cưới và phông nền lễ cưới."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có lẽ trong ngày cưới, hát hay chưa chắc quan trọng bằng việc dám hát thật lòng cho người mình thương.",
+      "visual_description": "Cảnh kết giữ lại hình ảnh cô dâu chú rể đứng cạnh nhau trên sân khấu, tạo cảm giác vui vẻ, chân thành và đáng nhớ."
+    }
+  ]
+}

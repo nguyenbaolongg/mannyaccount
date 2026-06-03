@@ -168,9 +168,9 @@ class FBNewsPipeline:
             print(f"\n   ▶️ Video {i}/{len(new_videos)}: [{video['video_id']}]")
             print(f"      Caption: {video['caption'][:80]}...")
 
-            success = self._process_one_video(video, source)
+            result = self._process_one_video(video, source)
 
-            if success:
+            if result == True:
                 self.stats["completed"] += 1
                 if not latest_done_id:
                     latest_done_id = video["video_id"]
@@ -201,7 +201,7 @@ class FBNewsPipeline:
 
             if self._check_hash_exists(dl["hash"]):
                 print(f"      ⏭️ Trùng file hash → skip")
-                return False
+                return "duplicate"
 
             # Ghi đè caption từ crawler (thường là "34K") bằng title xịn từ yt-dlp
             if dl.get("title") and len(dl["title"]) > 5:
@@ -214,8 +214,6 @@ class FBNewsPipeline:
                 else:
                     caption = real_title
                 print(f"      📝 Tìm thấy Caption xịn: \"{caption[:60]}...\"")
-
-            record_id = self._insert_video_record(source.get("id"), video, dl)
 
             # ── [2/6] ChatGPT phân tích ──
             print(f"      🤖 [2/6] ChatGPT phân tích video...")
@@ -239,24 +237,9 @@ class FBNewsPipeline:
 
             print(f"      📋 have_frame = {have_frame}")
 
-            if record_id:
-                supabase.table("facebook_videos").update({
-                    "ai_title": title, "ai_script": script_voice,
-                    "status": "generating_script",
-                }).eq("id", record_id).execute()
-
-            # ── [3/6] Ghi Google Sheet ──
-            print(f"      📊 [3/6] Ghi Google Sheet...")
-            sheet_result = save_fb_to_sheet(
-                ai_result=ai_result,
-                video_url=video["url"],
-                source_name=source.get("source_name", ""),
-            )
-            sheet_row = sheet_result.get("row") if sheet_result else None
-
-            # ── [4/6] Tạo voice ──
+            # ── [3/6] Tạo voice ──
             # Luôn tạo voice cho hook (cột E)
-            print(f"      🗣️ [4/6] Tạo voice hook: \"{hook[:50]}...\"")
+            print(f"      🗣️ [3/6] Tạo voice hook: \"{hook[:50]}...\"")
             hook_voice_path = None
             script_voice_path = None
 
@@ -274,12 +257,14 @@ class FBNewsPipeline:
                 except Exception as e:
                     print(f"      ⚠️ Hook voice lỗi: {e}")
 
-            # Nếu CÓ FRAME → tạo thêm voice cho script_voice (cột C)
+            # Nếu CÓ FRAME → tạo voice gộp cả hook và script_voice để thay thế hoàn toàn audio gốc
+            # Nếu KHÔNG FRAME → không cần script_voice, chỉ dùng voice hook và audio gốc
             if have_frame and script_voice:
-                print(f"      🗣️ Tạo voice script (cột C): \"{script_voice[:50]}...\"")
+                full_text = f"{hook}. {script_voice}" if hook else script_voice
+                print(f"      🗣️ Tạo voice script (cột C): \"{full_text[:50]}...\"")
                 try:
                     script_voice_path = create_voice_full_pipeline(
-                        text=script_voice, save_dir=work_dir,
+                        text=full_text, save_dir=work_dir,
                         filename=f"script_{job_id}.wav",
                         profile_id=VOICE_PROFILE_ID,
                     )
@@ -290,9 +275,9 @@ class FBNewsPipeline:
                 except Exception as e:
                     print(f"      ⚠️ Script voice lỗi: {e}")
 
-            # ── [5/6] Dựng video ──
+            # ── [4/6] Dựng video ──
             mode_name = "CÓ FRAME" if have_frame else "KHÔNG FRAME"
-            print(f"      🎬 [5/6] Dựng video (mode: {mode_name})...")
+            print(f"      🎬 [4/6] Dựng video (mode: {mode_name})...")
 
             if have_frame:
                 final_path = self._edit_video_with_frame(
@@ -312,30 +297,42 @@ class FBNewsPipeline:
                     source=source,
                 )
 
-            # ── [6/6] Hoàn tất & Upload Google Drive ──
+            # ── [5/6] Upload Google Drive ──
             drive_link = None
-            if os.path.exists(final_path):
-                print(f"      ☁️ Đang upload video lên Google Drive...")
+            if final_path and os.path.exists(final_path):
+                print(f"      ☁️ [5/6] Đang upload video lên Google Drive...")
                 from modules.upload_drive import upload_video_to_drive
                 drive_link = upload_video_to_drive(final_path, GDRIVE_FOLDER_ID)
 
-            if record_id:
-                supabase.table("facebook_videos").update({
-                    "status": "completed", 
-                    "processed_path": final_path
-                }).eq("id", record_id).execute()
-                
+            if not drive_link:
+                raise Exception("Upload video lên Google Drive thất bại hoặc link trống.")
+
+            # ── [6/6] Ghi dữ liệu khi đã hoàn tất mọi bước thành công ──
+            print(f"      📊 [6/6] Lưu kết quả lên Google Sheet & Database...")
+            
+            # 1. Lưu Google Sheet
+            sheet_result = save_fb_to_sheet(
+                ai_result=ai_result,
+                video_url=video["url"],
+                source_name=source.get("source_name", ""),
+                id_tiktok=source.get("id_tiktok", source.get("source_name", "")),
+            )
+            sheet_row = sheet_result.get("row") if sheet_result else None
+            
             if sheet_row:
                 update_fb_status(sheet_row, "completed")
-                if drive_link:
-                    # Ghi đè vào cột J (cột voice) theo yêu cầu
-                    update_fb_voice_link(sheet_row, drive_link)
-                    print(f"      ✅ Đã đẩy link Drive vào cột J")
+                # Cập nhật link Drive vào cột J (cột 10)
+                update_fb_drive_link(sheet_row, drive_link)
+                print(f"      ✅ Đã đẩy link Drive vào Google Sheet dòng {sheet_row}")
 
-            print(f"      🎉 [6/6] XONG!")
+            # 2. Lưu Supabase
+            record_id = self._insert_video_record(source.get("id"), video, dl, ai_result, final_path)
+            if record_id:
+                print(f"      ✅ Đã lưu record Supabase ID: {record_id}")
+
+            print(f"      🎉 XONG!")
             print(f"      📁 Video: {final_path}")
-            if drive_link:
-                print(f"      🔗 Link Drive: {drive_link}")
+            print(f"      🔗 Link Drive: {drive_link}")
                 
             if on_success:
                 try:
@@ -343,18 +340,17 @@ class FBNewsPipeline:
                 except Exception as e:
                     print(f"      ⚠️ Lỗi callback on_success: {e}")
                 
-            if drive_link:
-                # Giải phóng bộ nhớ sau khi upload thành công
-                print(f"      🧹 Đang dọn dẹp bộ nhớ tạm...")
-                try:
-                    import shutil
-                    if os.path.exists(work_dir):
-                        shutil.rmtree(work_dir)
-                    if dl and dl.get("path") and os.path.exists(dl["path"]):
-                        os.remove(dl["path"])
-                    print(f"      ✅ Đã giải phóng bộ nhớ cho job {job_id}")
-                except Exception as e:
-                    print(f"      ⚠️ Lỗi khi dọn dẹp: {e}")
+            # Giải phóng bộ nhớ sau khi upload thành công
+            print(f"      🧹 Đang dọn dẹp bộ nhớ tạm...")
+            try:
+                import shutil
+                if os.path.exists(work_dir):
+                    shutil.rmtree(work_dir)
+                if dl and dl.get("path") and os.path.exists(dl["path"]):
+                    os.remove(dl["path"])
+                print(f"      ✅ Đã giải phóng bộ nhớ cho job {job_id}")
+            except Exception as e:
+                print(f"      ⚠️ Lỗi khi dọn dẹp: {e}")
                     
             return True
 
@@ -505,7 +501,7 @@ class FBNewsPipeline:
     # ═══════════════════════════════════════════════════
     def _edit_video_no_frame(self, source_video, hook_voice_path, hook_text,
                               work_dir, job_id, source):
-        # 1 PASS: Xử lý lại hình ảnh (Frame, Logo, Text) + Đè Voice đoạn đầu
+        # 1 PASS: Xử lý lại hình ảnh (Text, Logo) + Đè Voice đoạn đầu
         final_path = os.path.join(work_dir, f"final_{job_id}.mp4")
 
         hook_duration = 5.0
@@ -619,7 +615,7 @@ class FBNewsPipeline:
         cmd += ["-c:v", "libx264", "-preset", "fast", "-crf", "23",
                 "-c:a", "aac", "-b:a", "128k", final_path]
 
-        print(f"         Tạo video KHÔNG FRAME (1 pass: Voice hook mix audio gốc, có chỉnh sửa frame/text/logo)...")
+        print(f"         Tạo video KHÔNG FRAME (1 pass: Voice hook mix audio gốc, có chỉnh sửa text/logo)...")
         try:
             subprocess.run(cmd, capture_output=True, text=True, timeout=300)
         except Exception as e:
@@ -659,17 +655,20 @@ class FBNewsPipeline:
         except:
             pass
 
-    def _insert_video_record(self, source_id: str, video: dict, dl: dict) -> str | None:
+    def _insert_video_record(self, source_id: str, video: dict, dl: dict, ai_result: dict, final_path: str) -> str | None:
         try:
             result = supabase.table("facebook_videos").insert({
                 "source_id": source_id,
                 "facebook_video_id": video.get("video_id"),
                 "original_url": video["url"],
                 "caption": video.get("caption", "")[:500],
-                "status": "downloaded",
+                "status": "completed",
                 "file_hash": dl.get("hash"),
                 "file_size_bytes": dl.get("size"),
                 "downloaded_path": dl.get("path"),
+                "ai_title": ai_result.get("title_tiktok", ""),
+                "ai_script": ai_result.get("script_voice", ""),
+                "processed_path": final_path,
             }).execute()
             return result.data[0]["id"] if result.data else None
         except Exception as e:

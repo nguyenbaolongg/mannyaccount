@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Bông hoa trên vách đá và câu hỏi khiến nhiều người phải lặng đi",
+  "hook": "Một bông hoa nhỏ vẫn có thể nở giữa vách đá lạnh, vậy tại sao con người lại dễ buông tay khi gặp khó khăn?",
+  "script_voice": "Giữa một vách núi cheo leo, nơi tưởng như chỉ có đá lạnh, gió mạnh và vực sâu, một cành hoa nhỏ vẫn lặng lẽ nở rộ. Không ai tưới nước mỗi ngày, không ai che chở khỏi bão gió, vậy mà nó vẫn chọn cách vươn lên. Có lẽ điều khiến người xem chạm lòng không phải là cảnh núi hùng vĩ, mà là câu hỏi phía sau bông hoa ấy. Nếu một sinh mệnh mỏng manh còn không bỏ cuộc trong khe đá, thì con người chúng ta, dù đang mệt mỏi đến đâu, cũng vẫn có lý do để đứng dậy thêm một lần nữa.",
+  "main_idea": "Video dùng hình ảnh hoa nở trên vách đá để truyền tải thông điệp về nghị lực, sự bền bỉ và tinh thần không gục ngã trước khó khăn.",
+  "viral_angle": "Góc khai thác truyền cảm hứng, dùng hình ảnh thiên nhiên đẹp kết hợp câu hỏi đời thường nhưng sâu sắc để tạo cảm xúc lắng đọng.",
+  "viewer_emotion": "Xúc động, suy ngẫm và được tiếp thêm động lực",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một bông hoa nhỏ vẫn có thể nở giữa vách đá lạnh, vậy tại sao con người lại dễ buông tay khi gặp khó khăn?",
+      "visual_description": "Toàn cảnh vách núi cao lúc bình minh, ánh nắng chiếu qua mây, nổi bật cành hoa hồng mọc trên khe đá."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa nơi tưởng như chỉ có đá, gió và vực sâu, cành hoa ấy vẫn âm thầm bám rễ.",
+      "visual_description": "Máy quay chậm hướng về cành hoa nằm sát vách đá, phía xa là thung lũng phủ sương."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Không ai che chở, không ai nâng đỡ, nhưng nó vẫn chọn cách nở ra thay vì héo úa.",
+      "visual_description": "Cận cảnh những bông hoa rung nhẹ trong gió, cánh hoa nổi bật trên nền núi đá xám."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Có lẽ điều khiến người xem lặng đi không phải cảnh núi quá đẹp, mà là câu hỏi ẩn sau bông hoa ấy.",
+      "visual_description": "Khung hình mở rộng ra toàn bộ thung lũng, ánh sáng mặt trời tạo cảm giác yên bình và sâu lắng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nếu một sinh mệnh mỏng manh còn không bỏ cuộc, thì chúng ta cũng có thể đứng dậy thêm một lần nữa.",
+      "visual_description": "Cành hoa được đặt ở tiền cảnh, phía sau là núi non và mây trôi, tạo cảm giác hy vọng và mạnh mẽ."
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import os
 import telebot
 import threading
+import queue
 from dotenv import load_dotenv
 import re
 from fb_pipeline import FBNewsPipeline
@@ -77,13 +78,31 @@ def process_video_thread(message, url):
                 
         bot.send_message(chat_id, "⏳ Bắt đầu phân tích kịch bản và render video (mất khoảng 2-3 phút)...")
         
-        success = pipeline._process_one_video(video, source, on_success=on_success)
+        result = pipeline._process_one_video(video, source, on_success=on_success)
         
-        if not success:
+        if result == "duplicate":
+            bot.send_message(chat_id, "⚠️ Video này đã được làm trước đó rồi (Trùng nội dung). Hệ thống sẽ bỏ qua để tránh trùng lặp.")
+        elif not result:
             bot.send_message(chat_id, "❌ Quá trình tạo video thất bại. Vui lòng kiểm tra lại link hoặc xem log hệ thống.")
             
     except Exception as e:
         bot.send_message(chat_id, f"❌ Có lỗi xảy ra: {e}")
+
+# Queue chứa các link chờ xử lý
+video_queue = queue.Queue()
+
+def worker_loop():
+    while True:
+        task = video_queue.get()
+        if task is None:
+            break
+        message, url = task
+        bot.send_message(message.chat.id, "⚙️ Đến lượt bạn! Hệ thống đang xử lý link...")
+        process_video_thread(message, url)
+        video_queue.task_done()
+
+# Khởi chạy 1 worker duy nhất (để tránh đụng độ thư mục Chrome Profile)
+threading.Thread(target=worker_loop, daemon=True).start()
 
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
@@ -97,9 +116,15 @@ def handle_message(message):
         
     for url in urls:
         if 'tiktok.com' in url or 'facebook.com' in url or 'fb.watch' in url:
-            bot.send_message(chat_id, f"📥 Đã nhận link: {url}")
-            # Chạy thread ngầm để bot có thể nhận nhiều link cùng lúc
-            threading.Thread(target=process_video_thread, args=(message, url)).start()
+            queue_size = video_queue.qsize()
+            
+            if queue_size > 0:
+                bot.send_message(chat_id, f"📥 Đã nhận link: {url}\n⏳ Hiện đang có {queue_size} link xếp hàng phía trước. Vui lòng đợi nhé!")
+            else:
+                bot.send_message(chat_id, f"📥 Đã nhận link: {url}\n🚀 Hệ thống đang chuẩn bị xử lý ngay!")
+                
+            # Đưa vào queue thay vì chạy thread đồng thời
+            video_queue.put((message, url))
         else:
             bot.send_message(chat_id, f"⚠️ Hiện tại tôi chỉ hỗ trợ link TikTok và Facebook.\nLink này không hợp lệ: {url}")
 

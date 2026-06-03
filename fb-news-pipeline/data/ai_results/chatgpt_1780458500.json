@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Khi nhân viên nói một câu khiến chủ tiệm lặng người",
+  "hook": "Một salon mới mở, khách còn thưa, nhưng điều khiến người chủ nghẹn lại không phải là doanh thu, mà là câu nói của hai nhân viên trẻ.",
+  "script_voice": "Một ngày rất bình thường trong tiệm salon mới mở, người chủ cứ nghĩ hai bạn nhân viên chỉ đang ngồi nói chuyện cho vui. Vì quán còn ít khách, áp lực chi phí tháng nào cũng đè nặng. Nhưng rồi hai bạn bất ngờ nói rằng, nếu tiệm chưa ổn, lương có thể trả chậm hoặc ít hơn cũng được. Nghe đến đó, người chủ gần như đứng hình. Điều khiến anh xúc động hơn là hai bạn không chỉ nói cho qua, mà thật sự sẵn sàng đi làm thêm buổi tối để tự xoay xở. Có những lúc làm chủ không sợ vắng khách bằng sợ người bên cạnh rời đi. Nhưng khoảnh khắc này, anh nhận ra mình không chỉ có nhân viên, mà còn có những người thật lòng muốn cùng mình đi qua giai đoạn khó nhất.",
+  "main_idea": "Video kể về khoảnh khắc hai nhân viên trẻ trong một salon mới mở chủ động chia sẻ khó khăn với chủ, sẵn sàng nhận lương thấp hơn hoặc chậm lương để cùng tiệm vượt qua giai đoạn ít khách.",
+  "viral_angle": "Góc khai thác nhân văn và xúc động, tập trung vào sự tử tế hiếm có giữa chủ và nhân viên trong lúc công việc còn khó khăn.",
+  "viewer_emotion": "Xúc động, ấm lòng và nể phục sự chân thành của những người trẻ biết nghĩ cho người khác.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một salon mới mở, khách còn thưa, nhưng điều khiến người chủ nghẹn lại không phải là doanh thu, mà là câu nói của hai nhân viên trẻ.",
+      "visual_description": "Góc camera an ninh trong salon, vài người ngồi cạnh nhau trong không gian tiệm tóc còn khá vắng."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, anh chỉ nghĩ tụi nhỏ đang nói chuyện cho vui, vì ai đi làm mà không mong nhận đủ lương mỗi tháng.",
+      "visual_description": "Hai nhân viên trẻ ngồi trò chuyện gần ghế salon, người chủ ở gần đó lắng nghe."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng rồi hai bạn nói rằng nếu tiệm đang khó, anh có thể trả ít hơn một chút, hoặc chậm lại cũng không sao.",
+      "visual_description": "Không khí trong tiệm lắng xuống, mọi người vẫn ngồi gần nhau, tạo cảm giác như một cuộc trò chuyện thật lòng."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều làm anh nặng lòng hơn là hai bạn còn nói sẽ đi làm thêm buổi tối để tự xoay xở, miễn là anh đừng lo.",
+      "visual_description": "Máy quay ghi lại cảnh các nhân viên vẫn ở lại trong tiệm, không có hành động lớn nhưng cảm xúc nằm ở câu chuyện phía sau."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có những lúc làm chủ không sợ tiệm vắng khách bằng sợ người bên cạnh bỏ mình đi lúc khó nhất.",
+      "visual_description": "Toàn cảnh salon nhỏ, ghế cắt tóc, gương và khu vực làm việc hiện lên trong góc quay rộng."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Và khoảnh khắc đó, anh hiểu rằng mình không chỉ có nhân viên, mà có những người thật lòng muốn cùng mình vượt qua giai đoạn này.",
+      "visual_description": "Khung hình giữ lại cảnh mọi người ngồi bên nhau trong tiệm, tạo cảm giác ấm áp và gắn bó."
+    }
+  ]
+}

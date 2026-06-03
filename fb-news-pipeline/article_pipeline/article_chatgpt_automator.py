@@ -43,7 +43,7 @@ def login_chatgpt_interactive(id_tiktok: str):
         input("👉 Đăng nhập xong → nhấn ENTER ở đây... ")
         context.close()
 
-def analyze_article_with_chatgpt(article_text: str, id_tiktok: str) -> dict | None:
+def analyze_article_with_chatgpt(article_url: str, id_tiktok: str) -> dict | None:
     profile_dir = get_chrome_profile_dir(id_tiktok)
     if not os.path.exists(profile_dir):
         print(f"      ❌ CHƯA LOGIN CHATGPT CHO KÊNH {id_tiktok}!")
@@ -51,8 +51,9 @@ def analyze_article_with_chatgpt(article_text: str, id_tiktok: str) -> dict | No
 
     prompt_text = load_prompt()
     full_prompt = (
+        f"👉 ĐƯỜNG DẪN BÀI BÁO CẦN PHÂN TÍCH: {article_url}\n\n"
+        f"Hãy click hoặc truy cập vào đường dẫn trên, đọc nội dung bài báo và thực hiện theo yêu cầu dưới đây:\n\n"
         f"{prompt_text}\n\n"
-        f"BÀI BÁO:\n{article_text}\n\n"
         f"Hãy phân tích và BẮT BUỘC xuất đúng định dạng JSON, có thêm trường \"id_tiktok\": \"{id_tiktok}\"."
     )
 
@@ -88,13 +89,13 @@ def analyze_article_with_chatgpt(article_text: str, id_tiktok: str) -> dict | No
                 context.close()
                 return None
 
-            print("      ✍️ Nhập prompt và nội dung bài báo...")
+            print("      ✍️ Nhập prompt và nội dung bài báo (gõ phím ảo)...")
             textarea = page.locator("#prompt-textarea, [contenteditable='true']").first
             textarea.click()
 
-            # Không dùng bàn phím type chậm vì nội dung bài báo rất dài sẽ mất nhiều thời gian
-            # Thay vào đó dùng JS paste nội dung vào
-            textarea.fill(full_prompt)
+            # Gõ từng phím thay vì paste (nhằm tránh bị bot detection)
+            # Không dùng delay để tốc độ gõ diễn ra siêu tốc, nhưng vẫn được tính là sự kiện gõ phím chứ không phải dán
+            textarea.type(full_prompt)
             time.sleep(1)
 
             print("      🚀 Gửi yêu cầu...")

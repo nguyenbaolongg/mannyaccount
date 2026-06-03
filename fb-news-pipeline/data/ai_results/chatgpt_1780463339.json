@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Hai nhân viên không rời đi khi salon gặp khó",
+  "hook": "Chủ salon tưởng mình phải đối mặt với giai đoạn khó khăn một mình, nhưng phản ứng của hai nhân viên lại khiến anh vừa nghẹn lại vừa không nhịn được cười.",
+  "script_voice": "Chuyện xảy ra trong một salon nhỏ, khi công việc không còn thuận lợi như trước. Người chủ ngồi xuống nói chuyện với hai nhân viên, có lẽ anh đã chuẩn bị tinh thần cho tình huống xấu nhất. Nhưng thay vì im lặng rời đi, hai người lại chọn cách ở lại bên cạnh anh. Nhìn bộ dạng vừa nghiêm túc vừa có phần vụng về của họ, ông chủ không biết nên xúc động hay bật cười. Khoảnh khắc ấy khiến nhiều người nhận ra, trong lúc khó khăn nhất, điều quý nhất không phải là tiền bạc, mà là có người vẫn sẵn lòng đồng hành với mình.",
+  "main_idea": "Video kể về hai nhân viên tại một salon vẫn quyết định ở lại đồng hành với chủ dù salon đang gặp khó khăn, tạo nên khoảnh khắc vừa xúc động vừa đáng yêu.",
+  "viral_angle": "Góc khai thác nhân văn và bất ngờ, tập trung vào sự trung thành, tình nghĩa giữa chủ và nhân viên trong lúc khó khăn.",
+  "viewer_emotion": "Xúc động, ấm lòng và bất ngờ trước cách hai nhân viên chọn ở lại với người chủ của mình.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Chủ salon tưởng mình phải đối mặt với giai đoạn khó khăn một mình, nhưng phản ứng của hai nhân viên lại khiến anh vừa nghẹn lại vừa không nhịn được cười.",
+      "visual_description": "Hai nhân viên ngồi trên ghế trong salon, một người mặc áo xanh đội mũ bảo hiểm, một người mặc áo xanh vàng, phía dưới có khung tin tức màu xanh."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Chuyện xảy ra trong một salon nhỏ, khi công việc không còn thuận lợi như trước.",
+      "visual_description": "Góc camera an ninh quay toàn cảnh salon, không gian khá yên tĩnh, các ghế chờ và kệ sản phẩm hiện rõ trong khung hình."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Người chủ ngồi xuống nói chuyện với hai nhân viên, có lẽ anh đã chuẩn bị tinh thần cho tình huống xấu nhất.",
+      "visual_description": "Người chủ mặc áo xanh bước tới và ngồi gần hai nhân viên, cả ba cùng trò chuyện trong không khí nghiêm túc."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng thay vì im lặng rời đi, hai người lại chọn cách ở lại bên cạnh anh.",
+      "visual_description": "Hai nhân viên vẫn ngồi cạnh chủ, chăm chú lắng nghe và không có dấu hiệu muốn rời khỏi salon."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nhìn bộ dạng vừa nghiêm túc vừa có phần vụng về của họ, ông chủ không biết nên xúc động hay bật cười.",
+      "visual_description": "Một nhân viên cúi xuống chỉnh đồ, người chủ và nhân viên còn lại nhìn theo, tạo nên khoảnh khắc vừa buồn cười vừa gần gũi."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Khoảnh khắc ấy khiến nhiều người nhận ra, trong lúc khó khăn nhất, điều quý nhất không phải là tiền bạc, mà là có người vẫn sẵn lòng đồng hành với mình.",
+      "visual_description": "Người chủ cúi xuống gần nhân viên, không khí trong salon trở nên ấm áp và cảm động."
+    }
+  ]
+}

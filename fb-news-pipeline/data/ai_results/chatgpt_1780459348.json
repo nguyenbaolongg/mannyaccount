@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Cơn bão đi qua, mặt biển Nhật Bản khiến ai nhìn cũng lạnh gáy",
+  "hook": "Ban đầu chỉ là một cây cầu ven biển sau bão, nhưng khi máy quay lia ra xa, thứ đáng sợ nhất lại nằm ở phía chân trời.",
+  "script_voice": "Ban đầu, khung cảnh trông khá yên bình: một cây cầu, vài căn nhà nhỏ và dòng nước đục chảy bên dưới. Nhưng chỉ vài giây sau, phía ngoài khơi bắt đầu hiện lên những dải sóng trắng khổng lồ. Chúng không đánh vào bờ như bình thường, mà cuộn thành từng lớp dài, cao và dày, giống như cả mặt biển đang bị kéo dựng lên sau cơn bão lớn. Điều khiến người xem nổi da gà là sự đối lập quá rõ: bên trong vẫn có xe chạy qua cầu, còn ngoài xa, biển đang gầm lên từng đợt. Nhìn từ xa mới thấy con người nhỏ bé đến mức nào trước thiên nhiên.",
+  "main_idea": "Video ghi lại cảnh biển ở Nhật Bản sau khi một cơn bão lớn đổ bộ, với những con sóng dữ dội ngoài khơi, nước sông đục ngầu và khung cảnh ven biển trở nên căng thẳng, đáng sợ.",
+  "viral_angle": "Góc khai thác mạnh nhất là sự đối lập giữa cuộc sống ven bờ tưởng như bình thường và những lớp sóng khổng lồ đang cuộn ngoài biển, tạo cảm giác bất ngờ và choáng ngợp.",
+  "viewer_emotion": "Bất ngờ, choáng ngợp và có chút lạnh gáy trước sức mạnh của thiên nhiên",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Ban đầu, khung cảnh trông khá yên bình: một cây cầu, vài căn nhà nhỏ và dòng nước đục chảy bên dưới.",
+      "visual_description": "Toàn cảnh cây cầu ven biển, dòng nước màu nâu đục chảy bên dưới, xa xa là khu dân cư và bầu trời sau bão."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Nhưng chỉ vài giây sau, phía ngoài khơi bắt đầu hiện lên những dải sóng trắng khổng lồ.",
+      "visual_description": "Máy quay hướng ra biển, những lớp sóng trắng lớn liên tiếp xuất hiện ở đường chân trời."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Chúng không đánh vào bờ như bình thường, mà cuộn thành từng lớp dài, cao và dày, giống như cả mặt biển đang bị kéo dựng lên sau cơn bão lớn.",
+      "visual_description": "Cận hơn vào vùng biển xa, các con sóng lớn cuộn mạnh, bọt trắng phủ dày trên mặt nước."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều khiến người xem nổi da gà là sự đối lập quá rõ: bên trong vẫn có xe chạy qua cầu, còn ngoài xa, biển đang gầm lên từng đợt.",
+      "visual_description": "Một chiếc xe di chuyển trên cầu, phía sau là biển động dữ dội với nhiều lớp sóng lớn nối tiếp nhau."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nhìn từ xa mới thấy con người nhỏ bé đến mức nào trước thiên nhiên.",
+      "visual_description": "Khung hình rộng bao quát cây cầu, nhà dân và biển động phía xa, tạo cảm giác con người rất nhỏ bé trước cảnh sóng lớn."
+    }
+  ]
+}

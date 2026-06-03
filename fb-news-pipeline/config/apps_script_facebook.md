@@ -17,25 +17,27 @@ Truy cập Google Sheet → Extensions → Apps Script
     var sheetName = data.sheet_name || "facebook";
     var sheet = ss.getSheetByName(sheetName);
     
-    // Tạo sheet "facebook" nếu chưa có
+    // Tạo sheet nếu chưa có
     if (!sheet) {
       sheet = ss.insertSheet(sheetName);
-      sheet.getRange(1, 1, 1, 12).setValues([[
-        "Link gốc",       // A
-        "Hook",            // B
-        "Title TikTok",    // C
-        "Main Idea",       // D
-        "Content Style",   // E
-        "Duration (s)",    // F
-        "Scenes",          // G
-        "Source",           // H
-        "Script Voice",    // I
-        "Voice Link",      // J
-        "Drive Link",      // K
-        "Status"           // L
+      sheet.getRange(1, 1, 1, 14).setValues([[
+        "Link gốc",       // A (1)
+        "Hook",            // B (2)
+        "Title TikTok",    // C (3)
+        "Main Idea",       // D (4)
+        "Content Style",   // E (5)
+        "Duration (s)",    // F (6)
+        "Scenes",          // G (7)
+        "Source",          // H (8)
+        "Script Voice",    // I (9)
+        "Drive Link",      // J (10)
+        "Voice Link",      // K (11)
+        "Status",          // L (12)
+        "Spare",           // M (13)
+        "ID TikTok"        // N (14)
       ]]);
       // Bold header
-      sheet.getRange(1, 1, 1, 12).setFontWeight("bold");
+      sheet.getRange(1, 1, 1, 14).setFontWeight("bold");
     }
     
     var lastRow = sheet.getLastRow() + 1;
@@ -49,6 +51,7 @@ Truy cập Google Sheet → Extensions → Apps Script
     sheet.getRange(lastRow, 8).setValue(data.source_name || "");     // H: Source
     sheet.getRange(lastRow, 9).setValue(data.script_voice || "");    // I: Script Voice
     sheet.getRange(lastRow, 12).setValue("pending");                 // L: Status
+    sheet.getRange(lastRow, 14).setValue(data.id_tiktok || "");      // N: ID TikTok
     
     return ContentService.createTextOutput(
       JSON.stringify({status: "success", row: lastRow, sheet: sheetName})
@@ -60,7 +63,7 @@ Truy cập Google Sheet → Extensions → Apps Script
     var sheetName = data.sheet_name || "facebook";
     var sheet = ss.getSheetByName(sheetName);
     if (sheet && data.row) {
-      sheet.getRange(parseInt(data.row), 10).setValue(data.voice_link || ""); // J
+      sheet.getRange(parseInt(data.row), 11).setValue(data.voice_link || ""); // K (Cột 11)
       return ContentService.createTextOutput(
         JSON.stringify({status: "success"})
       ).setMimeType(ContentService.MimeType.JSON);
@@ -72,7 +75,7 @@ Truy cập Google Sheet → Extensions → Apps Script
     var sheetName = data.sheet_name || "facebook";
     var sheet = ss.getSheetByName(sheetName);
     if (sheet && data.row) {
-      sheet.getRange(parseInt(data.row), 11).setValue(data.drive_link || ""); // K
+      sheet.getRange(parseInt(data.row), 10).setValue(data.drive_link || ""); // J (Cột 10)
       return ContentService.createTextOutput(
         JSON.stringify({status: "success"})
       ).setMimeType(ContentService.MimeType.JSON);
@@ -84,7 +87,7 @@ Truy cập Google Sheet → Extensions → Apps Script
     var sheetName = data.sheet_name || "facebook";
     var sheet = ss.getSheetByName(sheetName);
     if (sheet && data.row) {
-      sheet.getRange(parseInt(data.row), 12).setValue(data.status || ""); // L
+      sheet.getRange(parseInt(data.row), 12).setValue(data.status || ""); // L (Cột 12)
       return ContentService.createTextOutput(
         JSON.stringify({status: "success"})
       ).setMimeType(ContentService.MimeType.JSON);

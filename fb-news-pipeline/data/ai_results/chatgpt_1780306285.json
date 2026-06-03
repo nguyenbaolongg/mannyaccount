@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Khoảnh khắc hiếm thấy ở Cảng Cái Chiên sáng nay",
+  "hook": "Giữa mặt nước yên bình ở Cảng Cái Chiên, một vị khách đặc biệt bất ngờ xuất hiện, khiến ai nhìn thấy cũng phải dừng lại vài giây.",
+  "script_voice": "Giữa buổi sáng ở Cảng Cái Chiên, Quảng Ninh, mặt biển tưởng như chỉ có sóng nhẹ và gió lặng. Nhưng rồi một bóng xám bất ngờ trồi lên, bơi sát mặt nước và để lộ phần vây rất rõ. Đó là cá heo, đang thong dong di chuyển ngay gần khu vực cảng. Điều khiến nhiều người thích thú không chỉ là khoảnh khắc hiếm gặp này, mà còn là tín hiệu đáng mừng phía sau nó. Thời gian gần đây, cá voi và cá heo liên tục xuất hiện ở nhiều vùng biển Việt Nam. Với nhiều người, đây không chỉ là một cảnh đẹp, mà còn giống như lời nhắn rằng biển đang dần hồi sinh.",
+  "main_idea": "Video ghi lại cảnh cá heo xuất hiện và bơi lội ở Cảng Cái Chiên, Quảng Ninh vào sáng ngày 1/6, gợi lên tín hiệu tích cực về sự phục hồi của hệ sinh thái biển Việt Nam.",
+  "viral_angle": "Bất ngờ và nhân văn, khai thác khoảnh khắc hiếm thấy của cá heo xuất hiện gần cảng, đồng thời kết nối với thông điệp biển Việt Nam đang có dấu hiệu hồi phục.",
+  "viewer_emotion": "Bất ngờ, thích thú và hy vọng",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Giữa mặt nước yên bình ở Cảng Cái Chiên, một vị khách đặc biệt bất ngờ xuất hiện, khiến ai nhìn thấy cũng phải dừng lại vài giây.",
+      "visual_description": "Toàn cảnh mặt biển xanh tại Cảng Cái Chiên, sóng nhẹ, khung hình hướng xuống mặt nước như đang chờ một điều bất ngờ xuất hiện."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi thứ trông rất bình thường, chỉ có mặt biển lăn tăn và khoảng không khá yên ắng.",
+      "visual_description": "Máy quay giữ vào mặt nước, không khí yên bình, chưa có nhiều chuyển động nổi bật ngoài những gợn sóng nhỏ."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng chỉ vài giây sau, một bóng xám trồi lên, lướt sát mặt nước và để lộ phần vây rất rõ.",
+      "visual_description": "Cá heo xuất hiện dưới mặt nước, phần thân và vây lưng nổi lên, tạo vệt sóng trắng phía sau khi di chuyển."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Đó là cá heo, đang thong dong bơi ngay gần khu vực cảng, một khoảnh khắc không phải lúc nào cũng có thể bắt gặp.",
+      "visual_description": "Cá heo bơi chậm rãi qua khung hình, thân hiện mờ dưới làn nước xanh, tạo cảm giác gần gũi và hiếm thấy."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều đặc biệt hơn là thời gian gần đây, cá voi và cá heo liên tục được ghi nhận ở nhiều vùng biển Việt Nam.",
+      "visual_description": "Khung hình tiếp tục theo chuyển động của cá heo, mặt nước mở rộng hơn để tạo cảm giác thiên nhiên đang sống động trở lại."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Với nhiều người, đây không chỉ là một cảnh đẹp, mà còn là tín hiệu đáng mừng rằng hệ sinh thái biển đang dần hồi phục.",
+      "visual_description": "Cá heo lặn dần dưới mặt nước, chỉ còn những vệt sóng nhẹ lan ra, kết lại bằng cảm giác bình yên và hy vọng."
+    }
+  ]
+}

@@ -1,5 +1,19 @@
-2026/06/01-13:42:40.128 18b5f5 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/MANIFEST-000001
-2026/06/01-13:42:40.133 18b5f5 Recovering log #3
-2026/06/01-13:42:40.133 18b5f5 Reusing old log /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/000003.log 
-2026/06/01-13:43:11.671 18b5f5 Level-0 table #5: started
-2026/06/01-13:43:11.673 18b5f5 Level-0 table #5: 28408 bytes OK
+2026/06/03-12:33:56.319 36cd8d Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/03-12:33:56.325 36cd8d Recovering log #18
+2026/06/03-12:33:56.325 36cd8d Level-0 table #20: started
+2026/06/03-12:33:56.327 36cd8d Level-0 table #20: 24140 bytes OK
+2026/06/03-12:33:56.328 36cd8d Recovering log #19
+2026/06/03-12:33:56.328 36cd8d Reusing old log /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt_showbiz124h/Default/Local Storage/leveldb/000019.log 
+2026/06/03-12:33:56.331 36cd8d Delete type=0 #18
+2026/06/03-12:33:56.331 36cd91 Compacting 4@0 + 1@1 files
+2026/06/03-12:33:56.335 36cd91 Generated table #21@0: 27 keys, 25250 bytes
+2026/06/03-12:33:56.335 36cd91 Compacted 4@0 + 1@1 files => 25250 bytes
+2026/06/03-12:33:56.337 36cd91 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/06/03-12:33:56.338 36cd91 Delete type=2 #11
+2026/06/03-12:33:56.338 36cd91 Delete type=2 #15
+2026/06/03-12:33:56.338 36cd91 Delete type=2 #20
+2026/06/03-12:33:56.338 36cd91 Delete type=2 #13
+2026/06/03-12:33:56.338 36cd91 Delete type=2 #17
+2026/06/03-12:34:56.334 36cd91 Level-0 table #23: started
+2026/06/03-12:34:56.338 36cd91 Level-0 table #23: 27535 bytes OK
+2026/06/03-12:34:56.340 36cd91 Delete type=0 #19

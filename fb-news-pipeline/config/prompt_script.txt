@@ -44,7 +44,7 @@ Kịch bản phải có nhịp cảm xúc: mở đầu gây chú ý, giữa vide
 Giọng văn gần gũi, tự nhiên, phù hợp để đọc voice TikTok.
 Không thổi phồng sai sự thật.
 Không bịa thêm tình tiết làm thay đổi ý nghĩa video gốc.
-CHỉ viết hoa chữ cái đầu cho các tên riêng và câu đầu tiên, còn lại viết chữ thường cho tôi
+CHỉ viết hoa chữ cái đầu cho các tên riêng và câu đầu tiên, còn lại viết chữ thường cho tôi.
 
 ĐỊNH DẠNG ĐẦU RA BẮT BUỘC:
 Chỉ trả về JSON thuần.

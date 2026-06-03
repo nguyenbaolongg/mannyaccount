@@ -32,17 +32,17 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, PROJECT_ROOT)
 from services.sheet_api import safe_post_json
 
-SHEET_URL = "https://script.google.com/macros/s/AKfycbzze8wbf3s9o6OtH180Qp-ofKj_ZuL3S-o4-GoahxvJ2IhE-jPD9YQLTQnvMkrEgRyg/exec"
+SHEET_URL = "https://script.google.com/macros/s/AKfycbzOb4bhHJotOVpljRvRJHuBr4RxzfjKqquW1TB1TOYJpg7iH8kI0mmnOpmf0gwF42Bi/exec"
 
 
-def save_fb_to_sheet(ai_result: dict, video_url: str, source_name: str = "") -> dict | None:
+def save_fb_to_sheet(ai_result: dict, video_url: str, source_name: str = "", id_tiktok: str = "") -> dict | None:
     """
     Lưu kết quả AI phân tích lên Google Sheet tab "facebook".
-    Mapping: B=hook, C=script_voice, E=hook, I=title_tiktok
+    Mapping: B=hook, C=script_voice, E=hook, I=title_tiktok, N=id_tiktok
     """
     payload = {
         "action": "save_facebook",
-        "sheet_name": "facebook",
+        "sheet_name": "tổng", # Ghi vào sheet tổng theo yêu cầu
         "link": video_url,                                          # A
         "hook": ai_result.get("hook", ""),                          # B + E
         "script_voice": ai_result.get("script_voice", ""),          # C
@@ -52,7 +52,7 @@ def save_fb_to_sheet(ai_result: dict, video_url: str, source_name: str = "") -> 
         "scenes": json.dumps(ai_result.get("scenes", []), ensure_ascii=False),  # G
         "source_name": source_name,                                 # H
         "title_tiktok": ai_result.get("title_tiktok", ""),          # I
-        "have_frame": ai_result.get("have_frame", False),
+        "id_tiktok": id_tiktok,                                     # N
     }
 
     print(f"      📊 Ghi Sheet: hook→B+E, script_voice→C, title_tiktok→I")
@@ -69,10 +69,10 @@ def save_fb_to_sheet(ai_result: dict, video_url: str, source_name: str = "") -> 
 
 
 def update_fb_voice_link(row: int, voice_link: str) -> bool:
-    """Cập nhật link voice vào cột J"""
+    """Cập nhật link voice vào cột K (cột 11)"""
     payload = {
         "action": "update_fb_voice",
-        "sheet_name": "facebook",
+        "sheet_name": "tổng",
         "row": int(row),
         "voice_link": voice_link,
     }
@@ -81,10 +81,10 @@ def update_fb_voice_link(row: int, voice_link: str) -> bool:
 
 
 def update_fb_drive_link(row: int, drive_link: str) -> bool:
-    """Cập nhật link Drive vào cột K"""
+    """Cập nhật link Drive vào cột J (cột 10)"""
     payload = {
         "action": "update_fb_drive",
-        "sheet_name": "facebook",
+        "sheet_name": "tổng",
         "row": int(row),
         "drive_link": drive_link,
     }
@@ -96,7 +96,7 @@ def update_fb_status(row: int, status: str) -> bool:
     """Cập nhật status vào cột L"""
     payload = {
         "action": "update_fb_status",
-        "sheet_name": "facebook",
+        "sheet_name": "tổng",
         "row": int(row),
         "status": status,
     }

@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 sys.path.insert(0, PROJECT_ROOT)
 from services.sheet_api import safe_post_json
 
-SHEET_URL = "https://script.google.com/macros/s/AKfycbzze8wbf3s9o6OtH180Qp-ofKj_ZuL3S-o4-GoahxvJ2IhE-jPD9YQLTQnvMkrEgRyg/exec"
+SHEET_URL = "https://script.google.com/macros/s/AKfycbzOb4bhHJotOVpljRvRJHuBr4RxzfjKqquW1TB1TOYJpg7iH8kI0mmnOpmf0gwF42Bi/exec"
 
 def save_article_to_sheet(ai_result: dict, article_url: str, id_tiktok: str) -> dict | None:
     """

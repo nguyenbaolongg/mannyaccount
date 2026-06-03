@@ -66,8 +66,8 @@ def create_voice_full_pipeline(
         "text":            text,
         "profile_id":      profile_id,
         "language":        "vi",
-        "engine":          "viterbox",
-        "run_rvc":         True,
+        "engine":          "omnivoice",
+        "run_rvc":         False,
         "run_enhance":     False,          # Tắt enhance - test so sánh với web
         "enhance_neural":  "off",
         "normalize":       True,
@@ -80,41 +80,52 @@ def create_voice_full_pipeline(
 
     try:
         import fcntl
+        from gradio_client import Client, handle_file
+        import shutil
         lock_file = "/tmp/voicebox_rvc.lock"
 
-        server_url = _get_server_url()
-        url_label = "noi bo :8080" if "127.0.0.1" in server_url else "cong khai voice.adsup.vn"
-        print(f"   [API] {url_label} | Voice: {profile_id[:8]}... | Speed: {speed}", flush=True)
+        # Sử dụng audio gốc voice theanh.mp3 đã lưu trong project mannyAccount
+        # Bạn có thể đổi đường dẫn này trỏ tới file mp3 chính xác của bạn
+        ref_audio_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "theanh.mp3")
+
+        print(f"   [API] OmniVoice Local :8001 | Speed: {speed}", flush=True)
         print(f"   [*] Cho luot GPU...", flush=True)
 
         with open(lock_file, "w") as lf:
             fcntl.flock(lf, fcntl.LOCK_EX)
             try:
-                print(f"   [>>] Tong hop: '{text[:40]}...'", flush=True)
-                res = requests.post(server_url, json=payload, timeout=1800)
-
-                if res.status_code == 200:
-                    with open(save_path, "wb") as f:
-                        f.write(res.content)
+                print(f"   [>>] Tong hop qua OmniVoice: '{text[:40]}...'", flush=True)
+                
+                # Gọi thẳng sang OmniVoice-master Demo (cổng 8001)
+                client = Client("http://127.0.0.1:8001")
+                result = client.predict(
+                    text=text,
+                    lang="Auto",
+                    ref_aud=handle_file(ref_audio_path),
+                    ref_text="",
+                    instruct="",
+                    ns=32,       # Số bước nội suy
+                    gs=2.0,      # Guidance Scale
+                    dn=True,     # Denoise
+                    sp=float(speed),    # Tốc độ
+                    du=0,
+                    pp=True,
+                    po=True,
+                    api_name="/_clone_fn" # Endpoint clone mặc định của OmniVoice demo
+                )
+                
+                # result trả về là tuple (đường_dẫn_file_audio_wav, status_text)
+                if result and result[0]:
+                    shutil.copy(result[0], save_path)
                     print(f"   [OK] Luu: {save_path}", flush=True)
                     return save_path
-
-                print(f"   [ERR] {res.status_code}: {res.text[:200]}", flush=True)
-                # Fallback: thử lại không RVC
-                if res.status_code in (400, 404, 500):
-                    print(f"   [!] Fallback: thu TTS khong RVC...", flush=True)
-                    payload["run_rvc"] = False
-                    res2 = requests.post(server_url, json=payload, timeout=1800)
-                    if res2.status_code == 200:
-                        with open(save_path, "wb") as f:
-                            f.write(res2.content)
-                        print(f"   [OK] Fallback thanh cong: {save_path}", flush=True)
-                        return save_path
-                    print(f"   [ERR] Fallback that bai: {res2.status_code}", flush=True)
+                else:
+                    print(f"   [ERR] Khong the lay duoc file tra ve tu OmniVoice", flush=True)
+                    
             finally:
                 fcntl.flock(lf, fcntl.LOCK_UN)
     except Exception as e:
-        print(f"   [ERR] Loi ket noi: {e}", flush=True)
+        print(f"   [ERR] Loi ket noi OmniVoice: {e}", flush=True)
     return None
 
 

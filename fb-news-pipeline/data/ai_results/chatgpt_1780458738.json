@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Con chim lạ xuất hiện trong đám tang khiến cả nhà lặng người",
+  "hook": "Một người đàn ông ở Hưng Yên đột ngột ra đi khi đang làm vườn, nhưng điều khiến mọi người nổi da gà lại xảy ra sau khi anh được đưa về nhà.",
+  "script_voice": "Một buổi sáng tưởng như bình thường, người đàn ông sinh năm 1970 ra đồng làm vườn từ rất sớm, còn chưa kịp ăn uống gì. Đến trưa, mọi người bàng hoàng phát hiện anh đã ra đi đột ngột. Nhưng khi gia đình đưa anh về lo hậu sự, một con chim lạ bất ngờ bay theo. Nó không bay đi, mà cứ quanh quẩn bên linh cữu, rồi đậu ngay gần di ảnh. Người nhà nhiều lần xua đuổi, con chim vẫn ở lại. Thậm chí khi được đặt cơm và nước, nó còn xuống ăn uống như đã quen thuộc từ lâu. Đến tận đêm, khi gia đình chuyển cữu xong, con chim ấy vẫn chưa rời đi. Một câu chuyện khiến ai chứng kiến cũng khó có thể lý giải.",
+  "main_idea": "Video ghi lại câu chuyện tại một đám tang ở Hưng Yên, nơi một con chim lạ liên tục bay theo và ở lại bên linh cữu của người đàn ông vừa qua đời đột ngột khi đang làm vườn.",
+  "viral_angle": "Góc khai thác bí ẩn và xúc động, tập trung vào chi tiết con chim lạ không chịu rời khỏi đám tang dù nhiều lần bị xua đuổi.",
+  "viewer_emotion": "Bất ngờ, tò mò và xúc động trước một hiện tượng khó lý giải trong tang lễ.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một người đàn ông ở Hưng Yên đột ngột ra đi khi đang làm vườn, nhưng điều khiến mọi người nổi da gà lại xảy ra sau khi anh được đưa về nhà.",
+      "visual_description": "Cảnh đông người đứng quanh linh cữu trong không gian tang lễ, hoa viếng và ánh đèn vàng tạo không khí trang nghiêm."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Sáng hôm đó, anh ra đồng từ rất sớm, còn chưa kịp ăn uống gì. Đến khoảng trưa, mọi người mới bàng hoàng phát hiện sự việc.",
+      "visual_description": "Cảnh người thân và hàng xóm đứng lặng trong tang lễ, gương mặt nhiều người thể hiện sự đau buồn và bối rối."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Khi gia đình đưa anh về lo hậu sự, một con chim lạ bất ngờ bay theo và cứ quanh quẩn bên linh cữu.",
+      "visual_description": "Cảnh mọi người tập trung nhìn về phía linh cữu, một người thân đưa tay chỉ hoặc quan sát con chim ở gần khu vực bàn thờ."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Người nhà nhiều lần xua đi, nhưng con chim vẫn không chịu rời. Nó còn đậu gần di ảnh như đang muốn ở lại bên anh.",
+      "visual_description": "Cảnh người thân đứng sát bên bàn thờ, nhiều ánh mắt đổ dồn về một điểm khiến không khí trở nên lặng đi."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có người đặt cơm và nước ra, con chim cũng xuống ăn uống bình thường, khiến những người có mặt càng thêm ngạc nhiên.",
+      "visual_description": "Cảnh người trong tang lễ đưa tay gần khu vực bàn thờ, mọi người xung quanh chăm chú theo dõi phản ứng của con chim."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đến tận đêm, khi gia đình vừa chuyển cữu xong, con chim ấy vẫn còn ở đó. Một câu chuyện khiến ai chứng kiến cũng khó có thể lý giải.",
+      "visual_description": "Cảnh cuối trong không gian tang lễ ban đêm, người thân đứng quanh linh cữu, ánh sáng vàng và hoa viếng làm nổi bật cảm giác linh thiêng, xúc động."
+    }
+  ]
+}
