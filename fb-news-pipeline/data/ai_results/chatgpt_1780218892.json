@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Cô gái cứ đẹp đi vì phía sau đã có người âm thầm lo",
+  "hook": "Có những sự quan tâm không cần nói nhiều, chỉ cần nhìn xuống đôi chân là hiểu.",
+  "script_voice": "Giữa phố đông người qua lại, cô gái vẫn thoải mái mang đôi giày mình thích. Có thể đi lâu sẽ mỏi, có thể đứng chờ sẽ đau chân, nhưng phía sau cô luôn có một người âm thầm chuẩn bị sẵn sự dịu dàng. Anh không cần thể hiện quá nhiều, chỉ lặng lẽ ở đó, cầm theo đôi giày thay thế, để khi cô mệt là có thể đổi ngay. Đôi khi tình yêu không nằm ở lời hứa lớn lao, mà nằm ở những điều nhỏ bé như thế. Em cứ xinh đẹp theo cách em muốn, còn phần chăm sóc, đã có anh lo.",
+  "main_idea": "Video ghi lại khoảnh khắc một cô gái đi cùng người yêu trong lúc xếp hàng, chàng trai âm thầm chuẩn bị giày để cô thay khi đau chân, thể hiện sự quan tâm giản dị nhưng rất tình cảm.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Giữa dòng người đông đúc, có một khoảnh khắc nhỏ khiến ai nhìn thấy cũng phải dịu lòng.",
+      "visual_description": "Cảnh đường phố hoặc quầy hàng đông người, máy quay hướng vào đôi chân của cô gái đang đứng chờ"
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Cô gái vẫn chọn ăn mặc thật xinh, dù biết đi lâu có thể sẽ mỏi chân.",
+      "visual_description": "Cận cảnh cô gái mặc trang phục trẻ trung, đứng trong hàng chờ, đôi chân được quay rõ hơn"
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Nhưng điều đặc biệt lại nằm ở người phía sau, người luôn âm thầm để ý từng chút một.",
+      "visual_description": "Máy quay bắt được chàng trai đứng cạnh hoặc phía sau cô gái, tay cầm túi và quan sát xung quanh"
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Anh không nói lời hoa mỹ, chỉ chuẩn bị sẵn một đôi giày để cô có thể thay khi cần.",
+      "visual_description": "Cận cảnh đôi giày thấp hoặc giày dự phòng xuất hiện gần chân cô gái trong khung hình"
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Một hành động rất nhỏ, nhưng lại cho thấy cảm giác được che chở rõ ràng hơn mọi lời hứa.",
+      "visual_description": "Khung hình tập trung vào đôi chân, người qua lại che khuất một phần tạo cảm giác đời thường tự nhiên"
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Có lẽ tình yêu đẹp nhất là khi em cứ rực rỡ, còn phía sau luôn có một người sẵn sàng lo cho em.",
+      "visual_description": "Cảnh kết giữ lại khoảnh khắc cô gái đứng phía trước và chàng trai ở gần bên, tạo cảm giác ấm áp"
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

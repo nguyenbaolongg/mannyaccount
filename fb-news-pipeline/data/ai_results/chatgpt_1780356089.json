@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Một ngày hai kiểu thời tiết: miền bắc oi bức, miền nam mưa lớn",
+  "hook": "Sáng ra tưởng chỉ cần chịu nắng, nhưng thời tiết hôm nay lại đổi rất nhanh: miền bắc nóng hầm hập, còn miền nam phải dè chừng những cơn mưa lớn bất chợt.",
+  "script_voice": "Thời tiết ngày 2 tháng 6 có sự đối lập khá rõ giữa các vùng. Ở bắc bộ, nắng nóng tiếp tục bao trùm, cảm giác oi bức dễ xuất hiện từ trưa đến chiều, nhất là khi di chuyển ngoài đường lâu. Trong khi đó, nam bộ lại bước vào thời điểm cần chú ý hơn vì mưa to có thể xuất hiện bất ngờ, khiến việc đi lại và sinh hoạt bị ảnh hưởng. Những hình ảnh nắng gắt, trời âm u rồi mưa đổ xuống cho thấy hôm nay không thể chủ quan. Trước khi ra khỏi nhà, hãy chuẩn bị áo chống nắng, nước uống và cả áo mưa, vì chỉ một thay đổi nhỏ của thời tiết cũng đủ làm cả ngày của bạn bị đảo lộn.",
+  "main_idea": "Video cập nhật thời tiết ngày 2 tháng 6, nhấn mạnh bắc bộ nắng nóng oi bức trong khi nam bộ có khả năng xuất hiện mưa to, người dân cần chủ động chuẩn bị khi ra ngoài.",
+  "viral_angle": "Góc khai thác đối lập thời tiết giữa hai miền, tạo cảm giác gần gũi và hữu ích vì ai cũng có thể bị ảnh hưởng trực tiếp trong ngày.",
+  "viewer_emotion": "Quan tâm, cảnh giác và muốn chuẩn bị trước khi ra ngoài.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Sáng ra tưởng chỉ cần chịu nắng, nhưng thời tiết hôm nay lại đổi rất nhanh.",
+      "visual_description": "Mở đầu bằng cảnh đường phố trong mưa, nền trời xám và dòng xe di chuyển chậm, kèm giao diện bản tin thời tiết."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ở bắc bộ, nắng nóng tiếp tục bao trùm, cảm giác oi bức dễ xuất hiện từ trưa đến chiều.",
+      "visual_description": "Cảnh trời nắng gắt, mặt đường sáng chói, người dân di chuyển dưới nắng trên các tuyến phố lớn."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nếu phải ra ngoài lâu, việc thiếu nước hoặc không che chắn kỹ có thể khiến cơ thể rất dễ mệt.",
+      "visual_description": "Hình ảnh bầu trời nắng, mây mỏng, ánh sáng mạnh chiếu xuống đường và khu dân cư."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Trong khi đó, nam bộ lại cần chú ý hơn vì mưa to có thể đến bất chợt.",
+      "visual_description": "Chuyển sang cảnh mưa lớn trên đường, xe máy và ô tô đi qua mặt đường ướt, tầm nhìn giảm."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Trước khi ra khỏi nhà, hãy chuẩn bị cả áo chống nắng lẫn áo mưa, vì thời tiết hôm nay thật sự không nên chủ quan.",
+      "visual_description": "Kết bằng cảnh giao thông ngoài trời, xen giữa nắng và mưa, tạo cảm giác một ngày thời tiết thay đổi khó lường."
+    }
+  ]
+}

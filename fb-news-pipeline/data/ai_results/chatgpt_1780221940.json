@@ -1,0 +1,59 @@
+{
+  "title_tiktok": "Đêm nhạc khiến hàng ngàn khán giả vỡ òa vì một nghệ sĩ nhí 8 tuổi",
+  "hook": "Không ai nghĩ một cô bé 8 tuổi lại có thể làm bùng nổ cả quảng trường như thế này.",
+  "script_voice": "Tối hôm qua, Quảng trường Châu Âu tại Vinhomes Royal Island gần như biến thành một biển ánh sáng. Ban đầu, nhiều người chỉ nghĩ đây là một đêm nhạc dành cho các em nhỏ. Nhưng khi Xệ Xệ bước ra sân khấu, mọi thứ thay đổi hoàn toàn. Âm nhạc nổi lên, khán giả reo hò, những lá cờ tung bay và cả không gian như vỡ òa theo từng tiết mục. Điều đặc biệt nhất không chỉ là sân khấu hoành tráng hay dàn khách mời nổi bật, mà là hình ảnh một nghệ sĩ nhí 8 tuổi tự tin đứng giữa hàng ngàn người, truyền năng lượng cho cả gia đình, bạn bè và khán giả. Đây không chỉ là một concert, mà là một khoảnh khắc tuổi thơ rất đáng nhớ.",
+  "main_idea": "Video ghi lại không khí sôi động và đầy cảm xúc trong concert Em Bé Chất tại Vinhomes Royal Island, nơi nghệ sĩ nhí Xệ Xệ cùng nhiều khách mời mang đến một đêm nhạc rực rỡ cho khán giả và các gia đình.",
+  "viral_angle": "Bất ngờ và truyền cảm hứng từ hình ảnh một nghệ sĩ nhí 8 tuổi tự tin làm chủ sân khấu lớn trước hàng ngàn khán giả.",
+  "viewer_emotion": "Bất ngờ, phấn khích và xúc động",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Không ai nghĩ một cô bé 8 tuổi lại có thể làm bùng nổ cả quảng trường như thế này.",
+      "visual_description": "Hình ảnh mở đầu là sân khấu lớn với ánh đèn rực rỡ, phía sau có màn hình trình chiếu và người dẫn đang giới thiệu không khí sự kiện."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Tối hôm qua, Quảng trường Châu Âu tại Vinhomes Royal Island gần như biến thành một biển ánh sáng.",
+      "visual_description": "Toàn cảnh sân khấu về đêm, ánh sáng nhiều màu, khói sân khấu và khán giả đứng phía dưới theo dõi."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, nhiều người chỉ nghĩ đây là một đêm nhạc dành cho các em nhỏ.",
+      "visual_description": "Các tiết mục biểu diễn có vũ công nhí, mascot và bối cảnh sân khấu nhiều màu sắc tạo cảm giác vui tươi."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng khi Xệ Xệ bước ra sân khấu, mọi thứ thay đổi hoàn toàn.",
+      "visual_description": "Nghệ sĩ nhí mặc trang phục nổi bật xuất hiện trên sân khấu, cầm micro biểu diễn trước ánh đèn mạnh."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Âm nhạc nổi lên, khán giả reo hò, những lá cờ tung bay và cả không gian như vỡ òa theo từng tiết mục.",
+      "visual_description": "Khán giả phía dưới cổ vũ, các lá cờ được giơ lên, sân khấu có hiệu ứng ánh sáng và khói tạo cao trào."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Điều đặc biệt nhất không chỉ là sân khấu hoành tráng hay dàn khách mời nổi bật.",
+      "visual_description": "Các nghệ sĩ khách mời và vũ công trình diễn trên sân khấu, tạo không khí chuyên nghiệp và sôi động."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Mà là hình ảnh một nghệ sĩ nhí 8 tuổi tự tin đứng giữa hàng ngàn người, truyền năng lượng cho cả gia đình, bạn bè và khán giả.",
+      "visual_description": "Cận cảnh nghệ sĩ nhí biểu diễn tự tin, phía sau là đèn sân khấu và khán giả chăm chú theo dõi."
+    },
+    {
+      "scene_number": 8,
+      "voice_over": "Đây không chỉ là một concert, mà là một khoảnh khắc tuổi thơ rất đáng nhớ.",
+      "visual_description": "Khung hình kết với toàn cảnh sân khấu, ánh sáng bùng lên, khán giả hòa vào không khí cuối chương trình."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

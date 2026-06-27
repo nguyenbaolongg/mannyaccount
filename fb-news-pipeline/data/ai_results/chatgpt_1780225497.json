@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Hồ Gươm sáng nay và những khoảnh khắc làm nên hai chữ bình yên",
+  "hook": "Có những khoảnh khắc nhìn rất bình thường, nhưng khi ghép lại mới thấy bình yên không tự nhiên mà có.",
+  "script_voice": "Giữa lòng Hà Nội sáng 30 tháng 5, hàng nghìn cán bộ chiến sĩ và người dân đã cùng có mặt bên hồ Hoàn Kiếm trong một sự kiện đặc biệt. Ban đầu, đó chỉ như một buổi lễ hưởng ứng cuộc thi video về Tổ quốc bình yên. Nhưng càng nhìn kỹ, từng khoảnh khắc lại khiến người xem chạm vào một cảm xúc rất khác. Là màu áo xanh giữa phố, là những tiết mục trên sân khấu, là ánh mắt nghiêm trang, là sự có mặt của người dân bên cạnh lực lượng Công an Thủ đô. Trong thời đại không gian mạng cũng là một mặt trận, những thước phim này không chỉ để xem, mà còn để nhắc chúng ta rằng tình yêu đất nước có thể bắt đầu từ những điều rất gần. Và bình yên hôm nay chính là điều được giữ gìn bằng trách nhiệm của rất nhiều người.",
+  "main_idea": "Video ghi lại không khí Lễ hưởng ứng cuộc thi sáng tạo video clip Tổ quốc bình yên tại khu vực hồ Hoàn Kiếm, với sự tham gia của hàng nghìn cán bộ chiến sĩ Công an Thủ đô và đông đảo người dân, nhằm lan tỏa tình yêu quê hương, trách nhiệm công dân và tinh thần bảo vệ Tổ quốc trong thời đại chuyển đổi số.",
+  "viral_angle": "Khai thác góc nhìn nhân văn và tự hào, từ những hình ảnh tưởng như quen thuộc trong một buổi lễ đến thông điệp sâu hơn về sự bình yên được gìn giữ mỗi ngày.",
+  "viewer_emotion": "Tự hào, xúc động và trân trọng sự bình yên của Tổ quốc",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những khoảnh khắc nhìn rất bình thường, nhưng khi ghép lại mới thấy bình yên không tự nhiên mà có.",
+      "visual_description": "Toàn cảnh sân khấu tại khu vực Quảng trường Đông Kinh Nghĩa Thục, người dân và cán bộ chiến sĩ ngồi theo dõi buổi lễ."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Sáng 30 tháng 5, bên hồ Hoàn Kiếm, hàng nghìn cán bộ chiến sĩ Công an Thủ đô cùng người dân đã có mặt trong một sự kiện đặc biệt.",
+      "visual_description": "Các hàng ghế có cán bộ chiến sĩ mặc quân phục, phía sau là không gian phố Đinh Tiên Hoàng và khu vực hồ Hoàn Kiếm."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, đây là lễ hưởng ứng một cuộc thi sáng tạo video về Tổ quốc bình yên.",
+      "visual_description": "Sân khấu lớn hiển thị tên chương trình, đại biểu phát biểu tại bục và các chiến sĩ trang nghiêm làm lễ."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng càng xem, từng hình ảnh lại mang một cảm xúc rất riêng: màu áo xanh giữa phố, những tiết mục nghệ thuật, những ánh mắt nghiêm trang và cả sự đồng hành của người dân.",
+      "visual_description": "Các tiết mục biểu diễn trên sân khấu, hình ảnh chiến sĩ, người dân và các hoạt động giao lưu trong chương trình."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Trong thời đại không gian mạng cũng là một mặt trận, mỗi video không chỉ để lan truyền, mà còn để lan tỏa trách nhiệm và tình yêu đất nước.",
+      "visual_description": "Cảnh trao đổi, hướng dẫn, các hoạt động tuyên truyền và hình ảnh người trẻ tham gia sự kiện."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Và có lẽ điều đáng nhớ nhất là: sự bình yên hôm nay được tạo nên từ rất nhiều con người âm thầm gìn giữ mỗi ngày.",
+      "visual_description": "Hình ảnh cán bộ chiến sĩ giúp đỡ người dân, gương mặt trang nghiêm của lực lượng tham gia và toàn cảnh buổi lễ khép lại."
+    }
+  ]
+}

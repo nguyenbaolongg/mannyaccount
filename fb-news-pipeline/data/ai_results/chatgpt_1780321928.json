@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Một tiếng gõ lên trần nhà khiến ai cũng phải giật mình",
+  "hook": "Sau một vụ việc đau lòng, nhiều người bỗng nhận ra thứ nguy hiểm nhất trong nhà đôi khi lại nằm ngay trên đầu mình.",
+  "script_voice": "Sau vụ việc một em bé 6 tháng tuổi không qua khỏi vì mảng vữa trần rơi xuống, nhiều gia đình bắt đầu nhìn lại chính căn phòng của mình. Ban đầu, việc dùng gậy gõ lên trần nghe có vẻ đơn giản, thậm chí hơi lạ. Nhưng chỉ vài tiếng gõ nhẹ, phần trần đã lộ ra dấu hiệu bong tróc đáng sợ. Một mảng lớn rơi xuống, để lại nền nhà đầy vụn vữa. Điều khiến người xem lạnh người là nếu không kiểm tra trước, không ai biết nó có thể rơi vào lúc nào. Đôi khi, một hành động nhỏ hôm nay lại có thể ngăn chặn một tai nạn rất lớn ngày mai.",
+  "main_idea": "Video ghi lại cảnh người dân kiểm tra trần nhà bằng cách dùng gậy gõ thử sau một vụ tai nạn đau lòng liên quan đến mảng vữa trần rơi xuống.",
+  "viral_angle": "Khai thác góc cảnh báo bất ngờ và tính thực tế trong đời sống, khiến người xem tự nhìn lại sự an toàn trong chính ngôi nhà của mình.",
+  "viewer_emotion": "Giật mình, lo lắng và có ý thức phòng tránh nguy hiểm",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Sau một vụ việc đau lòng, nhiều người bỗng nhận ra thứ nguy hiểm nhất trong nhà đôi khi lại nằm ngay trên đầu mình.",
+      "visual_description": "Máy quay hướng lên trần nhà, một cây gậy được đưa lên để kiểm tra khu vực có dấu hiệu bất thường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Từ câu chuyện một em bé 6 tháng tuổi không qua khỏi vì mảng vữa trần rơi xuống, nhiều gia đình bắt đầu tự kiểm tra lại căn phòng của mình.",
+      "visual_description": "Cận cảnh trần nhà màu trắng, một số vết nứt và vùng bong nhẹ bắt đầu hiện rõ khi gậy chạm vào."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, chỉ là vài tiếng gõ thử rất nhẹ. Nhưng càng gõ, phần trần càng lộ ra những mảng rỗng và bong tróc đáng sợ.",
+      "visual_description": "Gậy tiếp tục chạm vào trần, các vết nứt lan rộng hơn, một phần lớp vữa có dấu hiệu tách khỏi bề mặt."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Rồi một mảng lớn bất ngờ rơi xuống, để lại khoảng trần trống và nền nhà đầy vụn vữa.",
+      "visual_description": "Mảng vữa lớn rơi khỏi trần, bên dưới sàn xuất hiện nhiều mảnh vỡ nằm rải rác trong phòng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều khiến người xem lạnh người là nếu không kiểm tra trước, không ai biết nó có thể rơi vào lúc nào.",
+      "visual_description": "Toàn cảnh căn phòng sau khi mảng trần rơi, cửa sổ và nền nhà đầy bụi vữa hiện trong khung hình."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đôi khi, một hành động nhỏ hôm nay lại có thể ngăn chặn một tai nạn rất lớn ngày mai.",
+      "visual_description": "Máy quay lia lại khu vực trần bị bong, nhấn mạnh sự nguy hiểm tiềm ẩn trong không gian sinh hoạt hằng ngày."
+    }
+  ]
+}

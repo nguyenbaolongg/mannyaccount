@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Hà Nội Cuối Cùng Cũng Được Cơn Mưa Giải Nhiệt",
+  "hook": "Sau những ngày nóng như đổ lửa, Hà Nội cuối cùng cũng được thở một hơi thật nhẹ.",
+  "script_voice": "Sau những ngày nắng nóng khiến ai ra đường cũng chỉ muốn tìm bóng râm, cơn mưa này đến đúng lúc hơn bao giờ hết. Từ trên cao nhìn xuống, cả Hà Nội như được phủ một lớp sương mát lạnh. Những ánh đèn đường nhòe đi trong màn mưa, hàng cây rung nhẹ, còn mặt đường bắt đầu sáng lên vì nước. Có lẽ với nhiều người, đây không chỉ là một cơn mưa bình thường, mà là khoảnh khắc cả thành phố được giải nhiệt sau những ngày oi bức kéo dài. Đôi khi, chỉ cần nghe tiếng mưa rơi thôi, người ta cũng thấy dễ chịu hơn rất nhiều.",
+  "main_idea": "Video ghi lại khoảnh khắc Hà Nội xuất hiện cơn mưa lớn vào buổi tối, giúp làm dịu không khí oi nóng sau những ngày nắng gắt.",
+  "viral_angle": "Góc khai thác cảm giác giải nhiệt bất ngờ và dễ chịu của người dân Hà Nội khi cơn mưa xuất hiện sau chuỗi ngày nóng bức.",
+  "viewer_emotion": "Dễ chịu, nhẹ nhõm, thư giãn và có chút thích thú khi chứng kiến thành phố được làm mát.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Sau những ngày nóng như đổ lửa, Hà Nội cuối cùng cũng được thở một hơi thật nhẹ.",
+      "visual_description": "Toàn cảnh thành phố Hà Nội về đêm nhìn từ trên cao, mưa rơi dày trước các tòa nhà và hàng cây."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Cơn mưa trút xuống giữa buổi tối, làm mờ những ánh đèn và phủ lên phố xá một lớp không khí mát lạnh.",
+      "visual_description": "Màn mưa dày bao phủ khu phố, ánh đèn đường vàng phản chiếu qua làn nước và sương mưa."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Những hàng cây phía dưới rung nhẹ, mặt đường bắt đầu sáng lên vì nước, còn cả thành phố như chậm lại trong vài phút.",
+      "visual_description": "Cận hơn vào hàng cây tối màu phía dưới, phía xa là dòng xe và ánh sáng thành phố nhòe trong mưa."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Với nhiều người, đây không chỉ là một cơn mưa, mà là cảm giác được giải nhiệt sau những ngày oi bức kéo dài.",
+      "visual_description": "Khung hình giữ ở toàn cảnh mưa rơi liên tục, các tòa nhà cao tầng mờ dần trong nền trời xám."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đôi khi, chỉ cần nghe tiếng mưa rơi thôi, người ta cũng thấy Hà Nội dễ chịu hơn rất nhiều.",
+      "visual_description": "Cảnh mưa vẫn rơi đều trong đêm, ánh đèn và tán cây tạo cảm giác bình yên, mát mẻ."
+    }
+  ]
+}

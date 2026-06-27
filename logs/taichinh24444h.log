@@ -2503,3 +2503,839 @@
 2026-05-25 12:09:04,849 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643650333612330261
 2026-05-25 12:09:09,851 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
 2026-05-25 12:09:09,852 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 14:00:04,870 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-25 14:00:05,046 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-25 14:00:07,701 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643648927048174869
+2026-05-25 14:04:31,933 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643655788623416583
+2026-05-25 14:05:58,812 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643650325219396882
+2026-05-25 14:10:25,182 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:10:25,184 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 14:10:25,185 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 14:10:25,185 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:11:02,194 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:11:02,918 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643650325219396882
+2026-05-25 14:11:07,921 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@financex2 (Lấy tối đa 3 video)
+2026-05-25 14:11:09,963 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643027521046400277
+2026-05-25 14:15:32,156 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:15:32,158 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 14:15:32,158 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 14:15:32,158 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:16:03,052 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:16:03,700 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@financex2/video/7643027521046400277
+2026-05-25 14:16:08,705 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643304325799808277
+2026-05-25 14:20:39,777 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 14:20:39,779 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 14:20:39,779 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 14:20:39,779 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 14:21:06,923 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 14:21:07,489 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@financex2/video/7643304325799808277
+2026-05-25 14:21:12,493 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-25 14:21:12,494 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 15:00:03,585 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-25 15:00:03,767 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-25 15:00:06,688 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643655068771683591
+2026-05-25 15:06:16,859 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:06:16,860 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 15:06:16,860 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 15:06:16,860 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:06:50,047 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:06:51,147 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643655068771683591
+2026-05-25 15:06:56,149 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643682466691157255
+2026-05-25 15:11:24,959 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:11:24,960 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 15:11:24,960 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 15:11:24,960 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:11:52,266 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:11:53,051 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643682466691157255
+2026-05-25 15:11:58,055 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643648238070942994
+2026-05-25 15:15:43,593 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:15:43,593 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 15:15:43,594 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 15:15:43,594 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:16:17,799 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:16:18,599 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643648238070942994
+2026-05-25 15:16:23,604 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 15:16:23,604 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 20:02:03,974 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-25 20:02:04,196 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-25 20:02:06,869 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643681781434092808
+2026-05-25 20:07:47,871 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:07:47,872 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 20:07:47,872 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 20:07:47,872 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:08:15,924 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:08:16,428 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643681781434092808
+2026-05-25 20:08:21,430 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643684983650995474
+2026-05-25 20:14:46,009 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:14:46,009 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 20:14:46,009 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 20:14:46,009 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:15:18,457 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:15:19,129 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643684983650995474
+2026-05-25 20:15:24,133 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643690292792610056
+2026-05-25 20:21:06,017 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:21:06,017 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 20:21:06,018 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 20:21:06,018 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:21:38,877 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:21:39,483 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643690292792610056
+2026-05-25 20:21:44,487 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 20:21:44,487 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 22:00:03,963 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-25 22:00:04,137 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-25 22:00:05,887 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643682719163059463
+2026-05-25 22:08:17,006 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:08:17,007 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 22:08:17,007 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 22:08:17,007 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:08:50,081 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:08:50,579 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643682719163059463
+2026-05-25 22:08:55,583 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643719095250078997
+2026-05-25 22:14:31,661 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:14:31,662 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 22:14:31,662 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 22:14:31,663 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:15:04,065 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:15:04,713 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643719095250078997
+2026-05-25 22:15:09,718 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643691937806961940
+2026-05-25 22:21:23,576 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:21:23,577 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-25 22:21:23,577 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-25 22:21:23,577 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:22:04,316 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:22:04,865 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643691937806961940
+2026-05-25 22:22:09,868 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 22:22:09,869 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 07:00:04,446 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 07:00:04,617 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 07:00:06,442 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643714746969263381
+2026-05-26 07:02:22,336 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:02:27,338 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643715543987506453
+2026-05-26 07:04:37,863 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:04:42,865 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643744850751409428
+2026-05-26 07:06:51,013 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:06:56,015 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@financex2 (Lấy tối đa 3 video)
+2026-05-26 07:06:57,098 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643374956096572693
+2026-05-26 07:09:07,389 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:09:12,391 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643375333344922901
+2026-05-26 07:11:29,520 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:11:34,522 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643375579206536469
+2026-05-26 07:13:45,531 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 07:13:50,533 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:00:04,405 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 09:00:04,586 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 09:00:06,341 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643714746969263381
+2026-05-26 09:02:18,959 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:02:23,961 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643715543987506453
+2026-05-26 09:04:32,468 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:04:37,470 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643744850751409428
+2026-05-26 09:06:40,105 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:06:45,107 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@financex2 (Lấy tối đa 3 video)
+2026-05-26 09:06:46,218 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643374956096572693
+2026-05-26 09:08:55,884 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 09:09:00,886 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643375333344922901
+2026-05-26 09:17:23,013 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 09:17:23,181 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 09:17:25,114 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643714746969263381
+2026-05-26 09:21:21,433 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:21:21,434 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 09:21:21,434 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 09:21:21,435 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:21:52,289 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:21:52,751 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643714746969263381
+2026-05-26 09:21:57,754 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643715543987506453
+2026-05-26 09:26:03,212 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:26:03,213 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 09:26:03,214 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 09:26:03,214 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:26:38,476 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:26:39,004 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643715543987506453
+2026-05-26 09:26:44,009 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643744850751409428
+2026-05-26 09:30:48,560 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 09:30:48,560 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 09:30:48,560 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 09:30:48,560 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 09:31:22,296 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 09:31:22,904 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643744850751409428
+2026-05-26 09:31:27,907 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 09:31:27,907 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 12:53:57,931 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 12:53:58,123 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 12:53:59,814 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643774614790835464
+2026-05-26 12:55:25,921 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 12:55:30,922 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643654825866956040
+2026-05-26 12:56:55,406 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 12:57:00,408 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643688891202964743
+2026-05-26 13:01:23,683 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 13:01:23,869 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 13:01:25,598 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643774614790835464
+2026-05-26 13:03:08,481 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 13:03:13,483 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643654825866956040
+2026-05-26 13:06:38,941 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 13:06:39,123 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 13:06:40,779 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643774614790835464
+2026-05-26 13:10:28,500 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:10:28,502 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 13:10:28,502 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 13:10:28,502 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:11:00,814 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 13:11:01,577 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643774614790835464
+2026-05-26 13:11:06,581 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643654825866956040
+2026-05-26 13:22:21,768 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 13:22:21,938 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 13:22:23,644 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643654825866956040
+2026-05-26 13:24:56,856 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:01,876 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643027521046400277
+2026-05-26 13:25:01,877 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:06,878 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7643304325799808277
+2026-05-26 13:25:06,878 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 13:25:11,880 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-26 13:29:51,693 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:29:51,695 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 13:29:51,695 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 13:29:51,695 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:29:56,699 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7643688891202964743
+2026-05-26 13:34:32,099 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:34:32,100 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 13:34:32,100 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 13:34:32,100 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:35:05,527 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 13:35:06,992 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7643688891202964743
+2026-05-26 13:35:11,995 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644022658744585480
+2026-05-26 14:11:49,919 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 14:11:50,093 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 14:11:51,832 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644022658744585480
+2026-05-26 14:17:10,213 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:17:10,213 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 14:17:10,213 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 14:17:10,214 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:17:43,334 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:17:43,915 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644022658744585480
+2026-05-26 14:17:48,921 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644023439698808071
+2026-05-26 14:21:45,945 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:21:45,946 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 14:21:45,946 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 14:21:45,947 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:22:15,743 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:22:16,487 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644023439698808071
+2026-05-26 14:22:21,491 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644025859195620629
+2026-05-26 14:26:26,033 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:26:26,033 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 14:26:26,034 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 14:26:26,034 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:27:06,372 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:27:07,698 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644025859195620629
+2026-05-26 14:27:12,700 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 14:27:12,701 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 15:00:03,697 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 15:00:03,861 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 15:00:05,608 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644033104834841864
+2026-05-26 15:06:04,040 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:06:04,040 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 15:06:04,040 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 15:06:04,041 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:06:43,189 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:06:44,088 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644033104834841864
+2026-05-26 15:06:49,095 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644036896414272776
+2026-05-26 15:13:24,531 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:13:24,532 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 15:13:24,532 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 15:13:24,533 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:14:09,205 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:14:10,401 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644036896414272776
+2026-05-26 15:14:15,405 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644027651987901716
+2026-05-26 15:21:03,738 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:21:03,739 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 15:21:03,739 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 15:21:03,739 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:21:42,449 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:21:43,262 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644027651987901716
+2026-05-26 15:21:48,266 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 15:21:48,267 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 20:00:04,656 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 20:00:04,844 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 20:00:06,632 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644057957688266005
+2026-05-26 20:07:08,810 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:07:08,811 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 20:07:08,811 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 20:07:08,811 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:07:39,758 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:07:40,280 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644057957688266005
+2026-05-26 20:07:45,284 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644061332236504341
+2026-05-26 20:14:06,173 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:14:06,175 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 20:14:06,176 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 20:14:06,176 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:14:40,344 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:14:40,936 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644061332236504341
+2026-05-26 20:14:45,939 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644045882312232210
+2026-05-26 20:22:02,072 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:22:02,072 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 20:22:02,073 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 20:22:02,073 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:22:39,281 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:22:40,148 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644045882312232210
+2026-05-26 20:22:45,152 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 20:22:45,152 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 22:00:04,262 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-26 22:00:04,436 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-26 22:00:06,274 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644101442155859218
+2026-05-26 22:07:08,422 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:07:08,423 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 22:07:08,423 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 22:07:08,423 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:07:44,509 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:07:45,569 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644101442155859218
+2026-05-26 22:07:50,573 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644100839434505490
+2026-05-26 22:15:42,535 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:15:42,537 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 22:15:42,537 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 22:15:42,537 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:16:26,469 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:16:27,640 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644100839434505490
+2026-05-26 22:16:32,645 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644101842183408904
+2026-05-26 22:23:41,935 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:23:41,936 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-26 22:23:41,936 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-26 22:23:41,936 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:24:16,762 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:24:18,103 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644101842183408904
+2026-05-26 22:24:23,110 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 22:24:23,110 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 07:00:04,323 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 07:00:04,511 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 07:00:06,115 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644105792756501781
+2026-05-27 07:05:10,124 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:05:10,125 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 07:05:10,125 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 07:05:10,126 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:05:38,880 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:05:40,106 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644105792756501781
+2026-05-27 07:05:45,110 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644109445563223314
+2026-05-27 07:09:19,931 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:09:19,931 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 07:09:19,932 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 07:09:19,932 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:09:53,137 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:09:53,872 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644109445563223314
+2026-05-27 07:09:58,875 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644113521088761095
+2026-05-27 07:14:16,971 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:14:16,972 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 07:14:16,972 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 07:14:16,972 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:14:52,575 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:14:53,307 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644113521088761095
+2026-05-27 07:14:58,311 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 07:14:58,311 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 09:00:04,108 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 09:00:04,288 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 09:00:06,062 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644126274507656466
+2026-05-27 09:07:37,146 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:07:37,148 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 09:07:37,148 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 09:07:37,148 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:08:10,694 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:08:11,258 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644126274507656466
+2026-05-27 09:08:16,262 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644121544205028629
+2026-05-27 09:14:58,923 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:14:58,925 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 09:14:58,925 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 09:14:58,925 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:15:59,635 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:16:00,487 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644121544205028629
+2026-05-27 09:16:05,491 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644131761189817618
+2026-05-27 09:21:43,707 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:21:43,708 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 09:21:43,708 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 09:21:43,708 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:22:18,287 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:22:18,880 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644131761189817618
+2026-05-27 09:22:23,884 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 09:22:23,884 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 12:00:04,396 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 12:00:04,604 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 12:00:06,401 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644146805256523026
+2026-05-27 13:37:48,107 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 13:37:48,274 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 13:37:49,938 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644055120942075157
+2026-05-27 13:44:53,643 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:44:53,645 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 13:44:53,645 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 13:44:53,645 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:45:23,355 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:45:25,058 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644055120942075157
+2026-05-27 13:45:30,063 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644059805149187349
+2026-05-27 13:54:31,432 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:54:31,434 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 13:54:31,434 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 13:54:31,434 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:55:03,189 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:55:03,995 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644059805149187349
+2026-05-27 13:55:08,998 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644098585922899221
+2026-05-27 14:01:40,336 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 14:01:40,336 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 14:01:40,336 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 14:01:40,336 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 14:02:12,472 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 14:02:13,495 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644098585922899221
+2026-05-27 14:02:18,500 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 14:02:18,500 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 15:00:04,607 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 15:00:04,778 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 15:00:06,357 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644399518670425364
+2026-05-27 15:08:04,084 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:08:04,086 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 15:08:04,086 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 15:08:04,086 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:08:38,019 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:08:39,147 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644399518670425364
+2026-05-27 15:08:44,150 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644403746398735637
+2026-05-27 15:15:06,802 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:15:06,804 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 15:15:06,804 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 15:15:06,804 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:15:35,346 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:15:36,204 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644403746398735637
+2026-05-27 15:15:41,207 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644401025008274708
+2026-05-27 15:20:29,808 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:20:29,808 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 15:20:29,808 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 15:20:29,809 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:21:06,447 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:21:07,202 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644401025008274708
+2026-05-27 15:21:12,206 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 15:21:12,206 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 17:39:54,915 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 17:39:55,079 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 17:39:56,910 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644417805550374160
+2026-05-27 17:42:54,224 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 17:42:54,226 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 17:42:54,226 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 17:42:54,226 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 17:43:23,220 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 17:43:24,617 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644417805550374160
+2026-05-27 17:43:29,619 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644420318991289618
+2026-05-27 17:47:40,596 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 17:47:40,597 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 17:47:40,597 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 17:47:40,597 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 17:48:12,178 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 17:48:13,069 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644420318991289618
+2026-05-27 17:48:18,078 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644410288963407125
+2026-05-27 17:52:09,057 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 17:52:09,058 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 17:52:09,059 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 17:52:09,059 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 17:52:38,228 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 17:52:39,210 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644410288963407125
+2026-05-27 17:52:44,214 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 17:52:44,214 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 18:00:03,872 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 18:00:04,048 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 18:00:06,162 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644412309107985671
+2026-05-27 18:17:03,173 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 18:17:03,346 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 18:17:05,135 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644412309107985671
+2026-05-27 18:24:17,061 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:24:17,062 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 18:24:17,062 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 18:24:17,062 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:24:48,059 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:24:49,022 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644412309107985671
+2026-05-27 18:24:54,030 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644419286529789192
+2026-05-27 18:31:20,722 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:31:20,724 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 18:31:20,724 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 18:31:20,724 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:31:51,862 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:31:52,691 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644419286529789192
+2026-05-27 18:31:57,693 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644427653398744341
+2026-05-27 18:36:53,155 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:36:53,156 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 18:36:53,157 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 18:36:53,157 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:37:23,997 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:37:24,508 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644427653398744341
+2026-05-27 18:37:29,511 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 18:37:29,511 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 20:00:03,731 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 20:00:03,922 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 20:00:05,836 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644472329891761416
+2026-05-27 20:06:40,075 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:06:40,076 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 20:06:40,076 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 20:06:40,076 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:07:09,384 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:07:10,481 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644472329891761416
+2026-05-27 20:07:15,490 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644481063120653589
+2026-05-27 20:12:38,229 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:12:38,229 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 20:12:38,230 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 20:12:38,230 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:13:17,717 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:13:18,493 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644481063120653589
+2026-05-27 20:13:23,497 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644483557263445255
+2026-05-27 20:17:10,876 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 20:17:10,876 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 20:17:10,876 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 20:17:10,877 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 20:17:40,708 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 20:17:41,608 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644483557263445255
+2026-05-27 20:17:46,612 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 20:17:46,612 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 22:00:03,518 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-27 22:00:03,693 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-27 22:00:05,692 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644483521528040711
+2026-05-27 22:08:22,403 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:08:22,403 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 22:08:22,403 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 22:08:22,404 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:09:01,061 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:09:01,899 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644483521528040711
+2026-05-27 22:09:06,904 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644492691161500935
+2026-05-27 22:15:26,123 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:15:26,124 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 22:15:26,125 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 22:15:26,125 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:16:02,726 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:16:03,348 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644492691161500935
+2026-05-27 22:16:08,351 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644517207040363783
+2026-05-27 22:20:14,810 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:20:14,811 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-27 22:20:14,811 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-27 22:20:14,811 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:20:46,738 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:20:47,531 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644517207040363783
+2026-05-27 22:20:52,534 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 22:20:52,534 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 07:00:03,529 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 07:00:03,701 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 07:00:05,517 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644517284349889812
+2026-05-28 07:06:52,853 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:06:52,855 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 07:06:52,855 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 07:06:52,855 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:07:23,560 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:07:24,138 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644517284349889812
+2026-05-28 07:07:29,141 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644517539296431368
+2026-05-28 07:14:21,518 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:14:21,519 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 07:14:21,519 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 07:14:21,519 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:14:56,749 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:14:57,364 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644517539296431368
+2026-05-28 07:15:02,370 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644512509013052680
+2026-05-28 07:20:50,436 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 07:20:50,437 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 07:20:50,437 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 07:20:50,437 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 07:21:23,120 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 07:21:24,107 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644512509013052680
+2026-05-28 07:21:29,116 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 07:21:29,116 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 09:00:04,203 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 09:00:04,373 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 09:00:06,176 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644517775888747796
+2026-05-28 09:07:01,269 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:07:01,271 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 09:07:01,271 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 09:07:01,271 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:07:35,361 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:07:35,986 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644517775888747796
+2026-05-28 09:07:40,989 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644456061893610753
+2026-05-28 09:14:33,644 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:14:33,646 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 09:14:33,646 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 09:14:33,646 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:15:11,233 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:15:11,811 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644456061893610753
+2026-05-28 09:15:16,814 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644517929823898898
+2026-05-28 09:20:38,192 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 09:20:38,193 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 09:20:38,193 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 09:20:38,193 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 09:21:14,001 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 09:21:14,643 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644517929823898898
+2026-05-28 09:21:19,646 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 09:21:19,646 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 11:10:04,097 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 11:10:04,264 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 11:10:06,074 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644479995594820871
+2026-05-28 13:37:55,465 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 13:37:55,735 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 13:37:57,656 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644416404934020373
+2026-05-28 13:44:44,848 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:44:44,848 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 13:44:44,849 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 13:44:44,849 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:45:13,932 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:45:14,515 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644416404934020373
+2026-05-28 13:45:19,520 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644604487541329170
+2026-05-28 13:51:44,263 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:51:44,265 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 13:51:44,265 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 13:51:44,266 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:52:16,190 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:52:16,972 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644604487541329170
+2026-05-28 13:52:21,976 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644761742744046868
+2026-05-28 13:57:50,824 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:57:50,825 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 13:57:50,826 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 13:57:50,826 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:58:19,562 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:58:20,374 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644761742744046868
+2026-05-28 13:58:25,378 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 13:58:25,378 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 15:00:04,407 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 15:00:04,578 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 15:00:06,219 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644766289092726036
+2026-05-28 15:00:16,625 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644771148240129300
+2026-05-28 15:00:27,158 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644767812413689109
+2026-05-28 15:00:37,657 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@financex2 (Lấy tối đa 3 video)
+2026-05-28 15:00:38,828 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644174584329162004
+2026-05-28 15:00:48,770 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644387469009489172
+2026-05-28 15:00:59,969 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644406676824542485
+2026-05-28 15:01:10,883 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 18:00:04,450 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 18:00:04,604 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-22026-05-28 22:11:57,111 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 22:11:57,276 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 22:11:57,289 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 22:11:57,459 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 22:11:59,220 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644768538984451349
+2026-05-28 22:11:59,275 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644768538984451349
+2026-05-28 22:12:09,150 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644790092019535125
+2026-05-28 22:13:15,211 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644790092019535125
+2026-05-28 22:16:26,817 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644779379431689479
+2026-05-28 22:19:51,036 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:19:51,036 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 22:19:51,036 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 22:19:51,036 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:19:56,039 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644779379431689479
+2026-05-28 22:27:27,549 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:27:27,551 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 22:27:27,551 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 22:27:27,551 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:27:32,556 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@financex2 (Lấy tối đa 3 video)
+2026-05-28 22:27:33,713 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644470790179654932
+2026-05-28 22:28:43,378 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:28:48,379 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644489922799340821
+2026-05-28 22:28:48,380 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:28:53,380 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@financex2/video/7644504213636123925
+2026-05-28 22:28:53,381 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:28:58,381 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 22:30:15,322 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 22:30:15,511 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 22:30:17,310 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644768538984451349
+2026-05-28 22:33:18,124 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:33:18,126 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 22:33:18,126 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 22:33:18,126 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:33:47,912 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:33:49,339 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644768538984451349
+2026-05-28 22:33:54,343 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-28 22:33:54,343 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-28 22:33:54,343 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-28 22:35:22,842 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-28 22:35:23,002 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-28 22:35:24,749 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644790092019535125
+2026-05-28 22:42:30,092 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:42:30,093 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-28 22:42:30,093 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-28 22:42:30,093 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:43:03,407 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:43:04,812 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644790092019535125
+2026-05-28 22:43:09,818 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-28 22:43:09,818 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-28 22:43:09,818 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-29 07:00:03,157 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 07:00:03,327 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 07:00:04,870 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644779379431689479
+2026-05-29 07:07:12,757 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:07:12,758 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 07:07:12,758 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 07:07:12,759 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:07:45,205 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:07:46,603 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644779379431689479
+2026-05-29 07:07:51,606 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-29 07:07:51,606 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-29 07:07:51,607 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-29 09:00:04,745 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 09:00:04,917 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 09:00:06,775 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644786963379129608
+2026-05-29 09:05:00,201 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 09:05:00,202 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 09:05:00,202 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 09:05:00,202 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 09:05:36,364 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 09:05:36,949 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644786963379129608
+2026-05-29 09:05:41,953 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-29 09:05:41,954 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-29 09:05:41,954 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-29 12:00:03,577 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 12:00:03,792 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 12:00:05,637 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644833293954796820
+2026-05-29 12:02:17,970 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-29 12:02:22,971 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644845105043623186
+2026-05-29 12:57:24,184 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 12:57:24,358 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 12:57:26,126 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7644845105043623186
+2026-05-29 13:04:35,010 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:04:35,011 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 13:04:35,011 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 13:04:35,011 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:05:12,534 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:05:13,254 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7644845105043623186
+2026-05-29 13:05:18,259 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-29 13:05:18,259 [INFO] 🛑 Đã đạt giới hạn tài khoản (1 video). Dừng quét kênh tiếp theo.
+2026-05-29 13:05:18,259 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/1
+2026-05-29 15:00:04,193 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 15:00:04,369 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 15:00:06,102 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645140174770572564
+2026-05-29 15:05:09,987 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:05:09,989 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 15:05:09,989 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 15:05:09,989 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:05:40,797 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:05:41,407 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645140174770572564
+2026-05-29 15:05:46,411 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645142294328397076
+2026-05-29 15:10:29,139 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:10:29,140 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 15:10:29,140 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 15:10:29,140 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:11:02,694 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:11:03,616 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645142294328397076
+2026-05-29 15:11:08,621 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645147178947890440
+2026-05-29 15:15:25,375 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 15:15:25,376 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 15:15:25,376 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 15:15:25,376 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 15:15:53,086 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 15:15:54,205 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645147178947890440
+2026-05-29 15:15:59,208 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 15:15:59,209 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 18:00:03,737 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 18:00:03,902 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 18:00:05,658 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645140145401908500
+2026-05-29 18:07:56,291 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:07:56,292 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 18:07:56,292 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 18:07:56,292 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:08:28,177 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:08:28,913 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645140145401908500
+2026-05-29 18:08:33,918 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645148034308869383
+2026-05-29 18:14:41,928 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:14:41,929 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 18:14:41,929 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 18:14:41,930 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:15:17,332 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:15:18,151 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645148034308869383
+2026-05-29 18:15:23,157 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645174468071050504
+2026-05-29 18:19:20,334 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:19:20,335 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 18:19:20,335 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 18:19:20,335 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:19:46,859 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:19:47,408 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645174468071050504
+2026-05-29 18:19:52,411 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 18:19:52,411 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 20:00:03,985 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 20:00:04,158 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 20:00:05,907 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645151634082893076
+2026-05-29 20:06:02,838 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:06:02,839 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 20:06:02,839 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 20:06:02,839 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:06:34,447 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:06:35,354 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645151634082893076
+2026-05-29 20:06:40,360 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645185897624898837
+2026-05-29 20:11:03,686 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:11:03,686 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 20:11:03,686 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 20:11:03,686 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:11:29,054 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:11:30,312 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645185897624898837
+2026-05-29 20:11:35,315 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645156041289764116
+2026-05-29 20:15:13,218 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:15:13,220 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 20:15:13,220 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 20:15:13,220 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:15:42,189 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:15:42,798 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645156041289764116
+2026-05-29 20:15:47,802 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 20:15:47,802 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 22:35:03,962 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-29 22:35:04,146 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-29 22:35:05,850 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645174756781853960
+2026-05-29 22:40:25,391 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:40:25,392 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 22:40:25,392 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 22:40:25,392 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:40:56,384 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:40:56,900 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645174756781853960
+2026-05-29 22:41:01,903 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645172141486247188
+2026-05-29 22:46:02,475 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:46:02,476 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 22:46:02,476 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 22:46:02,476 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:46:34,846 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:46:35,487 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645172141486247188
+2026-05-29 22:46:40,493 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645194740647955733
+2026-05-29 22:51:29,897 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 22:51:29,898 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-29 22:51:29,899 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-29 22:51:29,899 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 22:52:02,028 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 22:52:02,746 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645194740647955733
+2026-05-29 22:52:07,751 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 22:52:07,752 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-30 07:00:04,233 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-30 07:00:04,408 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-30 07:00:06,303 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645175334974868744
+2026-05-30 07:03:47,321 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:03:47,322 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 07:03:47,322 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 07:03:47,323 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:04:16,267 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:04:17,570 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645175334974868744
+2026-05-30 07:04:22,574 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645209920232525074
+2026-05-30 07:09:28,215 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:09:28,216 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 07:09:28,216 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 07:09:28,216 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:10:09,742 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:10:10,575 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645209920232525074
+2026-05-30 07:10:15,578 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645176135004769554
+2026-05-30 07:15:04,621 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 07:15:04,622 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 07:15:04,622 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 07:15:04,622 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 07:15:35,621 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 07:15:36,623 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645176135004769554
+2026-05-30 07:15:41,625 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-30 07:15:41,626 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-30 09:00:03,199 [INFO] 🚀 WORKER STARTED: taichinh24444h
+2026-05-30 09:00:03,374 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@kienthuckinhte28 (Lấy tối đa 3 video)
+2026-05-30 09:00:05,136 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645228566174584072
+2026-05-30 09:05:24,623 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:05:24,624 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 09:05:24,624 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 09:05:24,624 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:05:57,591 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:05:58,317 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645228566174584072
+2026-05-30 09:06:03,322 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645228743383862546
+2026-05-30 09:11:21,124 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:11:21,126 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 09:11:21,126 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 09:11:21,126 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:11:49,821 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:11:50,784 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645228743383862546
+2026-05-30 09:11:55,788 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@kienthuckinhte28/video/7645236909844761864
+2026-05-30 09:17:06,817 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-30 09:17:06,819 [INFO]    ✅ Đã có file 'FR tai chinh .png' trong máy.
+2026-05-30 09:17:06,819 [INFO]    ✅ Đã có file 'FR tai chinh 1.png' trong máy.
+2026-05-30 09:17:06,819 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-30 09:17:36,918 [INFO]    ✅ HOÀN TẤT!
+2026-05-30 09:17:37,497 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@kienthuckinhte28/video/7645236909844761864
+2026-05-30 09:17:42,499 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-30 09:17:42,500 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3

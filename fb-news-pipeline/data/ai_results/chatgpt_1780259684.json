@@ -1,0 +1,51 @@
+{
+  "title_tiktok": "Đang đi dạo thì thấy người yêu bên cạnh một cô gái khác",
+  "hook": "Cô gái này phát hiện điều khó tin ngay sau lưng mình, nhưng phản ứng của cô mới khiến ai cũng bất ngờ.",
+  "script_voice": "Ban đầu, cô gái chỉ đang quay một đoạn video rất bình thường khi đi dạo ở khu vực Hồ Tây. Gương mặt vẫn nhẹ nhàng, giọng điệu vẫn bình tĩnh, không hề có dấu hiệu hoảng loạn. Nhưng phía sau khung hình, một chi tiết bắt đầu khiến người xem chú ý. Một chàng trai được cho là bạn trai của cô lại xuất hiện cùng một cô gái khác. Thay vì lao tới chất vấn hay làm ầm lên, cô chỉ lặng lẽ ghi lại mọi thứ. Chính sự bình tĩnh ấy mới làm đoạn video căng hơn. Vì đôi khi, im lặng không phải là yếu đuối, mà là lúc người ta đã nhìn rõ câu trả lời.",
+  "main_idea": "Video ghi lại khoảnh khắc một cô gái được cho là phát hiện bạn trai xuất hiện cùng người khác khi đang đi dạo ở Hồ Tây, nhưng cô vẫn giữ thái độ rất bình tĩnh.",
+  "viral_angle": "Khai thác sự đối lập giữa tình huống dễ gây sốc và phản ứng bình tĩnh đến bất ngờ của cô gái.",
+  "viewer_emotion": "Bất ngờ, tò mò và có chút xót xa",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cô gái này phát hiện điều khó tin ngay sau lưng mình, nhưng phản ứng của cô mới khiến ai cũng bất ngờ.",
+      "visual_description": "Cận cảnh cô gái đang tự quay video, phía sau là không gian ngoài trời gần hồ, có ghế đá và người đi lại."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, cô chỉ đang quay một đoạn video rất bình thường khi đi dạo ở khu vực Hồ Tây.",
+      "visual_description": "Cô gái nhìn vào camera với biểu cảm bình thản, khung hình có lớp đồ họa tin tức và chữ ngày đăng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Gương mặt vẫn nhẹ nhàng, giọng điệu vẫn bình tĩnh, không hề có dấu hiệu hoảng loạn.",
+      "visual_description": "Máy quay giữ ở góc selfie, cô gái đứng yên và không thể hiện phản ứng quá mạnh."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng phía sau khung hình, một chi tiết bắt đầu khiến người xem chú ý.",
+      "visual_description": "Khung hình chuyển sang cảnh xa hơn, tập trung vào khu vực ghế đá và lối đi bên cạnh hồ."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một chàng trai được cho là bạn trai của cô lại xuất hiện cùng một cô gái khác.",
+      "visual_description": "Cảnh quay từ xa cho thấy một nam và một nữ đứng gần xe máy bên đường, khuôn mặt được làm mờ."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Thay vì lao tới chất vấn hay làm ầm lên, cô chỉ lặng lẽ ghi lại mọi thứ.",
+      "visual_description": "Cô gái tiếp tục quay video, biểu cảm vẫn khá điềm tĩnh, tạo cảm giác căng thẳng nhưng kiềm chế."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Chính sự bình tĩnh ấy mới làm đoạn video căng hơn.",
+      "visual_description": "Khung hình xen giữa cảnh cô gái nhìn vào camera và cảnh cặp đôi phía xa."
+    },
+    {
+      "scene_number": 8,
+      "voice_over": "Vì đôi khi, im lặng không phải là yếu đuối, mà là lúc người ta đã nhìn rõ câu trả lời.",
+      "visual_description": "Cận cảnh cô gái ở cuối video, ánh mắt bình tĩnh, tạo điểm chốt cảm xúc cho câu chuyện."
+    }
+  ]
+}

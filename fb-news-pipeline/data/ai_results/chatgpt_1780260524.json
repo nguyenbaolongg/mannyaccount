@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Đàn trâu đứng hình vì một thứ tưởng như vô hại",
+  "hook": "Cả đàn trâu đang rất bình tĩnh, cho đến khi chúng phát hiện một vật lạ nằm ngay giữa bãi cỏ.",
+  "script_voice": "Cả đàn trâu ban đầu chỉ định đi ngang qua như mọi ngày, nhưng rồi chúng bất ngờ khựng lại trước một vật lạ màu trắng đen nằm trên bãi cỏ. Con nào cũng tò mò, tiến lại gần để nhìn cho rõ, nhưng tuyệt nhiên không con nào dám chạm vào. Không khí bắt đầu buồn cười khi cả đàn cứ đứng vây quanh như đang họp khẩn. Và đúng lúc tưởng mọi chuyện đã bình thường, vật lạ ấy bất ngờ dựng lên, khiến đàn trâu giật mình tản ra mỗi con một hướng. Có lẽ trong đầu chúng lúc đó chỉ có một câu: hóa ra nãy giờ mình bị dọa thật à.",
+  "main_idea": "Video ghi lại cảnh một đàn trâu tò mò vây quanh một vật lạ giống chim hoặc mô hình trên bãi cỏ, sau đó giật mình bỏ chạy khi vật đó bất ngờ dựng lên hoặc chuyển động.",
+  "viral_angle": "Góc khai thác hài hước và bất ngờ, biến phản ứng tò mò rồi hoảng hốt của đàn trâu thành một tình huống như bị trêu đùa.",
+  "viewer_emotion": "Bất ngờ, buồn cười và thích thú trước phản ứng rất đời của đàn trâu",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cả đàn trâu đang rất bình tĩnh, cho đến khi chúng phát hiện một vật lạ nằm ngay giữa bãi cỏ.",
+      "visual_description": "Đàn trâu đứng trên bãi cỏ xanh gần bờ đất, phía trước là một vật màu trắng đen nằm thấp dưới mặt cỏ."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu chúng chỉ tiến lại gần để nhìn cho rõ, nhưng càng nhìn lại càng thấy khó hiểu.",
+      "visual_description": "Nhiều con trâu từ từ áp sát vật lạ, cúi đầu quan sát, giữ khoảng cách dè chừng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Không con nào dám chạm vào, cả đàn cứ đứng vây quanh như đang bàn xem thứ này rốt cuộc là gì.",
+      "visual_description": "Đàn trâu tụ lại thành nhóm, ánh mắt hướng về vật lạ ở giữa, tạo cảm giác tò mò và cảnh giác."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Và đúng lúc tưởng mọi chuyện không có gì, vật lạ ấy bất ngờ dựng lên.",
+      "visual_description": "Vật màu trắng đen chuyển sang tư thế dựng đứng, khiến khoảng cách giữa nó và đàn trâu trở nên rõ ràng hơn."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Cả đàn lập tức giật mình tản ra, có con quay đầu chạy thẳng, có con đứng xa nhìn lại.",
+      "visual_description": "Đàn trâu bắt đầu chạy tản về nhiều hướng trên bãi cỏ, một vài con di chuyển lên khu vực bờ đất phía sau."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Nhìn cảnh này mới thấy, đôi khi chỉ một vật nhỏ thôi cũng đủ khiến cả đàn trâu nghĩ rằng mình vừa bị trêu một vố thật đau.",
+      "visual_description": "Máy quay ghi lại đàn trâu đã lùi xa khỏi vị trí ban đầu, để lại vật lạ nằm lại giữa khoảng cỏ trống."
+    }
+  ]
+}

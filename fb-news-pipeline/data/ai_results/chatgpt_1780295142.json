@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Muốn bình an, đừng vội học chữ buông",
+  "hook": "Có những lúc ta tưởng chỉ cần buông xuống là nhẹ lòng, nhưng trước khi hiểu được chữ buông, con người thường phải đi qua rất nhiều tổn thương.",
+  "script_voice": "Có những lúc ta tưởng chỉ cần buông xuống là mọi chuyện sẽ nhẹ đi. Nhưng thật ra, trước khi một người học được cách bình thản, họ thường phải nếm đủ va vấp trong đời. Có vui sướng thì cũng có gian nan, có hạnh phúc thì cũng có những lần đau lòng, có yêu thương thì cũng có lúc bị phản bội. Điều đáng nói là, sau tất cả những điều đó, người ta vẫn còn quyền lựa chọn. Chọn oán trách để lòng nặng thêm, hay chọn lương thiện để tự cứu lấy mình. Vì cuối cùng, bình an không đến từ việc chưa từng đau, mà đến từ việc đã đau rồi vẫn không để bản thân trở thành người xấu.",
+  "main_idea": "Video truyền tải thông điệp nhân văn về việc con người phải trải qua tổn thương, gian truân và phản bội trước khi học được cách buông bỏ, giữ lòng lương thiện và tìm thấy bình an.",
+  "viral_angle": "Góc khai thác cảm động và triết lý đời sống, đánh vào những người từng trải qua tổn thương nhưng vẫn muốn giữ sự tử tế.",
+  "viewer_emotion": "Suy ngẫm, đồng cảm và được an ủi",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những lúc ta tưởng chỉ cần buông xuống là mọi chuyện sẽ nhẹ đi.",
+      "visual_description": "Toàn cảnh bên trong chùa với tượng Phật lớn ở trung tâm, ánh đèn vàng tạo cảm giác tĩnh lặng và trang nghiêm."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Nhưng thật ra, trước khi một người học được cách bình thản, họ thường phải nếm đủ va vấp trong đời.",
+      "visual_description": "Máy quay giữ nguyên khung hình tượng Phật, chữ xuất hiện trên màn hình theo nhịp chậm, gợi cảm giác suy ngẫm."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Có vui sướng thì cũng có gian nan, có hạnh phúc thì cũng có những lần đau lòng, có yêu thương thì cũng có lúc bị phản bội.",
+      "visual_description": "Các dòng chữ về những mặt đối lập của cuộc sống lần lượt hiện lên trên nền không gian chùa."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều đáng nói là, sau tất cả những điều đó, người ta vẫn còn quyền lựa chọn.",
+      "visual_description": "Khung hình tập trung vào tượng Phật đang ngồi tĩnh tại, ánh sáng vàng nổi bật giữa nền tối."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chọn oán trách để lòng nặng thêm, hay chọn lương thiện để tự cứu lấy mình.",
+      "visual_description": "Chữ nhấn mạnh về lương thiện xuất hiện lớn ở giữa màn hình, tạo điểm cao trào cho video."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Vì cuối cùng, bình an không đến từ việc chưa từng đau, mà đến từ việc đã đau rồi vẫn không để bản thân trở thành người xấu.",
+      "visual_description": "Cảnh chùa khép lại trong không khí trầm lắng, chữ bình an và lương thiện hiện rõ để chốt thông điệp."
+    }
+  ]
+}

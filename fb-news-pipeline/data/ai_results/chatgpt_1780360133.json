@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Về nhà sau buổi học, cậu em bật khóc vì một điều không ai báo trước",
+  "hook": "Cậu bé chỉ vừa đi học về, nhưng trước sân nhà đã có hoa, có bảng dạm ngõ và chị gái trong áo dài hồng.",
+  "script_voice": "Cậu bé vừa tan học, đạp xe về nhà như mọi ngày. Nhưng vừa tới cổng, em khựng lại khi thấy sân nhà được chuẩn bị cho một buổi dạm ngõ. Chị gái đứng đó trong áo dài hồng, bên cạnh là người sẽ trở thành anh rể. Không ai kịp nói trước với em điều này. Từ một buổi chiều bình thường, em nhận ra chị mình sắp bước sang một chặng đường mới. Vậy là nước mắt cứ thế rơi. Chị phải ngồi xuống bên cạnh, lau từng giọt nước mắt, vừa cười vừa dỗ. Có lẽ em không giận, chỉ là thương chị quá, và chưa sẵn sàng để thấy chị rời xa vòng tay gia đình.",
+  "main_idea": "Video ghi lại khoảnh khắc một cậu bé đi học về và bất ngờ phát hiện gia đình đang tổ chức lễ dạm ngõ cho chị gái. Vì không được báo trước, em xúc động bật khóc và được chị gái dỗ dành.",
+  "viral_angle": "Góc khai thác cảm động và bất ngờ, tập trung vào phản ứng chân thật của người em khi nhận ra chị gái sắp có gia đình riêng.",
+  "viewer_emotion": "Xúc động, thương mến và đồng cảm với tình cảm chị em trong gia đình.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cậu bé chỉ vừa đi học về, nhưng trước sân nhà đã có hoa, có bảng dạm ngõ và chị gái trong áo dài hồng.",
+      "visual_description": "Cậu bé đạp xe về nhà, trên lưng còn đeo cặp học sinh, khung cảnh sân nhà đã được chuẩn bị cho lễ dạm ngõ."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu em chỉ tưởng hôm nay nhà có khách, nhưng càng tiến vào gần, em mới thấy mọi thứ không còn bình thường nữa.",
+      "visual_description": "Máy quay hướng về khu vực sân, nơi chị gái và chú rể đứng cạnh bảng lễ dạm ngõ, xung quanh có hoa và không khí gia đình."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Chị gái đứng đó, rạng rỡ trong ngày quan trọng, còn cậu em thì lặng người vì không hề được báo trước.",
+      "visual_description": "Chị gái mặc áo dài hồng, mỉm cười nhìn em trai, trong khi cậu bé ngồi xuống với gương mặt bắt đầu nghẹn lại."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Từ một buổi chiều đi học về như mọi ngày, em bất chợt hiểu rằng chị mình sắp bước sang một cuộc sống mới.",
+      "visual_description": "Cậu bé bật khóc, chị gái ngồi sát bên cạnh, nhẹ nhàng lau nước mắt và dỗ dành em."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có lẽ em không giận ai cả, chỉ là thương chị quá, và chưa kịp chuẩn bị để thấy chị rời xa gia đình.",
+      "visual_description": "Chị gái ôm vai em trai, vừa cười vừa an ủi, tạo nên khoảnh khắc vừa dễ thương vừa xúc động."
+    }
+  ]
+}

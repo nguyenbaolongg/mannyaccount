@@ -90,8 +90,8 @@ def get_videos_via_rapidapi(channel_url, limit=5):
 
     video_links = []
     try:
-        url = "https://tiktok-downloader-download-tiktok-videos-without-watermark.p.rapidapi.com/user/index"
-        response = requests.get(url, headers=headers, params={"username": username}, timeout=20)
+        url = "https://tiktok-video-no-watermark2.p.rapidapi.com/user/posts"
+        response = requests.get(url, headers=headers, params={"unique_id": username, "count": limit}, timeout=20)
         data = response.json()
 
         if isinstance(data, dict):
@@ -165,7 +165,9 @@ def download_via_rapidapi(tiktok_url, save_path):
             result = resp.json()
             download_url = None
             if isinstance(result, dict):
-                download_url = result.get("video_hd") or result.get("video") or result.get("play")
+                if "data" in result and isinstance(result["data"], dict):
+                    result = result["data"]
+                download_url = result.get("hdplay") or result.get("video_hd") or result.get("play") or result.get("video")
                 if isinstance(download_url, list): download_url = download_url[0]
 
             if download_url:

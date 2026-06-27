@@ -1,0 +1,46 @@
+{
+  "title_tiktok": "Cú ngã tưởng bình thường, ai ngờ chiếc dép mới là nhân vật chính",
+  "hook": "Cứ tưởng chỉ là một cú trượt chân rất bình thường, nhưng nhìn kỹ chiếc dép mới thấy chuyện này khó hơn mình nghĩ.",
+  "script_voice": "Một chàng trai đang đi qua nền sân ướt, tưởng mọi chuyện chẳng có gì đặc biệt. Nhưng chỉ vài giây sau, đôi chân bắt đầu loạng choạng, người mất thăng bằng rồi ngã xoạc xuống sân. Người bên cạnh thấy vậy cũng giật mình chạy tới xem có sao không. Đến đây ai cũng nghĩ cú ngã là điểm đáng chú ý nhất. Nhưng khoảnh khắc camera zoom lại mới thật sự buồn cười. Chiếc dép bị mắc ngược vào cổ chân, xoay một kiểu rất khó hiểu, như thể chính nó mới là thủ phạm khiến anh chàng không thể đứng vững. Ngã thì đau thật, nhưng nhìn cách chiếc dép bám chặt như vậy, nhiều người chỉ biết vừa thương vừa không nhịn được cười.",
+  "main_idea": "Video ghi lại cảnh một chàng trai trượt ngã trên nền sân ướt, sau đó điểm gây chú ý nằm ở chiếc dép bị mắc vào chân theo cách rất khó hiểu và hài hước.",
+  "viral_angle": "Tình huống hài hước bất ngờ, ban đầu tưởng là cú ngã bình thường nhưng cao trào nằm ở chi tiết chiếc dép bị mắc kỳ lạ.",
+  "viewer_emotion": "Vừa bất ngờ, vừa buồn cười, xen chút thương vì cú ngã có vẻ khá đau.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cứ tưởng chỉ là một cú trượt chân rất bình thường, nhưng nhìn kỹ chiếc dép mới thấy chuyện này khó hơn mình nghĩ.",
+      "visual_description": "Camera an ninh ghi lại sân nhà ướt nước, một chàng trai mặc áo trắng đang bước đi qua khu vực trơn."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Một chàng trai đang đi qua nền sân ướt, tưởng mọi chuyện chẳng có gì đặc biệt.",
+      "visual_description": "Chàng trai di chuyển trên nền bê tông ẩm, phía sau có xe máy và một người khác đang ngồi gần đó."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng chỉ vài giây sau, đôi chân bắt đầu loạng choạng, người mất thăng bằng rồi ngã xoạc xuống sân.",
+      "visual_description": "Chàng trai trượt chân, cơ thể chao đảo rồi ngã ra nền sân trong tư thế xoạc chân."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Người bên cạnh thấy vậy cũng giật mình chạy tới xem có sao không.",
+      "visual_description": "Người mặc áo đen đứng dậy khỏi xe máy và tiến lại gần chàng trai vừa ngã."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đến đây ai cũng nghĩ cú ngã là điểm đáng chú ý nhất. Nhưng khoảnh khắc camera zoom lại mới thật sự buồn cười.",
+      "visual_description": "Khung hình chuyển sang cận cảnh phần chân của chàng trai nằm trên nền sân."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Chiếc dép bị mắc ngược vào cổ chân, xoay một kiểu rất khó hiểu, như thể chính nó mới là thủ phạm khiến anh chàng không thể đứng vững.",
+      "visual_description": "Cận cảnh chiếc dép trắng bị kẹt vào cổ chân theo tư thế kỳ lạ, phần đế dép lộ rõ trên nền sân ướt."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Ngã thì đau thật, nhưng nhìn cách chiếc dép bám chặt như vậy, nhiều người chỉ biết vừa thương vừa không nhịn được cười.",
+      "visual_description": "Khung hình giữ lại chi tiết chiếc dép mắc vào chân, tạo điểm chốt hài hước cho video."
+    }
+  ]
+}

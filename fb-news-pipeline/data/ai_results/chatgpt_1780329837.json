@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Tắt đèn xong, ai cũng từng hóa vận động viên chạy nước rút",
+  "hook": "Có một nỗi sợ rất lạ, ở trong chính nhà mình nhưng chỉ cần đèn tắt là mọi thứ bỗng đáng nghi hơn hẳn.",
+  "script_voice": "Có một nỗi sợ rất lạ, ở trong chính nhà mình nhưng chỉ cần đèn tắt là mọi thứ bỗng đáng nghi hơn hẳn. Ban đầu, mọi chuyện rất bình thường. Căn nhà sáng đèn, không có gì xảy ra, ai cũng nghĩ chỉ cần đi qua một đoạn là xong. Nhưng khoảnh khắc ánh sáng biến mất, cảm giác phía sau lưng như có ai đó đang nhìn mình lập tức xuất hiện. Và thế là từ một bước đi bình tĩnh, người trong video chuyển thẳng sang chế độ chạy thoát thân. Buồn cười nhất là ai xem cũng thấy quen, vì hình như tuổi thơ của rất nhiều người đều từng có một cuộc chạy nước rút sau khi tắt đèn như thế này.",
+  "main_idea": "Video ghi lại tình huống quen thuộc khi một người cảm thấy bất an sau khi tắt đèn trong nhà và nhanh chóng chạy đi vì sợ bóng tối.",
+  "viral_angle": "Góc khai thác hài hước và đồng cảm, dựa trên nỗi sợ bóng tối rất quen thuộc mà nhiều người từng trải qua.",
+  "viewer_emotion": "Buồn cười, đồng cảm và hoài niệm về những lần tự hù mình trong nhà",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có một nỗi sợ rất lạ, ở trong chính nhà mình nhưng chỉ cần đèn tắt là mọi thứ bỗng đáng nghi hơn hẳn.",
+      "visual_description": "Toàn cảnh phòng khách rộng, đèn vẫn sáng, một người di chuyển trong nhà, phía dưới có khung chữ dạng video tổng hợp."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi chuyện rất bình thường. Căn nhà sáng đèn, không có gì xảy ra, ai cũng nghĩ chỉ cần đi qua một đoạn là xong.",
+      "visual_description": "Người trong video đi qua khu vực phòng khách, không gian yên tĩnh và không có tình huống bất thường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng khoảnh khắc ánh sáng biến mất, cảm giác phía sau lưng như có ai đó đang nhìn mình lập tức xuất hiện.",
+      "visual_description": "Màn hình chuyển sang cảnh tối hoặc ánh sáng yếu, lối đi và cửa hiện lên mờ khiến không khí trở nên căng thẳng hơn."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Và thế là từ một bước đi bình tĩnh, người trong video chuyển thẳng sang chế độ chạy thoát thân.",
+      "visual_description": "Người trong video vội vã chạy nhanh qua phòng, tạo cảm giác vừa hoảng hốt vừa hài hước."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Buồn cười nhất là ai xem cũng thấy quen, vì hình như tuổi thơ của rất nhiều người đều từng có một cuộc chạy nước rút sau khi tắt đèn như thế này.",
+      "visual_description": "Cảnh camera an ninh ghi lại căn phòng sau tình huống chạy đi, nhấn vào cảm giác quen thuộc và hài hước của người xem."
+    }
+  ]
+}

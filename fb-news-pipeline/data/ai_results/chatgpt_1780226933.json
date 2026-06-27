@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Pha rửa bát nhanh đến mức ai xem cũng nín thở",
+  "hook": "Nhìn tốc độ này mà tôi chỉ sợ một chiếc bát bay khỏi tay bất cứ lúc nào.",
+  "script_voice": "Ban đầu chỉ là một cảnh rửa bát rất bình thường trong khu bếp. Nhưng càng nhìn kỹ, người xem càng bị cuốn vào tốc độ của người này. Từng chiếc bát được đưa qua vòi nước, xoay một vòng, chà thật nhanh rồi xếp xuống gần như không có một giây thừa. Điều khiến ai cũng căng mắt là mọi động tác đều nhanh đến mức tưởng như chỉ cần lệch tay một chút là cả chồng bát có thể đổ ập xuống. Nhưng kỳ lạ là mọi thứ vẫn nằm đúng vị trí. Không vội vàng hỗn loạn, mà là kiểu nhanh của một người đã làm công việc này quá quen tay. Đến cuối, thứ khiến người xem ấn tượng không chỉ là tốc độ, mà còn là sự chính xác đáng kinh ngạc trong từng động tác.",
+  "main_idea": "Video ghi lại cảnh một người rửa và xếp bát với tốc độ rất nhanh nhưng vẫn giữ được sự khéo léo, không làm rơi vỡ bát đĩa.",
+  "viral_angle": "Góc khai thác chính là sự hồi hộp và bất ngờ khi người xem tưởng bát sẽ rơi vỡ vì tốc độ quá nhanh, nhưng mọi thao tác lại cực kỳ chính xác.",
+  "viewer_emotion": "Hồi hộp, bất ngờ và thán phục",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn tốc độ này mà tôi chỉ sợ một chiếc bát bay khỏi tay bất cứ lúc nào.",
+      "visual_description": "Cận cảnh khu rửa bát, nước chảy mạnh, một chồng bát lớn đặt cạnh bồn rửa."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu tưởng chỉ là một cảnh rửa bát bình thường, nhưng vài giây sau, tốc độ bắt đầu khiến người xem phải chú ý.",
+      "visual_description": "Người trong video cầm từng chiếc bát, đưa qua vòi nước và chà rửa liên tục với động tác rất nhanh."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Từng chiếc bát được xoay, rửa rồi đặt xuống gần như không có khoảng nghỉ, khiến ai cũng nghĩ chỉ cần trượt tay một chút là cả chồng bát sẽ đổ.",
+      "visual_description": "Các động tác rửa và xếp bát diễn ra nhanh, nước bắn xung quanh, chồng bát vẫn đứng sát nhau bên cạnh bồn."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng điều bất ngờ là mọi thứ vẫn rất gọn. Không chiếc nào văng ra, không chiếc nào rơi xuống, tất cả đều được xử lý cực kỳ quen tay.",
+      "visual_description": "Người rửa tiếp tục thao tác dứt khoát, bát được đặt chồng lên nhau ngay ngắn dù nhịp làm việc rất gấp."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Xem đến cuối mới thấy, đây không chỉ là nhanh, mà là sự chính xác của một người đã quá thành thạo công việc của mình.",
+      "visual_description": "Cảnh cuối tập trung vào nhịp tay nhanh và chồng bát vẫn ổn định, tạo cảm giác vừa hồi hộp vừa thán phục."
+    }
+  ]
+}

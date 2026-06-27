@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Bà nội chờ cả ngày chỉ để nghe tiếng xe cháu về",
+  "hook": "Có những cuộc gặp không cần nói nhiều, chỉ một tiếng xe dừng trước cổng cũng đủ khiến cả nhà ùa ra như đợi điều quý giá nhất.",
+  "script_voice": "Suốt cả ngày, bà nội cứ thấp thỏm nhìn ra cổng, vì biết hôm nay cháu sẽ từ nhà ngoại trở về. Khoảnh sân vẫn im lặng, nhưng trong lòng người ở nhà thì chẳng yên chút nào. Đến khi chiếc xe vừa bíp bíp trước cổng, mọi người gần như bật dậy cùng một lúc. Cánh cửa mở ra, người lớn chạy ra đón, còn đứa bé được bế vào trong giữa vòng tay chờ đợi. Chỉ một tháng xa nhà thôi, nhưng với ông bà, từng ấy thời gian đã đủ dài để nhớ một đứa cháu đến nao lòng. Có lẽ hạnh phúc của tuổi già không cần gì lớn lao, chỉ cần thấy cháu bình an trở về, căn nhà lập tức ấm lên như có Tết.",
+  "main_idea": "Video ghi lại khoảnh khắc một em bé về nhà nội sau một tháng ở bên ngoại, khiến bà nội và cả gia đình háo hức chờ đón từ sáng đến tối.",
+  "viral_angle": "Khai thác sự xúc động và ấm áp gia đình từ một khoảnh khắc rất đời thường: tiếng xe về cổng làm cả nhà ùa ra đón cháu.",
+  "viewer_emotion": "Xúc động, ấm lòng, cảm nhận rõ tình yêu thương của ông bà và gia đình dành cho cháu nhỏ.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những cuộc gặp không cần nói nhiều, chỉ một tiếng xe dừng trước cổng cũng đủ khiến cả nhà ùa ra như đợi điều quý giá nhất.",
+      "visual_description": "Khung hình camera trước sân nhà, một người phụ nữ ngồi chờ ở hiên, không gian sân vắng và yên tĩnh."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Suốt cả ngày, bà nội cứ thấp thỏm nhìn ra cổng, vì biết hôm nay cháu sẽ từ nhà ngoại trở về.",
+      "visual_description": "Cảnh sân nhà từ camera an ninh, thời gian thay đổi từ chiều sang tối, tạo cảm giác chờ đợi kéo dài."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Đến khi chiếc xe vừa bíp bíp trước cổng, mọi người gần như bật dậy cùng một lúc.",
+      "visual_description": "Ánh đèn xe xuất hiện ngoài cổng, người trong nhà nhanh chóng chạy ra phía sân để đón."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cánh cửa mở ra, người lớn chạy ra đón, còn đứa bé được bế vào trong giữa vòng tay chờ đợi.",
+      "visual_description": "Xe trắng dừng trước nhà, người thân mở cửa xe, em bé được bế xuống và đưa vào trong nhà."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ một tháng xa nhà thôi, nhưng với ông bà, từng ấy thời gian đã đủ dài để nhớ một đứa cháu đến nao lòng.",
+      "visual_description": "Cả nhà tập trung trong phòng khách, người lớn vây quanh em bé, bà nội tiến lại gần để bế và âu yếm cháu."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có lẽ hạnh phúc của tuổi già không cần gì lớn lao, chỉ cần thấy cháu bình an trở về, căn nhà lập tức ấm lên như có Tết.",
+      "visual_description": "Bà nội bế cháu trong phòng khách, mọi người đứng xung quanh, không khí gia đình gần gũi và ấm áp."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title_tiktok": "Mẹ cô dâu bật khóc vì một chặng đường quá xa",
+  "hook": "Có những giọt nước mắt không phải vì buồn, mà vì thương con đến nghẹn lòng.",
+  "script_voice": "Ngay từ lúc cô dâu còn chưa trang điểm xong, mẹ đã không kìm được nước mắt. Nhìn con gái chuẩn bị bước sang một cuộc đời mới, bà vừa mừng, vừa thương. Bởi lần này, con không chỉ lấy chồng, mà còn phải rời xa nhà, ra tận ngoài đảo. Với người mẹ, khoảng cách ấy không chỉ là đường đi từ đất liền ra biển, mà là những lần nhớ con nhưng không thể chạy sang thăm ngay được. Cô dâu chỉ biết cúi xuống ôm lấy mẹ, dỗ dành từng chút một. Khoảnh khắc ấy khiến ai nhìn vào cũng nghẹn lại, vì sau ngày cưới, người mạnh mẽ nhất đôi khi lại là người khóc nhiều nhất.",
+  "main_idea": "Video ghi lại khoảnh khắc mẹ cô dâu khóc nức nở trước giờ con gái lấy chồng xa ngoài đảo, vì thương con phải sống xa nhà và việc đi lại từ đảo về đất liền khó khăn.",
+  "viral_angle": "Khai thác góc cảm động và nhân văn, tập trung vào nỗi lòng của người mẹ khi con gái đi lấy chồng xa.",
+  "viewer_emotion": "Xúc động, nghẹn ngào và thương mẹ",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những giọt nước mắt không phải vì buồn, mà vì thương con đến nghẹn lòng.",
+      "visual_description": "Cảnh mẹ cô dâu ngồi bên trong không gian chuẩn bị đám cưới, gương mặt xúc động, xung quanh có người thân đang theo dõi."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ngay từ lúc cô dâu còn chưa trang điểm xong, mẹ đã không kìm được nước mắt.",
+      "visual_description": "Cô dâu cúi xuống gần mẹ, đưa tay an ủi khi mẹ khóc nức nở trước mặt mọi người."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhìn con gái chuẩn bị bước sang một cuộc đời mới, bà vừa mừng, vừa thương.",
+      "visual_description": "Cô dâu đứng sát bên mẹ, nhẹ nhàng lau nước mắt và nói chuyện để mẹ bình tĩnh lại."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Bởi lần này, con không chỉ lấy chồng, mà còn phải rời xa nhà, ra tận ngoài đảo.",
+      "visual_description": "Người thân đứng xung quanh, không khí trong phòng lắng lại khi mọi ánh mắt hướng về hai mẹ con."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Với người mẹ, khoảng cách ấy không chỉ là đường đi từ đất liền ra biển, mà là những lần nhớ con nhưng không thể chạy sang thăm ngay được.",
+      "visual_description": "Mẹ cô dâu vẫn khóc, một người phụ nữ bên cạnh cùng cô dâu nắm tay và động viên mẹ."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Cô dâu chỉ biết cúi xuống ôm lấy mẹ, dỗ dành từng chút một.",
+      "visual_description": "Cô dâu cúi sát mẹ, giữ tay mẹ thật chặt, tạo cảm giác gần gũi và đầy yêu thương."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Khoảnh khắc ấy khiến ai nhìn vào cũng nghẹn lại, vì sau ngày cưới, người mạnh mẽ nhất đôi khi lại là người khóc nhiều nhất.",
+      "visual_description": "Cảnh hai mẹ con vẫn ở cạnh nhau giữa không gian đông người, khép lại bằng khoảnh khắc xúc động và lặng đi."
+    }
+  ]
+}

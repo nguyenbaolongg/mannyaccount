@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Nghỉ hè mới bắt đầu, shipper đã gặp những đơn hàng khó đỡ",
+  "hook": "Nghỉ hè vừa tới, nhưng các shipper đã chính thức bước vào mùa bận rộn theo cách không ai ngờ.",
+  "script_voice": "Nghỉ hè vừa bắt đầu, và đây là lúc một lực lượng đặc biệt âm thầm ra trận. Không phải đi chơi xa, cũng không phải học thêm, các bạn nhỏ bắt đầu khám phá thế giới mua sắm online ngay tại nhà. Có đơn chỉ là một gói bánh gạo, có đơn lại là một chiếc quần, nhưng tất cả đều được đặt rất nghiêm túc. Shipper thì vừa giao vừa không nhịn được cười, vì mỗi ngày lại gặp những đơn hàng nhỏ xíu nhưng đều đặn như lịch học. Còn phụ huynh thì chỉ cần nhìn app báo đơn mới là bắt đầu thấy căng. Nghỉ hè của trẻ con đúng là vui thật, chỉ có ví tiền của bố mẹ là cần được nghỉ ngơi thêm.",
+  "main_idea": "Video khai thác cảnh các bạn nhỏ trong kỳ nghỉ hè bắt đầu đặt hàng online nhiều món nhỏ lẻ, khiến shipper vừa buồn cười vừa bận rộn, còn gia đình thì dở khóc dở cười.",
+  "viral_angle": "Góc hài hước đời thường, biến chuyện trẻ con nghỉ hè và đặt hàng online thành một tình huống quen thuộc nhưng bất ngờ, dễ khiến người xem đồng cảm.",
+  "viewer_emotion": "Hài hước, thích thú và đồng cảm với phụ huynh lẫn shipper",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nghỉ hè vừa tới, nhưng các shipper đã chính thức bước vào mùa bận rộn theo cách không ai ngờ.",
+      "visual_description": "Cảnh mở đầu theo phong cách bản tin, phía dưới có khung tiêu đề màu xanh, hình ảnh trong giỏ giao hàng với các gói hàng nhỏ."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Không phải đi chơi xa, cũng không phải học thêm, các bạn nhỏ bắt đầu khám phá thế giới mua sắm online ngay tại nhà.",
+      "visual_description": "Cận cảnh tay lấy các món đồ nhỏ trong giỏ, tạo cảm giác những đơn hàng liên tục xuất hiện."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Có đơn chỉ là một gói bánh gạo, có đơn lại là một chiếc quần, nhưng tất cả đều được đặt rất nghiêm túc.",
+      "visual_description": "Hiển thị các bài đăng hoặc hình ảnh minh họa về những món hàng nhỏ lẻ được đặt online."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Shipper thì vừa giao vừa không nhịn được cười, vì mỗi ngày lại gặp những đơn hàng nhỏ xíu nhưng đều đặn như lịch học.",
+      "visual_description": "Cảnh giỏ hàng và gói hàng được đặt cạnh nhau, nhấn vào sự nhỏ lẻ nhưng gây chú ý của đơn hàng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Còn phụ huynh thì chỉ cần nhìn app báo đơn mới là bắt đầu thấy căng.",
+      "visual_description": "Khung hình tiếp tục theo phong cách bản tin, gói hàng nằm trong giỏ, tạo cảm giác câu chuyện đang được kể như một sự kiện hài hước."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Nghỉ hè của trẻ con đúng là vui thật, chỉ có ví tiền của bố mẹ là cần được nghỉ ngơi thêm.",
+      "visual_description": "Kết lại bằng cảnh gói hàng trong giỏ giao hàng, giữ nhịp hài hước và tạo điểm chốt dễ nhớ."
+    }
+  ]
+}

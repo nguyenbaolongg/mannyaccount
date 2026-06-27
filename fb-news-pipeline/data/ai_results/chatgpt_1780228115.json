@@ -1,0 +1,46 @@
+{
+  "title_tiktok": "Tưởng shipper giao đồ, ai ngờ đơn hàng lần này quá đặc biệt",
+  "hook": "Ai cũng nghĩ anh shipper đang chuẩn bị giao đơn bình thường, cho đến khi nhìn thấy thứ anh ấy bế xuống xe.",
+  "script_voice": "Giữa sân ướt sau cơn mưa, chiếc xe giao hàng dừng lại như bao lần khác. Nhưng lần này, thùng hàng phía sau không phải món ăn hay bưu kiện. Anh shipper cẩn thận đỡ một em bé mặc áo mưa, đội mũ bảo hiểm bước xuống. Từng động tác rất chậm, rất nhẹ, như sợ khách hàng đặc biệt này bị ướt hay vấp ngã. Người xem ban đầu bật cười vì quá bất ngờ, nhưng càng nhìn lại càng thấy dễ thương. Hóa ra có những chuyến giao hàng không chỉ cần đúng địa chỉ, mà còn phải thật có tâm.",
+  "main_idea": "Video ghi lại cảnh một người giao hàng đưa một em bé xuống xe và dẫn vào nơi an toàn trong trời mưa, tạo cảm giác hài hước nhưng cũng rất dễ thương.",
+  "viral_angle": "Bất ngờ và hài hước vì người xem tưởng là giao hàng bình thường, nhưng đơn hàng lại là một em bé được chăm sóc rất cẩn thận.",
+  "viewer_emotion": "Bất ngờ, thích thú và ấm áp",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Ai cũng nghĩ anh shipper đang chuẩn bị giao đơn bình thường, cho đến khi nhìn thấy thứ anh ấy bế xuống xe.",
+      "visual_description": "Cảnh chiếc xe giao hàng dừng trên nền sân ướt, thùng giao hàng lớn phía sau xe, trời vừa mưa xong."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Giữa sân ướt sau cơn mưa, chiếc xe giao hàng dừng lại như bao lần khác.",
+      "visual_description": "Người giao hàng đứng cạnh xe, quan sát xung quanh và chuẩn bị xử lý đơn hàng đặc biệt."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng lần này, thùng hàng phía sau không phải món ăn hay bưu kiện.",
+      "visual_description": "Máy quay tập trung vào phía sau xe và dáng người shipper đang đỡ một em bé mặc áo mưa."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Anh shipper cẩn thận đỡ một em bé mặc áo mưa, đội mũ bảo hiểm bước xuống.",
+      "visual_description": "Em bé mặc áo mưa rộng, đội mũ bảo hiểm, được người giao hàng dìu xuống xe một cách chậm rãi."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Từng động tác rất chậm, rất nhẹ, như sợ khách hàng đặc biệt này bị ướt hay vấp ngã.",
+      "visual_description": "Người giao hàng đi sát bên em bé, giữ thăng bằng và che chắn trong lúc di chuyển qua khu vực sân ướt."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Người xem ban đầu bật cười vì quá bất ngờ, nhưng càng nhìn lại càng thấy dễ thương.",
+      "visual_description": "Em bé được đưa đến gần khu vực có người lớn đứng chờ, không khí trở nên nhẹ nhàng và hài hước."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Hóa ra có những chuyến giao hàng không chỉ cần đúng địa chỉ, mà còn phải thật có tâm.",
+      "visual_description": "Người lớn đón em bé, shipper hoàn thành chuyến giao đặc biệt trong khung cảnh đời thường sau mưa."
+    }
+  ]
+}

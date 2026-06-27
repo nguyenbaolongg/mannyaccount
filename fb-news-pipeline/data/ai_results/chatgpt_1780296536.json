@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Chỉ một đoạn hộ tống ngắn mà khiến ai cũng phải nhìn kỹ",
+  "hook": "Ban đầu chỉ tưởng là một người đang được dẫn qua đám đông, nhưng càng nhìn kỹ, cách mọi người vây quanh anh ấy mới là điều khiến người xem tò mò.",
+  "script_voice": "Ban đầu, khung cảnh chỉ là một lối đi khá đông người vào buổi tối. Một người đàn ông mặc đồ đen, đội mũ trắng bước ra giữa sự chú ý của rất nhiều người xung quanh. Điều khiến ai cũng để mắt không phải là anh ấy đi đâu, mà là cách lực lượng chức năng và những người bên cạnh liên tục áp sát để giữ trật tự. Máy quay rung nhẹ, đám đông dịch chuyển theo từng bước chân, tạo cảm giác mọi chuyện đang rất căng. Chỉ vài giây ngắn ngủi, nhưng đủ để người xem thắc mắc: rốt cuộc chuyện gì đã xảy ra trước đó mà cảnh hộ tống này lại gây chú ý đến vậy.",
+  "main_idea": "Video ghi lại cảnh một người đàn ông được lực lượng chức năng và những người xung quanh hộ tống qua khu vực đông người vào buổi tối, tạo cảm giác tò mò và căng thẳng.",
+  "viral_angle": "Góc khai thác chính là sự tò mò và kịch tính từ một khoảnh khắc ngắn, khi người xem chưa biết chuyện gì xảy ra nhưng bị cuốn vào cách đám đông và lực lượng hộ tống phản ứng.",
+  "viewer_emotion": "Tò mò, hồi hộp và muốn xem đến cuối để hiểu tình huống",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Ban đầu chỉ tưởng là một người đang được dẫn qua đám đông.",
+      "visual_description": "Khung cảnh buổi tối bên ngoài một khu nhà, có nhiều người đứng xung quanh và một số người mặc đồng phục xuất hiện trong khung hình."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Nhưng càng nhìn kỹ, mọi ánh mắt gần như đều đổ dồn về người đàn ông mặc đồ đen, đội mũ trắng.",
+      "visual_description": "Người đàn ông mặc đồ đen, đội mũ trắng bước ra từ khu vực bên trong, xung quanh có nhiều người đi sát."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều gây chú ý là anh ấy không đi một mình, mà được nhiều người áp sát để giữ lối đi và kiểm soát đám đông.",
+      "visual_description": "Lực lượng chức năng và những người bên cạnh di chuyển sát nhau, tạo thành một vòng hộ tống quanh người đàn ông."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Máy quay rung lên theo từng bước chân, khiến khoảnh khắc ngắn này càng giống một tình huống đang rất căng.",
+      "visual_description": "Góc quay chuyển động nhanh, đám đông dịch chuyển theo đoàn người, hình ảnh có lúc bị che khuất."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Và chính sự im lặng đầy tò mò đó mới khiến người xem muốn biết: trước đó đã có chuyện gì xảy ra.",
+      "visual_description": "Đoàn người tiếp tục đi ra xa, người đàn ông mặc đồ đen được hộ tống rời khỏi khu vực đông người."
+    }
+  ]
+}

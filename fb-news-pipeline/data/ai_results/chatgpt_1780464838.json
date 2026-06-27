@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Khoảnh khắc nhỏ nhưng ai xem cũng thấy mình trong đó",
+  "hook": "Có những chuyện nhìn qua tưởng rất bình thường, nhưng chỉ cần xảy ra một lần thôi là ai cũng nhớ mãi.",
+  "script_voice": "Có lẽ ai trong chúng ta cũng từng có một khoảnh khắc như thế này. Ban đầu chỉ là một việc rất nhỏ, tưởng sẽ trôi qua nhanh như bao chuyện bình thường khác. Nhưng càng nhìn kỹ, người ta lại càng thấy quen. Quen ở cách mình lúng túng, quen ở cảm giác không biết nên làm gì tiếp theo, và quen cả ở sự im lặng sau đó. Điều khiến video này giữ chân người xem không phải vì nó quá đặc biệt, mà vì nó chạm đúng vào một trải nghiệm mà rất nhiều người từng trải qua. Đôi khi, chỉ một khoảnh khắc đời thường cũng đủ làm mình bật cười, rồi bất chợt nhận ra: hóa ra không chỉ riêng mình từng như vậy.",
+  "main_idea": "Video khai thác một khoảnh khắc đời thường mà nhiều người từng trải qua, tạo cảm giác gần gũi và dễ đồng cảm.",
+  "viral_angle": "Góc khai thác chính là sự đồng cảm và cảm giác quen thuộc, khiến người xem dễ dừng lại vì thấy chính mình trong tình huống đó.",
+  "viewer_emotion": "Đồng cảm, thích thú và hơi bồi hồi vì nhớ lại trải nghiệm của bản thân.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những chuyện nhìn qua tưởng rất bình thường, nhưng chỉ cần xảy ra một lần thôi là ai cũng nhớ mãi.",
+      "visual_description": "Mở đầu bằng khoảnh khắc chính trong video, tập trung vào hành động hoặc biểu cảm gây tò mò nhất của nhân vật."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Có lẽ ai trong chúng ta cũng từng có một khoảnh khắc như thế này.",
+      "visual_description": "Cận cảnh nhân vật hoặc tình huống đang diễn ra, tạo cảm giác gần gũi như một cảnh đời thường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu chỉ là một việc rất nhỏ, tưởng sẽ trôi qua nhanh như bao chuyện bình thường khác.",
+      "visual_description": "Hiển thị diễn biến ban đầu của sự việc, nhịp hình chậm vừa đủ để người xem hiểu bối cảnh."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng càng nhìn kỹ, người ta lại càng thấy quen. Quen ở cách mình lúng túng, quen ở cảm giác không biết nên làm gì tiếp theo.",
+      "visual_description": "Tập trung vào phản ứng, biểu cảm hoặc hành động khiến tình huống trở nên đáng chú ý hơn."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Điều khiến video này giữ chân người xem không phải vì nó quá đặc biệt, mà vì nó chạm đúng vào một trải nghiệm mà rất nhiều người từng trải qua.",
+      "visual_description": "Chuyển sang đoạn cao trào hoặc khoảnh khắc khiến người xem nhận ra điểm quen thuộc của tình huống."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đôi khi, chỉ một khoảnh khắc đời thường cũng đủ làm mình bật cười, rồi bất chợt nhận ra: hóa ra không chỉ riêng mình từng như vậy.",
+      "visual_description": "Kết bằng hình ảnh rõ cảm xúc nhất trong video, giữ lại dư âm nhẹ nhàng và dễ đồng cảm."
+    }
+  ]
+}

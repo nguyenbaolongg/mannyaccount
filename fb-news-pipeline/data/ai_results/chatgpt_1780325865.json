@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Cậu em bật khóc trong ngày chị gái được dạm ngõ",
+  "hook": "Vừa tan học về nhà, cậu bé chỉ nghĩ hôm nay cũng như mọi ngày, cho đến khi nhìn thấy chị gái đứng cạnh một người lạ trong lễ dạm ngõ.",
+  "script_voice": "Vừa tan học trở về, cậu bé bước vào sân nhà và thấy mọi thứ khác hẳn ngày thường. Hoa được đặt trước cửa, người lớn đứng đông hơn, còn chị gái thì mặc áo dài, đứng bên cạnh chú rể tương lai. Không ai kịp báo trước cho em biết chuyện này. Ban đầu em chỉ đứng nhìn, rồi bất chợt hiểu ra chị mình sắp có một gia đình riêng. Khoảnh khắc ấy, em không kìm được mà bật khóc nức nở. Chị gái phải ngồi xuống dỗ dành, ôm em vào lòng thật lâu. Có lẽ với em, đó không chỉ là một buổi dạm ngõ, mà là giây phút nhận ra người chị thân quen sắp rời khỏi vòng tay gia đình.",
+  "main_idea": "Cậu bé đi học về và bất ngờ chứng kiến gia đình đang tổ chức lễ dạm ngõ cho chị gái. Vì không được báo trước và xúc động trước việc chị sắp lấy chồng, cậu bé bật khóc khiến chị phải dỗ dành.",
+  "viral_angle": "Góc khai thác cảm động và bất ngờ, tập trung vào phản ứng chân thật của người em khi nhận ra chị gái sắp bước sang một cuộc sống mới.",
+  "viewer_emotion": "Xúc động, thương em bé và đồng cảm với tình cảm chị em trong gia đình.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Vừa tan học trở về, cậu bé bước vào sân nhà và thấy mọi thứ khác hẳn ngày thường.",
+      "visual_description": "Cảnh sân nhà có xe đạp, lối vào quen thuộc và không khí gia đình đang chuẩn bị cho một sự kiện."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Hoa được đặt trước cửa, người lớn đứng đông hơn, còn chị gái thì mặc áo dài, đứng bên cạnh chú rể tương lai.",
+      "visual_description": "Chị gái mặc áo dài đứng cùng người nam trong buổi dạm ngõ, xung quanh có hoa và người thân."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Không ai kịp báo trước cho em biết chuyện này. Ban đầu em chỉ đứng nhìn, rồi bất chợt hiểu ra chị mình sắp có một gia đình riêng.",
+      "visual_description": "Cậu bé đeo cặp đi học đứng gần cửa, nhìn chị gái và mọi người với vẻ bối rối."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Khoảnh khắc ấy, em không kìm được mà bật khóc nức nở. Chị gái phải ngồi xuống dỗ dành, ôm em vào lòng thật lâu.",
+      "visual_description": "Cậu bé ngồi trong nhà, cúi mặt khóc, chị gái ngồi cạnh ôm vai và nhẹ nhàng an ủi."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có lẽ với em, đó không chỉ là một buổi dạm ngõ, mà là giây phút nhận ra người chị thân quen sắp rời khỏi vòng tay gia đình.",
+      "visual_description": "Chị gái tiếp tục dỗ em, người thân đứng xung quanh, tạo cảm giác vừa vui vừa xúc động."
+    }
+  ]
+}

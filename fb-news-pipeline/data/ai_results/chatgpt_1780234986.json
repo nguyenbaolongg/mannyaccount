@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Ra mắt nhà bạn gái, anh liền trổ tài sửa xe và cái kết khiến cả nhà đứng hình",
+  "hook": "Lần đầu về ra mắt mà gặp ngay chiếc xe hỏng, anh tưởng đây là cơ hội ghi điểm, ai ngờ lại thành màn xử lý khó quên.",
+  "script_voice": "Lần đầu về nhà bạn gái, ai cũng muốn để lại ấn tượng thật tốt. Thấy chiếc xe của mẹ bạn gái gặp trục trặc, anh chàng lập tức xắn tay vào sửa, phong thái rất tự tin như thể mọi chuyện nằm trong tầm kiểm soát. Bạn gái thì đứng quay lại, gia đình cũng hồi hộp nhìn theo, tưởng đâu sắp có một màn ghi điểm tuyệt đối. Nhưng càng về sau, không khí bắt đầu lạ dần. Từ một pha giúp đỡ tưởng rất đẹp, mọi thứ bất ngờ rẽ sang hướng không ai đoán trước. Và khi chiếc xe bốc khói, cả câu chuyện chỉ còn lại một bài học rất rõ: nhiệt tình là tốt, nhưng có những việc không chắc thì đừng vội thể hiện.",
+  "main_idea": "Video kể về một chàng trai lần đầu về ra mắt nhà bạn gái, thấy xe của mẹ bạn gái bị hỏng nên chủ động sửa để ghi điểm, nhưng kết quả lại trở thành tình huống dở khóc dở cười khi chiếc xe bốc cháy.",
+  "viral_angle": "Tình huống hài hước có cú bẻ lái bất ngờ, từ màn ghi điểm ra mắt gia đình thành pha tài lanh gây náo loạn.",
+  "viewer_emotion": "Bất ngờ, hài hước và vừa thương vừa buồn cười trước sự nhiệt tình quá mức của chàng trai.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Lần đầu về nhà bạn gái, ai cũng muốn để lại ấn tượng thật tốt.",
+      "visual_description": "Cô gái cầm điện thoại quay selfie, phía sau là sân nhà và chiếc xe đang được kiểm tra."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Thấy chiếc xe của mẹ bạn gái gặp trục trặc, anh chàng lập tức xắn tay vào sửa.",
+      "visual_description": "Chàng trai ngồi cạnh chiếc xe máy, tập trung thao tác trong khi người nhà đứng quan sát."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Phong thái thì rất tự tin, như thể đây chính là cơ hội ghi điểm trước cả gia đình.",
+      "visual_description": "Bạn gái mỉm cười quay lại cảnh anh đang sửa xe, không khí ban đầu khá vui vẻ."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng càng về sau, mọi chuyện bắt đầu không còn giống một màn cứu nguy nữa.",
+      "visual_description": "Khung hình vẫn ở sân nhà, chàng trai tiếp tục loay hoay bên chiếc xe, gia đình đứng nhìn với vẻ chờ đợi."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Từ một pha giúp đỡ tưởng rất đẹp, mọi thứ bất ngờ rẽ sang hướng không ai đoán trước.",
+      "visual_description": "Cảnh chuyển ra ngoài đường, chiếc xe bốc khói đen dày đặc."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Và khi chiếc xe bốc cháy, cả câu chuyện chỉ còn lại một bài học: nhiệt tình là tốt, nhưng không chắc thì đừng vội thể hiện.",
+      "visual_description": "Chiếc xe cháy bên lề đường, khói đen bay lên cao, tạo thành cái kết gây sốc và hài hước cho video."
+    }
+  ]
+}

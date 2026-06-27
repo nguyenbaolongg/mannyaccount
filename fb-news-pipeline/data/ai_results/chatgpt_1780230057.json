@@ -1,0 +1,46 @@
+{
+  "title_tiktok": "Hậu trường khiến clip câu view ở Việt Nam bị bóc trần",
+  "hook": "Nhìn qua tưởng chỉ là một clip đời thường, nhưng góc quay phía sau lại khiến nhiều người phải khựng lại.",
+  "script_voice": "Nhìn qua, ai cũng nghĩ đây chỉ là một khoảnh khắc rất bình thường trên phố. Một tiktoker nước ngoài tiến lại gần một cô gái, nói chuyện, đưa giấy và hướng dẫn cô đứng đúng vị trí. Nhưng điều khiến mọi người chú ý không nằm ở cảnh trước ống kính, mà là những gì xảy ra phía sau. Cô gái đứng yên, chờ tín hiệu, còn người quay thì di chuyển sang vị trí khác để bắt góc. Mọi thứ trông không còn giống một khoảnh khắc tự nhiên nữa, mà giống một cảnh đã được sắp đặt để tạo cảm xúc. Và khi đoạn hậu trường bị người đi đường ghi lại, cư dân mạng mới bắt đầu đặt câu hỏi: rốt cuộc đây là nội dung nhân văn thật sự, hay chỉ là một màn dựng chuyện để lấy lượt xem?",
+  "main_idea": "Video ghi lại hậu trường một tiktoker nước ngoài tại Việt Nam đang dàn dựng bối cảnh với một cô gái để làm nội dung, khiến cư dân mạng nghi ngờ đây là clip câu view không tự nhiên.",
+  "viral_angle": "Góc khai thác gây tò mò và bóc trần sự thật phía sau một clip tưởng như cảm động hoặc đời thường.",
+  "viewer_emotion": "Bất ngờ, nghi ngờ và có phần bức xúc trước cách làm nội dung bị cho là dàn dựng để câu view.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn qua tưởng chỉ là một clip đời thường, nhưng góc quay phía sau lại khiến nhiều người phải khựng lại.",
+      "visual_description": "Một tiktoker nước ngoài mặc đồ vàng đang đứng nói chuyện với một cô gái mặc đồ đen trên vỉa hè."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Người đàn ông tiến lại gần, đưa giấy và liên tục ra hiệu như đang hướng dẫn cô gái đứng đúng vị trí.",
+      "visual_description": "Tiktoker cầm vật trên tay, chỉ dẫn cho cô gái trong khi cô nhìn theo và làm theo hướng dẫn."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, mọi thứ có thể khiến người xem nghĩ đây là một khoảnh khắc ngẫu nhiên ngoài phố.",
+      "visual_description": "Cô gái đứng một mình trên vỉa hè, tay cầm giấy, xung quanh có người đi bộ qua lại."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng càng xem kỹ, chi tiết phía sau càng khiến câu chuyện trở nên khác hẳn.",
+      "visual_description": "Một người đàn ông khác cầm điện thoại hoặc máy quay xuất hiện ở phía đối diện, chuẩn bị ghi hình."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Cô gái di chuyển theo hướng được sắp đặt, còn người quay thì đổi góc để lấy được khung hình mong muốn.",
+      "visual_description": "Cô gái bước xuống gần mép đường, người quay đứng phía trước và cúi xuống để căn góc quay."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Từ một cảnh tưởng như tự nhiên, đoạn video lại giống một màn dựng nội dung để tạo cảm xúc hơn.",
+      "visual_description": "Người quay tiếp tục ghi hình cô gái khi cô đứng theo vị trí đã được hướng dẫn."
+    },
+    {
+      "scene_number": 7,
+      "voice_over": "Và khi hậu trường bị ghi lại, cư dân mạng bắt đầu đặt câu hỏi: đây là nội dung nhân văn thật, hay chỉ là chiêu câu view?",
+      "visual_description": "Cảnh quay quay trở lại lúc tiktoker nước ngoài tiếp tục trao đổi và hướng dẫn cô gái."
+    }
+  ]
+}

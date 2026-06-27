@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Buổi tổng kết đang bình thường, cho đến khi dàn trống xuất hiện một nhân vật không ai ngờ",
+  "hook": "Cả sân trường đang xem tiết mục tổng kết, nhưng mọi ánh mắt lại đổ dồn vào một tay trống rất đặc biệt.",
+  "script_voice": "Ban đầu, ai cũng nghĩ đây chỉ là một tiết mục trống quen thuộc trong buổi tổng kết năm học. Các bạn học sinh đứng thành hàng, cầm dùi trống nghiêm túc chờ nhịp. Nhưng chỉ vài giây sau, người xem bắt đầu chú ý đến một nhân vật rất lạ trong đội hình. Giữa dàn học sinh áo trắng khăn đỏ, một người lớn tuổi cũng đeo trống, đứng cùng các em và đánh nhịp đầy tập trung. Không cần biểu diễn cầu kỳ, chính sự xuất hiện bình thản ấy lại khiến cả khoảnh khắc trở nên đáng nhớ. Một buổi tổng kết tưởng bình thường, cuối cùng lại viral vì sự dễ thương và bất ngờ đến từ tay trống đặc biệt này.",
+  "main_idea": "Video ghi lại tiết mục trống trong buổi tổng kết năm học, gây chú ý vì có một người lớn tuổi tham gia đánh trống cùng các học sinh, tạo nên khoảnh khắc vừa bất ngờ vừa dễ thương.",
+  "viral_angle": "Bất ngờ và hài hước nhẹ nhàng từ sự đối lập giữa dàn học sinh nhỏ tuổi và một tay trống lớn tuổi xuất hiện rất tự nhiên trong đội hình.",
+  "viewer_emotion": "Bất ngờ, thích thú và cảm thấy dễ thương",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Cả sân trường đang theo dõi một tiết mục tổng kết tưởng như rất quen thuộc.",
+      "visual_description": "Khung cảnh sân trường trong buổi tổng kết, phía trước là đội trống chuẩn bị biểu diễn, bên dưới có nhiều người ngồi xem."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Các bạn học sinh đứng thành hàng, ai cũng cầm dùi trống và chờ đúng nhịp.",
+      "visual_description": "Các học sinh mặc đồng phục trắng, đeo khăn đỏ, mang trống nhỏ trước bụng và đứng tập trung."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng càng nhìn kỹ, người xem lại phát hiện trong đội hình có một tay trống rất khác.",
+      "visual_description": "Máy quay lia tới người lớn tuổi đứng giữa các học sinh, đeo trống lớn và cầm dùi trống."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Dù đứng cạnh các em nhỏ, bác vẫn giữ nhịp rất nghiêm túc, gương mặt tập trung như một thành viên chính thức.",
+      "visual_description": "Người lớn tuổi đánh trống cùng đội hình, các học sinh xung quanh cũng đánh theo nhịp biểu diễn."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chính khoảnh khắc bình dị ấy lại khiến buổi tổng kết trở nên viral, vì đôi khi điều đáng nhớ nhất lại đến từ một chi tiết không ai ngờ.",
+      "visual_description": "Toàn cảnh đội trống tiếp tục biểu diễn trước sân trường, tạo cảm giác vui vẻ và đáng yêu."
+    }
+  ]
+}

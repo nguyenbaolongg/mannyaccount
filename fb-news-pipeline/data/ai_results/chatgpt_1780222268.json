@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Dùng một cây gậy gõ lên trần nhà, ai ngờ phát hiện nguy hiểm ngay trên đầu",
+  "hook": "Chỉ một tiếng gõ nhẹ lên trần nhà, cả mảng vữa lớn bất ngờ lộ ra khiến ai xem cũng giật mình.",
+  "script_voice": "Sau vụ việc đau lòng ở Nghệ An, nhiều gia đình bắt đầu nhìn lại chính căn nhà của mình. Trong đoạn video này, một người dùng cây gậy dài gõ thử lên phần trần tưởng như vẫn bình thường. Ban đầu chỉ là vài vết nứt nhỏ, nhưng càng gõ, lớp vữa phía trên càng lộ rõ dấu hiệu bong tróc. Chỉ trong vài giây, một mảng lớn hiện ra ngay trên đầu, cho thấy nguy hiểm có thể đã âm thầm tồn tại từ lâu. Điều khiến nhiều người chú ý không phải là cây gậy, mà là lời nhắc rất thật: có những thứ nhìn bên ngoài vẫn ổn, nhưng nếu không kiểm tra kịp thời, hậu quả có thể rất khó lường.",
+  "main_idea": "Video cho thấy việc kiểm tra trần nhà sau một sự cố đau lòng, khi người dân dùng gậy gõ thử và phát hiện mảng vữa lớn có dấu hiệu bong tróc, tiềm ẩn nguy hiểm.",
+  "viral_angle": "Góc khai thác cảnh báo đời sống, bắt đầu từ hành động rất đơn giản nhưng dẫn đến phát hiện bất ngờ và đáng lo.",
+  "viewer_emotion": "Bất ngờ, lo lắng và cảnh giác hơn với những nguy cơ trong chính ngôi nhà của mình.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Chỉ một tiếng gõ nhẹ lên trần nhà, cả mảng vữa lớn bất ngờ lộ ra khiến ai xem cũng giật mình.",
+      "visual_description": "Máy quay hướng lên trần nhà, một cây gậy dài được đưa lên chạm vào khu vực trần có vài dấu hiệu bất thường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Sau vụ việc đau lòng ở Nghệ An, nhiều gia đình bắt đầu nhìn lại chính căn nhà của mình.",
+      "visual_description": "Khung hình cho thấy căn phòng đơn giản, cửa sổ bên cạnh và phần trần nhà được quay cận cảnh."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, phần trần nhìn qua vẫn khá bình thường, chỉ có vài vết nứt nhỏ rất dễ bị bỏ qua.",
+      "visual_description": "Cây gậy gõ thử quanh khu vực trần, những vết nứt mảnh bắt đầu hiện rõ hơn trên nền trần màu trắng."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng càng kiểm tra, lớp vữa phía trên càng lộ ra dấu hiệu bong tróc đáng lo.",
+      "visual_description": "Một mảng vữa lớn trên trần hiện rõ đường nứt, phần bề mặt bắt đầu tách khỏi lớp nền phía trong."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ trong vài giây, người xem mới nhận ra nguy hiểm có thể đã nằm ngay trên đầu từ rất lâu.",
+      "visual_description": "Máy quay tiến gần hơn vào mảng trần bị bong, cho thấy kích thước mảng vữa khá lớn và có thể rơi xuống."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đoạn video không chỉ là một cảnh kiểm tra nhà, mà còn là lời nhắc mỗi gia đình nên quan sát kỹ những dấu hiệu nhỏ trước khi quá muộn.",
+      "visual_description": "Khung hình cuối lia xuống căn phòng, trên nền nhà có nhiều mảnh vụn, tạo cảm giác cảnh báo rõ ràng."
+    }
+  ]
+}

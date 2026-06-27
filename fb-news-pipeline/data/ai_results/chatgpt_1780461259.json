@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Lần đầu tiên trong lịch sử, một doanh nhân được giao ghế tình báo quyền lực của Mỹ",
+  "hook": "Một quyết định vừa được công bố khiến chính trường Mỹ lập tức chú ý, vì người được chọn không đi lên từ con đường tình báo quen thuộc.",
+  "script_voice": "Một quyết định mới từ Tổng thống Donald Trump đang tạo ra nhiều chú ý tại Mỹ. Thay vì chọn một gương mặt xuất thân thuần túy từ hệ thống tình báo, ông lại bổ nhiệm một doanh nhân vào vị trí giám đốc tình báo quốc gia. Đây là chiếc ghế có ảnh hưởng rất lớn, phụ trách điều phối các cơ quan tình báo và cung cấp thông tin chiến lược cho Nhà Trắng. Chính vì vậy, điều khiến dư luận tò mò không chỉ là cái tên được lựa chọn, mà là cách ông Trump đang phá vỡ lối bổ nhiệm quen thuộc. Với quyết định này, nước Mỹ có thể bước vào một giai đoạn mới, nơi kinh nghiệm kinh doanh được đặt vào trung tâm của một vị trí vốn luôn gắn với an ninh và bí mật quốc gia.",
+  "main_idea": "Video nói về việc Tổng thống Donald Trump bổ nhiệm một doanh nhân làm giám đốc tình báo quốc gia Mỹ, tạo chú ý vì đây là quyết định được mô tả là chưa từng có trong lịch sử.",
+  "viral_angle": "Góc khai thác chính là sự bất ngờ và kịch tính chính trị khi một người có nền tảng kinh doanh được giao vị trí quyền lực trong lĩnh vực tình báo quốc gia.",
+  "viewer_emotion": "Bất ngờ, tò mò và muốn biết quyết định này sẽ ảnh hưởng thế nào đến chính trường Mỹ.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một quyết định vừa được công bố khiến chính trường Mỹ lập tức chú ý, vì người được chọn không đi lên từ con đường tình báo quen thuộc.",
+      "visual_description": "Hình ảnh Tổng thống Donald Trump xuất hiện trong bố cục tin tức, kèm dòng tiêu đề lớn về quyết định bổ nhiệm gây chú ý."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Thay vì chọn một gương mặt xuất thân thuần túy từ hệ thống tình báo, ông Trump lại bổ nhiệm một doanh nhân vào vị trí giám đốc tình báo quốc gia.",
+      "visual_description": "Cận cảnh ông Trump phát biểu trước truyền thông, phía trên có logo và dòng nguồn tin của video."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Đây là chiếc ghế có ảnh hưởng rất lớn, phụ trách điều phối các cơ quan tình báo và cung cấp thông tin chiến lược cho Nhà Trắng.",
+      "visual_description": "Hình ảnh nhân vật được bổ nhiệm trong trang phục vest, xuất hiện với biểu cảm nghiêm nghị giữa bối cảnh chính trị."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều khiến dư luận tò mò không chỉ là cái tên được lựa chọn, mà là cách quyết định này phá vỡ lối bổ nhiệm quen thuộc.",
+      "visual_description": "Hình ảnh người được nhắc đến phát biểu trước nhiều micro, tạo cảm giác đây là một thông báo quan trọng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Với lựa chọn này, nước Mỹ có thể bước vào một giai đoạn mới, nơi kinh nghiệm kinh doanh được đặt vào trung tâm của một vị trí gắn với an ninh quốc gia.",
+      "visual_description": "Hình ảnh ông Trump ngồi tại bàn làm việc, khung hình mang cảm giác quyền lực và kết lại bằng bối cảnh nhân vật trao đổi với báo chí."
+    }
+  ]
+}

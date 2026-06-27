@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Tấm giấy khen vừa mang về đã gặp ngay đối thủ đáng gờm",
+  "hook": "Vừa mới mang giấy khen về khoe cả nhà, cô chị chưa kịp vui lâu thì lúc ngủ dậy đã thấy một cảnh không ai ngờ tới.",
+  "script_voice": "Vừa mới nhận giấy khen sau bao ngày cố gắng, cô chị chắc đang vui lắm, còn đem về nhà khoe như một chiến tích nhỏ của mình. Thế mà chỉ sau một giấc ngủ, mọi chuyện đã rẽ sang hướng không ai đoán trước. Tờ giấy khen nằm trên giường, mép giấy bị cắn nham nhở, còn thủ phạm thì vẫn nằm ngay bên cạnh với gương mặt tỉnh bơ. Nhìn cô chị trùm chăn quay mặt đi là hiểu, vừa thương vừa buồn cười. Mấy tháng chăm chỉ đổi lấy một tờ giấy khen, cuối cùng lại không qua nổi cửa ải của em bé trong nhà.",
+  "main_idea": "Video ghi lại cảnh một bé gái mang giấy khen về nhà khoe nhưng sau khi ngủ dậy thì phát hiện tờ giấy đã bị em nhỏ cắn rách.",
+  "viral_angle": "Tình huống bất ngờ và hài hước trong gia đình, tạo cảm giác vừa thương cô chị vừa buồn cười vì vẻ ngây thơ của em bé.",
+  "viewer_emotion": "Bất ngờ, hài hước và thương nhẹ cho cô chị",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Vừa mới mang giấy khen về khoe cả nhà, cô chị chưa kịp vui lâu thì lúc ngủ dậy đã thấy một cảnh không ai ngờ tới.",
+      "visual_description": "Cận cảnh tờ giấy khen bị rách đặt trên giường, xung quanh là chăn gối và hai em bé nằm cạnh nhau."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Đó là thành quả sau bao ngày đi học chăm chỉ, chắc lúc cầm về nhà em đã tự hào lắm.",
+      "visual_description": "Máy quay giữ vào tờ giấy khen, cho thấy phần chữ và mép giấy đã bị hư hỏng."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng chỉ sau một giấc ngủ, tờ giấy khen đã không còn nguyên vẹn như ban đầu.",
+      "visual_description": "Góc quay chậm vào những phần giấy bị cắn nham nhở, tạo cảm giác bất ngờ cho người xem."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Thủ phạm thì nằm ngay bên cạnh, gương mặt vẫn tỉnh bơ như chưa hề có chuyện gì xảy ra.",
+      "visual_description": "Em bé nằm gần tờ giấy khen, nhìn lên máy quay với vẻ mặt ngây thơ."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Còn cô chị thì quay mặt trùm chăn, nhìn thôi cũng đủ hiểu vừa tiếc vừa bất lực.",
+      "visual_description": "Cô chị nằm quay vào trong, một phần người được che bởi chăn, tạo cảm giác vừa thương vừa buồn cười."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Mấy tháng cố gắng cuối cùng lại thua một cú cắn của em bé, đúng là trong nhà có em nhỏ thì giấy khen cũng phải cất thật kỹ.",
+      "visual_description": "Toàn cảnh chiếc giường với tờ giấy khen rách ở giữa, em bé nằm bên cạnh và không khí gia đình đời thường."
+    }
+  ]
+}

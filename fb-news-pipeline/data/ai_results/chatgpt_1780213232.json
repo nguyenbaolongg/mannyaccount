@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Hàng nghìn người bất ngờ đổ về xem màn diễn tập cứu nạn giữa Hà Nội",
+  "hook": "Một buổi trải nghiệm tưởng bình thường, nhưng càng xem càng thấy hồi hộp đến nghẹt thở.",
+  "script_voice": "Giữa không gian đông kín người, hàng loạt hoạt động phòng cháy chữa cháy và cứu nạn cứu hộ được tái hiện như một tình huống thật. Từ cách dùng vòi phun, leo dây thoát hiểm, đến kỹ năng sơ cứu nạn nhân, mọi người đều được trực tiếp quan sát và trải nghiệm. Không chỉ người lớn, nhiều em nhỏ cũng hào hứng tham gia để hiểu rõ hơn cách tự bảo vệ mình khi gặp sự cố. Điểm đáng chú ý là các khu trải nghiệm công nghệ của lực lượng công an cũng thu hút rất đông người xem. Một sự kiện vừa kịch tính, vừa thiết thực, nhắc nhở rằng kỹ năng an toàn đôi khi có thể cứu cả mạng sống.",
+  "main_idea": "Video ghi lại một sự kiện tuyên truyền và trải nghiệm về phòng cháy chữa cháy, cứu nạn cứu hộ, sơ cứu và các ứng dụng công nghệ của lực lượng công an, thu hút đông đảo người dân tham gia.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Giữa sân lớn đông kín người, một buổi trải nghiệm an toàn đang thu hút sự chú ý đặc biệt.",
+      "visual_description": "Toàn cảnh rất đông người tập trung trong khuôn viên sự kiện, các nhóm đứng theo hàng và theo dõi hoạt động."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Trẻ nhỏ được hướng dẫn cầm vòi phun, thử hóa thân thành chiến sĩ chữa cháy ngoài đời thật.",
+      "visual_description": "Một em nhỏ mặc áo cứu hỏa màu đỏ đang cầm vòi phun, xung quanh có người lớn và lực lượng hỗ trợ quan sát."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Không khí trở nên kịch tính hơn khi các thiết bị cứu hộ chuyên dụng được đưa ra trình diễn.",
+      "visual_description": "Nhiều người đội mũ bảo hộ đứng trên phương tiện cứu hộ, phía dưới có cán bộ hướng dẫn và người dân theo dõi."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Kỹ năng sơ cứu nạn nhân cũng được hướng dẫn trực tiếp, từng động tác đều rất quan trọng.",
+      "visual_description": "Cán bộ cứu hộ hướng dẫn người tham gia thực hiện ép tim trên mô hình nạn nhân trong khu vực trưng bày màu đỏ."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Một số người còn thử leo dây thoát hiểm, trải nghiệm cảm giác xử lý tình huống nguy cấp.",
+      "visual_description": "Người tham gia mặc đai bảo hộ, được hỗ trợ leo dây trên cây trong khu vực có nhiều cán bộ cứu hộ đứng bên dưới."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Sự kiện khép lại với khu công nghệ hiện đại, nơi người dân khám phá thêm các ứng dụng an ninh thông minh.",
+      "visual_description": "Người dân tham quan khu trưng bày công nghệ, có màn hình lớn, thiết bị thực tế ảo và cán bộ công an hướng dẫn."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

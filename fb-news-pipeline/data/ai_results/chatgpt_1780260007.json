@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Câu hỏi tưởng để thị uy và cái kết khiến ai cũng phải suy ngẫm",
+  "hook": "Một người đàn ông đi sai làn, vừa bị CSGT nhắc nhở đã hỏi một câu khiến cả tình huống đổi hướng.",
+  "script_voice": "Một chiếc ô tô di chuyển sai làn trên đường và nhanh chóng bị lực lượng CSGT yêu cầu dừng lại. Ban đầu, mọi chuyện tưởng chỉ là một lỗi giao thông bình thường. Nhưng khi người đàn ông trong xe buông ra câu hỏi: liệu người đối diện có biết mình là ai không, không khí lập tức trở nên căng hơn. Điều khiến nhiều người chú ý không chỉ là câu nói ấy, mà là cách CSGT vẫn giữ thái độ bình tĩnh, xử lý đúng quy trình và không để bất kỳ lời nói nào làm thay đổi bản chất sự việc. Sau cùng, điều đọng lại không phải là người đó là ai, mà là một điều rất rõ: ra đường, sai thì phải chịu trách nhiệm, vì luật giao thông không có ngoại lệ cho bất kỳ ai.",
+  "main_idea": "Video ghi lại tình huống một người đàn ông điều khiển ô tô đi sai làn, bị CSGT nhắc nhở và có câu hỏi gây chú ý, từ đó làm nổi bật cách xử lý bình tĩnh, đúng quy định của lực lượng chức năng.",
+  "viral_angle": "Góc khai thác kịch tính từ một câu nói gây tò mò, sau đó chuyển sang thông điệp công bằng và thượng tôn pháp luật.",
+  "viewer_emotion": "Bất ngờ, căng thẳng nhẹ và đồng tình với cách xử lý đúng nguyên tắc.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một người đàn ông đi sai làn, vừa bị CSGT nhắc nhở đã hỏi một câu khiến cả tình huống đổi hướng.",
+      "visual_description": "Cảnh camera hành trình ghi lại tuyến đường đông phương tiện, một ô tô di chuyển ở làn không phù hợp và tiến gần khu vực có lực lượng CSGT."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi chuyện tưởng chỉ là một lỗi giao thông bình thường, nhưng câu hỏi của người trong xe khiến không khí căng lên rõ rệt.",
+      "visual_description": "Hình ảnh xe giảm tốc, CSGT đứng phía trước ra hiệu dừng phương tiện, các xe khác vẫn di chuyển xung quanh."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều đáng chú ý là CSGT không tranh cãi, không bị cuốn theo lời nói ấy, mà vẫn giữ thái độ bình tĩnh và xử lý theo đúng quy trình.",
+      "visual_description": "Cảnh lực lượng CSGT đứng làm nhiệm vụ, trao đổi với tài xế trong bối cảnh đường phố đang lưu thông."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cao trào của video nằm ở chỗ, câu hỏi tưởng như để tạo sức ép lại không làm thay đổi bản chất sự việc.",
+      "visual_description": "Cận cảnh phương tiện dừng lại gần khu vực kiểm tra, không khí trên đường có phần căng nhưng trật tự."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Sau cùng, người xem nhớ nhất không phải người đó là ai, mà là bài học rất rõ: đã tham gia giao thông, sai thì phải chịu trách nhiệm.",
+      "visual_description": "Cảnh phương tiện tiếp tục lưu thông trên đường, khép lại bằng hình ảnh giao thông trở lại bình thường."
+    }
+  ]
+}

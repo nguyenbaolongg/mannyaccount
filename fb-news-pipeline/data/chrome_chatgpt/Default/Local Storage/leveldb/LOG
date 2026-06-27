@@ -1,0 +1,17 @@
+2026/06/03-13:08:35.405 37e254 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/fb-news-pipeline/data/chrome_chatgpt/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/03-13:08:35.413 37e254 Recovering log #450
+2026/06/03-13:08:35.413 37e254 Level-0 table #453: started
+2026/06/03-13:08:35.416 37e254 Level-0 table #453: 13098 bytes OK
+2026/06/03-13:08:35.418 37e254 Delete type=0 #450
+2026/06/03-13:08:35.418 37e257 Compacting 4@0 + 1@1 files
+2026/06/03-13:08:35.421 37e257 Generated table #455@0: 17 keys, 24714 bytes
+2026/06/03-13:08:35.422 37e257 Compacted 4@0 + 1@1 files => 24714 bytes
+2026/06/03-13:08:35.423 37e257 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/03-13:08:35.423 37e257 Delete type=2 #451
+2026/06/03-13:08:35.423 37e257 Delete type=2 #445
+2026/06/03-13:08:35.423 37e257 Delete type=2 #453
+2026/06/03-13:08:35.423 37e257 Delete type=2 #448
+2026/06/03-13:08:35.423 37e257 Delete type=2 #443
+2026/06/03-13:09:35.421 37e257 Level-0 table #457: started
+2026/06/03-13:09:35.425 37e257 Level-0 table #457: 21049 bytes OK
+2026/06/03-13:09:35.428 37e257 Delete type=0 #454

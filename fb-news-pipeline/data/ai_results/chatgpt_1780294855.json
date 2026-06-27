@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Cú ném dép khiến cả sân đứng hình",
+  "hook": "Tưởng chỉ là một con vật nhỏ chạy ngang sân, nhưng phản ứng của anh áo đen mới là thứ khiến ai xem cũng phải bật cười.",
+  "script_voice": "Tưởng mọi chuyện chỉ là một khoảnh khắc rất bình thường trong sân nhà. Một con vật nhỏ bất ngờ xuất hiện, chạy qua chạy lại khiến không khí bắt đầu hơi căng. Đúng lúc đó, anh áo đen lao ra rất nhanh, dáng vẻ như chuẩn bị xử lý một tình huống cực kỳ nghiêm trọng. Nhưng cao trào nằm ở cú ném dép sau đó. Không do dự, không chần chừ, anh vung tay một phát dứt khoát như đã luyện tập từ lâu. Điều buồn cười là sau cú ném ấy, anh lại đứng khựng rồi ngồi xuống quan sát rất nghiêm túc. Một pha xử lý vừa quyết liệt, vừa hài đến mức xem lại mấy lần vẫn thấy mắc cười.",
+  "main_idea": "Video ghi lại cảnh một người đàn ông phát hiện con vật nhỏ trong sân và nhanh chóng ném dép để xử lý tình huống, tạo nên khoảnh khắc hài hước vì hành động quá dứt khoát.",
+  "viral_angle": "Hài hước từ phản ứng bất ngờ và cú ném dép quá quyết đoán trong một tình huống đời thường.",
+  "viewer_emotion": "Bất ngờ, buồn cười và thích thú trước pha xử lý rất tự nhiên.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng chỉ là một con vật nhỏ chạy ngang sân, nhưng phản ứng của anh áo đen mới là thứ khiến ai xem cũng phải bật cười.",
+      "visual_description": "Góc camera giám sát nhìn xuống sân nhà, một con vật nhỏ di chuyển trên nền sân, xung quanh có cây cối và đồ sinh hoạt."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu mọi thứ vẫn khá bình thường, cho đến khi con vật cứ chạy qua chạy lại khiến tình huống bắt đầu trở nên khó lường.",
+      "visual_description": "Con vật nhỏ di chuyển nhanh trong sân, tạo cảm giác bất ngờ và thu hút sự chú ý."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Đúng lúc đó, anh áo đen lao ra rất nhanh, dáng vẻ như chuẩn bị xử lý một chuyện cực kỳ nghiêm trọng.",
+      "visual_description": "Người đàn ông mặc áo đen xuất hiện từ phía bên trái, bước nhanh về phía giữa sân."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Cao trào là cú ném dép không hề do dự, vung tay một phát dứt khoát như đã tính sẵn từ trước.",
+      "visual_description": "Người đàn ông giơ tay và ném dép về phía con vật nhỏ trong sân."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Nhưng sau cú ném ấy, anh lại đứng khựng rồi ngồi xuống quan sát rất nghiêm túc, khiến khoảnh khắc càng buồn cười hơn.",
+      "visual_description": "Người đàn ông ngồi xuống gần khu vực vừa ném dép, chăm chú nhìn vào mặt sân."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một pha xử lý vừa quyết liệt, vừa hài đến mức xem lại mấy lần vẫn thấy mắc cười.",
+      "visual_description": "Khung hình giữ lại cảnh người đàn ông ngồi trong sân, tạo cảm giác kết thúc hài hước và đời thường."
+    }
+  ]
+}

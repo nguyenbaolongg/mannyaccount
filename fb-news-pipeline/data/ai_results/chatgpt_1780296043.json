@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Người phụ nữ cào mặt đường giữa lúc xe lu đang thi công",
+  "hook": "Một con đường vừa được rải xong, xe lu còn chưa kịp đi xa, thì người phụ nữ này đã làm một hành động khiến cả mạng xã hội phải dừng lại xem.",
+  "script_voice": "Một đoạn đường trong khu dân cư đang được công nhân thi công, vật liệu còn mới và xe lu vẫn hoạt động ngay phía trước. Nhưng giữa lúc đó, một người phụ nữ bất ngờ bước ra, cầm dụng cụ cào phần vật liệu sát mép đường. Ban đầu, ai cũng tưởng bà chỉ đang dọn lại phần trước cửa nhà. Nhưng càng nhìn kỹ, hành động này lại khiến nhiều người tranh luận dữ dội. Bởi đây không còn là chuyện nhỏ trước cổng nhà, mà liên quan đến cả mặt đường vừa được làm cho khu dân cư. Điều khiến người xem chú ý nhất là sự việc diễn ra ngay khi công nhân vẫn còn ở đó, còn chiếc xe lu vẫn đang thi công phía xa. Một khoảnh khắc ngắn, nhưng đủ khiến dân mạng đặt câu hỏi: vì sao bà lại làm vậy ngay lúc đường chưa hoàn thiện?",
+  "main_idea": "Video ghi lại cảnh một người phụ nữ dùng dụng cụ cào phần vật liệu làm đường khi công nhân và xe lu vẫn đang thi công trên tuyến đường trong khu dân cư.",
+  "viral_angle": "Góc khai thác chính là sự bất ngờ và gây tranh luận, vì hành động diễn ra ngay lúc công trình đường đang được thi công.",
+  "viewer_emotion": "Bất ngờ, tò mò và bức xúc nhẹ",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một con đường vừa được rải xong, xe lu còn chưa kịp đi xa, thì người phụ nữ này đã làm một hành động khiến cả mạng xã hội phải dừng lại xem.",
+      "visual_description": "Máy quay lia qua đoạn đường mới rải vật liệu, mặt đường còn đen và chưa hoàn thiện, phía xa có xe thi công."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Trong lúc công nhân vẫn đang làm việc, người phụ nữ bước ra sát mép đường, cầm dụng cụ rồi bắt đầu cào phần vật liệu trước khu vực nhà mình.",
+      "visual_description": "Người phụ nữ mặc áo dài tay, đội mũ che kín, đi ủng và cúi xuống dùng dụng cụ cào vật liệu ở mép đường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Ban đầu, nhiều người có thể nghĩ bà chỉ đang dọn lại phần trước cửa cho gọn. Nhưng càng xem, tình huống càng khiến người ta thấy khó hiểu.",
+      "visual_description": "Cận cảnh phần vật liệu bị kéo ra sát vỉa hè, người phụ nữ tiếp tục cào trong khi mặt đường còn mới."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điểm gây chú ý là chiếc xe lu vẫn còn ở ngay phía trước, nghĩa là công trình chưa hề kết thúc.",
+      "visual_description": "Khung hình rộng cho thấy xe lu màu vàng ở phía xa, công nhân di chuyển trên đường và người phụ nữ vẫn đang cào ở gần mép đường."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ một hành động ngắn, nhưng đủ khiến dân mạng tranh luận dữ dội: đây là dọn dẹp bình thường, hay đang làm ảnh hưởng đến phần đường vừa thi công?",
+      "visual_description": "Máy quay giữ cảnh người phụ nữ tiếp tục cào vật liệu, phía sau là con đường dân cư đang được hoàn thiện."
+    }
+  ]
+}

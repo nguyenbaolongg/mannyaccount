@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Sóng biển ở Nhật Bản sau bão nhìn như bức tường khổng lồ",
+  "hook": "Nhìn từ xa, ai cũng tưởng đây chỉ là biển động bình thường sau bão, nhưng càng nhìn kỹ mới thấy từng đợt sóng đang dựng lên đáng sợ ngay sát khu dân cư.",
+  "script_voice": "Nhìn từ xa, ai cũng tưởng đây chỉ là biển động bình thường sau bão, nhưng càng nhìn kỹ mới thấy từng đợt sóng đang dựng lên đáng sợ ngay sát khu dân cư. Sau khi một cơn bão lớn đổ bộ vào Nhật Bản, mặt biển không còn êm như thường ngày. Nước đục ngầu, sóng cuộn từng lớp, ngoài khơi liên tục xuất hiện những mảng trắng khổng lồ như đang nuốt lấy đường chân trời. Điều khiến người xem rùng mình là cây cầu và những ngôi nhà nhỏ bé vẫn nằm ngay cạnh vùng biển dữ. Chỉ vài giây hình ảnh thôi cũng đủ thấy sức mạnh của thiên nhiên lớn đến mức nào, và vì sao sau mỗi cơn bão, biển luôn là nơi không thể xem thường.",
+  "main_idea": "Video ghi lại cảnh biển ở Nhật Bản sau khi một cơn bão lớn đi qua, với sóng cao, nước biển đục và khung cảnh ven biển đầy dữ dội.",
+  "viral_angle": "Khai thác sự choáng ngợp và căng thẳng trước sức mạnh của thiên nhiên, đặc biệt là hình ảnh sóng lớn áp sát khu dân cư và cây cầu ven biển.",
+  "viewer_emotion": "Bất ngờ, hồi hộp và rùng mình trước cảnh biển dữ sau bão",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn từ xa, ai cũng tưởng đây chỉ là biển động bình thường sau bão, nhưng càng nhìn kỹ mới thấy từng đợt sóng đang dựng lên đáng sợ ngay sát khu dân cư.",
+      "visual_description": "Toàn cảnh vùng ven biển Nhật Bản sau bão, phía trước là cây cầu, phía xa là biển động mạnh và bầu trời nhiều mây."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Sau khi một cơn bão lớn đổ bộ vào Nhật Bản, mặt biển không còn êm như thường ngày.",
+      "visual_description": "Máy quay hướng ra biển, nước biển chuyển màu đục, mặt nước xáo động liên tục."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nước đục ngầu, sóng cuộn từng lớp, ngoài khơi liên tục xuất hiện những mảng trắng khổng lồ như đang nuốt lấy đường chân trời.",
+      "visual_description": "Những đợt sóng lớn ngoài khơi nối tiếp nhau, bọt trắng phủ lên mặt biển."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều khiến người xem rùng mình là cây cầu và những ngôi nhà nhỏ bé vẫn nằm ngay cạnh vùng biển dữ.",
+      "visual_description": "Khung hình cho thấy cây cầu, đường ven biển và khu nhà nhỏ nằm rất gần khu vực sóng lớn."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ vài giây hình ảnh thôi cũng đủ thấy sức mạnh của thiên nhiên lớn đến mức nào, và vì sao sau mỗi cơn bão, biển luôn là nơi không thể xem thường.",
+      "visual_description": "Toàn cảnh biển sau bão với sóng lớn trải rộng, tạo cảm giác thiên nhiên áp đảo con người."
+    }
+  ]
+}

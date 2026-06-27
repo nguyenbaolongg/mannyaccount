@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Mẹ không tin app báo mưa, cái kết chạy không kịp",
+  "hook": "Chỉ vì nghĩ trời chưa mưa ngay đâu, người mẹ vẫn để thóc ngoài sân, nhưng vài phút sau cả nhà phải lao ra cứu vội.",
+  "script_voice": "Chỉ vì nghĩ trời chưa mưa ngay đâu, người mẹ vẫn để thóc ngoài sân, nhưng vài phút sau cả nhà phải lao ra cứu vội. Trước đó, người con đã dùng công nghệ để báo rằng mưa sắp tới, nhưng mẹ vẫn chưa tin. Sân nhà lúc ấy còn đầy thóc đang phơi, mọi thứ tưởng như vẫn kịp. Thế rồi mưa bất ngờ đổ xuống, nền sân ướt dần, thóc bắt đầu bị thấm nước. Từ một lời nhắc tưởng đơn giản, cả nhà phải cuống cuồng cào, quét, xúc từng mẻ thóc vào thùng. Đoạn kết vừa buồn cười vừa quen thuộc, vì đôi khi công nghệ nói đúng thật, nhưng mẹ thì phải thấy mưa rơi mới tin.",
+  "main_idea": "Video ghi lại cảnh người mẹ không tin lời con báo mưa bằng công nghệ nên vẫn để thóc ngoài sân, đến khi mưa thật sự rơi thì cả nhà phải vội vàng thu dọn.",
+  "viral_angle": "Tình huống đời thường hài hước, bất ngờ và rất quen thuộc giữa mẹ và công nghệ.",
+  "viewer_emotion": "Vừa buồn cười, vừa đồng cảm vì câu chuyện rất gần gũi trong gia đình.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Chỉ vì nghĩ trời chưa mưa ngay đâu, người mẹ vẫn để thóc ngoài sân, nhưng vài phút sau cả nhà phải lao ra cứu vội.",
+      "visual_description": "Góc camera an ninh nhìn xuống sân nhà rộng, nhiều lớp thóc đang được phơi trên nền gạch, một người phụ nữ đang đứng gần xe rùa giữa sân."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Trước đó, người con đã dùng công nghệ để báo rằng mưa sắp tới, nhưng mẹ vẫn chưa tin.",
+      "visual_description": "Người phụ nữ tiếp tục đi lại trong sân, xung quanh là thóc phơi rải rộng, trời bên ngoài bắt đầu âm u."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Sân nhà lúc ấy còn đầy thóc đang phơi, mọi thứ tưởng như vẫn kịp.",
+      "visual_description": "Toàn cảnh sân nhà với nhiều mảng thóc vàng nằm trên nền gạch, dụng cụ cào và chổi được đặt gần khu vực hiên."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Thế rồi mưa bất ngờ đổ xuống, nền sân ướt dần, thóc bắt đầu bị thấm nước.",
+      "visual_description": "Nền sân xuất hiện nhiều vệt nước, không khí mờ hơn vì mưa, người trong nhà bắt đầu di chuyển nhanh ra sân."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Từ một lời nhắc tưởng đơn giản, cả nhà phải cuống cuồng cào, quét, xúc từng mẻ thóc vào thùng.",
+      "visual_description": "Hai người phối hợp dùng chổi, cào và thùng nhựa để gom thóc trên sân, động tác nhanh và gấp gáp."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Đoạn kết vừa buồn cười vừa quen thuộc, vì đôi khi công nghệ nói đúng thật, nhưng mẹ thì phải thấy mưa rơi mới tin.",
+      "visual_description": "Người trong sân tiếp tục thu dọn những phần thóc còn lại, một người cúi xuống xúc thóc vào thùng khi trời vẫn còn ẩm ướt."
+    }
+  ]
+}

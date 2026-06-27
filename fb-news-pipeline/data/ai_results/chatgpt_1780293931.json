@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Không nói yêu, nhưng âm thầm sửa cả lối đi cho người thương",
+  "hook": "Có những người không bao giờ nói lời ngọt ngào, nhưng cách họ quan tâm lại khiến người khác nghẹn lòng.",
+  "script_voice": "Ban đầu, đây chỉ là một khoảnh khắc rất bình thường trước sân nhà. Người phụ nữ dắt xe đi qua đoạn nền gồ ghề, vừa khó xoay sở vừa dễ mất thăng bằng. Không có ai nói gì nhiều, cũng chẳng có lời nhắc nhở nào thật lớn. Nhưng sau đó, điều khiến người xem chú ý là mấy người đàn ông lặng lẽ bắt tay vào sửa lại lối đi. Từng viên gạch, từng mảng nền được chỉnh lại cẩn thận, chỉ để đoạn đường ấy bằng phẳng hơn, an toàn hơn. Cao trào nằm ở khoảnh khắc người phụ nữ quay lại, chạy xe qua lối mới một cách nhẹ nhàng. Không cần một câu yêu thương nào được nói ra, vì đôi khi tình yêu nằm ngay trong những việc nhỏ nhất, âm thầm nhất, nhưng lại ấm lòng nhất.",
+  "main_idea": "Video ghi lại cảnh người đàn ông và người thân lặng lẽ sửa lại lối đi trong sân nhà để người phụ nữ chạy xe dễ dàng và an toàn hơn, thể hiện tình yêu qua hành động âm thầm.",
+  "viral_angle": "Góc khai thác nhân văn và cảm động, nhấn mạnh tình yêu không cần nói thành lời mà thể hiện qua sự quan tâm rất đời thường.",
+  "viewer_emotion": "Xúc động, ấm lòng và trân trọng những hành động yêu thương âm thầm trong gia đình",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Có những người không bao giờ nói lời ngọt ngào, nhưng cách họ quan tâm lại khiến người khác nghẹn lòng.",
+      "visual_description": "Cảnh sân nhà nhìn từ camera, người phụ nữ chuẩn bị dắt xe máy qua khu vực nền không bằng phẳng."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, đây chỉ là một khoảnh khắc rất bình thường trước sân nhà.",
+      "visual_description": "Người phụ nữ xoay sở với chiếc xe máy ở lối ra vào, đoạn nền trước sân còn gồ ghề và khó đi."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng sau đó, mấy người đàn ông trong nhà lặng lẽ bắt tay vào sửa lại lối đi.",
+      "visual_description": "Hai người đàn ông ngồi dưới nền sân, dùng dụng cụ và gạch để chỉnh sửa lại phần lối đi bị hỏng."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Từng viên gạch, từng mảng nền được làm lại cẩn thận, chỉ để đoạn đường ấy bằng phẳng hơn và an toàn hơn.",
+      "visual_description": "Cận cảnh khu vực lối đi được lát lại, các viên gạch và nền mới dần hoàn thiện."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Khoảnh khắc người phụ nữ chạy xe qua lối mới thật nhẹ nhàng, ai xem cũng hiểu: đây chính là yêu thương.",
+      "visual_description": "Người phụ nữ đội mũ bảo hiểm, chạy xe máy qua phần lối đi đã được sửa lại, người đàn ông đứng bên cạnh quan sát."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Không cần một câu yêu nào được nói ra, vì đôi khi tình yêu nằm trong những việc nhỏ nhất, âm thầm nhất.",
+      "visual_description": "Chiếc xe đi ra khỏi cổng, để lại khung cảnh sân nhà yên bình sau khi lối đi đã được sửa xong."
+    }
+  ]
+}

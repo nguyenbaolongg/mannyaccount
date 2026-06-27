@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Khoảnh Khắc Khiến Hơn Hai Trăm Nghìn Người Phải Dừng Lại",
+  "hook": "Tưởng chỉ là một đoạn video bình thường, nhưng chi tiết sau đó mới khiến người xem bất ngờ.",
+  "script_voice": "Ban đầu, mọi thứ diễn ra rất đơn giản, giống như một khoảnh khắc đời thường mà ai cũng có thể lướt qua. Nhưng càng xem, người ta càng nhận ra có điều gì đó rất khác. Một hành động nhỏ, một phản ứng bất ngờ, rồi cả khung hình bỗng trở nên cuốn hút hơn hẳn. Chính sự tự nhiên ấy đã khiến video nhanh chóng thu hút hàng trăm nghìn lượt quan tâm. Không cần dàn dựng cầu kỳ, đôi khi chỉ một khoảnh khắc thật cũng đủ làm người xem nhớ mãi.",
+  "main_idea": "Video gốc có ít thông tin, chỉ thể hiện caption 215K, nên nội dung được phân tích theo hướng một khoảnh khắc đời thường bất ngờ thu hút nhiều lượt xem và tạo cảm xúc mạnh cho người xem.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Tưởng chỉ là một đoạn video bình thường, nhưng chi tiết sau đó mới thật sự gây chú ý.",
+      "visual_description": "Mở đầu bằng khung cảnh chính của video, giữ nhịp chậm để tạo sự tò mò cho người xem."
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Mọi thứ bắt đầu rất tự nhiên, không có dấu hiệu gì cho thấy sắp có chuyện đặc biệt xảy ra.",
+      "visual_description": "Hiển thị bối cảnh tổng thể, nhân vật hoặc sự việc chính xuất hiện trong khung hình."
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Nhưng chỉ sau vài giây, một hành động nhỏ đã khiến ánh mắt người xem không thể rời đi.",
+      "visual_description": "Tập trung vào chi tiết quan trọng trong video, có thể dùng cận cảnh để nhấn mạnh cảm xúc."
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Chính khoảnh khắc bất ngờ ấy đã biến đoạn clip ngắn thành nội dung được chia sẻ liên tục.",
+      "visual_description": "Chuyển sang phân cảnh cao trào, nhấn vào phản ứng hoặc diễn biến đáng chú ý nhất."
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Điều cuốn hút nhất không nằm ở sự cầu kỳ, mà nằm ở cảm giác rất thật trong từng giây hình ảnh.",
+      "visual_description": "Giữ lại những biểu cảm, chuyển động hoặc không khí tự nhiên để tăng độ chân thật."
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Có lẽ vì vậy mà video này đã khiến hàng trăm nghìn người phải dừng lại để xem đến cuối.",
+      "visual_description": "Kết thúc bằng khung hình ấn tượng nhất, tạo cảm giác đọng lại và khuyến khích người xem nhớ nội dung."
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Người đàn ông nước ngoài bất ngờ đập phá quán cà phê ở Đà Nẵng",
+  "hook": "Một buổi ở quán cà phê đang yên bình, bỗng chốc biến thành cảnh hỗn loạn khiến ai xem camera cũng phải giật mình.",
+  "script_voice": "Ban đầu, mọi thứ trong quán cà phê vẫn diễn ra rất bình thường. Khách ngồi tại bàn, không khí khá yên tĩnh, cho đến khi một người đàn ông nước ngoài bất ngờ có hành động mất kiểm soát. Từ bên trong quán, người này bắt đầu đập phá, khiến nhiều người xung quanh hoảng hốt và phải tránh xa. Camera ghi lại toàn bộ diễn biến, từ lúc sự việc bắt đầu cho đến khi không gian quán trở nên lộn xộn. Điều đáng chú ý là hành động này không chỉ gây thiệt hại tài sản, mà còn khiến những người có mặt tại đó rơi vào tình huống nguy hiểm. Sự việc sau đó được chia sẻ rộng rãi, làm nhiều người đặt câu hỏi: vì sao một khoảnh khắc bình thường lại có thể biến thành cảnh tượng căng thẳng đến như vậy?",
+  "main_idea": "Video ghi lại toàn cảnh một người đàn ông nước ngoài có hành vi đập phá tại một quán cà phê ở Đà Nẵng, khiến không gian quán trở nên hỗn loạn và gây chú ý trên mạng xã hội.",
+  "viral_angle": "Khai thác yếu tố bất ngờ và căng thẳng từ một tình huống đời thường bất ngờ chuyển thành vụ việc gây hoang mang.",
+  "viewer_emotion": "Bất ngờ, căng thẳng và tò mò về nguyên nhân phía sau sự việc.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một buổi ở quán cà phê đang yên bình, bỗng chốc biến thành cảnh hỗn loạn khiến ai xem camera cũng phải giật mình.",
+      "visual_description": "Mở đầu bằng hình ảnh camera an ninh trong quán cà phê, khách đang ngồi tại bàn, không gian ban đầu khá bình thường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi thứ trong quán vẫn diễn ra như thường lệ, không ai nghĩ chỉ vài giây sau sẽ xảy ra chuyện.",
+      "visual_description": "Hiển thị góc quay rộng bên trong quán, các bàn ghế và khu vực khách ngồi được camera ghi lại."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Một người đàn ông nước ngoài bất ngờ có hành động mất kiểm soát, khiến những người xung quanh phải chú ý và tránh xa.",
+      "visual_description": "Chuyển sang phân cảnh người đàn ông xuất hiện trong khu vực quán, bắt đầu có hành vi bất thường."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Không khí nhanh chóng trở nên căng thẳng khi đồ đạc trong quán bị tác động, còn những người có mặt chỉ biết giữ khoảng cách để đảm bảo an toàn.",
+      "visual_description": "Cảnh trong quán trở nên lộn xộn hơn, camera ghi lại diễn biến đập phá và phản ứng tránh né của những người xung quanh."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Toàn bộ sự việc được camera ghi lại, khiến nhiều người xem không khỏi thắc mắc điều gì đã dẫn đến hành động gây sốc này.",
+      "visual_description": "Tổng hợp các góc camera an ninh khác nhau, kèm khung tin tức và dòng chữ cảnh báo hành động trong video có dấu hiệu vi phạm pháp luật."
+    }
+  ]
+}

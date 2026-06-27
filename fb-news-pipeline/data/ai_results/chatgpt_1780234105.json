@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Sân khấu thiếu nhi mà hoành tráng như một concert thật sự",
+  "hook": "Nhìn qua tưởng chỉ là một tiết mục vui thôi, nhưng càng xem mới thấy sân khấu này được đầu tư không hề đơn giản.",
+  "script_voice": "Nhìn qua, nhiều người sẽ nghĩ đây chỉ là một màn biểu diễn nhỏ dành cho các bé. Nhưng khi ánh đèn bật lên, màn hình lớn mở ra, âm nhạc vang lên và từng nhân vật xuất hiện trên sân khấu, mọi thứ lại giống hệt một concert được chuẩn bị cực kỳ chỉn chu. Điều gây chú ý nhất là các bạn nhỏ không hề bị ngợp. Có bé cầm micro rất tự tin, có bé bước ra giữa sân khấu như một nghệ sĩ nhí thực thụ, còn khán giả bên dưới thì chăm chú theo dõi từng khoảnh khắc. Từ trang phục, ánh sáng, hiệu ứng cho đến pháo hoa cuối chương trình, tất cả tạo nên cảm giác vừa bất ngờ vừa thích thú. Một sân khấu dành cho trẻ em, nhưng mức độ đầu tư thì thật sự khiến người lớn cũng phải trầm trồ.",
+  "main_idea": "Video ghi lại một sân khấu biểu diễn dành cho các bạn nhỏ với phần dàn dựng, ánh sáng, màn hình, trang phục và hiệu ứng rất hoành tráng, tạo cảm giác như một concert chuyên nghiệp.",
+  "viral_angle": "Góc khai thác nổi bật là sự bất ngờ khi một chương trình có trẻ em biểu diễn lại được đầu tư sân khấu, hiệu ứng và không khí hoành tráng như show lớn.",
+  "viewer_emotion": "Bất ngờ, thích thú và trầm trồ trước sự tự tin của các bạn nhỏ cùng mức độ đầu tư của sân khấu.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn qua tưởng chỉ là một tiết mục vui thôi, nhưng càng xem mới thấy sân khấu này được đầu tư không hề đơn giản.",
+      "visual_description": "Mở đầu với người dẫn đứng trước phông nền sân khấu nhiều màu sắc và hình ảnh các nhân vật biểu diễn."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ánh đèn bật lên, màn hình lớn mở ra, âm nhạc vang khắp không gian và sân khấu bắt đầu biến thành một concert thu nhỏ.",
+      "visual_description": "Cảnh toàn sân khấu với ánh sáng mạnh, màn hình LED lớn, vũ công và các nhân vật biểu diễn xuất hiện."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều bất ngờ là các bạn nhỏ không hề bị ngợp. Có bé cầm micro rất tự tin, bước ra sân khấu như một nghệ sĩ nhí thực thụ.",
+      "visual_description": "Cận cảnh các bé đứng trên sân khấu, cầm micro, tương tác với người dẫn và khán giả."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Bên dưới, khán giả chăm chú theo dõi từng khoảnh khắc, còn trên sân khấu là trang phục, đạo cụ và hiệu ứng được chuẩn bị rất chỉn chu.",
+      "visual_description": "Cảnh khán giả đứng xem, xen kẽ với các tiết mục có trang phục nổi bật, đạo cụ lớn và ánh sáng sân khấu."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Từ những màn xuất hiện bất ngờ cho đến khoảnh khắc pháo hoa bừng sáng, tất cả khiến người xem phải trầm trồ.",
+      "visual_description": "Cảnh sân khấu về cuối chương trình với ánh sáng rực rỡ, pháo hoa và không khí sôi động."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một chương trình dành cho trẻ em, nhưng độ hoành tráng thì chẳng khác gì một show diễn chuyên nghiệp thật sự.",
+      "visual_description": "Kết bằng hình ảnh sân khấu rộng, các bé và người biểu diễn cùng đứng dưới ánh đèn lớn."
+    }
+  ]
+}

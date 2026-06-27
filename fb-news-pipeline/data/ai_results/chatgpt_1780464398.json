@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Tưởng chỉ hái quả ai ngờ cả cành cây đổ sập",
+  "hook": "Mới nhìn tưởng hai cô gái chỉ đang hái quả bình thường, nhưng ngay giây đầu tiên, cái cành cây đã có dấu hiệu rất không ổn.",
+  "script_voice": "Mới nhìn tưởng hai cô gái chỉ đang hái quả bình thường, nhưng ngay giây đầu tiên, cái cành cây đã có dấu hiệu rất không ổn. Một người đứng dưới dùng cây kéo xuống, người còn lại thì đưa tay đỡ lấy quả đang lủng lẳng trên cao. Mọi thứ tưởng như chỉ cần với thêm một chút là xong. Nhưng càng kéo, cả tán cây càng rung mạnh. Và chỉ vài giây sau, điều ai cũng lo đã xảy ra. Cả một mảng cành lớn bất ngờ đổ ập xuống, phủ kín cả khu vườn. Hai người bên dưới chỉ kịp né trong khoảnh khắc. Một pha hái quả tưởng đơn giản, cuối cùng lại biến thành màn hú vía khiến người xem vừa buồn cười vừa thót tim.",
+  "main_idea": "Video ghi lại cảnh hai cô gái đang cố hái quả trên cây, nhưng trong lúc kéo cành xuống, cả một nhánh cây lớn bất ngờ đổ sập xuống khu vườn.",
+  "viral_angle": "Góc khai thác chính là sự bất ngờ và hú vía, khi một việc tưởng rất bình thường lại chuyển thành tình huống nguy hiểm chỉ trong vài giây.",
+  "viewer_emotion": "Bất ngờ, căng thẳng nhẹ và buồn cười vì tình huống xảy ra quá nhanh.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Mới nhìn tưởng hai cô gái chỉ đang hái quả bình thường, nhưng ngay giây đầu tiên, cái cành cây đã có dấu hiệu rất không ổn.",
+      "visual_description": "Hai cô gái đứng dưới tán cây trong vườn, một người cầm cây dài kéo cành xuống, người còn lại đứng chờ hái quả."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Một người cố kéo cành thấp xuống, còn người kia đưa tay lên đỡ lấy quả đang treo lủng lẳng trên cao.",
+      "visual_description": "Cành cây bị kéo xuống mạnh, quả lớn nằm sát tầm tay, lá cây bắt đầu rung nhiều hơn."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Mọi thứ tưởng như chỉ cần với thêm một chút là xong, nhưng càng kéo, cả tán cây càng rung mạnh.",
+      "visual_description": "Tán cây chuyển động mạnh, cành lớn phía trên bắt đầu nghiêng xuống bất thường."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Và chỉ vài giây sau, điều ai cũng lo đã xảy ra. Cả một mảng cành lớn bất ngờ đổ ập xuống.",
+      "visual_description": "Nhánh cây lớn sập xuống rất nhanh, lá và cành phủ kín gần như toàn bộ khung hình."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Hai người bên dưới chỉ kịp né trong khoảnh khắc, để lại một pha hái quả khiến người xem vừa buồn cười vừa thót tim.",
+      "visual_description": "Khung hình còn lại là đống cành lá nằm ngổn ngang trong vườn, che gần hết vị trí hai người vừa đứng."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Mua camera giá rẻ trên mạng, nhìn kết quả mà muốn đứng hình",
+  "hook": "Tưởng mua được camera hời, ai ngờ xem xong đoạn ghi hình mới hiểu vì sao nó rẻ.",
+  "script_voice": "Tưởng chỉ cần lên mạng săn một chiếc camera giá rẻ là đủ yên tâm trông nhà. Nhưng đến lúc xem lại hình ảnh thì mới thấy có gì đó sai sai. Chiếc xe chạy ngang qua, thay vì hiện rõ ràng như bình thường, nó lại kéo thành một vệt mờ dài, nhìn như bóng xe đang trôi qua màn hình. Càng xem càng buồn cười vì camera thì có thật, nhưng chất lượng ghi hình lại khiến người ta khó mà nhận ra chuyện gì vừa xảy ra. Đây đúng là pha mua hàng khiến ai cũng phải bật cười: tiết kiệm được một chút tiền, nhưng đổi lại là một đoạn camera vừa hài vừa bất lực.",
+  "main_idea": "Video ghi lại cảnh camera giá rẻ cho hình ảnh rất mờ và bị bóng chuyển động khi xe chạy qua, tạo cảm giác hài hước và bất lực về chất lượng sản phẩm.",
+  "viral_angle": "Hài hước từ trải nghiệm mua hàng giá rẻ trên mạng, kết quả khác xa mong đợi và tạo bất ngờ khi xem lại camera.",
+  "viewer_emotion": "Bất ngờ, buồn cười và đồng cảm với cảm giác mua nhầm hàng kém chất lượng.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng mua được camera hời, ai ngờ xem xong đoạn ghi hình mới hiểu vì sao nó rẻ.",
+      "visual_description": "Khung hình camera an ninh quay ngoài sân, phía trước nhà có xe đỗ và đường nhỏ bên ngoài."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu nhìn thì mọi thứ có vẻ bình thường, camera vẫn ghi lại được khu vực trước cửa nhà.",
+      "visual_description": "Góc quay cố định từ trên cao, ánh nắng mạnh, khu vực sân và cổng nhà hiện rõ trong khung hình."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng khi một chiếc xe chạy ngang qua, hình ảnh bắt đầu trở nên kỳ lạ.",
+      "visual_description": "Một chiếc xe tối màu đi qua gần camera, phần thân xe bị nhòe và kéo bóng trên màn hình."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Thay vì thấy xe chạy rõ ràng, người xem chỉ thấy một vệt mờ dài như bóng đang lướt qua.",
+      "visual_description": "Hình ảnh chiếc xe để lại bóng mờ chồng lên nền sân và tường nhà, tạo cảm giác camera bị trễ hình."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Lúc này mới hiểu, camera thì đúng là có hoạt động, nhưng chất lượng ghi hình lại khiến ai xem cũng phải bật cười.",
+      "visual_description": "Sau khi xe đi qua, khung hình dần trở lại bình thường nhưng vẫn còn cảm giác mờ và nhòe chuyển động."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Một pha mua hàng giá rẻ vừa hài vừa thấm: tiết kiệm được một chút, nhưng đổi lại là đoạn ghi hình khó đỡ.",
+      "visual_description": "Camera tiếp tục quay cảnh sân nhà yên tĩnh, tạo điểm chốt hài hước sau khoảnh khắc xe bị nhòe."
+    }
+  ]
+}

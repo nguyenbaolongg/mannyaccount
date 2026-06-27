@@ -1,0 +1,53 @@
+{
+  "title_tiktok": "Khoảnh Khắc Khiến 62 Nghìn Người Không Thể Rời Mắt",
+  "hook": "Chỉ vài giây đầu thôi, nhưng đủ khiến người xem phải dừng lại ngay lập tức.",
+  "script_voice": "Có những khoảnh khắc tưởng như rất bình thường, nhưng khi nhìn kỹ lại khiến ai cũng phải chú ý. Từng chi tiết trong video đều tạo cảm giác tò mò, rồi dần đẩy cảm xúc lên cao. Chính sự bất ngờ ấy đã khiến đoạn clip nhanh chóng thu hút hàng chục nghìn lượt quan tâm. Không cần nói quá nhiều, chỉ một tình huống đúng lúc cũng đủ biến một video ngắn thành nội dung dễ lan truyền.",
+  "main_idea": "Video ghi lại một khoảnh khắc gây chú ý, tạo sự tò mò và thu hút lượng tương tác lớn trên mạng xã hội.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "duration_seconds": 5,
+      "voice_over": "Chỉ vài giây đầu tiên, đoạn video này đã khiến người xem phải dừng lại.",
+      "visual_description": "Mở đầu bằng cảnh chính của video, giữ nhịp dựng nhanh để tạo sự tò mò ngay từ đầu"
+    },
+    {
+      "scene_number": 2,
+      "duration_seconds": 5,
+      "voice_over": "Mọi thứ ban đầu trông rất bình thường, nhưng càng xem lại càng thấy có điều đặc biệt.",
+      "visual_description": "Hiển thị cận cảnh nhân vật hoặc sự việc chính, tập trung vào chi tiết dễ gây chú ý"
+    },
+    {
+      "scene_number": 3,
+      "duration_seconds": 5,
+      "voice_over": "Chính khoảnh khắc bất ngờ này đã làm người xem liên tục bàn tán.",
+      "visual_description": "Chuyển sang đoạn cao trào của video, nhấn mạnh hành động hoặc biểu cảm nổi bật"
+    },
+    {
+      "scene_number": 4,
+      "duration_seconds": 5,
+      "voice_over": "Không cần kịch bản cầu kỳ, tình huống thật lại là thứ giữ chân người xem lâu nhất.",
+      "visual_description": "Giữ cảnh diễn biến chính, có thể làm chậm nhẹ ở chi tiết quan trọng"
+    },
+    {
+      "scene_number": 5,
+      "duration_seconds": 5,
+      "voice_over": "Đó cũng là lý do video nhanh chóng đạt hàng chục nghìn lượt quan tâm.",
+      "visual_description": "Hiển thị phần có tương tác cao hoặc khoảnh khắc dễ khiến người xem chia sẻ"
+    },
+    {
+      "scene_number": 6,
+      "duration_seconds": 5,
+      "voice_over": "Và nếu xem đến cuối, bạn sẽ hiểu vì sao nó lại được chú ý đến vậy.",
+      "visual_description": "Kết thúc bằng cảnh đắt giá nhất của video, tạo cảm giác trọn vẹn và gợi người xem bình luận"
+    }
+  ],
+  "content_style": "Kịch tính, dễ hiểu, giàu cảm xúc, phù hợp video viral ngắn",
+  "compliance_check": {
+    "vietnamese_diacritics": true,
+    "no_emoji": true,
+    "no_special_symbols": true,
+    "not_copy_original_dialogue": true,
+    "json_only": true
+  }
+}

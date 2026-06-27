@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Du học sinh về quê phụ bố mẹ và màn chở lúa không ai đoán trước",
+  "hook": "Tưởng về quê là xắn tay bê lúa giúp bố mẹ, ai ngờ cậu du học sinh lại có cách làm khiến cả nhà phải bật cười.",
+  "script_voice": "Về quê được một hôm, cậu du học sinh được bố mẹ giao ngay nhiệm vụ rất quen thuộc: chở mấy bao lúa vào sân. Nghe thì đơn giản, ai cũng nghĩ chắc là bê từng bao, đi qua đi lại cho nhanh. Nhưng không, cậu chọn một phương án rất hiện đại. Một chiếc xe máy điện, vài bao lúa nằm rải rác, và một tinh thần làm việc không muốn tốn quá nhiều sức. Cậu cứ thong thả chạy xe tới từng bao, xoay đầu xe, kéo sát vào rồi tìm cách đưa bao lúa đi. Nhìn thì có vẻ hơi lạ, nhưng lại đúng kiểu vừa giúp bố mẹ, vừa giữ phong cách của người mới đi xa về. Cao trào nằm ở chỗ việc chở lúa vốn rất chân quê, qua tay cậu lại biến thành một màn xử lý vừa nghiêm túc vừa buồn cười. Đúng là có lòng phụ giúp, chỉ là cách làm hơi khác người một chút.",
+  "main_idea": "Video ghi lại cảnh một du học sinh về quê phụ bố mẹ chở lúa, nhưng thay vì làm theo cách quen thuộc, cậu dùng xe máy điện để di chuyển từng bao lúa trong sân, tạo nên tình huống hài hước và gần gũi.",
+  "viral_angle": "Hài hước đời thường từ sự đối lập giữa việc phụ việc nhà quê rất quen thuộc và cách xử lý có phần hiện đại, lạ lẫm của một du học sinh mới về nhà.",
+  "viewer_emotion": "Buồn cười, thích thú và cảm giác gần gũi với những khoảnh khắc gia đình đời thường.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng về quê là xắn tay bê lúa giúp bố mẹ, ai ngờ cậu du học sinh lại có cách làm khiến cả nhà phải bật cười.",
+      "visual_description": "Góc camera giám sát nhìn xuống sân nhà, vài bao lúa nằm rải rác, một người mặc áo trùm đầu chạy xe máy điện đi vào sân."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Được giao việc chở lúa, cậu không vội bê từng bao như mọi người vẫn làm.",
+      "visual_description": "Người trong video chạy xe chậm quanh sân, tiến lại gần các bao lúa thay vì đi bộ đến để bê trực tiếp."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Cậu chọn cách rất riêng: lấy luôn chiếc xe máy điện làm phương tiện vận chuyển trong khoảng sân ngắn ngủi.",
+      "visual_description": "Chiếc xe máy điện dừng sát một bao lúa, người lái xoay xe và chuẩn bị kéo hoặc chở bao lúa đi."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhìn thì lạ thật, nhưng càng xem càng buồn cười vì cậu làm rất nghiêm túc, như đang xử lý một công việc lớn.",
+      "visual_description": "Người lái xe tiếp tục loay hoay di chuyển từng bao lúa, tạo cảm giác vừa chăm chỉ vừa vụng về đáng yêu."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một việc nhà quê rất quen thuộc, qua tay cậu du học sinh bỗng thành màn phụ giúp vừa hiện đại vừa khó quên.",
+      "visual_description": "Cảnh người trong video vẫn tiếp tục di chuyển quanh sân với xe máy điện, các bao lúa nằm gần nhau hơn sau khi được xử lý."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Tin nhắn khiến hình ảnh một nữ ca sĩ gây tranh cãi",
+  "hook": "Chỉ vài đoạn tin nhắn bị lan truyền, hình ảnh của một người nổi tiếng đã khiến nhiều khán giả phải đặt câu hỏi về cách cư xử sau ánh đèn sân khấu.",
+  "script_voice": "Chỉ vài đoạn tin nhắn được chia sẻ, một nữ ca sĩ đã bất ngờ trở thành tâm điểm tranh cãi. Câu chuyện bắt đầu từ cuộc trò chuyện với một người được cho là fan hoặc thành viên theo dõi cô. Thay vì sự nhẹ nhàng thường thấy giữa nghệ sĩ và khán giả, những dòng phản hồi lại khiến nhiều người cảm thấy khó nghe. Điều gây chú ý không chỉ là chuyện vay mượn hay mâu thuẫn cá nhân, mà là thái độ được thể hiện trong từng câu chữ. Với công chúng, nghệ sĩ có thể không cần lúc nào cũng hoàn hảo, nhưng sự tôn trọng tối thiểu vẫn là điều rất quan trọng. Và đôi khi, chỉ một cuộc trò chuyện riêng bị lộ ra cũng đủ làm hình ảnh xây dựng suốt thời gian dài bị lung lay.",
+  "main_idea": "Video nói về việc một nữ ca sĩ bị đưa vào tâm điểm tranh cãi sau khi các đoạn tin nhắn với một người được cho là fan hoặc thành viên theo dõi bị lan truyền, khiến công chúng bàn luận về thái độ và hình ảnh của người nổi tiếng.",
+  "viral_angle": "Khai thác góc nhìn kịch tính và gây tò mò từ những tin nhắn riêng tư bị lan truyền, làm lộ ra khoảng cách giữa hình ảnh nghệ sĩ trước công chúng và cách cư xử trong đời thật.",
+  "viewer_emotion": "Bất ngờ, thất vọng và tò mò về cách người nổi tiếng ứng xử sau ánh hào quang",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Chỉ vài đoạn tin nhắn bị lan truyền, hình ảnh của một người nổi tiếng đã khiến nhiều khán giả phải đặt câu hỏi.",
+      "visual_description": "Mở đầu bằng ảnh chụp màn hình tin nhắn được làm mờ tên, kèm giao diện tin tức màu xanh và tiêu đề gây chú ý ở phía dưới."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Câu chuyện bắt đầu từ cuộc trò chuyện giữa một nữ ca sĩ và một người được cho là fan hoặc thành viên theo dõi cô.",
+      "visual_description": "Hiển thị các đoạn hội thoại trong khung tin nhắn, nhân vật và một số nội dung nhạy cảm được làm mờ để giữ sự tập trung vào sự việc."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Điều khiến người xem dừng lại không chỉ là chuyện vay mượn hay mâu thuẫn cá nhân, mà là cách những câu chữ được thể hiện.",
+      "visual_description": "Cắt cận vào các đoạn tin nhắn qua lại, nhịp chuyển cảnh chậm hơn để tạo cảm giác căng thẳng và tò mò."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Với công chúng, nghệ sĩ có thể không cần lúc nào cũng hoàn hảo, nhưng sự tôn trọng tối thiểu vẫn là điều rất quan trọng.",
+      "visual_description": "Chuyển sang phần khung tin tức tổng hợp, làm nổi bật tiêu đề nói về tranh cãi và phản ứng của cộng đồng mạng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Và đôi khi, chỉ một cuộc trò chuyện riêng bị lộ ra cũng đủ làm hình ảnh xây dựng suốt thời gian dài bị lung lay.",
+      "visual_description": "Kết bằng màn hình tin nhắn tối, giữ lại phần tiêu đề tin tức và dừng ở khoảnh khắc tạo cảm giác suy ngẫm."
+    }
+  ]
+}

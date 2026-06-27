@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Giận chồng nhưng vẫn mở nhạc rất có tình nghĩa",
+  "hook": "Tưởng cô vợ đang dằn mặt chồng cực căng, ai ngờ câu sau mới làm người ta bật cười.",
+  "script_voice": "Đang giận chồng mà không muốn nói thẳng thì phải làm sao? Cô vợ này chọn cách rất riêng: không cãi, không lớn tiếng, chỉ lặng lẽ mở karaoke cho chồng nghe. Mới đầu, dòng chữ trên màn hình nghe căng thẳng như sắp có chuyện lớn, kiểu hôm nay phải ký cho xong. Nhưng chỉ vài giây sau, mọi thứ bỗng rẽ hướng. Từ một màn dọa giận tưởng nghiêm trọng, bài hát lại chuyển sang cảm giác nửa trách móc, nửa thương thương. Đúng kiểu phụ nữ khi giận: miệng thì muốn làm cho ra lẽ, nhưng trong lòng vẫn sợ người kia buồn. Cái hài của đoạn này không nằm ở lời nói, mà nằm ở cách giận rất nhẹ, rất duyên, khiến ai từng có gia đình nhìn vào cũng thấy quen quen.",
+  "main_idea": "Video ghi lại cảnh trong nhà, người vợ đang giận chồng nhưng thể hiện qua việc mở karaoke có lời bài hát vừa như dỗi hờn vừa như nhắc khéo, tạo cảm giác hài hước và gần gũi.",
+  "viral_angle": "Khai thác tình huống đời thường trong hôn nhân, ban đầu tưởng căng thẳng nhưng sau đó chuyển sang hài hước, dễ khiến người xem đồng cảm.",
+  "viewer_emotion": "Bất ngờ, buồn cười và thấy quen thuộc với kiểu giận yêu trong đời sống vợ chồng.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Đang giận chồng mà không muốn nói thẳng thì phải làm sao?",
+      "visual_description": "Cảnh quay trong phòng, máy quay hướng lên chiếc tivi đang mở karaoke, không gian sinh hoạt gia đình khá bình thường."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Cô vợ này chọn cách rất riêng: không cãi, không lớn tiếng, chỉ lặng lẽ mở karaoke cho chồng nghe.",
+      "visual_description": "Màn hình tivi hiện lời bài hát karaoke, bên dưới là đồ đạc trong nhà và quạt đứng, tạo cảm giác đời thường."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Mới đầu, dòng chữ trên màn hình nghe căng thẳng như sắp có chuyện lớn, kiểu hôm nay phải ký cho xong.",
+      "visual_description": "Ống kính tiến gần hơn về phía tivi, lời karaoke trên màn hình tạo cảm giác như một lời nhắn đầy dỗi hờn."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Nhưng chỉ vài giây sau, mọi thứ bỗng rẽ hướng, từ dằn mặt thành vừa trách vừa thương.",
+      "visual_description": "Lời karaoke tiếp tục chạy trên nền cảnh biển, nhịp video chậm nhưng tạo điểm hài nhờ nội dung lời bài hát."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đúng kiểu phụ nữ khi giận: miệng thì muốn làm cho ra lẽ, nhưng trong lòng vẫn sợ người kia buồn.",
+      "visual_description": "Khung hình vẫn tập trung vào tivi, không có nhân vật xuất hiện rõ, chỉ có không khí gia đình và màn karaoke."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Cái hài của đoạn này là giận cũng phải giận cho có duyên, nhìn một cái là thấy quen ngay.",
+      "visual_description": "Cảnh kết giữ nguyên màn hình karaoke trong phòng, tạo cảm giác hài hước nhẹ nhàng và gần gũi."
+    }
+  ]
+}

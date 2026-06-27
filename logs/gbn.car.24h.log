@@ -2189,3 +2189,707 @@
 2026-05-25 12:01:41,459 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643677867489905927
 2026-05-25 12:01:46,464 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
 2026-05-25 12:01:48,418 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/3
+2026-05-25 14:00:04,729 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-25 14:00:04,898 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-25 14:00:07,313 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643678910999235858
+2026-05-25 14:04:35,279 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-25 14:04:37,041 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-25 15:00:03,728 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-25 15:00:03,913 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-25 15:00:06,418 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643678910999235858
+2026-05-25 15:06:41,216 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:06:41,217 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 15:06:41,217 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 15:06:41,218 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:07:07,528 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:07:08,427 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643678910999235858
+2026-05-25 15:07:13,430 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643723493611261202
+2026-05-25 15:12:44,973 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 15:12:44,974 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 15:12:44,974 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 15:12:44,974 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 15:13:22,845 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 15:13:23,618 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643723493611261202
+2026-05-25 15:13:28,622 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-25 15:13:30,614 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-25 20:00:03,568 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-25 20:00:03,746 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-25 20:00:06,339 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643733498276203783
+2026-05-25 20:07:22,928 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:07:22,930 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 20:07:22,930 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 20:07:22,930 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:07:49,634 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:07:50,143 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643733498276203783
+2026-05-25 20:07:55,150 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643750609031597330
+2026-05-25 20:14:23,893 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:14:23,894 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 20:14:23,894 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 20:14:23,894 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:14:56,210 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:14:56,760 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643750609031597330
+2026-05-25 20:15:01,768 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643761814848802055
+2026-05-25 20:21:30,975 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 20:21:30,975 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 20:21:30,975 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 20:21:30,975 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 20:22:13,166 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 20:22:13,748 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643761814848802055
+2026-05-25 20:22:18,752 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-25 20:22:18,752 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-25 22:00:04,006 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-25 22:00:04,177 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-25 22:00:07,979 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7643759606488993042
+2026-05-25 22:07:24,329 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-25 22:07:24,330 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-25 22:07:24,330 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-25 22:07:24,330 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-25 22:08:01,612 [INFO]    ✅ HOÀN TẤT!
+2026-05-25 22:08:02,197 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7643759606488993042
+2026-05-25 22:08:07,203 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-25 22:08:08,459 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/3
+2026-05-26 07:00:04,465 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 07:00:04,642 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 07:00:06,379 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 07:00:07,405 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:00:04,183 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:00:04,357 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:00:06,002 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:00:07,057 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:17:23,038 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:17:23,204 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:17:24,939 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:17:25,994 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:32:24,902 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:32:25,064 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:32:26,832 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:32:27,906 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:37:53,935 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:37:54,111 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:37:54,199 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:37:54,368 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:37:55,744 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:37:55,979 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:37:56,693 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:37:56,964 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:39:43,716 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:39:43,890 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:39:43,979 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:39:44,032 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:39:44,141 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:39:44,206 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:39:46,516 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:39:46,714 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:39:46,781 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:39:48,419 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:39:48,485 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:39:48,519 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:56:55,116 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:56:55,284 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:56:55,428 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:56:55,593 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:56:56,038 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:56:56,210 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:56:56,438 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 09:56:56,612 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 09:56:57,018 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:56:57,426 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:56:57,929 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:56:57,969 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:56:58,383 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 09:56:58,454 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:56:59,204 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 09:56:59,327 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:02:43,147 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:02:43,316 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:02:43,352 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:02:43,516 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:02:43,997 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:02:44,161 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:02:45,000 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:02:45,199 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:02:45,795 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:02:45,857 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:02:46,120 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:02:46,718 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:02:51,859 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:02:52,030 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:02:53,778 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:02:54,734 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:04:28,080 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:04:28,249 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:04:29,844 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:04:30,843 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:21:39,763 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:21:39,794 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:21:39,928 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:21:39,962 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:21:41,781 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:21:41,787 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:21:55,981 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:21:57,020 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:22:29,948 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:22:30,902 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:24:51,269 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:24:51,442 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:24:51,726 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:24:51,887 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:24:52,571 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:24:52,733 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:24:53,211 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:24:53,595 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:24:54,343 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:25:04,445 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:25:04,995 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:25:05,505 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:25:06,049 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:25:38,519 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:25:39,507 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:25:54,254 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:25:54,300 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:25:54,388 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:25:54,426 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:25:54,477 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:25:54,568 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:25:56,083 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:25:56,205 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:25:56,210 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:26:07,395 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:26:08,702 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:26:08,714 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:26:09,663 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:26:41,176 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:26:42,148 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:28:02,752 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:28:02,892 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:28:02,915 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:28:03,057 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:28:04,622 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:28:04,756 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:28:15,509 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:28:16,542 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:28:48,148 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@df999bantinnong5 (Lấy tối đa 3 video)
+2026-05-26 10:28:49,139 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:34:41,617 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:34:41,793 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:34:41,872 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:34:42,046 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:34:42,660 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:34:42,734 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:34:42,822 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:34:42,911 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:34:43,476 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:34:43,761 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:34:44,515 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:34:44,661 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:34:54,617 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 10:34:54,833 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 10:34:55,769 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:34:56,010 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:34:56,130 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 10:34:57,379 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:35:07,584 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:35:07,584 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:35:20,626 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 10:35:51,903 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 10:35:52,997 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:36:04,350 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:36:16,903 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 10:36:21,059 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:37:00,613 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:37:11,107 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 10:37:11,337 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:37:13,897 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 10:37:18,898 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 10:37:18,898 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-26 10:37:19,358 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:37:23,899 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-26 10:38:23,361 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 10:38:23,525 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 10:38:25,282 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:41:18,863 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 10:41:18,863 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 10:41:18,863 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 10:41:18,864 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 10:41:54,314 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 10:41:55,137 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644024044722998535
+2026-05-26 10:42:00,142 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 10:42:01,226 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:45:54,397 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 10:45:54,399 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 10:45:54,399 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 10:45:54,399 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 10:46:28,776 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 10:46:29,872 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7627452570696535314
+2026-05-26 10:46:34,875 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:49:31,469 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 10:49:31,470 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 10:49:31,470 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 10:49:31,470 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 10:50:05,283 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 10:50:06,136 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7628196491206593800
+2026-05-26 10:50:11,139 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-26 10:50:11,139 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 12:53:57,796 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 12:53:57,965 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 12:53:59,650 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644040727361572114
+2026-05-26 12:55:26,932 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 12:55:31,933 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 12:55:33,037 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 13:01:23,671 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 13:01:23,851 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 13:01:25,635 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644040727361572114
+2026-05-26 13:03:13,572 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-26 13:03:18,575 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644042108210302215
+2026-05-26 13:22:21,895 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 13:22:22,071 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 13:22:23,855 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644040727361572114
+2026-05-26 13:30:11,662 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:30:11,663 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 13:30:11,663 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 13:30:11,663 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:30:43,014 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 13:30:43,585 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644040727361572114
+2026-05-26 13:30:48,589 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644042108210302215
+2026-05-26 13:37:23,920 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 13:37:23,922 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 13:37:23,922 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 13:37:23,922 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 13:37:50,562 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 13:37:51,638 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644042108210302215
+2026-05-26 13:37:56,641 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 13:37:57,855 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 14:11:49,829 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 14:11:50,005 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 14:11:51,583 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 14:11:52,641 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 14:15:48,494 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:15:48,494 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 14:15:48,494 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 14:15:48,495 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:16:13,300 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:16:14,149 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7628505160662207762
+2026-05-26 14:16:19,153 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7629528039759547666
+2026-05-26 14:18:59,985 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:18:59,986 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 14:18:59,986 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 14:18:59,986 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:19:25,540 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:19:26,164 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7629528039759547666
+2026-05-26 14:19:31,167 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7630299996180565256
+2026-05-26 14:23:15,252 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 14:23:15,254 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 14:23:15,254 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 14:23:15,254 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 14:23:45,202 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 14:23:46,033 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7630299996180565256
+2026-05-26 14:23:51,037 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 15:00:03,909 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 15:00:04,090 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 15:00:05,851 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644095765287128327
+2026-05-26 15:07:00,310 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:07:00,311 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 15:07:00,311 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 15:07:00,311 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:07:35,328 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:07:35,820 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644095765287128327
+2026-05-26 15:07:40,823 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 15:07:42,068 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7631040948771818759
+2026-05-26 15:14:36,211 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:14:36,212 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 15:14:36,212 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 15:14:36,212 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:15:09,345 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:15:09,905 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7631040948771818759
+2026-05-26 15:15:14,910 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7632328875959258386
+2026-05-26 15:22:17,549 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 15:22:17,552 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 15:22:17,552 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 15:22:17,552 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 15:22:54,372 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 15:22:54,911 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7632328875959258386
+2026-05-26 15:22:59,915 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-26 15:22:59,915 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 20:00:04,662 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 20:00:04,850 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 20:00:06,614 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644108850035035399
+2026-05-26 20:06:50,539 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:06:50,541 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 20:06:50,541 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 20:06:50,542 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:07:21,081 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:07:21,622 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644108850035035399
+2026-05-26 20:07:26,629 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644123309277269266
+2026-05-26 20:13:48,152 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:13:48,153 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 20:13:48,153 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 20:13:48,154 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:14:17,693 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:14:18,380 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644123309277269266
+2026-05-26 20:14:23,386 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644123933653880082
+2026-05-26 20:21:44,513 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 20:21:44,515 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 20:21:44,515 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 20:21:44,515 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 20:22:19,666 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 20:22:20,973 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644123933653880082
+2026-05-26 20:22:25,983 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-26 20:22:25,983 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-26 22:00:04,088 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-26 22:00:04,331 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-26 22:00:06,125 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644131768106339591
+2026-05-26 22:07:26,980 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:07:26,987 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 22:07:26,987 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 22:07:26,987 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:08:06,694 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:08:07,258 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644131768106339591
+2026-05-26 22:08:12,262 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-26 22:08:13,509 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7632958972630174983
+2026-05-26 22:16:03,037 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:16:03,039 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 22:16:03,039 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 22:16:03,039 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:16:50,544 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:16:51,104 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7632958972630174983
+2026-05-26 22:16:56,108 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7638243219683364103
+2026-05-26 22:24:10,052 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-26 22:24:10,053 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-26 22:24:10,053 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-26 22:24:10,053 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-26 22:24:49,977 [INFO]    ✅ HOÀN TẤT!
+2026-05-26 22:24:50,701 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7638243219683364103
+2026-05-26 22:24:55,705 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Ngừng xử lý các video còn lại trong kênh.
+2026-05-26 22:24:55,705 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 07:00:04,270 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 07:00:04,433 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 07:00:06,187 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 07:00:07,431 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7638493319797951762
+2026-05-27 07:06:56,395 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:06:56,395 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 07:06:56,396 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 07:06:56,396 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:07:27,780 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:07:28,295 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7638493319797951762
+2026-05-27 07:07:33,299 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7639165058815233298
+2026-05-27 07:14:00,920 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:14:00,921 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 07:14:00,922 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 07:14:00,922 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:14:32,978 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:14:33,933 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7639165058815233298
+2026-05-27 07:14:38,938 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7642329164149820690
+2026-05-27 07:18:59,449 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 07:18:59,450 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 07:18:59,450 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 07:18:59,451 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 07:19:30,910 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 07:19:31,505 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7642329164149820690
+2026-05-27 07:19:36,508 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 09:00:04,569 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 09:00:04,746 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 09:00:06,501 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 09:00:07,597 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7643009528199449863
+2026-05-27 09:06:57,277 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:06:57,278 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 09:06:57,278 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 09:06:57,278 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:07:46,744 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:07:47,424 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7643009528199449863
+2026-05-27 09:07:52,434 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7643303160223747336
+2026-05-27 09:14:10,874 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:14:10,875 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 09:14:10,876 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 09:14:10,876 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:15:08,820 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:15:10,008 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7643303160223747336
+2026-05-27 09:15:15,014 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7643788212262980871
+2026-05-27 09:21:28,667 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 09:21:28,668 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 09:21:28,668 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 09:21:28,668 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 09:22:01,640 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 09:22:02,271 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7643788212262980871
+2026-05-27 09:22:07,274 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 12:00:04,099 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 12:00:04,264 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 12:00:05,978 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644397256258489607
+2026-05-27 13:37:48,173 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 13:37:48,338 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 13:37:50,116 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644397256258489607
+2026-05-27 13:45:58,011 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:45:58,012 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 13:45:58,012 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 13:45:58,013 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:46:30,482 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:46:31,141 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644397256258489607
+2026-05-27 13:46:36,146 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644405666018249991
+2026-05-27 13:55:04,073 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 13:55:04,074 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 13:55:04,074 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 13:55:04,074 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 13:55:29,347 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 13:55:29,899 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644405666018249991
+2026-05-27 13:55:34,905 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644418088192019719
+2026-05-27 14:02:18,205 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 14:02:18,206 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 14:02:18,206 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 14:02:18,206 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 14:02:43,783 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 14:02:44,307 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644418088192019719
+2026-05-27 14:02:49,311 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-27 14:02:49,311 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-27 15:00:04,493 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 15:00:04,658 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 15:00:06,321 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644464174730448146
+2026-05-27 15:09:43,278 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:09:43,279 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 15:09:43,279 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 15:09:43,279 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:10:16,698 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:10:17,284 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644464174730448146
+2026-05-27 15:10:22,292 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 15:10:23,495 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7644390514950819080
+2026-05-27 15:18:19,766 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 15:18:19,767 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 15:18:19,768 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 15:18:19,768 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 15:18:50,474 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 15:18:51,006 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7644390514950819080
+2026-05-27 15:18:56,010 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-27 18:17:02,949 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 18:17:03,183 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 18:17:04,891 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644477158777474312
+2026-05-27 18:19:07,257 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644497017011490055
+2026-05-27 18:24:43,731 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:24:43,733 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 18:24:43,733 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 18:24:43,733 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:25:17,938 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:25:19,000 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644497017011490055
+2026-05-27 18:25:24,006 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644499871822744840
+2026-05-27 18:31:45,275 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 18:31:45,276 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 18:31:45,276 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 18:31:45,276 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 18:32:12,124 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 18:32:12,655 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644499871822744840
+2026-05-27 18:32:17,659 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 18:32:19,205 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-27 20:00:03,901 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 20:00:04,071 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 20:00:05,843 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 20:00:07,102 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-27 22:00:03,557 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-27 22:00:03,730 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-27 22:00:05,625 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644503947524230407
+2026-05-27 22:08:51,960 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-27 22:08:51,961 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-27 22:08:51,961 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-27 22:08:51,961 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-27 22:09:23,841 [INFO]    ✅ HOÀN TẤT!
+2026-05-27 22:09:24,335 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644503947524230407
+2026-05-27 22:09:29,346 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-27 22:09:30,823 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 1/3
+2026-05-28 07:00:03,721 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 07:00:03,877 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 07:00:05,507 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-28 07:00:06,573 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 09:00:04,348 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 09:00:04,524 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 09:00:06,124 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-28 09:00:07,394 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 11:10:04,123 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 11:10:04,301 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 11:10:06,078 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644768494881377544
+2026-05-28 13:37:55,480 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 13:37:55,734 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 13:37:57,725 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644768494881377544
+2026-05-28 13:45:10,481 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:45:10,482 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 13:45:10,482 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 13:45:10,482 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:45:43,438 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:45:44,254 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644768494881377544
+2026-05-28 13:45:49,258 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644796768227544328
+2026-05-28 13:52:07,390 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:52:07,391 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 13:52:07,391 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 13:52:07,391 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:52:40,617 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:52:41,149 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644796768227544328
+2026-05-28 13:52:46,154 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644789340651982087
+2026-05-28 13:58:16,233 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 13:58:16,233 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 13:58:16,233 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 13:58:16,233 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 13:58:48,724 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 13:58:49,235 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644789340651982087
+2026-05-28 13:58:54,240 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 13:58:54,240 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-28 15:00:04,328 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 15:00:04,682 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 15:00:06,350 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644833025473203474
+2026-05-28 15:00:15,375 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-28 15:00:16,505 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 18:00:04,627 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 18:00:04,780 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy t�2026-05-28 22:11:56,742 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 22:11:56,904 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 22:11:57,271 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 22:11:57,444 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 22:11:58,762 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644833025473203474
+2026-05-28 22:11:59,285 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644833025473203474
+2026-05-28 22:12:08,792 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644851572404473106
+2026-05-28 22:13:14,078 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644851572404473106
+2026-05-28 22:16:26,519 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644853298138320146
+2026-05-28 22:19:29,638 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:19:29,640 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 22:19:29,640 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 22:19:29,640 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:19:34,644 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644853298138320146
+2026-05-28 22:27:47,022 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:27:47,023 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 22:27:47,024 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 22:27:47,024 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:27:52,033 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-28 22:27:53,202 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7644924304861220103
+2026-05-28 22:28:44,046 [ERROR]    🔥 Lỗi: [Errno 5] Input/output error
+2026-05-28 22:28:49,048 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-28 22:35:22,790 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-28 22:35:22,956 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-28 22:35:24,783 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644833025473203474
+2026-05-28 22:43:51,922 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:43:51,923 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 22:43:51,923 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 22:43:51,924 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:44:27,101 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:44:27,772 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644833025473203474
+2026-05-28 22:44:32,778 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644851572404473106
+2026-05-28 22:49:52,532 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:49:52,534 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 22:49:52,534 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 22:49:52,534 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:50:20,390 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:50:21,097 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644851572404473106
+2026-05-28 22:50:26,099 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644853298138320146
+2026-05-28 22:56:22,266 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-28 22:56:22,267 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-28 22:56:22,267 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-28 22:56:22,267 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-28 22:56:59,217 [INFO]    ✅ HOÀN TẤT!
+2026-05-28 22:56:59,785 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644853298138320146
+2026-05-28 22:57:04,789 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-28 22:57:04,789 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 07:00:03,422 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 07:00:03,601 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 07:00:05,312 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644859138513587464
+2026-05-29 07:08:34,483 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:08:34,484 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 07:08:34,484 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 07:08:34,484 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:09:08,116 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:09:08,597 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644859138513587464
+2026-05-29 07:09:13,602 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7644875050729868562
+2026-05-29 07:15:02,604 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:15:02,605 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 07:15:02,606 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 07:15:02,606 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:15:34,862 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:15:35,471 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7644875050729868562
+2026-05-29 07:15:40,475 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 07:15:41,772 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@infox.thongtinxe/video/7644924304861220103
+2026-05-29 07:21:17,062 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 07:21:17,063 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 07:21:17,064 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 07:21:17,064 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 07:21:46,681 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 07:21:47,191 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@infox.thongtinxe/video/7644924304861220103
+2026-05-29 07:21:52,194 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 09:00:04,264 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 09:00:04,438 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 09:00:06,158 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 09:00:07,240 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-29 12:00:03,776 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 12:00:03,963 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 12:00:05,695 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645144930544848148
+2026-05-29 12:02:25,607 [ERROR]    ⚠️ Bỏ qua video vì không tạo được Voice Content (local_content is None)
+2026-05-29 12:02:30,608 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645165775791115541
+2026-05-29 12:57:24,188 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 12:57:24,348 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 12:57:25,929 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645144930544848148
+2026-05-29 13:04:57,152 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:04:57,154 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 13:04:57,154 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 13:04:57,154 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:05:29,700 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:05:30,420 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645144930544848148
+2026-05-29 13:05:35,427 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645165775791115541
+2026-05-29 13:10:36,739 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:10:36,740 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 13:10:36,741 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 13:10:36,741 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:11:11,257 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:11:11,867 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645165775791115541
+2026-05-29 13:11:16,871 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645154530878934293
+2026-05-29 13:15:49,023 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 13:15:49,025 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 13:15:49,025 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 13:15:49,025 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 13:16:12,097 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 13:16:12,649 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645154530878934293
+2026-05-29 13:16:17,653 [INFO] 🛑 Đã đạt giới hạn tài khoản (3 video). Dừng quét kênh tiếp theo.
+2026-05-29 13:16:17,653 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 3/3
+2026-05-29 15:00:03,931 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 15:00:04,143 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 15:00:05,914 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645206801222356244
+2026-05-29 15:01:40,398 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 15:01:41,638 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-29 18:00:03,749 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 18:00:03,914 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 18:00:05,549 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645206801222356244
+2026-05-29 18:07:31,707 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:07:31,708 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 18:07:31,708 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 18:07:31,709 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:08:07,700 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:08:08,249 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645206801222356244
+2026-05-29 18:08:13,254 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645207782169251093
+2026-05-29 18:09:53,782 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645223593755954453
+2026-05-29 18:15:06,997 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 18:15:06,998 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 18:15:06,998 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 18:15:06,998 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 18:15:36,112 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 18:15:36,735 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645223593755954453
+2026-05-29 18:15:41,738 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 18:15:43,315 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-29 20:00:04,210 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 20:00:04,376 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 20:00:06,112 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645216905803943188
+2026-05-29 20:06:52,452 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:06:52,455 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 20:06:52,455 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 20:06:52,455 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:07:24,197 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:07:24,683 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645216905803943188
+2026-05-29 20:07:29,686 [INFO] ▶️ BẮT ĐẦU VIDEO: https://www.tiktok.com/@auto5.vn/video/7645246365500738836
+2026-05-29 20:12:58,596 [INFO]    🎬 Chuẩn bị Remixing...
+2026-05-29 20:12:58,598 [INFO]    ✅ Đã có file 'FRAME CAR HUB.png' trong máy.
+2026-05-29 20:12:58,598 [INFO]    ✅ Đã có file 'FRAME CAR HUB 1.png' trong máy.
+2026-05-29 20:12:58,598 [INFO]    ✅ Đã có file 'Inter_18pt-Bold.ttf' trong máy.
+2026-05-29 20:13:26,355 [INFO]    ✅ HOÀN TẤT!
+2026-05-29 20:13:26,943 [INFO]    ☁️ Đã cập nhật Supabase: last_video_url = https://www.tiktok.com/@auto5.vn/video/7645246365500738836
+2026-05-29 20:13:31,949 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 20:13:33,576 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 2/3
+2026-05-29 22:35:03,733 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-29 22:35:03,906 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-29 22:35:05,805 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-29 22:35:07,248 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-30 07:00:04,415 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-30 07:00:04,596 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-30 07:00:06,273 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-30 07:00:07,293 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
+2026-05-30 09:00:03,409 [INFO] 🚀 WORKER STARTED: gbn.car.24h
+2026-05-30 09:00:03,584 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@auto5.vn (Lấy tối đa 3 video)
+2026-05-30 09:00:05,371 [INFO] 🔍 Quét kênh: https://www.tiktok.com/@infox.thongtinxe (Lấy tối đa 3 video)
+2026-05-30 09:00:06,495 [INFO] 🏁 WORKER FINISHED. Tổng video thành công: 0/3
