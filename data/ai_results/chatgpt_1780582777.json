@@ -1,0 +1,11 @@
+{
+  "title_tiktok": "Không thể phân tích video gốc",
+  "hook": "File video hiện không đọc được nên chưa thể xác định tình huống chính.",
+  "script_voice": "Video đính kèm có dấu hiệu lỗi định dạng hoặc thiếu dữ liệu khi xử lý. Vì vậy chưa thể phân tích bối cảnh, nhân vật, cao trào hay chi tiết giữ chân người xem. Vui lòng gửi lại video bản gốc đầy đủ để mình viết kịch bản chính xác, không bịa tình tiết và đúng bản chất video.",
+  "main_idea": "Chưa xác định được do file video không đọc được.",
+  "curiosity_point": "Chưa xác định được chi tiết gây tò mò trong video.",
+  "climax_point": "Chưa xác định được cao trào của video.",
+  "viral_angle": "Chưa thể chọn góc kể vì không xem được nội dung video.",
+  "viewer_emotion": "Chưa xác định được cảm xúc người xem.",
+  "have_frame": false
+}

@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Chưa kịp tân gia, căn nhà đã khép lại trong tro tàn",
+  "hook": "Căn nhà vừa sửa xong, còn chưa kịp đón ngày tân gia, vậy mà chỉ sau một biến cố, tất cả gần như không còn gì.",
+  "script_voice": "Căn nhà này từng là nơi một gia đình đặt rất nhiều hy vọng. Nhà vừa xây sửa xong, hàng hóa cũng đã chuẩn bị để tiếp tục làm ăn, chỉ còn chờ một ngày vui để bắt đầu lại mọi thứ. Nhưng rồi biến cố ập đến quá nhanh. Nhìn từ bên ngoài, phần mặt tiền đã ám đen, cửa hàng đóng kín, đồ đạc và cuộc sống bên trong gần như bị cuốn đi trong chốc lát. Điều xót xa nhất không chỉ là mất tài sản, mà là cảm giác vừa chạm tới một khởi đầu mới, đã phải đứng trước đống đổ nát. Có những chuyện xảy ra chỉ trong vài phút, nhưng để gượng dậy có khi phải mất rất lâu.",
+  "main_idea": "Video ghi lại cảnh một căn nhà kiêm cửa hàng bị hư hại nặng sau biến cố, trong khi chủ nhà vừa xây sửa xong và chưa kịp tân gia.",
+  "viral_angle": "Khai thác sự xót xa và bất ngờ khi một khởi đầu mới bị biến cố cuốn đi quá nhanh.",
+  "viewer_emotion": "Xót xa, thương cảm và đồng cảm",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Căn nhà vừa sửa xong, còn chưa kịp đón ngày tân gia, vậy mà chỉ sau một biến cố, tất cả gần như không còn gì.",
+      "visual_description": "Toàn cảnh căn nhà nhiều tầng bên mặt đường, mặt tiền bị ám đen, cửa cuốn phía dưới đóng kín."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Đó từng là nơi một gia đình đặt rất nhiều hy vọng, vừa để ở, vừa để buôn bán và bắt đầu lại cuộc sống.",
+      "visual_description": "Máy quay lia chậm qua biển hiệu cửa hàng, phần ban công và khu vực phía trước nhà bị cháy sém rõ rệt."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng biến cố đến quá nhanh, hàng hóa, nhà cửa và bao công sức chuẩn bị bỗng chốc bị cuốn đi.",
+      "visual_description": "Góc quay nghiêng cho thấy mặt tiền đen xạm, dây điện và khu vực trước cửa còn ngổn ngang."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều đau lòng nhất là họ chưa kịp tận hưởng niềm vui của căn nhà mới, đã phải nhìn nó trong cảnh tan hoang.",
+      "visual_description": "Người đi đường chạy xe ngang qua, phía sau là căn nhà đóng kín và dấu vết hư hại sau vụ việc."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có những thứ mất đi chỉ trong vài phút, nhưng để đứng dậy sau đó, có khi phải cần rất nhiều thời gian.",
+      "visual_description": "Khung hình giữ lại toàn cảnh căn nhà từ xa, tạo cảm giác lặng và xót xa cho phần kết."
+    }
+  ]
+}

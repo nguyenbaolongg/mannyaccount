@@ -1,0 +1,11 @@
+{
+  "title_tiktok": "Không thể phân tích video gốc",
+  "hook": "Video này chưa thể dựng lại thành kịch bản vì file gốc không đọc được.",
+  "script_voice": "Tệp video được cung cấp hiện không thể mở hoặc trích xuất nội dung để phân tích. Vì vậy chưa đủ căn cứ để xác định bối cảnh, nhân vật, diễn biến hay cao trào. Nếu dựng kịch bản lúc này, nội dung có thể bị sai bản chất video.",
+  "main_idea": "Không đủ dữ liệu để phân tích nội dung video gốc.",
+  "should_make_video": "false",
+  "curiosity_point": "File video không đọc được nên không thể chọn chi tiết giữ chân người xem.",
+  "viewer_emotion": "Trung tính",
+  "have_frame": false,
+  "tone": "Trung tính"
+}

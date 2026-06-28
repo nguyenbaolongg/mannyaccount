@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Chú chó được hai bà chăm như người nhà giữa trưa nắng",
+  "hook": "Giữa ngày nắng nóng, một chú chó được hai bà cụ đưa xuống mép nước tắm rửa, và điều khiến ai xem cũng mềm lòng là dáng vẻ ngoan ngoãn đến lạ.",
+  "script_voice": "Giữa cái nắng oi ả, hai bà cụ nhẹ nhàng dắt chú chó xuống mép ao để tắm cho nó. Không vội vàng, không qua loa, từng động tác đều chậm rãi như đang chăm một đứa cháu nhỏ trong nhà. Chú chó cũng lặng yên đứng đó, ngoan đến mức ai nhìn cũng thấy thương. Có lẽ nó hiểu rằng đôi bàn tay nhăn nheo kia đang dành cho mình sự yêu thương thật lòng. Một khoảnh khắc rất bình dị, nhưng lại khiến người ta nhận ra rằng gia đình đôi khi không cần chung máu mủ. Chỉ cần được yêu thương và đối xử tử tế, vậy là đủ ấm lòng rồi.",
+  "main_idea": "Video ghi lại cảnh hai bà cụ tắm cho một chú chó bên mép ao trong ngày nắng nóng, chú chó ngoan ngoãn đứng yên và được chăm sóc rất dịu dàng.",
+  "viral_angle": "Góc khai thác nhân văn và cảm động, tập trung vào sự đáng yêu của chú chó và tình thương mộc mạc của hai bà cụ.",
+  "viewer_emotion": "Xúc động, ấm áp và yêu thương",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Giữa cái nắng oi ả, hai bà cụ nhẹ nhàng dắt chú chó xuống mép ao để tắm cho nó.",
+      "visual_description": "Toàn cảnh hai bà cụ đứng bên mép ao, một chú chó vàng đứng dưới nước, xung quanh là bờ ao và cây cối phía xa."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Không vội vàng, không qua loa, từng động tác đều chậm rãi như đang chăm một đứa cháu nhỏ trong nhà.",
+      "visual_description": "Cận cảnh hai bà dùng tay vuốt nước lên đầu và cổ chú chó, động tác nhẹ nhàng, chú chó đứng yên."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Chú chó cũng lặng yên đứng đó, ngoan đến mức ai nhìn cũng thấy thương.",
+      "visual_description": "Gương mặt chú chó nhìn thẳng về phía trước, thân ướt nước, hai bà vẫn giữ và tắm cho chó ở mép ao."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Có lẽ nó hiểu rằng đôi bàn tay nhăn nheo kia đang dành cho mình sự yêu thương thật lòng.",
+      "visual_description": "Một bà cúi sát xuống lau phần đầu cho chú chó, bà còn lại đỡ nhẹ phần thân để chó không bị trượt."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Một khoảnh khắc rất bình dị, nhưng lại khiến người ta nhận ra rằng gia đình đôi khi không cần chung máu mủ.",
+      "visual_description": "Khung hình rộng cho thấy hai bà cụ tiếp tục tắm cho chú chó bên bờ ao, không khí yên bình và gần gũi."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Chỉ cần được yêu thương và đối xử tử tế, vậy là đủ ấm lòng rồi.",
+      "visual_description": "Chú chó đứng ngoan sau khi được tắm, hai bà vẫn ở cạnh chăm sóc, tạo cảm giác thân thuộc như người nhà."
+    }
+  ]
+}

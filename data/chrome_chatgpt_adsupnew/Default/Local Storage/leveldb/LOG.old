@@ -1,0 +1,10 @@
+2026/06/11-13:17:58.498 113a09 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_gbn.car.24h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/11-13:17:58.508 113a09 Recovering log #101
+2026/06/11-13:17:58.508 113a09 Level-0 table #104: started
+2026/06/11-13:17:58.511 113a09 Level-0 table #104: 13358 bytes OK
+2026/06/11-13:17:58.513 113a09 Delete type=0 #101
+2026/06/11-13:18:57.487 113a0c Level-0 table #107: started
+2026/06/11-13:18:57.489 113a0c Level-0 table #107: 11926 bytes OK
+2026/06/11-13:18:57.492 113a0c Delete type=0 #105
+2026/06/11-13:18:57.492 113a0c Compacting 4@0 + 1@1 files
+2026/06/11-13:18:57.494 113a0c compacted to: files[ 4 1 0 0 0 0 0 ]

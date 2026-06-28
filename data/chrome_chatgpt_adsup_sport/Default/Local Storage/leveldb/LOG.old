@@ -1,0 +1,18 @@
+2026/06/28-11:28:30.741 110cbf Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_adsup_sport/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/28-11:28:30.748 110cbf Recovering log #655
+2026/06/28-11:28:30.749 110cbf Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_adsup_sport/Default/Local Storage/leveldb/000655.log 
+2026/06/28-11:29:30.753 110cc3 Level-0 table #659: started
+2026/06/28-11:29:30.756 110cc3 Level-0 table #659: 13109 bytes OK
+2026/06/28-11:29:30.759 110cc3 Delete type=0 #655
+2026/06/28-11:30:35.156 110cc3 Level-0 table #661: started
+2026/06/28-11:30:35.160 110cc3 Level-0 table #661: 13302 bytes OK
+2026/06/28-11:30:35.162 110cc3 Delete type=0 #658
+2026/06/28-11:30:35.163 110cc3 Compacting 4@0 + 1@1 files
+2026/06/28-11:30:35.166 110cc3 Generated table #662@0: 17 keys, 12365 bytes
+2026/06/28-11:30:35.167 110cc3 Compacted 4@0 + 1@1 files => 12365 bytes
+2026/06/28-11:30:35.168 110cc3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/28-11:30:35.170 110cc3 Delete type=2 #650
+2026/06/28-11:30:35.170 110cc3 Delete type=2 #661
+2026/06/28-11:30:35.170 110cc3 Delete type=2 #656
+2026/06/28-11:30:35.170 110cc3 Delete type=2 #659
+2026/06/28-11:30:35.170 110cc3 Delete type=2 #653

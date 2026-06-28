@@ -27,3 +27,44 @@ assets/ChromePortable/
 # Temp files
 assets/temp_voice/
 config/token.pickle
+
+apps/creator_facebook/temp/
+
+# Assets
+assets/
+
+# Temp folders
+temp/
+apps/creator_article/temp/
+logs/
+data/ai_results/
+data/database.db
+data/database.db-journal
+data/chrome_*/
+data/**/Default/Cache/
+data/**/Default/Code Cache/
+data/**/Default/Cookies
+data/**/Default/History
+data/**/Default/Local Storage/
+data/**/Default/Session Storage/
+data/**/Default/Sessions/
+data/**/Default/GPUCache/
+data/**/Default/IndexedDB/
+data/chrome_profiles/
+data/chrome_chatgpt_*/
+apps/creator_facebook/data/fb_cookies/
+.venv/
+.venv_windows_bak/
+apps/creator_facebook/temp/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.zip
+*.tar
+*.gz
+*.db
+*.sqlite
+__pycache__/
+*.pyc
+.env

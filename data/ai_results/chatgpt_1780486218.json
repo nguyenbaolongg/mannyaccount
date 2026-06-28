@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Khoảnh khắc trong video khiến người xem phải dừng lại",
+  "hook": "Một đoạn video tưởng như rất bình thường, nhưng phần quan trọng nhất lại nằm ở chi tiết mà nhiều người dễ bỏ qua ngay từ đầu.",
+  "script_voice": "Ban đầu, mọi thứ trong video có vẻ chỉ là một khoảnh khắc đời thường. Không có gì quá ồn ào, cũng không có tình huống được báo trước. Nhưng càng xem, người ta càng bị kéo vào vì cảm giác có điều gì đó sắp xảy ra. Chính sự chờ đợi đó làm video giữ chân người xem. Điểm đáng chú ý nhất không nằm ở sự phô trương, mà ở cách tình huống diễn ra tự nhiên, khiến người xem tò mò đến giây cuối cùng. Và khi đoạn cao trào xuất hiện, cảm xúc được đẩy lên đúng lúc, tạo ra một cái kết đủ để người xem nhớ lại và muốn xem thêm lần nữa.",
+  "main_idea": "Video gốc chưa có đủ dữ liệu mô tả nội dung cụ thể, nên kịch bản được xây theo hướng khai thác một khoảnh khắc đời thường có yếu tố tò mò và cao trào tự nhiên.",
+  "viral_angle": "Tò mò và kịch tính nhẹ, dẫn dắt người xem từ một tình huống bình thường đến điểm nhấn đáng chú ý ở cuối video.",
+  "viewer_emotion": "Tò mò, chờ đợi và bất ngờ nhẹ",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một đoạn video tưởng như rất bình thường, nhưng phần quan trọng nhất lại nằm ở chi tiết mà nhiều người dễ bỏ qua ngay từ đầu.",
+      "visual_description": "Mở đầu bằng khung hình chính của video, giữ cảnh thật tự nhiên, tập trung vào hành động hoặc nhân vật trung tâm trong vài giây đầu."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi thứ diễn ra khá nhẹ nhàng, không có dấu hiệu gì quá đặc biệt.",
+      "visual_description": "Cảnh tiếp tục theo diễn biến gốc, ưu tiên các chuyển động đời thường, nét mặt hoặc hành động nhỏ có thể tạo cảm giác tò mò."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng càng xem, người ta càng có cảm giác có điều gì đó sắp xảy ra.",
+      "visual_description": "Cắt gần hơn vào chi tiết quan trọng trong video, giữ nhịp chậm hơn một chút để tăng sự chờ đợi cho người xem."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Chính khoảnh khắc này mới là lý do khiến người xem khó rời mắt.",
+      "visual_description": "Đưa vào phân cảnh cao trào hoặc hành động nổi bật nhất của video, ưu tiên hình ảnh rõ ràng và đúng trọng tâm."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Và khi đoạn kết xuất hiện, mọi thứ trở nên đáng nhớ hơn vì nó đến rất tự nhiên, không hề gượng ép.",
+      "visual_description": "Kết bằng phản ứng, kết quả hoặc khoảnh khắc cuối của video, giữ cảm xúc tự nhiên để tạo dư âm cho người xem."
+    }
+  ]
+}

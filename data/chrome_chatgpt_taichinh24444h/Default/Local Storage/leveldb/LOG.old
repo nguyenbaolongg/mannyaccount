@@ -1,0 +1,10 @@
+2026/06/13-02:50:23.357 365f19 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_taichinh24444h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/13-02:50:23.364 365f19 Recovering log #81
+2026/06/13-02:50:23.365 365f19 Level-0 table #84: started
+2026/06/13-02:50:23.367 365f19 Level-0 table #84: 12132 bytes OK
+2026/06/13-02:50:23.368 365f19 Recovering log #83
+2026/06/13-02:50:23.368 365f19 Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_taichinh24444h/Default/Local Storage/leveldb/000083.log 
+2026/06/13-02:50:23.371 365f19 Delete type=0 #81
+2026/06/13-02:51:03.451 365f1b Level-0 table #86: started
+2026/06/13-02:51:03.453 365f1b Level-0 table #86: 12176 bytes OK
+2026/06/13-02:51:03.456 365f1b Delete type=0 #83

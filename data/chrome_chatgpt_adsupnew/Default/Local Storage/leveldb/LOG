@@ -1,0 +1,16 @@
+2026/06/11-13:21:18.284 11582f Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_gbn.car.24h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/11-13:21:18.291 11582f Recovering log #106
+2026/06/11-13:21:18.291 11582f Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_gbn.car.24h/Default/Local Storage/leveldb/000106.log 
+2026/06/11-13:21:18.292 11582f Delete type=2 #108
+2026/06/11-13:21:18.292 115831 Compacting 4@0 + 1@1 files
+2026/06/11-13:21:18.296 115831 Generated table #109@0: 29 keys, 13099 bytes
+2026/06/11-13:21:18.296 115831 Compacted 4@0 + 1@1 files => 13099 bytes
+2026/06/11-13:21:18.297 115831 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/06/11-13:21:18.298 115831 Delete type=2 #99
+2026/06/11-13:21:18.298 115831 Delete type=2 #104
+2026/06/11-13:21:18.298 115831 Delete type=2 #96
+2026/06/11-13:21:18.298 115831 Delete type=2 #102
+2026/06/11-13:21:18.298 115831 Delete type=2 #107
+2026/06/11-13:22:18.295 115831 Level-0 table #111: started
+2026/06/11-13:22:18.298 115831 Level-0 table #111: 17920 bytes OK
+2026/06/11-13:22:18.300 115831 Delete type=0 #106

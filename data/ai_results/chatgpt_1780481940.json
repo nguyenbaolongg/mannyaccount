@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Khi món ăn ngon đến mức chén nước chấm cũng không còn",
+  "hook": "Tưởng chỉ là một bữa ăn bình thường, nhưng phản ứng của anh chàng khi nhìn chén nước chấm mới là phần gây cười nhất.",
+  "script_voice": "Tưởng chỉ là một bữa cơm gia đình rất bình thường, nhưng vài giây sau, cả căn bếp lại có một khoảnh khắc khiến ai xem cũng phải bật cười. Trên bàn vẫn còn đầy món ăn, cô gái đứng cạnh bồn rửa, còn anh chàng thì cầm chiếc chén nhỏ như vừa phát hiện ra điều gì đó rất nghiêm trọng. Không cần nói quá nhiều, biểu cảm của anh đã nói hết tất cả. Từ ngạc nhiên, phấn khích, rồi đến cú cúi đầu đầy bất lực, mọi thứ giống như một lời xác nhận rằng món này đúng là ngon hết nước chấm theo nghĩa đen. Có những lời khen không cần hoa mỹ, chỉ cần nhìn phản ứng sau bữa ăn là đủ hiểu người nấu đã thành công thế nào.",
+  "main_idea": "Video ghi lại khoảnh khắc hài hước trong căn bếp, khi một người đàn ông phản ứng rất mạnh trước chén nước chấm đã hết sau bữa ăn, tạo thành tình huống đúng nghĩa với câu nói ngon hết nước chấm.",
+  "viral_angle": "Hài hước đời thường, khai thác sự đối lập giữa một bữa ăn bình thường và phản ứng quá chân thật của người trong cuộc.",
+  "viewer_emotion": "Bật cười, thích thú và thấy gần gũi vì tình huống rất đời thường.",
+  "have_frame": true,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Tưởng chỉ là một bữa cơm gia đình rất bình thường, nhưng vài giây sau, cả căn bếp lại có một khoảnh khắc khiến ai xem cũng phải bật cười.",
+      "visual_description": "Toàn cảnh camera trong căn bếp, bàn ăn còn nhiều món, một nam và một nữ đứng gần bồn rửa, phía dưới có khung đồ họa tin tức màu xanh."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Trên bàn vẫn còn đầy món ăn, cô gái đứng cạnh bồn rửa, còn anh chàng thì cầm chiếc chén nhỏ như vừa phát hiện ra điều gì đó rất nghiêm trọng.",
+      "visual_description": "Người đàn ông áo đỏ đứng cạnh người phụ nữ, tay cầm chén nhỏ, cả hai nhìn về phía khu vực bồn rửa và bàn ăn."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Không cần nói quá nhiều, biểu cảm của anh đã nói hết tất cả.",
+      "visual_description": "Người đàn ông bất ngờ giơ tay lên, phản ứng mạnh và hài hước, người phụ nữ đứng cạnh có vẻ ngạc nhiên."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Từ ngạc nhiên, phấn khích, rồi đến cú cúi đầu đầy bất lực, mọi thứ giống như một lời xác nhận rằng món này đúng là ngon hết nước chấm theo nghĩa đen.",
+      "visual_description": "Đoạn hình chuyển sang đen trắng, người đàn ông cúi đầu nhìn xuống chiếc chén, tạo cảm giác nhấn mạnh khoảnh khắc gây cười."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Có những lời khen không cần hoa mỹ, chỉ cần nhìn phản ứng sau bữa ăn là đủ hiểu người nấu đã thành công thế nào.",
+      "visual_description": "Cảnh quay trở lại màu bình thường, hai người tiếp tục đứng trong bếp cạnh bàn ăn và bồn rửa, khép lại bằng không khí vui vẻ đời thường."
+    }
+  ]
+}

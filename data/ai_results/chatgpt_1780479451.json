@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Chỉ vì vài chùm quả, một cây lớn giữa rừng bị hạ xuống",
+  "hook": "Nhìn tưởng chỉ là đi hái vài quả rừng, nhưng cái giá phải trả lại là cả một thân cây lớn bị đốn gục.",
+  "script_voice": "Ban đầu, ai cũng nghĩ đây chỉ là một chuyến vào rừng tìm quả ăn như bình thường. Nhưng thay vì trèo lên hái, người đàn ông lại chọn cách chặt thẳng vào gốc cây. Từng nhát dao làm thân cây lớn dần mất điểm tựa, trong khi phía trên là cả tán lá cao và những chùm quả đang chờ rơi xuống. Chỉ vì muốn lấy được vài quả nhanh hơn, cả một cây giữa rừng phải ngã xuống. Khoảnh khắc này khiến nhiều người vừa tiếc, vừa tự hỏi: một chút tiện lợi trước mắt liệu có đáng để đánh đổi như vậy không?",
+  "main_idea": "Video ghi lại cảnh một người đàn ông chặt hạ một cây lớn trong rừng để lấy quả, tạo cảm giác tiếc nuối và cảnh tỉnh về cách con người đối xử với thiên nhiên.",
+  "viral_angle": "Góc khai thác gây tranh luận và cảnh tỉnh, từ một hành động tưởng nhỏ nhưng dẫn đến hậu quả đáng tiếc.",
+  "viewer_emotion": "Bất ngờ, tiếc nuối và suy ngẫm",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn tưởng chỉ là đi hái vài quả rừng, nhưng cái giá phải trả lại là cả một thân cây lớn bị đốn gục.",
+      "visual_description": "Cận cảnh người đàn ông đứng giữa rừng, thân cây lớn trước mặt đã có nhiều vết chặt ở phần gốc."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, ai cũng nghĩ đây chỉ là một chuyến vào rừng tìm quả ăn như bình thường.",
+      "visual_description": "Góc máy lùi ra xa, cho thấy cây rất cao, xung quanh là cây cối rậm rạp và nền rừng ẩm ướt."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng thay vì trèo lên hái, người đàn ông lại chọn cách chặt thẳng vào gốc cây.",
+      "visual_description": "Người đàn ông tiếp tục tác động vào phần thân cây, vỏ cây bong ra, để lộ phần gỗ bên trong."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Từng nhát dao làm thân cây lớn dần mất điểm tựa, trong khi phía trên là cả tán lá cao và những chùm quả đang chờ rơi xuống.",
+      "visual_description": "Máy quay hướng lên phần thân cây cao, tán lá phía trên rung nhẹ giữa không gian rừng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Chỉ vì muốn lấy được vài quả nhanh hơn, cả một cây giữa rừng phải ngã xuống.",
+      "visual_description": "Cành lá và những chùm quả đỏ xuất hiện gần mặt đất, máy quay rung theo chuyển động trong rừng."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Khoảnh khắc này khiến nhiều người vừa tiếc, vừa tự hỏi: một chút tiện lợi trước mắt liệu có đáng để đánh đổi như vậy không?",
+      "visual_description": "Cận cảnh các chùm quả nằm lẫn trong lá cây, tạo cảm giác tiếc nuối sau khi cây bị hạ."
+    }
+  ]
+}

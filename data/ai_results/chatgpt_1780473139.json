@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Căn nhà vừa sửa xong chưa kịp tân gia đã chỉ còn lại màu đen",
+  "hook": "Một căn nhà vừa sửa xong, hàng hóa còn chất đầy bên trong, vậy mà chỉ sau một buổi sáng, tất cả gần như biến mất.",
+  "script_voice": "Một buổi sáng ở Bắc Ninh, người đi đường dừng lại trước căn nhà vừa trải qua sự cố đau lòng. Bên ngoài vẫn còn biển hiệu, cửa cuốn vẫn đóng, nhưng phía trên đã ám đen, để lộ dấu vết của một trận cháy dữ dội. Điều khiến ai nghe cũng nghẹn lại là chủ nhà nói rằng mọi thứ đã mất sạch. Nhà cửa, hàng hóa, công sức gây dựng bấy lâu gần như không còn gì. Đau nhất là căn nhà ấy vừa mới xây sửa xong, còn chưa kịp tân gia, đã phải khép lại trong cảnh tan hoang. Có những mất mát không chỉ là tài sản, mà là cả hy vọng của một gia đình.",
+  "main_idea": "Video ghi lại cảnh một căn nhà kiêm cửa hàng tại Bắc Ninh bị hư hại nặng sau sự cố cháy, khiến chủ nhà mất nhiều tài sản và hàng hóa khi căn nhà vừa sửa xong chưa kịp tân gia.",
+  "viral_angle": "Khai thác sự đối lập giữa niềm vui chuẩn bị tân gia và cú sốc mất trắng sau một buổi sáng, tạo cảm giác bất ngờ và xót xa.",
+  "viewer_emotion": "Xót xa, thương cảm và bàng hoàng",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một căn nhà vừa sửa xong, hàng hóa còn chất đầy bên trong, vậy mà chỉ sau một buổi sáng, tất cả gần như biến mất.",
+      "visual_description": "Toàn cảnh mặt tiền căn nhà kiêm cửa hàng trên phố, phía trước có người qua lại, biển hiệu vẫn còn nhưng phần tầng trên bị cháy đen rõ rệt."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Người đi đường dừng lại trước căn nhà vừa trải qua sự cố đau lòng.",
+      "visual_description": "Máy quay lia chậm từ mặt đường lên phía căn nhà, ghi lại cửa cuốn đóng kín, xe máy và người dân đi ngang qua trong không khí nặng nề."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Bên ngoài vẫn còn biển hiệu, nhưng phía trên đã ám đen, để lộ dấu vết của một trận cháy dữ dội.",
+      "visual_description": "Cận cảnh tầng trên của căn nhà, lan can, tường và khu vực cửa sổ bị ám khói đen, một số mảng tường bị hư hại."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Điều khiến ai nghe cũng nghẹn lại là chủ nhà nói rằng nhà cửa, hàng hóa và công sức gây dựng bấy lâu gần như không còn gì.",
+      "visual_description": "Khung hình giữ lâu ở mặt tiền cửa hàng, bên dưới là biển hiệu kinh doanh, bên trên là khu vực cháy đen tạo sự đối lập rõ ràng."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đau nhất là căn nhà ấy vừa mới xây sửa xong, còn chưa kịp tân gia, đã phải khép lại trong cảnh tan hoang.",
+      "visual_description": "Máy quay nghiêng lên phần ban công và mặt tiền căn nhà, cho thấy dấu vết mới xây sửa xen lẫn cảnh hư hại sau sự cố."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Có những mất mát không chỉ là tài sản, mà là cả hy vọng của một gia đình.",
+      "visual_description": "Toàn cảnh căn nhà từ phía đối diện đường, người dân lặng lẽ quan sát, không khí trầm xuống để kết thúc video bằng cảm xúc xót xa."
+    }
+  ]
+}
