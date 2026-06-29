@@ -1,0 +1,11 @@
+{
+  "title_tiktok": "Dòng chữ Telegram Link khiến nhiều người phải dừng lại",
+  "hook": "Chỉ một dòng chữ ngắn, nhưng đủ khiến người xem phải cảnh giác trước khi bấm vào.",
+  "script_voice": "Khung hình gần như không có diễn biến gì phức tạp. Người xem chỉ thấy biểu tượng TikTok xuất hiện trên nền tối. Nhưng caption lại ghi Telegram Link. Chính sự đối lập này mới là điểm gây chú ý. Không có bối cảnh rõ ràng. Không có lời giải thích cụ thể. Cũng không thấy nội dung phía sau đường dẫn là gì. Với những video kiểu này, điều quan trọng không phải là tò mò đến đâu. Mà là phải tự hỏi trước, mình đang chuẩn bị bấm vào thứ gì. Một cú chạm có thể chỉ là xem thêm. Nhưng cũng có thể dẫn sang nơi mình không kiểm soát được. Thấy link lạ thì nên chậm lại vài giây.",
+  "main_idea": "Video sử dụng caption Telegram Link nhưng hình ảnh chỉ là biểu tượng TikTok, phù hợp khai thác theo góc cảnh báo người xem cẩn trọng với liên kết lạ.",
+  "should_make_video": true,
+  "curiosity_point": "Caption nhắc đến Telegram Link nhưng hình ảnh không cho biết rõ nội dung thật sự phía sau.",
+  "viewer_emotion": "Tò mò, cảnh giác",
+  "have_frame": false,
+  "tone": "Cảnh báo"
+}

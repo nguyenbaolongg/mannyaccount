@@ -1,0 +1,6 @@
+2026/06/28-09:55:02.697 f6103 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_tintucthammy24h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/28-09:55:02.706 f6103 Recovering log #1990
+2026/06/28-09:55:02.707 f6103 Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_tintucthammy24h/Default/Local Storage/leveldb/001990.log 
+2026/06/28-09:55:42.017 f6107 Level-0 table #1994: started
+2026/06/28-09:55:42.021 f6107 Level-0 table #1994: 17431 bytes OK
+2026/06/28-09:55:42.024 f6107 Delete type=0 #1990

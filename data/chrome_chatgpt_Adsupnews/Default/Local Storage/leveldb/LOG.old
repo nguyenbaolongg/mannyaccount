@@ -1,0 +1,9 @@
+2026/06/27-15:12:19.558 3a5d1c Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_Adsupnews/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/27-15:12:19.564 3a5d1c Recovering log #352
+2026/06/27-15:12:19.564 3a5d1c Level-0 table #355: started
+2026/06/27-15:12:19.567 3a5d1c Level-0 table #355: 17326 bytes OK
+2026/06/27-15:12:19.567 3a5d1c Recovering log #354
+2026/06/27-15:12:19.568 3a5d1c Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_Adsupnews/Default/Local Storage/leveldb/000354.log 
+2026/06/27-15:12:19.570 3a5d1c Delete type=0 #352
+2026/06/27-15:12:58.853 3a5d1c Level-0 table #357: started
+2026/06/27-15:12:58.855 3a5d1c Level-0 table #357: 12618 bytes OK

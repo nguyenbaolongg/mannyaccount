@@ -1,0 +1,36 @@
+{
+  "title_tiktok": "Ấm trà này rót ra nhìn càng lúc càng lạ",
+  "hook": "Một ấm trà được rót ra rất bình thường, nhưng chỉ vài giây sau, ai nhìn ly nước cũng bắt đầu thấy có gì đó không ổn.",
+  "script_voice": "Một người đàn ông cầm ấm trà trắng, chậm rãi rót vào hai chiếc ly đầy đá. Ban đầu ai cũng nghĩ đây chỉ là một màn mời trà rất bình thường. Nhưng càng rót, màu nước càng vàng óng, phía trên lại nổi bọt trắng như một thứ đồ uống quen quen. Chàng trai bên cạnh nhìn ly nước rồi bắt đầu nghi ngờ, còn người rót thì vẫn cười rất tự nhiên. Đến lúc cả hai cùng nâng ly uống thử, biểu cảm của họ mới khiến người xem bật cười. Đây có lẽ là loại trà đặc biệt nhất, nhìn thì bảo là trà, nhưng cảm giác lại chẳng giống trà chút nào.",
+  "main_idea": "Video ghi lại cảnh hai người ngồi ở quán, một người dùng ấm trà rót ra loại nước màu vàng có bọt trắng khiến người xem liên tưởng đến bia, tạo tình huống hài hước và gây tò mò.",
+  "viral_angle": "Góc khai thác hài hước từ sự đối lập giữa ấm trà nghiêm túc và ly nước có hình dáng rất giống bia, khiến người xem tò mò đây thật sự là trà hay một trò đùa.",
+  "viewer_emotion": "Bất ngờ, tò mò và bật cười nhẹ vì tình huống đánh lừa thị giác.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Một ấm trà được rót ra rất bình thường, nhưng chỉ vài giây sau, ai nhìn ly nước cũng bắt đầu thấy có gì đó không ổn.",
+      "visual_description": "Cận cảnh người đàn ông cầm ấm trà trắng rót nước vào ly thủy tinh có đá trên bàn gỗ, bên cạnh là một chàng trai đang quan sát."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Ban đầu, mọi thứ giống như một buổi uống trà bình thường ở quán.",
+      "visual_description": "Hai người ngồi cạnh nhau trước quán, người rót trà mỉm cười, ly nước trên bàn bắt đầu đầy dần."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Nhưng màu nước vàng óng và lớp bọt trắng phía trên lại làm ai nhìn cũng phải nghi ngờ.",
+      "visual_description": "Cận cảnh ly nước sau khi rót, màu vàng trong, phía trên có lớp bọt trắng giống đồ uống có ga."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Chàng trai bên cạnh nhìn ly nước với vẻ thắc mắc, còn người rót vẫn giữ vẻ mặt rất bình thản.",
+      "visual_description": "Chàng trai áo cam đưa tay chạm vào ly và nhìn kỹ, người đàn ông bên cạnh vẫn cười tự nhiên."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Đến lúc cả hai cùng nâng ly uống thử, tình huống mới trở nên buồn cười: đây là trà, hay chỉ là một màn đánh lừa thị giác quá khéo?",
+      "visual_description": "Hai người cùng nâng ly uống, sau đó nhìn nhau và nói chuyện với biểu cảm hài hước, ly nước vẫn còn bọt trên bàn."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title_tiktok": "Logo TikTok và dòng caption gây tò mò",
+  "hook": "Chỉ một logo nhấp nháy, nhưng chi tiết đáng chú ý lại nằm ở dòng caption.",
+  "script_voice": "Toàn bộ video gần như không có nhân vật hay diễn biến rõ ràng. Màn hình chỉ hiện logo TikTok trên nền đen, kèm hiệu ứng rung mờ. Điều khiến người xem dừng lại là caption ghi Telegram Link. Không có lời giải thích, không có bối cảnh, cũng không thấy nội dung chính phía sau. Chính sự thiếu thông tin này tạo cảm giác vừa tò mò, vừa cần cảnh giác. Vì nếu một video chỉ dùng logo để kéo người xem sang nơi khác, người xem nên kiểm tra kỹ trước khi bấm vào bất kỳ đường dẫn nào. Đôi khi phần đáng chú ý nhất không nằm trong hình ảnh, mà nằm ở thứ người ta muốn bạn nhấp vào.",
+  "main_idea": "Video chỉ hiển thị logo TikTok và caption Telegram Link, tạo cảm giác tò mò nhưng thiếu thông tin cụ thể.",
+  "should_make_video": true,
+  "curiosity_point": "Video không có diễn biến, chỉ có logo TikTok và caption dẫn sang Telegram.",
+  "viewer_emotion": "Tò mò, cảnh giác",
+  "have_frame": false,
+  "tone": "Cảnh báo"
+}

@@ -1,0 +1,14 @@
+2026/06/13-02:55:13.836 3689f3 Reusing MANIFEST /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_taichinh24444h/Default/Local Storage/leveldb/MANIFEST-000001
+2026/06/13-02:55:13.841 3689f3 Recovering log #85
+2026/06/13-02:55:13.842 3689f3 Reusing old log /home/giang-adsup/Documents/mannyAccount/data/chrome_chatgpt_taichinh24444h/Default/Local Storage/leveldb/000085.log 
+2026/06/13-02:55:13.843 3689f5 Compacting 4@0 + 1@1 files
+2026/06/13-02:55:13.846 3689f5 Generated table #88@0: 12 keys, 12003 bytes
+2026/06/13-02:55:13.846 3689f5 Compacted 4@0 + 1@1 files => 12003 bytes
+2026/06/13-02:55:13.848 3689f5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/13-02:55:13.849 3689f5 Delete type=2 #78
+2026/06/13-02:55:13.849 3689f5 Delete type=2 #80
+2026/06/13-02:55:13.849 3689f5 Delete type=2 #84
+2026/06/13-02:55:13.849 3689f5 Delete type=2 #82
+2026/06/13-02:55:13.849 3689f5 Delete type=2 #86
+2026/06/13-02:55:53.398 3689f3 Level-0 table #90: started
+2026/06/13-02:55:53.402 3689f3 Level-0 table #90: 12183 bytes OK

@@ -1,0 +1,41 @@
+{
+  "title_tiktok": "Cách những người thợ đưa vật liệu lên cao khiến ai cũng phải nhìn lại",
+  "hook": "Nhìn qua tưởng chỉ là một công trình bình thường, nhưng cách những người thợ chuyền vật liệu lên cao mới khiến nhiều người phải dừng lại xem tiếp.",
+  "script_voice": "Nhìn qua tưởng chỉ là một công trình bình thường, nhưng cách những người thợ chuyền vật liệu lên cao mới khiến nhiều người phải dừng lại xem tiếp. Không có máy móc hiện đại, cũng chẳng có thiết bị nâng đỡ cầu kỳ. Một người đứng dưới, giữ chiếc cán dài thật chắc, từ từ đưa khay vật liệu lên phía trên. Trên giàn giáo, những người thợ khác vẫn miệt mài xây từng hàng gạch. Mọi thứ diễn ra chậm rãi nhưng rất nhịp nhàng, chỉ cần lệch một chút là có thể nguy hiểm. Điều khiến người xem chú ý không chỉ là cách làm sáng tạo, mà còn là sự vất vả phía sau những bức tường đang được dựng lên mỗi ngày.",
+  "main_idea": "Video ghi lại cảnh những người thợ xây tại công trình dùng cách thủ công để chuyền vật liệu lên cao, thể hiện sự khéo léo, phối hợp và vất vả trong lao động.",
+  "viral_angle": "Góc khai thác nhân văn và bất ngờ, từ một cảnh công trình bình thường chuyển thành khoảnh khắc cho thấy sự sáng tạo và nhọc nhằn của người lao động.",
+  "viewer_emotion": "Bất ngờ, nể phục và cảm thông với công việc vất vả của những người thợ xây.",
+  "have_frame": false,
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voice_over": "Nhìn qua tưởng chỉ là một công trình bình thường, nhưng cách những người thợ chuyền vật liệu lên cao mới khiến nhiều người phải dừng lại xem tiếp.",
+      "visual_description": "Toàn cảnh công trình đang xây dựng, tường gạch đỏ còn dang dở, giàn giáo dựng sát tường và nhiều vật liệu nằm dưới nền đất."
+    },
+    {
+      "scene_number": 2,
+      "voice_over": "Không có máy móc hiện đại, cũng chẳng có thiết bị nâng đỡ cầu kỳ.",
+      "visual_description": "Máy quay hướng từ trên cao xuống, một người thợ đứng phía dưới công trình, bên cạnh là đống gạch và khay vật liệu."
+    },
+    {
+      "scene_number": 3,
+      "voice_over": "Một người đứng dưới, giữ chiếc cán dài thật chắc, từ từ đưa khay vật liệu lên phía trên.",
+      "visual_description": "Người thợ phía dưới cầm cán dài, phía đầu cán có khay tròn chứa vật liệu, thao tác chậm và cẩn thận để đưa lên cao."
+    },
+    {
+      "scene_number": 4,
+      "voice_over": "Trên giàn giáo, những người thợ khác vẫn miệt mài xây từng hàng gạch.",
+      "visual_description": "Các thợ xây đứng và ngồi trên giàn giáo, tiếp tục đặt gạch, căn chỉnh tường và phối hợp với người phía dưới."
+    },
+    {
+      "scene_number": 5,
+      "voice_over": "Mọi thứ diễn ra chậm rãi nhưng rất nhịp nhàng, chỉ cần lệch một chút là có thể nguy hiểm.",
+      "visual_description": "Khay vật liệu được đưa sát lên khu vực làm việc phía trên, giàn giáo hẹp và tường gạch bao quanh tạo cảm giác công việc cần độ chính xác cao."
+    },
+    {
+      "scene_number": 6,
+      "voice_over": "Điều khiến người xem chú ý không chỉ là cách làm sáng tạo, mà còn là sự vất vả phía sau những bức tường đang được dựng lên mỗi ngày.",
+      "visual_description": "Khung hình giữ lại cảnh toàn bộ nhóm thợ tiếp tục làm việc giữa công trình, nhấn mạnh không khí lao động thủ công và vất vả."
+    }
+  ]
+}
